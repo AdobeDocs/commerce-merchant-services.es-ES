@@ -2,9 +2,9 @@
 title: Entrega de tienda
 description: La ventana emergente de tienda de Live Search devuelve dinámicamente los productos sugeridos y las miniaturas.
 exl-id: 88fdc3ed-b606-40de-94b7-435be09c4072
-source-git-commit: 7402e97f53b71e488d860215487f4809572b7e6f
+source-git-commit: 10cea4389d685ce0e26b083872b13a1cd19ba2af
 workflow-type: tm+mt
-source-wordcount: '239'
+source-wordcount: '381'
 ht-degree: 0%
 
 ---
@@ -30,3 +30,15 @@ Siempre se pueden buscar los atributos siguientes:
 * `categories`
 
 ![Opción de búsqueda en directo](assets/storefront-search-as-you-type.png)
+
+## Tamaño de página emergente
+
+El tamaño de página de la ventana emergente determina cuántas líneas de productos completados automáticamente se pueden devolver. Anteriormente, el tamaño de la página se codificaba como seis líneas. Sin embargo, la variable `page_size` ahora es una configuración que se puede configurar desde la variable *Administrador*. Durante la instalación de Live Search, la variable `page_size` cambia al valor actual del [Buscar en el catálogo](https://docs.magento.com/user-guide/configuration/catalog/catalog.html#catalog-search) - `Autocomplete Limit` configuración.
+
+De forma predeterminada, el valor Búsqueda en el catálogo - Límite de autocompletar está establecido en ocho líneas (o filas). Para cambiar el tamaño de la página de la ventana emergente, haga lo siguiente:
+
+1. En el *Administrador* barra lateral, vaya a **Almacenes** > Configuración > **Configuración**.
+1. En el panel izquierdo, expanda **Catálogo** y elija **Catálogo** de la lista de ajustes.
+1. Expanda el *Buscar en el catálogo* para obtener más información.
+1. Configure las variables **Límite de autocompletado** al número de líneas que desea permitir en la ventana emergente.
+1. Cuando termine, haga clic en **Guardar configuración**.

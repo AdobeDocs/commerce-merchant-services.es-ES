@@ -2,66 +2,22 @@
 title: Instalar Live Search
 description: Obtenga información sobre cómo instalar, actualizar y desinstalar Live Search de Adobe Commerce.
 exl-id: aa251bb0-d52c-4cff-bccb-76a08ae2a3b2
-source-git-commit: 19f0c987ab6b43b6fac1cad266b5fd47a7168e73
+source-git-commit: b6aca1b78fae6d8c43ca47307aa1c63dbdc1c36a
 workflow-type: tm+mt
-source-wordcount: '1490'
+source-wordcount: '1223'
 ht-degree: 0%
 
 ---
 
 # Instalar [!DNL Live Search]
 
-[!DNL Live Search] es un conjunto independiente [paquetes](#live-search-packages) que sustituye a las funciones de búsqueda estándar de Magento Open Source y Adobe Commerce. La variable [!DNL Live Search] se instala desde la línea de comandos del servidor y se conecta a la instalación de Adobe Commerce como [service](https://docs.magento.com/user-guide/system/saas.html). Cuando se complete el proceso, [!DNL Live Search] aparece en el *Marketing* menú bajo *SEO y búsqueda* en el [!DNL Commerce] Administrador.
-
-El lado de Adobe Commerce incluye alojar el administrador de búsqueda, sincronizar los datos del catálogo y ejecutar el servicio de consulta.
-
-![Diagrama de arquitectura de Live Search](assets/architecture-diagram.svg)
-
-Después de la [!DNL Live Search] (con módulos de catálogo como dependencias) está instalado y configurado, [!DNL Commerce] comienza a compartir datos de búsqueda y catálogo con los servicios SaaS. En este punto, los usuarios administradores pueden configurar, personalizar y administrar facetas de búsqueda, sinónimos y reglas de comercialización.
+Live Search se instala como una extensión desde Adobe Marketplace. Después de la [!DNL Live Search] (con módulos de catálogo como dependencias) está instalado y configurado, [!DNL Commerce] comienza a compartir datos de búsqueda y catálogo con los servicios SaaS. En este punto, *Administrador* los usuarios pueden configurar, personalizar y administrar facetas de búsqueda, sinónimos y reglas de comercialización.
 
 En este tema se proporcionan instrucciones para hacer lo siguiente:
 
 * [Instalar [!DNL Live Search]](#before-you-begin) (Métodos 1 y 2)
 * [Actualizar [!DNL Live Search]](#update)
 * [Desinstalar [!DNL Live Search]](#uninstall)
-
-## Requisitos {#requirements}
-
-* [Adobe Commerce](https://magento.com/products/magento-commerce) 2.4.x
-* PHP 7.3 / 7.4
-* [!DNL Composer]
-
-### Plataformas compatibles
-
-* Adobe Commerce en prem (EE) : 2.4.x
-* Adobe Commerce on Cloud (ECE) : 2.4.x
-
-## Límites y umbrales
-
-En este momento, la API de categoría de búsqueda/categoría de búsqueda activa tiene los siguientes límites admitidos y límites estáticos:
-
-### Indexación
-
-* Indexa hasta 300 atributos de producto por vista de tienda
-* Indexa solo los productos de la base de datos de Adobe Commerce
-* No indexa páginas de CMS
-
-### Funcionalidad
-
-* Tienda [Búsqueda avanzada (formulario)](https://docs.magento.com/user-guide/catalog/search-advanced.html) módulo
-* [Grupos de clientes](https://docs.magento.com/user-guide/customers/customer-groups.html)
-* [Grupos de precios personalizados](https://docs.magento.com/user-guide/catalog/product-price-group.html)
-* Múltiples ubicaciones de inventario que usa [MCOM](https://docs.magento.com/user-guide/mcom.html) u otras extensiones OMS
-* [Capacidades integradas B2B](https://business.adobe.com/products/magento/b2b-ecommerce.html)
-
-### Consultas
-
-* La búsqueda activa no tiene acceso a la taxonomía completa del árbol de categorías, lo que hace que algunos escenarios de búsqueda de navegación en capas estén más allá de su alcance.
-* La búsqueda en directo utiliza un extremo único de GraphQL para las consultas con el fin de admitir funciones como facetas inteligentes y la búsqueda en el momento en que escribes. Aunque similar a la variable [API de Magento GraphQL](https://devdocs.magento.com/guides/v2.4/graphql), hay algunas diferencias y es posible que algunos campos no sean totalmente compatibles en este momento.
-
-### Progressive Web Application (PWA)
-
-* Live Search no es compatible [PWA](https://developer.adobe.com/commerce/pwa-studio/) en este momento.
 
 ## Antes de empezar {#before-you-begin}
 
@@ -74,10 +30,6 @@ Haga lo siguiente:
    * [Método 1](#method-1): Instalar sin [!DNL Elasticsearch]
    * [Método 2](#method-2): Instale con [!DNL Elasticsearch] (Sin tiempo de inactividad)
 
-   >[!TIP]
-   >
-   >Para introducir instrucciones en la línea de comandos, pase el ratón por encima de la derecha del cuadro de código y haga clic en el botón [!UICONTROL **Copiar**] vínculo. A continuación, péguelo en la línea de comandos. Si no tiene experiencia trabajando desde la línea de comandos, pregunte a su integrador del sistema o desarrollador si necesita ayuda.
-
 ## Método 1: Instalar sin Elasticsearch {#method-1}
 
 Se recomienda este método de incorporación al instalar [!DNL Live Search] a:
@@ -86,6 +38,10 @@ Se recomienda este método de incorporación al instalar [!DNL Live Search] a:
 * Entorno de ensayo
 
 En este escenario, las operaciones de tienda se interrumpen mientras el [!DNL Live Search] service indexa todos los productos del catálogo. Durante la instalación, [!DNL Live Search] los módulos están habilitados y [!DNL Elasticsearch] los módulos están desactivados.
+
+>[!TIP]
+>
+>Para evitar errores de escritura, pase el ratón por encima del extremo derecho del cuadro de código y haga clic en el botón [!UICONTROL **Copiar**] y péguelo en la línea de comandos.
 
 1. Instalación de Adobe Commerce 2.4.x sin [!DNL Live Search].
 
@@ -100,7 +56,7 @@ En este escenario, las operaciones de tienda se interrumpen mientras el [!DNL Li
 1. Ejecute los siguientes comandos para deshabilitar [!DNL Elasticsearch] y módulos relacionados, e instalar [!DNL Live Search]:
 
    ```bash
-   bin/magento module:disable Magento_Elasticsearch Magento_Elasticsearch6 Magento_Elasticsearch7 Magento_ElasticsearchCatalogPermissions Magento_AdvancedSearch  Magento_InventoryElasticsearch
+   bin/magento module:disable Magento_Elasticsearch Magento_Elasticsearch6 Magento_Elasticsearch7 Magento_ElasticsearchCatalogPermissions Magento_InventoryElasticsearch
    ```
 
    ```bash
@@ -117,7 +73,7 @@ En este escenario, las operaciones de tienda se interrumpen mientras el [!DNL Li
    * Fuente de variante del producto
    * Fuente de atributos del catálogo
 
-1. Configure las [Claves de API](#configure-api-keys) a [sincronizar](#synchronize-catalog-data) los datos del catálogo a [!DNL Live Search] servicios.
+1. Configure las [Claves de API](#configure-api-keys) y compruebe que los datos del catálogo son [sincronizar](#synchronize-catalog-data) con [!DNL Live Search] servicios.
 
 1. Para que las facetas estén disponibles como filtros en la tienda, agregue la variable [facetas](https://docs.magento.com/user-guide/live-search/facets-add.html) necesita, según el [requisitos de facetas](https://docs.magento.com/user-guide/live-search/facets.html).
 
@@ -134,6 +90,10 @@ Se recomienda este método de incorporación al instalar [!DNL Live Search] a:
 * Una producción existente [!DNL Commerce] instalación
 
 En este escenario, [!DNL Elasticsearch] administra temporalmente las solicitudes de búsqueda de la tienda mientras [!DNL Live Search] el servicio indexa todos los productos en segundo plano, sin interrupciones en las operaciones normales de tienda. [!DNL Elasticsearch] está desactivado y [!DNL Live Search] se activa después de indexar y sincronizar todos los datos del catálogo.
+
+>[!TIP]
+>
+>Para evitar errores de escritura, pase el ratón por encima del extremo derecho del cuadro de código y haga clic en el botón [!UICONTROL **Copiar**] y péguelo en la línea de comandos.
 
 1. Para descargar el `live-search` ejecute lo siguiente desde la línea de comandos:
 
@@ -161,7 +121,7 @@ En este escenario, [!DNL Elasticsearch] administra temporalmente las solicitudes
    * Fuente de variante del producto
    * Fuente de atributos del catálogo
 
-1. Configure las [Claves de API](#configure-api-keys) a [sincronizar](#synchronize-catalog-data) los datos del catálogo a [!DNL Live Search] servicios.
+1. Configure las [Claves de API](#configure-api-keys) y compruebe que los datos del catálogo son [sincronizar](#synchronize-catalog-data) con [!DNL Live Search] servicios.
 
 1. Para que las facetas estén disponibles como filtros en la tienda, agregue la variable [facetas](https://docs.magento.com/user-guide/live-search/facets-add.html) necesita, según el [requisitos de facetas](https://docs.magento.com/user-guide/live-search/facets.html).
 
@@ -169,17 +129,17 @@ En este escenario, [!DNL Elasticsearch] administra temporalmente las solicitudes
 
 1. Espere al menos una hora para que los datos se indexen y sincronicen. A continuación, utilice el [Zona de reproducción de GraphQL](https://devdocs.magento.com/live-search/graphql-support.html) con la consulta predeterminada para verificar lo siguiente:
 
-   * El recuento de productos devuelto está cerca de lo que espera para la vista de tienda
-   * Facetas devueltas
+   * El recuento de productos devuelto está cerca de lo que espera para la vista de tienda.
+   * Se devuelven facetas.
 
-1. Ejecute los siguientes comandos para deshabilitar [!DNL Elasticsearch] módulos, habilitar [!DNL Live Search] módulos y ejecutar `setup`:
+1. Ejecute los siguientes comandos para habilitar [!DNL Live Search] módulos, desactivar [!DNL Elasticsearch]y ejecutar `setup`.
 
    ```bash
    bin/magento module:enable Magento_LiveSearchAdapter Magento_LiveSearchStorefrontPopover
    ```
 
    ```bash
-   bin/magento module:disable Magento_Elasticsearch Magento_Elasticsearch6 Magento_Elasticsearch7 Magento_ElasticsearchCatalogPermissions Magento_AdvancedSearch Magento_InventoryElasticsearch
+   bin/magento module:disable Magento_Elasticsearch Magento_Elasticsearch6 Magento_Elasticsearch7 Magento_ElasticsearchCatalogPermissions Magento_InventoryElasticsearch
    ```
 
    ```bash
@@ -198,7 +158,7 @@ Para generar una clave de API y una clave privada, consulte [Conector de Commerc
 
 ### Desarrollador de Adobe Commerce o SI
 
-El desarrollador o SI configura el espacio de datos SaaS como se describe en la sección Servicios de comercio de la configuración. Commerce Services está disponible en la barra lateral de Configuración de administración cuando está instalado un módulo SaaS.
+El desarrollador o SI configura el espacio de datos SaaS como se describe en la sección Servicios de comercio de la configuración. En el *Administrador*, Commerce Services está disponible en la barra lateral de configuración cuando se instala un módulo SaaS.
 
 ## Sincronizar datos de catálogo {#synchronize-catalog-data}
 
@@ -239,7 +199,7 @@ Para actualizar [!DNL Live Search], ejecute lo siguiente desde la línea de coma
 composer update magento/live-search --with-dependencies
 ```
 
-Para actualizar a una versión principal como de 1.0 a 2.0, edite la raíz del proyecto [!DNL Composer] `.json` como se indica a continuación:
+Para actualizar a una versión principal como de 1.0.0 a 2.0.0, edite la raíz del proyecto [!DNL Composer] `.json` como se indica a continuación:
 
 1. Abra la raíz `composer.json` y busque `magento/live-search`.
 
@@ -267,7 +227,7 @@ Para desinstalar [!DNL Live Search], consulte [Desinstalar módulos](https://dev
 
 | Paquete | Descripción |
 |--- |--- |
-| `module-live-search` | Permite a los comerciantes configurar la configuración de búsqueda para facetas, sinónimos, reglas de consulta, etc., y proporciona acceso a un área de reproducción de GraphQL de solo lectura para probar consultas desde el administrador. |
+| `module-live-search` | Permite a los comerciantes configurar las opciones de búsqueda para facetas, sinónimos, reglas de consulta, etc., y proporciona acceso a un área de reproducción de GraphQL de solo lectura para probar consultas desde la *Administrador*. |
 | `module-live-search-adapter` | Envía las solicitudes de búsqueda desde la tienda hasta el [!DNL Live Search] y procesa los resultados en la tienda. <br />- Exploración de categorías: Enruta solicitudes desde la tienda [navegación superior](https://docs.magento.com/user-guide/catalog/navigation-top.html) al servicio de búsqueda.<br />- Búsqueda global: envía solicitudes desde la [búsqueda rápida](https://docs.magento.com/user-guide/catalog/search-quick.html) en la parte superior derecha de la tienda, a la [!DNL Live Search] servicio. |
 | `module-live-search-storefront-popover` | Una ventana emergente de &quot;búsqueda a medida que escribe&quot; reemplaza a la búsqueda rápida estándar y devuelve sugerencias de productos dinámicas y miniaturas de los principales resultados de búsqueda. |
 

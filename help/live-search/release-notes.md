@@ -2,9 +2,9 @@
 title: Notas de la versión de Live Search
 description: La información de la última versión de Live Search de Adobe Commerce.
 exl-id: 2a581e43-35f5-48ce-9752-844430ccdebf
-source-git-commit: 19f0c987ab6b43b6fac1cad266b5fd47a7168e73
+source-git-commit: 8fea8145e624b57278b9373246e8c4249472a03d
 workflow-type: tm+mt
-source-wordcount: '538'
+source-wordcount: '653'
 ht-degree: 1%
 
 ---
@@ -16,6 +16,19 @@ Estas notas de la versión describen las versiones más recientes de [!DNL Live 
 * ![Nuevo](../assets/new.svg) - Nuevas funciones
 * ![Corrección](../assets/fix.svg) - Correcciones y mejoras
 * ![Error](../assets/bug.svg) - Problemas conocidos
+
+## [!DNL Live Search] 2,0
+
+* Compatible con Adobe Commerce (EE): 2.4.x
+* Compatible con Adobe Commerce para Cloud (ECE): 2.4.x
+* Estabilidad: Estable
+
+* ![Nuevo](../assets/new.svg) - El número de líneas disponibles en la variable [ventana emergente de tienda](quick-tour.md) se puede configurar desde el *Administrador*.
+* ![Nuevo](../assets/new.svg) - Beta [PWA](https://developer.adobe.com/commerce/pwa-studio/) compatibilidad con Live Search.
+* ![Nuevo](../assets/new.svg) - El proceso de instalación de Live Search se actualiza con cambios de proceso avanzados.
+* ![Corrección](../assets/fix.svg) - [Búsqueda avanzada](https://docs.magento.com/user-guide/catalog/search-advanced.html) vínculo eliminado del pie de página de la tienda.
+* ![Error](../assets/bug.svg) - Los siguientes atributos de producto no son compatibles con [API de Magento GraphQL](https://devdocs.magento.com/guides/v2.4/graphql) cuando se utiliza en relación con la versión beta de PWA: `description`, `name`, `short_description`
+* ![Error](../assets/bug.svg) - La versión beta de PWA para Live Search no es compatible [gestión de eventos](https://devdocs.magento.com/shared-services/storefront-events-sdk.html).
 
 ## [!DNL Live Search] 1.3.1
 
@@ -47,7 +60,7 @@ Estas notas de la versión describen las versiones más recientes de [!DNL Live 
 * Estabilidad: Estable
 
 * ![Nuevo](../assets/new.svg) - Tienda [pover](storefront-popover.md) muestra productos sugeridos e imágenes en miniatura de los principales resultados de búsqueda como consultas de tipo comprador en el cuadro Buscar .
-* ![Nuevo](../assets/new.svg) - La sesión de administración de comercio permanece abierta durante largos períodos de inactividad del teclado
+* ![Nuevo](../assets/new.svg) - Comercio *Administrador* la sesión permanece abierta durante largos periodos de inactividad del teclado
 * ![Nuevo](../assets/new.svg) - [!DNL Live Search] se activa automáticamente después de la incorporación
 * ![Corrección](../assets/fix.svg) - El tiempo de indexación inicial es inferior a una hora
 * ![Corrección](../assets/fix.svg) - Actualizaciones incrementales del producto casi en tiempo real (después de la instalación y configuración)

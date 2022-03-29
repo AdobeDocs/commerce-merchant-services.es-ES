@@ -3,20 +3,22 @@ user-guide-title: Guía de búsqueda en directo
 user-guide-description: Esta guía proporciona instrucciones detalladas sobre el uso de la búsqueda activa desde Adobe Commerce.
 breadcrumb-title: Guía de búsqueda en directo
 hide: true
-source-git-commit: b4310f95a038022e377158bca77f5fa9eaf05078
+source-git-commit: 2e375aac4edb1f5d8e57096d8b399801f3a3e5f3
 workflow-type: tm+mt
-source-wordcount: '82'
+source-wordcount: '90'
 ht-degree: 2%
 
 ---
 
 # Búsqueda activa de comercio {#live-search}
 
-- [Guía de búsqueda en directo](overview.md)
-- Introducción {#getting-started}
-   - [Instalar](install.md)
-   - [Notas de la versión](release-notes.md)
-- Tienda de búsqueda en directo{#live-search-storefront}
+- [Información general de guía](guide-overview.md)
+- [Introducción a Live Search](overview.md)
+- [Notas de la versión](release-notes.md)
+- Búsqueda en directo integrada {#onboard}
+   - [Información general sobre la incorporación](onboarding-overview.md)
+   - [Instalar Live Search](install.md)
+- Tienda de búsqueda en directo {#live-search-storefront}
    - [Visita rápida](quick-tour.md)
    - [Entrega de tienda](storefront-popover.md)
    - [Diseño de elementos emergentes](storefront-popover-styling.md)
