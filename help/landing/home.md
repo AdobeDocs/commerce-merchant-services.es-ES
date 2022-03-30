@@ -5,9 +5,9 @@ seo-title: Services for Adobe Commerce
 seo-description: Access the product documentation for hosted services that help Adobe Commerce and Magento Open Source merchants support key components of their business.
 breadcrumb-title: Documentación
 exl-id: b3502f96-0809-442c-9208-abb3bc6e18ec
-source-git-commit: ddfcc8e195b1971b0f431205948faa6c6dd2c49f
+source-git-commit: 93f7157135ae3eb1adb880752585565b8bfd9fbb
 workflow-type: tm+mt
-source-wordcount: '314'
+source-wordcount: '309'
 ht-degree: 0%
 
 ---
@@ -69,8 +69,8 @@ Para los servicios que utilizan datos de catálogo (Product Recommendations y Li
 
 Los siguientes elementos son cambios recientes en la documentación:
 
-* Se ha actualizado el [!DNL Live Search] notas de la versión de [Versión 1.3.1](/help/live-search/release-notes.md).
+* Se ha actualizado el [!DNL Live Search] notas de la versión de [Versión 2.0](/help/live-search/release-notes.md).
 * Se ha añadido una sección (_Límites y umbrales_) a la variable [Instalar [!DNL Live Search]](/help/live-search/install.md) tema.
 * Se ha añadido [[!DNL Payment Services] guía](/help/payment-services/guide-overview.md) con la información más reciente de la nueva extensión de mercado y el servicio alojado v1.0.0.
 * La variable [!DNL Live Search] [Panel de informes de rendimiento](/help/live-search/performance.md) proporciona información sobre la eficacia de los términos de búsqueda que utilizan los compradores.
-* Se ha agregado compatibilidad con B2B en [[!DNL Product Recommendations]](https://docs.magento.com/user-guide/recommendations/overview.html).
+* Se ha agregado compatibilidad con B2B en [[!DNL Product Recommendations]](/help/product-recommendations/overview.md).
