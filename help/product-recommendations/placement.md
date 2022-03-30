@@ -1,9 +1,9 @@
 ---
 title: Colocación y etiquetas
 description: Conozca dónde puede colocar las recomendaciones en varias páginas del sitio y las sugerencias para las etiquetas más utilizadas para cada tipo de recomendación.
-source-git-commit: 4ec8acf6795cd451df48fbfba12e8635c180bf79
+source-git-commit: b3ac6ab9c5877b5c722cd08cc50d746595386ba9
 workflow-type: tm+mt
-source-wordcount: '553'
+source-wordcount: '556'
 ht-degree: 0%
 
 ---
@@ -12,7 +12,11 @@ ht-degree: 0%
 
 Con tantos tipos de recomendación entre los que elegir, ¿qué debería usar en cada página? Si no está seguro de dónde empezar, pruebe lo siguiente:
 
-|Página principal|`Recommended for you`| |Página del producto|`Viewed this, viewed that`| |Carro|`Bought this, bought that`|
+| Página | Tipo de recomendación |
+|---|---|
+| Página principal | `Recommended for you` |
+| Página de producto | `Viewed this, viewed that` |
+| Carro de compras | `Bought this, bought that` |
 
 Puede realizar un seguimiento de la variable [métricas](workspace.md) y ajustar si es necesario. Recuerde que la experimentación es clave.
 
