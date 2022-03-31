@@ -2,9 +2,9 @@
 title: Notas de la versión de Live Search
 description: La información de la última versión de Live Search de Adobe Commerce.
 exl-id: 2a581e43-35f5-48ce-9752-844430ccdebf
-source-git-commit: 8fea8145e624b57278b9373246e8c4249472a03d
+source-git-commit: c70d08b90d7584559fd69cdeece0220015ae8523
 workflow-type: tm+mt
-source-wordcount: '653'
+source-wordcount: '648'
 ht-degree: 1%
 
 ---
@@ -46,7 +46,7 @@ Estas notas de la versión describen las versiones más recientes de [!DNL Live 
 * Compatible con Adobe Commerce para Cloud (ECE): 2.4.x
 * Estabilidad: Estable
 
-* ![Nuevo](../assets/new.svg) - [Rendimiento](https://docs.magento.com/user-guide/live-search/performance.html) tablero de informes proporciona información sobre los términos de búsqueda que utilizan los compradores.
+* ![Nuevo](../assets/new.svg) - [Rendimiento](performance.md) tablero de informes proporciona información sobre los términos de búsqueda que utilizan los compradores.
 * ![Nuevo](../assets/new.svg) - [!DNL Live Search] [SDK de eventos de tienda](https://devdocs.magento.com/shared-services/storefront-events-sdk.html) proporciona acceso a una capa de datos común con servicios de publicación de eventos y suscripción, y métricas.
 * ![Corrección](../assets/fix.svg) - El [Entrega de tienda](https://devdocs.magento.com/live-search/storefront-popover.html) tiene un nuevo `active` para la `.search-autocomplete` contenedor que controla la visibilidad.
 * ![Corrección](../assets/fix.svg) - En la tienda, el [Términos de búsqueda](https://docs.magento.com/user-guide/marketing/search-terms-popular.html) el vínculo de pie de página se elimina y su caché se deshabilita para [!DNL Live Search] instalaciones.

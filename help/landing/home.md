@@ -5,10 +5,10 @@ seo-title: Services for Adobe Commerce
 seo-description: Access the product documentation for hosted services that help Adobe Commerce and Magento Open Source merchants support key components of their business.
 breadcrumb-title: Documentación
 exl-id: b3502f96-0809-442c-9208-abb3bc6e18ec
-source-git-commit: 93f7157135ae3eb1adb880752585565b8bfd9fbb
+source-git-commit: c70d08b90d7584559fd69cdeece0220015ae8523
 workflow-type: tm+mt
-source-wordcount: '309'
-ht-degree: 0%
+source-wordcount: '299'
+ht-degree: 1%
 
 ---
 
@@ -59,11 +59,11 @@ Adobe proporciona una colección de servicios alojados para ayudar a los comerci
 
 ## Conectarse a los servicios
 
-La variable [Conector de Commerce Services](https://docs.magento.com/user-guide/system/saas.html) proporciona la integración para la instancia de Adobe Commerce o Magento Open Source mediante una clave de API y una clave privada. Para los servicios de datos (solo Adobe Commerce), también puede especificar el espacio de datos en la configuración.
+La variable [Conector de Commerce Services](saas.md) proporciona la integración para la instancia de Adobe Commerce o Magento Open Source mediante una clave de API y una clave privada. Para los servicios de datos (solo Adobe Commerce), también puede especificar el espacio de datos en la configuración.
 
 ## Sincronización de catálogos
 
-Para los servicios que utilizan datos de catálogo (Product Recommendations y Live Search), la variable [Sincronización del catálogo](https://docs.magento.com/user-guide/system/catalog-sync.html) procesar exporta los datos de los productos del servidor de Commerce a Commerce Services de forma continua para mantener los servicios actualizados.
+Para los servicios que utilizan datos de catálogo (Product Recommendations y Live Search), la variable [Sincronización del catálogo](catalog-sync.md) procesar exporta los datos de los productos del servidor de Commerce a Commerce Services de forma continua para mantener los servicios actualizados.
 
 ## Novedades
 

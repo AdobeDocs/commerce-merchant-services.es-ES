@@ -2,9 +2,9 @@
 title: Instalar Live Search
 description: Obtenga información sobre cómo instalar, actualizar y desinstalar Live Search de Adobe Commerce.
 exl-id: aa251bb0-d52c-4cff-bccb-76a08ae2a3b2
-source-git-commit: b6aca1b78fae6d8c43ca47307aa1c63dbdc1c36a
+source-git-commit: c70d08b90d7584559fd69cdeece0220015ae8523
 workflow-type: tm+mt
-source-wordcount: '1223'
+source-wordcount: '1199'
 ht-degree: 0%
 
 ---
@@ -75,7 +75,7 @@ En este escenario, las operaciones de tienda se interrumpen mientras el [!DNL Li
 
 1. Configure las [Claves de API](#configure-api-keys) y compruebe que los datos del catálogo son [sincronizar](#synchronize-catalog-data) con [!DNL Live Search] servicios.
 
-1. Para que las facetas estén disponibles como filtros en la tienda, agregue la variable [facetas](https://docs.magento.com/user-guide/live-search/facets-add.html) necesita, según el [requisitos de facetas](https://docs.magento.com/user-guide/live-search/facets.html).
+1. Para que las facetas estén disponibles como filtros en la tienda, agregue la variable [facetas](facets-add.md) necesita, según el [requisitos de facetas](facets.md).
 
    Debe poder añadir facetas después de `cron` ejecuta las fuentes de atributos y exporta los metadatos de atributos.
 
@@ -123,7 +123,7 @@ En este escenario, [!DNL Elasticsearch] administra temporalmente las solicitudes
 
 1. Configure las [Claves de API](#configure-api-keys) y compruebe que los datos del catálogo son [sincronizar](#synchronize-catalog-data) con [!DNL Live Search] servicios.
 
-1. Para que las facetas estén disponibles como filtros en la tienda, agregue la variable [facetas](https://docs.magento.com/user-guide/live-search/facets-add.html) necesita, según el [requisitos de facetas](https://docs.magento.com/user-guide/live-search/facets.html).
+1. Para que las facetas estén disponibles como filtros en la tienda, agregue la variable [facetas](facets-add.md) necesita, según el [requisitos de facetas](facets.md).
 
    Debe poder añadir facetas después de `cron` ejecuta las fuentes de productos y atributos y exporta metadatos de atributos a [!DNL Live Search] servicios.
 
@@ -177,7 +177,7 @@ Para obtener más ayuda, consulte [[!DNL Live Search] catálogo no sincronizado]
 
 ### Actualizaciones de productos futuras
 
-Después de la sincronización inicial, las actualizaciones de productos incrementales pueden tardar hasta quince minutos en estar disponibles para la búsqueda en tiendas. Para obtener más información, vaya a [Actualizaciones de productos de transmisión](https://devdocs.magento.com/live-search/indexing.html).
+Después de la sincronización inicial, las actualizaciones de productos incrementales pueden tardar hasta quince minutos en estar disponibles para la búsqueda en tiendas. Para obtener más información, vaya a [Actualizaciones de productos de transmisión](indexing.md).
 
 ## Probar la conexión {#test-connection}
 
