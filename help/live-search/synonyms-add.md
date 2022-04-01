@@ -2,9 +2,9 @@
 title: Agregar sinónimos
 description: Agregue sinónimos de búsqueda activa para mejorar la respuesta a las solicitudes de búsqueda.
 exl-id: 6c277d88-cb22-4174-abda-6d6bb65fe3be
-source-git-commit: 19f0c987ab6b43b6fac1cad266b5fd47a7168e73
+source-git-commit: 61d50ec07e7c8ced1696f4169a90302cca4d4f96
 workflow-type: tm+mt
-source-wordcount: '394'
+source-wordcount: '393'
 ht-degree: 0%
 
 ---
@@ -63,8 +63,8 @@ El conjunto de sinónimos aparece en la lista con una flecha unidireccional que 
 
 ## Paso 3: Publicar cambios
 
-Cuando se hayan completado los sinónimos, haga clic en **Publicar cambios**.
-Las actualizaciones pueden tardar hasta dos horas en estar disponibles en la tienda.
+1. Cuando se hayan completado los sinónimos, haga clic en **Publicar cambios**.
+1. Espere hasta dos horas para que las actualizaciones estén disponibles en la tienda.
 
 ![Publicar cambios](assets/synonym-publish.png)
 

@@ -2,9 +2,9 @@
 title: Espacio de trabajo de reglas
 description: Aprenda a navegar por el espacio de trabajo de reglas de Live Search.
 exl-id: a52839fb-2264-4443-83c3-9eaa2ccb6996
-source-git-commit: 19f0c987ab6b43b6fac1cad266b5fd47a7168e73
+source-git-commit: 61d50ec07e7c8ced1696f4169a90302cca4d4f96
 workflow-type: tm+mt
-source-wordcount: '588'
+source-wordcount: '585'
 ht-degree: 0%
 
 ---
@@ -91,7 +91,7 @@ Puede realizar cualquiera de las siguientes acciones desde el panel Detalles de 
 
 | Control | Descripción |
 |--- |--- |
-| Agregar regla | Abre el [editor de reglas]({% vínculo live-search/rules-add.md %}). |
+| Agregar regla | Abre el [editor de reglas](rules-add.md). |
 | Estado | Filtra la lista de reglas por estado. Opciones: Todos, Activo, Inactivo, Programado |
 | ![Selector de columnas](assets/btn-show-hide-columns.png) | Especifica las columnas visibles en la cuadrícula. Opciones: Última actualización, Fecha de inicio, Fecha de finalización, Estado |
 | Buscar | Busca una regla con nombre completo o coincidencia parcial. |

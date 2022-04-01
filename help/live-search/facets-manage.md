@@ -2,7 +2,7 @@
 title: Administrar facetas
 description: Aprenda a administrar las facetas de Live Search existentes.
 exl-id: 1d51a36a-20d6-46b6-b379-11e46c8824a0
-source-git-commit: 19f0c987ab6b43b6fac1cad266b5fd47a7168e73
+source-git-commit: 61d50ec07e7c8ced1696f4169a90302cca4d4f96
 workflow-type: tm+mt
 source-wordcount: '442'
 ht-degree: 0%
@@ -56,19 +56,19 @@ Los cambios no aparecerán en la tienda hasta que se publiquen.
 
 El pin cambia de color cuando se hace clic y se utiliza para mover la faceta a la variable *Facetas fijadas* o *Facetas dinámicas* para obtener más información.
 
-1. Para fijar una faceta en la parte superior del *Filtros* , busque la faceta en la *Facetas dinámicas* y haga clic en el pin gris (![Selector de clavijas](assets/btn-pin-gray.png).
+1. Para fijar una faceta en la parte superior del *Filtros* , busque la faceta en la *Facetas dinámicas* y haga clic en el pin gris (![Selector de clavijas](assets/btn-pin-gray.png)).
 El pasador se vuelve azul y la faceta se mueve a la *Facetas fijadas* para obtener más información.
-1. Para desanclar una faceta, busque la faceta en la *Facetas fijadas* y haga clic en el pin azul (![Selector de clavijas](assets/btn-pin-blue.png).
+1. Para desanclar una faceta, busque la faceta en la *Facetas fijadas* y haga clic en el pin azul (![Selector de clavijas](assets/btn-pin-blue.png)).
 El pasador se vuelve gris y la faceta se mueve a la *Facetas dinámicas* para obtener más información.
 
    ![Facetas fijadas y dinámicas](assets/facets-pinned-unpinned.png)
 
 ## Mover faceta fija
 
-El orden de las facetas fijadas se puede cambiar moviendo la fila a una posición diferente. Las facetas fijadas tienen un *Mover* icono (![Mover selector](assets/btn-move.png) al principio de la fila. A diferencia de las facetas fijadas, las facetas dinámicas no se pueden mover.
+El orden de las facetas fijadas se puede cambiar moviendo la fila a una posición diferente. Las facetas fijadas tienen un *Mover* icono (![Mover selector](assets/btn-move.png)) al principio de la fila. A diferencia de las facetas fijadas, las facetas dinámicas no se pueden mover.
 
 1. Busque la faceta en la variable *Facetas fijadas* de la lista.
-1. Utilice la variable **Mover** (![Mover selector](assets/btn-move.png) para arrastrar la fila a una nueva posición en la *Facetas fijadas* para obtener más información.
+1. Utilice la variable **Mover** (![Mover selector](assets/btn-move.png)) para arrastrar la fila a una nueva posición en la *Facetas fijadas* para obtener más información.
 Una vez publicados los cambios, las facetas reordenadas aparecen en la tienda *Filtros* lista.
 
 ## Eliminar faceta

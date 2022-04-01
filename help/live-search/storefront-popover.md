@@ -2,9 +2,9 @@
 title: Entrega de tienda
 description: La ventana emergente de tienda de Live Search devuelve dinámicamente los productos sugeridos y las miniaturas.
 exl-id: 88fdc3ed-b606-40de-94b7-435be09c4072
-source-git-commit: 10cea4389d685ce0e26b083872b13a1cd19ba2af
+source-git-commit: 61d50ec07e7c8ced1696f4169a90302cca4d4f96
 workflow-type: tm+mt
-source-wordcount: '381'
+source-wordcount: '379'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ When [!DNL Live Search] es [instalado](install.md), aparece una ventana emergent
 
 >[!NOTE]
 >
->La variable [!DNL Live Search] la ventana emergente de tienda solo está disponible para las tiendas que usan la variable *Luma* o un tema personalizado basado en *Luma*. La variable *Luma* se incluye en el [!DNL Commerce] datos de ejemplo. La ventana emergente no admite la variable *En blanco* tema. Consulte [Trabajo con un tema modificado](#working-with-modified-theme) para obtener más información.
+>La variable [!DNL Live Search] la ventana emergente de tienda solo está disponible para las tiendas que usan la variable *Luma* o un tema personalizado basado en *Luma*. La variable *Luma* se incluye en el [!DNL Commerce] datos de ejemplo. La ventana emergente no admite la variable *En blanco* tema. Consulte [Diseño de elementos emergentes](storefront-popover-styling.md) para obtener más información.
 
 ## Atributos que se pueden buscar
 

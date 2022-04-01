@@ -2,9 +2,9 @@
 title: Agregar reglas
 description: Aprenda a crear reglas de Live Search.
 exl-id: c6b92ef5-3b08-47f9-8412-955a9c95a9ee
-source-git-commit: 19f0c987ab6b43b6fac1cad266b5fd47a7168e73
+source-git-commit: 61d50ec07e7c8ced1696f4169a90302cca4d4f96
 workflow-type: tm+mt
-source-wordcount: '1283'
+source-wordcount: '1284'
 ht-degree: 0%
 
 ---
@@ -66,7 +66,8 @@ Una regla puede tener hasta 10 condiciones. El operador lógico que une dos cond
    * Todo : todos los operadores lógicos de la regla se establecen en `AND` y los resultados aparecen en el panel de prueba.
 
    La variable *Coincidencia* determina el operador lógico que se utiliza para unir varias condiciones. Cambio de la variable *Coincidencia* cambia todos los operadores lógicos de la regla. No es posible combinar `AND` y `OR` en la misma regla.
-En este ejemplo, en lugar de buscar &quot;pantalones de yoga&quot;, hay dos consultas separadas que buscan &quot;yoga&quot; o &quot;pantalones&quot;. Esta regla es menos específica y se activará con mayor frecuencia en la tienda que en la otra.
+
+   En este ejemplo, en lugar de buscar &quot;pantalones de yoga&quot;, hay dos consultas separadas que buscan &quot;yoga&quot; o &quot;pantalones&quot;. Esta regla es menos específica y se activará con mayor frecuencia en la tienda que en la otra.
 
    ![Reglas - Coincidencia](assets/rules-match.png)
 
@@ -77,7 +78,8 @@ En este ejemplo, en lugar de buscar &quot;pantalones de yoga&quot;, hay dos cons
 Los eventos son acciones que cambian los resultados de la búsqueda cuando se cumplen las condiciones. Una sola regla puede tener hasta 25 eventos.
 
 1. En *Eventos*, elija el **Evento** que se produzca cuando se cumplan las condiciones asociadas.
-Por ejemplo, elija `Pin a product`. A continuación, introduzca el nombre del producto que desea fijar. Si necesita ayuda, puede encontrar el nombre en el panel de prueba.
+
+   Por ejemplo, elija `Pin a product`. A continuación, introduzca el nombre del producto que desea fijar. Si necesita ayuda, puede encontrar el nombre en el panel de prueba.
 A continuación, introduzca la variable *Posición* donde aparecerá el producto anclado. El producto se mueve a la nueva posición del panel de prueba y se marca con una *Anclado* distintivo de vista previa.
 
    ![Reglas - Coincidencia](assets/rule-event-pin-product.png)
@@ -108,8 +110,11 @@ La información que se introduce aquí aparece en la [Detalles de regla](rules-w
 
 ## Paso 6: Guardar y publicar
 
-Cuando termine, haga clic en **Guardar y publicar**.
-La regla se agrega a la lista en el espacio de trabajo de reglas. Aunque las reglas activas entran en vigor inmediatamente, es posible que los resultados de la consulta en caché tarden hasta quince minutos en actualizarse en la tienda.
+1. Cuando termine, haga clic en **Guardar y publicar**.
+
+   La regla se agrega a la lista en el espacio de trabajo de reglas.
+
+1. Aunque las reglas activas entren en vigor inmediatamente, es posible que tenga que esperar hasta 15 minutos para que los resultados de la consulta en caché en la tienda se actualicen.
 
 ## Descripciones de campos
 

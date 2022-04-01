@@ -2,7 +2,7 @@
 title: Visita rápida
 description: Haga un rápido recorrido por Live Search desde la tienda.
 exl-id: bcb19506-6617-4c8a-83df-9d961f81e9e8
-source-git-commit: 19f0c987ab6b43b6fac1cad266b5fd47a7168e73
+source-git-commit: 61d50ec07e7c8ced1696f4169a90302cca4d4f96
 workflow-type: tm+mt
 source-wordcount: '308'
 ht-degree: 0%
@@ -16,6 +16,7 @@ Centrándose en la velocidad, la relevancia y la facilidad de uso, [!DNL Live Se
 ## Buscar mientras escribe
 
 [!DNL Live Search] responde con productos sugeridos y una imagen en miniatura de los resultados de búsqueda principales en un [pover](storefront-popover.md) como consultas de tipo de comprador en la variable [Buscar](https://docs.magento.com/user-guide/catalog/search-quick.html) en la ventana La variable [detalle del producto](https://docs.magento.com/user-guide/quick-tour/product-page.html) aparece cuando los compradores hacen clic en un producto sugerido o destacado. A _Ver todo_ en el pie de página de la ventana emergente se muestra la página de resultados de la búsqueda.
+
 [!DNL Live Search] devuelve resultados de &quot;búsqueda a medida que escribe&quot; para una consulta de dos o más caracteres. Para una coincidencia parcial, el número máximo de caracteres por palabra es de 20. El número de caracteres de la consulta no se puede configurar. En la ventana emergente se incluyen los siguientes campos: `name`, `sku`y `category_ids`.
 
 ![Tienda de ejemplo: busque mientras escribe](assets/storefront-search-as-you-type.png)

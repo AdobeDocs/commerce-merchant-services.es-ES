@@ -2,7 +2,7 @@
 title: Agregar facetas
 description: Aprenda a añadir atributos de producto filtrables como facetas de búsqueda activa.
 exl-id: 0df6c21b-55b3-41ce-94f4-f70b70ffb84e
-source-git-commit: 19f0c987ab6b43b6fac1cad266b5fd47a7168e73
+source-git-commit: 61d50ec07e7c8ced1696f4169a90302cca4d4f96
 workflow-type: tm+mt
 source-wordcount: '649'
 ht-degree: 0%
@@ -42,7 +42,7 @@ La faceta se agrega a la parte inferior del *Facetas dinámicas* y *Publicar cam
 
 ## Paso 2: Editar propiedades de faceta (opcional)
 
-1. Para editar las propiedades de faceta, haga clic en **Más** (![Más selector](assets/btn-more.png) en la columna de la derecha.
+1. Para editar las propiedades de faceta, haga clic en **Más** (![Más selector](assets/btn-more.png)) en la columna de la derecha.
 1. En el menú , haga clic en **Editar**. A continuación, ajuste las siguientes propiedades según sea necesario.
 
    * Etiqueta - ([Sin encabezado](facets-type.md) solo) Introduzca la etiqueta de faceta que desea utilizar.
