@@ -2,9 +2,9 @@
 title: Habilitar [!DNL Payment Services] para producción
 description: Complete el proceso de incorporación habilitando [!DNL Payment Services] para producción.
 exl-id: 3b1269e8-127b-47f8-9738-9722a5737c63
-source-git-commit: fd818dadbaa2a58efd7313ce888c7dda27d25f14
+source-git-commit: bfb2b6632fe494d6e392c214f5e3f5a11930c0b2
 workflow-type: tm+mt
-source-wordcount: '658'
+source-wordcount: '692'
 ht-degree: 0%
 
 ---
@@ -68,7 +68,17 @@ Consulte [Configurar servicios de pago](configure-admin.md) para obtener más in
 
 ## Solicitar el derecho de pago del Adobe
 
-Para habilitar la incorporación activa, debe solicitar el derecho de pago de [Adobe](https://business.adobe.com/resources/payment-services.html).
+Para habilitar la incorporación activa, debe solicitar el derecho de pago del Adobe:
+
+1. En el _Administrador_ barra lateral, vaya a **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**.
+1. Haga clic en **[!UICONTROL Get Live Payments]** en su [!DNL Payment Services] tablero.
+
+   ![Derechos de solicitud](assets/request-entitlements.png)
+
+1. Complete el formulario.
+1. Un miembro del equipo de ventas se pondrá en contacto con usted.
+
+También puede solicitar derechos de pago de Adobes a [business.adobe.com](https://business.adobe.com/resources/payment-services.html).
 
 >[!IMPORTANT]
 >

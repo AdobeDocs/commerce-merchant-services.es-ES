@@ -1,17 +1,17 @@
 ---
-title: Configurar en el administrador
-description: Después de la instalación, puede configurar [!DNL Payment Services] en el menú
+title: Configuración de servicios de pago heredados
+description: Después de la instalación, puede configurar [!DNL Payment Services] en Admin en la configuración de la tienda.
 role: Admin, User
 level: Intermediate
 exl-id: e1a3269d-bdf9-4b0f-972f-e8a0ef469503
-source-git-commit: fd818dadbaa2a58efd7313ce888c7dda27d25f14
+source-git-commit: bfb2b6632fe494d6e392c214f5e3f5a11930c0b2
 workflow-type: tm+mt
-source-wordcount: '645'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
 
-# Configurar en el administrador
+# Configuración de servicios de pago heredados
 
 Puede personalizar [!DNL Payment Services] a sus necesidades con opciones de configuración útiles en Administración.
 
@@ -79,7 +79,7 @@ La variable [!DNL PayPal Smart Buttons] las opciones de pago proporcionan un pro
 
 Consulte [Opciones de pago](payments-options.md#paypal-smart-buttons) para obtener más información.
 
-### Configurar los botones inteligentes de PayPal
+### Configurar [!DNL PayPal Smart Buttons]
 
 Puede activar y configurar las opciones de pago de los botones inteligentes de PayPal en el Administrador:
 
@@ -93,7 +93,7 @@ Puede activar y configurar las opciones de pago de los botones inteligentes de P
 1. Para habilitar el modo de depuración, seleccione `Yes` para el **[!UICONTROL Debug Mode]** (`No` lo deshabilita).
 1. Para guardar los cambios, haga clic en **[!UICONTROL Save Config]** .
 
-#### Opciones de configuración
+### Opciones de configuración
 
 | Campo | Ámbito | Descripción |
 |---|---|---|
@@ -106,3 +106,15 @@ Puede activar y configurar las opciones de pago de los botones inteligentes de P
 | [!UICONTROL Show buttons on product detail page] | vista de tienda | Habilitar o deshabilitar [!DNL PayPal Smart Buttons] en la página de detalles del producto. Opciones: [!UICONTROL Yes] / [!UICONTROL No] |
 | [!UICONTROL Show buttons in mini cart preview] | vista de tienda | Habilitar o deshabilitar [!DNL PayPal Smart Buttons] en la vista previa de minicart. Opciones: [!UICONTROL Yes] / [!UICONTROL No] |
 | [!UICONTROL Show buttons on cart page] | vista de tienda | Habilitar o deshabilitar [!DNL PayPal Smart Buttons] en la página del carro de compras. Opciones: [!UICONTROL Yes] / [!UICONTROL No] |
+
+### [!DNL PayPal Smart Buttons] Opciones de estilo
+
+| Campo | [Ámbito]({% vínculo configuration/scope.md %}) | Descripción |
+|--- |--- |--- |
+| [!UICONTROL Layout] | Vista de la tienda | Defina el estilo de diseño de los botones inteligentes de Paypal. Opciones: [!UICONTROL Vertical] / [!UICONTROL Horizontal] |
+| [!UICONTROL Color] | Vista de la tienda | Defina el color de los botones inteligentes Paypal. Opciones: [!UICONTROL Blue] / [!UICONTROL Gold] / [!UICONTROL Silver] / [!UICONTROL White] / [!UICONTROL Black] |
+| [!UICONTROL Shape] | Vista de la tienda | Defina la forma de los botones inteligentes Paypal. Opciones: [!UICONTROL Rectangular] / [!UICONTROL Pill] |
+| [!UICONTROL Use Default Height] | Vista de la tienda | Define si los botones inteligentes de PayPal utilizan una altura predeterminada. Opciones: [!UICONTROL Yes] / [!UICONTROL No] |
+| [!UICONTROL Height] | Vista de la tienda | Defina la altura de los botones inteligentes de PayPal. Valor predeterminado: ninguno |
+| [!UICONTROL Label] | Vista de la tienda | Defina la etiqueta que aparece en los botones inteligentes de PayPal. Opciones: [!UICONTROL PayPal] / [!UICONTROL Checkout] / [!UICONTROL Buynow] / [!UICONTROL Pay] / [!UICONTROL Installment] |
+| [!UICONTROL Tagline] | Vista de la tienda | Habilita el etiquetado. Opciones: [!UICONTROL Yes] / [!UICONTROL No] |
