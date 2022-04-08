@@ -2,9 +2,9 @@
 title: Prueba de la variable [!DNL Express Checkout] para la extensión de Adobe Commerce
 description: La prueba y validación garantizan que la variable [!DNL Express Checkout] funciona según lo esperado.
 exl-id: 308f39e1-e2f6-40d8-b876-0f9013effed3
-source-git-commit: d8302d2d652b4e2380cc862183e58cbd2cca831b
+source-git-commit: 1a7df2c5581ea6d590aa1a2f701b4428371d2299
 workflow-type: tm+mt
-source-wordcount: '478'
+source-wordcount: '476'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,7 @@ Prueba de la variable [!DNL Express Checkout] en un entorno sandbox es un paso d
 
 ### Uso de una cuenta de entorno limitado
 
-Al probar y validar el simulador de pruebas, debe utilizar un número de tarjeta de crédito falso y un [entorno limitado](https://merchant-sandbox.bolt.com/register){target=&quot;_blank&quot;} cuenta de comerciante en Bolt, para que no esté creando cargos reales en una cuenta de tarjeta de crédito existente.
+Al probar y validar el simulador de pruebas, debe utilizar un número de tarjeta de crédito falso y un [entorno limitado](https://merchant-sandbox.bolt.com/register){target=&quot;_blank&quot;} cuenta de comerciante en [!DNL Bolt], para que no esté creando cargos reales en una cuenta de tarjeta de crédito existente.
 
 ## Pruebas en producción
 
@@ -48,7 +48,7 @@ Complete un cierre de compra correcto desde la tienda siguiendo estos pasos:
 
 1. Vaya a su tienda y coloque los artículos deseados en su carro de compras.
 1. Continúe con el cierre de compra.
-1. Introduzca una dirección de correo electrónico asociada a una cuenta de Bolt cuando se le solicite.
+1. Introduzca una dirección de correo electrónico asociada a un [!DNL Bolt] Cuenta cuando se le pida.
 1. Introduzca la contraseña única (OTP) enviada a la dirección de correo electrónico de la cuenta.
 1. Seleccione el tablero de entorno:
 

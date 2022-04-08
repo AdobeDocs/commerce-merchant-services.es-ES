@@ -2,9 +2,9 @@
 title: Resolución de problemas para la [!DNL Express Checkout]
 description: Solucionar errores, problemas conocidos que puede experimentar al usar la variable [!DNL Express Checkout] para la extensión de Adobe Commerce.
 exl-id: a379ff81-360d-4cb9-a123-47e8cbc0cdbd
-source-git-commit: 163dd5260908b4ea3a8bfbcfdb834531d1603734
+source-git-commit: 1a7df2c5581ea6d590aa1a2f701b4428371d2299
 workflow-type: tm+mt
-source-wordcount: '472'
+source-wordcount: '488'
 ht-degree: 0%
 
 ---
@@ -95,9 +95,9 @@ Adobe Commerce normalmente se puede configurar para admitir hasta 20 líneas de 
 
 Hay un problema conocido para la variable [!DNL Express Checkout].
 
-Al habilitar la variable `Enable terms and conditions` casilla de verificación y [iniciar sesión con una cuenta de Bolt](https://help.bolt.com/shoppers/guides/checkout/log-in/), la casilla de verificación no se muestra.
+Al habilitar la variable `Enable terms and conditions` en el Administrador e inicie sesión con un [!DNL Bolt] cuenta, la variable `Enable terms and conditions` no se muestra durante el cierre de compra. Consulte la [iniciar sesión](https://help.bolt.com/shoppers/account/login-dashboard/) [!DNL Bolt] para obtener más información.
 
-Consulte [términos y condiciones](https://docs.magento.com/user-guide/sales/terms-and-conditions.html) para obtener más información.
+Consulte [términos y condiciones](https://docs.magento.com/user-guide/sales/terms-and-conditions.html) para obtener más información sobre la configuración de administración.
 
 ## Comportamiento inesperado cuando `Display Billing Address On` está configurado como `payment page`
 
@@ -105,7 +105,7 @@ Hay un problema conocido para la variable [!DNL Express Checkout].
 
 Si configura la variable `Display Billing Address On` parámetro a `payment page` y [iniciar sesión con una cuenta de Bolt](https://help.bolt.com/shoppers/guides/checkout/log-in/) al marcar la variable `My billing and shipping address are the same` casilla de verificación:
 
-![Misma dirección](../assets/checked-address.png)
+![Misma dirección](assets/checked-address.png)
 
 Se muestra el botón de radio `use existing card`.
 
@@ -119,4 +119,4 @@ Consulte la [traducción y localización](https://devdocs.magento.com/guides/v2.
 
 ## Obtener ayuda
 
-Póngase en contacto con el servicio de asistencia técnica de Adobe Commerce para obtener más ayuda o formular preguntas.
+Póngase en contacto con el servicio de asistencia técnica de Adobe Commerce para obtener ayuda.

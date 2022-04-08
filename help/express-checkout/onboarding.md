@@ -2,7 +2,7 @@
 title: Incorpore el [!DNL Express Checkout] para la extensión de Adobe Commerce
 description: Aprenda a [!DNL Express Checkout] podría beneficiar a su instancia de Adobe Commerce y cómo incorporar y configurar correctamente la extensión.
 exl-id: 8caf746c-e31b-4331-8b0d-ea0f1e545bdd
-source-git-commit: d8302d2d652b4e2380cc862183e58cbd2cca831b
+source-git-commit: 1a7df2c5581ea6d590aa1a2f701b4428371d2299
 workflow-type: tm+mt
 source-wordcount: '603'
 ht-degree: 0%
@@ -18,24 +18,24 @@ ht-degree: 0%
 Para empezar a usar la variable [!DNL Express Checkout] para la extensión de Adobe Commerce, debe completar algunos pasos de incorporación para conectar su instancia con nuestra funcionalidad de cierre de compra.
 
 1. [Obtener extensión](#get-extension).
-1. [Crear una cuenta de comercialización de producción o de simulación de pruebas con Bolt](#create-account-with-bolt). Proporcione toda la información necesaria para verificar su identidad.
-1. [Proporcione la clave de API y la clave de publicación únicas generadas en Bolt](#obtain-api-credentials).
-1. [Configurar un proveedor de pagos en la cuenta de Bolt](#configure-payment-providers).
+1. [Cree una cuenta de comercialización de producción o de simulación de pruebas con [!DNL Bolt]](#create-account-with-bolt). Proporcione toda la información necesaria para verificar su identidad.
+1. [Proporcione la clave de API y la clave de publicación únicas generadas en [!DNL Bolt]](#obtain-api-credentials).
+1. [Configure un proveedor de pagos en la variable [!DNL Bolt] account](#configure-payment-providers).
 1. [Establezca Habilitar menú desplegable en Sí](#enable-extension) para activar la extensión.
 1. [Definir la configuración del servicio](#complete-admin-configuration) para configurar la variable [!DNL Express Checkout] extensión.
 1. [Haga clic en el botón Guardar configuración .](#enable-live-express-checkout) para habilitar la extensión.
 
 >[!NOTE]
 >
-> Si no configura sus cuentas de Bolt (paso 2 anterior), no puede configurar los entornos de producción o de simulación de pruebas.
+> Si no configura su [!DNL Bolt] (paso 2 anterior) no puede configurar entornos de simulación de pruebas o de producción.
 
 ## Requisitos previos
 
-Para usar la variable [!DNL Express Checkout], debe tener lo siguiente disponible para el tornillo:
+Para usar la variable [!DNL Express Checkout], debe tener lo siguiente disponible para [!DNL Bolt]:
 
 - Proveedores de pagos admitidos
-- Cuenta de comercialización y producción en Bolt
-- API y clave de publicación generadas en Bolt
+- Cuenta de comercialización y producción en [!DNL Bolt]
+- API y clave de publicación generadas en [!DNL Bolt]
 
 Consulte la [requisitos previos](../express-checkout/prerequisites.md) para obtener más información.
 
@@ -47,18 +47,18 @@ Consulte la [instalar](../express-checkout/install.md) para obtener información
 
 ## Crear cuenta con Bolt
 
-Antes de configurar la variable [!DNL Express Checkout] en el administrador de Adobe Commerce, es necesario crear un [producción](https://merchant.bolt.com/register){target=&quot;_blank&quot;} y [entorno limitado](https://merchant-sandbox.bolt.com/register){target=&quot;_blank&quot;} cuenta de comerciante en Bolt. Proporcione todos los detalles necesarios para crear una cuenta en Bolt.
+Antes de configurar la variable [!DNL Express Checkout] en el administrador de Adobe Commerce, es necesario crear un [entorno limitado](https://merchant-sandbox.bolt.com/register){target=&quot;_blank&quot;} y [producción](https://merchant.bolt.com/register){target=&quot;_blank&quot;} cuenta de comerciante en [!DNL Bolt]. Proporcione todos los detalles necesarios para crear una cuenta en [!DNL Bolt].
 
 Consulte la [probar y validar](../express-checkout/testing.md) para obtener más información.
 
 ## Obtener credenciales de API
 
-Para usar la variable [!DNL Express Checkout] necesita teclas únicas de perno. Obtenga las siguientes claves de API navegando hasta **Desarrolladores** > **API** > **Claves** en el **Panel de comercialización del perno**.
+Para usar la variable [!DNL Express Checkout] necesita [!DNL Bolt] claves únicas. Obtenga las siguientes claves de API navegando hasta **Desarrolladores** > **API** > **Claves** en el **Panel de comercialización del perno**.
 
-- Clave de API: Clave privada utilizada por el back end para interactuar con las API de Bolt.
-- Clave pública: Clave utilizada por el front-end para interactuar con las API de Bolt.
+- Clave de API: Una clave privada utilizada por el back end para interactuar con [!DNL Bolt] API.
+- Clave pública: Una clave utilizada por el front-end para interactuar con [!DNL Bolt] API.
 
-Consulte la [Detalles del entorno de tornillos](https://help.bolt.com/developers/references/environment-details/#about-keys)página {target=&quot;_blank&quot;} para obtener más información sobre las claves API y Publicable para la [!DNL Express Checkout] extensión.
+Consulte la [[!DNL Bolt] detalles del entorno](https://help.bolt.com/developers/references/environment-details/#about-keys)página {target=&quot;_blank&quot;} para obtener más información sobre las claves API y Publicable para la [!DNL Express Checkout] extensión.
 
 >[!CAUTION]
 >
@@ -66,16 +66,20 @@ Consulte la [Detalles del entorno de tornillos](https://help.bolt.com/developers
 
 ## Configuración de proveedores de pagos
 
-Para conectar a su proveedor de servicios de pago, siga los pasos descritos en la sección [configuración del procesador](https://help.bolt.com/integrations/adobe-express-checkout/set-up/){target=&quot;_blank&quot;} página de Bolt para desarrolladores.
+Para conectar a su proveedor de servicios de pago, siga los pasos descritos en la sección [configuración del procesador](https://help.bolt.com/integrations/adobe-express-checkout/set-up/){target=&quot;_blank&quot;} desarrollador [!DNL Bolt] página.
 
 ## Habilitar extensión
 
 1. En el _Administrador_ barra lateral, vaya a **Almacenes** > **Configuración** > **Cierre de compra** para acceder a la página de configuración de administración de cierre de compra .
 
-![Cierre de compra exprés](../assets/admin-view.png)
+   ![Cierre de compra exprés](assets/admin-view.png)
 
 1. En el [!DNL Express Checkout] vista, conjunto **Habilitar** a `Yes`.
-1. Seleccione el método (Producción o Simulador para pruebas) que desea utilizar.
+1. Seleccione el método (Simulador para pruebas o Producción) que desea utilizar.
+
+   - Simulador para pruebas y desarrollo
+   - Producción para procesar transacciones con el procesador de pagos activos
+
 1. Valide las credenciales después de proporcionar la API única y las claves editables.
 
 >[!CAUTION]
@@ -101,6 +105,6 @@ Para habilitar la variable [!DNL Express Checkout] para la extensión de Adobe C
 
 ## Obtener ayuda
 
-El proceso de incorporación está diseñado para guiarle por los pasos necesarios para configurar y habilitar todo [!DNL Express Checkout] funcionalidad. Póngase en contacto con el servicio de asistencia técnica de Adobe Commerce para obtener ayuda y formular preguntas.
+El proceso de incorporación está diseñado para guiarle por los pasos necesarios para configurar y habilitar todo [!DNL Express Checkout] funcionalidad. Póngase en contacto con el servicio de asistencia técnica de Adobe Commerce para obtener ayuda.
 
 Consulte la [probar y validar](../express-checkout/testing.md) para obtener más información.

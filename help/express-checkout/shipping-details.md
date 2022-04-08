@@ -1,18 +1,18 @@
 ---
-title: '[!DNL Express Checkout]'
-description: Overview of the checkout flow in Adobe Commerce.
+title: '"[!DNL Express Checkout] detalles de envío"'
+description: Información general sobre el flujo de detalles de envío en la variable [!DNL Express Checkout] para Adobe Commerce.
 exl-id: 60faef08-7083-4175-93f2-086aa54b1614
-source-git-commit: f52bd11e4872f4a1621382f5528e2e477b2e9e48
+source-git-commit: 1a7df2c5581ea6d590aa1a2f701b4428371d2299
 workflow-type: tm+mt
-source-wordcount: '70'
+source-wordcount: '62'
 ht-degree: 0%
 
 ---
 
-# [!DNL Express Checkout]
+# [!DNL Express Checkout] detalles de envío
 
 >[!IMPORTANT]
 >
-> This feature is for Early Adopter Program (EAP) users only and is not yet accessible for all customers. Currently limited to US customers. Contact Adobe Commerce Support for assistance and questions.
+> Esta función es para usuarios del Programa de Adoptadores Anticipados (EAP, por sus siglas en inglés) y aún no es accesible para todos los clientes. Actualmente está limitado a los clientes de EE. UU. Póngase en contacto con el servicio de asistencia técnica de Adobe Commerce para obtener ayuda y formular preguntas.
 
-[](https://help.bolt.com/shoppers/guides/checkout/update-shipping-address)
+Consulte la [información para desarrolladores](../express-checkout/developer.md) para obtener más información sobre los puntos de extensión al introducir los detalles de envío.

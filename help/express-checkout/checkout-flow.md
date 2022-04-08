@@ -2,9 +2,9 @@
 title: Flujo de cierre de compra
 description: Información general sobre [!DNL Express Checkout] en Adobe Commerce.
 exl-id: 82761627-a0d4-4cb0-aad1-9865fcb550d4
-source-git-commit: 163dd5260908b4ea3a8bfbcfdb834531d1603734
+source-git-commit: 1a7df2c5581ea6d590aa1a2f701b4428371d2299
 workflow-type: tm+mt
-source-wordcount: '602'
+source-wordcount: '574'
 ht-degree: 0%
 
 ---
@@ -22,11 +22,11 @@ Un éxito [!DNL Express Checkout] consiste en los siguientes pasos:
 1. Abra la tienda y añada artículos al carro de compras.
 1. Continúe con el cierre de compra.
 
-![Cierre de compra](../assets/proceed-checkout.png)
+![Cierre de compra](assets/proceed-checkout.png)
 
-1. Cuando se le solicite, introduzca una dirección de correo electrónico asociada a una cuenta de Bolt.
-1. Introduzca la contraseña única (OTP) enviada a la dirección de correo electrónico o el número de teléfono de esa cuenta de Bolt.
-1. Una vez que haya iniciado sesión con su cuenta de Bolt, los detalles de cierre de compra se rellenan automáticamente:
+1. Cuando se le solicite, introduzca una dirección de correo electrónico asociada a un [!DNL Bolt] cuenta.
+1. Introduzca la contraseña única (OTP) enviada a esa [!DNL Bolt] dirección de correo electrónico o número de teléfono de la cuenta.
+1. Una vez que haya iniciado sesión con su [!DNL Bolt] cuenta, los detalles de cierre de compra se rellenan automáticamente:
 
    - Información de envío
    - Método de pago
@@ -43,20 +43,20 @@ La variable [!DNL Express Checkout] es compatible con las opciones de cierre de 
 
 La variable [!DNL Express Checkout] permite varios casos de uso durante un flujo de cierre de compra:
 
-- Usuario invitado con una cuenta de Bolt registrada.
-- Usuario invitado con una nueva cuenta de Bolt.
-- Un usuario de Adobe Commerce existente con o sin una cuenta de Bolt registrada.
+- Usuario invitado con un registro [!DNL Bolt] cuenta.
+- Usuario invitado con un [!DNL Bolt] cuenta.
+- Un usuario de Adobe Commerce existente con o sin una cuenta registrada [!DNL Bolt] cuenta.
 
 ## Cierre de compra del usuario invitado: Funcionamiento
 
-La experiencia de cierre de compra de invitado es diferente a la experiencia de inicio de sesión. Cuando un comprador introduce una dirección de correo electrónico en el cierre de compra, la variable [!DNL Express Checkout] lo valida para encontrar una cuenta de Bolt existente.
+La experiencia de cierre de compra de invitado es diferente a la experiencia de inicio de sesión. Cuando un comprador introduce una dirección de correo electrónico en el cierre de compra, la variable [!DNL Express Checkout] lo valida para encontrar un [!DNL Bolt] cuenta.
 
-### Cuenta de Bolt registrada
+### Registrados [!DNL Bolt] account
 
-Si se encuentra una cuenta de Bolt, los compradores continúan con su [!DNL Express Checkout] experiencia de cierre de compra optimizada:
+Si [!DNL Bolt] se encuentra la cuenta, los compradores continúan con su [!DNL Express Checkout] experiencia de cierre de compra optimizada:
 
-1. Introduzca la contraseña única (OTP) enviada a la dirección de correo electrónico o móvil de esa cuenta de Bolt, según las preferencias del usuario en la cuenta de Bolt.
-1. Una vez que haya iniciado sesión con su cuenta de Bolt, rellenará automáticamente los detalles de cierre de compra:
+1. Introduzca la contraseña única (OTP) enviada a esa [!DNL Bolt] dirección de correo electrónico o móvil de la cuenta, según las preferencias del usuario en la [!DNL Bolt] cuenta.
+1. Una vez que haya iniciado sesión con su [!DNL Bolt] rellena automáticamente los detalles de cierre de compra:
 
    - Información de envío
    - Método de pago
@@ -67,16 +67,16 @@ Si se encuentra una cuenta de Bolt, los compradores continúan con su [!DNL Expr
 >
 > El usuario invitado realiza el pedido y puede registrarse en Adobe Commerce.
 
-### Nueva cuenta de perno
+### Nuevo [!DNL Bolt] account
 
-Si no se encuentra ninguna cuenta de Bolt, los compradores continúan con su cierre de compra predeterminado de Adobe Commerce y el comprador proporciona todos los detalles necesarios para realizar el pedido:
+Si no [!DNL Bolt] se encuentra la cuenta, los compradores continúan con su cierre de compra predeterminado y el comprador proporciona todos los detalles necesarios para realizar el pedido:
 
 - Información de envío y facturación
 - Método de envío
 - Revisar método de pago
-- Aparece una casilla de verificación para registrarse en Bolt para realizar cierres de compra más rápidos antes de realizar el pedido. Pueden aceptar los términos y condiciones para crear su cuenta de Bolt.
+- Aparece una casilla de verificación para registrarse en [!DNL Bolt] para cierres de compra más rápidos antes de realizar el pedido. Pueden aceptar los términos y condiciones para crear sus [!DNL Bolt] cuenta.
 
-   ![Recordar perno](../assets/checked-bolt.png)
+   ![Recordar [!DNL Bolt]](assets/checked-bolt.png)
 
 - El usuario invitado realiza el pedido y puede registrarse en Adobe Commerce.
 
@@ -84,11 +84,11 @@ Si no se encuentra ninguna cuenta de Bolt, los compradores continúan con su cie
 
 Un usuario existente puede seleccionar detalles existentes cuando el usuario realiza un pedido con la variable [!DNL Express Checkout] para una experiencia de cierre de compra más rápida.
 
-Cuando un comprador introduce una dirección de correo electrónico en el cierre de compra, la variable [!DNL Express Checkout] lo valida para encontrar una cuenta de Bolt existente.
+Cuando un comprador introduce una dirección de correo electrónico en el cierre de compra, la variable [!DNL Express Checkout] lo valida para encontrar un [!DNL Bolt] cuenta.
 
-### Cuenta de Bolt registrada con un usuario de Adobe Commerce
+### Registrados [!DNL Bolt] cuenta con un usuario de Adobe Commerce
 
-Si se encuentra una cuenta de Bolt, los compradores continúan con su cierre de compra predeterminado de Adobe Commerce y el comprador proporciona todos los detalles necesarios y luego realiza el pedido:
+Si [!DNL Bolt] se encuentra la cuenta, los compradores continúan con su cierre de compra predeterminado de Adobe Commerce y el comprador proporciona todos los detalles necesarios y luego realiza el pedido:
 
 - Información de envío y facturación
 - Método de envío
@@ -98,19 +98,19 @@ Consulte la [solución de problemas](../express-checkout/troubleshooting.md) par
 
 >[!NOTE]
 >
-> Si el usuario tiene una cuenta de Bolt y el correo electrónico no aparece como registrado en Adobe Commerce, se déclencheur el inicio de sesión con la contraseña única (OTP). Consulte la [cuenta de Bolt registrada](#registered-bolt-account) flujo.
+> Si el usuario tiene un [!DNL Bolt] La cuenta y el correo electrónico no aparecen como registrados en Adobe Commerce, sino que se déclencheur el inicio de sesión con una contraseña única (OTP). Consulte la [registrado [!DNL Bolt] account](#registered-bolt-account) flujo.
 
-### Nueva cuenta de perno
+### Nuevo [!DNL Bolt] account
 
-Si no se encuentra ninguna cuenta de Bolt, los compradores continúan con su cierre de compra predeterminado de Adobe Commerce y el comprador selecciona todos los detalles necesarios de su información guardada para realizar el pedido:
+Si no [!DNL Bolt] se encuentra la cuenta, los compradores continúan con su cierre de compra predeterminado de Adobe Commerce y el comprador selecciona todos los detalles necesarios de su información guardada para realizar el pedido:
 
 - Información de envío y facturación
 - Método de envío
 - Revisar método de pago
-- Aparece una casilla de verificación para registrarse en Bolt para realizar cierres de compra más rápidos antes de realizar el pedido. Pueden aceptar los términos y condiciones para crear su cuenta de Bolt.
+- Aparece una casilla de verificación para registrarse en [!DNL Bolt] para cierres de compra más rápidos antes de realizar el pedido. Pueden aceptar los términos y condiciones para crear sus [!DNL Bolt] cuenta.
 
-   ![Recordar perno](../assets/checked-bolt.png)
+   ![Recordar [!DNL Bolt]](assets/checked-bolt.png)
 
 ## Obtener ayuda
 
-Póngase en contacto con el servicio de asistencia técnica de Adobe Commerce para obtener ayuda y formular preguntas.
+Póngase en contacto con el servicio de asistencia técnica de Adobe Commerce para obtener ayuda.

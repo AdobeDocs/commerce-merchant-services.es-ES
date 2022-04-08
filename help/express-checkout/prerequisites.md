@@ -2,9 +2,9 @@
 title: '''[!DNL Express Checkout] requisitos previos'
 description: Verifique que su sistema cumpla los requisitos necesarios para usar la variable [!DNL Express Checkout] para la extensión de Adobe Commerce.
 exl-id: fa61aa73-a2b6-4c69-ab42-cede74c15caa
-source-git-commit: 163dd5260908b4ea3a8bfbcfdb834531d1603734
+source-git-commit: 1a7df2c5581ea6d590aa1a2f701b4428371d2299
 workflow-type: tm+mt
-source-wordcount: '153'
+source-wordcount: '151'
 ht-degree: 1%
 
 ---
@@ -34,4 +34,4 @@ La variable [!DNL Express Checkout] tiene problemas de compatibilidad existentes
 | ISPU | [!DNL In-Store Pickup] La funcionalidad (ISPU) no es compatible |
 | Multienvío | No se admite el envío múltiple |
 
-Consulte la [Limitaciones de los tornillos](https://help.bolt.com/integrations/adobe-express-checkout/set-up/#limitations) para obtener más información sobre las limitaciones de compatibilidad para Bolt y [!DNL Express Checkout] extensión.
+Consulte la [[!DNL Bolt] limitaciones](https://help.bolt.com/integrations/adobe-express-checkout/set-up/#limitations) para obtener más información sobre las limitaciones de compatibilidad para [!DNL Bolt] y [!DNL Express Checkout] extensión.
