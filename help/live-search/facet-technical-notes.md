@@ -2,9 +2,9 @@
 title: Notas técnicas de faceta
 description: Notas técnicas sobre el uso de facetas de búsqueda activa.
 exl-id: 37982610-0ff7-48b7-b088-be7d2eff8a57
-source-git-commit: 7402e97f53b71e488d860215487f4809572b7e6f
+source-git-commit: e53fb13b98684757b8081b2e19dd33d925e8ce5d
 workflow-type: tm+mt
-source-wordcount: '158'
+source-wordcount: '114'
 ht-degree: 0%
 
 ---
@@ -22,13 +22,3 @@ La agregación de facetas se realiza de la siguiente manera si la tienda tiene t
 * `categories` agregación - Agregados `categories`, se aplica `color` y `price` filtros, pero no el `categories` filtro.
 * `color` agregación - Agregados `color`, se aplica `price` y `categories` filtros, pero no el `color` filtro.
 * `price` agregación - Agregados `price`, se aplica `color` y `categories` filtros, pero no el `price` filtro.
-
-## Valores de atributo predeterminados
-
-Los siguientes atributos de producto tienen algunas [propiedades de tienda](https://docs.magento.com/user-guide/stores/attributes-product.html) que están activados de forma predeterminada.
-
-| Propiedad | Propiedad Storefront | Atributo |
-|---|---|---|
-| Ordenable | Se utiliza para ordenar en la lista de productos | `price` |
-| Buscable | Usar en la búsqueda | `price` <br />`sku`<br />`name` |
-| FilterableInSearch | Uso en navegación por capas - filtrable (con resultados) | `price`<br />`visibility`<br />`category_name` |

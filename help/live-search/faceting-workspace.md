@@ -2,14 +2,14 @@
 title: Área de trabajo de facetas
 description: Aprenda a navegar por el espacio de trabajo de facetas de Live Search.
 exl-id: b47b5c19-59bb-41e4-9599-3b90cbc44b70
-source-git-commit: 19f0c987ab6b43b6fac1cad266b5fd47a7168e73
+source-git-commit: a8943e56cc074a96d3f9e1009b76fa589b76a8a4
 workflow-type: tm+mt
 source-wordcount: '264'
 ht-degree: 0%
 
 ---
 
-# Espacio de trabajo de facetas
+# Área de trabajo de facetas
 
 La variable [!DNL Live Search] workspace enumera todas las facetas que están disponibles actualmente y proporciona acceso a las herramientas necesarias para configurar y administrar facetas. Las facetas fijadas aparecen primero en la lista de facetas existentes, seguido de facetas dinámicas. La lista se puede filtrar para que muestre todas las facetas, o solo las que están ancladas o son dinámicas.
 
