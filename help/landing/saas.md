@@ -1,9 +1,10 @@
 ---
 title: Conector de Commerce Services
 description: Aprenda a integrar la instancia de Adobe Commerce o Magento Open Source en los servicios mediante una clave de API y una clave privada.
-source-git-commit: 8789bd21362109325d0d7b23d9b130067390eeae
+exl-id: 28027a83-449b-4b96-b926-a7bfbfd883d8
+source-git-commit: 6d0c7c749fe90c7c204afe47446f3483d8668b53
 workflow-type: tm+mt
-source-wordcount: '830'
+source-wordcount: '828'
 ht-degree: 0%
 
 ---
@@ -18,9 +19,9 @@ A continuación se enumeran las [!DNL Commerce] funciones a las que puede accede
 
 | Servicio | Disponibilidad |
 | ---|--- |
-| [!DNL Product Recommendations] equipado con Adobe Sensei | Adobe Commerce |
-| [!DNL Live Search] equipado con Adobe Sensei | Adobe Commerce |
-| [!DNL Payment Services] | Adobe Commerce y Magento Open Source |
+| [[!DNL Product Recommendations]](/help/product-recommendations/overview.md) equipado con Adobe Sensei | Adobe Commerce |
+| [[!DNL Live Search]](/help/live-search/overview.md) equipado con Adobe Sensei | Adobe Commerce |
+| [[!DNL Payment Services]](/help/payment-services/overview.md) | Adobe Commerce y Magento Open Source |
 
 ## Arquitectura
 
@@ -74,7 +75,7 @@ Para [!DNL Product Recommendations], el espacio de datos SaaS contiene datos de 
 
 >[!NOTE]
 >
-> Si no ve la variable **Conector de Commerce Services** en la sección [!DNL Commerce] debe instalar el [!DNL Commerce] módulos para el [!DNL Commerce Service], como [!DNL Product Recommendations].
+> Si no ve la variable **[!UICONTROL Commerce Services Connector]** en la sección [!DNL Commerce] debe instalar el [!DNL Commerce] módulos para el [!DNL Commerce] servicio, como [[!DNL Product Recommendations]](/help/product-recommendations/install-configure.md).
 
 Para seleccionar o crear un proyecto SaaS, solicite la variable [!DNL Commerce] Clave de API de [!DNL Commerce] titular de licencia para su tienda.
 

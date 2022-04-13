@@ -1,9 +1,10 @@
 ---
 title: Comprobar colección de eventos
 description: Obtenga información sobre cómo comprobar que los datos de comportamiento se envían a Adobe Commerce.
-source-git-commit: 7fe89df32dc5363817f957180e5b75e7217fc14a
+exl-id: c8c34db4-9d87-4012-b8f0-e9b1da214305
+source-git-commit: 7d9cef7a81196921b465ccf2dcd58d98b66d6598
 workflow-type: tm+mt
-source-wordcount: '447'
+source-wordcount: '441'
 ht-degree: 0%
 
 ---
@@ -22,6 +23,9 @@ Para asegurarse de que el archivo JS del recopilador de eventos se está cargand
 1. Vuelva a cargar la página.
 1. Debería ver `ds.js` o `ds.min.js` en el **Nombre** para abrir el Navegador.
 
+![JS de recopilación de eventos](assets/filter-ds.png)
+_JS del recopilador de eventos_
+
 Para garantizar que los eventos se activen en páginas de su sitio (inicio, producto, cierre de compra, etc.):
 
 1. Asegúrese de desactivar los bloqueadores de publicidad en el explorador y de aceptar las cookies en el sitio.
@@ -29,6 +33,9 @@ Para garantizar que los eventos se activen en páginas de su sitio (inicio, prod
 1. Elija la **Red** pestaña y filtrar por `tp2`.
 1. Vuelva a cargar la página.
 1. Debería ver las llamadas en `tp2` en el **Nombre** para abrir el Navegador.
+
+![Activación de eventos](assets/filter-tp2.png)
+_Verifique que se estén activando eventos_
 
 ## Comprobación con la extensión de Snowplow Chrome
 
@@ -46,7 +53,8 @@ Instale el [Extensión de Snowplow Analytics Debugger para Chrome](https://chrom
 
 1. Compruebe que la variable [ID del espacio de datos SaaS](https://docs.magento.com/user-guide/configuration/services/saas.html) está configurado correctamente.
 
-Si tiene problemas para verificar que los eventos se recopilen y se envíen a Adobe Commerce, [póngase en contacto con el servicio de asistencia técnica](https://support.magento.com/hc/en-us).
+![Filtro Snowplow](assets/snowplow-filter.png)
+_Filtro Snowplow_
 
 >[!NOTE]
 >
