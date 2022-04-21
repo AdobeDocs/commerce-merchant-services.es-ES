@@ -2,9 +2,9 @@
 title: Agregar facetas
 description: Aprenda a añadir atributos de producto filtrables como facetas de búsqueda activa.
 exl-id: 0df6c21b-55b3-41ce-94f4-f70b70ffb84e
-source-git-commit: 61d50ec07e7c8ced1696f4169a90302cca4d4f96
+source-git-commit: 966b15e6cb8c839c39575a3ad25a6b460201330b
 workflow-type: tm+mt
-source-wordcount: '649'
+source-wordcount: '652'
 ht-degree: 0%
 
 ---
@@ -48,7 +48,7 @@ La faceta se agrega a la parte inferior del *Facetas dinámicas* y *Publicar cam
    * Etiqueta - ([Sin encabezado](facets-type.md) solo) Introduzca la etiqueta de faceta que desea utilizar.
    * Seleccionar tipo: *Seleccionar tipo* se usa para todos [!DNL Commerce] storefronts es `single select`. Para implementaciones sin encabezado, `multi-select` se puede asignar con un operador lógico (`or` o `and`) para determinar el conjunto de productos devueltos.
    * Tipo de orden : las facetas se ordenan alfabéticamente para todas [!DNL Commerce] tiendas. En implementaciones sin encabezado, las facetas se pueden ordenar alfabéticamente o por recuento. Opciones: Alfabético, Contar (solo sin encabezado)
-   * Valor máximo : introduzca el número máximo de valores de facetas que se muestran en la tienda. Entradas válidas: 0 - 10
+   * Valor máximo : introduzca el número máximo de valores de facetas que se muestran en la tienda. Entradas válidas: 0 - 30; Predeterminado: 8
 
 1. Cuando termine, haga clic en **Guardar**.
 
@@ -70,7 +70,7 @@ Si la faceta no está disponible después de dos horas, consulte [Verificar expo
 | Etiqueta | ([Sin encabezado](facets-type.md) solo) La variable [etiqueta de faceta](facets-type.md) que es visible en la tienda puede editarse para mantener la coherencia con su marca. |
 | Seleccionar tipo | Muestra el [método de selección](facets-type.md) que está asociado al atributo product . Todas las facetas de la variable [!DNL Commerce] las tiendas son `Single select` solo. Las implementaciones sin encabezado también admiten `Multi-select` con los operadores lógicos `OR` y `AND`. |
 | Tipo de orden | El método que se usa para [sort](facets-type.md) facetas. Todo [!DNL Commerce] las tiendas solo ordenan facetas alfabéticamente. Las implementaciones sin encabezado también pueden ordenarse por `Count`. Opciones:<br />Alfabético : ordena las facetas alfabéticamente.<br />Recuento : (solo sin encabezado) ordena las facetas en función del número de coincidencias encontradas. |
-| Valor máximo | Número máximo de valores que se pueden mostrar en la tienda para cada faceta. Las facetas que representan un rango de valores se distribuyen de manera uniforme. Predeterminado: 8 |
+| Valor máximo | Número máximo de valores que se pueden mostrar en la tienda para cada faceta. Las facetas que representan un rango de valores se distribuyen de manera uniforme. Entradas válidas: 0 - 30; Predeterminado: 8 |
 
 ### Controles
 
