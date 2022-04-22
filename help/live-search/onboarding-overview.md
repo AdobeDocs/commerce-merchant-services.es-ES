@@ -2,9 +2,9 @@
 title: Información general sobre la incorporación
 description: Búsqueda activa Flujo de incorporación, requisitos del sistema, límites y limitaciones
 exl-id: 45f6c1ae-544b-47ef-9feb-c1a05f93108a
-source-git-commit: f33f02fa15b6250970bda3302d3403b6fcec5786
+source-git-commit: f2934746c327528d5d52f2ae356afe303ff9b81b
 workflow-type: tm+mt
-source-wordcount: '282'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -45,6 +45,7 @@ En este momento, la variable [!DNL Live Search] la API de búsqueda/categoría t
 
 ### versión beta del PWA
 
+* La implementación actual del PWA beta de la búsqueda activa requiere más tiempo de procesamiento para devolver los resultados de búsqueda que la búsqueda en vivo con la tienda de comercio nativa.
 * La versión beta de PWA para [!DNL Live Search] no es compatible [gestión de eventos](https://devdocs.magento.com/shared-services/storefront-events-sdk.html).
 * GraphQL no admite los siguientes atributos de producto cuando se utilizan en relación con la versión beta de [PWA](https://developer.adobe.com/commerce/pwa-studio/): `description`, `name`, `short_description`
 
@@ -55,3 +56,5 @@ En este momento, la variable [!DNL Live Search] la API de búsqueda/categoría t
 * [Grupos de precios personalizados](https://docs.magento.com/user-guide/catalog/product-price-group.html)
 * Múltiples ubicaciones de inventario que usa [MCOM](https://docs.magento.com/user-guide/mcom.html) u otras extensiones OMS
 * [Capacidades integradas B2B](https://business.adobe.com/products/magento/b2b-ecommerce.html)
+* Los precios del producto no incluyen [IVA](https://docs.magento.com/user-guide/tax/vat.html) (IVA).
+* Los productos fuera de existencias aparecen en los resultados de búsqueda, independientemente del [Opciones de stock](https://docs.magento.com/user-guide/catalog/inventory-options-global.html) configuración.

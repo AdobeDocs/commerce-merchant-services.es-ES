@@ -2,9 +2,9 @@
 title: Agregar facetas
 description: Aprenda a añadir atributos de producto filtrables como facetas de búsqueda activa.
 exl-id: 0df6c21b-55b3-41ce-94f4-f70b70ffb84e
-source-git-commit: 966b15e6cb8c839c39575a3ad25a6b460201330b
+source-git-commit: f31c76404315a9fe142bf0c72ff9999c4a87365d
 workflow-type: tm+mt
-source-wordcount: '652'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -54,8 +54,8 @@ La faceta se agrega a la parte inferior del *Facetas dinámicas* y *Publicar cam
 
    ![Espacio de trabajo de facetas](assets/facet-edit.png)
 
-1. Para fijar la faceta en la parte superior del *Filtros* , haga clic en el borde gris (![Selector de clavijas](assets/btn-pin-gray.png).
-1. Para cambiar el orden de la faceta fijada, haga clic en el botón **Mover** (![Mover selector](assets/btn-move.png) y arrastre la fila a una nueva posición en la *Facetas fijadas* para obtener más información.
+1. Para fijar la faceta en la parte superior del *Filtros* , haga clic en el borde gris (![Selector de clavijas](assets/btn-pin-gray.png)).
+1. Para cambiar el orden de la faceta fijada, haga clic en el botón **Mover** (![Mover selector](assets/btn-move.png)) y arrastre la fila a una nueva posición en la *Facetas fijadas* para obtener más información.
 
 ## Paso 3: Publicar cambios
 
