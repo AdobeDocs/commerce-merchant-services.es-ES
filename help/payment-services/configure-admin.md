@@ -4,9 +4,9 @@ description: Después de la instalación, puede configurar [!DNL Payment Service
 role: Admin, User
 level: Intermediate
 exl-id: e1a3269d-bdf9-4b0f-972f-e8a0ef469503
-source-git-commit: bfb2b6632fe494d6e392c214f5e3f5a11930c0b2
+source-git-commit: bae0eeac349fe3c266d868f8d94c5e033390a661
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '723'
 ht-degree: 0%
 
 ---
@@ -109,7 +109,7 @@ Puede activar y configurar las opciones de pago de los botones inteligentes de P
 
 ### [!DNL PayPal Smart Buttons] Opciones de estilo
 
-| Campo | [Ámbito]({% vínculo configuration/scope.md %}) | Descripción |
+| Campo | Ámbito | Descripción |
 |--- |--- |--- |
 | [!UICONTROL Layout] | Vista de la tienda | Defina el estilo de diseño de los botones inteligentes de Paypal. Opciones: [!UICONTROL Vertical] / [!UICONTROL Horizontal] |
 | [!UICONTROL Color] | Vista de la tienda | Defina el color de los botones inteligentes Paypal. Opciones: [!UICONTROL Blue] / [!UICONTROL Gold] / [!UICONTROL Silver] / [!UICONTROL White] / [!UICONTROL Black] |
