@@ -2,9 +2,9 @@
 title: Información general sobre la incorporación
 description: Búsqueda activa Flujo de incorporación, requisitos del sistema, límites y limitaciones
 exl-id: 45f6c1ae-544b-47ef-9feb-c1a05f93108a
-source-git-commit: f2934746c327528d5d52f2ae356afe303ff9b81b
+source-git-commit: 66ffbf2576615bb1f6015a13c65af86e8d7ea700
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '343'
 ht-degree: 0%
 
 ---
@@ -38,7 +38,11 @@ En este momento, la variable [!DNL Live Search] la API de búsqueda/categoría t
 * Indexa solo los productos de la base de datos de Adobe Commerce
 * No indexa páginas de CMS
 
-### Límites de consulta
+### Sinónimos
+
+* [!DNL Live Search] puede administrar hasta 200 sinónimos por `Data Space ID`.
+
+### Consulta
 
 * [!DNL Live Search] no tiene acceso a la taxonomía completa del árbol de categorías, lo que hace que algunos escenarios de búsqueda de navegación en capas estén más allá de su alcance.
 * [!DNL Live Search] utiliza un extremo de GraphQL único para las consultas con el fin de admitir funciones como facetas inteligentes y búsqueda según el tipo que desee. Aunque similar a la variable [API de Magento GraphQL](https://devdocs.magento.com/guides/v2.4/graphql), hay algunas diferencias y es posible que algunos campos no sean totalmente compatibles en este momento.
