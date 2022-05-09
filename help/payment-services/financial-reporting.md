@@ -4,16 +4,16 @@ description: '"[!DNL Payment Services] ofrece informes completos para que pueda 
 role: User
 feature: Payments
 level: Intermediate
-source-git-commit: eb8fdba65b4b64730d0ad4fa6e0c9b64bdadc7df
+source-git-commit: 9596815e31402f23b399b223f3221074331c1773
 workflow-type: tm+mt
-source-wordcount: '83'
+source-wordcount: '78'
 ht-degree: 0%
 
 ---
 
 # Información financiera
 
-[!DNL Payment Services] para Adobe Commerce y Magento Open Source le ofrece informes completos para que pueda obtener una visión clara de los pedidos y pagos de su tienda.
+[!DNL Payment Services] para [!DNL Adobe Commerce] y [!DNL Magento Open Source] ofrece informes completos para que pueda obtener una visión clara de los pedidos y pagos de su tienda.
 
 ![Vista Informes financieros](assets/reports-view.png)
 

@@ -2,16 +2,16 @@
 title: Prueba y validación
 description: Las pruebas y la validación ayudan a garantizar que [!DNL Payment Services] funciona según lo esperado y proporciona las mejores opciones de pago para sus clientes
 exl-id: 95b4615e-73b0-41e8-83e2-e65a0b22f10f
-source-git-commit: bcb817775fe9cd9ac7096931dd40d5ec0c4a5cfc
+source-git-commit: 9596815e31402f23b399b223f3221074331c1773
 workflow-type: tm+mt
-source-wordcount: '441'
+source-wordcount: '436'
 ht-degree: 0%
 
 ---
 
 # Prueba y validación
 
-Antes de exponer [!DNL Payment Services] para Adobe Commerce y Magento Open Source para sus compradores, es aconsejable realizar pruebas en el entorno de entorno limitado _y_ en producción. Las pruebas y la validación ayudan a garantizar que [!DNL Payment Services] funciona según lo esperado y proporciona las mejores opciones de pago para su tienda y sus clientes.
+Antes de exponer [!DNL Payment Services] para [!DNL Adobe Commerce] y [!DNL Magento Open Source] para los compradores, es aconsejable realizar pruebas en el entorno de entorno limitado _y_ en producción. Las pruebas y la validación ayudan a garantizar que [!DNL Payment Services] funciona según lo esperado y proporciona las mejores opciones de pago para su tienda y sus clientes.
 
 ## Prueba en el entorno de entorno limitado
 

@@ -2,9 +2,9 @@
 title: Conecte la instancia
 description: Conecte la instancia de Commerce con una clave de API y una clave privada, y especifique el espacio de datos en la configuración.
 exl-id: 5038fd31-bac5-419e-a172-66919a9b5272
-source-git-commit: fd818dadbaa2a58efd7313ce888c7dda27d25f14
+source-git-commit: 9596815e31402f23b399b223f3221074331c1773
 workflow-type: tm+mt
-source-wordcount: '921'
+source-wordcount: '911'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ Consulte [Conector de Commerce Services](https://docs.magento.com/user-guide/sys
 
 ## Obtener credenciales de API
 
-Para consumir un servicio Commerce SaaS, debe utilizar las claves de API de su instancia, que se crean y administran en su [El tablero Mi cuenta](https://account.magento.com/customer/account/login){target=&quot;_blank&quot;}. Se pueden crear dos pares de claves API diferentes para una cuenta de Commerce (una para entornos limitados y otra para producción (pagos activos)), aunque solo se puede utilizar activamente un par a la vez.
+Para consumir un servicio Commerce SaaS, debe utilizar las claves de API de su instancia, que se crean y administran en su [Mi tablero de cuenta](https://account.magento.com/customer/account/login){target=&quot;_blank&quot;}. Se pueden crear dos pares de claves API diferentes para una cuenta de Commerce (una para entornos limitados y otra para producción (pagos activos)), aunque solo se puede utilizar activamente un par a la vez.
 
 >[!NOTE]
 >
@@ -33,7 +33,7 @@ Para obtener información sobre cómo generar una clave de API para entornos de 
 
 ### Clave de API de comercio y clave privada
 
-Algunas funciones de Adobe Commerce y Magento Open Source se implementan como SaaS (software como servicio), conocidos como Commerce Services. Para utilizar estos servicios, debe conectar la instancia de Commerce a estos servicios mediante una clave de API y una clave privada, y especificar el espacio de datos deseado en la variable [configuración](https://docs.magento.com/user-guide/configuration/services/saas.html){target=&quot;_blank&quot;}.
+Algunas [!DNL Adobe Commerce] y [!DNL Magento Open Source] las funciones se implementan como SaaS (software como servicio), conocidos como Commerce Services. Para utilizar estos servicios, debe conectar la instancia de Commerce a estos servicios mediante una clave de API y una clave privada, y especificar el espacio de datos deseado en la variable [configuración](https://docs.magento.com/user-guide/configuration/services/saas.html){target=&quot;_blank&quot;}.
 
 Cuando crea una cuenta de comercio, identificada por un MageID, puede generar una clave de API de comercio y una clave privada. Para usar los servicios de comercio, como [!DNL Payment Services], [!DNL Product Recommendations]o [!DNL Live Search], el titular de la licencia debe generar estas claves para pasar la validación de derechos. Estas claves se pueden pasar al integrador de sistemas o al equipo de desarrollo que administra los proyectos y entornos en nombre del titular de la licencia. Si es integrador de soluciones, también puede utilizar estos servicios para sus propias necesidades. En ese caso, el firmante del contrato de socio comercial debe generar las claves.
 
@@ -67,8 +67,8 @@ La misma clave de API se puede usar en todas las instancias, pero cada instancia
 
 Al crear un proyecto SaaS, Commerce genera uno o más espacios de datos SaaS en función de la licencia de Commerce:
 
-* Adobe Commerce: Un espacio de datos de producción; dos espacios de datos de prueba
-* Magento Open Source - Un espacio de datos de producción; sin espacios de datos de prueba
+* [!DNL Adobe Commerce] - Un espacio de datos de producción; dos espacios de datos de prueba
+* [!DNL Magento Open Source] - Un espacio de datos de producción; sin espacios de datos de prueba
 
 ### Configuración del proyecto SaaS
 

@@ -4,9 +4,9 @@ description: Después de la instalación, puede configurar [!DNL Payment Service
 role: Admin, User
 level: Intermediate
 exl-id: e1a3269d-bdf9-4b0f-972f-e8a0ef469503
-source-git-commit: bae0eeac349fe3c266d868f8d94c5e033390a661
+source-git-commit: 9596815e31402f23b399b223f3221074331c1773
 workflow-type: tm+mt
-source-wordcount: '723'
+source-wordcount: '718'
 ht-degree: 0%
 
 ---
@@ -15,13 +15,13 @@ ht-degree: 0%
 
 Puede personalizar [!DNL Payment Services] a sus necesidades con opciones de configuración útiles en Administración.
 
-Al configurar [!DNL Payment Services] para Adobe Commerce y el Magento Open Source en la administración, estas configuraciones solo se aplican al entorno que está configurado en la variable [!UICONTROL Method] campo [!UICONTROL General Configuration]. Los cambios que realice en los campos de configuración no dependerán del cambio de [!UICONTROL Method] selección (selection): si cambia el método, las selecciones no se restablecen.
+Al configurar [!DNL Payment Services] para [!DNL Adobe Commerce] y [!DNL Magento Open Source] en el administrador, estas configuraciones solo se aplican al entorno que está configurado en la variable _[!UICONTROL Method]_campo_[!UICONTROL General Configuration]_. Los cambios que realice en los campos de configuración no dependerán del cambio de _[!UICONTROL Method]_selección (selection): si cambia el método, las selecciones no se restablecen.
 
 Consulte la [[!UICONTROL General Configuration] sección](#general-configuration) para obtener más información.
 
 ## Configuración general
 
-Puede habilitar [!DNL Payment Services] para su tienda y habilite pruebas de entorno limitado o pagos activos en la variable [!UICONTROL General Configuration] para obtener más información.
+Puede habilitar [!DNL Payment Services] para su tienda y habilite pruebas de entorno limitado o pagos activos en la variable _[!UICONTROL General Configuration]_para obtener más información.
 
 1. En el _Administrador_ barra lateral, vaya a **[!UICONTROL Stores]** > _[!UICONTROL Settings]_>**[!UICONTROL Configuration]**.
 1. En el panel izquierdo, expanda **[!UICONTROL Sales]** y elija **[!UICONTROL Payment Methods]**.
@@ -35,7 +35,7 @@ Puede habilitar [!DNL Payment Services] para su tienda y habilite pruebas de ent
 
    >[!WARNING]
    >
-   >Su [!UICONTROL Sandbox Merchant ID] y [!UICONTROL Production Merchant ID] se generan automáticamente y están presentes en sus respetables campos cuando haya terminado la incorporación para el entorno limitado o la producción. No elimine o cambie estos ID.
+   >Su _[!UICONTROL Sandbox Merchant ID]_y_[!UICONTROL Production Merchant ID]_ se generan automáticamente y están presentes en sus respetables campos cuando haya terminado la incorporación para el entorno limitado o la producción. No elimine o cambie estos ID.
 
 1. Haga clic en **[!UICONTROL Save Config]** para guardar los cambios.
 

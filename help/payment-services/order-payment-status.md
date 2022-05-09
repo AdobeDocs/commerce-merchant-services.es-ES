@@ -4,22 +4,22 @@ description: Utilice el informe de estado de pago de pedidos para obtener visibi
 role: User
 level: Intermediate
 exl-id: 192e47b9-d52b-4dcf-a720-38459156fda4
-source-git-commit: cd1c735e9b3be0d75019e0987c84899f9aa66951
+source-git-commit: 9596815e31402f23b399b223f3221074331c1773
 workflow-type: tm+mt
-source-wordcount: '1184'
+source-wordcount: '1174'
 ht-degree: 0%
 
 ---
 
 # Informe del estado del pago del pedido
 
-[!DNL Payment Services] para Adobe Commerce y Magento Open Source le ofrece informes completos para que pueda obtener una visión clara de los pedidos y pagos de su tienda.
+[!DNL Payment Services] para [!DNL Adobe Commerce] y [!DNL Magento Open Source] ofrece informes completos para que pueda obtener una visión clara de los pedidos y pagos de su tienda.
 
 ![Vista Informes financieros](assets/reports-view.png)
 
 El informe de estado del pago de pedidos ayuda a comprender fácilmente dónde se encuentra un pedido específico en el flujo del proceso de efectivo. Este informe le permite ver rápidamente el estado de pago de sus pedidos e identificar cualquier problema potencial.
 
-No es necesario abrir varias vistas para realizar manualmente pedidos de referencia y pagos. [!DNL Payment Services] para Adobe Commerce y Magento Open Source le permite obtener una vista de pájaro de sus pedidos y pagos, todo dentro del informe de estado del pago de pedidos .
+No es necesario abrir varias vistas para realizar manualmente pedidos de referencia y pagos. [!DNL Payment Services] para [!DNL Adobe Commerce] y [!DNL Magento Open Source] le permite obtener una vista de pájaro de sus pedidos y pagos, todo dentro del informe de estado del pago de pedidos .
 
 Consulte estados de pago, estados facturados y enviados, estados de reembolso, estados de disputa, etc., todo dentro de este informe en el Administrador.
 

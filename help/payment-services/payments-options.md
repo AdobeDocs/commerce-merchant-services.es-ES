@@ -2,18 +2,18 @@
 title: Opciones de pago
 description: Configure las opciones de pago para personalizar los métodos disponibles para los clientes de la tienda.
 exl-id: 95e648e6-6cb8-4226-b5ea-e1857212f20a
-source-git-commit: bfb2b6632fe494d6e392c214f5e3f5a11930c0b2
+source-git-commit: 9596815e31402f23b399b223f3221074331c1773
 workflow-type: tm+mt
-source-wordcount: '928'
+source-wordcount: '923'
 ht-degree: 0%
 
 ---
 
 # Opciones de pago
 
-Con Adobe Commerce y Magento Open Source [!DNL Payment Services], tiene a su disposición varias opciones de pago. Puede configurar estas opciones de pago mediante:
+con [!DNL Adobe Commerce] y [!DNL Magento Open Source] [!DNL Payment Services], tiene a su disposición varias opciones de pago. Puede configurar estas opciones de pago mediante:
 
-* [Panel](configure-dashboard.md)
+* [Página principal](payments-home.md)
 * [Configuración del almacén](configure-admin.md) (recomendado para opciones de pago preexistentes o configuración de varias tiendas)
 
 Existen diferentes comportamientos para cada método de pago según la ubicación en el proceso de cierre de compra:
@@ -31,13 +31,13 @@ Existen diferentes comportamientos para cada método de pago según la ubicació
 
 [!UICONTROL Credit Card Fields] proporcionar un cierre de compra simple y seguro para métodos de pago con tarjeta de crédito o tarjeta de débito. Cuando un comprador cierra la compra utilizando campos de tarjeta de crédito, introduce su nombre, dirección de facturación e información de tarjeta de crédito o débito para realizar el pedido. La información de sus clientes se utiliza de forma segura durante la sesión de compra para guiarlos sin problemas a través del flujo de cierre de compra.
 
-Puede configurar [!UICONTROL Credit Card Fields] en la configuración del almacén o en el panel Servicios de pago. Consulte [Configuración [!DNL Payment Services]](configure-dashboard.md#configure-credit-card-fields) para obtener más información.
+Puede configurar [!UICONTROL Credit Card Fields] en la configuración de la tienda o en la página de inicio de los servicios de pago. Consulte [Configuración [!DNL Payment Services]](settings.md#configure-credit-card-fields) para obtener más información.
 
 ## [!DNL PayPal Smart Buttons]
 
 [!DNL PayPal Smart Buttons], que utilizan PayPal para completar una compra, almacena la dirección de envío, las direcciones de facturación y los detalles de pago del comprador para su uso posterior. Los compradores pueden utilizar cualquier método de pago previamente almacenado u ofrecido por PayPal.
 
-Puede configurar [!DNL PayPal Smart Buttons] en la configuración del almacén o en el panel Servicios de pago.  Consulte [Configuración [!DNL Payment Services]](configure-dashboard.md#configure-paypal-smart-buttons) para obtener más información.
+Puede configurar [!DNL PayPal Smart Buttons] en la configuración de la tienda o en la página de inicio de los servicios de pago.  Consulte [Configuración [!DNL Payment Services]](settings.md#configure-paypal-smart-buttons) para obtener más información.
 
 ### Botón PayPal
 

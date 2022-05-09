@@ -2,9 +2,9 @@
 title: Configuración del simulador de pruebas
 description: Usar una cuenta de espacio aislado de PayPal para usar [!DNL Payment Services] en modo de prueba.
 exl-id: 99c14b4e-e6cf-48f9-9546-5c0d5c71464d
-source-git-commit: fd818dadbaa2a58efd7313ce888c7dda27d25f14
+source-git-commit: 9596815e31402f23b399b223f3221074331c1773
 workflow-type: tm+mt
-source-wordcount: '541'
+source-wordcount: '536'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,7 @@ Para restablecer la cuenta del simulador para pruebas:
 Para completar la incorporación al entorno limitado:
 
 1. Vaya a la [Página Cuenta de desarrollador de PayPal](https://developer.paypal.com/developer/accounts/).
-1. Haga clic en **[!UICONTROL Log in to Dashboard]** e inicie sesión con sus credenciales existentes en la cuenta de desarrolladores de PayPal o haga clic en **Registrarse** para crear una cuenta.
+1. Haga clic en **[!UICONTROL Log in to Home]** e inicie sesión con sus credenciales existentes en la cuenta de desarrolladores de PayPal o haga clic en **Registrarse** para crear una cuenta.
 1. Cree una cuenta de espacio aislado de PayPal:
    1. Vaya a _[!UICONTROL SANDBOX]_>**[!UICONTROL Accounts]**.
    1. Haga clic **[!UICONTROL Create account]**.
@@ -42,7 +42,7 @@ Para completar la incorporación al entorno limitado:
 
    Esta opción está visible si aún no ha completado la incorporación del entorno limitado para [!DNL Payment Services].
 
-   Un ID de comerciante de simulador de pruebas se genera automáticamente y se rellena en la variable [configuración](configure-admin.md). No cambie ni modifique este ID.
+   Un ID de comerciante de simulador de pruebas se genera automáticamente y se rellena en la variable [configuración](settings.md). No cambie ni modifique este ID.
 
    Se le presenta una ventana de PayPal para conectar una cuenta de PayPal para comenzar a aceptar pagos.
 
@@ -59,7 +59,7 @@ Cuando se aprueba la incorporación de su simulador de pruebas PayPal, debería 
 
 >[!IMPORTANT]
 >
->Si revoca el consentimiento a [!DNL Payment Services] para Adobe Commerce y el Magento Open Source para procesar sus pagos (en la configuración de su cuenta de PayPal), los pedidos de su tienda no pueden ser procesados por [!DNL Payment Services].
+>Si revoca el consentimiento a [!DNL Payment Services] para [!DNL Adobe Commerce] y [!DNL Magento Open Source] para procesar sus pagos (en la configuración de su cuenta de PayPal), los pedidos de su tienda no pueden ser procesados por [!DNL Payment Services].
 
 ## Habilitar número de teléfono de contacto
 

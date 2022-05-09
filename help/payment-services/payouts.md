@@ -4,22 +4,22 @@ description: Utilice el informe de pagos para obtener una total transparencia en
 role: User
 level: Intermediate
 exl-id: f3f99474-cd28-4c8f-b0ea-dca8e014b108
-source-git-commit: aff1a43fedab473b84d02068a7d3fbd33b4fe093
+source-git-commit: 9596815e31402f23b399b223f3221074331c1773
 workflow-type: tm+mt
-source-wordcount: '869'
+source-wordcount: '857'
 ht-degree: 0%
 
 ---
 
 # Informe de rutas
 
-[!DNL Payment Services] para Adobe Commerce y Magento Open Source le ofrece informes completos para que pueda obtener una visión clara de los pedidos y pagos de su tienda.
+[!DNL Payment Services] para [!DNL Adobe Commerce] y [!DNL Magento Open Source] ofrece informes completos para que pueda obtener una visión clara de los pedidos y pagos de su tienda.
 
 ![Vista Informes financieros](assets/reports-view.png)
 
 El informe de pagos muestra información completa de los pagos de un vistazo, lo que permite una total transparencia en el importe del pago, el volumen procesado y los informes detallados sobre el nivel de transacción para la reconciliación financiera.
 
-No es necesario abrir varios tableros o vistas para hacer referencias cruzadas de pedidos y pagos, ni reconciliar cuentas. [!DNL Payment Services] para Adobe Commerce y Magento Open Source le permite realizar todas estas acciones desde un solo lugar (informe de pagos) para que pueda ver y administrar sus pagos de forma eficaz.
+No es necesario abrir varias vistas para hacer referencias cruzadas de pedidos y pagos o reconciliar cuentas. [!DNL Payment Services] para [!DNL Adobe Commerce] y [!DNL Magento Open Source] permite realizar todas estas acciones desde un solo lugar (informe de pagos) para poder ver y administrar sus pagos de forma eficaz.
 
 Consulte ID de transacción y pedidos de comercio vinculados, importes de transacción, método de pago por transacción y mucho más, todo dentro del informe Pagos en el Administrador.
 
@@ -45,7 +45,7 @@ If _[!UICONTROL Live]_es la fuente de datos seleccionada; puede ver la informaci
 
 Las selecciones de fuentes de datos funcionan de la siguiente manera:
 
-* Si no tiene ninguna tienda en el modo Activo, la selección de la fuente de datos toma como valor predeterminado [!UICONTROL Sandbox]_.
+* Si no tiene ninguna tienda en el modo Activo, la selección de la fuente de datos toma como valor predeterminado _[!UICONTROL Sandbox]_.
 * Si tiene alguna tienda (una o varias) en el modo Activo, la selección de la fuente de datos toma el valor predeterminado _[!UICONTROL Live]_.
 * Las exportaciones de informes siempre respetan la selección del origen de datos.
 
