@@ -2,9 +2,9 @@
 title: Conector de Commerce Services
 description: Aprenda a integrar la instancia de Adobe Commerce o Magento Open Source en los servicios mediante una clave de API y una clave privada.
 exl-id: 28027a83-449b-4b96-b926-a7bfbfd883d8
-source-git-commit: 6d0c7c749fe90c7c204afe47446f3483d8668b53
+source-git-commit: 3035edd14ca6d7b29e7fa6f4c6ed2a66401171c1
 workflow-type: tm+mt
-source-wordcount: '828'
+source-wordcount: '801'
 ht-degree: 0%
 
 ---
@@ -42,10 +42,6 @@ La clave de API y la clave privada se generan a partir de la variable [!DNL Comm
 1. En el **Magento** , seleccione **Portal de API** en la barra lateral.
 
 1. En el _Entorno_ seleccione **Producción** o **Sandbox**.
-
-   >[!NOTE]
-   >
-   > Para [!DNL _Recommendations de producto_] y [!DNL _Live Search_], seleccione **Producción**. Las claves de producción le permiten acceder a los espacios de datos de producción y no de producción. No se usan claves de espacio aislado para estos servicios.
 
 1. Escriba un nombre en la _Claves de API_ y haga clic en **Agregar nuevo**.
 
