@@ -1,44 +1,44 @@
 ---
-title: Entrega de tienda
-description: La ventana emergente de tienda de Live Search devuelve dinámicamente los productos sugeridos y las miniaturas.
+title: Storefront Popover
+description: The Live Search storefront popover dynamically returns suggested products and thumbnails.
 exl-id: 88fdc3ed-b606-40de-94b7-435be09c4072
-source-git-commit: 61d50ec07e7c8ced1696f4169a90302cca4d4f96
+source-git-commit: 65126f10574801f7ea8d0a863e9bb512dca13f39
 workflow-type: tm+mt
-source-wordcount: '379'
+source-wordcount: '364'
 ht-degree: 0%
 
 ---
 
-# Entrega de tienda
+# [!DNL Storefront Popover]
 
-When [!DNL Live Search] es [instalado](install.md), aparece una ventana emergente en la tienda cuando los compradores escriben en la [Buscar](https://docs.magento.com/user-guide/catalog/search-quick.html) en la ventana Con cada carácter escrito, la ventana emergente se actualiza con productos sugeridos e imágenes en miniatura de los principales resultados de búsqueda.
+[!DNL Live Search][](install.md)[!DNL popover][](https://docs.magento.com/user-guide/catalog/search-quick.html) [!DNL popover]
 
-[!DNL Live Search] devuelve los resultados de una consulta de dos caracteres o más. Para una coincidencia parcial, el número máximo de caracteres por palabra es de 20. El número de caracteres de una consulta &quot;buscar mientras escribe&quot; no se puede configurar.
+[!DNL Live Search] For a partial match, the maximum number of characters per word is 20. The number of characters in a &quot;search as you type&quot; query is not configurable.
 
 >[!NOTE]
 >
->La variable [!DNL Live Search] la ventana emergente de tienda solo está disponible para las tiendas que usan la variable *Luma* o un tema personalizado basado en *Luma*. La variable *Luma* se incluye en el [!DNL Commerce] datos de ejemplo. La ventana emergente no admite la variable *En blanco* tema. Consulte [Diseño de elementos emergentes](storefront-popover-styling.md) para obtener más información.
+>[!DNL Live Search][!DNL storefront popover]**** **[!DNL Commerce] [!DNL popover]** [ [!DNL Popover] ](storefront-popover-styling.md)
 
-## Atributos que se pueden buscar
+## Searchable attributes
 
-Para obtener resultados con objetivos muy precisos, revise el conjunto de [buscable](https://docs.magento.com/user-guide/stores/attributes-product.html#storefront-properties) (`searchable=true`). Para garantizar la relevancia, haga que los atributos solo se puedan buscar si contienen contenido que tenga un significado claro y conciso. Evite utilizar atributos que contengan texto más largo y menos preciso, como `description`, que aunque la opción de búsqueda está activada de forma predeterminada, puede reducir la precisión de los resultados de búsqueda. Por ejemplo, si una persona busca &quot;pantalones cortos&quot; y hay camisas con una descripción que incluye el término &quot;mangas cortas&quot;, entonces las camisas se incluirán en los resultados de búsqueda.
+[](https://docs.magento.com/user-guide/stores/attributes-product.html#storefront-properties)`searchable=true` To ensure relevancy, make attributes searchable only if they contain content that has a clear and concise meaning. `description` For example, if a person searches for &quot;shorts&quot; and there are shirts with a description that includes the term &quot;short sleeves&quot;, then the shirts will be included in the search results.
 
-Siempre se pueden buscar los atributos siguientes:
+The following attributes are always searchable:
 
 * `sku`
 * `name`
 * `categories`
 
-![Opción de búsqueda en directo](assets/storefront-search-as-you-type.png)
+[[!DNL Live Search popover]](assets/storefront-search-as-you-type.png)
 
-## Tamaño de página emergente
+## [!DNL Popover]
 
-El tamaño de página de la ventana emergente determina cuántas líneas de productos completados automáticamente se pueden devolver. Anteriormente, el tamaño de la página se codificaba como seis líneas. Sin embargo, la variable `page_size` ahora es una configuración que se puede configurar desde la variable *Administrador*. Durante la instalación de Live Search, la variable `page_size` cambia al valor actual del [Buscar en el catálogo](https://docs.magento.com/user-guide/configuration/catalog/catalog.html#catalog-search) - `Autocomplete Limit` configuración.
+[!DNL popover] Previously, the page size was hardcoded as six lines. `page_size`** `page_size`[](https://docs.magento.com/user-guide/configuration/catalog/catalog.html#catalog-search)`Autocomplete Limit`
 
-De forma predeterminada, el valor Búsqueda en el catálogo - Límite de autocompletar está establecido en ocho líneas (o filas). Para cambiar el tamaño de la página de la ventana emergente, haga lo siguiente:
+By default, the Catalog Search - Autocomplete Limit value is set to eight lines (or rows). [!DNL popover]
 
-1. En el *Administrador* barra lateral, vaya a **Almacenes** > Configuración > **Configuración**.
-1. En el panel izquierdo, expanda **Catálogo** y elija **Catálogo** de la lista de ajustes.
-1. Expanda el *Buscar en el catálogo* para obtener más información.
-1. Configure las variables **Límite de autocompletado** al número de líneas que desea permitir en la ventana emergente.
-1. Cuando termine, haga clic en **Guardar configuración**.
+1. **********
+1. ********
+1. **
+1. ****[!DNL popover]
+1. ****

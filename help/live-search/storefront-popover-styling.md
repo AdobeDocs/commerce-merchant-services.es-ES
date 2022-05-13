@@ -1,17 +1,17 @@
 ---
-title: Diseño de elementos emergentes
-description: Notas técnicas sobre la personalización de la ventana emergente de tienda de Live Search.
+title: Styling Popover Elements
+description: Technical notes about customizing the Live Search storefront popover.
 exl-id: 033049f2-976e-4299-b026-333ac4b481a3
-source-git-commit: 479bf3fba776f47942a0ac8419abbae5553339f0
+source-git-commit: 65126f10574801f7ea8d0a863e9bb512dca13f39
 workflow-type: tm+mt
-source-wordcount: '222'
+source-wordcount: '210'
 ht-degree: 0%
 
 ---
 
-# Diseño de elementos emergentes
+# [!DNL Popover]
 
-La variable [ventana emergente de tienda](storefront-popover.md) muestra siempre el producto `name` y `price`, y la selección de campos no se puede configurar. Sin embargo, los elementos emergentes se pueden diseñar utilizando clases CSS. Por ejemplo, las siguientes declaraciones cambian el color de fondo del contenedor y del pie de página de la ventana emergente.
+[[!DNL storefront popover]](storefront-popover.md)`name``price` [!DNL popover] [!DNL popover]
 
 ```css
 .livesearch.popover-container {
@@ -23,20 +23,20 @@ La variable [ventana emergente de tienda](storefront-popover.md) muestra siempre
 }
 ```
 
-## Visibilidad del contenedor
+## Container visibility
 
-El componente principal del `.livesearch.popover-container` es `.search-autocomplete`.  La variable `.active` indica la visibilidad del contenedor. La variable `.active` se añade condicionalmente cuando la ventana emergente está abierta.
+`.livesearch.popover-container``.search-autocomplete`  `.active` `.active`[!DNL popover]
 
 ```css
 .search-autocomplete.active   /* visible */
 .search-autocomplete          /* not visible */
 ```
 
-Para obtener más información sobre el estilo de los elementos de tienda, consulte [Hojas de estilo en cascada (CSS)](https://devdocs.magento.com/guides/v2.4/frontend-dev-guide/css-topics/css-overview.html) en el [Guía para desarrolladores de Frontend](https://devdocs.magento.com/guides/v2.4/frontend-dev-guide/bk-frontend-dev-guide.html).
+[](https://devdocs.magento.com/guides/v2.4/frontend-dev-guide/css-topics/css-overview.html)[](https://devdocs.magento.com/guides/v2.4/frontend-dev-guide/bk-frontend-dev-guide.html)
 
-## Selectores de clases
+## Class selectors
 
-Los siguientes selectores de clase se pueden utilizar para aplicar estilo a los elementos de contenedor, sugerencia y producto de la ventana emergente.
+[!DNL popover]
 
 * `.livesearch.popover-container`
 * `.livesearch.view-all-footer`
@@ -48,44 +48,37 @@ Los siguientes selectores de clase se pueden utilizar para aplicar estilo a los 
 * `.livesearch.product-name`
 * `.livesearch.product-price`
 
-### Selectores de clase de contenedor
+### Container Class Selectors
 
 `.livesearch.popover-container`
 
-![Envase](assets/livesearch-popover-container.png)
+![[!DNL Popover]](assets/livesearch-popover-container.png)
 
 `.livesearch.view-all-footer`
 
-![Ver todo el pie de página](assets/livesearch-view-all-footer.png)
+![](assets/livesearch-view-all-footer.png)
 
-### Selectores de clases de sugerencias
+### Suggestion Class Selectors
 
-`.livesearch.suggestions-container`
-![Contenedor de sugerencias](assets/livesearch-suggestions-container.png)
+`.livesearch.suggestions-container`![](assets/livesearch-suggestions-container.png)
 
-`.livesearch.suggestions-header`
-![Encabezado Sugerencias](assets/livesearch-suggestions-header.png)
+`.livesearch.suggestions-header`![](assets/livesearch-suggestions-header.png)
 
-`.livesearch.suggestion`
-![Sugerencia](assets/livesearch-suggestion.png)
+`.livesearch.suggestion`![](assets/livesearch-suggestion.png)
 
-### Selectores de clase de producto
+### Product Class Selectors
 
-`.livesearch.products-container`
-![Contenedor de producto](assets/livesearch-product-container.png)
+`.livesearch.products-container`![](assets/livesearch-product-container.png)
 
-`.livesearch.product-result`
-![Resultado del producto](assets/livesearch-product-result.png)
+`.livesearch.product-result`![](assets/livesearch-product-result.png)
 
-`.livesearch.product-name`
-![Nombre del producto](assets/livesearch-product-name.png)
+`.livesearch.product-name`![](assets/livesearch-product-name.png)
 
-`.livesearch.product-price`
-![Precio del producto](assets/livesearch-product-price.png)
+`.livesearch.product-price`![](assets/livesearch-product-price.png)
 
-## Trabajo con un tema modificado {#working-with-modified-theme}
+## Working with a modified theme {#working-with-modified-theme}
 
-La ventana emergente de tienda se puede usar con una [tema](https://devdocs.magento.com/guides/v2.3/frontend-dev-guide/themes/theme-overview.html) que hereda los archivos necesarios de *Luma*. La variable `top.search` en el `header-wrapper` del `Magento_Search` no debe modificarse.
+[!DNL storefront popover][](https://devdocs.magento.com/guides/v2.3/frontend-dev-guide/themes/theme-overview.html)** `top.search``header-wrapper``Magento_Search`
 
 ```html
 <referenceContainer name="header-wrapper">
@@ -97,9 +90,9 @@ La ventana emergente de tienda se puede usar con una [tema](https://devdocs.mage
 </referenceContainer>
 ```
 
-## Desactivación de la ventana emergente
+## [!DNL popover]
 
-Para desactivar la ventana emergente y restaurar el estándar [Búsqueda rápida](https://docs.magento.com/user-guide/catalog/search-quick.html) , introduzca el siguiente comando:
+[!DNL popover][](https://docs.magento.com/user-guide/catalog/search-quick.html)
 
 ```bash
 bin/magento module:disable Magento_LiveSearchStorefrontPopover
