@@ -1,44 +1,46 @@
 ---
-title: Tipos de sinónimos
-description: Los sinónimos de búsqueda dinámica unidireccional y bidireccional amplían la definición de palabras clave.
+title: Types of Synonyms
+description: One- and two-way Live Search synonyms expand the definition of keywords.
 exl-id: 708d7b0d-7361-44f4-ae9e-b92f574ac975
-source-git-commit: c8fd75f68ed0def18f6f89adc777244057c5d79d
+source-git-commit: 7c3b7ff9e892521108dfec3f308db795e3ab42f9
 workflow-type: tm+mt
-source-wordcount: '402'
+source-wordcount: '449'
 ht-degree: 0%
 
 ---
 
-# Tipos de sinónimos
+# Types of Synonyms
 
-Los sinónimos unidireccionales y bidireccionales amplían la definición de palabras clave. Algunos pueden intercambiarse con la palabra clave, mientras que otros representan un subconjunto de la palabra clave.
+One- and two-way synonyms expand the definition of keywords. Some are interchangeable with the keyword, while others represent a subset of the keyword.
 
-## bidireccional
+## Two-way
 
-Los sinónimos bidireccionales tienen el mismo significado y devuelven los mismos resultados de búsqueda. En el siguiente ejemplo, la primera palabra que se muestra en negrita es la palabra clave que se usa en el catálogo, seguida de palabras que tienen el mismo significado que la palabra clave original. Puede crear un par simple de sinónimos bidireccionales o una cadena de varios sinónimos bidireccionales para la misma palabra clave.
+Two-way synonyms have the same meaning and return the same search results. In the following example, the first word shown in bold is the keyword that is used in the catalog, followed by words that have the same meaning as the original keyword. You can create a simple pair of two-way synonyms, or a chain of multiple two-way synonyms for the same keyword.
 
-**chaqueta** ![Selector bidireccional](assets/btn-two-way.png) abrigo
-**pantalones** ![Selector bidireccional](assets/btn-two-way.png) barras ![Selector bidireccional](assets/btn-two-way.png) trolls
+****![](assets/btn-two-way.png)****![](assets/btn-two-way.png)![](assets/btn-two-way.png)
 
-## Unidireccional
+## One-way
 
-Un sinónimo unidireccional es un subconjunto de una palabra clave, pero con un significado más específico. Por ejemplo, los capris y los pantalones cortos son pantalones, pero no todos los pantalones son gorras o pantalones cortos. La búsqueda de pantalones incluye capris y pantalones cortos. Sin embargo, la búsqueda de pantalones cortos no devuelve capris.
+A one-way synonym is a subset of a keyword, but with a more specific meaning. For example, capris and shorts are pants, but not all pants are capris or shorts. A search for pants includes capris and shorts. However, a search for shorts does not return capris.
 
-**camisa** ![Selector unidireccional](assets/btn-one-way.png) hoodie
-**pantalones** ![Selector unidireccional](assets/btn-one-way.png) capris ![Selector unidireccional múltiple](assets/btn-multiple-one-way.png) calf-length-pantalones ![Selector unidireccional múltiple](assets/btn-multiple-one-way.png) empujadores de pedales
+****![](assets/btn-one-way.png)****![](assets/btn-one-way.png)![](assets/btn-multiple-one-way.png)![](assets/btn-multiple-one-way.png)
 
-## Prácticas recomendadas
+## Best practices
 
-Tenga en cuenta las siguientes prácticas recomendadas para sacar el máximo partido a los sinónimos de Live Search.
+Keep in mind the following best practices to get the most from Live Search synonyms.
 
-### Asignación de palabras clave
+### Keyword mapping
 
-Esta técnica utiliza atributos de producto en los que se pueden buscar, en lugar de sinónimos, para crear asociaciones basadas en palabras clave entre productos. Como resultado, un producto asignado puede aparecer en los resultados de búsqueda de otro producto. Para obtener más información, consulte [Resultados de la búsqueda](https://docs.magento.com/user-guide/catalog/search-results.html).
+This technique uses searchable product attributes, rather than synonyms, to create keyword-based associations between products. As a result, a mapped product can appear in the search results of another product. [](https://docs.magento.com/user-guide/catalog/search-results.html)
 
-### Uso del singular y plural
+### Use single words
 
-No es necesario definir las formas singular y plural de una palabra como sinónimo. Si tiene una mezcla de términos en singular y plural en su catálogo, Search encuentra el conjunto correcto de productos. Por ejemplo, si utiliza la palabra &quot;inclinación&quot; en el nombre del producto y un comprador busca &quot;pantalones&quot;, se devuelve el conjunto de productos correcto y se ofrece la palabra singular &quot;inclinación&quot; como sugerencia. El término singular &quot;hormiga&quot; se utiliza a menudo en la industria de la moda y a veces en la venta minorista, aunque la forma plural &quot;pantalones&quot; se utiliza más comúnmente en algunas áreas. (La palabra &quot;inclinar&quot; se refiere técnicamente a la parte de una prenda que cubre una pierna, por lo que se necesita un &quot;par de pantalones&quot; para cubrir ambas piernas.)
+If a synonym term contains multiple words, the blank space between the words causes them to be treated as a separate synonyms. For example, if you define “time piece” as a synonym for “watch”, the words “time” and “piece” are treated as separate synonyms.
 
-### Coherencia
+### Use of singular and plural
 
-Sea coherente con la forma en que se utiliza la terminología en su catálogo. Tenga en cuenta que puede haber diferencias regionales en el uso, y a veces diferencias dentro de un sector.
+It is not necessary to define both the singular and plural forms of a word as a synonym. If you have a mixture of singular and plural terms in your catalog, Search finds the correct set of products. For example, if you use the word “pant” in the product name and a shopper searches for “pants”, the correct set of products is returned, and the singular word “pant” is offered as a suggestion. The singular term “pant” is often used in the fashion industry and sometimes in retail, although the plural form “pants” is more commonly used in some areas. (The word “pant” technically refers to the part of a garment that covers one leg, which is why you need a “pair of pants” to cover both legs.)
+
+### Consistency
+
+Be consistent with the way terminology is used in your catalog. Keep in mind that there might be regional differences in usage, and sometimes differences within an industry.
