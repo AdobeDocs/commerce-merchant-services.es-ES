@@ -1,10 +1,10 @@
 ---
-title: Sinónimos
-description: Los sinónimos de búsqueda activa amplían las consultas con palabras que difieren de las del catálogo.
+title: '"Sinónimos"'
+description: '"[!DNL Live Search] Los sinónimos amplían las consultas con palabras que difieren de las del catálogo."'
 exl-id: f2b7c5fb-f009-4834-baff-06e8ed7be7e5
-source-git-commit: 7402e97f53b71e488d860215487f4809572b7e6f
+source-git-commit: bffbede99865e9085f60392e474065a454446370
 workflow-type: tm+mt
-source-wordcount: '121'
+source-wordcount: '119'
 ht-degree: 0%
 
 ---

@@ -1,10 +1,10 @@
 ---
-title: Área de trabajo de facetas
-description: Aprenda a navegar por el espacio de trabajo de facetas de Live Search.
+title: '"Área de trabajo de facetas"'
+description: '"Aprenda a recorrer el [!DNL Live Search] espacio de trabajo de facetas".'
 exl-id: b47b5c19-59bb-41e4-9599-3b90cbc44b70
-source-git-commit: a8943e56cc074a96d3f9e1009b76fa589b76a8a4
+source-git-commit: bffbede99865e9085f60392e474065a454446370
 workflow-type: tm+mt
-source-wordcount: '264'
+source-wordcount: '262'
 ht-degree: 0%
 
 ---

@@ -1,10 +1,10 @@
 ---
-title: Agregar sinónimos
-description: Agregue sinónimos de búsqueda activa para mejorar la respuesta a las solicitudes de búsqueda.
+title: '"Añadir sinónimos"'
+description: '"Agregue [!DNL Live Search] sinónimos para mejorar la respuesta a las solicitudes de búsqueda."'
 exl-id: 6c277d88-cb22-4174-abda-6d6bb65fe3be
-source-git-commit: 87e0500c623f9492d1722c21a2b47bf43d104829
+source-git-commit: bffbede99865e9085f60392e474065a454446370
 workflow-type: tm+mt
-source-wordcount: '395'
+source-wordcount: '393'
 ht-degree: 0%
 
 ---

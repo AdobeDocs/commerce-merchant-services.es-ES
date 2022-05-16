@@ -1,10 +1,10 @@
 ---
-title: Espacio de trabajo de reglas
-description: Aprenda a navegar por el espacio de trabajo de reglas de Live Search.
+title: '"Espacio de trabajo de reglas"'
+description: '"Aprenda a recorrer el [!DNL Live Search] espacio de trabajo de reglas".'
 exl-id: a52839fb-2264-4443-83c3-9eaa2ccb6996
-source-git-commit: 61d50ec07e7c8ced1696f4169a90302cca4d4f96
+source-git-commit: bffbede99865e9085f60392e474065a454446370
 workflow-type: tm+mt
-source-wordcount: '585'
+source-wordcount: '583'
 ht-degree: 0%
 
 ---

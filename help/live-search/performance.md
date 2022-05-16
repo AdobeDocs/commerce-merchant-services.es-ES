@@ -1,10 +1,10 @@
 ---
-title: Rendimiento
-description: El panel Rendimiento de búsqueda activa proporciona una perspectiva de los términos de búsqueda que utilizan los compradores.
+title: '"Rendimiento"'
+description: '"El [!DNL Live Search] El panel de rendimiento proporciona una perspectiva de los términos de búsqueda que utilizan los compradores".'
 exl-id: ee2053fc-98c5-4d2c-9345-4d1f9a3180fb
-source-git-commit: 19f0c987ab6b43b6fac1cad266b5fd47a7168e73
+source-git-commit: bffbede99865e9085f60392e474065a454446370
 workflow-type: tm+mt
-source-wordcount: '465'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---

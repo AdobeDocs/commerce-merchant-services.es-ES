@@ -1,10 +1,10 @@
 ---
-title: Reglas
-description: Las reglas de búsqueda activa combinan lógica con acciones para dar forma a la experiencia de compra.
+title: '"Reglas"'
+description: '"[!DNL Live Search] las reglas combinan lógica con acciones para dar forma a la experiencia de compra".'
 exl-id: d06a3040-6987-4813-90ae-2f7b3ad0b232
-source-git-commit: 7402e97f53b71e488d860215487f4809572b7e6f
+source-git-commit: bffbede99865e9085f60392e474065a454446370
 workflow-type: tm+mt
-source-wordcount: '110'
+source-wordcount: '108'
 ht-degree: 0%
 
 ---

@@ -1,10 +1,10 @@
 ---
-title: Facetas
-description: Las facetas de búsqueda activa utilizan varias dimensiones de valores de atributos como criterios de búsqueda.
+title: '"Facetas"'
+description: '"[!DNL Live Search] las facetas utilizan varias dimensiones de valores de atributos como criterios de búsqueda."'
 exl-id: 63c0b255-6be9-41ad-b4bf-13bb7ff098fd
-source-git-commit: 554b07c233da2af2ca2d9aacf56bdfe09dc67cd3
+source-git-commit: bffbede99865e9085f60392e474065a454446370
 workflow-type: tm+mt
-source-wordcount: '388'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---

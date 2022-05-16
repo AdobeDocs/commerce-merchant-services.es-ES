@@ -1,10 +1,10 @@
 ---
-title: Indexación de búsqueda en directo
-description: Descubra cómo la búsqueda activa indexa las propiedades de atributos del producto
+title: '"[!DNL Live Search] Indexación"'
+description: '"Descubra cómo [!DNL Live Search] indexa propiedades de atributos del producto".'
 exl-id: 04441e58-ffac-4335-aa26-893988a89720
-source-git-commit: 8cc10feccda91fc1d9ead35f9b2b1e8ea19d4c95
+source-git-commit: bffbede99865e9085f60392e474065a454446370
 workflow-type: tm+mt
-source-wordcount: '542'
+source-wordcount: '538'
 ht-degree: 0%
 
 ---
