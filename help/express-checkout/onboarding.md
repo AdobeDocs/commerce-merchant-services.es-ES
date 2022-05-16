@@ -2,9 +2,9 @@
 title: Incorpore el [!DNL Express Checkout] para la extensión de Adobe Commerce
 description: Aprenda a [!DNL Express Checkout] podría beneficiar a su instancia de Adobe Commerce y cómo incorporar y configurar correctamente la extensión.
 exl-id: 8caf746c-e31b-4331-8b0d-ea0f1e545bdd
-source-git-commit: 1a7df2c5581ea6d590aa1a2f701b4428371d2299
+source-git-commit: bd9541c5e4810085ab85206b2ecca21e66800a2f
 workflow-type: tm+mt
-source-wordcount: '603'
+source-wordcount: '621'
 ht-degree: 0%
 
 ---
@@ -102,9 +102,10 @@ Para obtener más información sobre las opciones de cierre de compra estándar 
 Para habilitar la variable [!DNL Express Checkout] para la extensión de Adobe Commerce:
 
 1. Haga clic en **Guardar configuración**.
+1. Vaya a **[!UICONTROL System]** > **[!UICONTROL Cache Management]** y haga clic en **[!UICONTROL Flush Cache]** para actualizar todas las cachés no válidas.
 
 ## Obtener ayuda
 
-El proceso de incorporación está diseñado para guiarle por los pasos necesarios para configurar y habilitar todo [!DNL Express Checkout] funcionalidad. Póngase en contacto con el servicio de asistencia técnica de Adobe Commerce para obtener ayuda.
+El proceso de incorporación está diseñado para guiarle por los pasos necesarios para configurar y habilitar el [!DNL Express Checkout] funcionalidad. Contacto [!DNL Adobe Commerce] equipo de ingeniería a través del Slack asignado [Canal Programas beta de Adobe](http://adobe-beta-programs.slack.com/) para cualquier ayuda.
 
 Consulte la [probar y validar](../express-checkout/testing.md) para obtener más información.

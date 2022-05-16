@@ -2,9 +2,9 @@
 title: Flujo de cierre de compra
 description: Información general sobre [!DNL Express Checkout] en Adobe Commerce.
 exl-id: 82761627-a0d4-4cb0-aad1-9865fcb550d4
-source-git-commit: 1a7df2c5581ea6d590aa1a2f701b4428371d2299
+source-git-commit: bd9541c5e4810085ab85206b2ecca21e66800a2f
 workflow-type: tm+mt
-source-wordcount: '574'
+source-wordcount: '583'
 ht-degree: 0%
 
 ---
@@ -113,4 +113,4 @@ Si no [!DNL Bolt] se encuentra la cuenta, los compradores continúan con su cier
 
 ## Obtener ayuda
 
-Póngase en contacto con el servicio de asistencia técnica de Adobe Commerce para obtener ayuda.
+Contacto [!DNL Adobe Commerce] equipo de ingeniería a través del Slack asignado [Canal Programas beta de Adobe](http://adobe-beta-programs.slack.com/) para cualquier ayuda.
