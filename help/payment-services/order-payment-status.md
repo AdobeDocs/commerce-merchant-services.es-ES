@@ -4,9 +4,9 @@ description: Utilice el informe de estado de pago de pedidos para obtener visibi
 role: User
 level: Intermediate
 exl-id: 192e47b9-d52b-4dcf-a720-38459156fda4
-source-git-commit: 9596815e31402f23b399b223f3221074331c1773
+source-git-commit: 4fc2b3bdf9f319337939905bca2b9525985702d4
 workflow-type: tm+mt
-source-wordcount: '1174'
+source-wordcount: '1268'
 ht-degree: 0%
 
 ---
@@ -92,6 +92,16 @@ Desde la vista Informe de estado de pago de pedidos , puede personalizar el inte
 1. Haga clic en el **[!UICONTROL Order dates]** filtro de selector de calendario.
 1. Elija el intervalo de fechas aplicable.
 1. Vea los estados de pago de pedidos para las fechas especificadas en la cuadrícula.
+
+## Mostrar y ocultar columnas
+
+El informe Estado de Pago de Pedido muestra todas las columnas de información disponibles de forma predeterminada. Sin embargo, puede personalizar qué columnas ve en el informe.
+
+1. En el _Administrador_ barra lateral, vaya a **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > **[!UICONTROL Order payment status]**.
+1. Haga clic en el _Configuración de columna_ icono (![icono de configuración de columna](assets/column-settings.png)).
+1. Para personalizar qué columnas ve en el informe, marque o desmarque las columnas de la lista.
+
+   El informe Estado del pago del pedido mostrará inmediatamente cualquier cambio que haya realizado en el menú Configuración de columna . Las preferencias de columna se guardarán y permanecerán en vigor si se sale de la vista del informe.
 
 ## Ver estados
 

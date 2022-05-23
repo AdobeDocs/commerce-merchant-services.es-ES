@@ -4,9 +4,9 @@ description: Utilice el informe de pagos para obtener una total transparencia en
 role: User
 level: Intermediate
 exl-id: f3f99474-cd28-4c8f-b0ea-dca8e014b108
-source-git-commit: 9596815e31402f23b399b223f3221074331c1773
+source-git-commit: 4fc2b3bdf9f319337939905bca2b9525985702d4
 workflow-type: tm+mt
-source-wordcount: '857'
+source-wordcount: '947'
 ht-degree: 0%
 
 ---
@@ -72,6 +72,16 @@ Desde la vista Pagos, puede personalizar el intervalo de tiempo para las transac
 1. Haga clic en el filtro Selector de calendario de fechas de transacción .
 1. Elija el intervalo de fechas aplicable.
 1. Vea los estados de las ganancias en la cuadrícula para las fechas especificadas.
+
+## Mostrar y ocultar columnas
+
+El informe de pagos muestra las columnas de información más disponibles de forma predeterminada. Sin embargo, puede personalizar qué columnas ve en el informe.
+
+1. En el _Administrador_ barra lateral, vaya a **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > **[!UICONTROL Payouts]**.
+1. Haga clic en el _Configuración de columna_ icono (![icono de configuración de columna](assets/column-settings.png)).
+1. Para personalizar qué columnas ve en el informe, marque o desmarque las columnas de la lista.
+
+   El informe de pagos mostrará inmediatamente los cambios realizados en el menú de configuración de columna. Las preferencias de columna se guardarán y permanecerán en vigor si se sale de la vista del informe.
 
 ## Descargar transacciones
 
