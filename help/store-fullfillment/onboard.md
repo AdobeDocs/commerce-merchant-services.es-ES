@@ -3,10 +3,10 @@ title: Incorporado "[!DNL Store Fulfillment]"
 description: Conecte la instancia de Commerce a la [!DNL Store Fulfillment Manager] completando algunos pasos de integración.
 role: User, Admin
 level: Intermediate
-source-git-commit: 24639b75d3c629856fbb8fc74e7eb072d4197815
+source-git-commit: f3148d575088fff3b4178f3c03e9d45ce461fbe2
 workflow-type: tm+mt
-source-wordcount: '599'
-ht-degree: 1%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -37,7 +37,7 @@ Después de completar la incorporación, configure y administre la solución des
 
 ## Requisitos previos
 
-* **Información de la cuenta de comercio**-Descarga e instalación [!DNL Channel Manager] requiere un [Cuenta de comercio](https://docs.magento.com/user-guide/magento/magento-account.html){target=&quot;_blank&quot;}. Necesita un ID de cuenta y credenciales con acceso de propietario o administrador a la variable [!DNL Adobe Commerce] o [!DNL Magento Open Source] instancia.
+* **Información de la cuenta de comercio**-Instalación [!DNL Store Fulfillment by Walmart Technologies] requiere un [Cuenta de comercio](https://docs.magento.com/user-guide/magento/magento-account.html){target=&quot;_blank&quot;}. Necesita un ID de cuenta y credenciales con acceso de propietario o administrador a la variable [!DNL Adobe Commerce] o [!DNL Magento Open Source] instancia.
 
 * Para [!DNL Adobe Commerce] en proyectos de infraestructura en la nube, los instaladores de software deben tener el siguiente acceso a la variable [!DNL Commerce] instancia:
 
@@ -47,7 +47,7 @@ Después de completar la incorporación, configure y administre la solución des
 
       Consulte [Administrar el acceso de los usuarios](https://devdocs.magento.com/cloud/project/user-admin.html).
 
-* **Acceso al cumplimiento de la tienda mediante el archivo de software de Walmart Technologies para instalar la solución de cumplimiento de almacenamiento en su instancia de Adobe Commerce**-El representante de cuentas del cliente puede proporcionar acceso al archivo de instalación de la extensión.
+* **Acceso al cumplimiento de la tienda mediante el archivo de software de Walmart Technologies (archivo .zip) para instalar la solución Store Fulfillment en su instancia de Adobe Commerce**-El representante de cuentas del cliente puede proporcionar acceso al archivo de instalación de la extensión.
 
 * **Experiencia con el Compositor y el[!DNL Commerce CLI]** -Consulte [Instalación general de CLI](https://devdocs.magento.com/extensions/install/){target=&quot;_blank&quot;} para obtener información sobre el uso de estas herramientas para instalar y administrar extensiones en [!DNL Adobe Commerce] y [!DNL Magento Open Source] plataformas.
 
