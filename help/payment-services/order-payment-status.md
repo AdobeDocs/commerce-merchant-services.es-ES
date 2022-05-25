@@ -4,9 +4,9 @@ description: Utilice el informe de estado de pago de pedidos para obtener visibi
 role: User
 level: Intermediate
 exl-id: 192e47b9-d52b-4dcf-a720-38459156fda4
-source-git-commit: 4fc2b3bdf9f319337939905bca2b9525985702d4
+source-git-commit: fde5844ad6c602708f9a5ad76ce8c9b5547dba76
 workflow-type: tm+mt
-source-wordcount: '1268'
+source-wordcount: '1359'
 ht-degree: 0%
 
 ---
@@ -122,6 +122,18 @@ También puede forzar una actualización manual de los datos del informe de esta
 
    Los datos del informe de estado de pago del pedido se actualizan y *[!UICONTROL Update complete]* y la información más reciente está presente en la cuadrícula.
 
+## Ver conflictos
+
+Puede ver cualquier disputa sobre los pedidos de su tienda, y navegar al Centro de Resolución de PayPal para tomar medidas sobre ellos, desde el informe de estado del pago del pedido.
+
+1. En el _Administrador_ barra lateral, vaya a **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > **[!UICONTROL Order payment status]**.
+1. Vaya a la **[!UICONTROL Disputes column]**.
+1. Ver las disputas de un pedido específico y ver [el estatuto de disputa](#order-payment-status-information).
+1. Haga clic en el vínculo ID de disputa (comenzando por _PP-D_) para ir a la [Centro de resolución de PayPal](https://www.paypal.com/us/smarthelp/article/what-is-the-resolution-center-faq3327).
+1. Adoptar las medidas apropiadas para la controversia, según sea necesario.
+
+   Para ordenar los conflictos por estado, haga clic en el encabezado de la columna Disputas.
+
 ## Descargar estados de pago de pedido
 
 Puede descargar un archivo .csv con todos los estados visibles en la cuadrícula de vista Estado del pago del pedido , independientemente de si está viendo los 30 días predeterminados de estados o un intervalo de tiempo personalizado.
@@ -171,7 +183,7 @@ Los informes de estado de pago de pedidos incluyen la siguiente información.
 | [!UICONTROL Refund Status] | Estado de un reembolso de un pedido (como información de devoluciones, RMA y notas de crédito)—   *[!UICONTROL Requires refund]*, *[!UICONTROL Refund requested]*, *[!UICONTROL Refunded]*, *[!UICONTROL Refund failed]* o *[!UICONTROL Voided]* |
 | [!UICONTROL Refund Amount] | Total del importe reembolsado de una orden |
 | [!UICONTROL Cur] | Tipo de divisa de la cantidad reembolsada para un pedido |
-| [!UICONTROL Dispute Status] | Situación de cualquier litigio relativo a una orden (información de litigios y acusaciones)—*[!UICONTROL New]*, *[!UICONTROL Representment]*, *[!UICONTROL Accepted]*, *[!UICONTROL Pre-arbitration received]*, *[!UICONTROL Arbitration]* o *[!UICONTROL Arbitration received]* |
+| [!UICONTROL Disputes] | Situación de cualquier litigio relativo a una orden (información de litigios y acusaciones)—*[!UICONTROL Open]*, *[!UICONTROL Waiting for buyer response]*, *[!UICONTROL Waiting for seller response]*, *[!UICONTROL Under review]*, *[!UICONTROL Resolved]* o *[!UICONTROL Other]* |
 | [!UICONTROL Payment Method] | Método de pago utilizado en la transacción de comercio para un pedido |
 | [!UICONTROL Website] | Sitio web desde el cual se realizó el pedido |
 | [!UICONTROL Store] | Almacén desde el que se realizó el pedido |
