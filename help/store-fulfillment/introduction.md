@@ -4,7 +4,7 @@ description: '"Descubra cómo [!DNL Store Fulfillment for Adobe Commerce by Walm
 role: User
 level: Intermediate
 exl-id: d2f90af8-3eba-499d-84de-4b70ecc7166c
-source-git-commit: 26d0ddbcbe648b336d527788668caef1f8e688ed
+source-git-commit: 33d8ed57f5a4b8419bd30375a1fb5bec6be37a5e
 workflow-type: tm+mt
 source-wordcount: '0'
 ht-degree: 0%
@@ -31,7 +31,7 @@ El cumplimiento de la tienda también ofrece un flujo de trabajo de cumplimiento
 
 ## Extensión de entrega de tiendas
 
-La extensión Store Fulfillment se integra con Adobe Commerce para que pueda administrar la configuración de las operaciones de Adobe Commerce y las interfaces de cliente desde el administrador.
+Admite y mejora las funciones nativas de Adobe Commerce
 
 * Admite la mayoría de los tipos de producto: simple, configurable, agrupado, agrupado y virtual
 
@@ -39,11 +39,11 @@ La extensión Store Fulfillment se integra con Adobe Commerce para que pueda adm
 
 * Se integra con sistemas comerciales de puntos de venta (POS) como ERP, OMS y WMS, sistemas de mercante para la gestión de inventarios
 
-* Totalmente compatible con el tema de Luma.
+* Totalmente compatible con el tema de Luma
 
-* Proporciona compatibilidad con GraphQL para tiendas sin periféricos y de Venia.
+* Proporciona compatibilidad con GraphQL para tiendas sin periféricos y Venia
 
-* Admite la aplicación Store Assist de Walmart Commerce Technology. Esta aplicación envía pedidos de recogida directamente al dispositivo de mano del empleado en la tienda correcta, de modo que los artículos se puedan recoger y entregar de forma rápida y precisa a los clientes cuando llegan para su recogida.
+* Admite la aplicación Store Assist de Walmart Commerce Technology. Esta aplicación envía pedidos de recogida directamente al dispositivo de mano de su empleado en la tienda correcta, de modo que los artículos se puedan seleccionar y seleccionar, colocar y entregar a los clientes de forma rápida y precisa en el momento de su registro de entrada.
 
 ## Aplicación de asistencia de la tienda
 
@@ -61,7 +61,7 @@ La aplicación Store Assist para dispositivos iOS y Android™ interactúa con l
 
 El cumplimiento de la tienda mejora Adobe Commerce al añadir las siguientes funciones para ofrecer experiencias de compra mejoradas y flujos de trabajo de cumplimiento optimizados:
 
-* **Selector de ubicación de almacenamiento (SLS)**-Agrega opciones de recogida de tiendas, disponibilidad del inventario y selectores de tienda a las interfaces de producto, carro y cierre de compra de Adobe Commerce.
+* **Selector de ubicación de almacenamiento (SLS)**-Expone la opción de recogida de tiendas, la disponibilidad del inventario y el selector de tiendas en las páginas de productos y carros, además del cierre de compra nativo.
 
 * **Disponibilidad de inventario**-Agrega opciones adicionales de configuración global y de producto a Adobe Commerce Inventory management para admitir la asignación de inventario a nivel de tienda a fin de lograr el cumplimiento local oportuno.
 
