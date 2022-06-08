@@ -2,9 +2,9 @@
 title: Habilitar [!DNL Payment Services] para producción
 description: Complete el proceso de incorporación habilitando [!DNL Payment Services] para producción.
 exl-id: 3b1269e8-127b-47f8-9738-9722a5737c63
-source-git-commit: 9596815e31402f23b399b223f3221074331c1773
+source-git-commit: 51722d7045ccb6ccfdc7ab5bd93d5ca46b52cf03
 workflow-type: tm+mt
-source-wordcount: '685'
+source-wordcount: '709'
 ht-degree: 0%
 
 ---
@@ -64,7 +64,7 @@ Consulte [Configurar servicios de pago](settings.md) para obtener más informaci
 
    >[!IMPORTANT]
    >
-   >Si revoca el consentimiento a [!DNL Payment Services] para [!DNL Adobe Commerce] y [!DNL Magento Open Source] para procesar sus pagos (en la configuración de su cuenta de PayPal), los pedidos de su tienda no pueden ser procesados por [!DNL Payment Services].
+   >Si revoca el consentimiento a [!DNL Payment Services] para [!DNL Adobe Commerce] y [!DNL Magento Open Source] para procesar sus pagos (en la configuración de su cuenta de PayPal), los pedidos de su tienda no pueden ser procesados por [!DNL Payment Services]. En su página de inicio de servicios de pago, aparecerá una alerta sobre el consentimiento revocado.
 
 ## Solicitar el derecho de pago del Adobe
 
@@ -115,7 +115,7 @@ Consulte [Configurar en el administrador](configure-admin.md) para opciones de c
 
 >[!IMPORTANT]
 >
->Si revoca el consentimiento a [!DNL Payment Services] para procesar sus pagos (en la configuración de su cuenta de PayPal), los pedidos de su tienda no pueden ser procesados por [!DNL Payment Services]. Si desea volver a habilitar el procesamiento de pagos, debe volver a completar la incorporación.
+>Si revoca el consentimiento a [!DNL Payment Services] para procesar sus pagos (en la configuración de su cuenta de PayPal), los pedidos de su tienda no pueden ser procesados por [!DNL Payment Services]. Si desea volver a habilitar el procesamiento de pagos, debe volver a completar la incorporación. En su página de inicio de servicios de pago, aparecerá una alerta sobre el consentimiento revocado.
 
 ## Prueba en producción
 

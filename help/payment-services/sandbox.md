@@ -2,9 +2,9 @@
 title: Configuración del simulador de pruebas
 description: Usar una cuenta de espacio aislado de PayPal para usar [!DNL Payment Services] en modo de prueba.
 exl-id: 99c14b4e-e6cf-48f9-9546-5c0d5c71464d
-source-git-commit: 9596815e31402f23b399b223f3221074331c1773
+source-git-commit: e8d008d9a38cebde7772b7e3d70d2447631414fe
 workflow-type: tm+mt
-source-wordcount: '536'
+source-wordcount: '553'
 ht-degree: 0%
 
 ---
@@ -59,7 +59,7 @@ Cuando se aprueba la incorporación de su simulador de pruebas PayPal, debería 
 
 >[!IMPORTANT]
 >
->Si revoca el consentimiento a [!DNL Payment Services] para [!DNL Adobe Commerce] y [!DNL Magento Open Source] para procesar sus pagos (en la configuración de su cuenta de PayPal), los pedidos de su tienda no pueden ser procesados por [!DNL Payment Services].
+>Si revoca el consentimiento a [!DNL Payment Services] para [!DNL Adobe Commerce] y [!DNL Magento Open Source] para procesar sus pagos (en la configuración de su cuenta de PayPal), los pedidos de su tienda no pueden ser procesados por [!DNL Payment Services]. En su página de inicio de Servicios de Pago, aparecerá una alerta sobre el consentimiento revocado. Para rechazar la alerta, haga clic en **[!UICONTROL Do not show again]**.
 
 ## Habilitar número de teléfono de contacto
 
