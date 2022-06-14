@@ -1,93 +1,58 @@
 ---
-title: Información general sobre la incorporación
-description: '"Conecte su [!DNL Commerce] a la instancia de [!DNL Store Fulfillment Manager] completando algunos pasos de integración".'
+title: Información general sobre la incorporación para los servicios de entrega de la tienda
+description: '"[!DNL Live Search] flujo de incorporación, requisitos del sistema, límites y limitaciones"'
 role: User, Admin
 level: Intermediate
-exl-id: f8e403ac-9bbd-4ea2-b209-9b1a8d1e32a2
-source-git-commit: 26d0ddbcbe648b336d527788668caef1f8e688ed
+source-git-commit: 4ea03b3be11056526adc42d875b1e26a24736d15
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '363'
 ht-degree: 0%
 
 ---
 
-# Información general sobre la incorporación
+# Información general sobre la incorporación para el cumplimiento de la tienda
 
-Complemento de la tienda integrada instalando la extensión en su instancia de comercio y configurando las conexiones de API. Estas conexiones permiten la comunicación y la sincronización de datos entre la instancia de Commerce, los sistemas de terceros para la administración de inventario y la aplicación Store Assist.
+Introducción a [!DNL Store Fulfillment for Adobe Commerce by Walmart Commerce Technologies] configurando, configurando y habilitando los siguientes componentes:
 
-Después de completar la incorporación, configure y administre la solución desde el administrador de comercio
+- **Extensión de entrega de tiendas**-Instale y configure esta extensión de terceros en la instancia de Adobe Commerce. Después de la instalación, puede configurar y administrar la solución Store Fulfillment desde el Administrador para que sea compatible [!DNL buy online, pickup in store] escenarios (BOPIS) en la tienda de comercio.
 
-![[!DNL Store Fulfillment Service] configuración en la vista Administración](assets/store-fulfillment-admin-home.png)
+   ![[!DNL Store Fulfillment Service] configuración en la vista Administración](assets/store-fulfillment-admin-home.png)
 
-## Información general sobre la incorporación
+- **Cuenta de entrega de la tienda**-Durante el proceso de activación, un administrador de cuentas crea su cuenta de cumplimiento de almacenamiento y le proporciona la información de la cuenta y las credenciales. Estas credenciales son necesarias para habilitar la conexión entre Adobe Commerce y la solución Store Fulfillment.
 
-1. Instale la extensión Store Fulfillment by Walmart Technologies para Adobe Commerce.
+- **Aplicación de asistencia de la tienda**: proporciona a los asociados de almacén un flujo de trabajo completo de cumplimiento de almacenamiento para administrar los pedidos BOPIS desde dispositivos móviles. Store Associates puede descargar e instalar el [!DNL Store Assist] para dispositivos iOS y Android. El proceso de incorporación a la aplicación lo gestiona el Centro de clientes de tecnología de comercio Walmart como un proceso independiente. Sin embargo, [algunos ajustes de configuración de la aplicación](user-setup.md) se completan desde el administrador de Adobe Commerce.
 
-1. Desde el administrador, habilite la solución y complete la configuración general para la integración, sus funciones activas y complete el formulario de incorporación para conectarse a los servicios de cumplimiento.
+   | Aplicación de asistencia de tienda: vista de introducción | Aplicación de asistencia de la tienda: vista de módulos |
+   |-------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------|
+   | ![[!DNL Store Assist App Getting Started] visualización en dispositivos móviles](assets/store-assist-get-started-small.png) | ![[!DNL Store Assist App Orders view] en dispositivo móvil](assets/store-assist-orders-small.png) |
 
-1. Configure los métodos de envío.
 
-1. Configure las fuentes como tiendas físicas y los productos en el catálogo.
 
-1. Seleccione y configure las plantillas de correo electrónico para administrar la comunicación con el cliente para comprar en línea y recoger transacciones en la tienda (BOPIS).
 
-1. Cree usuarios y funciones para la aplicación de ayuda de la tienda.
+## Pasos de aprovisionamiento
 
-1. Configure las programaciones de los procesos en segundo plano para sincronizar los datos con el servicio de cumplimiento.
+- **Regístrese para[!DNL Store Fulfillment for Adobe Commerce by Walmart Commerce Technologies]**-Complete el formulario de registro en [business.adobe.com](https://business.adobe.com/resources/store-fulfillment.html)o póngase en contacto con el administrador de cuentas de Adobe Commerce para obtener ayuda.
 
-## Requisitos
+- **Inicio de la solicitud de aprovisionamiento para el cumplimiento de la tienda**-Complete el formulario de admisión proporcionado por su Administrador de cuentas para proporcionar la información necesaria para iniciar el proceso de aprovisionamiento.
 
-Debe cumplir los siguientes requisitos para instalar, implementar y utilizar la solución.
+- **Obtenga las credenciales de la cuenta de cumplimiento de la tienda**-Una vez creada la cuenta de satisfacción de la tienda para usted, recibirá las credenciales necesarias para integrar la solución de cumplimiento de la tienda con Adobe Commerce.
 
-* **Información de la cuenta de comercio**-Instalación [!DNL Channel Manager] requiere un [Cuenta de comercio](https://docs.magento.com/user-guide/magento/magento-account.html){target=&quot;_blank&quot;}. Necesita un ID de cuenta y credenciales con acceso de propietario o administrador a la variable [!DNL Adobe Commerce] instancia.
+- **[Descargue el código fuente para instalar el [!DNL Store Fulfillment] Extensión](install.md)**
 
-* Para [!DNL Adobe Commerce] en los proyectos de infraestructura de nube, los instaladores de software deben tener acceso de administrador al proyecto de Cloud. Consulte [Administrar el acceso de los usuarios](https://devdocs.magento.com/cloud/project/user-admin.html).
+## Pasos de incorporación
 
-* **Acceso al cumplimiento de la tienda por medio del archivo de software Walmart Technologies (archivo .zip) para instalar la solución Store Fulfillment**-Durante el proceso de incorporación y activación, el representante de cuentas de cliente proporcionará acceso de descarga al archivo de instalación.
+1. [Instalación de la extensión Store Fulfillment para Adobe Commerce](install.md).
 
-* **Experiencia con el Compositor y el[!DNL Commerce CLI]**—Consulte [Instalación general de CLI](https://devdocs.magento.com/extensions/install/){target=&quot;_blank&quot;} para obtener información sobre el uso de estas herramientas para instalar y administrar extensiones en [!DNL Adobe Commerce] y [!DNL Magento Open Source] plataformas.
+1. Desde el administrador, [habilitar la solución](enable-general.md).
 
-* [!DNL Inventory Management] extensión para Adobe Commerce y Magento Open Source
+1. [Configurar la extensión de cumplimiento de la tienda desde el administrador de Adobe Commerce](service-config-settings-overview.md).
 
-   Debe tener la extensión de Inventory management instalada y habilitada en la instancia de Adobe Commerce y Magento Open Source. Normalmente, esta extensión está instalada y habilitada de forma predeterminada en Adobe Commerce 2.3.x y posteriores. Para obtener más información, consulte [Instalación de Inventory management](https://devdocs.magento.com/extensions/inventory-management/) en la documentación para desarrolladores de Adobe Commerce.
+1. [Conecte el [!DNL Store Fulfillment] utilizando las credenciales de cumplimiento de la tienda que se le han proporcionado.](connect-set-up-service.md)
 
-## Requisitos de plataforma y versión
+1. [Crear usuarios y funciones para la aplicación de ayuda de la tienda](user-setup.md)
 
-La variable [!DNL Store Fulfillment] está disponible para los clientes de Adobe Commerce en las siguientes plataformas.
+1. [Descargar Walmart [!DNL Store Assist] al dispositivo deseado. La aplicación está disponible tanto en la tienda de aplicaciones (iOS) como en la de reproducción (Android)](app-setup.md)
 
-* Adobe Commerce en infraestructura de nube (ECE)
-* Adobe Commerce local (EE)
+Una vez que haya instalado, configurado, completado la integración correctamente y tenga acceso al [!DNL Store Assist] aplicación, puede [comenzar a crear pedidos y pruebas](test-and-deploy.md).
 
-La solución Store Fulfillment es compatible con las siguientes versiones de software.
 
-**Compatibilidad del software**
-
-| **Software** | **Versión mínima** | **Versión máxima** |
-|----------------|---------------------|---------------------|
-| Adobe Commerce | 2.4.0 | 2.4.4 |
-| Compositor | 1.x | 2.x |
-| MariaDB | 10,2 | 10,4 |
-| MySQL | 5,7 | 8,0 |
-| PHP | 7,4 | 8,1 |
-
-Para conocer los requisitos detallados, consulte Adobe Commerce . [Requisitos del sistema](https://devdocs.magento.com/guides/v2.4/install-gde/system-requirements.html) en la documentación para desarrolladores.
-
-### Requisitos empresariales
-
-Su empresa debe cumplir los siguientes criterios mínimos para implementar la solución de cumplimiento de almacenamiento.
-
-* Solo empresas basadas en EE. UU.
-
-* Minoristas de B2C, fabricantes de CPG que venden D2C o distribuidores que venden D2C o a pequeñas empresas
-
-* Al menos un almacén físico o almacén
-
-* Administrar el inventario de productos con Inventory management para Adobe Commerce (era MSI)
-
-* Capacidad de sindicación de inventario de comerciantes
-
-* Almacene la disponibilidad de Wi-Fi en todas las ubicaciones que admitan la solución Store Fulfillment
-
-* Los asociados de almacén y almacén tienen acceso a dispositivos móviles iOS o Android durante sus turnos, ya sea personales o proporcionados por el comerciante
-
-* Los productos que se administran mediante la solución Store Fulfillment deben tener atributos de producto que incluyan un SKU o código de producto UPC

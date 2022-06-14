@@ -1,13 +1,13 @@
 ---
 user-guide-title: '"[!DNL Store FulFillment Guide]"'
-user-guide-description: Esta guía proporciona información detallada sobre la instalación y configuración de los servicios de cumplimiento de almacenamiento para su Adobe Commerce o tienda de Magento Open Source.
-breadcrumb-title: Almacenamiento de Información mediante la Guía de Tecnologías Walmart
+user-guide-description: Información detallada sobre la instalación, configuración y uso del cumplimiento de la tienda para las tiendas de Adobe Commerce
+breadcrumb-title: Cumplimiento de la tienda para Adobe Commerce
 index: false
 hidden: true
-source-git-commit: 26d0ddbcbe648b336d527788668caef1f8e688ed
+source-git-commit: 4ea03b3be11056526adc42d875b1e26a24736d15
 workflow-type: tm+mt
-source-wordcount: '63'
-ht-degree: 3%
+source-wordcount: '84'
+ht-degree: 2%
 
 ---
 
@@ -16,15 +16,27 @@ ht-degree: 3%
 
 - [Información general de la guía](guide-overview.md)
 - [Introducción a [!DNL Store Fulfillment]](introduction.md)
+- [Flujo de trabajo de Store Assist](store-assist-modules.md)
+- [Requisitos](solution-requirements.md)
 - [Notas de la versión](release-notes.md)
 - Cumplimiento de la tienda integrada {#onboarding}
    - [Información general sobre la incorporación](onboard.md)
-   - [Instalación](install.md)
-   - [Conexión y configuración del servicio](connect-set-up-service.md)
-   - [Pruebas e implementación](test-deploy.md)
-- Configuración de funciones {#configuration}
+   - [Instalación de la extensión](install.md)
+   - [Conectar el cumplimiento de la tienda](connect-set-up-service.md)
+   - [Prueba e implementación](test-and-deploy.md)
+- [Información general sobre la configuración](service-config-settings-overview.md)
+- Configuración de almacén {#store-configuration}
    - [Configuración general](enable-general.md)
    - [Correos electrónicos de ventas](sales-emails.md)
+   - [Fuentes de tiendas comerciales](merchant-store-configuration.md)
    - [Administración de existencias de productos](product-stock.md)
-   - [Fuentes de almacenamiento](store-sources.md)
+   - [Transferencia de fuentes de Inventory management](inventory-stock-transfer.md)
+   - [Múltiples sitios web/Ámbito](multi-site-and-scope-config.md)
+- Configuración del sistema {#system-configuration}
    - [Procesos en segundo plano](background-processes.md)
+   - [Configuración de ubicación y asignación de tiendas](store-location-map-provider-setup.md)
+   - [Configuración de la experiencia de registro](check-in-experience-setup.md)
+   - [Configuración de usuario](user-setup.md)
+   - [Configuración de la aplicación](app-setup.md)
+
+
