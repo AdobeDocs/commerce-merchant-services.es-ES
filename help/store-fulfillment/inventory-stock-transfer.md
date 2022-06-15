@@ -1,15 +1,16 @@
 ---
 title: Transferencia de fuentes de Inventory management
-description: Configure las existencias para el cumplimiento de la tienda configurando un nuevo inventario y transfiriendo el inventario de existencias predeterminado.
+description: '"Configure las existencias para el [!DNL Store Fulfillment solution] con Adobe Commerce Inventory management. Configure un nuevo inventario de existencias y transfiera el inventario de existencias predeterminado para que pueda asignarlo a fuentes configuradas para habilitar las capacidades de Recogida de tiendas requeridas por la solución de entrega de tiendas".'
 role: User, Admin
 level: Intermediate
 exl-id: 669d4dce-4cac-4bde-acc5-26c70a51f7f1
-source-git-commit: 4ea03b3be11056526adc42d875b1e26a24736d15
+source-git-commit: 42b0118b427b1e04186793b4a57c058bc1cabdd4
 workflow-type: tm+mt
-source-wordcount: '336'
+source-wordcount: '358'
 ht-degree: 0%
 
 ---
+
 
 # Transferencia de fuentes de Inventory management
 
@@ -19,12 +20,11 @@ Estos cambios de configuración le ayudan a realizar tres tareas:
 
 1. [Transferir inventario a origen](https://docs.magento.com/user-guide/catalog/inventory-bulk-transfer-inventory.html) para mover el inventario del origen/stock predeterminado al nuevo origen/stock.
 
-2. [Asigna orígenes masivos](https://docs.magento.com/user-guide/catalog/inventory-bulk-assign-sources.html) para agregar las nuevas fuentes para todos sus productos.
+1. [Fuentes de asignación masiva](https://docs.magento.com/user-guide/catalog/inventory-bulk-assign-sources.html) para agregar las nuevas fuentes para todos sus productos.
 
-3. [Completar actualizaciones masivas de atributos de producto](https://docs.magento.com/user-guide/stores/bulk-product-attribute-update.html) para agregar la variable `Allow Store Pickup` y `Allow Home Delivery` atributos a productos existentes. Cuando se instala la solución, los atributos tienen la *default* valores. Sin embargo, estos atributos no se aplican a los productos existentes hasta que no complete el proceso de actualizaciones masivas.
+1. [Completar actualizaciones masivas de atributos de producto](https://docs.magento.com/user-guide/stores/bulk-product-attribute-update.html) para agregar la variable `Allow Store Pickup` y `Allow Home Delivery` atributos a productos existentes. Cuando se instala la solución, los atributos tienen la *default* valores. Sin embargo, estos atributos no se aplican a productos existentes hasta que no complete el proceso de actualizaciones masivas.
 
 El inventario se resta del origen seleccionado (ubicación de tienda minorista o almacén de comercio electrónico). Las fuentes utilizadas como almacenes de comercio electrónico deben asignarse a las mismas existencias que la ubicación de recogida de tiendas y priorizarse antes de las ubicaciones de venta minorista. Para obtener más información, consulte [Priorización de fuentes para un inventario](https://docs.magento.com/user-guide/catalog/inventory-stock-priority.html).
-
 
 Para obtener más información sobre la administración de inventarios, existencias y fuentes, consulte la documentación del usuario de Adobe Commerce:
 

@@ -1,8 +1,8 @@
 ---
 title: '''[!DNL Store Fulfillment by Walmart Commerce Technologies] Notas de la versión'''
-description: Revise las notas de la versión para obtener información sobre todas las [!DNL Store Fulfillment by Walmart Commerce Technologies] versiones.
+description: '"Revise las notas de la versión para obtener información sobre todas las [!DNL Store Fulfillment by Walmart Commerce Technologies] versiones".'
 exl-id: 04dcec10-fff8-483d-a2c1-4b58e063e0f0
-source-git-commit: 4ea03b3be11056526adc42d875b1e26a24736d15
+source-git-commit: 42b0118b427b1e04186793b4a57c058bc1cabdd4
 workflow-type: tm+mt
 source-wordcount: '56'
 ht-degree: 8%

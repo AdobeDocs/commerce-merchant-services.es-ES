@@ -1,11 +1,11 @@
 ---
-title: Configuración del sistema de asignación y ubicación de almacenamiento
-description: Configure un proveedor de distancia para que admita la asignación de ubicación de tienda en la interfaz de usuario de tienda.
+title: Configuración del sistema de asignación y ubicación del almacén
+description: Configure un proveedor de distancia para que admita la asignación de ubicación de tienda en la interfaz de usuario de tienda. Las soluciones de entrega de tiendas requieren un proveedor de distancia para habilitar la búsqueda de tiendas minoristas y otras capacidades de asignación y programación para el flujo de trabajo de cumplimiento de extremo a extremo.
 role: User, Admin
 level: Intermediate
-source-git-commit: 4ea03b3be11056526adc42d875b1e26a24736d15
+source-git-commit: 42b0118b427b1e04186793b4a57c058bc1cabdd4
 workflow-type: tm+mt
-source-wordcount: '152'
+source-wordcount: '176'
 ht-degree: 0%
 
 ---
@@ -40,4 +40,3 @@ Para configurar el proveedor de distancia:
    - Agregue la **Clave de API de Google**.
 
    - Establezca **[!UICONTROL Computation Mode]** a `Driving` y **[!UICONTROL Value]** a `Distance`
-

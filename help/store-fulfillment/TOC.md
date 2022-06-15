@@ -1,10 +1,10 @@
 ---
 user-guide-title: '"[!DNL Store FulFillment Guide]"'
-user-guide-description: Información detallada sobre la instalación, configuración y uso del cumplimiento de la tienda para las tiendas de Adobe Commerce
+user-guide-description: Información detallada sobre la instalación, configuración y uso del cumplimiento de la tienda para las tiendas de Adobe Commerce.
 breadcrumb-title: Cumplimiento de la tienda para Adobe Commerce
 index: false
 hidden: true
-source-git-commit: 4ea03b3be11056526adc42d875b1e26a24736d15
+source-git-commit: 42b0118b427b1e04186793b4a57c058bc1cabdd4
 workflow-type: tm+mt
 source-wordcount: '84'
 ht-degree: 2%
@@ -16,7 +16,7 @@ ht-degree: 2%
 
 - [Información general de la guía](guide-overview.md)
 - [Introducción a [!DNL Store Fulfillment]](introduction.md)
-- [Flujo de trabajo de Store Assist](store-assist-modules.md)
+- [Flujos de trabajo de ayuda de la tienda](store-assist-modules.md)
 - [Requisitos](solution-requirements.md)
 - [Notas de la versión](release-notes.md)
 - Cumplimiento de la tienda integrada {#onboarding}
@@ -28,7 +28,7 @@ ht-degree: 2%
 - Configuración de almacén {#store-configuration}
    - [Configuración general](enable-general.md)
    - [Correos electrónicos de ventas](sales-emails.md)
-   - [Fuentes de tiendas comerciales](merchant-store-configuration.md)
+   - [Tienda de mercantes (fuentes)](merchant-store-configuration.md)
    - [Administración de existencias de productos](product-stock.md)
    - [Transferencia de fuentes de Inventory management](inventory-stock-transfer.md)
    - [Múltiples sitios web/Ámbito](multi-site-and-scope-config.md)

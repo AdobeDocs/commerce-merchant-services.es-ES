@@ -1,15 +1,16 @@
 ---
 title: Correos electrónicos de ventas
-description: Configure las opciones de las plantillas de correo electrónico transaccional para comunicarse con los clientes y almacenar administradores durante el proceso de pedido y cumplimiento.
+description: Configure las plantillas de correo electrónico transaccional para comunicarse con los clientes y almacenar administradores durante el proceso de cumplimiento de los pedidos de recogida de tiendas.
 role: User, Admin
 level: Intermediate
 exl-id: 688732e3-06f0-4613-a589-2d465597eb28
-source-git-commit: 4ea03b3be11056526adc42d875b1e26a24736d15
+source-git-commit: 42b0118b427b1e04186793b4a57c058bc1cabdd4
 workflow-type: tm+mt
 source-wordcount: '1216'
 ht-degree: 0%
 
 ---
+
 
 # Correos electrónicos de ventas
 

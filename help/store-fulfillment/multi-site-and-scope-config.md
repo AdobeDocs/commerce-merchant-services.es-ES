@@ -1,16 +1,17 @@
 ---
-title: Varias configuraciones de sitio web y ámbito
+title: Configuración de varios sitios web y ámbitos
 description: Configure las existencias y los métodos de entrega para varios sitios web y ámbitos de almacenamiento.
 role: User, Admin
 level: Intermediate
-source-git-commit: 4ea03b3be11056526adc42d875b1e26a24736d15
+source-git-commit: 42b0118b427b1e04186793b4a57c058bc1cabdd4
 workflow-type: tm+mt
 source-wordcount: '189'
 ht-degree: 0%
 
 ---
 
-# Varias configuraciones de sitio web y ámbito
+
+# Configuración de varios sitios web y ámbitos
 
 Puede configurar la variable [Ámbito](https://docs.magento.com/user-guide/configuration/scope.html) para que algunos elementos se adapten a varios sitios web, tiendas y vistas de tiendas:
 

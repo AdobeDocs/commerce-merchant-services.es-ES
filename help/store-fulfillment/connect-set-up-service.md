@@ -3,9 +3,9 @@ title: Conecte la solución de entrega de la tienda
 description: Establezca las conexiones entre Adobe Commerce y la solución Store Fulfillment creando y autorizando una integración con Adobe Commerce y agregando las credenciales de la cuenta Store Fulfillment a la configuración del servicio Adobe Commerce.
 role: User, Admin
 level: Intermediate
-source-git-commit: 4ea03b3be11056526adc42d875b1e26a24736d15
+source-git-commit: 42b0118b427b1e04186793b4a57c058bc1cabdd4
 workflow-type: tm+mt
-source-wordcount: '373'
+source-wordcount: '372'
 ht-degree: 0%
 
 ---
@@ -49,7 +49,7 @@ Para integrar Adobe Commerce con los servicios de entrega de tiendas, cree una i
 
 Después de completar el formulario de admisión, se crea una cuenta de Wal Store Fulfillment para usted. Recibirá las siguientes credenciales cuando estén disponibles:
 
-- [!DNL Merchant I]D
+- [!DNL Merchant ID]
 - [!DNL Consumer ID]
 - [!DNL Consumer Secret]
 - [!DNL API Server URL]

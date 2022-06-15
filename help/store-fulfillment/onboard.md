@@ -1,9 +1,9 @@
 ---
 title: Información general sobre la incorporación para los servicios de entrega de la tienda
-description: '"[!DNL Live Search] flujo de incorporación, requisitos del sistema, límites y limitaciones"'
+description: '"[!DNL Live Search] flujo de incorporación, requisitos del sistema, límites y limitaciones".'
 role: User, Admin
 level: Intermediate
-source-git-commit: 4ea03b3be11056526adc42d875b1e26a24736d15
+source-git-commit: 42b0118b427b1e04186793b4a57c058bc1cabdd4
 workflow-type: tm+mt
 source-wordcount: '363'
 ht-degree: 0%
@@ -26,9 +26,6 @@ Introducción a [!DNL Store Fulfillment for Adobe Commerce by Walmart Commerce T
    |-------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------|
    | ![[!DNL Store Assist App Getting Started] visualización en dispositivos móviles](assets/store-assist-get-started-small.png) | ![[!DNL Store Assist App Orders view] en dispositivo móvil](assets/store-assist-orders-small.png) |
 
-
-
-
 ## Pasos de aprovisionamiento
 
 - **Regístrese para[!DNL Store Fulfillment for Adobe Commerce by Walmart Commerce Technologies]**-Complete el formulario de registro en [business.adobe.com](https://business.adobe.com/resources/store-fulfillment.html)o póngase en contacto con el administrador de cuentas de Adobe Commerce para obtener ayuda.
@@ -47,12 +44,11 @@ Introducción a [!DNL Store Fulfillment for Adobe Commerce by Walmart Commerce T
 
 1. [Configurar la extensión de cumplimiento de la tienda desde el administrador de Adobe Commerce](service-config-settings-overview.md).
 
-1. [Conecte el [!DNL Store Fulfillment] utilizando las credenciales de cumplimiento de la tienda que se le han proporcionado.](connect-set-up-service.md)
+1. [Conecte el [!DNL Store Fulfillment] con las credenciales de cumplimiento de la tienda proporcionadas a usted](connect-set-up-service.md).
 
-1. [Crear usuarios y funciones para la aplicación de ayuda de la tienda](user-setup.md)
+1. [Crear usuarios y funciones para la aplicación de ayuda de la tienda](user-setup.md).
 
-1. [Descargar Walmart [!DNL Store Assist] al dispositivo deseado. La aplicación está disponible tanto en la tienda de aplicaciones (iOS) como en la de reproducción (Android)](app-setup.md)
+1. [Descargar Walmart [!DNL Store Assist] al dispositivo deseado. La aplicación está disponible tanto en la tienda de aplicaciones (iOS) como en la de reproducción (Android)](app-setup.md).
 
 Una vez que haya instalado, configurado, completado la integración correctamente y tenga acceso al [!DNL Store Assist] aplicación, puede [comenzar a crear pedidos y pruebas](test-and-deploy.md).
-
 

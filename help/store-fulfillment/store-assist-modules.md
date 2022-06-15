@@ -1,27 +1,27 @@
 ---
-title: '"Flujos de trabajo de cumplimiento de la ayuda de almacenamiento"'
-description: '"Obtenga información sobre los módulos Pick, Stage, Hand-Off y Orders disponibles en la aplicación de asistencia de tienda. Estos módulos habilitan el flujo de trabajo completo de cumplimiento de la tienda para los pedidos de BOPIS. Store Associates utiliza estos módulos para administrar y entregar pedidos de recogida de tiendas a los clientes.'
+title: '"Almacenar flujos de trabajo de cumplimiento de asistencia"'
+description: '"Obtenga información sobre los módulos Pick, Stage, Hand-Off y Orders disponibles en la aplicación de asistencia de tienda. Estos módulos habilitan el flujo de trabajo completo de cumplimiento de la tienda para los pedidos de BOPIS. Store Associates utiliza estos módulos para administrar y entregar pedidos de recogida de tiendas a los clientes".'
 role: User
 level: Intermediate
-source-git-commit: 4ea03b3be11056526adc42d875b1e26a24736d15
+source-git-commit: 42b0118b427b1e04186793b4a57c058bc1cabdd4
 workflow-type: tm+mt
-source-wordcount: '790'
+source-wordcount: '791'
 ht-degree: 0%
 
 ---
 
 
-# Flujos de trabajo de Store Assist
+# Flujos de trabajo de cumplimiento de Store Assist
 
 La aplicación Store Assist proporciona a Store Associates cuatro módulos para administrar el proceso de cumplimiento en la tienda para la compra en línea y la recogida en pedidos de la tienda:
 
-**[Seleccionar](#pick-module)**: obtenga una visibilidad completa de todos los elementos pedidos y las herramientas para asegurarse de que se seleccionan los elementos adecuados y las cantidades correctas. Los asociados del almacén pueden seleccionar uno o varios pedidos simultáneamente para obtener una buena eficiencia
+- **[Seleccionar](#pick-module)**: obtenga una visibilidad completa de todos los elementos pedidos y las herramientas para asegurarse de que se seleccionan los elementos adecuados y las cantidades correctas. Los asociados del almacén pueden seleccionar uno o varios pedidos simultáneamente para obtener una buena eficacia.
 
-**[Prueba](#stage-module)**: introduzca una ubicación en la que se realizan los pedidos mientras los clientes viajan a la tienda, de modo que Store Associates pueda encontrarlos fácilmente para realizar la entrega de los pedidos.
+- **[Prueba](#stage-module)**: introduzca una ubicación en la que se realizan los pedidos mientras los clientes viajan a la tienda, de modo que Store Associates pueda encontrarlos fácilmente para realizar la entrega de los pedidos.
 
-**[Desactivar mano](#hand-off)**: obtenga notificaciones en tiempo real después de que los clientes lleguen a la tienda para minimizar el tiempo de espera y los pedidos de entrega sin problemas.
+- **[Desactivar mano](#hand-off-module)**: obtenga notificaciones en tiempo real después de que los clientes lleguen a la tienda para minimizar el tiempo de espera y los pedidos de entrega sin problemas.
 
-**[Pedidos](#orders-module)**: permite ver una lista de todos los pedidos realizados para un almacén, de modo que todos sepan el número de pedidos y el estado de cada pedido.
+- **[Pedidos](#orders-module)**: permite ver una lista de todos los pedidos realizados para un almacén, de modo que todos sepan el número de pedidos y el estado de cada pedido.
 
 >[!NOTE]
 >

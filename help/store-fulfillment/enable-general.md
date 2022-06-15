@@ -1,14 +1,15 @@
 ---
 title: Configuración general
-description: Configure las opciones generales para habilitar [!DNL Store Fulfillment] para su tienda. Configure las extensiones globales, los ajustes del sistema para el registro, la sincronización de datos y la seguridad. Proporcione datos clave para permitir la integración entre Adobe Commerce y los servicios de cumplimiento de la tienda.
+description: '"Configure las opciones generales para habilitar [!DNL Store Fulfillment] para su tienda. Configure las extensiones globales, los ajustes del sistema para el registro, la sincronización de datos y la seguridad. Proporcione datos clave para permitir la integración entre Adobe Commerce y los servicios de cumplimiento de la tienda".'
 role: User, Admin
 level: Intermediate
-source-git-commit: 4ea03b3be11056526adc42d875b1e26a24736d15
+source-git-commit: 42b0118b427b1e04186793b4a57c058bc1cabdd4
 workflow-type: tm+mt
-source-wordcount: '2409'
+source-wordcount: '2413'
 ht-degree: 0%
 
 ---
+
 
 # Configuración general
 
@@ -18,27 +19,23 @@ La integración debe estar conectada al servicio Store Fulfillment . Además, co
 
 La configuración general de [!DNL Store Fulfillment] incluye los siguientes ajustes de configuración:
 
-- [Habilitar la extensión](#enable-the-extension)
+- [Habilitar la solución](#enable-the-store-fulfillment-solution)
 - [Administrar credenciales de cuenta para conectarse a los servicios de cumplimiento de la tienda](#account-credentials)
 - [Configurar el registro](#configure-logging)
-- [Definir opciones para administrar operaciones de [sincronización de pedidos]](#order-synchronization)
+- [Definir opciones para administrar operaciones de sincronización de pedidos y errores](#order-synchronization)
 - [Habilitar las opciones de envío de la entrega de la tienda](#enable-store-fullment-shipping-options)
 - [Configurar los ajustes de seguridad y autenticación para la aplicación de cumplimiento de la tienda](#store-fulfillment-app)
 - [Establecer la disponibilidad y la configuración de mensajería del método de entrega](#in-store-delivery-methods)
 
-
-## Habilitar la extensión
+## Habilitar la solución de entrega de tiendas
 
 | **Campo** | **Descripción** | **Ámbito** | **Requerido** |
 |--------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------|--------------|
 | **[!UICONTROL Enabled]** | Habilite o deshabilite la solución. Cuando esté habilitado, configure y use las funcionalidades de cumplimiento de la tienda y establezca la conexión entre su tienda Adobe Commerce y los servicios de cumplimiento de la tienda. Cuando está desactivado, todas las funciones de entrega de la tienda están deshabilitadas y no hay comunicación entre Adobe Commerce y los servicios de entrega de la tienda. La información del pedido no se puede procesar ni recibir. | Global | Sí |
 
-
 Para completar esta configuración, consulte **Almacena → Configuración → Servicios → Almacenar el cumplimiento de las tecnologías de comercio Walmart**.
 
 ## Agregar credenciales de cuenta
-
-
 
 | **Campo** | **Descripción** | **Ámbito** | **Requerido** |
 |----------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------|--------------|
@@ -92,7 +89,6 @@ Configure las opciones de envío de cumplimiento de la tienda que determinan la 
 
 ### Enviar a almacén
 
-
 | **Campo** | **Descripción** | **Ámbito** | **Requerido** |
 |---------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------|--------------|
 | **[!UICONTROL Enable Ship To Store]** | La configuración de envío a almacén aprovecha las capacidades existentes de envío a almacén. Si utiliza Inventory management, o si puede aceptar y realizar pedidos en ubicaciones comerciales sin inventario mediante transferencias de inventario entre almacenes, establezca esta opción en `Yes`.</br></br>Si no puede admitir la opción de envío a almacén o no desea ofrecerla, establezca como `No`. Cuando está desactivado, los artículos del catálogo con cero inventario para un almacén de mercadotecnia o los artículos que están por debajo de la ubicación [!DNL Out of Stock Threshold], no se ofrecen con opciones de recogida en la tienda.</br></br>Se trata de una configuración global que se puede ajustar por ubicación del comerciante. | Global | No |
@@ -117,7 +113,6 @@ Configure los ajustes de la cuenta de usuario y la seguridad de contraseña de l
 | **[!UICONTROL Lockout Time (minutes)]** | Número de minutos para bloquear una cuenta después de un error de inicio de sesión. | Global | No |
 | **[!UICONTROL Force Password Change]** | Determina si se requiere un cambio de contraseña de usuario.</br></br>`Yes`: Requiere que el usuario cambie su contraseña después de configurar la cuenta.</br>`No`: Recomienda que el usuario cambie su contraseña después de configurar la cuenta. | Global | No |
 | **Duración de la contraseña** | Número de días que una contraseña sigue siendo válida antes de un cambio de contraseña requerido. Deje esta opción en blanco. | Global | No |
-
 
 ### Autenticación de dos factores
 
@@ -150,7 +145,6 @@ In-store pickup, says its global setting, but scope is Website.  How do you conf
 | **Habilitar la selección en el lado de la curva** | Habilite o deshabilite la opción de recogida en la parte superior durante el proceso de cierre de compra para los clientes que elijan la opción de recogida en la tienda.</br></br>Esta configuración global se aplica a todas las ubicaciones de tiendas minoristas. Cuando está habilitado, puede desactivarlo de forma selectiva en la ubicación de la tienda minorista. | Sitio web | No |
 
 Para obtener más información sobre la personalización de los métodos de entrega en ubicaciones de tiendas minoristas seleccionadas, consulte **Configuración de tienda minorista**.
-
 
 #### Configuración del título del método de entrega
 
@@ -262,8 +256,3 @@ Para obtener más información sobre la personalización de los métodos de entr
 <td>No</td>
 </tr>
 </tbody></table>
-
-
-
-
-

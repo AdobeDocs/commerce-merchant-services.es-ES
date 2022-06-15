@@ -1,14 +1,15 @@
 ---
 title: Información general sobre la configuración para el cumplimiento de la tienda
-description: Obtenga información sobre las categorías de configuración de administración disponibles para la solución de cumplimiento de la tienda y cómo están configuradas.
+description: Obtenga información sobre los tipos de configuración de administración disponibles para personalizar las capacidades de cumplimiento extendidas que proporciona la solución de cumplimiento de almacenamiento y vincule las instrucciones para completar la configuración.
 role: User, Admin
 level: Intermediate
-source-git-commit: 4ea03b3be11056526adc42d875b1e26a24736d15
+source-git-commit: 42b0118b427b1e04186793b4a57c058bc1cabdd4
 workflow-type: tm+mt
-source-wordcount: '375'
+source-wordcount: '386'
 ht-degree: 0%
 
 ---
+
 
 # Información general sobre la configuración para el cumplimiento de la tienda
 
@@ -26,10 +27,9 @@ En el administrador de Adobe Commerce, los ajustes de configuración para los se
 | [Configuración de múltiples sitios web/Ámbito](multi-site-and-scope-config.md) | Configure las existencias y los métodos de entrega para varios sitios web/ámbitos de almacenamiento. | No |
 | [Configuración del sistema del proceso en segundo plano](background-processes.md) | Configure las programaciones para los procesos en segundo plano utilizados en la sincronización de datos con los servicios de cumplimiento. | No |
 | [Configuración de ubicación y asignación de tiendas](store-location-map-provider-setup.md) | Configure la capacidad de usar un proveedor de distancia para buscar tiendas minoristas y mostrar esta información en el mapa de SLS | Sí |
-| [Configuración de la experiencia de registro](store-location-map-provider-setup.md) | Configure el color del coche y cree las opciones que estarán disponibles durante el proceso de registro | Sí |
+| [Configuración de la experiencia de registro](check-in-experience-setup.md) | Configure el color del coche y cree las opciones que estarán disponibles durante el proceso de registro | Sí |
 | [Configuración de usuario](user-setup.md) | Administre las cuentas de usuario, las funciones y los permisos de los asociados de la tienda que utilicen la aplicación de ayuda de la tienda. ámbitos. | Sí |
 | [Configuración de la aplicación](app-setup.md) | Revise las configuraciones disponibles para la aplicación de asistencia de tienda necesaria para completar el proceso de incorporación. Estos ajustes no se pueden configurar desde el administrador de Adobe Commerce. | Sí |
-
 
 ## Usar la referencia de configuración
 

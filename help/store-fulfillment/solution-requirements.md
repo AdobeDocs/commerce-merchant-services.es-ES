@@ -1,17 +1,17 @@
 ---
-title: Requisitos de servicio
-description: '"Requisitos para el aprovisionamiento e incorporación de la variable [!DNL Store Fulfillment Manager] service"'
+title: Requisitos de cumplimiento de la tienda
+description: '"Requisitos para el aprovisionamiento e incorporación de la variable [!DNL Store Fulfillment solution]."'
 role: User, Admin
 level: Intermediate
-source-git-commit: 4ea03b3be11056526adc42d875b1e26a24736d15
+source-git-commit: 42b0118b427b1e04186793b4a57c058bc1cabdd4
 workflow-type: tm+mt
-source-wordcount: '232'
+source-wordcount: '231'
 ht-degree: 3%
 
 ---
 
 
-# Requisitos para el cumplimiento de la tienda para Adobe Commerce
+# Requisitos de cumplimiento de la tienda para Adobe Commerce
 
 Debe satisfacer los siguientes requisitos técnicos y empresariales para instalar y habilitar la solución Store Fulfillment para Adobe Commerce.
 

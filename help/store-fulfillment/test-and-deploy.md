@@ -3,7 +3,7 @@ title: Probar e implementar el cumplimiento de la tienda
 description: Pruebe el plan para verificar la funcionalidad de cumplimiento de la tienda. Las pruebas abarcan la API de sincronización de inventario, el flujo de trabajo de cumplimiento completo para pedidos cancelados, la administración de usuarios de la aplicación de satisfacción de tienda y la experiencia de registro de cliente.
 role: User, Admin
 level: Intermediate
-source-git-commit: 4ea03b3be11056526adc42d875b1e26a24736d15
+source-git-commit: 42b0118b427b1e04186793b4a57c058bc1cabdd4
 workflow-type: tm+mt
 source-wordcount: '2652'
 ht-degree: 0%
@@ -55,9 +55,6 @@ Este plan de ensayo de muestra abarca las siguientes áreas funcionales:
 | Adobe Commerce Frontend | Tipos de productos | Cliente, administrador |
 | Cierre de compra en el front-end</br>Formulario de registro | Experiencia del registro | Cliente, administrador |
 | Aplicación de asistencia de la tienda | Pedido</br>Seleccionar</br>Prueba</br>y Handoff | Asociado de tienda |
-
-
-
 
 ### Sincronización de API de inventario
 
@@ -639,8 +636,6 @@ Esta sección del plan de prueba cubre escenarios para probar los flujos de trab
 </tbody>
 </table>
 
-
-
 ## Implementación
 
 Después de comprobar que la solución se ha configurado y probado según sus especificaciones, está listo para implementar desde el ensayo a la producción.
@@ -650,7 +645,6 @@ La implementación y las pruebas varían según la infraestructura y las capacid
 >[!TIP]
 >
 >Para obtener instrucciones de implementación, listas de comprobación y prácticas recomendadas para Adobe Commerce en proyectos de infraestructura en la nube, consulte [Implementar la tienda](https://devdocs.magento.com/cloud/live/stage-prod-live.html) en la documentación para desarrolladores de Adobe Commerce.
-
 
 
 

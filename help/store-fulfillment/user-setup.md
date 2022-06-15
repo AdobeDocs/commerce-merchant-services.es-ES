@@ -1,14 +1,15 @@
 ---
 title: Configuración de usuario
-description: 'Configure las fuentes de Inventory management mejoradas como tiendas de productos. '
+description: 'Configure las fuentes Inventory management mejoradas como tiendas comerciales para admitir la solución de entrega de tiendas para Adobe Commerce. '
 role: User, Admin
 level: Intermediate
-source-git-commit: 4ea03b3be11056526adc42d875b1e26a24736d15
+source-git-commit: 42b0118b427b1e04186793b4a57c058bc1cabdd4
 workflow-type: tm+mt
-source-wordcount: '383'
+source-wordcount: '392'
 ht-degree: 0%
 
 ---
+
 
 # Configuración de usuario
 
@@ -42,7 +43,6 @@ Configurar funciones de usuario desde **[!UICONTROL System > Store Fulfillment A
 
 Administre los perfiles de usuario de la aplicación de asistencia de la tienda desde la configuración del sistema de administración:  **[!UICONTROL System > Store Fulfillment App Permissions > All Store Fulfillment App Users]**.
 
-
 | **Campo** | **Descripción** | **Ámbito** | **Requerido** |
 |------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------|--------------|
 | **[!UICONTROL is Active]** | Habilite o deshabilite el usuario. | Global | Sí |
@@ -54,8 +54,3 @@ Administre los perfiles de usuario de la aplicación de asistencia de la tienda 
 | **Configuración regional de la interfaz** | Si su tienda tiene varios idiomas, establezca la configuración regional de la interfaz en el idioma que se utilizará para la interfaz de administración. | Global | No |
 | **Activo desde** | Para establecer una fecha de inicio, seleccione el icono de calendario. | Global | No |
 | **Activo a** | Establezca la Fecha de caducidad seleccionando el icono del calendario. La configuración de una fecha de caducidad es útil para configurar asignaciones temporales de usuarios o funciones. Después de la fecha de caducidad, el estado de la cuenta de usuario cambia a `Inactive`, pero la cuenta se puede actualizar si es necesario. | Global | No |
-
-
-
-
-
