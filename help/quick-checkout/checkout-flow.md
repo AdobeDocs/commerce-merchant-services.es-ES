@@ -2,9 +2,9 @@
 title: '"Flujo de cierre de compra"'
 description: '"Descripción general de la variable [!DNL Quick Checkout] en Adobe Commerce".'
 exl-id: 82761627-a0d4-4cb0-aad1-9865fcb550d4
-source-git-commit: 9841db7616c8aa6d5bc5af3e6e92c0abe9a4a1e2
+source-git-commit: c0b1185a53cb84be2335e2e1beb392c9f23070c9
 workflow-type: tm+mt
-source-wordcount: '543'
+source-wordcount: '553'
 ht-degree: 0%
 
 ---
@@ -90,7 +90,7 @@ Si [!DNL Bolt] se encuentra la cuenta, los compradores continúan con su cierre 
 - Método de envío
 - Revisar método de pago
 
-Consulte la [solución de problemas](../quick-checkout/troubleshooting.md) para obtener más información si tiene problemas al realizar un pedido como usuario de Adobe Commerce existente.
+Si tiene problemas al realizar un pedido como usuario de Adobe Commerce existente, consulte la [Solución de problemas de cierre de compra rápido](https://support.magento.com/hc/en-us/articles/6909450342541) en el Centro de ayuda de Adobe Commerce.
 
 >[!NOTE]
 >
