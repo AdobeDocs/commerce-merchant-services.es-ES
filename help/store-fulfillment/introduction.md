@@ -4,9 +4,9 @@ description: '"Descubra cómo [!DNL Store Fulfillment for Adobe Commerce by Walm
 role: User
 level: Intermediate
 exl-id: d2f90af8-3eba-499d-84de-4b70ecc7166c
-source-git-commit: 4ea03b3be11056526adc42d875b1e26a24736d15
+source-git-commit: 87818d3a0eb8f0cb4bc9fac2aef3c56a2e620aaf
 workflow-type: tm+mt
-source-wordcount: '575'
+source-wordcount: '603'
 ht-degree: 0%
 
 ---
@@ -74,3 +74,8 @@ El cumplimiento de la tienda mejora Adobe Commerce al añadir las siguientes fun
 * **Correos electrónicos transaccionales**-Amplía las capacidades de administración de [!UICONTROL Sales Emails] para añadir plantillas de correo electrónico para comprar en línea, recoge transacciones en la tienda. Las plantillas admiten la comunicación en tiempo real entre clientes y asociados de la tienda durante el proceso de recogida de pedidos.
 
 * **Cumplimiento flexible**-Extends [!DNL Commerce] funciones para admitir escenarios de procesamiento de pedidos atrasados, reducciones de cantidad y cumplimiento parcial de pedidos, al tiempo que se facilita cualquier cancelación y nota de crédito necesarias para admitir estos escenarios.
+
+>[!TIP]
+>
+> Para obtener una demostración rápida de la solución de entrega de la tienda, consulte la [Información general sobre el cumplimiento de la tienda](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/orders/store-fulfillment.html) disponible en _Vídeos y Tutorials de Adobe Commerce_.
+
