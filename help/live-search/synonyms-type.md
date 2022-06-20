@@ -2,9 +2,9 @@
 title: '"Tipos de sinónimos"'
 description: '"De una y dos direcciones [!DNL Live Search] los sinónimos amplían la definición de palabras clave".'
 exl-id: 708d7b0d-7361-44f4-ae9e-b92f574ac975
-source-git-commit: bffbede99865e9085f60392e474065a454446370
+source-git-commit: cd1b40ffb350a87ea1317be82789f702922881b9
 workflow-type: tm+mt
-source-wordcount: '447'
+source-wordcount: '513'
 ht-degree: 0%
 
 ---
@@ -31,9 +31,13 @@ Un sinónimo unidireccional es un subconjunto de una palabra clave, pero con un 
 
 Tenga en cuenta las siguientes prácticas recomendadas para sacar el máximo partido a los sinónimos de Live Search.
 
-### Asignación de palabras clave
+### Evitar &quot;parar palabras&quot;
 
-Esta técnica utiliza atributos de producto en los que se pueden buscar, en lugar de sinónimos, para crear asociaciones basadas en palabras clave entre productos. Como resultado, un producto asignado puede aparecer en los resultados de búsqueda de otro producto. Para obtener más información, consulte [Resultados de la búsqueda](https://docs.magento.com/user-guide/catalog/search-results.html).
+La búsqueda activa filtra las &quot;palabras vacías&quot; comunes en inglés de los sinónimos, como:
+
+a, un y, son, como, a, ser, pero, por, si, en, en, es, es, no, de, en, o tal, que, el, su, entonces, allí, estos, esto, para, fue, con
+
+Las palabras &quot;Stop&quot; no hacen que los sinónimos sean más significativos, sino que aumentan la cantidad de datos que deben procesarse.
 
 ### Usar palabras únicas
 
@@ -46,3 +50,7 @@ No es necesario definir las formas singular y plural de una palabra como sinóni
 ### Coherencia
 
 Sea coherente con la forma en que se utiliza la terminología en su catálogo. Tenga en cuenta que puede haber diferencias regionales en el uso, y a veces diferencias dentro de un sector.
+
+### Asignación de palabras clave
+
+Esta técnica utiliza atributos de producto en los que se pueden buscar, en lugar de sinónimos, para crear asociaciones basadas en palabras clave entre productos. Como resultado, un producto asignado puede aparecer en los resultados de búsqueda de otro producto. Para obtener más información, consulte [Resultados de la búsqueda](https://docs.magento.com/user-guide/catalog/search-results.html).
