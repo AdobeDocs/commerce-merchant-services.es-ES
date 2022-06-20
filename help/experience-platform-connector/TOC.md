@@ -1,0 +1,22 @@
+---
+user-guide-title: Conector de Adobe Experience Platform para Adobe Commerce
+user-guide-description: Esta guía proporciona instrucciones detalladas sobre el uso de Adobe Experience Platform Connector para Adobe Commerce.
+breadcrumb-title: Conector de Adobe Experience Platform para Adobe Commerce
+hide: true
+source-git-commit: ce1ce5a7e028d1c957a9a36c73c371eedfb1e1e8
+workflow-type: tm+mt
+source-wordcount: '55'
+ht-degree: 3%
+
+---
+
+# Conector de Adobe Experience Platform para Adobe Commerce {#experience-platform-connector}
+
+- [Información general de guía](overview.md)
+- [Notas de la versión](release-notes.md)
+- Aspectos básicos {#fundamentals}
+   - [Instalación del conector del Experience Platform](install.md)
+   - [Configuración del conector del Experience Platform](connect-data.md)
+- Reenvío de eventos {#event-forwarding}
+   - [Eventos](events.md)
+   - [Eventos personalizados](custom-events.md)
