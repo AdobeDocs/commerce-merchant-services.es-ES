@@ -1,9 +1,9 @@
 ---
 title: Crear eventos personalizados
 description: Aprenda a crear eventos personalizados para conectar los datos de Adobe Commerce a otros productos DX de Adobe.
-source-git-commit: f167002e1aa401d223f0830954ab09b66017476e
+source-git-commit: 1dd8f94e632bb98666ad252badf8420a014260fb
 workflow-type: tm+mt
-source-wordcount: '213'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -42,7 +42,7 @@ En el borde del Experience Platform:
 
 >[!NOTE]
 >
-> El uso de eventos personalizados puede afectar a los informes de OOTB Adobe Analytics.
+> El uso de eventos personalizados puede afectar a los informes predeterminados de Adobe Analytics.
 
 ## Gestión de anulaciones de eventos (atributos personalizados)
 
@@ -104,4 +104,4 @@ En el borde del Experience Platform:
 
 >[!NOTE]
 >
-> La anulación de eventos con atributos personalizados puede afectar a los informes de OOTB Adobe Analytics.
+> La anulación de eventos con atributos personalizados puede afectar a los informes predeterminados de Adobe Analytics.

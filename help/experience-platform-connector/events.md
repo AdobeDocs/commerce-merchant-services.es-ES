@@ -1,7 +1,7 @@
 ---
 title: Eventos
 description: Descubra qué eventos capturan datos y vea la definición completa del esquema.
-source-git-commit: ce1ce5a7e028d1c957a9a36c73c371eedfb1e1e8
+source-git-commit: 0b349ee75fac305e6ba5ea6eb74a76eb8ce1976a
 workflow-type: tm+mt
 source-wordcount: '212'
 ht-degree: 0%
@@ -15,7 +15,7 @@ A continuación se enumeran las [!DNL Commerce] eventos disponibles al instalar 
 Haga clic en el nombre del evento para ver la definición completa del esquema.
 
 | Evento | Tipo |
-|---|---|---|
+|---|---|
 | [Agregar al carro](https://github.com/adobe/magento-storefront-event-collector/blob/main/src/handlers/product/addToCartAEP.ts) | Tienda |
 | [Ver carro de compras](https://github.com/adobe/magento-storefront-event-collector/blob/main/src/handlers/shoppingCart/viewAEP.ts) | Tienda |
 | [Ver página](https://github.com/adobe/magento-storefront-event-collector/blob/main/src/handlers/page/viewAEP.ts) | Tienda |
