@@ -1,9 +1,9 @@
 ---
 title: Eventos
 description: Descubra qué eventos capturan datos y vea la definición completa del esquema.
-source-git-commit: 0b349ee75fac305e6ba5ea6eb74a76eb8ce1976a
+source-git-commit: 566abe09b8c1b0837a833b2f8fcfe1e81bb6963d
 workflow-type: tm+mt
-source-wordcount: '212'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ Haga clic en el nombre del evento para ver la definición completa del esquema.
 | [Ver página](https://github.com/adobe/magento-storefront-event-collector/blob/main/src/handlers/page/viewAEP.ts) | Tienda |
 | [Ver producto](https://github.com/adobe/magento-storefront-event-collector/blob/main/src/handlers/product/viewAEP.ts) | Tienda |
 | [Iniciar cierre de compra](https://github.com/adobe/magento-storefront-event-collector/blob/main/src/handlers/shoppingCart/initiateCheckoutAEP.ts) | Tienda |
-| Completar cierre de compra | Tienda |
+| [Completar cierre de compra](https://github.com/adobe/magento-storefront-event-collector/blob/main/src/handlers/checkout/placeOrderAEP.ts) | Tienda |
 | [Iniciar sesión](https://github.com/adobe/magento-storefront-event-collector/blob/main/src/handlers/account/signInAEP.ts) | Perfil |
 | [Cerrar sesión](https://github.com/adobe/magento-storefront-event-collector/blob/main/src/handlers/account/signOutAEP.ts) | Perfil |
 | [Crear cuenta](https://github.com/adobe/magento-storefront-event-collector/blob/main/src/handlers/account/createAccountAEP.ts) | Perfil |

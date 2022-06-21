@@ -1,9 +1,9 @@
 ---
 title: Información general de guía
 description: El conector de Adobe Experience Platform para Adobe Commerce conecta su [!DNL Commerce] a otros productos de Adobe Experience Cloud.
-source-git-commit: 9b5f2da08167e22bbba504009bccc87d0ab02c48
+source-git-commit: dc4bb1ea7d2ffc953cca31637bf5aefba6266241
 workflow-type: tm+mt
-source-wordcount: '440'
+source-wordcount: '435'
 ht-degree: 0%
 
 ---
@@ -12,7 +12,7 @@ ht-degree: 0%
 
 La extensión del conector del Experience Platform permite a los comerciantes de Adobe Commerce enviar datos al perímetro de Adobe Experience Platform para que otros productos de Adobe Experience Cloud, como Adobe Analytics y Adobe Target, puedan utilizarlos [!DNL Commerce] datos. Al conectar el [!DNL Commerce] con otros productos de Adobe Experience Cloud, puede realizar tareas como analizar el comportamiento del usuario en el sitio, realizar pruebas A/B y crear campañas personalizadas.
 
-Los eventos de tienda capturan las interacciones del comprador, como `View Page`, `View Product`, `Add to Cart`, etc. Los datos capturados no incluyen información de identificación personal (PII). Todos los identificadores de usuario, como los ID de cookie y las direcciones IP, se anonimizan estrictamente. [Más información](https://www.adobe.com/privacy/experience-cloud.html). Consulte la lista completa de eventos de tienda hacia el final de esta página.
+Los eventos de tienda capturan las interacciones del comprador, como `View Page`, `View Product`, `Add to Cart`, etc. Los datos capturados no incluyen información de identificación personal (PII). Todos los identificadores de usuario, como los ID de cookie y las direcciones IP, se anonimizan estrictamente. [Más información](https://www.adobe.com/privacy/experience-cloud.html). Consulte la lista completa de [eventos de tienda](events.md).
 
 ## Requisitos previos para utilizar el conector del Experience Platform {#prereqs}
 
@@ -43,7 +43,7 @@ Esta guía está diseñada para el comerciante de Adobe Commerce que debe conect
 Actualmente, el conector del Experience Platform tiene los siguientes problemas conocidos:
 
 - Los eventos de búsqueda no son compatibles con Adobe Commerce Enterprise Edition con el módulo B2B instalado.
-- Los datos de tienda tardan unas horas en llegar desde Commerce a los distintos destinos después de conectarse al perímetro de Adobe Experience Platform.
+- Los datos de tienda tardan aproximadamente una hora en llegar de Adobe Commerce a los distintos destinos después de conectarse al perímetro de Adobe Experience Platform.
 
 ## Asistencia
 
