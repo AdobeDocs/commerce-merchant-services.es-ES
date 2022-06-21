@@ -1,9 +1,10 @@
 ---
 title: Crear nueva recomendación
 description: Obtenga información sobre cómo crear una unidad de recomendación de producto.
-source-git-commit: 4ad607c8595b25d01b5f5020b787fc1d35d4df25
+exl-id: d393ab78-0523-463f-9b03-ad3f523dce0f
+source-git-commit: 1d2b4b8d85e5ccea1c4258869fbfd191a2e7987b
 workflow-type: tm+mt
-source-wordcount: '674'
+source-wordcount: '836'
 ht-degree: 0%
 
 ---
@@ -44,6 +45,14 @@ Al activar la unidad de recomendación, Adobe Commerce empieza a [recopilar dato
    _Nombre y ubicación de la recomendación_
 
 1. En el _Seleccionar tipo de recomendación_ especifique la [tipo de recomendación](type.md) desea que aparezca en la página seleccionada. Para algunas páginas, la variable [placement](placement.md) de recomendaciones se limita a ciertos tipos.
+
+   Algunos tipos de recomendación usan datos de comportamiento de sus compradores para [modelos de aprendizaje automático del tren](behavioral-data.md) para crear recomendaciones personalizadas. Para ayudarle a visualizar el progreso de formación de cada tipo de recomendación, esta sección muestra una medida de preparación para cada tipo. Estos indicadores de disponibilidad se calculan en función de dos factores:
+
+   - Tamaño suficiente del conjunto de resultados: ¿Se devuelven suficientes resultados en la mayoría de los escenarios para evitar el uso de [recomendaciones de copia de seguridad](behavioral-data.md#backuprecs)?
+
+   - Suficiente variedad de conjuntos de resultados: ¿Los productos devueltos representan una variedad de productos de su catálogo? El objetivo de este factor es evitar que una minoría de productos sean los únicos artículos recomendados en todo el sitio.
+
+   En función de los factores anteriores, se calcula y muestra un valor de disponibilidad. Se considera que un tipo de recomendación está listo para implementarse cuando su valor de disponibilidad es del 75 % o superior. Un tipo de recomendación se considera parcialmente listo cuando su preparación es de al menos el 50 %. Por último, se considera que un tipo de recomendación no está listo para implementarse cuando su valor de disponibilidad es inferior al 50%.
 
 1. En el _Etiqueta de visualización de tienda_ , introduzca el [label](placement.md#recommendation-labels) que son visibles para sus compradores, como &quot;Principales vendedores&quot;.
 

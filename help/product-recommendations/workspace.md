@@ -1,9 +1,10 @@
 ---
 title: Espacio de trabajo
 description: Obtenga información sobre cómo configurar, administrar y supervisar el rendimiento de las recomendaciones de productos.
-source-git-commit: 4ad607c8595b25d01b5f5020b787fc1d35d4df25
+exl-id: 85a06cc3-91b9-484a-96a9-fc85718e6d70
+source-git-commit: 9f1f05475b2d8401ec33272e3f12e3cc7285478d
 workflow-type: tm+mt
-source-wordcount: '637'
+source-wordcount: '635'
 ht-degree: 0%
 
 ---
@@ -101,5 +102,5 @@ En la página de detalles de la recomendación, haga clic en **Crear**. Para obt
 | Ingresos | Ingresos impulsados por la recomendación para el intervalo de tiempo actual. |
 | Lt Ingresos | (Ingresos acumulados) Los ingresos acumulados generados por una recomendación. |
 | Viabilidad | El porcentaje de unidades de recomendación que se registran para la vista. |
-| Ctr | (Porcentaje de clics registrados) El porcentaje de impresiones unitarias de la recomendación que registra un clic. |
-| vCtr | (Porcentaje de clics registrados visible) El porcentaje de impresiones visibles para la unidad de recomendación que registra un clic. |
+| Ctr | (Tasa de pulsaciones) El porcentaje de impresiones unitarias para la recomendación que registra un clic. |
+| vCtr | (Tasa de pulsaciones visible) El porcentaje de impresiones visibles para la unidad de recomendación que registra un clic. |

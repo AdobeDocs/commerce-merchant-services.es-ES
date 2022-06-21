@@ -1,9 +1,10 @@
 ---
 title: Datos de comportamiento
 description: Obtenga información sobre los datos de comportamiento y cuándo puede empezar a utilizarlos.
-source-git-commit: 7fe89df32dc5363817f957180e5b75e7217fc14a
+exl-id: d68a97b9-1497-4603-a72c-4aaaf6e048cb
+source-git-commit: 371ae21c97021912279381b5e32f953fe3b4f0dd
 workflow-type: tm+mt
-source-wordcount: '567'
+source-wordcount: '585'
 ht-degree: 0%
 
 ---
@@ -34,9 +35,11 @@ Otras variables que pueden afectar al tiempo necesario para la formación:
 - Algunos tipos de recomendaciones se entrenan más rápido que otros
 - Adobe Commerce vuelve a calcular los datos de comportamiento cada cuatro horas. Aunque técnicamente puede implementar las unidades de recomendación en ese momento, sepa que las recomendaciones son más precisas cuanto más tiempo se usen en el sitio.
 
+Para ayudarle a visualizar el progreso de formación de cada tipo de recomendación, la variable [crear recomendación](create.md) muestra los indicadores de disponibilidad.
+
 Mientras que los datos se recopilan en los modelos de producción y aprendizaje automático están formados, puede implementar la variable [tareas restantes](implementation-workflow.md) necesario para implementar recomendaciones en su tienda. Para cuando haya terminado de probar y configurar las recomendaciones, los modelos de aprendizaje automático han recopilado y calculado datos suficientes para crear recomendaciones relevantes, lo que le permite implementar las recomendaciones en su tienda.
 
-## Recomendaciones de copia de seguridad
+## Recomendaciones de copia de seguridad {#backuprecs}
 
 Si no hay datos de entrada suficientes para proporcionar todos los artículos de recomendación solicitados en una unidad, Adobe Commerce proporciona recomendaciones de copia de seguridad para rellenar las unidades de recomendación. Por ejemplo, si implementa el `Recommended for you` tipo de recomendación para su página principal, un comprador nuevo en su sitio no ha generado suficientes datos de comportamiento para productos personalizados recomendados con precisión. En este caso, Adobe Commerce muestra elementos basados en la variable `Most viewed` tipo de recomendación a este comprador.
 
