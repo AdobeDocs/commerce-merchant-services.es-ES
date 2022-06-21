@@ -2,9 +2,9 @@
 title: '"Incorpore el [!DNL Quick Checkout] para la extensión de Adobe Commerce"'
 description: '"Aprenda a usar la variable [!DNL Quick Checkout] podría beneficiar a su instancia de Adobe Commerce y cómo incorporar y configurar correctamente la extensión."'
 exl-id: 8caf746c-e31b-4331-8b0d-ea0f1e545bdd
-source-git-commit: 9841db7616c8aa6d5bc5af3e6e92c0abe9a4a1e2
+source-git-commit: a62c38adeb41812e91089716eb36c375b09595f4
 workflow-type: tm+mt
-source-wordcount: '568'
+source-wordcount: '570'
 ht-degree: 0%
 
 ---
@@ -66,7 +66,8 @@ Para conectar a su proveedor de servicios de pago, siga los pasos descritos en l
 
 ## Habilitar extensión
 
-1. En el _Administrador_ barra lateral, vaya a **Almacenes** > **Configuración** > **Cierre de compra** para acceder a la página de configuración de administración de cierre de compra .
+1. En el _Administrador_ barra lateral, vaya a **Almacenes** > _Configuración_ > **Configuración**.
+1. En el panel izquierdo, expanda **Ventas** y seleccione **Cierre de compra**.
 
    ![Cierre rápido](assets/admin-view.png)
 
