@@ -2,9 +2,9 @@
 title: Crear nueva recomendación
 description: Obtenga información sobre cómo crear una unidad de recomendación de producto.
 exl-id: d393ab78-0523-463f-9b03-ad3f523dce0f
-source-git-commit: 1d2b4b8d85e5ccea1c4258869fbfd191a2e7987b
+source-git-commit: 5fa08429a97c9ed59a339a0eca268f99c1023b7e
 workflow-type: tm+mt
-source-wordcount: '836'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -41,8 +41,8 @@ Al activar la unidad de recomendación, Adobe Commerce empieza a [recopilar dato
 
    Puede crear hasta cinco unidades de recomendación activas por cada tipo de página y hasta 25 unidades para el Creador de páginas. El tipo de página aparece atenuado Cuando se alcanza el límite.
 
-   ![Nombre de la recomendación](assets/create-recommendation.png)
-   _Nombre y ubicación de la recomendación_
+   ![Nombre y página de la recomendación](assets/create-recommendation.png)
+   _Nombre de recomendación y ubicación de página_
 
 1. En el _Seleccionar tipo de recomendación_ especifique la [tipo de recomendación](type.md) desea que aparezca en la página seleccionada. Para algunas páginas, la variable [placement](placement.md) de recomendaciones se limita a ciertos tipos.
 
@@ -54,10 +54,10 @@ Al activar la unidad de recomendación, Adobe Commerce empieza a [recopilar dato
 
    En función de los factores anteriores, se calcula y muestra un valor de disponibilidad. Se considera que un tipo de recomendación está listo para implementarse cuando su valor de disponibilidad es del 75 % o superior. Un tipo de recomendación se considera parcialmente listo cuando su preparación es de al menos el 50 %. Por último, se considera que un tipo de recomendación no está listo para implementarse cuando su valor de disponibilidad es inferior al 50%.
 
-1. En el _Etiqueta de visualización de tienda_ , introduzca el [label](placement.md#recommendation-labels) que son visibles para sus compradores, como &quot;Principales vendedores&quot;.
-
-   ![Nombre de la recomendación](assets/create-recommendation-select-type.png)
+   ![Tipo de recomendación](assets/create-recommendation-select-type.png)
    _Tipo de recomendación_
+
+1. En el _Etiqueta de visualización de tienda_ , introduzca el [label](placement.md#recommendation-labels) que son visibles para sus compradores, como &quot;Principales vendedores&quot;.
 
 1. En el _Elija el número de productos_ , utilice el control deslizante para especificar cuántos productos desea que aparezcan en la unidad de recomendaciones.
 
@@ -72,12 +72,12 @@ Al activar la unidad de recomendación, Adobe Commerce empieza a [recopilar dato
 
    La variable _Elegir posición_ muestra todas las recomendaciones (si las hay) creadas para el tipo de página seleccionado.
 
-   ![Nombre de la recomendación](assets/create-recommendation-select-placement.png)
-   _Tipo de recomendación_
+   ![Orden de recomendación](assets/create-recommendation-select-placement.png)
+   _Orden de recomendación en la página_
 
 1. (Opcional) En la _Filtros_ sección, [aplicar filtros](filters.md) para controlar qué productos aparecen en la unidad de recomendaciones.
 
-   ![Nombre de la recomendación](assets/create-recommendation-select-placement.png)
+   ![Filtros de recomendación](assets/create-recommendation-filter-products.png)
    _Filtros de producto de recomendación_
 
 1. Cuando termine, haga clic en una de las siguientes opciones:
