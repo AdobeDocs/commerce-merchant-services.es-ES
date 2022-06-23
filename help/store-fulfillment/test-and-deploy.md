@@ -3,13 +3,13 @@ title: Probar e implementar el cumplimiento de la tienda
 description: Pruebe el plan para verificar la funcionalidad de cumplimiento de la tienda. Las pruebas abarcan la API de sincronización de inventario, el flujo de trabajo de cumplimiento completo para pedidos cancelados, la administración de usuarios de la aplicación de satisfacción de tienda y la experiencia de registro de cliente.
 role: User, Admin
 level: Intermediate
-source-git-commit: 42b0118b427b1e04186793b4a57c058bc1cabdd4
+exl-id: 77285a66-5161-407b-94cd-b3f412d7949d
+source-git-commit: 556cbf803a0f8569e8561d2b33b7a976065ae814
 workflow-type: tm+mt
 source-wordcount: '2652'
 ht-degree: 0%
 
 ---
-
 
 # Prueba e implementación del cumplimiento de la tienda para Adobe Commerce
 
@@ -136,7 +136,6 @@ Esta sección del plan de prueba incluye escenarios para probar el flujo de trab
 </td>
 <td>
 <ul>
-<td>
 <li>Historial de pedidos actualizado con <code>We refunded $X online. Transaction ID: transactionID</code> y <code>Received Cancel acknowledgment from the BOPIS solution.</code></li>
 <li>El estado del pedido es <code>Closed</code>. (Hemos establecido REVISIÓN DE PAGOS ahora).</li>
 <li>Nota de crédito creada en Adobe Commerce. (Espere hasta que cron funcione).</li>
@@ -449,7 +448,7 @@ Esta sección del plan de prueba cubre la experiencia de registro para los pedid
 
 - Contacto de recogida alternativo: compruebe el flujo de trabajo para añadir un [!UICONTROL Alternate Pickup Contact] y seleccionando un [!UICONTROL Preferred Contact] en los pedidos de la tienda.
 
-- Formulario de registro: compruebe el flujo de trabajo para enviar una solicitud de registro para los pedidos de recogida de la tienda.
+- Formulario de registro (Check-in): permite verificar el flujo de trabajo para enviar una solicitud de registro para los pedidos de recogida de la tienda.
 
 **Áreas funcionales:** Cierre de carro, Formulario de registro para pedidos de recogida de tienda</br>
 **Función:** Administrador, cliente, asociado de tienda</br>
@@ -566,7 +565,7 @@ Esta sección del plan de prueba cubre escenarios para probar los flujos de trab
 </tr>
 <tr>
 <td>
-<strong>Ruta de acceso fácil de recoger de un solo pedido, recogida en el borde de la curva</strong></td>
+<strong>Selección de pedido único: ruta feliz, recogida de borde de la curva</strong></td>
 <td>Elija artículos de una y varias cantidades. No hay nilpicks ni acopio en el lado de la curva (con ensayo).
 </td>
 <td>
@@ -645,22 +644,3 @@ La implementación y las pruebas varían según la infraestructura y las capacid
 >[!TIP]
 >
 >Para obtener instrucciones de implementación, listas de comprobación y prácticas recomendadas para Adobe Commerce en proyectos de infraestructura en la nube, consulte [Implementar la tienda](https://devdocs.magento.com/cloud/live/stage-prod-live.html) en la documentación para desarrolladores de Adobe Commerce.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

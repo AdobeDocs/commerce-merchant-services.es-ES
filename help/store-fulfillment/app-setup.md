@@ -4,9 +4,9 @@ description: Configure el [!DNL Store Assist] aplicación para administrar los f
 role: User, Admin
 level: Intermediate
 exl-id: bcb5b02b-0141-407a-ad55-6e10e8e1aa90
-source-git-commit: 421c90f4c8bd687216cd48c72f30301a32115522
+source-git-commit: 556cbf803a0f8569e8561d2b33b7a976065ae814
 workflow-type: tm+mt
-source-wordcount: '608'
+source-wordcount: '606'
 ht-degree: 0%
 
 ---
@@ -48,13 +48,13 @@ La aplicación de ayuda de la tienda requiere dos tipos de configuración:
 
    - Personalice todo en las instrucciones de la aplicación (selección, ensayo, desactivación).
 
-   - **Recogida de notificaciones**-Especifique si desea enviar una notificación push para iniciar el proceso de selección después de que un cliente realice un pedido.
+   - **Recogida de notificaciones**: especifique si desea enviar una notificación push para iniciar el proceso de selección después de que un cliente realice un pedido.
 
-   - **Comprobar notificaciones**-Especifique si se debe enviar una notificación push durante el proceso de registro para los pedidos después de la facturación, después de que el tiempo de espera del cliente exceda un período de tiempo especificado. O bien, desactive la notificación.
+   - **Comprobar notificaciones**: permite especificar si se debe enviar una notificación push durante el proceso de registro para los pedidos después del registro, después de que el tiempo de espera del cliente exceda un período de tiempo especificado. O bien, desactive la notificación.
 
    - **Proceso de apagado manual**: habilite procesos opcionales cuando Store Associate envía pedidos al cliente, por ejemplo, requiera una firma del cliente o solicite a la asociada que compruebe el ID del cliente.
 
-   - **Habilitar rechazo de elemento al realizar el envío**-Permitir que los clientes devuelvan o cancelen artículos de pedido durante la entrega del pedido.
+   - **Habilitar rechazo de elemento al realizar el envío**: permite que los clientes devuelvan o cancelen artículos de pedido durante la entrega del pedido.
    Trabaje con el equipo de Servicios al cliente de Walmart Commerce Technologies para completar la configuración de front-end para la aplicación de asistencia al almacén.
 
 ## Descarga e instalación de aplicaciones
@@ -67,7 +67,7 @@ Una vez completada la configuración de la aplicación de asistencia de tienda, 
 
 - Store Associates requiere la siguiente información para iniciar sesión:
 
-   - El nombre de empresa asociado a su cuenta de asistente de tienda
+   - **[!UICONTROL Company name]** asociada a la cuenta de Store Assist
 
-   - Credenciales de cuenta de Store Assist: credenciales de nombre de usuario y contraseña para su cuenta.
+   - **Credenciales de cuenta de Store Assist**: credenciales de nombre de usuario y contraseña para su cuenta.
    Un administrador de Adobe Commerce puede crear una cuenta de usuario y establecer permisos para las cuentas de usuario de la aplicación de asistencia de tienda para las ubicaciones de tiendas que tengan [Recogida en la tienda](merchant-store-configuration.md#pickup-location-configuration) activada en la configuración de las tiendas de administración.

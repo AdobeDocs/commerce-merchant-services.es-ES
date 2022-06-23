@@ -4,9 +4,9 @@ description: Configure las plantillas de correo electrónico transaccional para 
 role: User, Admin
 level: Intermediate
 exl-id: 688732e3-06f0-4613-a589-2d465597eb28
-source-git-commit: 42b0118b427b1e04186793b4a57c058bc1cabdd4
+source-git-commit: 556cbf803a0f8569e8561d2b33b7a976065ae814
 workflow-type: tm+mt
-source-wordcount: '1216'
+source-wordcount: '1215'
 ht-degree: 0%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 # Correos electrónicos de ventas
 
-El cumplimiento de la tienda ofrece un conjunto ampliado de plantillas de correo electrónico transaccional para admitir los flujos de trabajo de pedidos y cumplimiento. Ofrecen comunicación y mensajería coherentes y automatizadas en todos los canales, notificando a los clientes y a los administradores de tiendas los cambios de estado de los pedidos, las instrucciones para los pedidos de recogida en la tienda, etc.
+El cumplimiento de la tienda ofrece un conjunto ampliado de plantillas de correo electrónico transaccional para admitir los flujos de trabajo de pedidos y cumplimiento. Ofrecen comunicación y mensajería coherentes y automatizadas en todos los canales, lo que permite notificar a los administradores de clientes y tiendas los cambios en el estado de los pedidos, las instrucciones para los pedidos de recogida en la tienda y mucho más.
 
 Las plantillas de correo electrónico de cumplimiento de almacenamiento están configuradas con la mensajería y la configuración predeterminadas. Los administradores de comerciantes en Adobe Commerce pueden administrar y modificar las configuraciones, y seleccionar las plantillas de correo electrónico para comunicarse con los clientes en diferentes escenarios. Los administradores también pueden configurar y personalizar plantillas.
 

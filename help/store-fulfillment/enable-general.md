@@ -1,15 +1,15 @@
 ---
 title: Configuración general
-description: '"Configure las opciones generales para habilitar [!DNL Store Fulfillment] para su tienda. Configure las extensiones globales, los ajustes del sistema para el registro, la sincronización de datos y la seguridad. Proporcione datos clave para permitir la integración entre Adobe Commerce y los servicios de cumplimiento de la tienda".'
+description: Configure las opciones generales para habilitar [!DNL Store Fulfillment] para su tienda. Configure las extensiones globales, los ajustes del sistema para el registro, la sincronización de datos y la seguridad. Proporcione datos clave para permitir la integración entre Adobe Commerce y los servicios de cumplimiento de la tienda.
 role: User, Admin
 level: Intermediate
-source-git-commit: 42b0118b427b1e04186793b4a57c058bc1cabdd4
+exl-id: 51dcfc95-3dd6-40d9-bd26-d8409a25f3c8
+source-git-commit: 556cbf803a0f8569e8561d2b33b7a976065ae814
 workflow-type: tm+mt
 source-wordcount: '2413'
 ht-degree: 0%
 
 ---
-
 
 # Configuración general
 
@@ -33,7 +33,7 @@ La configuración general de [!DNL Store Fulfillment] incluye los siguientes aju
 |--------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------|--------------|
 | **[!UICONTROL Enabled]** | Habilite o deshabilite la solución. Cuando esté habilitado, configure y use las funcionalidades de cumplimiento de la tienda y establezca la conexión entre su tienda Adobe Commerce y los servicios de cumplimiento de la tienda. Cuando está desactivado, todas las funciones de entrega de la tienda están deshabilitadas y no hay comunicación entre Adobe Commerce y los servicios de entrega de la tienda. La información del pedido no se puede procesar ni recibir. | Global | Sí |
 
-Para completar esta configuración, consulte **Almacena → Configuración → Servicios → Almacenar el cumplimiento de las tecnologías de comercio Walmart**.
+Para completar esta configuración, consulte **Almacenes > Configuración > Servicios > Almacenamiento de las aplicaciones de Walmart Commerce Technologies**.
 
 ## Agregar credenciales de cuenta
 
@@ -69,7 +69,7 @@ Puede ver detalles sobre las operaciones de sincronización de pedidos desde el 
 
 | **Campo** | **Descripción** | **Ámbito** | **Requerido** |
 |-----------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------|--------------|
-| **Error crítico de reintento** | Especifica los intentos de reintento para una operación de sincronización de registros después de que se produzca un error crítico.</br></br>Los errores críticos se producen cada vez que la integración no obtiene una respuesta positiva del servicio de cumplimiento. Esto puede ocurrir cuando el servicio está inactivo o cuando hay un error en los datos de pedido que se están enviando.</br></br>Cuando se alcanza el umbral de reintentos, el elemento permanece en cola pero no se vuelve a procesar. Ver todos los elementos con errores de **[!UICONTROL System → Tools → Store Fulfillment Queue]** Administración en Administración. Para solucionar problemas de forma sistemática relacionados con errores, póngase en contacto con su administrador de cuentas. | Global | No |
+| **Error crítico de reintento** | Especifica los intentos de reintento para una operación de sincronización de registros después de que se produzca un error crítico.</br></br>Los errores críticos se producen cada vez que la integración no obtiene una respuesta positiva del servicio de cumplimiento. Esto puede ocurrir cuando el servicio está inactivo o cuando hay un error en los datos de pedido que se están enviando.</br></br>Cuando se alcanza el umbral de reintentos, el elemento permanece en cola pero no se vuelve a procesar. Ver todos los elementos con errores de **[!UICONTROL System > Tools > Store Fulfillment Queue]** Administración en Administración. Para solucionar problemas de forma sistemática relacionados con errores, póngase en contacto con su administrador de cuentas. | Global | No |
 | **Habilitar correo electrónico de notificación de error** | Habilitar las notificaciones de error para recibir un correo electrónico cuando la variable [!UICONTROL Retry Critical Error Threshold] se alcanza para una solicitud. La notificación incluye todos los detalles disponibles sobre el error. | Global | No |
 | **Enviar correo electrónico de notificación de error a** | Una lista delimitada por comas de direcciones de correo electrónico de destinatario para notificaciones de error. | Global | No |
 | **Plantilla de correo electrónico de excepción de sincronización de pedidos** | Especifica la plantilla de correo electrónico utilizada para notificar a los destinatarios los errores de sincronización de pedidos. Se proporciona una plantilla predeterminada. No admite personalización. | Vista de la tienda | No |

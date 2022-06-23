@@ -3,13 +3,13 @@ title: Configuración del sistema de asignación y ubicación del almacén
 description: Configure un proveedor de distancia para que admita la asignación de ubicación de tienda en la interfaz de usuario de tienda. Las soluciones de entrega de tiendas requieren un proveedor de distancia para habilitar la búsqueda de tiendas minoristas y otras capacidades de asignación y programación para el flujo de trabajo de cumplimiento de extremo a extremo.
 role: User, Admin
 level: Intermediate
-source-git-commit: 42b0118b427b1e04186793b4a57c058bc1cabdd4
+exl-id: d09c4652-e2eb-49dc-8c42-2aa9b6be5d6b
+source-git-commit: 556cbf803a0f8569e8561d2b33b7a976065ae814
 workflow-type: tm+mt
 source-wordcount: '176'
 ht-degree: 0%
 
 ---
-
 
 # Configuración de ubicación y asignación de tiendas
 
@@ -21,13 +21,13 @@ Durante el proceso de configuración, debe proporcionar una clave de API de Goog
 
 Para configurar el proveedor de distancia:
 
-1. En el [!UICONTROL Stores > General] en Admin, añada la integración de Google Maps para el tipo de contenido Mapa .
+1. En el **[!UICONTROL Stores > General]** en Admin, añada la integración de Google Maps para el tipo de contenido Mapa .
 
    - Vaya a **[!UICONTROL Stores > Configuration  > General > Content Management]**.
 
    - Añadir la clave de API de Google a **[!UICONTROL Google Maps API Key]** campo .
 
-1. En el [!UICONTROL Stores > Inventory] en Administración, seleccione el proveedor de distancia para el cumplimiento de la tienda.
+1. En el **[!UICONTROL Stores > Inventory]** en Administración, seleccione el proveedor de distancia para el cumplimiento de la tienda.
 
    - Vaya a **[!UICONTROL Stores > Configuration > Catalog > Inventory]**.
 

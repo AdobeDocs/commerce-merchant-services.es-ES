@@ -4,9 +4,9 @@ description: '"Instale el [!DNL Store Fulfillment solution] para una tienda de A
 role: User, Admin
 level: Intermediate
 exl-id: 6613268a-7d22-4c54-af89-834921b7f262
-source-git-commit: 66c4ca972004c43fa55795006b1511820ca9b514
+source-git-commit: 556cbf803a0f8569e8561d2b33b7a976065ae814
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '661'
 ht-degree: 0%
 
 ---
@@ -29,15 +29,15 @@ composer require walmart/magento-bopis-metapackage:1.0.0
 
 ## Requisitos de instalación
 
-- **Acceso al cumplimiento de la tienda mediante el archivo de software Walmart Commerce Technologies (archivo .zip)**-Durante el proceso de incorporación y habilitación, trabaje con su administrador de cuentas para obtener acceso al archivo de instalación para la extensión de cumplimiento de la tienda.
+- **Acceso al cumplimiento de la tienda mediante el archivo de software Walmart Commerce Technologies (archivo .zip)**: durante el proceso de incorporación y habilitación, trabaje con el administrador de su cuenta para obtener acceso al archivo de instalación para la extensión de cumplimiento de la tienda.
 
-- **Información de la cuenta de Adobe Commerce**-La instalación del [!DNL Store Fulfillment] La solución requiere un [Cuenta de comercio](https://docs.magento.com/user-guide/magento/magento-account.html){target=&quot;_blank&quot;}. Necesita un ID de cuenta y credenciales con acceso de propietario o administrador a la variable [!DNL Adobe Commerce] proyecto.
+- **Información de la cuenta de Adobe Commerce**-La instalación del [!DNL Store Fulfillment] La solución requiere un [[!DNL Commerce] account](https://docs.magento.com/user-guide/magento/magento-account.html){target=&quot;_blank&quot;}. Necesita un ID de cuenta y credenciales con acceso de propietario o administrador a la variable [!DNL Adobe Commerce] proyecto.
 
 - Para [!DNL Adobe Commerce] en los proyectos de infraestructura de nube, los instaladores de software deben tener acceso de administrador al proyecto de Cloud. Consulte [Administrar el acceso de los usuarios](https://devdocs.magento.com/cloud/project/user-admin.html).
 
 - **Experiencia con el Compositor y el[!DNL Commerce CLI]**—Consulte [Instalación general de CLI](https://devdocs.magento.com/extensions/install/){target=&quot;_blank&quot;} para obtener información sobre el uso de estas herramientas para instalar y administrar extensiones en el [!DNL Adobe Commerce] plataforma.
 
-- **Experiencia en la instalación de extensiones de terceros en Adobe Commerce**-Para obtener referencia, consulte la documentación de Adobe Commerce.
+- **Experiencia en la instalación de extensiones de terceros en Adobe Commerce**: para obtener más información, consulte la documentación de Adobe Commerce.
 
    - [Instalación de una extensión para Adobe Commerce en una instancia de infraestructura de nube](https://devdocs.magento.com/cloud/howtos/install-components.html#install-an-extension).
 
@@ -94,7 +94,8 @@ Use Composer para configurar el directorio de origen de la instalación e instal
 
 Complete la instalación utilizando el `bin/magento setup:upgrade` para actualizar el esquema y los datos de la base de datos con los cambios para admitir la solución Store Fulfillment .
 
->Nota:
+>[!NOTE]
+>
 >Para Adobe Commerce en proyectos de infraestructura en la nube, no es necesario registrar la extensión. En su lugar, confirme los cambios de código del paso anterior y colóquelos en la rama de entorno. Los comandos para actualizar el esquema y los datos de la base de datos se ejecutan automáticamente durante el proceso de compilación e implementación de la nube.
 
 ### Paso 5: Completar la instalación
@@ -183,7 +184,7 @@ Desde el servidor de Adobe Commerce, compruebe que los módulos de la extensión
 
 ### Pasos adicionales
 
-Si es necesario, use la variable `[setup:static-content: deploy](https://devdocs.magento.com/guides/v2.4/reference/cli/magento-commerce.html#setupstatic-contentdeploy)` Comando CLI para implementar archivos de vista estáticos en su entorno de producción.
+Si es necesario, use la variable [configuración:static-content:implementar](https://devdocs.magento.com/guides/v2.4/reference/cli/magento-commerce.html#setupstatic-contentdeploy){target=&quot;_blank&quot;} Comando CLI para implementar archivos de vista estáticos en el entorno de producción.
 
 ```terminal
 php bin/magento setup:static-content:deploy -f
