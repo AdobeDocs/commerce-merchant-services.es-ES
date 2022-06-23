@@ -4,9 +4,9 @@ description: Después de la instalación, puede configurar [!DNL Payment Service
 role: Admin, User
 level: Intermediate
 exl-id: 108f2b24-39c1-4c87-8deb-d82ee1c24d55
-source-git-commit: 724abe973094c1aa631ca34bd8096052fa1e9195
+source-git-commit: aed9469d6acf638d86389cbf1c178fccd8d42759
 workflow-type: tm+mt
-source-wordcount: '630'
+source-wordcount: '695'
 ht-degree: 0%
 
 ---
@@ -65,6 +65,9 @@ Consulte [Opciones de pago](payments-options.md#paypal-smart-buttons) para obten
 1. Para cambiar el nombre del método de pago mostrado durante el cierre de compra, edite el valor en la variable **[!UICONTROL Checkout title]** campo .
 1. Hasta [configurar la acción de pago](production.md#set-payment-services-as-payment-method), alternancia **[!UICONTROL Payment action]** a `Authorize` o `Authorize and Capture`.
 1. Para habilitar el modo de depuración, cambie la **[!UICONTROL Debug Mode]** selector.
+
+   Cuando se activa el modo de depuración, la información de depuración adicional sobre el pago con tarjeta de crédito se escribe en la variable `var/log/payment.log` archivo. Esta información puede proporcionarle más información sobre un pago específico para ayudarle a solucionar el problema.
+
 1. Haga clic **[!UICONTROL Save]**.
 
    Si intenta salir de esta vista sin guardar los cambios, aparecerá un modal que le pedirá que descarte los cambios, continúe editando o guarde los cambios.
@@ -88,6 +91,9 @@ Puede activar y configurar las opciones de pago de los botones inteligentes de P
 
 1. Para cambiar el [Mensajería de pago posterior](payments-options.md#pay-later-button), active la casilla **[!UICONTROL Display Pay Later message]** .
 1. Para habilitar el modo de depuración, cambie la **[!UICONTROL Debug Mode]** selector.
+
+   Cuando habilites el modo de depuración, la información de depuración adicional sobre el pago PayPal se escribe en el `var/log/payment.log` archivo. Esta información puede proporcionarle más información sobre un pago específico para ayudarle a solucionar el problema.
+
 1. Haga clic **[!UICONTROL Save]**.
 
    Si intenta salir de esta vista sin guardar los cambios, aparecerá un modal que le pedirá que descarte los cambios, continúe editando o guarde los cambios.
