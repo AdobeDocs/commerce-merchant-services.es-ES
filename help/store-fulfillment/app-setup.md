@@ -1,15 +1,15 @@
 ---
 title: Configuración de la aplicación
-description: '"Configure el [!DNL Store Assist] aplicación para administrar los flujos de trabajo y procesos de cumplimiento de la tienda end-to-end para la compra en línea, realizar pedidos en la tienda". '
+description: Configure el [!DNL Store Assist] aplicación para administrar los flujos de trabajo y procesos de cumplimiento de la tienda end-to-end para la compra en línea, realizar pedidos en la tienda.
 role: User, Admin
 level: Intermediate
-source-git-commit: 42b0118b427b1e04186793b4a57c058bc1cabdd4
+exl-id: bcb5b02b-0141-407a-ad55-6e10e8e1aa90
+source-git-commit: 421c90f4c8bd687216cd48c72f30301a32115522
 workflow-type: tm+mt
-source-wordcount: '581'
+source-wordcount: '608'
 ht-degree: 0%
 
 ---
-
 
 # Configuración de la aplicación
 
@@ -55,14 +55,15 @@ La aplicación de ayuda de la tienda requiere dos tipos de configuración:
    - **Proceso de apagado manual**: habilite procesos opcionales cuando Store Associate envía pedidos al cliente, por ejemplo, requiera una firma del cliente o solicite a la asociada que compruebe el ID del cliente.
 
    - **Habilitar rechazo de elemento al realizar el envío**-Permitir que los clientes devuelvan o cancelen artículos de pedido durante la entrega del pedido.
-
    Trabaje con el equipo de Servicios al cliente de Walmart Commerce Technologies para completar la configuración de front-end para la aplicación de asistencia al almacén.
 
 ## Descarga e instalación de aplicaciones
 
 Una vez completada la configuración de la aplicación de asistencia de tienda, Store Associates puede descargar, instalar e iniciar sesión en la aplicación de asistencia de tienda desde sus dispositivos móviles.
 
-- Descargue la aplicación de ayuda de la tienda desde la [Apple App Store](https://apps.apple.com/us/app/store-assist-by-walmart/id16092815390) o la tienda de Google Play.
+- Compruebe que el dispositivo móvil cumple los requisitos de [requisitos de hardware y software](solution-requirements.md#store-assist-app-requirements) para la solución Store Fulfillment.
+
+- Descargue la aplicación de ayuda de la tienda desde la [Apple App Store](https://apps.apple.com/us/app/store-assist-by-walmart/id16092815390){target=&quot;_blank&quot;} o la variable [Tienda Google Play](https://play.google.com/store/apps/details?id=com.walmart.faas.storeassist){target=&quot;_blank&quot;}.
 
 - Store Associates requiere la siguiente información para iniciar sesión:
 
@@ -70,4 +71,3 @@ Una vez completada la configuración de la aplicación de asistencia de tienda, 
 
    - Credenciales de cuenta de Store Assist: credenciales de nombre de usuario y contraseña para su cuenta.
    Un administrador de Adobe Commerce puede crear una cuenta de usuario y establecer permisos para las cuentas de usuario de la aplicación de asistencia de tienda para las ubicaciones de tiendas que tengan [Recogida en la tienda](merchant-store-configuration.md#pickup-location-configuration) activada en la configuración de las tiendas de administración.
-
