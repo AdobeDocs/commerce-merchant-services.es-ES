@@ -2,10 +2,10 @@
 title: '"[!DNL Payment Services] Notas de la versión"'
 description: Revise las notas de la versión para obtener información sobre todas las [!DNL Payment Services] versiones.
 exl-id: 104aa2c7-7735-4ac2-8ed1-a03cd9911273
-source-git-commit: 6fc2db2ff842244af6a3c52b575b26233540931b
+source-git-commit: 44e1f7dce951f9244498565eccaebd70328d91e4
 workflow-type: tm+mt
-source-wordcount: '475'
-ht-degree: 1%
+source-wordcount: '812'
+ht-degree: 0%
 
 ---
 
@@ -17,11 +17,41 @@ Estas notas de la versión describen la versión inicial de [!DNL Payment Servic
 ![Se ha corregido un problema](../assets/fix.svg) Correcciones y mejoras
 ![Problema conocido](../assets/bug.svg) Problemas conocidos
 
+Para ver los cambios y correcciones de funciones publicados fuera de la versión normal de las funciones, consulte las secciones Actualizaciones del servicio alojado .
+
 Consulte [Próximas versiones](https://devdocs.magento.com/release/) para obtener más información sobre los programas de versiones y la asistencia técnica.
 
 Consulte [Disponibilidad](https://devdocs.magento.com/release/availability.html) en la documentación para desarrolladores para obtener más información sobre la compatibilidad del producto.
 
+## Versión 1.2.0
+
+_29 de junio de 2022_
+
+![Se ha corregido un problema](../assets/fix.svg)<!-- Issue PAY-3264 --> Anteriormente, cuando un usuario que iniciaba sesión seleccionaba una dirección de facturación/envío diferente que la dirección predeterminada de su cuenta, se producía un error de cierre de compra. Hemos corregido este problema y ahora se envía la dirección de facturación/envío seleccionada (en lugar de la dirección guardada predeterminada) y el cierre de compra se completa correctamente.
+
+![Se ha corregido un problema](../assets/fix.svg)<!-- Issue PAY-3314 --> Si deshabilita los botones inteligentes de PayPal para el cierre de compra, no se mostrarán errores.
+
+![Se ha corregido un problema](../assets/fix.svg)<!-- Issue PAY-3330 --> Los pagos ya no fallan durante el cierre de compra cuando un usuario invitado introduce un número de teléfono que incluye guiones.
+
+![Se ha corregido un problema](../assets/fix.svg)<!-- Issue PAY-3338 PAY-2502 --> Cuando las credenciales de Commerce Services no son válidas, la variable [!DNL Payment Services] La página principal ahora aparecerá en el Administrador. Aparece un error de credenciales para avisarle de que sus credenciales no son válidas.
+
+![Problema conocido](../assets/bug.svg)<!-- Issue PAY-0 --> [!DNL Payment Services] actualmente es incompatible con el [`commerce-data-export` v101.20 y posteriores](https://github.com/magento-commerce/commerce-data-export/releases/tag/v101.2.0), lo que hace que sea incompatible con el [[!DNL Channel manager] Extensión](https://experienceleague.adobe.com/docs/commerce-channels/channel-manager/guide-overview.html).
+
+### Actualizaciones de servicio alojadas
+
+Estas notas de la versión describen los cambios y correcciones que se produjeron y se publicaron fuera de las versiones de funciones normales, entre la versión actual v1.2.0 y la versión anterior 1.1.0 para el servicio alojado.
+
+![Nuevo](../assets/new.svg)<!-- Issue PAY-1720 --> Las disputas por pedidos de tienda ya están disponibles en [informe de estado de pago de pedido](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/order-payment-status.html#view-disputes). Puede navegar directamente al Centro de resolución de PayPal desde [!DNL Payment Services] para tomar medidas sobre las controversias.
+
+![Nuevo](../assets/new.svg)<!-- Issue PAY-2854 --> Mejoras en la experiencia del usuario [!DNL Payment Services] Inicio incluye la capacidad de modificar una configuración en el nivel de herencia actual y mejoras para mostrar el encabezado y la navegación.
+
+![Nuevo](../assets/new.svg)<!-- Issue PAY-2854 --> Ahora puede ver advertencias cuando cambia del modo de entorno limitado al modo de producción y cuando intenta abandonar una vista con actualizaciones que no se han guardado.
+
+![Nuevo](../assets/new.svg)<!-- Issue PAY-2761 --> Ahora puede personalizar los datos que aparecen en la [Informe del estado del pago del pedido](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/order-payment-status.html#show-and-hide-columns) y [Informe de rutas](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/payouts.html#show-and-hide-columns) mostrando u ocultando columnas con el control de configuración de columna.
+
 ## Versión 1.1.0
+
+_31 de marzo de 2022_
 
 ![Nuevo](../assets/new.svg)<!-- Issue PAY-2127 --> Versión de disponibilidad general:[!DNL Payment Services] ahora es [compatible con [!DNL Adobe Commerce] y [!DNL Magento Open Source] versiones 2.4.0 a 2.4.4](https://devdocs.magento.com/release/availability.html#compatibility).
 
@@ -47,6 +77,8 @@ Consulte [Disponibilidad](https://devdocs.magento.com/release/availability.html)
 
 ## v1.0.0
 
+_29 de noviembre de 2021_
+
 ![Nuevo](../assets/new.svg)<!-- Issue PAY-2127 --> Versión de disponibilidad general:[[!DNL Payment Services]](https://marketplace.magento.com/magento-payment-services.html) ahora es compatible con [!DNL Adobe Commerce] y [!DNL Magento Open Source] versiones 2.4.0 a 2.4.3-p1.
 
 ![Nuevo](../assets/new.svg)<!-- Issue PAY-124 --> La variable [!DNL Payment Services] extensión para [!DNL Adobe Commerce] y [!DNL Magento Open Source] puede instalarse para [[!DNL Adobe Commerce] en la infraestructura de nube](install.md#adobe-commerce-on-cloud-infrastructure) o [Local](install.md#on-premises) instancias. Estos métodos requieren el uso de una interfaz de línea de comandos.
@@ -61,7 +93,7 @@ Consulte [Disponibilidad](https://devdocs.magento.com/release/availability.html)
 
 ![Nuevo](../assets/new.svg)<!-- Issue PAY-311 --> [!DNL Payment Services] admite precios en niveles flexibles, basados en el volumen total de procesamiento, adaptados a cualquier comerciante.
 
-![Nuevo](../assets/new.svg)<!-- Issue PAY-1443 --> Puede [personalizar el aspecto](payments-options.md) de botones inteligentes de PayPal y campos de tarjeta de crédito para la extensión Servicios de pago.
+![Nuevo](../assets/new.svg)<!-- Issue PAY-1443 --> Puede [personalizar el aspecto](payments-options.md) de botones inteligentes de PayPal y campos de tarjeta de crédito para la variable [!DNL Payment Services] extensión.
 
 ![Problema conocido](../assets/bug.svg)<!-- Issue PAY-2473 --> Uso [claves de compositor incorrectas](https://support.magento.com/hc/en-us/articles/4406603542541) durante la instalación de la extensión impide que el usuario [autenticar](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/connect-auth.html) con el `MAGEID`.
 
