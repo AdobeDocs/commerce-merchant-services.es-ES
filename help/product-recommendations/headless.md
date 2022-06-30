@@ -1,9 +1,10 @@
 ---
 title: Sin encabezado
 description: Aprenda a integrar [!DNL Product Recommendations] en una tienda sin cabeza.
-source-git-commit: 7fe89df32dc5363817f957180e5b75e7217fc14a
+exl-id: 316d0b0c-5938-4e2f-9d0d-747746cf6056
+source-git-commit: ce437d7a991affd2665c86c9e91bb7f39ec626c0
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '260'
 ht-degree: 0%
 
 ---
@@ -24,7 +25,7 @@ Puede realizar ambas acciones utilizando los SDK disponibles, tal como se descri
 
 1. [Instalar](install-configure.md) el [!DNL Product Recommendations] módulo.
 
-1. Instale y use el [SDK de eventos de tienda](https://devdocs.magento.com/shared-services/storefront-events-sdk.html) para activar el [eventos de comportamiento](https://devdocs.magento.com/recommendations/events.html).
+1. Instale y use el [SDK de Evento de tienda de Adobe Commerce](https://devdocs.magento.com/shared-services/storefront-events-sdk.html) para activar el [eventos de comportamiento](https://devdocs.magento.com/recommendations/events.html).
 
    El mínimo de eventos necesarios para devolver [!DNL Product Recommendations] resultados:
 
@@ -43,7 +44,7 @@ Puede realizar ambas acciones utilizando los SDK disponibles, tal como se descri
    | `rec-click` | unidad de recomendación |
    | `rec-add-to-cart-click` | unidad de recomendación (si hay un botón agregar al carro en la plantilla de recomendaciones) |
 
-1. Cuando se activen los eventos, utilice la variable [Recopilador de eventos de tienda](https://devdocs.magento.com/shared-services/storefront-event-collector.html) para gestionar los eventos y enviarlos a Adobe Sensei.
+1. Cuando se activen los eventos, utilice la variable [Recopilador de eventos de tienda de Adobe Commerce](https://devdocs.magento.com/shared-services/storefront-event-collector.html) para gestionar los eventos y enviarlos a Adobe Sensei.
 
 1. Una vez recopilados los datos de comportamiento, puede [crear](create.md) [!DNL Product Recommendations] en el menú
 
