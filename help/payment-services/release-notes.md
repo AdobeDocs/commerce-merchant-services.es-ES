@@ -2,7 +2,7 @@
 title: '"[!DNL Payment Services] Notas de la versión"'
 description: Revise las notas de la versión para obtener información sobre todas las [!DNL Payment Services] versiones.
 exl-id: 104aa2c7-7735-4ac2-8ed1-a03cd9911273
-source-git-commit: 44e1f7dce951f9244498565eccaebd70328d91e4
+source-git-commit: 7c02bb8dcb7b5daa68664bd12672ac389f84cfa1
 workflow-type: tm+mt
 source-wordcount: '812'
 ht-degree: 0%
@@ -69,7 +69,7 @@ _31 de marzo de 2022_
 
 ![Se ha corregido un problema](../assets/fix.svg)<!-- Issue PAY-2742 --> Ahora puede habilitar y deshabilitar los métodos de pago disponibles, como Venmo, en el nivel de vista de tienda. Anteriormente, solo se podían configurar los métodos de pago por sitio web.
 
-![Se ha corregido un problema](../assets/fix.svg)<!-- Issue PAY-2277 --> Ahora puede [activar o desactivar botones inteligentes individuales de PayPal](settings.md#paypal-smart-buttons).
+![Se ha corregido un problema](../assets/fix.svg)<!-- Issue PAY-2277 --> Ahora puede [activar o desactivar botones inteligentes individuales de PayPal](settings.md#payment-buttons).
 
 ![Se ha corregido un problema](../assets/fix.svg)<!-- Issue PAY-2561 --> Los productos que se han eliminado anteriormente no aparecen en el carro de la compra _Revisar orden_ página.
 

@@ -4,9 +4,9 @@ description: Después de la instalación, puede configurar [!DNL Payment Service
 role: Admin, User
 level: Intermediate
 exl-id: 108f2b24-39c1-4c87-8deb-d82ee1c24d55
-source-git-commit: aed9469d6acf638d86389cbf1c178fccd8d42759
+source-git-commit: 7c02bb8dcb7b5daa68664bd12672ac389f84cfa1
 workflow-type: tm+mt
-source-wordcount: '695'
+source-wordcount: '688'
 ht-degree: 0%
 
 ---
@@ -47,7 +47,7 @@ Puede habilitar [!DNL Payment Services] para su sitio web y habilite pruebas de 
 1. Para cambiar la configuración predeterminada de las funciones de pago y la visualización de tienda, configure las opciones adicionales según sea necesario:
 
    - [Campos de tarjeta de crédito](#credit-card-fields)
-   - [Botones inteligentes PayPal](#paypal-smart-buttons)
+   - [Botones de pago](#payment-buttons)
    - [Estilo de botón](#button-style)
 
 1. Haga clic **[!UICONTROL Save]**.
@@ -74,22 +74,22 @@ Consulte [Opciones de pago](payments-options.md#paypal-smart-buttons) para obten
 
 1. Vaya a **[!UICONTROL System]** > **[!UICONTROL Cache Management]** y haga clic en **[!UICONTROL Flush Cache]** para actualizar todas las cachés no válidas.
 
-### Botones inteligentes PayPal
+### Botones de pago
 
 La variable [!DNL PayPal Smart Buttons] las opciones de pago proporcionan un proceso de cierre de compra simple, rápido y seguro para su cliente. Consulte [Opciones de pago](payments-options.md#paypal-smart-buttons) para obtener más información.
 
-Puede activar y configurar las opciones de pago de los botones inteligentes de PayPal:
+Puede activar y configurar los botones Pago:
 
 1. Para cambiar el nombre del método de pago como se muestra durante el cierre de compra, edite el valor en la variable **[!UICONTROL Checkout Title]** campo .
 1. Hasta [configurar la acción de pago](production.md#set-payment-services-as-payment-method), alternancia **[!UICONTROL Payment action]** a `Authorize` o `Authorize and Capture`.
 1. Utilice los selectores de alternancia para habilitar o deshabilitar [!DNL PayPal smart button] funciones de visualización:
-   - **[!UICONTROL Show buttons on product detail page]**
-   - **[!UICONTROL Show buttons in mini cart preview]**
-   - **[!UICONTROL Show buttons on cart page]**
-   - **[!UICONTROL PayPal Pay Later enabled]**
+   - **[!UICONTROL Show PayPal buttons on product detail page]**
+   - **[!UICONTROL Show PayPal buttons on mini cart preview]**
+   - **[!UICONTROL Show PayPal buttons on cart page]**
+   - **[!UICONTROL Show PayPal Pay Later button]**
    - **[!UICONTROL Show Venmo button]**
 
-1. Para cambiar el [Mensajería de pago posterior](payments-options.md#pay-later-button), active la casilla **[!UICONTROL Display Pay Later message]** .
+1. Para cambiar el [Mensajería de pago posterior](payments-options.md#pay-later-button), active la casilla **[!UICONTROL Show PayPal Pay Later message]** .
 1. Para habilitar el modo de depuración, cambie la **[!UICONTROL Debug Mode]** selector.
 
    Cuando habilites el modo de depuración, la información de depuración adicional sobre el pago PayPal se escribe en el `var/log/payment.log` archivo. Esta información puede proporcionarle más información sobre un pago específico para ayudarle a solucionar el problema.
@@ -102,13 +102,13 @@ Puede activar y configurar las opciones de pago de los botones inteligentes de P
 
 #### Estilo de botón
 
-También puede configurar la variable _[!UICONTROL Button style]_opciones de los botones inteligentes de PayPal:
+También puede configurar la variable _[!UICONTROL Button style]_opciones de los botones Pago:
 
 1. Para cambiar el **[!UICONTROL Layout]**, seleccione `Vertical` o `Horizontal`.
 
    >[!NOTE]
    >
-   > Si el estilo del botón está configurado como `Horizontal` y su tienda está configurada para mostrar varios botones inteligentes de PayPal, puede que solo vea dos botones en la página del producto, la página de cierre de compra y el minicarro, y un botón mostrado en el carrito.
+   > Si el estilo del botón está configurado como `Horizontal` y la tienda está configurada para mostrar varios botones de pago, solo puede ver dos botones en la página del producto, la página de cierre de compra y el minicarro, y un botón mostrado en el carro de compras.
 
 1. Para habilitar la etiqueta en un diseño horizontal, cambie el **[!UICONTROL Show tagline]** selector.
 1. Para modificar el **[!UICONTROL Color]**, seleccione la opción de color que desee.
