@@ -2,9 +2,9 @@
 title: Instalación y configuración del conector de Adobe Experience Platform desde Adobe Commerce
 description: Obtenga información sobre cómo instalar, configurar, actualizar y desinstalar el conector de Adobe Experience Platform de Adobe Commerce.
 exl-id: e78e8ab0-8757-4ab6-8ee1-d2e137fe6ced
-source-git-commit: b503c369f12696a2a791af77055a7b53000b827f
+source-git-commit: 334ee967ec2379a87acfc5fb427d7ada6fa25ee7
 workflow-type: tm+mt
-source-wordcount: '229'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -23,10 +23,10 @@ Antes de instalar la extensión, [revisar los requisitos previos](overview.md#pr
 
    Este metapackage contiene los siguientes módulos y extensiones:
 
-   * `module-platform-connector-admin` - Actualiza la interfaz de usuario del administrador para que pueda configurar el ID del almacén de datos
+   * `module-platform-connector-admin` - Actualiza la interfaz de usuario del administrador para que pueda seleccionar el ID del almacén de datos para una instancia específica de Adobe Commerce
    * `module-platform-connector` - Establece el `ImsOrgId` y `datastreamId` en el SDK de Evento de tienda de Adobe Commerce
    * `data-services` - Proporciona contexto de atributo para eventos de tienda. Por ejemplo, cuando se produce un evento de cierre de compra, se incluye información sobre cuántos artículos estaban en el carro y los datos de atributos del producto para esos artículos.
-   * `commerce-services` - Conecta la instancia de Adobe Commerce a [SaaS de Adobe Commerce](../landing/saas.md) uso de las claves sandbox y de la API de producción y de Adobe Experience Platform mediante el ID de organización de IMS
+   * `services-id` - Conecta la instancia de Adobe Commerce a [SaaS de Adobe Commerce](../landing/saas.md) uso de las claves sandbox y de la API de producción y de Adobe Experience Platform para recuperar el ID de organización de IMS
 
 1. (Opcional) Para incluir [!DNL Live Search] , que incluye eventos de búsqueda, instale la variable [[!DNL Live Search]](../live-search/install.md) extensión.
 
