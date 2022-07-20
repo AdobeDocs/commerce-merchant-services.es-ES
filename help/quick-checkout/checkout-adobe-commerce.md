@@ -1,13 +1,13 @@
 ---
-title: '"Flujo de cierre de compra"'
-description: '"Descripción general de la variable [!DNL Quick Checkout] flujo para un usuario de Adobe Commerce."'
-source-git-commit: 01bb92d1de1f6a6da1d6326c0190eb7711274045
+title: Flujo de cierre de compra
+description: Información general sobre [!DNL Quick Checkout] flujo para un usuario de Adobe Commerce.
+exl-id: 085e393b-15f6-4d5a-a04d-927b1f95b74e
+source-git-commit: a95d2ed92c69feba03d1b84d44abf08c1d1b4029
 workflow-type: tm+mt
-source-wordcount: '224'
+source-wordcount: '300'
 ht-degree: 0%
 
 ---
-
 
 # Un usuario de Adobe Commerce existente: Funcionamiento
 
@@ -15,17 +15,28 @@ Un usuario de Adobe Commerce existente puede seleccionar los detalles de envío 
 
 Cuando un comprador introduce su dirección de correo electrónico al cerrar la compra, la variable [!DNL Quick Checkout] la valida y encuentra una [!DNL Bolt] cuenta.
 
-## Registrados [!DNL Bolt] cuenta con un usuario de Adobe Commerce
+## Usuario registrado en Adobe Commerce y [!DNL Bolt]
 
-Si [!DNL Bolt] se encuentra la cuenta, los compradores continúan con su [!DNL Quick Checkout] experiencia de cierre de compra optimizada:
+Cuando un comprador es un usuario registrado tanto en Adobe Commerce como en [!DNL Bolt] redes, ambas redes se proporcionan almacenadas de envío y detalles de pago.
+
+Si [!DNL Bolt] se encuentra durante el cierre de compra, los compradores pueden continuar con su [!DNL Quick Checkout] experiencia de cierre de compra optimizada:
 
 1. Introduzca la contraseña única (OTP) enviada a esa [!DNL Bolt] dirección de correo electrónico de la cuenta o móvil, según [preferencias del usuario en la [!DNL Bolt] account](https://help.bolt.com/shoppers/account/account-settings/#how-to-set-preferred-login-method){target=_blank}.
+
+![Ventana emergente de OTP](assets/pop-up.png)
+
 1. Una vez que haya iniciado sesión con su [!DNL Bolt] , los detalles se añaden automáticamente:
 
    - Información de envío
    - Método de pago
 
 1. Realice su pedido.
+
+>[!NOTE]
+>
+> La ventana emergente OTP de perno solo aparece cuando el comprador está en la página de cierre de compra. El comprador puede optar por no iniciar sesión en Bolt cerrando esa ventana emergente.
+
+Si el comprador ha iniciado sesión en Adobe Commerce antes del cierre de compra, la variable [!DNL Bolt] La ventana emergente OTP no aparecerá durante el cierre de compra.
 
 Si tiene problemas al realizar un pedido como usuario de Adobe Commerce existente, consulte la [Solución de problemas de cierre de compra rápido](https://support.magento.com/hc/en-us/articles/6909450342541) en el Centro de ayuda de Adobe Commerce.
 
@@ -38,4 +49,4 @@ Si no [!DNL Bolt] se encuentra la cuenta, los compradores continúan con su cier
 - Revisar método de pago
 - La opción para registrarse en [!DNL Bolt] para cierres de compra más rápidos, antes de realizar el pedido aparecerá. El comprador puede aceptar los términos y condiciones para crear su [!DNL Bolt] cuenta.
 
-   ![Recordar [!DNL Bolt]](assets/checked-bolt.png)
+   ![Recordar [!DNL Bolt]](assets/checkbox-remember-bolt.png)

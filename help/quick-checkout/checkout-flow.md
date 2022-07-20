@@ -2,9 +2,9 @@
 title: '"Flujo de cierre de compra"'
 description: '"Descripción general de la variable [!DNL Quick Checkout] en Adobe Commerce".'
 exl-id: 82761627-a0d4-4cb0-aad1-9865fcb550d4
-source-git-commit: 01bb92d1de1f6a6da1d6326c0190eb7711274045
+source-git-commit: a95d2ed92c69feba03d1b84d44abf08c1d1b4029
 workflow-type: tm+mt
-source-wordcount: '176'
+source-wordcount: '179'
 ht-degree: 0%
 
 ---
@@ -22,6 +22,9 @@ Un éxito [!DNL Quick Checkout] consiste en los siguientes pasos:
 
 1. Cuando se le solicite, introduzca una dirección de correo electrónico asociada a un [!DNL Bolt] cuenta.
 1. Introduzca la contraseña única (OTP) enviada a esa [!DNL Bolt] dirección de correo electrónico o número de teléfono de la cuenta.
+
+![Ventana emergente de OTP](assets/pop-up.png)
+
 1. Una vez que haya iniciado sesión con su [!DNL Bolt] cuenta, los detalles de cierre de compra se rellenan automáticamente:
 
    - Información de envío
@@ -39,7 +42,7 @@ La variable [!DNL Quick Checkout] es compatible con las opciones de cierre de co
 
 La variable [!DNL Quick Checkout] permite varios casos de uso durante un flujo de cierre de compra:
 
-- [Usuario invitado](../quick-checkout/checkout-adobe-commerce.md) con un [!DNL Bolt] cuenta.
+- [Usuario invitado](../quick-checkout/checkout-bolt.md) con un [!DNL Bolt] cuenta.
 - Una [Usuario de Adobe Commerce](../quick-checkout/checkout-adobe-commerce.md) con o sin un registro [!DNL Bolt] cuenta.
 
 ## Obtener ayuda

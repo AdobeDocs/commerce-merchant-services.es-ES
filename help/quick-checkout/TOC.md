@@ -3,9 +3,9 @@ user-guide-title: '"[!DNL Quick Checkout] para Adobe Commerce"'
 user-guide-description: '"Aprenda a usar la variable [!DNL Quick Checkout] podría beneficiar a su instancia de Adobe Commerce y cómo incorporar y configurar correctamente la extensión."'
 breadcrumb-title: Guía de servicios al comerciante
 hide: true
-source-git-commit: 01bb92d1de1f6a6da1d6326c0190eb7711274045
+source-git-commit: a95d2ed92c69feba03d1b84d44abf08c1d1b4029
 workflow-type: tm+mt
-source-wordcount: '63'
+source-wordcount: '66'
 ht-degree: 3%
 
 ---
@@ -29,4 +29,5 @@ ht-degree: 3%
       - [Cierre de compra del usuario con tornillos](checkout-bolt.md)
       - [Cierre de compra del usuario de Adobe Commerce](checkout-adobe-commerce.md)
    - [Métodos de pago](payment-methods.md)
+- [Duración de la sesión del usuario](user-session-lifetime.md)
 - [Crear un pedido en la administración](create-order-admin.md)
