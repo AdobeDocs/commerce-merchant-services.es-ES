@@ -2,9 +2,9 @@
 title: Instalar [!DNL Payment Services]
 description: Instale la extensión Servicios de pago .
 exl-id: babaa91a-9376-4acb-b934-a89f9df52016
-source-git-commit: 9596815e31402f23b399b223f3221074331c1773
+source-git-commit: 647848c58213ea7f85d8a2c025146aa065042433
 workflow-type: tm+mt
-source-wordcount: '475'
+source-wordcount: '435'
 ht-degree: 0%
 
 ---
@@ -20,12 +20,6 @@ La variable [!DNL Payment Services] extensión para [!DNL Adobe Commerce] y [!DN
 Consulte [Obtener las claves de autenticación](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/connect-auth.html) para obtener más información sobre la obtención de claves de Composer.
 
 Existen dos formas de instalar esta extensión: para [[!DNL Adobe Commerce] en la infraestructura de nube](install.md#adobe-commerce-on-cloud-infrastructure) o [Local](install.md#on-premises) instalaciones. Estos métodos requieren que utilice la Interfaz de Línea de Comandos (CLI).
-
-## Actualizar la configuración de estabilidad mínima
-
-Antes de instalar la extensión, debe cambiar la variable `minimum-stability` requisito `RC` (candidato a la versión) en su `composer.json` archivo. Puede utilizar un IDE o su editor de texto favorito (como Visual Studio Code o Sublime Text).
-
-En `composer.json` archivo, cambiar `"minimum-stability": "stable"` a `"minimum-stability": "RC"`.
 
 ## Instalación de la extensión
 
