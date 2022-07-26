@@ -3,13 +3,13 @@ title: Página principal
 description: Introducción a [!DNL Payment Services] Hogar.
 role: Admin, User
 level: Intermediate
-source-git-commit: 9596815e31402f23b399b223f3221074331c1773
+exl-id: d7a4c87f-33cb-446a-b442-3cdf05b518a2
+source-git-commit: ce313181fc082d0b698a0fc1f7186b4240fa7735
 workflow-type: tm+mt
-source-wordcount: '183'
+source-wordcount: '163'
 ht-degree: 0%
 
 ---
-
 
 # Introducción a [!DNL Payment Services] Página principal
 
@@ -25,25 +25,24 @@ ht-degree: 0%
 
 | Campo | Descripción |
 |---|---|
-| [!UICONTROL Order payment status] | Estos informes le permiten ver rápidamente el estado de pago de sus pedidos e identificar cualquier problema potencial. |
+| [!UICONTROL Orders] | Estos informes le permiten ver rápidamente el estado de pago de sus pedidos e identificar cualquier problema potencial. |
 | [!UICONTROL Payouts] | Los informes de pagos muestran información completa sobre los pagos de un vistazo, lo que le permite una total transparencia en el importe del pago, el volumen procesado y los informes detallados sobre el nivel de transacción para la reconciliación financiera. |
 
 ## Más información
 
 | Campo | Descripción |
 |---|---|
-| [!UICONTROL Open user guide] | Documentación del usuario más reciente que cubre todos los aspectos de [!DNL Payment Services]. |
-| [!UICONTROL Open DevDocs] | [!DNL Payment Services] documentación para desarrolladores que cubre todos los detalles técnicos de la función. |
+| [!UICONTROL Read documentation] | Consulte los últimos documentos de usuario y desarrollador para [!DNL Payment Services]. |
 | [!UICONTROL How to onboard] | Busque todo lo que necesita para configurar y comience a usar la variable [!DNL Payment Services] función. |
-| [!UICONTROL Understand financial reports] | Explicación detallada de los informes de gestión del flujo de caja en [!DNL Payment Services]. |
-
-## Configuración
-
-En la vista Inicio, haga clic en **[!UICONTROL Settings]** en la parte superior derecha de la página. Consulte [Configuración](settings.md) para obtener más información.
+| [!UICONTROL Understand financial reports] | Explicación detallada de los informes de gestión del flujo de efectivo en [!DNL Payment Services]. |
 
 ## Ayuda
 
 | Campo | Descripción |
 |---|---|
-| [!UICONTROL Visit help center] | La variable [!DNL Adobe Commerce] El Centro de Ayuda tiene artículos de base de conocimientos sobre Servicios de Pago. |
-| [!UICONTROL Get support] | Visite la [!DNL Adobe Commerce] portal de soporte para la asistencia con Servicios de Pago. |
+| [!UICONTROL Visit help center] | La variable [!DNL Adobe Commerce] El Centro de ayuda tiene artículos de la base de conocimientos acerca de [!DNL Payment Services]. |
+| [!UICONTROL Get support] | Visite la [!DNL Adobe Commerce] portal de soporte para asistencia con [!DNL Payment Services.] |
+
+## Configuración
+
+En la vista Inicio, haga clic en **[!UICONTROL Settings]**. Consulte [Configuración](settings.md) para obtener más información.

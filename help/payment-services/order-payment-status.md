@@ -4,9 +4,9 @@ description: Utilice el informe de estado de pago de pedidos para obtener visibi
 role: User
 level: Intermediate
 exl-id: 192e47b9-d52b-4dcf-a720-38459156fda4
-source-git-commit: fde5844ad6c602708f9a5ad76ce8c9b5547dba76
+source-git-commit: 59cceb1cab1ed2bcfaa7d59c54a40255a38dea29
 workflow-type: tm+mt
-source-wordcount: '1359'
+source-wordcount: '1436'
 ht-degree: 0%
 
 ---
@@ -73,14 +73,14 @@ If _[!UICONTROL Live]_es la fuente de datos seleccionada, puede ver la informaci
 
 Las selecciones de fuentes de datos funcionan de la siguiente manera:
 
-* Si no tiene ninguna tienda que use [!DNL Payment Services] en el modo Activo, la selección de la fuente de datos toma como valor predeterminado [!UICONTROL Sandbox]_.
+* Si no tiene ninguna tienda que use [!DNL Payment Services] en el modo Activo, la selección de la fuente de datos toma como valor predeterminado _[!UICONTROL Sandbox]_.
 * Si tiene alguna tienda (una o varias) que use [!DNL Payment Services] en el modo Activo, la selección de la fuente de datos toma como valor predeterminado _[!UICONTROL Live]_.
 * Las exportaciones de informes siempre respetan la selección del origen de datos.
 
 Para seleccionar la fuente de datos para su [!UICONTROL Order Payment Status] informe:
 
 1. En el _Administrador_ barra lateral, vaya a **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > **[!UICONTROL Order payment status]**.
-1. Haga clic en **[!UICONTROL Data source]** y seleccione _[!UICONTROL Live]_o [!UICONTROL Sandbox]_.
+1. Haga clic en **[!UICONTROL Data source]** y seleccione _[!UICONTROL Live]_o_[!UICONTROL Sandbox]_.
 
    Los resultados del informe se regeneran según la fuente de datos seleccionada.
 
@@ -105,11 +105,23 @@ El informe Estado de Pago de Pedido muestra todas las columnas de información d
 
 ## Ver estados
 
+La vista Informe de estado de pago de Pedido muestra información completa sobre el estado de transacción y el estado de pago de cada pedido de Servicios de Pago.
+
+### Estado de la transacción
+
 De forma predeterminada, en la cuadrícula se muestran 30 días de estados de pago de pedidos.
 
 Desplácese a la izquierda y a la derecha para ver [información de estado del pago de pedido](#column-descriptions), incluida la fecha de pedido, la fecha autorizada, facturada, enviada, el estado de pago, etc.
 
 El número de filas devueltas en una búsqueda, o mostradas en los 30 días predeterminados de los estados de pago del pedido, se muestran encima de la cuadrícula de vista Estado del pago del pedido junto al filtro Selector de calendario de fechas del pedido.
+
+### Estado de pago
+
+La columna Estado de pago muestra el estado actual de cualquier pago. A `Capture failed` el pago muestra un estado de alerta roja y un `Voided` el pago muestra un estado de alerta gris.
+
+### Estado del reembolso
+
+La columna Estado del reembolso muestra el estado actual de cualquier reembolso. A `Capture failed` el pago muestra un estado de alerta roja y un `Voided` el pago muestra un estado de alerta gris.
 
 ## Actualización de datos de informes
 

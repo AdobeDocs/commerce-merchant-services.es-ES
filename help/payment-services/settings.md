@@ -4,9 +4,9 @@ description: Después de la instalación, puede configurar [!DNL Payment Service
 role: Admin, User
 level: Intermediate
 exl-id: 108f2b24-39c1-4c87-8deb-d82ee1c24d55
-source-git-commit: 7c02bb8dcb7b5daa68664bd12672ac389f84cfa1
+source-git-commit: 89fa175b70a2b4b37d5999dedc56a7e41ae28b7d
 workflow-type: tm+mt
-source-wordcount: '688'
+source-wordcount: '1035'
 ht-degree: 0%
 
 ---
@@ -15,9 +15,7 @@ ht-degree: 0%
 
 Puede personalizar [!DNL Payment Services] a sus necesidades con ajustes útiles en la [!DNL Payment Services] Hogar.
 
-Para configurar [!DNL Payment Services] para [!DNL Adobe Commerce] y [!DNL Magento Open Source] click **[!UICONTROL Settings]**. Estas opciones de configuración solo se aplican al entorno que se establece en la variable _[!UICONTROL Payment mode]_en Configuración general.
-
-Consulte la [[!UICONTROL General] sección de configuración](#general-settings) para obtener más información.
+Para configurar [!DNL Payment Services] para [!DNL Adobe Commerce] y [!DNL Magento Open Source] click **[!UICONTROL Settings]**. Estas opciones de configuración solo se aplican al entorno que se establece en la variable _[!UICONTROL Payment mode]_en_[!UICONTROL Settings]_ > _[!UICONTROL General]_.
 
 >[!IMPORTANT]
 >
@@ -35,80 +33,112 @@ Puede habilitar [!DNL Payment Services] para su sitio web y habilite pruebas de 
 
    La variable _[!UICONTROL General]_incluye la configuración utilizada para habilitar [!DNL Payment Services] como método de pago.
 
-1. Para habilitar [!DNL Payment Services] como método de pago para su tienda, cambie (**[!UICONTROL Enable Payment Services as payment method]**) a `Yes`.
+1. Para habilitar [!DNL Payment Services] como método de pago para su tienda, en la _[!UICONTROL General]_sección, alternar (**[!UICONTROL Enable Payment Services as payment method]**) a `Yes`.
 
 1. Si sigue probando [!DNL Payment Services] para su tienda, establezca **Modo de pago** a `Sandbox`. Si está listo para activar los pagos, configúrelo en `Production`.
 
-   >[!WARNING]
+   >[!NOTE]
    >
-   >Su _[!UICONTROL Sandbox Merchant ID]_y_[!UICONTROL Production Merchant ID]_ se generan automáticamente y están presentes en sus respetables campos al finalizar la incorporación para el entorno limitado o la producción. No elimine o cambie estos ID.
-
-1. Seleccione la vista de tienda, en la **[!UICONTROL Scope]** menú desplegable, para el cual desea habilitar un método de pago.
-1. Para cambiar la configuración predeterminada de las funciones de pago y la visualización de tienda, configure las opciones adicionales según sea necesario:
-
-   - [Campos de tarjeta de crédito](#credit-card-fields)
-   - [Botones de pago](#payment-buttons)
-   - [Estilo de botón](#button-style)
+   >Su _[!UICONTROL Sandbox Merchant ID]_y_[!UICONTROL Production Merchant ID]_ se generan automáticamente y están presentes en sus respetables campos al finalizar la incorporación para el entorno limitado o la producción.
 
 1. Haga clic **[!UICONTROL Save]**.
 
    Si intenta salir de esta vista sin guardar los cambios, aparecerá un modal que le pedirá que descarte los cambios, continúe editando o guarde los cambios.
 
 1. Vaya a **[!UICONTROL System]** > **[!UICONTROL Cache Management]** y haga clic en **[!UICONTROL Flush Cache]** para actualizar todas las cachés no válidas.
+
+Ahora puede cambiar la configuración predeterminada de [opciones de pago](#configure-payment-options) funciones y visualización de tienda.
+
+### Opciones de configuración generales
+
+| Campo | Ámbito | Descripción |
+|---|---|---|
+| [!UICONTROL Enable] | sitio web | Habilitar o deshabilitar [!DNL Payment Services] para su sitio web. Opciones: [!UICONTROL Yes] / [!UICONTROL No] |
+| [!UICONTROL Payment mode] | vista de tienda | Defina el método o el entorno para su tienda. Opciones: [!UICONTROL Sandbox] / [!UICONTROL Production] |
+| [!UICONTROL Sandbox Merchant ID] | vista de tienda | El ID del comerciante del simulador de pruebas, que se genera automáticamente durante la incorporación al simulador de pruebas. |
+| [!UICONTROL Production Merchant ID] | vista de tienda | El ID del comerciante de producción, que se genera automáticamente durante la incorporación al entorno limitado. |
+
+## Configurar las opciones de pago
+
+Ahora que ha habilitado los servicios de pago para su sitio web, puede cambiar la configuración predeterminada para las funciones de pago y la visualización de tienda.
 
 ### Campos de tarjeta de crédito
 
 La variable _[!UICONTROL Credit Card Fields]_La configuración proporciona una opción de cierre de compra simple y segura para métodos de pago con tarjeta de crédito o tarjeta de débito.
 
-Consulte [Opciones de pago](payments-options.md#paypal-smart-buttons) para obtener más información.
+Consulte [Opciones de pago](payments-options.md#credit-card-fields) para obtener más información.
 
+1. Seleccione la vista de tienda, en la **[!UICONTROL Scope]** menú desplegable, para el cual desea habilitar un método de pago.
 1. Para cambiar el nombre del método de pago mostrado durante el cierre de compra, edite el valor en la variable **[!UICONTROL Checkout title]** campo .
 1. Hasta [configurar la acción de pago](production.md#set-payment-services-as-payment-method), alternancia **[!UICONTROL Payment action]** a `Authorize` o `Authorize and Capture`.
 1. Para habilitar el modo de depuración, cambie la **[!UICONTROL Debug Mode]** selector.
-
-   Cuando se activa el modo de depuración, la información de depuración adicional sobre el pago con tarjeta de crédito se escribe en la variable `var/log/payment.log` archivo. Esta información puede proporcionarle más información sobre un pago específico para ayudarle a solucionar el problema.
-
 1. Haga clic **[!UICONTROL Save]**.
 
    Si intenta salir de esta vista sin guardar los cambios, aparecerá un modal que le pedirá que descarte los cambios, continúe editando o guarde los cambios.
 
 1. Vaya a **[!UICONTROL System]** > **[!UICONTROL Cache Management]** y haga clic en **[!UICONTROL Flush Cache]** para actualizar todas las cachés no válidas.
+
+#### Opciones de configuración
+
+| Campo | Ámbito | Descripción |
+|---|---|---|
+| [!UICONTROL Title] | vista de tienda | Agregue el texto para mostrarlo como el título de esta opción de pago en la vista Método de pago durante el cierre de compra. Opciones: [!UICONTROL text field] |
+| [!UICONTROL Payment Action] | sitio web | La variable [acción de pago](https://docs.magento.com/user-guide/configuration/sales/payment-methods.html#payment-actions){target=&quot;_blank&quot;} para el método de pago especificado. Opciones: [!UICONTROL Authorize] / [!UICONTROL Authorize and Capture] |
+| [!UICONTROL Debug Mode] | sitio web | Habilite o deshabilite el modo de depuración. Opciones: [!UICONTROL Yes] / [!UICONTROL No] |
 
 ### Botones de pago
 
 La variable [!DNL PayPal Smart Buttons] las opciones de pago proporcionan un proceso de cierre de compra simple, rápido y seguro para su cliente. Consulte [Opciones de pago](payments-options.md#paypal-smart-buttons) para obtener más información.
 
-Puede activar y configurar los botones Pago:
+Puede activar y configurar las opciones de pago de los botones inteligentes de PayPal:
 
+1. Seleccione la vista de tienda, en la **[!UICONTROL Scope]** menú desplegable, para el cual desea habilitar un método de pago.
 1. Para cambiar el nombre del método de pago como se muestra durante el cierre de compra, edite el valor en la variable **[!UICONTROL Checkout Title]** campo .
 1. Hasta [configurar la acción de pago](production.md#set-payment-services-as-payment-method), alternancia **[!UICONTROL Payment action]** a `Authorize` o `Authorize and Capture`.
 1. Utilice los selectores de alternancia para habilitar o deshabilitar [!DNL PayPal smart button] funciones de visualización:
    - **[!UICONTROL Show PayPal buttons on product detail page]**
-   - **[!UICONTROL Show PayPal buttons on mini cart preview]**
+   - **[!UICONTROL Show PayPal buttons in mini cart preview]**
    - **[!UICONTROL Show PayPal buttons on cart page]**
    - **[!UICONTROL Show PayPal Pay Later button]**
+   - **[!UICONTROL Show PayPal Pay Later message]**
    - **[!UICONTROL Show Venmo button]**
+   - **[!UICONTROL Show Apple Pay button]**
 
-1. Para cambiar el [Mensajería de pago posterior](payments-options.md#pay-later-button), active la casilla **[!UICONTROL Show PayPal Pay Later message]** .
+      >[!NOTE]
+      >
+      > Apple Pay está habilitado de forma predeterminada para el modo de entorno limitado, pero también puede [debe tener una cuenta de desarrollador de Apple](test-validate.md#test-in-sandbox-environment) (con información falsa de tarjeta de crédito y facturación) para probarla. Cuando esté listo para usar Apple Pay en modo de producción, después de completar cualquier [pruebas y validación](test-validate.md), póngase en contacto con el departamento de ventas para habilitarlo para sus tiendas activas.
+
 1. Para habilitar el modo de depuración, cambie la **[!UICONTROL Debug Mode]** selector.
-
-   Cuando habilites el modo de depuración, la información de depuración adicional sobre el pago PayPal se escribe en el `var/log/payment.log` archivo. Esta información puede proporcionarle más información sobre un pago específico para ayudarle a solucionar el problema.
-
 1. Haga clic **[!UICONTROL Save]**.
 
    Si intenta salir de esta vista sin guardar los cambios, aparecerá un modal que le pedirá que descarte los cambios, continúe editando o guarde los cambios.
 
 1. Vaya a **[!UICONTROL System]** > **[!UICONTROL Cache Management]** y haga clic en **[!UICONTROL Flush Cache]** para actualizar todas las cachés no válidas.
 
-#### Estilo de botón
+#### Opciones de configuración
 
-También puede configurar la variable _[!UICONTROL Button style]_opciones de los botones Pago:
+| Campo | Ámbito | Descripción |
+|---|---|---|
+| [!UICONTROL Title] | vista de tienda | Agregue el texto que se mostrará como el título de esta opción de pago en la vista Método de pago durante el cierre de compra. Opciones: campo de texto |
+| [!UICONTROL Payment Action] | sitio web | La variable [acción de pago](https://docs.magento.com/user-guide/configuration/sales/payment-methods.html#payment-actions){target=&quot;_blank&quot;} para el método de pago especificado. Opciones: [!UICONTROL Authorize] / [!UICONTROL Authorize and Capture] |
+| [!UICONTROL Show PayPal buttons on product detail page] | vista de tienda | Habilitar o deshabilitar [!DNL PayPal Smart Buttons] en la página de detalles del producto. Opciones: [!UICONTROL  Yes] / [!UICONTROL No] |
+| [!UICONTROL Show PayPal buttons in mini cart preview] | vista de tienda | Habilitar o deshabilitar [!DNL PayPal Smart Buttons] en la vista previa del minicarro. Opciones: [!UICONTROL Yes] / [!UICONTROL No] |
+| [!UICONTROL Show PayPal buttons on cart page] | vista de tienda | Habilitar o deshabilitar [!DNL PayPal Smart Buttons] en la página del carro de compras. Opciones: [!UICONTROL Yes] / [!UICONTROL No] |
+| [!UICONTROL Show PayPal Pay Later button] | vista de tienda | Active o desactive el aspecto de la opción de pago posterior donde se muestran los botones de pago. Opciones: [!UICONTROL Yes] / [!UICONTROL No] |
+| [!UICONTROL Show PayPal Pay Later Message] | sitio web | Habilite o deshabilite el mensaje Pagar después en el carro de compras, la página del producto, el minicarro y durante el flujo de cierre de compra. Opciones: [!UICONTROL Yes] / [!UICONTROL No] |
+| [!UICONTROL Show Venmo button] | vista de tienda | Active o desactive la opción de pago Venmo donde se muestran los botones de pago. Opciones: [!UICONTROL Yes] / [!UICONTROL No] |
+| [!UICONTROL Show Apple Pay button] | vista de tienda | Active o desactive la opción de pago Apple Pay donde se muestran los botones de pago. Opciones: [!UICONTROL Yes] / [!UICONTROL No] |
+| [!UICONTROL Debug Mode] | sitio web | Habilite o deshabilite el modo de depuración. Opciones: [!UICONTROL Yes] / [!UICONTROL No] |
+
+### Estilo de botón
+
+También puede configurar la variable _[!UICONTROL Button style]_opciones de los botones inteligentes de PayPal:
 
 1. Para cambiar el **[!UICONTROL Layout]**, seleccione `Vertical` o `Horizontal`.
 
    >[!NOTE]
    >
-   > Si el estilo del botón está configurado como `Horizontal` y la tienda está configurada para mostrar varios botones de pago, solo puede ver dos botones en la página del producto, la página de cierre de compra y el minicarro, y un botón mostrado en el carro de compras.
+   > Si el estilo del botón está configurado como `Horizontal` y su tienda está configurada para mostrar varios botones inteligentes de PayPal, puede que solo vea dos botones en la página del producto, la página de cierre de compra y el minicarro, y un botón mostrado en el carrito.
 
 1. Para habilitar la etiqueta en un diseño horizontal, cambie el **[!UICONTROL Show tagline]** selector.
 1. Para modificar el **[!UICONTROL Color]**, seleccione la opción de color que desee.
@@ -121,4 +151,16 @@ También puede configurar la variable _[!UICONTROL Button style]_opciones de los
 
 1. Vaya a **[!UICONTROL System]** > **[!UICONTROL Cache Management]** y haga clic en **[!UICONTROL Flush Cache]** para actualizar todas las cachés no válidas.
 
-Puede configurar [!DNL PayPal Smart Buttons] estilo en el Administrador o [!DNL Payment Services Home]. Consulte [Guía de estilo de Botones de PayPal](https://developer.paypal.com/docs/checkout/standard/customize/buttons-style-guide/) para obtener más información.
+Puede configurar [!DNL PayPal Smart Buttons] estilo [en la configuración heredada en la](configure-admin.md#configure-paypal-smart-buttons) o aquí dentro [!DNL Payment Services Home]. Consulte [Guía de estilo de Botones de PayPal](https://developer.paypal.com/docs/checkout/standard/customize/buttons-style-guide/) para obtener más información sobre las opciones.
+
+#### Opciones de configuración
+
+| Campo | Ámbito | Descripción |
+|--- |--- |--- |
+| [!UICONTROL Layout] | Vista de la tienda | Defina el estilo de diseño de los botones de pago. Opciones: [!UICONTROL Vertical] / [!UICONTROL Horizontal] |
+| [!UICONTROL Tagline] | Vista de la tienda | Habilite o deshabilite el tagline. Opciones: [!UICONTROL Yes] / [!UICONTROL No] |
+| [!UICONTROL Color] | Vista de la tienda | Defina el color de los botones de pago. Opciones: [!UICONTROL Blue] / [!UICONTROL Gold] / [!UICONTROL Silver] / [!UICONTROL White] / [!UICONTROL Black] |
+| [!UICONTROL Shape] | Vista de la tienda | Defina la forma de los botones de pago. Opciones: [!UICONTROL Rectangular] / [!UICONTROL Pill] |
+| [!UICONTROL Responsive Button Height] | Vista de la tienda | Define si los botones de pago utilizan una altura predeterminada. Opciones: [!UICONTROL Yes] / [!UICONTROL No] |
+| [!UICONTROL Height] | Vista de la tienda | Defina la altura de los botones de pago. Valor predeterminado: ninguno |
+| [!UICONTROL Label] | Vista de la tienda | Defina la etiqueta que aparece en los botones de pago. Opciones: [!UICONTROL PayPal] / [!UICONTROL Checkout] / [!UICONTROL Buynow] / [!UICONTROL Pay] / [!UICONTROL Installment] |

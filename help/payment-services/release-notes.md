@@ -2,9 +2,9 @@
 title: '"[!DNL Payment Services] Notas de la versión"'
 description: Revise las notas de la versión para obtener información sobre todas las [!DNL Payment Services] versiones.
 exl-id: 104aa2c7-7735-4ac2-8ed1-a03cd9911273
-source-git-commit: 7c02bb8dcb7b5daa68664bd12672ac389f84cfa1
+source-git-commit: 169593cdf069f9ee95be5bcff3783cc8cfc82c3f
 workflow-type: tm+mt
-source-wordcount: '812'
+source-wordcount: '841'
 ht-degree: 0%
 
 ---
@@ -26,6 +26,8 @@ Consulte [Disponibilidad](https://devdocs.magento.com/release/availability.html)
 ## Versión 1.2.0
 
 _29 de junio de 2022_
+
+![Problema conocido](../assets/bug.svg)<!-- Issue PAY-x --> Apple Pay es incompatible con el explorador Safari v15.5 en dispositivos móviles y de escritorio. Al utilizar Safari versión 15.5, no se puede completar el cierre de compra con Apple Pay.
 
 ![Se ha corregido un problema](../assets/fix.svg)<!-- Issue PAY-3264 --> Anteriormente, cuando un usuario que iniciaba sesión seleccionaba una dirección de facturación/envío diferente que la dirección predeterminada de su cuenta, se producía un error de cierre de compra. Hemos corregido este problema y ahora se envía la dirección de facturación/envío seleccionada (en lugar de la dirección guardada predeterminada) y el cierre de compra se completa correctamente.
 

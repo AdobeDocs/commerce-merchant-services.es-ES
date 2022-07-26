@@ -2,9 +2,9 @@
 title: Opciones de pago
 description: Configure las opciones de pago para personalizar los métodos disponibles para los clientes de la tienda.
 exl-id: 95e648e6-6cb8-4226-b5ea-e1857212f20a
-source-git-commit: 9596815e31402f23b399b223f3221074331c1773
+source-git-commit: 26735a191eab529bc3e8e7fc3d64295d345888d6
 workflow-type: tm+mt
-source-wordcount: '923'
+source-wordcount: '931'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 con [!DNL Adobe Commerce] y [!DNL Magento Open Source] [!DNL Payment Services], tiene a su disposición varias opciones de pago. Puede configurar estas opciones de pago mediante:
 
-* [Página principal](payments-home.md)
+* [Configuración de inicio](payments-home.md)
 * [Configuración del almacén](configure-admin.md) (recomendado para opciones de pago preexistentes o configuración de varias tiendas)
 
 Existen diferentes comportamientos para cada método de pago según la ubicación en el proceso de cierre de compra:
@@ -31,31 +31,48 @@ Existen diferentes comportamientos para cada método de pago según la ubicació
 
 [!UICONTROL Credit Card Fields] proporcionar un cierre de compra simple y seguro para métodos de pago con tarjeta de crédito o tarjeta de débito. Cuando un comprador cierra la compra utilizando campos de tarjeta de crédito, introduce su nombre, dirección de facturación e información de tarjeta de crédito o débito para realizar el pedido. La información de sus clientes se utiliza de forma segura durante la sesión de compra para guiarlos sin problemas a través del flujo de cierre de compra.
 
-Puede configurar [!UICONTROL Credit Card Fields] en la configuración de la tienda o en la página de inicio de los servicios de pago. Consulte [Configuración [!DNL Payment Services]](settings.md#configure-credit-card-fields) para obtener más información.
+Puede configurar [!UICONTROL Credit Card Fields] en la configuración de la tienda o en la página de inicio de los servicios de pago. Consulte [Configuración](settings.md#credit-card-fields) para obtener más información.
 
 ## [!DNL PayPal Smart Buttons]
 
 [!DNL PayPal Smart Buttons], que utilizan PayPal para completar una compra, almacena la dirección de envío, las direcciones de facturación y los detalles de pago del comprador para su uso posterior. Los compradores pueden utilizar cualquier método de pago previamente almacenado u ofrecido por PayPal.
 
-Puede configurar [!DNL PayPal Smart Buttons] en la configuración de la tienda o en la página de inicio de los servicios de pago.  Consulte [Configuración [!DNL Payment Services]](settings.md#configure-paypal-smart-buttons) para obtener más información.
+![[!DNL PayPal Smart Buttons] opciones](assets/buttons-md.png)
 
-### Botón PayPal
+Puede configurar [!UICONTROL PayPal Smart Buttons] en la configuración de la tienda o en la página de inicio de los servicios de pago.  Consulte [Configuración](settings.md#payment-buttons) para obtener más información.
+
+### [!DNL PayPal] botón
 
 Los clientes pueden realizar el check out con facilidad y confianza mediante el botón PayPal.
 
-El botón PayPal es visible desde la página del producto, el minicarro, el carro de compras y las vistas de cierre de compra.
+La variable [!DNL PayPal] se puede ver en la página del producto, el minicarro, el carro de compras y las vistas de cierre de compra.
 
-### Botón Venmo
+### [!DNL Venmo] botón
 
 Los clientes pueden realizar la comprobación utilizando la variable [Venmo](https://venmo.com/) botón.
 
-El botón Venmo se puede ver desde la página del producto, el minicarro, el carro de compras y las vistas de cierre de compra.
+La variable [!DNL Venmo] se puede ver en la página del producto, el minicarro, el carro de compras y las vistas de cierre de compra.
+
+### [!DNL Apple Pay] botón
+
+Los clientes pueden utilizar el ID táctil en sus dispositivos para utilizar [[!DNL Apple Pay]](https://www.apple.com/apple-pay/), que utiliza credenciales de pago de tarjeta de crédito y débito almacenadas en su dispositivo iOS o macOS.
+
+La variable [!DNL Apple Pay] se puede ver en la página del producto, el minicarro, el carro de compras y las vistas de cierre de compra.
 
 ### [!DNL Pay Later] botón
 
 Ofrezca a sus clientes pagos a corto plazo, sin intereses y otras opciones de financiación para que puedan comprar ahora y pagar más tarde con el [!DNL Pay Later] botón.
 
-La variable [!DNL Pay Later] se puede ver en la página del producto, el minicarro, el carro de compras y las vistas de cierre de compra.
+La variable [!DNL Pay Later] se puede ver en la página del producto, el minicarro, el carro de compras y las vistas de cierre de compra:
+
+* **Cuando un cliente selecciona un producto entre 30 y 600 dólares**, mensajería en PayPal y [!DNL Pay Later] proporciona al cliente más información sobre los [!DNL Pay in 4] opción de pago. Los clientes pueden hacer clic en **Más información** para obtener más información sobre &quot;[!DNL Pay in 4]&quot;, opción _o_ haga clic en el texto &quot;O ver 6 meses de financiación especial&quot; en la ventana emergente para conocer y solicitar la opción Crédito de PayPal.
+* **Cuando un cliente selecciona un producto o productos que exceden los 98,99 dólares**, mensajería en PayPal y [!DNL Pay Later] Los botones proporcionan a los clientes más información acerca de la opción de pago PayPal Credit . Los clientes pueden hacer clic en **Más información** para conocer y solicitar la opción Crédito PayPal, _o_ haga clic en el texto &quot;O consulte Pagar en 4&quot; en la ventana emergente para obtener más información sobre la [!DNL Pay in 4] .
+
+   >[!NOTE]
+   >
+   >Las cantidades enumeradas arriba están sujetas a cambios.
+
+Consulte [Configuración](settings.md#payment-buttons) para aprender a desactivar o habilitar el [!DNL Pay Later] mensajería.
 
 Hay dos opciones de pago con la variable [!DNL Pay Later] botón:
 
@@ -67,19 +84,6 @@ Hay dos opciones de pago con la variable [!DNL Pay Later] botón:
 La variable [!DNL Pay Now] está visible en la ventana emergente de PayPal cuando un cliente hace clic en un botón de pago en la pantalla de pagos.
 
 Si todavía no se conoce la cantidad del pedido final (por ejemplo, cuando todavía no tiene información de la dirección de envío) y el cliente está en proceso de retirar de la página del producto, el minicarro o el carro de compras, una _Continuar_ en su lugar. Cuando un cliente hace clic en _Continuar_, una vez que confirman su método de pago, se les dirige a una página de revisión de pedidos para reunir los detalles necesarios antes de completar el cierre de compra.
-
-## [!DNL Pay Later] mensajería
-
-Para ayudar a su cliente a identificar estas como posibles opciones de pago, [!DNL Pay Later] Los mensajes de se pueden ver en la página del producto, en el minicarro y en el carro de compras, y durante el cierre de compra.
-
-* **Cuando un cliente selecciona un producto entre 30 y 600 dólares**, mensajería en PayPal y [!DNL Pay Later] Los botones proporcionan al cliente más información sobre la opción de pago Pago en 4. Los clientes pueden hacer clic en **Más información** para obtener más información sobre la opción &quot;Pagar en 4&quot; _o_ haga clic en el texto &quot;O ver 6 meses de financiación especial&quot; en la ventana emergente para conocer y solicitar la opción Crédito de PayPal.
-* **Cuando un cliente selecciona un producto o productos que exceden los 98,99 dólares**, mensajería en PayPal y [!DNL Pay Later] Los botones proporcionan a los clientes más información acerca de la opción de pago PayPal Credit . Los clientes pueden hacer clic en **Más información** para conocer y solicitar la opción Crédito PayPal _o_ haga clic en el texto &quot;O vea Pagar en 4&quot; en la ventana emergente para obtener más información sobre la opción Pagar en 4.
-
-   >[!NOTE]
-   >
-   >Las cantidades enumeradas arriba están sujetas a cambios.
-
-Consulte [Configurar [!DNL Payment Services]](configure-admin.md#configure-paypal-smart-buttons) para aprender a deshabilitar o habilitar el [!DNL Pay Later] mensajería.
 
 ## Recalculación de pedidos
 
