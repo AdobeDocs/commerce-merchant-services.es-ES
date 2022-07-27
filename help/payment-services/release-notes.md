@@ -2,9 +2,9 @@
 title: '"[!DNL Payment Services] Notas de la versión"'
 description: Revise las notas de la versión para obtener información sobre todas las [!DNL Payment Services] versiones.
 exl-id: 104aa2c7-7735-4ac2-8ed1-a03cd9911273
-source-git-commit: 169593cdf069f9ee95be5bcff3783cc8cfc82c3f
+source-git-commit: 78f17e82a820a8be73c6abc0ef25d1bb240ea238
 workflow-type: tm+mt
-source-wordcount: '841'
+source-wordcount: '890'
 ht-degree: 0%
 
 ---
@@ -42,6 +42,8 @@ _29 de junio de 2022_
 ### Actualizaciones de servicio alojadas
 
 Estas notas de la versión describen los cambios y correcciones que se produjeron y se publicaron fuera de las versiones de funciones normales, entre la versión actual v1.2.0 y la versión anterior 1.1.0 para el servicio alojado.
+
+![Nuevo](../assets/new.svg)<!-- Issue PAY-3420 --> Apple Pay ya está disponible como un botón inteligente de PayPal. Esta [opción de pago](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/payments-options.html#apple-pay-button) permite a los clientes utilizar Touch ID en sus dispositivos para utilizar Apple Pay, que utiliza credenciales de pago de tarjeta de crédito y débito almacenadas en sus dispositivos iOS o macOS.
 
 ![Nuevo](../assets/new.svg)<!-- Issue PAY-1720 --> Las disputas por pedidos de tienda ya están disponibles en [informe de estado de pago de pedido](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/order-payment-status.html#view-disputes). Puede navegar directamente al Centro de resolución de PayPal desde [!DNL Payment Services] para tomar medidas sobre las controversias.
 
