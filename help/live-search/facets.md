@@ -2,9 +2,9 @@
 title: '"Facetas"'
 description: '"[!DNL Live Search] las facetas utilizan varias dimensiones de valores de atributos como criterios de búsqueda."'
 exl-id: 63c0b255-6be9-41ad-b4bf-13bb7ff098fd
-source-git-commit: bffbede99865e9085f60392e474065a454446370
+source-git-commit: 238ce2f774207f387970d3c833e0a29f0ede6550
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '388'
 ht-degree: 0%
 
 ---
@@ -26,7 +26,7 @@ Los requisitos de categoría y atributos de producto para facetas son similares 
 |--- |--- |
 | [Configuración de visualización de categoría](https://docs.magento.com/user-guide/catalog/categories-display-settings.html) | Anclaje - `Yes` |
 | [Propiedades de atributo](https://docs.magento.com/user-guide/stores/attribute-product-create.html) | [Tipo de entrada de catálogo](https://docs.magento.com/user-guide/stores/attributes-input-types.html) - `Yes/No`, `Dropdown`, `Multiple Select`, `Price` |
-| Propiedades de tienda de atributos | Usar en navegación por capas - `Filterable (with results)` |
+| Propiedades de tienda de atributos | Usar en navegación por capas de resultados de búsqueda - `Yes` |
 
 ## Valores de atributo predeterminados
 
