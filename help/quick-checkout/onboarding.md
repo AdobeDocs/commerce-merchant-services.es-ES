@@ -2,9 +2,9 @@
 title: '"Incorpore el [!DNL Quick Checkout] para la extensión de Adobe Commerce"'
 description: '"Aprenda a usar la variable [!DNL Quick Checkout] podría beneficiar a su instancia de Adobe Commerce y cómo incorporar y configurar correctamente la extensión."'
 exl-id: 8caf746c-e31b-4331-8b0d-ea0f1e545bdd
-source-git-commit: 0624ddc369ddedaaf9ae741831e0d5c5589ea4c2
+source-git-commit: 70f7772765dd66c8db779d29d4b661edb7d0c64a
 workflow-type: tm+mt
-source-wordcount: '684'
+source-wordcount: '697'
 ht-degree: 0%
 
 ---
@@ -56,7 +56,7 @@ Para usar la variable [!DNL Quick Checkout] necesita [!DNL Bolt] claves únicas 
 - [!DNL Publishable key]: Una clave utilizada por el front-end para interactuar con [!DNL Bolt] API.
 - [!DNL Signing secret]: Se utiliza para la verificación de la firma en las solicitudes recibidas de [!DNL Bolt].
 
-![Cierre rápido](assets/account-credentials.png)
+   ![Cierre rápido](assets/account-credentials.png)
 
 Consulte la [[!DNL Bolt] detalles del entorno](https://help.bolt.com/developers/references/environment-details/#about-keys)Página {target=&quot;_blank&quot;} para obtener información sobre las claves y el secreto de firma de [!DNL Bolt] para el [!DNL Quick Checkout] extensión.
 
@@ -73,6 +73,13 @@ Para conectar a su proveedor de servicios de pago, siga los pasos descritos en l
 1. En el _Administrador_ barra lateral, vaya a **Almacenes** > _Configuración_ > **Configuración**.
 1. En el panel izquierdo, expanda **Ventas** y seleccione **Cierre de compra**.
 1. En el [!DNL Quick Checkout] vista, conjunto **Habilitar** a `Yes`.
+
+![Cierre rápido](assets/quick-checkout-view-no-enable.png)
+
+>[!CAUTION]
+>
+> Los campos de cierre de compra rápido solo están visibles cuando **Habilitar** está configurado como `Yes`.
+
 1. Seleccione el método (Simulador para pruebas o Producción) que desea utilizar.
 
    - Simulador para pruebas y desarrollo
@@ -80,7 +87,7 @@ Para conectar a su proveedor de servicios de pago, siga los pasos descritos en l
 
 1. Valide las credenciales después de proporcionar su API única y [!DNL Publishable keys].
 
-![Cierre rápido](assets/extension-view.png)
+![Cierre rápido](assets/quick-checkout-main-view.png)
 
 >[!CAUTION]
 >
