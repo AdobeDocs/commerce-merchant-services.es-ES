@@ -2,9 +2,9 @@
 title: Información general de guía
 description: El conector de Adobe Experience Platform para Adobe Commerce conecta su [!DNL Commerce] a otros productos de Adobe Experience Cloud.
 exl-id: a8362e71-e21c-4b1d-8e3f-336e748e1018
-source-git-commit: 334ee967ec2379a87acfc5fb427d7ada6fa25ee7
+source-git-commit: 15b7a8be65e5063606bb58755d0719b0ca54de37
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '500'
 ht-degree: 0%
 
 ---
@@ -37,10 +37,15 @@ Cuando se concede el acceso:
 - Instale el [Extensión de conector del Experience Platform](install.md).
 
    La extensión del conector del Experience Platform se instala desde la línea de comandos del servidor y se conecta a la instalación de Adobe Commerce como un [service](../landing/saas.md). Cuando se completa el proceso, aparece el conector del Experience Platform en la variable **Sistema** menú bajo **Servicios** en el [!DNL Commerce] _Administrador_.
+- [Cargar perfiles del comprador](profile.md) a Adobe Experience Platform, de modo que los datos de tienda se puedan atribuir a compradores específicos para mejorar su experiencia de compra.
 
 ## Audiencia
 
 Esta guía está diseñada para el comerciante de Adobe Commerce que debe conectar sus datos de tienda de Adobe Commerce con otros productos DX de Adobe.
+
+### asistencia al PWA Studio
+
+Consulte la [PWA Studio](https://developer.adobe.com/commerce/pwa-studio/integrations/adobe-commerce/aep/) documentación para obtener información sobre cómo utilizar el conector de Experience Platform en una tienda de PWA Studio.
 
 ## Problemas conocidos
 
