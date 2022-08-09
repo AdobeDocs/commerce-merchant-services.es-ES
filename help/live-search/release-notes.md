@@ -2,9 +2,9 @@
 title: '"[!DNL Live Search] Notas de la versión"'
 description: '"La información de la última versión de [!DNL Live Search] de Adobe Commerce".'
 exl-id: 2a581e43-35f5-48ce-9752-844430ccdebf
-source-git-commit: bffbede99865e9085f60392e474065a454446370
+source-git-commit: 097f8af7a1e3e904c69d3a7fe52cb0db5b1b4c23
 workflow-type: tm+mt
-source-wordcount: '672'
+source-wordcount: '858'
 ht-degree: 1%
 
 ---
@@ -16,6 +16,29 @@ Estas notas de la versión describen las versiones más recientes de [!DNL Live 
 * ![Nuevo](../assets/new.svg) - Nuevas funciones
 * ![Corrección](../assets/fix.svg) - Correcciones y mejoras
 * ![Error](../assets/bug.svg) - Problemas conocidos
+
+## [!DNL Live Search] 2.0.3
+
+* Compatible con Adobe Commerce (EE): 2.4.x
+* Compatible con Adobe Commerce para Cloud (ECE): 2.4.x
+* Estabilidad: Estable
+
+* ![Nuevo](../assets/new.svg) - La búsqueda en directo ahora admite las funciones B2B al cumplir los permisos de categoría, los catálogos compartidos y los precios específicos de los grupos de clientes.
+
+Los comerciantes deben actualizar la versión de la extensión Live Search >= 2.0.3 para acceder a estas funciones.
+
+Recomendamos a los usuarios que actualicen y prueben antes de pasar a producción. Considere la posibilidad de actualizar el entorno de producción durante las horas de menor actividad después de comprobar los resultados de su entorno de prueba.
+
+>[!NOTE]
+>
+>El soporte B2B se agregará por etapas a partir del 9 de agosto en los servicios back-end, y se espera que la migración se complete para fines de agosto. Si la extensión Live Search no se actualiza, su tienda seguirá funcionando normalmente pero sin funciones B2B.
+
+### Limitaciones conocidas / Errores:
+
+* ![Error](../assets/bug.svg) : las sugerencias provienen de productos que no se pueden mostrar al grupo de clientes.
+* ![Error](../assets/bug.svg) - Los productos no se muestran si no se añaden al &quot;catálogo compartido predeterminado&quot;.
+* B2B con Live Search para PWA Studio no estará disponible hasta que el PWA Studio añada soporte para él.
+* Las anulaciones de productos y la fuente de atributos de producto pueden tener problemas de sincronización que requieren que los administradores se ejecuten `bin/magento indexer:reset` y `bin/magento indexer:reindex` para volver a sincronizar correctamente.
 
 ## [!DNL Live Search] 2,0
 
