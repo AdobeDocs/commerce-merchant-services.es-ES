@@ -4,9 +4,9 @@ description: Después de la instalación, puede configurar [!DNL Payment Service
 role: Admin, User
 level: Intermediate
 exl-id: 108f2b24-39c1-4c87-8deb-d82ee1c24d55
-source-git-commit: 89fa175b70a2b4b37d5999dedc56a7e41ae28b7d
+source-git-commit: 60d04755b29f107a0543bd71e19ca5b2b6997b4d
 workflow-type: tm+mt
-source-wordcount: '1035'
+source-wordcount: '1032'
 ht-degree: 0%
 
 ---
@@ -106,7 +106,7 @@ Puede activar y configurar las opciones de pago de los botones inteligentes de P
 
       >[!NOTE]
       >
-      > Apple Pay está habilitado de forma predeterminada para el modo de entorno limitado, pero también puede [debe tener una cuenta de desarrollador de Apple](test-validate.md#test-in-sandbox-environment) (con información falsa de tarjeta de crédito y facturación) para probarla. Cuando esté listo para usar Apple Pay en modo de producción, después de completar cualquier [pruebas y validación](test-validate.md), póngase en contacto con el departamento de ventas para habilitarlo para sus tiendas activas.
+      > Para usar Apple, pague [debe tener una cuenta de desarrollador de Apple](test-validate.md#test-in-sandbox-environment) (con información falsa de tarjeta de crédito y facturación) para probarla. Cuando esté listo para usar Apple Pay en el simulador de pruebas *o* modo de producción, después de completar cualquier [pruebas y validación](test-validate.md), póngase en contacto con su representante de ventas para habilitarlo para sus tiendas activas.
 
 1. Para habilitar el modo de depuración, cambie la **[!UICONTROL Debug Mode]** selector.
 1. Haga clic **[!UICONTROL Save]**.

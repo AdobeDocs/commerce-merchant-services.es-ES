@@ -2,9 +2,9 @@
 title: '"[!DNL Payment Services] Notas de la versión"'
 description: Revise las notas de la versión para obtener información sobre todas las [!DNL Payment Services] versiones.
 exl-id: 104aa2c7-7735-4ac2-8ed1-a03cd9911273
-source-git-commit: 78f17e82a820a8be73c6abc0ef25d1bb240ea238
+source-git-commit: 2c3211d5a6574f84fa499608f5ef0cb8c6ffcfed
 workflow-type: tm+mt
-source-wordcount: '890'
+source-wordcount: '924'
 ht-degree: 0%
 
 ---
@@ -22,6 +22,14 @@ Para ver los cambios y correcciones de funciones publicados fuera de la versión
 Consulte [Próximas versiones](https://devdocs.magento.com/release/) para obtener más información sobre los programas de versiones y la asistencia técnica.
 
 Consulte [Disponibilidad](https://devdocs.magento.com/release/availability.html) en la documentación para desarrolladores para obtener más información sobre la compatibilidad del producto.
+
+## Versión 1.3.0
+
+_9 de agosto de 2022_
+
+![Nuevo](../assets/new.svg)<!-- Issue PAY-XX --> Versión de disponibilidad general:[!DNL Payment Services] ahora es [compatible con [!DNL Adobe Commerce] y [!DNL Magento Open Source] versiones 2.4.0 a 2.4.5](https://devdocs.magento.com/release/availability.html#compatibility).
+
+![Se ha corregido un problema](../assets/fix.svg)<!-- Issue PAY-x --> Apple Pay ahora es compatible con el explorador Safari v15.5 en dispositivos móviles y de escritorio.
 
 ## Versión 1.2.0
 
