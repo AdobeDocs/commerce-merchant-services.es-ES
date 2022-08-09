@@ -2,9 +2,9 @@
 title: '"Flujo de cierre de compra"'
 description: '"Descripción general de la variable [!DNL Quick Checkout] en Adobe Commerce".'
 exl-id: 82761627-a0d4-4cb0-aad1-9865fcb550d4
-source-git-commit: a95d2ed92c69feba03d1b84d44abf08c1d1b4029
+source-git-commit: 05d967573f645db1e8473798df279712d6d2dfc9
 workflow-type: tm+mt
-source-wordcount: '179'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -47,4 +47,4 @@ La variable [!DNL Quick Checkout] permite varios casos de uso durante un flujo d
 
 ## Obtener ayuda
 
-Contacto [Asistencia de Adobe Commerce](mailto:quick-checkout-support@adobe.com) para cualquier ayuda.
+Póngase en contacto con el servicio de asistencia de Adobe Commerce a través de la [Centro de ayuda de Adobe Commerce](https://support.magento.com/hc/en-us/articles/360000913794-Adobe-Commerce-Help-Center-User-Guide) para cualquier ayuda.
