@@ -2,9 +2,9 @@
 title: Conector de Commerce Services
 description: Obtenga información sobre cómo integrar la instancia de Adobe Commerce o Magento Open Source en servicios mediante claves de API de producción y simulación de pruebas.
 exl-id: 28027a83-449b-4b96-b926-a7bfbfd883d8
-source-git-commit: e8a63cc24db8a5e37c03c9cd40f0807b0b77b620
+source-git-commit: e7b12a80d6c4ec18ec784fd674363a728ee73a67
 workflow-type: tm+mt
-source-wordcount: '856'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -24,6 +24,7 @@ A continuación se enumeran las [!DNL Commerce] funciones a las que puede accede
 | [[!DNL Payment Services]](/help/payment-services/overview.md) | Adobe Commerce y Magento Open Source |
 | [[!DNL Channel Manager]](https://experienceleague.adobe.com/docs/commerce-channels/channel-manager/intro-to-channel-manager/overview.html) | Adobe Commerce y Magento Open Source |
 | [[!DNL Site-Wide Analysis Tool]](https://experienceleague.adobe.com/docs/commerce-operations/tools/site-wide-analysis-tool/intro.html) | Adobe Commerce |
+| [Conector del Experience Platform](/help/experience-platform-connector/overview.md) | Adobe Commerce |
 
 ## Arquitectura
 
@@ -105,7 +106,7 @@ Para cambiar los nombres del proyecto SaaS o del espacio de datos, haga clic en 
 
 ## Organización IMS (opcional) {#organizationid}
 
-(Esta función está diseñada para una futura integración con Adobe Experience Platform). Para conectar la instancia de Adobe Commerce a Adobe Experience Platform, inicie sesión en la cuenta de Adobe con su Adobe ID. Después de iniciar sesión, la organización de IMS asociada a su cuenta de Adobe se muestra en esta sección.
+Para conectar la instancia de Adobe Commerce a Adobe Experience Platform, inicie sesión en la cuenta de Adobe con su Adobe ID. Después de iniciar sesión, la organización de IMS asociada a su cuenta de Adobe se muestra en esta sección.
 
 ## Sincronización del catálogo
 

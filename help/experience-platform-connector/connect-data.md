@@ -1,9 +1,10 @@
 ---
 title: Conexión de datos de comercio a Adobe Experience Platform
 description: Obtenga información sobre cómo conectar los datos de Commerce a Adobe Experience Platform.
-source-git-commit: 9b5f2da08167e22bbba504009bccc87d0ab02c48
+exl-id: 87898283-545c-4324-b1ab-eec5e26a303a
+source-git-commit: 2b735c292920bb0e9052d86bf152748e7ce96079
 workflow-type: tm+mt
-source-wordcount: '371'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -34,7 +35,7 @@ El ID de almacén de datos permite el reenvío de eventos de Adobe Experience Pl
 | Organización IMS (Global) | ID que pertenece a la organización que compró el producto Adobe DX. Este ID vincula la instancia de Adobe Commerce con Adobe Experience Platform. |
 | ID de almacén de datos (vista de almacén) | ID que permite el flujo de datos de Adobe Experience Platform a otros productos DX de Adobe. Este ID se puede asociar a un storeView específico de la instancia de Adobe Commerce específica. |
 
-Con la extensión del conector del Experience Platform instalada, el vínculo entre Adobe Commerce y Adobe Experience Platform creado y el ID del almacén de datos especificado, [!DNL Commerce] los datos empiezan a fluir al borde de Adobe Experience Platform y a otros productos DX de Adobe.
+Con la extensión del conector del Experience Platform instalada, el vínculo entre Adobe Commerce y Adobe Experience Platform creado y el ID de almacén de datos especificado, los datos de comercio empiezan a fluir al borde de Adobe Experience Platform y a otros productos DX de Adobe.
 
 ## Datos de comercio en el extremo
 

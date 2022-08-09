@@ -1,10 +1,10 @@
 ---
-title: Añadir grupos de campos al esquema XDM
+title: Agregar grupos de campos al esquema XDM
 description: Aprenda a añadir grupos de campos específicos de Adobe Commerce a un esquema XDM.
 exl-id: 4401bbe7-1ccc-4349-a998-9e9ee9db590f
-source-git-commit: 06499893f6cad4d920a231f5b22417d3044b2319
+source-git-commit: 2b735c292920bb0e9052d86bf152748e7ce96079
 workflow-type: tm+mt
-source-wordcount: '274'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
