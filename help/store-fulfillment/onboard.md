@@ -1,11 +1,12 @@
 ---
 title: Información general sobre la incorporación para los servicios de entrega de la tienda
-description: '"[!DNL Live Search] flujo de incorporación, requisitos del sistema, límites y limitaciones".'
+description: '''[!DNL Live Search] flujo de incorporación, requisitos del sistema, límites y limitaciones".'
 role: User, Admin
 level: Intermediate
-source-git-commit: 42b0118b427b1e04186793b4a57c058bc1cabdd4
+exl-id: f8e403ac-9bbd-4ea2-b209-9b1a8d1e32a2
+source-git-commit: 1fb22b4644d41ea5c60aead3fe2c455dfa3382f8
 workflow-type: tm+mt
-source-wordcount: '363'
+source-wordcount: '364'
 ht-degree: 0%
 
 ---
@@ -14,13 +15,13 @@ ht-degree: 0%
 
 Introducción a [!DNL Store Fulfillment for Adobe Commerce by Walmart Commerce Technologies] configurando, configurando y habilitando los siguientes componentes:
 
-- **Extensión de entrega de tiendas**-Instale y configure esta extensión de terceros en la instancia de Adobe Commerce. Después de la instalación, puede configurar y administrar la solución Store Fulfillment desde el Administrador para que sea compatible [!DNL buy online, pickup in store] escenarios (BOPIS) en la tienda de comercio.
+- **Extensión de entrega de tiendas**-Instale y configure esta extensión de terceros en la instancia de Adobe Commerce. Después de la instalación, puede configurar y administrar la solución Store Fulfillment desde el Administrador para que sea compatible [!DNL buys online, pickup in store] escenarios (BOPIS) en la tienda de comercio.
 
    ![[!DNL Store Fulfillment Service] configuración en la vista Administración](assets/store-fulfillment-admin-home.png)
 
 - **Cuenta de entrega de la tienda**-Durante el proceso de activación, un administrador de cuentas crea su cuenta de cumplimiento de almacenamiento y le proporciona la información de la cuenta y las credenciales. Estas credenciales son necesarias para habilitar la conexión entre Adobe Commerce y la solución Store Fulfillment.
 
-- **Aplicación de asistencia de la tienda**: proporciona a los asociados de almacén un flujo de trabajo completo de cumplimiento de almacenamiento para administrar los pedidos BOPIS desde dispositivos móviles. Store Associates puede descargar e instalar el [!DNL Store Assist] para dispositivos iOS y Android. El proceso de incorporación a la aplicación lo gestiona el Centro de clientes de tecnología de comercio Walmart como un proceso independiente. Sin embargo, [algunos ajustes de configuración de la aplicación](user-setup.md) se completan desde el administrador de Adobe Commerce.
+- **Aplicación de asistencia de la tienda**: proporciona a los asociados de almacén un flujo de trabajo completo de cumplimiento de almacenamiento para administrar los pedidos BOPIS desde dispositivos móviles. Store Associates puede descargar e instalar el [!DNL Store Assist] para dispositivos iOS y Android™. El proceso de incorporación a la aplicación lo gestiona el Centro de clientes de Walmart Commerce Technologies como un proceso independiente. Sin embargo, [algunos ajustes de configuración de la aplicación](user-setup.md) se completan desde el administrador de Adobe Commerce.
 
    | Aplicación de asistencia de tienda: vista de introducción | Aplicación de asistencia de la tienda: vista de módulos |
    |-------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------|
@@ -48,7 +49,6 @@ Introducción a [!DNL Store Fulfillment for Adobe Commerce by Walmart Commerce T
 
 1. [Crear usuarios y funciones para la aplicación de ayuda de la tienda](user-setup.md).
 
-1. [Descargar Walmart [!DNL Store Assist] al dispositivo deseado. La aplicación está disponible tanto en la tienda de aplicaciones (iOS) como en la de reproducción (Android)](app-setup.md).
+1. [Descargar Walmart [!DNL Store Assist] al dispositivo deseado. La aplicación está disponible tanto en la aplicación de Apple (iOS) como en Google Play (Android™)](app-setup.md) tiendas.
 
 Una vez que haya instalado, configurado, completado la integración correctamente y tenga acceso al [!DNL Store Assist] aplicación, puede [comenzar a crear pedidos y pruebas](test-and-deploy.md).
-

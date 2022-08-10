@@ -4,16 +4,16 @@ description: Configure el [!DNL Store Assist] aplicación para administrar los f
 role: User, Admin
 level: Intermediate
 exl-id: bcb5b02b-0141-407a-ad55-6e10e8e1aa90
-source-git-commit: 68e615671f4e465d7fe89794613dbf129ae66dbf
+source-git-commit: 1fb22b4644d41ea5c60aead3fe2c455dfa3382f8
 workflow-type: tm+mt
-source-wordcount: '606'
+source-wordcount: '604'
 ht-degree: 0%
 
 ---
 
 # Configuración de la aplicación
 
-Store Assist es una aplicación de plataforma de cumplimiento como servicio (FaaS) basada en Walmart Commerce Technologies. La aplicación proporciona funciones de cumplimiento en la tienda para gestionar [!DNL buy online], [!DNL pick up in store] (BOPIS) órdenes.  Con el asistente de tienda, los asociados de almacén pueden ver qué artículos pidieron los clientes, recogen los artículos correctos con mayor rapidez y configuran los pedidos completados para el envío de recogida en tienda o en el lado del límite a los clientes.
+Store Assist es una aplicación de plataforma de cumplimiento como servicio (FaaS) basada en Walmart Commerce Technologies. La aplicación proporciona funciones de cumplimiento en la tienda para gestionar [!DNL buy online, pick up in store] (BOPIS) órdenes. Con el asistente de tienda, los asociados de almacén pueden ver qué artículos pidieron los clientes, recogen los artículos correctos con mayor rapidez y configuran los pedidos completados para el envío de recogida en tienda o en el lado del límite a los clientes.
 
 La aplicación de asistencia de la tienda recibe toda la información sobre pedidos y clientes, desde los detalles de pedidos hasta los tiempos de recogida, y pone los datos a disposición de los asociados en línea, a través de dispositivos móviles. La aplicación incluye [!UICONTROL Pick], [!UICONTROL Stage], [!UICONTROL Handoff]y [!UICONTROL Orders] módulos para ayudar a Store Associates con actividades de cumplimiento como las siguientes:
 
@@ -30,13 +30,13 @@ La aplicación de asistencia de la tienda recibe toda la información sobre pedi
 
 La aplicación de ayuda de la tienda requiere dos tipos de configuración:
 
-- Configuración de administración de Adobe Commerce para [administrar cuentas de usuario, funciones de usuario y permisos de recursos desde la configuración del sistema de administración de Adobe Commerce](user-setup.md).
+- Configuración del sistema de administración de Adobe Commerce para [administrar cuentas de usuario, funciones de usuario, permisos de recursos](user-setup.md)y [las selecciones de modelo y fabricación de automóviles disponibles para los clientes durante el proceso de facturación](check-in-experience-setup.md).
 
 - Los ajustes de configuración de front-end para personalizar la interfaz de aplicación de Store Assist y otros ajustes, entre ellos:
 
    - **Marca de la aplicación de ayuda de la tienda**: personalice la interfaz de usuario de la aplicación con el logotipo y los colores de su empresa.
 
-   - **Actualizar las instrucciones predeterminadas**: personalice las instrucciones de las interfaces de Store Assist para los módulos Pick, Stage, Handoff y Order para cumplir con las políticas y procedimientos de su empresa, y guíe Store Associates a través de cada paso del flujo de trabajo de cumplimiento.
+   - **Actualizar las instrucciones predeterminadas**: personalice las instrucciones de los módulos Seleccionar, Escenario, Entrega y Pedido del Asistente de Almacenamiento para guiar a los Asociados de Almacenamiento a través de cada paso del flujo de trabajo de cumplimiento para su empresa.
 
    - **Localización**: seleccione el idioma disponible para la aplicación. Elija el formato de fecha y hora y seleccione las unidades de medida predeterminadas y la moneda predeterminada.
 
@@ -59,7 +59,7 @@ La aplicación de ayuda de la tienda requiere dos tipos de configuración:
 
 ## Descarga e instalación de aplicaciones
 
-Una vez completada la configuración de la aplicación de asistencia de tienda, Store Associates puede descargar, instalar e iniciar sesión en la aplicación de asistencia de tienda desde sus dispositivos móviles.
+Una vez configurada y configurada la aplicación de ayuda de la tienda, Store Associates puede descargar, instalar e iniciar sesión en la aplicación de asistencia de la tienda desde sus dispositivos móviles.
 
 - Compruebe que el dispositivo móvil cumple los requisitos de [requisitos de hardware y software](solution-requirements.md#store-assist-app-requirements) para la solución Store Fulfillment.
 
@@ -70,4 +70,4 @@ Una vez completada la configuración de la aplicación de asistencia de tienda, 
    - **[!UICONTROL Company name]** asociada a la cuenta de Store Assist
 
    - **Credenciales de cuenta de Store Assist**: credenciales de nombre de usuario y contraseña para su cuenta.
-   Un administrador de Adobe Commerce puede crear una cuenta de usuario y establecer permisos para las cuentas de usuario de la aplicación de asistencia de tienda para las ubicaciones de tiendas que tengan [Recogida en la tienda](merchant-store-configuration.md#pickup-location-configuration) activada en la configuración de las tiendas de administración.
+   Un administrador de Adobe Commerce puede crear una cuenta de usuario y establecer permisos para [!DNL Store Assist app] cuentas de usuario para ubicaciones de tiendas que tienen [Recogida en la tienda](merchant-store-configuration.md#pickup-location-configuration) activada en la configuración de las tiendas de administración.

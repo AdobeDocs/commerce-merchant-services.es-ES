@@ -4,9 +4,9 @@ description: '"Descubra cómo [!DNL Store Fulfillment for Adobe Commerce by Walm
 role: User
 level: Intermediate
 exl-id: d2f90af8-3eba-499d-84de-4b70ecc7166c
-source-git-commit: 87818d3a0eb8f0cb4bc9fac2aef3c56a2e620aaf
+source-git-commit: 1fb22b4644d41ea5c60aead3fe2c455dfa3382f8
 workflow-type: tm+mt
-source-wordcount: '603'
+source-wordcount: '606'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ El cumplimiento de la tienda también ofrece un flujo de trabajo de cumplimiento
 
 * **Flexibilidad omnicanal**-Convierta tiendas y almacenes en puntos de recogida y centros de satisfacción.
 
-* **Opciones prácticas de recogida de clientes**-Los clientes pueden ver fácilmente la disponibilidad del producto y seleccionar una tienda para recoger artículos, ya sea en la esquina o en la tienda, al mismo tiempo que seleccionan compras en línea.
+* **Opciones prácticas de recogida de clientes**-Al seleccionar compras en línea, los clientes pueden ver fácilmente la disponibilidad del producto y seleccionar una tienda para la recogida en la tienda o en la barrera.
 
 * **Eficiencia del cumplimiento**: la aplicación móvil de ayuda de almacenamiento ayuda a los asociados de almacenamiento a aumentar la velocidad y precisión de cumplimiento de pedidos.
 
@@ -31,27 +31,27 @@ El cumplimiento de la tienda también ofrece un flujo de trabajo de cumplimiento
 
 ## Extensión de entrega de tiendas
 
-Admite y mejora las funciones nativas de Adobe Commerce
+La solución Store Fulfillment admite y mejora las capacidades nativas de Adobe Commerce.
 
 * Admite la mayoría de los tipos de producto: simple, configurable, agrupado, agrupado y virtual
 
 * Se integra con [[!DNL Adobe Commerce] Inventory management](https://docs.magento.com/user-guide/catalog/inventory-learn-more.html)
 
-* Se integra con sistemas comerciales de puntos de venta (POS) como ERP, OMS y WMS, sistemas de mercante para la gestión de inventarios
+* Se integra con sistemas de gestión de inventario de comerciantes de punto de venta (POS) como ERP, OMS y WMS
 
 * Totalmente compatible con el tema de Luma
 
 * Proporciona compatibilidad con GraphQL para tiendas sin periféricos y Venia
 
-* Admite la aplicación Store Assist de Walmart Commerce Technology. Esta aplicación envía pedidos de recogida directamente al dispositivo de mano de su empleado en la tienda correcta, de modo que los artículos se puedan seleccionar y seleccionar, colocar y entregar a los clientes de forma rápida y precisa en el momento de su registro de entrada.
+* Admite la aplicación Store Assist de Walmart Commerce Technologies. Esta aplicación envía información de pedidos de recogida directamente al dispositivo de mano del empleado en la ubicación de tienda seleccionada. Con esta información, pueden elegir, poner en escena y entregar artículos a los clientes de forma rápida y precisa cuando llegan a la tienda.
 
 ## Aplicación de asistencia de la tienda
 
-La aplicación Store Assist para dispositivos iOS y Android™ interactúa con la tecnología Walmart Commerce para ofrecer funciones de realización omnicanal a sus tiendas minoristas.
+La aplicación Store Assist para dispositivos iOS y Android™ interactúa con [!DNL Walmart Commerce Technologies] para proporcionar funciones de realización omnicanal a sus tiendas minoristas.
 
-* Envíe pedidos de recogida en la tienda y en el borde de la curva directamente para almacenar los dispositivos móviles de los asociados
+* Envíe pedidos de recogida en la tienda y en el lado de la curva directamente para almacenar los dispositivos móviles de los asociados
 
-* Asegúrese de que los pedidos de la tienda se recogen, se ponen en escena y se entregan a los clientes de forma rápida y precisa cuando se registran para la recogida de pedidos.
+* Asegúrese de que los pedidos de la tienda se recogen, se ponen en escena y se entregan a los clientes de forma rápida y precisa cuando llegan a la tienda para que los recojan
 
 * Administre el acceso de los usuarios asociados al almacén, incluidas las políticas de seguridad, la autenticación de dos factores y mucho más
 
@@ -59,19 +59,19 @@ La aplicación Store Assist para dispositivos iOS y Android™ interactúa con l
 
 ## Experiencia del usuario mejorada
 
-El cumplimiento de la tienda mejora Adobe Commerce al añadir las siguientes funciones para ofrecer experiencias de compra mejoradas y flujos de trabajo de cumplimiento optimizados:
+El cumplimiento de la tienda mejora Adobe Commerce al añadir funciones para ofrecer experiencias de compra mejoradas y flujos de trabajo de cumplimiento optimizados.
 
-* **Selector de ubicación de almacenamiento (SLS)**-Expone la opción de recogida de tiendas, la disponibilidad del inventario y el selector de tiendas en las páginas de productos y carros, además del cierre de compra nativo.
+* **Selector de ubicación de almacenamiento (SLS)**-Agrega opciones de recogida de tiendas, disponibilidad del inventario y selectores de tiendas a las páginas de productos y carros, además del cierre de compra nativo.
 
-* **Disponibilidad de inventario**-Agrega opciones adicionales de configuración global y de producto a Adobe Commerce Inventory management para admitir la asignación de inventario a nivel de tienda a fin de lograr el cumplimiento local oportuno.
+* **Disponibilidad de inventario**-Agrega opciones adicionales de configuración global y de producto a Adobe Commerce Inventory management. Estas opciones admiten la asignación de inventario a nivel de almacén para impulsar el cumplimiento local oportuno.
 
-* **Mejoras en el carro de compras y el cierre de compra**-Comunicar a los clientes las horas de recogida, las ubicaciones y los costes más rápidos disponibles durante su sesión de compra en línea.
+* **Mejoras en el carro de compras y el cierre de compra**-Comunica a los clientes las horas de recogida, las ubicaciones y los costes más rápidos disponibles durante su sesión de compra en línea.
 
 * **Flujo del proceso de registro**-Añade interfaces para mejorar el proceso de registro del cliente y las interacciones con los asociados de la tienda cuando llegan para la recogida en la tienda o en la zona de interrupción.
 
 * **Mi historial de cuenta**-Amplía el [!DNL Commerce] historial de cuentas para mostrar los pasos en el historial de pedidos.
 
-* **Correos electrónicos transaccionales**-Amplía las capacidades de administración de [!UICONTROL Sales Emails] para añadir plantillas de correo electrónico para comprar en línea, recoge transacciones en la tienda. Las plantillas admiten la comunicación en tiempo real entre clientes y asociados de la tienda durante el proceso de recogida de pedidos.
+* **Correos electrónicos transaccionales**-Amplía las capacidades de administración de [!UICONTROL Sales Emails] para añadir plantillas de correo electrónico para comprar en línea, recoge las transacciones de la tienda. Las plantillas admiten la comunicación en tiempo real entre clientes y asociados de la tienda durante el proceso de recogida de pedidos.
 
 * **Cumplimiento flexible**-Extends [!DNL Commerce] funciones para admitir escenarios de procesamiento de pedidos atrasados, reducciones de cantidad y cumplimiento parcial de pedidos, al tiempo que se facilita cualquier cancelación y nota de crédito necesarias para admitir estos escenarios.
 
