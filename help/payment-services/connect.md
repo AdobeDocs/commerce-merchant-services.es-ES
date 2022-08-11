@@ -2,106 +2,47 @@
 title: Conecte la instancia
 description: Conecte la instancia de Commerce con una clave de API y una clave privada, y especifique el espacio de datos en la configuración.
 exl-id: 5038fd31-bac5-419e-a172-66919a9b5272
-source-git-commit: 9596815e31402f23b399b223f3221074331c1773
+source-git-commit: a983cf30872544d72bd13c3f04f04a35eebcf85d
 workflow-type: tm+mt
-source-wordcount: '911'
+source-wordcount: '621'
 ht-degree: 0%
 
 ---
 
 # Conecte la instancia
 
-[!DNL Payment Services] cuenta con la tecnología Commerce Services e implementada como SaaS (software como servicio). La instancia de comercio se conecta con una clave de API y una clave privada, y especifica el espacio de datos en la configuración. Esta conexión solo se configura una vez.
+[!DNL Payment Services] cuenta con la tecnología Commerce Services e implementada como SaaS (software como servicio). La instancia de comercio se conecta con una clave de API y una clave privada, y se especifica el espacio de datos en la configuración mediante la variable [Conector de Commerce Services](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/saas.html). **Esta conexión solo se configura una vez.**
 
-Consulte [Conector de Commerce Services](https://docs.magento.com/user-guide/system/saas.html){target=&quot;_blank&quot;} en la guía del usuario principal para obtener información detallada sobre este servicio.
+* Si tiene *ya ha conectado la instancia*, al obtener y usar sus credenciales de API y configurar Commerce Services, puede continuar con [configuración del entorno limitado de pruebas](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/get-started/sandbox.html).
+* Si *necesita conectar su instancia*, consulte la información de este tema acerca de [obtención de credenciales de API](#obtain-api-credentials) y [configuración de Commerce Services](#configure-commerce-services).
+* Si *no está seguro de si la instancia está conectada*, vaya a **Sistema** > Servicios > **Conector de Commerce Services** y vea los valores de clave de API pública y privada en la variable [!UICONTROL Sandbox Keys] y [!UICONTROL Production Keys] y *Proyecto* y *Espacio de datos* campos de la variable [!UICONTROL SaaS Identifier] para obtener más información. Si esos valores están presentes, la instancia está conectada.
 
 ## Obtener credenciales de API
 
-Para consumir un servicio Commerce SaaS, debe utilizar las claves de API de su instancia, que se crean y administran en su [Mi tablero de cuenta](https://account.magento.com/customer/account/login){target=&quot;_blank&quot;}. Se pueden crear dos pares de claves API diferentes para una cuenta de Commerce (una para entornos limitados y otra para producción (pagos activos)), aunque solo se puede utilizar activamente un par a la vez.
+Para consumir un servicio Commerce SaaS, debe utilizar las claves de API de su instancia (clave de API pública de comercio y clave privada) tanto para el simulador para pruebas como para la producción, que se crean y administran en su [Mi tablero de cuenta](https://account.magento.com/customer/account/login). [El par de teclas](https://docs.magento.com/user-guide/configuration/services/saas.html) se puede crear para una cuenta de comercio (una para entornos limitados y otra para producción), aunque solo se puede utilizar de forma activa un par a la vez.
 
 >[!NOTE]
 >
->Necesita ayuda para acceder a su [!UICONTROL My Account] tablero? Consulte [Crear una cuenta de comercio](https://docs.magento.com/user-guide/magento/magento-account-create.html){target=&quot;_blank&quot;} en la guía de usuario principal.
+>Necesita ayuda para acceder a su [!UICONTROL My Account] tablero? Consulte [Crear una cuenta de comercio](https://docs.magento.com/user-guide/magento/magento-account-create.html).
 
-Un par de claves de API dado es válido para todos los servicios de comercio de un entorno, por lo que si ya tiene los servicios de comercio configurados para su instancia de comercio, el par de claves de API ya está presente en el administrador. Si se pierde la clave de API privada, debe generarse un nuevo par de claves de API y aplicarse a la configuración de Commerce Services en Admin.
+Una vez creada, siempre hay disponible una clave de API pública en el panel de Mi cuenta. Se puede copiar o eliminar según sea necesario. La clave de API privada se hace visible al crear una clave de API pública para entornos limitados o de producción; solo está disponible para copiarlo o guardarlo desde el cuadro de diálogo siguiente y no se puede acceder a él más adelante.
 
-Para obtener información sobre cómo generar una clave de API para entornos de entorno limitado o de producción, consulte [Conector de Commerce Services](https://docs.magento.com/user-guide/system/saas.html){target=&quot;_blank&quot;} en la guía de usuario principal.
+Un par de claves de API dado es válido para todos los servicios de comercio de un entorno, por lo que si ya tiene los servicios de comercio configurados para su instancia, el par de claves de API ya está presente en el conector de servicios de comercio.
 
->[!IMPORTANT]
->
->Si regenera un par de claves de API y cambia el Identificador SaaS, todos los servicios de comercio utilizados por esta instancia se conectarán a un almacén de datos diferente y se perderá el acceso (incluidos los datos almacenados anteriormente). Se recomienda no volver a generar un par de claves API y cambiar el identificador SaaS en una instancia de producción activa.
+Si se pierde la clave de API, debe establecerse un nuevo par de claves de API [generado](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/get-started/connect.html#generate-an-api-key-and-private-key) y [aplicado](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/get-started/connect.html#configure-saas-project) a la configuración del conector de Commerce Services en Admin. Si se configuran las claves incorrectas o no existe ninguna en la configuración, aparece un cuadro de diálogo de error de verificación de la cuenta en los servicios de pago que le notifica que la cuenta no se ha verificado.
 
-### Clave de API de comercio y clave privada
+Consulte una [lista de servicios de comercio disponibles que utilizan la API](https://docs.magento.com/user-guide/system/saas.html#available-services).
 
-Algunas [!DNL Adobe Commerce] y [!DNL Magento Open Source] las funciones se implementan como SaaS (software como servicio), conocidos como Commerce Services. Para utilizar estos servicios, debe conectar la instancia de Commerce a estos servicios mediante una clave de API y una clave privada, y especificar el espacio de datos deseado en la variable [configuración](https://docs.magento.com/user-guide/configuration/services/saas.html){target=&quot;_blank&quot;}.
-
-Cuando crea una cuenta de comercio, identificada por un MageID, puede generar una clave de API de comercio y una clave privada. Para usar los servicios de comercio, como [!DNL Payment Services], [!DNL Product Recommendations]o [!DNL Live Search], el titular de la licencia debe generar estas claves para pasar la validación de derechos. Estas claves se pueden pasar al integrador de sistemas o al equipo de desarrollo que administra los proyectos y entornos en nombre del titular de la licencia. Si es integrador de soluciones, también puede utilizar estos servicios para sus propias necesidades. En ese caso, el firmante del contrato de socio comercial debe generar las claves.
-
-### Generación de una clave de API y una clave privada
-
-1. Inicie sesión en su cuenta de comercio en [https://account.magento.com/customer/account/login](https://account.magento.com/customer/account/login).
-1. En el **[!UICONTROL Magento]** , seleccione **[!UICONTROL API Portal]** en la barra lateral.
-1. En el _[!UICONTROL Environment]_seleccione **[!UICONTROL Sandbox]**, luego **[!UICONTROL Production]**.
-
-   >[!IMPORTANT]
-   >
-   >Las claves de API son necesarias para ambos entornos.
-
-1. Escriba un nombre en la _[!UICONTROL API Keys]_y haga clic en **[!UICONTROL Add New]**.
-
-   Esta acción abre un cuadro de diálogo para descargar la nueva clave.
-
-   >[!IMPORTANT]
-   >
-   >Este cuadro de diálogo es la única oportunidad que tiene para copiar o descargar su clave.
-
-1. Haga clic en **[!UICONTROL Download]** a continuación, haga clic en **[!UICONTROL Cancel]**.
-
-   La variable _[!UICONTROL API Keys]_ahora muestra su clave de API.
-
-1. Copie la clave de API y la clave privada al seleccionar o crear un proyecto SaaS.
-
-   Consulte [SaaS](https://docs.magento.com/user-guide/system/saas.html){target=&quot;_blank&quot;} en la guía del usuario principal para obtener información más detallada.
-
-La misma clave de API se puede usar en todas las instancias, pero cada instancia debe tener su propio espacio de datos SaaS.
-
-Al crear un proyecto SaaS, Commerce genera uno o más espacios de datos SaaS en función de la licencia de Commerce:
-
-* [!DNL Adobe Commerce] - Un espacio de datos de producción; dos espacios de datos de prueba
-* [!DNL Magento Open Source] - Un espacio de datos de producción; sin espacios de datos de prueba
-
-### Configuración del proyecto SaaS
-
->[!NOTE]
->
->Si no ve la variable _[!UICONTROL Commerce Services Connector]_en la configuración de Commerce, debe instalar los módulos de Commerce para el servicio de Commerce que desee, como [[!DNL Payment Services]](install.md).
-
-Para seleccionar o crear un proyecto SaaS, solicite la clave de la API de comercio del titular de licencia de comercio para su tienda.
-
-1. En el _Administrador_ barra lateral, vaya a **[!UICONTROL Stores]** > _[!UICONTROL Settings]_>**[!UICONTROL Configuration]**.
-1. En el panel izquierdo, expanda **[!UICONTROL Services]** y elija **[!UICONTROL Commerce Services Connector]**.
-1. En el _[!UICONTROL API Keys]_pegue los valores de clave.
-
-   >[!IMPORTANT]
-   >
-   >Añadir valores clave para ambas **[!UICONTROL sandbox]** y **[!UICONTROL production]** entornos.
-
-1. Haga clic **[!UICONTROL Save Config]**.
-
-   Al guardar, si hay algún proyecto SaaS asociado a su clave de API, esos proyectos aparecerán en el _[!UICONTROL SaaS Project]_en el campo_[!UICONTROL SaaS Identifier]_ para obtener más información.
-
-1. Si no existen proyectos SaaS, haga clic en **[!UICONTROL Create Project]**. A continuación, introduzca un nombre para su proyecto SaaS en la **[!UICONTROL Project Name]** campo .
-1. Para utilizar la configuración actual de su tienda de comercio, seleccione la opción **[!UICONTROL SaaS Data Space]**.
+Para obtener información sobre cómo generar una clave de API para entornos de entorno limitado o de producción, consulte [Credenciales](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/saas.html#apikey).
 
 >[!IMPORTANT]
->
->Si vuelve a generar las claves en la sección Portal de API de Mi cuenta, actualice inmediatamente las claves de API en la configuración de Administración. Si genera nuevas claves y no las actualiza en el administrador, sus extensiones SaaS ya no funcionarán y perderá datos valiosos.
-
-Para cambiar los nombres, haga clic en el botón **[!UICONTROL Rename this Project]** o **[!UICONTROL Rename Data Space]** botones respectivamente.
+>Se recomienda no volver a generar un par de claves de API *y* cambie el identificador de SaaS o el espacio de datos en una instancia de producción activa. Perderá datos para su instancia si se modifican.
 
 ## Configurar Commerce Services
 
-El primer paso para la incorporación [!DNL Payment Services] es configurar los servicios de comercio en el Administrador.
+La misma clave de API se puede usar en todas las instancias, pero cada instancia debe tener su propia [Espacio de datos SaaS](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/saas.html#saasenv).
+
+Ahora que ha obtenido sus credenciales, puede configurar su proyecto SaaS y el espacio de datos Saas.
 
 1. En el _Administrador_ barra lateral, vaya a **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]**.
 1. Haga clic **[!UICONTROL Configure Commerce Services]**.
@@ -110,4 +51,4 @@ El primer paso para la incorporación [!DNL Payment Services] es configurar los 
 
    Se le redirige al área de configuración en el Administrador, **[!UICONTROL Stores]** > _[!UICONTROL Settings]_>**[!UICONTROL Configuration]**>**[!UICONTROL Commerce Services Connector]**, para configurar Commerce Services Connector.
 
-1. Para configurar los servicios de comercio, siga los pasos descritos en [Servicios de comercio](https://docs.magento.com/user-guide/system/saas.html#createsaasenv){target=&quot;_blank&quot;}.
+1. Para configurar los servicios de comercio, siga los pasos descritos en [Configuración de SaaS](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/get-started/connect.html#configure-commerce-services).

@@ -2,9 +2,9 @@
 title: Configuración del simulador de pruebas
 description: Usar una cuenta de espacio aislado de PayPal para usar [!DNL Payment Services] en modo de prueba.
 exl-id: 99c14b4e-e6cf-48f9-9546-5c0d5c71464d
-source-git-commit: e8d008d9a38cebde7772b7e3d70d2447631414fe
+source-git-commit: ab4a2f4d432f74cb48dc4b92468305c93088593a
 workflow-type: tm+mt
-source-wordcount: '553'
+source-wordcount: '588'
 ht-degree: 0%
 
 ---
@@ -13,22 +13,20 @@ ht-degree: 0%
 
 Antes de iniciar la incorporación al simulador de pruebas, debe registrarse en una cuenta gratuita de desarrollador de PayPal y crear cuentas de comerciante (para utilizarlas en la incorporación) y de comprador (para probarlas). Si lo desea, puede crear varias cuentas de desarrollador.
 
-Una cuenta de espacio aislado de PayPal permite usar [!DNL Payment Services] en modo de prueba. PayPal requiere que utilice una cuenta de prueba de Business Sandbox generada por PayPal Developer Portal, un correo electrónico y una contraseña para la incorporación a entornos limitados. No cree otra cuenta durante el proceso de incorporación al entorno limitado.
+Una cuenta de espacio aislado de PayPal permite usar [!DNL Payment Services] en modo de prueba. PayPal requiere que utilice una cuenta de prueba de Business Sandbox generada por PayPal Developer Portal, un correo electrónico y una contraseña para la incorporación a entornos limitados. *No cree otra cuenta durante el proceso de incorporación al entorno limitado.*
 
-Si ha creado una cuenta durante el proceso de incorporación de PayPal en el simulador de pruebas, debe restablecer el simulador de pruebas de integración porque, de lo contrario, no puede verificar el correo electrónico.
-
-Para restablecer la cuenta del simulador para pruebas:
-
-1. Haga clic **[!UICONTROL Reset sandbox]**. Consulte la [PayPal crea una cuenta de espacio aislado empresarial](https://developer.paypal.com/docs/api-basics/sandbox/accounts/#create-a-business-sandbox-account) documentación para obtener más información.
-1. Haga clic en **[!UICONTROL Sandbox onboarding]** y complete el siguiente conjunto de pasos.
+## Incorporación de espacio aislado
 
 Para completar la incorporación al entorno limitado:
 
 1. Vaya a la [Página Cuenta de desarrollador de PayPal](https://developer.paypal.com/developer/accounts/).
-1. Haga clic en **[!UICONTROL Log in to Home]** e inicie sesión con sus credenciales existentes en la cuenta de desarrolladores de PayPal o haga clic en **Registrarse** para crear una cuenta.
+1. Haga clic en **[!UICONTROL Log in to Home]** e inicie sesión con su cuenta de prueba de Business Sandbox generada por PayPal Developer Portal o haga clic en **Registrarse** para crear una cuenta.
 1. Cree una cuenta de espacio aislado de PayPal:
    1. Vaya a _[!UICONTROL SANDBOX]_>**[!UICONTROL Accounts]**.
    1. Haga clic **[!UICONTROL Create account]**.
+
+      Si ha creado una cuenta de espacio aislado de PayPal durante el proceso de incorporación de PayPal, debe [restablecer el entorno limitado de integración](#reset-your-sandbox-account) porque o no puede verificar su correo electrónico.
+
    1. Select **[!UICONTROL Business]** como Tipo de cuenta y haga clic en **[!UICONTROL Create]**.
    1. En el _[!UICONTROL Sandbox Accounts]_, haga clic en los tres puntos del_[!UICONTROL Manage accounts]_ para la cuenta de entorno limitado que ha creado.
    1. Haga clic **[!UICONTROL View/edit account]**.
@@ -42,11 +40,11 @@ Para completar la incorporación al entorno limitado:
 
    Esta opción está visible si aún no ha completado la incorporación del entorno limitado para [!DNL Payment Services].
 
-   Un ID de comerciante de simulador de pruebas se genera automáticamente y se rellena en la variable [configuración](settings.md). No cambie ni modifique este ID.
+   Un ID de comerciante de simulador de pruebas se genera automáticamente y se rellena en [configuración](settings.md). No cambie ni modifique este ID.
 
    Se le presenta una ventana de PayPal para conectar una cuenta de PayPal para comenzar a aceptar pagos.
 
-1. Introduzca el correo electrónico de su cuenta comercial y de su país o región y haga clic en **[!UICONTROL Next]**.
+1. Introduzca el correo electrónico de su cuenta comercial de PayPal (no la cuenta de espacio aislado de PayPal) y de su país o región y haga clic en **[!UICONTROL Next]**.
 
    ![PayPal - Conectar cuenta PayPal para pagos](assets/paypal-connectacct.png)
 
@@ -60,6 +58,15 @@ Cuando se aprueba la incorporación de su simulador de pruebas PayPal, debería 
 >[!IMPORTANT]
 >
 >Si revoca el consentimiento a [!DNL Payment Services] para [!DNL Adobe Commerce] y [!DNL Magento Open Source] para procesar sus pagos (en la configuración de su cuenta de PayPal), los pedidos de su tienda no pueden ser procesados por [!DNL Payment Services]. En su página de inicio de Servicios de Pago, aparecerá una alerta sobre el consentimiento revocado. Para rechazar la alerta, haga clic en **[!UICONTROL Do not show again]**.
+
+### Restaurar la cuenta del simulador para pruebas
+
+Si ha creado una cuenta de espacio aislado de PayPal durante el proceso de incorporación de PayPal, debe restablecer el simulador para pruebas de integración porque, de lo contrario, no podrá verificar el correo electrónico.
+
+Para restablecer la cuenta del simulador para pruebas:
+
+1. Haga clic **[!UICONTROL Reset sandbox]**. [Crear una cuenta de espacio aislado empresarial de PayPal](https://developer.paypal.com/docs/api-basics/sandbox/accounts/#create-a-business-sandbox-account).
+1. Haga clic en **[!UICONTROL Sandbox onboarding]** y complete el siguiente conjunto de pasos.
 
 ## Habilitar número de teléfono de contacto
 
