@@ -2,9 +2,9 @@
 title: '"Incorpore el [!DNL Quick Checkout] para la extensión de Adobe Commerce"'
 description: '"Aprenda a usar la variable [!DNL Quick Checkout] podría beneficiar a su instancia de Adobe Commerce y cómo incorporar y configurar correctamente la extensión."'
 exl-id: 8caf746c-e31b-4331-8b0d-ea0f1e545bdd
-source-git-commit: 05d967573f645db1e8473798df279712d6d2dfc9
+source-git-commit: 27e91a640999cf83a0f0d6701e616f7ceecde12d
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '701'
 ht-degree: 0%
 
 ---
@@ -44,7 +44,7 @@ Consulte la [instalar](../quick-checkout/install.md) para obtener información d
 
 ## Crear cuenta con [!DNL Bolt]
 
-Antes de configurar la variable [!DNL Quick Checkout] en el administrador de Adobe Commerce, es necesario crear un [entorno limitado](https://merchant-sandbox.bolt.com/register){target=&quot;_blank&quot;} y [producción](https://merchant.bolt.com/register){target=&quot;_blank&quot;} cuentas comerciales en [!DNL Bolt]. Proporcione todos los detalles necesarios para crear una cuenta en [!DNL Bolt].
+Antes de configurar la variable [!DNL Quick Checkout] en el administrador de Adobe Commerce, es necesario crear un [entorno limitado](https://merchant-sandbox.bolt.com/register?platform=magento2){target=&quot;_blank&quot;} y [producción](https://merchant.bolt.com/register?platform=magento2){target=&quot;_blank&quot;} cuentas comerciales en [!DNL Bolt]. Proporcione todos los detalles necesarios para crear una cuenta en [!DNL Bolt].
 
 Consulte la [probar y validar](../quick-checkout/testing.md) para obtener más información.
 
