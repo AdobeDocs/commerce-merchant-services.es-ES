@@ -2,9 +2,9 @@
 title: Opciones de pago
 description: Configure las opciones de pago para personalizar los métodos disponibles para los clientes de la tienda.
 exl-id: 95e648e6-6cb8-4226-b5ea-e1857212f20a
-source-git-commit: 26735a191eab529bc3e8e7fc3d64295d345888d6
+source-git-commit: c7afa798096e07409fb36a3d08f7e5b2a5ce40db
 workflow-type: tm+mt
-source-wordcount: '931'
+source-wordcount: '948'
 ht-degree: 0%
 
 ---
@@ -58,6 +58,10 @@ La variable [!DNL Venmo] se puede ver en la página del producto, el minicarro, 
 Los clientes pueden utilizar el ID táctil en sus dispositivos para utilizar [[!DNL Apple Pay]](https://www.apple.com/apple-pay/), que utiliza credenciales de pago de tarjeta de crédito y débito almacenadas en su dispositivo iOS o macOS.
 
 La variable [!DNL Apple Pay] se puede ver en la página del producto, el minicarro, el carro de compras y las vistas de cierre de compra.
+
+>[!NOTE]
+>
+> Para utilizar Apple Pay, póngase en contacto con su representante de ventas para habilitarlo para sus tiendas activas.
 
 ### [!DNL Pay Later] botón
 

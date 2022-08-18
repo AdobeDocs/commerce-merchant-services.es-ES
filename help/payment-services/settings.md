@@ -4,9 +4,9 @@ description: Después de la instalación, puede configurar [!DNL Payment Service
 role: Admin, User
 level: Intermediate
 exl-id: 108f2b24-39c1-4c87-8deb-d82ee1c24d55
-source-git-commit: 60d04755b29f107a0543bd71e19ca5b2b6997b4d
+source-git-commit: ecfe1448a0272fe5401090b322f4b69dffd1a8fa
 workflow-type: tm+mt
-source-wordcount: '1032'
+source-wordcount: '1087'
 ht-degree: 0%
 
 ---
@@ -108,6 +108,8 @@ Puede activar y configurar las opciones de pago de los botones inteligentes de P
       >
       > Para usar Apple, pague [debe tener una cuenta de desarrollador de Apple](test-validate.md#test-in-sandbox-environment) (con información falsa de tarjeta de crédito y facturación) para probarla. Cuando esté listo para usar Apple Pay en el simulador de pruebas *o* modo de producción, después de completar cualquier [pruebas y validación](test-validate.md), póngase en contacto con su representante de ventas para habilitarlo para sus tiendas activas.
 
+      Al activar o desactivar la visibilidad de los botones de pago o del mensaje PayPal Pay Later, se muestra una vista previa de esa configuración en la parte inferior de la página Configuración .
+
 1. Para habilitar el modo de depuración, cambie la **[!UICONTROL Debug Mode]** selector.
 1. Haga clic **[!UICONTROL Save]**.
 
@@ -145,6 +147,9 @@ También puede configurar la variable _[!UICONTROL Button style]_opciones de los
 1. Para modificar el **[!UICONTROL Shape]**, seleccione `Pill` o `Rect`.
 1. Para habilitar el selector de altura del botón, active la opción **[!UICONTROL Responsive button height]** selector.
 1. Para modificar el **[!UICONTROL Label]**, seleccione la opción de etiqueta que desee.
+
+   A medida que cambia las opciones de configuración para el diseño, el color, la forma, la altura y la etiqueta, se mostrará una vista previa de esa configuración en la parte inferior de la página Configuración.
+
 1. Haga clic **[!UICONTROL Save]**.
 
    Si intenta salir de esta vista sin guardar los cambios, aparecerá un modal que le pedirá que descarte los cambios, continúe editando o guarde los cambios.
