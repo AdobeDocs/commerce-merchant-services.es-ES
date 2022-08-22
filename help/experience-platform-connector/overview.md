@@ -2,9 +2,9 @@
 title: Información general de guía
 description: El conector de Adobe Experience Platform para Adobe Commerce conecta la instancia de Commerce con otros productos de Adobe Experience Cloud.
 exl-id: a8362e71-e21c-4b1d-8e3f-336e748e1018
-source-git-commit: 7f64e9e4b061e2c0f9813d390adefe11ce98ee87
+source-git-commit: 2fb44e73a76ad4e1433b2abd88be1304e7e10596
 workflow-type: tm+mt
-source-wordcount: '526'
+source-wordcount: '547'
 ht-degree: 0%
 
 ---
@@ -14,6 +14,10 @@ ht-degree: 0%
 La extensión del conector del Experience Platform permite a los comerciantes de Adobe Commerce enviar datos al perímetro de Adobe Experience Platform para que otros productos de Adobe Experience Cloud, como Adobe Analytics y Adobe Target, puedan utilizar esos datos de comercio. Al conectar los datos de comercio con otros productos de Adobe Experience Cloud, puede realizar tareas como analizar el comportamiento de los usuarios en el sitio, realizar pruebas A/B y crear campañas personalizadas.
 
 Los eventos de tienda capturan las interacciones del comprador, como `View Page`, `View Product`, `Add to Cart`, etc. Los datos capturados no incluyen información de identificación personal (PII). Todos los identificadores de usuario, como los ID de cookie y las direcciones IP, se anonimizan estrictamente. [Más información](https://www.adobe.com/privacy/experience-cloud.html). Consulte la lista completa de [eventos de tienda](events.md).
+
+El conector del Experience Platform aparece en el administrador de comercio, en **Sistema** > Servicios > **Conector del Experience Platform**.
+
+![Extensión del conector del Experience Platform Vista de administración](assets/epc-adminui.png)
 
 ## Requisitos previos para utilizar el conector del Experience Platform {#prereqs}
 
