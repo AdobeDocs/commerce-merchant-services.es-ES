@@ -1,14 +1,15 @@
 ---
-title: Información general
-description: '"[!DNL Product Recommendations] son una potente herramienta de marketing que puede utilizar para aumentar las conversiones, aumentar los ingresos y estimular la participación del comprador".'
-source-git-commit: b3ac6ab9c5877b5c722cd08cc50d746595386ba9
+title: Introducción a [!DNL Product Recommendations]
+description: '''[!DNL Product Recommendations] son una potente herramienta de marketing que puede utilizar para aumentar las conversiones, aumentar los ingresos y estimular la participación del comprador.'
+exl-id: 818ac876-58c9-4c68-975e-53da59ed6b52
+source-git-commit: 3f753f6a91c9f2c29def90d323c004a689056e71
 workflow-type: tm+mt
-source-wordcount: '351'
+source-wordcount: '360'
 ht-degree: 0%
 
 ---
 
-# Información general
+# Introducción a [!DNL Product Recommendations]
 
 Las recomendaciones de productos son una potente herramienta de marketing que puede utilizar para aumentar las conversiones, aumentar los ingresos y estimular la participación del comprador. Las recomendaciones de productos de Adobe Commerce cuentan con tecnología de [Adobe Sensei](https://www.adobe.com/sensei.html), que utiliza inteligencia artificial y algoritmos de aprendizaje automático para realizar un análisis profundo de los datos agregados del visitante. Cuando estos datos se combinan con el catálogo de Adobe Commerce, se obtiene una experiencia muy atractiva, relevante y personalizada.
 
@@ -31,3 +32,9 @@ Las recomendaciones de productos le permiten:
 - Elija entre nueve tipos de recomendaciones inteligentes diferentes basados en las siguientes áreas: basado en compradores, basado en artículos, basado en popularidad, basado en tendencias y basado en similitudes
 - Utilice datos de comportamiento para personalizar las recomendaciones en todo el recorrido de tienda del comprador
 - Mida las métricas clave relevantes para cada recomendación para ayudarle a comprender el impacto de las recomendaciones
+
+## [!DNL Product Recommendations] demostración
+
+Vea este vídeo para obtener más información [!DNL Product Recommendations]:
+
+>[!VIDEO](https://video.tv.adobe.com/v/343991?quality=12)
