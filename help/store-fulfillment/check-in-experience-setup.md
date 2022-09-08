@@ -4,26 +4,31 @@ description: Configure las selecciones de modelo y de marca de automóvil dispon
 role: User, Admin
 level: Intermediate
 exl-id: 341b96cd-bb83-4d07-965c-b09fab24dc81
-source-git-commit: 1fb22b4644d41ea5c60aead3fe2c455dfa3382f8
+source-git-commit: 5e7dcc48c65b2f3f75a33c6e556dcef882a80549
 workflow-type: tm+mt
-source-wordcount: '149'
+source-wordcount: '170'
 ht-degree: 0%
 
 ---
 
 # Configuración de la experiencia de registro
 
-El flujo de trabajo de recogida de tiendas para la solución de entrega de tiendas incluye un formulario de pedido de compra que los clientes completan durante la experiencia de compra. Este formulario incluye el color del coche y campos de selección que permiten a los clientes proporcionar detalles de descripción del coche para que los asociados de la tienda puedan encontrar fácilmente al cliente cuando entregan su pedido de recogida en la curva.
+Cuando los clientes llegan a la zona de cierre de compra, utilizan el formulario de orden de compra para registrarse y proporcionar información sobre su ubicación, fabricación de coche y modelo de coche. Esta información se envía a Store Associates a través de la aplicación Store Assist para que puedan enviar rápidamente pedidos de recogida en la zona de interrupción.
 
 ![[!DNL Check-In Experience Car Make] y [!DNL Model] configuración para la captura en el lado de la curva](assets/checkin-system-settings-car-options.png)
 
+>[!NOTE]
+>
+>Puede configurar la interfaz de formulario de orden de recogida desde la [Menú Configuración de la tienda](merchant-store-configuration.md#configure-check-in-experience-interface-options). Por ejemplo, puede especificar qué campos de entrada se van a mostrar y si son obligatorios o opcionales.
+
+
 ## Configurar las selecciones de color y creación de coches
 
-Puede ver y modificar el color del coche y hacer que las selecciones estén disponibles en el orden de recogida desde la configuración de los sistemas de administración de Adobe Commerce:
+Los usuarios administradores pueden administrar las selecciones de modelo y de marca de coche disponibles en el formulario de recogida desde la configuración de sistemas de Adobe Commerce:
 
 - **[!UICONTROL System]> Check In > Coches**
 - **[!UICONTROL System]> Insertar > Colores de coches**
 
 ![[!DNL Check-In Experience system configuration for curbside pickup]](assets/check-in-experience-system-config.png)
 
-La configuración predeterminada incluye opciones para las marcas y colores comunes del automóvil en el mercado estadounidense. [!DNL Commerce] Los usuarios administradores pueden administrar la configuración para agregar o editar las opciones disponibles.
+La configuración predeterminada incluye una extensa lista de colores y fabricaciones comunes de automóviles para el mercado de EE. UU. [!DNL Commerce] Los usuarios administradores pueden administrar la configuración para agregar o editar las opciones disponibles.
