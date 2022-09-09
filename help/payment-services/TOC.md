@@ -3,9 +3,9 @@ user-guide-title: '[!DNL Payment Services] Guía'
 user-guide-description: Esta guía proporciona información detallada sobre cómo instalar y configurar [!DNL Payment Services] para su [!DNL Adobe Commerce] o [!DNL Magento Open Source] tienda.
 breadcrumb-title: '[!DNL Payment Services] Guía'
 index: true
-source-git-commit: 9596815e31402f23b399b223f3221074331c1773
+source-git-commit: 1186b4e52f1d613332a7862c58f482c2591e29a8
 workflow-type: tm+mt
-source-wordcount: '71'
+source-wordcount: '73'
 ht-degree: 4%
 
 ---
@@ -33,6 +33,7 @@ ht-degree: 4%
 - Información financiera {#reporting}
    - [Informe de estado de los pagos de pedidos](order-payment-status.md)
    - [Informe de rutas](payouts.md)
+   - [Datos disponibles](data.md)
 - Administrar pagos {#manage}
    - [Reembolsos](refunds.md)
    - [Vacíos](voids.md)
