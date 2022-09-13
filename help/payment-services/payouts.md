@@ -4,9 +4,9 @@ description: Utilice el informe de pagos para obtener una total transparencia en
 role: User
 level: Intermediate
 exl-id: f3f99474-cd28-4c8f-b0ea-dca8e014b108
-source-git-commit: 4554ea65ded73e9552f307ff51e0e7eff64cd2e9
+source-git-commit: 27d280fb9f49715a455ff55279416f7df4ada56d
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '1322'
 ht-degree: 0%
 
 ---
@@ -15,15 +15,64 @@ ht-degree: 0%
 
 [!DNL Payment Services] para [!DNL Adobe Commerce] y [!DNL Magento Open Source] ofrece informes completos para que pueda obtener una visión clara de los pedidos y pagos de su tienda.
 
-![Vista Informes financieros](assets/reports-view.png)
+![Vista Informes financieros](assets/reports-view-new.png)
 
-El informe de pagos muestra información completa de los pagos de un vistazo, lo que permite una total transparencia en el importe del pago, el volumen procesado y los informes detallados sobre el nivel de transacción para la reconciliación financiera.
+Hay dos vistas de informes de pago disponibles para que pueda ver información detallada sobre todos sus pagos:
+
+* **[Vista de visualización de datos de rutas](#payouts-data-visualization-view)**—Gráfico disponible en la página de inicio de servicios de pago que es una representación visual de importes agregados por día desde la vista de informes de pagos
+* **[Vista de informes de rutas](#payouts-report-view)**: informe disponible en Pagos que muestra información detallada sobre el pago de todas las transacciones
+
+Las vistas Pagos muestran información completa de pago de un vistazo, lo que le permite una total transparencia en el importe del pago, el volumen procesado y los informes detallados sobre el nivel de transacción para la reconciliación financiera.
 
 >[!NOTE]
 >
->Los informes de pagos solo muestran los pedidos que se han capturado; la acción de pago se ha establecido en [`Authorize and Capture`](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/get-started/production.html#set-payment-services-as-payment-method)), o [marcado como `Invoiced`](https://docs.magento.com/user-guide/sales/invoice-create.html).
+>Los informes de pagos solo muestran los pedidos que se capturan (la acción de pago se establece en [`Authorize and Capture`](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/get-started/production.html#set-payment-services-as-payment-method)), o [marcado como `Invoiced`](https://docs.magento.com/user-guide/sales/invoice-create.html).
 
-No es necesario abrir varias vistas para hacer referencias cruzadas de pedidos y pagos o reconciliar cuentas. [!DNL Payment Services] para [!DNL Adobe Commerce] y [!DNL Magento Open Source] permite realizar todas estas acciones desde un solo lugar (informe de pagos) para poder ver y administrar sus pagos de forma eficaz.
+## Vista de visualización de datos de rutas
+
+La vista Visualización de datos de pagos está disponible en la página principal de servicios de pago. Es una representación visual de las cantidades agregadas por día a partir de la tabla detallada. [Vista de informes de rutas](#payouts-report-view).
+
+En el _Administrador_ barra lateral, vaya a **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** para ver el gráfico de visualización de datos de créditos frente a débitos y los promedios móviles a lo largo del tiempo.
+
+![Visualización de datos de pago en el administrador](assets/payouts-data.png)
+
+Haga clic en **[!UICONTROL View Report]** para desplazarse a la tabla detallada [Vista de informes de rutas](#payouts-report-view).
+
+### Personalización del intervalo de tiempo de las transacciones
+
+De forma predeterminada, se muestran 30 días de transacciones.
+
+Desde la vista Visualización de datos de pago , puede personalizar el intervalo de tiempo para las transacciones de pago que desee ver seleccionando un intervalo de fechas:
+
+1. En el _Administrador_ barra lateral, vaya a **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**. La vista Visualización de datos de rutas se puede ver en la sección Pagarés .
+1. Haga clic en el **[!UICONTROL Range]** filtro de selector.
+1. Elija el intervalo de fechas aplicable: 30 días, 15 días o 7 días.
+1. Ver la información de transacciones de las fechas especificadas.
+
+### Información de transacciones
+
+Las cantidades de transacción para un intervalo de fechas seleccionado se muestran a la izquierda de la vista Visualización de datos de pagos . Las fechas del intervalo de fechas seleccionado se muestran en la parte inferior de la vista. Si no hubo pagos en una fecha en particular, esa fecha no aparecerá.
+
+La vista Visualización de datos de rutas incluye la siguiente información.
+
+| Datos | Descripción |
+| ------------ | -------------------- |
+| [!UICONTROL Transaction amount] | Rango de cantidades para las transacciones en un plazo determinado; datos en el eje Y (izquierda) |
+| Intervalo de fechas | Intervalo de fechas para el lapso de tiempo especificado; datos en el eje X (inferior) |
+| Crédito | Pagos en el plazo especificado |
+| Depósito | Deudas (reembolsos) correspondientes al plazo especificado |
+| Media móvil | Representación del pago promedio para cada fecha en el lapso de tiempo especificado |
+| Neto para rango | Cantidad neta de pago para el lapso de tiempo especificado (intervalo) |
+
+## Vista de informes de rutas
+
+La vista de informe de pagos está disponible en la vista de pagos de los servicios de pago. Incluye toda la información disponible sobre los pagos de sus tiendas. La variable [Vista de visualización de datos de rutas](#payouts-data-visualization-view) en la página de inicio de servicios de pago es una representación visual de los importes agregados por día en esta vista de informe más detallada.
+
+En el _Administrador_ barra lateral, vaya a **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > **[!UICONTROL Payouts]** para ver la vista detallada del informe de pagos tabulares.
+
+![Transacciones de pago en el administrador](assets/payouts-report-new.png)
+
+Puede configurar esta vista, según las secciones de este tema, para presentar mejor los datos que desee ver.
 
 Consulte ID de transacción y pedidos de comercio vinculados, importes de transacción, método de pago por transacción y mucho más, todo dentro del informe Pagos en el Administrador.
 
@@ -33,15 +82,9 @@ Puede descargar transacciones de pago en formato de archivo .csv para utilizarlo
 >
 >Los datos mostrados en esta tabla se ordenan en orden descendente (`DESC`) de forma predeterminada, con la variable `TRANS DATE`. La variable `TRANS DATE` es la fecha y hora en que se inició la transacción.
 
-## Disponibilidad
+### Seleccionar fuente de datos
 
-En el _Administrador_ barra lateral, vaya a **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > **[!UICONTROL Payouts]**.
-
-![Transacciones de pago en el administrador](assets/payouts-report.png)
-
-## Seleccionar fuente de datos
-
-En la vista de informe de pagos, puede seleccionar la fuente de datos:_[!UICONTROL Live]_o [!UICONTROL Sandbox]_: para el cual desea ver los resultados del informe.
+En la vista de informe de pagos, puede seleccionar la fuente de datos:_[!UICONTROL Live]_o_[!UICONTROL Sandbox]_: para el cual desea ver los resultados del informe.
 
 ![Selección de fuentes de datos](assets/datasource.png)
 
@@ -56,38 +99,38 @@ Las selecciones de fuentes de datos funcionan de la siguiente manera:
 Para seleccionar la fuente de datos para el informe Estado de pago de pedido:
 
 1. En el _Administrador_ barra lateral, vaya a **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > **[!UICONTROL Payouts]**.
-1. Haga clic en **[!UICONTROL Data source]** y seleccione _[!UICONTROL Live]_o [!UICONTROL Sandbox]_.
+1. Haga clic en **[!UICONTROL Data source]** y seleccione _[!UICONTROL Live]_o_[!UICONTROL Sandbox]_.
 
    Los resultados del informe se regeneran según la fuente de datos seleccionada.
 
-## Ver transacciones
+### Ver transacciones
 
-De forma predeterminada, en la cuadrícula se muestran 30 días de transacciones.
+De forma predeterminada, se muestran 30 días de transacciones.
 
 El número de filas devueltas en una búsqueda, o mostradas en los 30 días de transacciones predeterminados, se muestra encima de la cuadrícula de vista Pagos junto al filtro Selector de calendario Fechas de transacción .
 
 Desplácese a la izquierda y a la derecha para ver [información para cada transacción de pago](#column-descriptions) en el informe diario, incluidos la fecha de transacción, el ID de referencia, el número de factura y los detalles de método de pago.
 
-### Personalización del intervalo de tiempo de las transacciones
+#### Personalización del intervalo de tiempo de las transacciones
 
-Desde la vista Pagos, puede personalizar el intervalo de tiempo para las transacciones de pago que desee ver introduciendo fechas específicas o seleccionando un intervalo de fechas del selector de fechas:
+Desde la vista Informe de pagos, puede personalizar el intervalo de tiempo para las transacciones de pago que desee ver introduciendo fechas específicas o seleccionando un intervalo de fechas del selector de fechas:
 
 1. En el _Administrador_ barra lateral, vaya a **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > **[!UICONTROL Payouts]**.
 1. Haga clic en el filtro Selector de calendario de fechas de transacción .
 1. Elija el intervalo de fechas aplicable.
 1. Vea los estados de las ganancias en la cuadrícula para las fechas especificadas.
 
-## Mostrar y ocultar columnas
+### Mostrar y ocultar columnas
 
-El informe de pagos muestra las columnas de información más disponibles de forma predeterminada. Sin embargo, puede personalizar qué columnas ve en el informe.
+La vista de informe de pagos muestra la mayoría de las columnas de información disponibles de forma predeterminada. Sin embargo, puede personalizar qué columnas ve en el informe.
 
 1. En el _Administrador_ barra lateral, vaya a **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > **[!UICONTROL Payouts]**.
 1. Haga clic en el _Configuración de columna_ icono (![icono de configuración de columna](assets/column-settings.png)).
 1. Para personalizar qué columnas ve en el informe, marque o desmarque las columnas de la lista.
 
-   El informe de pagos mostrará inmediatamente los cambios realizados en el menú de configuración de columna. Las preferencias de columna se guardarán y permanecerán en vigor si se sale de la vista del informe.
+   La vista de informe de pagos mostrará inmediatamente los cambios realizados en el menú de configuración de columna. Las preferencias de columna se guardarán y permanecerán en vigor si se sale de la vista del informe.
 
-## Descargar transacciones
+### Descargar transacciones
 
 Puede descargar un archivo .csv que contenga todas las transacciones visibles en la cuadrícula de vista de pagos.
 
@@ -96,10 +139,6 @@ Puede descargar un archivo .csv que contenga todas las transacciones visibles en
 1. Haga clic en el _Descargar_ (![](assets/icon-download.png)).
 
 Las transacciones de pago se descargan en formato .csv .
-
-## Información de transacciones
-
-La vista Pagos muestra información exhaustiva sobre cada transacción mostrada en la cuadrícula.
 
 ### Descripciones de columnas
 
@@ -115,8 +154,8 @@ Los informes de pago incluyen la siguiente información.
 | [!UICONTROL Code] | Código de transacción que indica Crédito (*CR*) o débito (*DR*) |
 | [!UICONTROL Reference ID] | ID de transacción original para el que este evento está relacionado |
 | [!UICONTROL Invoice] | ID de factura (uno por pedido) de la transacción |
-| [!UICONTROL Commerce order] | ID de pedido de comercio <br> <br>Para ver [información del pedido](https://docs.magento.com/user-guide/sales/orders.html){target=&quot;_blank&quot;}, haga clic en el ID. |
-| [!UICONTROL Commerce trans] | ID de transacción de comercio <br> <br>Para ver [información de transacción](https://docs.magento.com/user-guide/sales/transactions.html){target=&quot;_blank&quot;}, haga clic en el ID. |
+| [!UICONTROL Commerce order] | ID de pedido de comercio <br> <br>Para ver [información del pedido](https://docs.magento.com/user-guide/sales/orders.html), haga clic en el ID. |
+| [!UICONTROL Commerce trans] | ID de transacción de comercio |
 | [!UICONTROL Pay method] | Tipo de tarjeta de crédito—*[!UICONTROL BANK]*, *[!UICONTROL PAYPAL]*, *[!UICONTROL CREDIT_CARD]*—y el proveedor de tarjetas asociado (por ejemplo, *Visa* o *MasterCard*) |
 | [!UICONTROL Trans amt] | Importe de la transacción |
 | [!UICONTROL Cur] | Unidad de divisa para el importe de transacción |
