@@ -1,15 +1,15 @@
 ---
-title: '"Almacenar flujos de trabajo de cumplimiento de asistencia"'
-description: '"Obtenga información sobre los módulos Pick, Stage, Hand-Off y Orders disponibles en la aplicación de asistencia de tienda. Estos módulos habilitan el flujo de trabajo completo de cumplimiento de la tienda para los pedidos de BOPIS. Store Associates utiliza estos módulos para administrar y entregar pedidos de recogida de tiendas a los clientes".'
+title: Flujos de trabajo de cumplimiento de Store Assist
+description: Obtenga información sobre los módulos Pick, Stage, Hand-Off y Orders disponibles en la aplicación de asistencia de tienda. Estos módulos habilitan el flujo de trabajo completo de cumplimiento de la tienda para los pedidos de BOPIS. Store Associates utiliza estos módulos para administrar y entregar pedidos de recogida de tiendas a los clientes.
 role: User
 level: Intermediate
-source-git-commit: 42b0118b427b1e04186793b4a57c058bc1cabdd4
+exl-id: a8414f19-5489-41e9-84d6-39d2e61c2b08
+source-git-commit: fda4620f57aa7aa9fb930b10f5717fee98983378
 workflow-type: tm+mt
-source-wordcount: '791'
+source-wordcount: '806'
 ht-degree: 0%
 
 ---
-
 
 # Flujos de trabajo de cumplimiento de Store Assist
 
@@ -58,10 +58,12 @@ Una vez que seleccione en un pedido que esté listo para la entrega del cliente.
 
 Es posible que el cliente haya elegido una persona alternativa para recoger el pedido. En este caso, verá el nombre y la información de contacto de la persona que se supone que debe elegir el pedido.
 
-Al entregar el pedido al cliente, el Asociado de Tiendas debe aceptar el pedido o rechazar ciertos artículos. Una vez que el cliente esté satisfecho, debe firmar el pedido en el dispositivo de su asociado si una firma de su empresa requiere una firma.
+Al entregar el pedido al cliente, el Asociado de Tiendas debe aceptar el pedido o rechazar ciertos artículos. Una vez que el cliente esté satisfecho, debe firmar el pedido en el dispositivo de su asociado, si una firma de su empresa requiere una firma.
 
 Si los clientes llegan sin registrarse, sus asociados pueden comprobarlo manualmente.
 
 ## Módulo Pedidos
 
 El módulo Pedidos muestra todos los pedidos existentes y su estado. Cuando un cliente llama para comprobar su pedido, Store Associates puede encontrar la información rápidamente buscando el número o buscando en el módulo Pedidos.
+
+Store Associates también puede cancelar pedidos desde la página Pedidos de la aplicación Store Assist.

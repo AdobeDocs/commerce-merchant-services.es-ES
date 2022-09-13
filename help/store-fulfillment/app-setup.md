@@ -4,9 +4,9 @@ description: Configure el [!DNL Store Assist] aplicación para administrar los f
 role: User, Admin
 level: Intermediate
 exl-id: bcb5b02b-0141-407a-ad55-6e10e8e1aa90
-source-git-commit: 1fb22b4644d41ea5c60aead3fe2c455dfa3382f8
+source-git-commit: fda4620f57aa7aa9fb930b10f5717fee98983378
 workflow-type: tm+mt
-source-wordcount: '604'
+source-wordcount: '635'
 ht-degree: 0%
 
 ---
@@ -44,7 +44,7 @@ La aplicación de ayuda de la tienda requiere dos tipos de configuración:
 
    - **Cancelación de la tienda**: especifique si se pueden cancelar pedidos de la tienda y qué funciones tienen permisos de cancelación
 
-   - **Ventana de limpieza de pedidos**: especifique cuánto tiempo ha pasado el tiempo de recogida programado que un pedido seleccionado permanece en el ensayo antes de ser rebloqueado, por ejemplo, tres días.
+   - **Ventana de limpieza de pedidos**: especifique cuánto tiempo ha pasado el [Tiempo de espera estimado](enable-general.md#delivery-method-title-configuration) que un pedido seleccionado permanece en el ensayo antes de ser rebloqueado (por ejemplo, tres días). El valor predeterminado es de 7 días. Si esta configuración está activada, el pedido se cancela automáticamente cuando esta hora caduca. Los artículos se rebloquean y el comerciante recibe un correo electrónico de cancelación.
 
    - Personalice todo en las instrucciones de la aplicación (selección, ensayo, desactivación).
 
