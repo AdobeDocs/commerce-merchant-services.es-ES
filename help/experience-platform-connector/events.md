@@ -1,10 +1,10 @@
 ---
 title: Eventos
-description: Descubra qué eventos capturan datos y vea la definición completa del esquema.
+description: Descubra qué datos captura cada evento y vea la definición completa del esquema.
 exl-id: b0c88af3-29c1-4661-9901-3c6d134c2386
-source-git-commit: 2b735c292920bb0e9052d86bf152748e7ce96079
+source-git-commit: 589d22f488572411b6632ac37d7bc5b752f72e2d
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '1818'
 ht-degree: 0%
 
 ---
@@ -13,23 +13,333 @@ ht-degree: 0%
 
 A continuación se enumeran los eventos de comercio disponibles al instalar la extensión del conector del Experience Platform. Los datos que recopilan estos eventos se envían al perímetro de Adobe Experience Platform. También puede crear [eventos personalizados](custom-events.md) para recopilar datos adicionales no proporcionados de forma predeterminada.
 
-Haga clic en el nombre del evento para ver la definición completa del esquema.
-
-| Evento | Tipo |
-|---|---|
-| [Agregar al carro](https://github.com/adobe/magento-storefront-event-collector/blob/main/src/handlers/product/addToCartAEP.ts) | Tienda |
-| [Ver carro de compras](https://github.com/adobe/magento-storefront-event-collector/blob/main/src/handlers/shoppingCart/viewAEP.ts) | Tienda |
-| [Ver página](https://github.com/adobe/magento-storefront-event-collector/blob/main/src/handlers/page/viewAEP.ts) | Tienda |
-| [Ver producto](https://github.com/adobe/magento-storefront-event-collector/blob/main/src/handlers/product/viewAEP.ts) | Tienda |
-| [Iniciar cierre de compra](https://github.com/adobe/magento-storefront-event-collector/blob/main/src/handlers/shoppingCart/initiateCheckoutAEP.ts) | Tienda |
-| [Completar cierre de compra](https://github.com/adobe/magento-storefront-event-collector/blob/main/src/handlers/checkout/placeOrderAEP.ts) | Tienda |
-| [Iniciar sesión](https://github.com/adobe/magento-storefront-event-collector/blob/main/src/handlers/account/signInAEP.ts) | Perfil |
-| [Cerrar sesión](https://github.com/adobe/magento-storefront-event-collector/blob/main/src/handlers/account/signOutAEP.ts) | Perfil |
-| [Crear cuenta](https://github.com/adobe/magento-storefront-event-collector/blob/main/src/handlers/account/createAccountAEP.ts) | Perfil |
-| [Editar cuenta](https://github.com/adobe/magento-storefront-event-collector/blob/main/src/handlers/account/editAccountAEP.ts) | Perfil |
-| [Solicitud de búsqueda enviada](https://github.com/adobe/magento-storefront-event-collector/blob/main/src/handlers/search/searchRequestSentAEP.ts) | Buscar |
-| [Respuesta de búsqueda recibida](https://github.com/adobe/magento-storefront-event-collector/blob/main/src/handlers/search/searchResponseReceivedAEP.ts) | Buscar |
+Además de los datos que recopilan los eventos siguientes, también obtiene [datos adicionales](https://experienceleague.adobe.com/docs/experience-platform/edge/data-collection/automatic-information.html) proporcionado por el SDK web de Adobe Experience Platform.
 
 >[!NOTE]
 >
-> La variable `Sign In`, `Sign Out`, `Create Account`y `Update Account` se activan cuando se intenta realizar la acción específica. No indica que la acción se haya realizado correctamente.
+>Todos los eventos incluyen la variable `personID` , que es un identificador único de la persona.
+
+## addToCart
+
+Se activa cuando se agrega un producto al carro de compras o cuando se incrementa la cantidad de un producto en el carro de compras. [Esquema completo](https://github.com/adobe/magento-storefront-event-collector/blob/main/src/handlers/product/addToCartAEP.ts).
+
+### Tipo
+
+Tienda
+
+### Datos recopilados
+
+En la tabla siguiente se describen los datos recopilados para este evento.
+
+| Campo | Descripción |
+|---|---|
+| `productListAdds` | Indica si un producto se agregó a un carro de compras. Un valor de `1` indica que se agregó un producto. |
+| `SKU` | Unidad de mantenimiento de existencias. Identificador único del producto. |
+| `name` | El nombre para mostrar o el nombre legible en lenguaje natural del producto |
+| `priceTotal` | El total de este pedido después de aplicar todos los descuentos e impuestos |
+| `quantity` | Número de unidades que el cliente ha indicado que requiere del producto |
+| `discountAmount` | Indica la cantidad de descuento aplicada |
+| `currencyCode` | La variable [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) moneda para el producto |
+| `productImageUrl` | URL de la imagen principal del producto |
+| `selectedOptions` | Campo utilizado para un producto configurable. `attribute` identifica un atributo del producto configurable, como `size` o `color` y `value` identifica el valor del atributo como `small` o `black`. |
+| `cartID` | ID exclusivo que identifica el carro de compras del cliente |
+
+## shoppingCartView
+
+Se activa cuando se carga cualquier página del carro de compras. [Esquema completo](https://github.com/adobe/magento-storefront-event-collector/blob/main/src/handlers/shoppingCart/viewAEP.ts).
+
+### Tipo
+
+Tienda
+
+### Datos recopilados
+
+En la tabla siguiente se describen los datos recopilados para este evento.
+
+| Campo | Descripción |
+|---|---|
+| `productListViews` | Indica si se ha visto una lista de productos |
+| `productListItems` | Una matriz de productos agregados a un carro de compras |
+| `SKU` | Unidad de mantenimiento de existencias. Identificador único del producto. |
+| `name` | El nombre para mostrar o el nombre legible en lenguaje natural del producto |
+| `priceTotal` | El total de este pedido después de aplicar todos los descuentos e impuestos |
+| `quantity` | Número de unidades que el cliente ha indicado que requiere del producto |
+| `discountAmount` | Indica la cantidad de descuento aplicada |
+| `currencyCode` | La variable [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) moneda para el producto |
+| `productImageUrl` | URL de la imagen principal del producto |
+| `selectedOptions` | Campo utilizado para un producto configurable. `attribute` identifica un atributo del producto configurable, como `size` o `color` y `value` identifica el valor del atributo como `small` o `black`. |
+| `cartID` | ID exclusivo que identifica el carro de compras del cliente |
+
+## pageView
+
+Se activa cuando se carga cualquier página. [Esquema completo](https://github.com/adobe/magento-storefront-event-collector/blob/main/src/handlers/page/viewAEP.ts).
+
+### Tipo
+
+Tienda
+
+### Datos recopilados
+
+En la tabla siguiente se describen los datos recopilados para este evento.
+
+| Campo | Descripción |
+|---|---|
+| `pageViews` | Indica si se cargó una página. A `value` de `1` indica que la página se ha cargado. |
+
+## productPageView
+
+Se activa cuando se carga cualquier página de producto. [Esquema completo](https://github.com/adobe/magento-storefront-event-collector/blob/main/src/handlers/product/viewAEP.ts).
+
+### Tipo
+
+Tienda
+
+### Datos recopilados
+
+En la tabla siguiente se describen los datos recopilados para este evento.
+
+| Campo | Descripción |
+|---|---|
+| `productViews` | Indica si se vio el producto |
+| `productListItems` | Una matriz de productos agregados a un carro de compras |
+| `SKU` | Unidad de mantenimiento de existencias. Identificador único del producto. |
+| `name` | El nombre para mostrar o el nombre legible en lenguaje natural del producto |
+| `priceTotal` | El total de este pedido después de aplicar todos los descuentos e impuestos |
+| `discountAmount` | Indica la cantidad de descuento aplicada |
+| `currencyCode` | La variable [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) moneda para el producto |
+| `productImageUrl` | URL de la imagen principal del producto |
+| `selectedOptions` | Campo utilizado para un producto configurable. `attribute` identifica un atributo del producto configurable, como `size` o `color` y `value` identifica el valor del atributo como `small` o `black`. |
+
+## startCheckout
+
+Se activa cuando el comprador hace clic en un botón de cierre de compra. [Esquema completo](https://github.com/adobe/magento-storefront-event-collector/blob/main/src/handlers/shoppingCart/initiateCheckoutAEP.ts).
+
+### Tipo
+
+Tienda
+
+### Datos recopilados
+
+En la tabla siguiente se describen los datos recopilados para este evento.
+
+| Campo | Descripción |
+|---|---|
+| `checkouts` | Indica si se produjo una acción durante el proceso de cierre de compra |
+| `productListItems` | Una matriz de productos agregados a un carro de compras |
+| `SKU` | Unidad de mantenimiento de existencias. Identificador único del producto. |
+| `name` | El nombre para mostrar o el nombre legible en lenguaje natural del producto |
+| `priceTotal` | El total de este pedido después de aplicar todos los descuentos e impuestos |
+| `quantity` | Número de unidades que el cliente ha indicado que requiere del producto |
+| `discountAmount` | Indica la cantidad de descuento aplicada |
+| `currencyCode` | La variable [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) moneda para el producto |
+| `productImageUrl` | URL de la imagen principal del producto |
+| `selectedOptions` | Campo utilizado para un producto configurable. `attribute` identifica un atributo del producto configurable, como `size` o `color` y `value` identifica el valor del atributo como `small` o `black`. |
+| `cartID` | ID exclusivo que identifica el carro de compras del cliente |
+
+## completeCheckout
+
+Se activa cuando el comprador realiza un pedido. [Esquema completo](https://github.com/adobe/magento-storefront-event-collector/blob/main/src/handlers/checkout/placeOrderAEP.ts).
+
+### Tipo
+
+Tienda
+
+### Datos recopilados
+
+En la tabla siguiente se describen los datos recopilados para este evento.
+
+| Campo | Descripción |
+|---|---|
+| `purchases` | Indica si se ha aceptado un pedido |
+| `order` | Contiene información sobre el pedido realizado para uno o más productos |
+| `purchaseID` | Identificador único asignado por el vendedor para esta compra o contrato. No hay garantía de que el ID sea único. |
+| `orderType` | Indica el tipo de pedido que se realizó, como Cierre de compra o Compra instantánea |
+| `payments` | La lista de pagos para este pedido |
+| `currencyCode` | La variable [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) código de divisa usado para esta partida de pago. Por ejemplo, `USD` o `EUR`. |
+| `paymentAmount` | El valor del pago |
+| `paymentType` | Método de pago para esta orden. Las opciones son: `cash`, `credit_card`, `debit_card`, `gift_card`, `check`, `paypal`, `wire_transfer`, `credit_card_reference`, `other` |
+| `transactionID` | Identificador de transacción único para esta partida de pago |
+| `shipping` | Detalles de envío de uno o más productos. |
+| `shippingMethod` | El método de envío elegido por el cliente, como envío estándar, envío rápido, recogida en la tienda, etc. |
+| `shippingAmount` | El coste total de envío de los artículos del carro de compras |
+| `promotionID` | Identificador único de la promoción, si lo hay |
+| `productListItems` | Una matriz de productos agregados a un carro de compras |
+| `SKU` | Unidad de mantenimiento de existencias. Identificador único del producto. |
+| `name` | El nombre para mostrar o el nombre legible en lenguaje natural del producto |
+| `priceTotal` | El total de este pedido después de aplicar todos los descuentos e impuestos |
+| `quantity` | Número de unidades que el cliente ha indicado que requiere del producto |
+| `discountAmount` | Indica la cantidad de descuento aplicada |
+| `currencyCode` | La variable [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) código de moneda utilizado para los totales de pedidos. |
+| `productImageUrl` | URL de la imagen principal del producto |
+| `selectedOptions` | Campo utilizado para un producto configurable. `attribute` identifica un atributo del producto configurable, como `size` o `color` y `value` identifica el valor del atributo como `small` o `black`. |
+
+## signIn
+
+Se activa cuando un comprador intenta iniciar sesión. [Esquema completo](https://github.com/adobe/magento-storefront-event-collector/blob/main/src/handlers/account/signInAEP.ts).
+
+>[!NOTE]
+>
+> Este evento se activa cuando se intenta realizar la acción específica. No indica que la acción se haya realizado correctamente.
+
+### Tipo
+
+Perfil
+
+### Datos recopilados
+
+En la tabla siguiente se describen los datos recopilados para este evento.
+
+| Campo | Descripción |
+|---|---|
+| `eventType` | El tipo de evento principal para este registro de serie temporal, como: `userAccount.login` |
+| `person` | Un actor, contacto o propietario individual |
+| `accountID` | Captura el ID de cuenta de usuario |
+| `personalEmailID` | Especifica el identificador único del correo electrónico personal |
+| `address` | La dirección técnica, por ejemplo, `name@domain.com` tal como se define comúnmente en RFC2822 y en las normas posteriores |
+| `userAccount` | Indica los detalles de lealtad, las preferencias, los procesos de inicio de sesión y otras preferencias de cuenta |
+| `login` | Indica si un visitante ha intentado iniciar sesión |
+
+## signOut
+
+Se activa cuando un comprador intenta cerrar sesión. [Esquema completo](https://github.com/adobe/magento-storefront-event-collector/blob/main/src/handlers/account/signOutAEP.ts).
+
+>[!NOTE]
+>
+> Este evento se activa cuando se intenta realizar la acción específica. No indica que la acción se haya realizado correctamente.
+
+### Tipo
+
+Perfil
+
+### Datos recopilados
+
+En la tabla siguiente se describen los datos recopilados para este evento.
+
+| Campo | Descripción |
+|---|---|
+| `eventType` | El tipo de evento principal para este registro de serie temporal, como: `userAccount.logout` |
+| `userAccount` | Indica los detalles de lealtad, las preferencias, los procesos de inicio de sesión y otras preferencias de cuenta |
+| `logout` | Indica si un visitante ha intentado cerrar la sesión |
+
+## createAccount
+
+Se activa cuando un comprador intenta crear una cuenta. [Esquema completo](https://github.com/adobe/magento-storefront-event-collector/blob/main/src/handlers/account/createAccountAEP.ts).
+
+>[!NOTE]
+>
+> Este evento se activa cuando se intenta realizar la acción específica. No indica que la acción se haya realizado correctamente.
+
+### Tipo
+
+Perfil
+
+### Datos recopilados
+
+En la tabla siguiente se describen los datos recopilados para este evento.
+
+| Campo | Descripción |
+|---|---|
+| `eventType` | El tipo de evento principal para este registro de serie temporal, como: `account.createProfile` |
+| `person` | Un actor, contacto o propietario individual |
+| `accountID` | Captura el ID de cuenta de usuario |
+| `accountType` | Captura el tipo de cuenta de usuario, como `Personal` o `Company`, si procede |
+| `personalEmailID` | Especifica el identificador único del correo electrónico personal |
+| `address` | La dirección técnica, por ejemplo, `name@domain.com` tal como se define comúnmente en RFC2822 y en las normas posteriores |
+| `userAccount` | Indica los detalles de lealtad, las preferencias, los procesos de inicio de sesión y otras preferencias de cuenta |
+| `createProfile` | Indica si un usuario ha creado un perfil de cuenta |
+
+## editAccount
+
+Se activa cuando un comprador intenta editar una cuenta. [Esquema completo](https://github.com/adobe/magento-storefront-event-collector/blob/main/src/handlers/account/editAccountAEP.ts).
+
+>[!NOTE]
+>
+> Este evento se activa cuando se intenta realizar la acción específica. No indica que la acción se haya realizado correctamente.
+
+### Tipo
+
+Perfil
+
+### Datos recopilados
+
+En la tabla siguiente se describen los datos recopilados para este evento.
+
+| Campo | Descripción |
+|---|---|
+| `eventType` | El tipo de evento principal para este registro de serie temporal, como: `account.updateProfile` |
+| `person` | Un actor, contacto o propietario individual |
+| `accountID` | Captura el ID de cuenta de usuario |
+| `accountType` | Captura el tipo de cuenta de usuario, como `Personal` o `Company`, si procede |
+| `personalEmailID` | Especifica el identificador único del correo electrónico personal |
+| `personalEmail` | Especifica la dirección de correo electrónico personal |
+| `address` | La dirección técnica, por ejemplo, `name@domain.com` tal como se define comúnmente en RFC2822 y en las normas posteriores |
+| `userAccount` | Indica los detalles de lealtad, las preferencias, los procesos de inicio de sesión y otras preferencias de cuenta |
+| `updateProfile` | Indica si un usuario ha actualizado su perfil de cuenta |
+
+## searchRequestSent
+
+Se activa mediante los siguientes eventos en la ventana emergente &quot;buscar mientras escribe&quot;:
+
+- Pulse Intro
+- Haga clic en _Ver todo_
+
+Se activa mediante los siguientes eventos en las páginas de resultados de búsqueda:
+
+- Seleccionar un filtro
+- Cambiar el orden (_Ordenar por_)
+- Cambiar la dirección de clasificación (ascendente o descendente)
+- Cambiar el número de resultados por página (_Mostrar # por página_)
+- Vaya a la página siguiente
+- Vaya a la página anterior
+- Navegar a otra página
+
+[Esquema completo](https://github.com/adobe/magento-storefront-event-collector/blob/main/src/handlers/search/searchRequestSentAEP.ts).
+
+>[!NOTE]
+>
+>Los eventos de búsqueda no son compatibles con Adobe Commerce Enterprise Edition con el módulo B2B instalado.
+
+### Tipo
+
+Buscar
+
+### Datos recopilados
+
+En la tabla siguiente se describen los datos recopilados para este evento.
+
+| Campo | Descripción |
+|---|---|
+| `searchRequest` | Indica si se ha enviado una solicitud de búsqueda |
+| `filter` | Indica si se aplicaron filtros para limitar los resultados de búsqueda |
+| `attribute` (filtro) | La faceta de un elemento que se usa para determinar si se incluye en los resultados de búsqueda |
+| `value` | Valores de atributo utilizados para determinar qué elementos se incluyen en los resultados de búsqueda |
+| `isRange` | Cuando es verdadero, los valores indican los extremos de un rango aceptable de valores |
+| `sort` | Indica cómo se deben ordenar los resultados de la búsqueda |
+| `attribute` (ordenar) | Un atributo utilizado para ordenar elementos en los resultados de búsqueda |
+| `order` | El orden en el que se devuelven los resultados de la búsqueda |
+| `query` | Términos buscados |
+
+## searchResponseReceived
+
+Se activa cuando la búsqueda activa devuelve resultados para la página de resultados de búsqueda o de pov &quot;search as you type&quot;.
+
+[Esquema completo](https://github.com/adobe/magento-storefront-event-collector/blob/main/src/handlers/search/searchResponseReceivedAEP.ts)
+
+>[!NOTE]
+>
+>Los eventos de búsqueda no son compatibles con Adobe Commerce Enterprise Edition con el módulo B2B instalado.
+
+### Tipo
+
+Buscar
+
+### Datos recopilados
+
+En la tabla siguiente se describen los datos recopilados para este evento.
+
+| Campo | Descripción |
+|---|---|
+| `searchResponse` | Indica si se ha recibido una respuesta de búsqueda |
+| `suggestions` | Matriz de cadenas que incluyen los nombres de productos y categorías que existen en el catálogo y que son similares a la consulta de búsqueda |
+| `numberOfResults` | El número de productos devueltos |
+| `productListItems` | Una matriz de productos agregados a un carro de compras. Incluye el `SKU`(Unidad de mantenimiento de existencias) y `name` del producto (nombre para mostrar o nombre legible en lenguaje natural). |

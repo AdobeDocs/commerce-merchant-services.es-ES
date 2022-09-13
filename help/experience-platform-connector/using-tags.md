@@ -2,9 +2,9 @@
 title: Recopilación de datos de comercio mediante etiquetas de Adobe Experience Platform
 description: Obtenga información sobre cómo recopilar datos de comercio mediante etiquetas de Adobe Experience Platform.
 exl-id: 852fc7d2-5a5f-4b09-8949-e9607a928b44
-source-git-commit: 4af50842c883d3aef7bf50d6a68b82321b784591
+source-git-commit: c7344efead97b0562a146f096123dd84f998fd5e
 workflow-type: tm+mt
-source-wordcount: '2276'
+source-wordcount: '2504'
 ht-degree: 0%
 
 ---
@@ -111,7 +111,7 @@ Por ejemplo, vamos a agregar el Adobe Commerce `signOut` a las etiquetas de Adob
 
 Repita los pasos anteriores en etiquetas para cada uno de los eventos de Adobe Commerce que se describen a continuación.
 
-### Eventos disponibles
+## Eventos disponibles
 
 Para cada uno de los eventos siguientes, asigne los eventos de Adobe Commerce a su XDM siguiendo los pasos anteriores.
 
@@ -130,6 +130,8 @@ Para cada uno de los eventos siguientes, asigne los eventos de Adobe Commerce a 
 - [`placeOrder`](#placeorder)
 
 ### signOut {#signout}
+
+Se activa cuando un comprador intenta cerrar sesión.
 
 #### Elementos de datos
 
@@ -158,6 +160,8 @@ Cree el siguiente elemento de datos:
 - **Datos XDM**: `%sign-out%`
 
 ### signIn {#signin}
+
+Se activa cuando un comprador intenta iniciar sesión.
 
 #### Elementos de datos
 
@@ -216,6 +220,8 @@ Cree los siguientes elementos de datos:
 
 ### createAccount {#createaccount}
 
+Se activa cuando un comprador intenta crear una cuenta.
+
 #### Elementos de datos
 
 Cree los siguientes elementos de datos:
@@ -272,6 +278,8 @@ Cree los siguientes elementos de datos:
 - **Datos XDM**: `%create account%`
 
 ### editAccount {#editaccount}
+
+Se activa cuando un comprador intenta editar una cuenta.
 
 #### Elementos de datos
 
@@ -330,6 +338,8 @@ Cree los siguientes elementos de datos:
 
 ### pageView {#pageview}
 
+Se activa cuando se carga cualquier página.
+
 #### Elementos de datos
 
 Cree los siguientes elementos de datos:
@@ -357,6 +367,8 @@ Cree los siguientes elementos de datos:
 
 ### productView {#productview}
 
+Se activa cuando se carga cualquier página de producto.
+
 #### Elementos de datos
 
 Cree los siguientes elementos de datos:
@@ -374,6 +386,13 @@ Cree los siguientes elementos de datos:
    - **Extensión**: `Adobe Client Data Layer`
    - **Tipo de elemento de datos**: `Data Layer Computed State`
    - **[Opcional] ruta**: `productContext.sku`
+
+1. URL de imagen del producto:
+
+   - **Nombre**: `product image`
+   - **Extensión**: `Adobe Client Data Layer`
+   - **Tipo de elemento de datos**: `Data Layer Computed State`
+   - **[Opcional] ruta**: `productContext.mainImageUrl`
 
 1. Moneda del producto:
 
@@ -432,6 +451,8 @@ Cree los siguientes elementos de datos:
    - **Precio total**: **Valor** = `%product price%`
    - **Grupo de campos**: `productListItems` > `currencyCode`
    - **Código de moneda**: **Valor** = `%currency code%`
+   - **Grupo de campos**: `productListItems` > `ProductImageUrl`
+   - **ProductImageUrl**: **Valor** = `%product image%`
    - **Grupo de campos**: `commerce` > `productViews` > `value`
    - **value**: **Valor** = `1`
 
@@ -450,6 +471,8 @@ Cree los siguientes elementos de datos:
 - **Datos XDM**: `%product view%`
 
 ### searchRequestSent {#searchrequestsent}
+
+Se activa por eventos en la ventana emergente &quot;buscar mientras escribe&quot; y por eventos en las páginas de resultados de búsqueda.
 
 #### Elementos de datos
 
@@ -554,6 +577,8 @@ Cree los siguientes elementos de datos:
 
 ### searchResponseReceived {#searchresponsereceived}
 
+Se activa cuando la búsqueda activa devuelve resultados para la página de resultados de búsqueda o de pov &quot;search as you type&quot;.
+
 #### Elementos de datos
 
 Cree los siguientes elementos de datos:
@@ -608,6 +633,13 @@ Cree los siguientes elementos de datos:
    return suggestions;
    ```
 
+1. URL de imagen del producto:
+
+   - **Nombre**: `product image`
+   - **Extensión**: `Adobe Client Data Layer`
+   - **Tipo de elemento de datos**: `Data Layer Computed State`
+   - **[Opcional] ruta**: `productContext.mainImageUrl`
+
 1. Respuesta de búsqueda:
 
    - **Nombre**: `search response`
@@ -618,6 +650,8 @@ Cree los siguientes elementos de datos:
    - **Grupo de campos**: `siteSearch` > `numberOfResults`
    - **value**: `%search result number of products%`
    - **Grupo de campos**: `productListItems`. Select **Proporcionar todo el objeto**.
+   - **Grupo de campos**: `productListItems` > `ProductImageUrl`
+   - **ProductImageUrl**: **Valor** = `%product image%`
    - **Elemento de datos**: `%search result products%`
    - **Grupo de campos**: `searchResponse` > `value`
    - **value**: **Valor** = `1`
@@ -637,6 +671,8 @@ Cree los siguientes elementos de datos:
 - **Datos XDM**: `%search response%`
 
 ### addToCart {#addtocart}
+
+Se activa cuando se agrega un producto a un carro de compras o cada vez que se incrementa la cantidad de un producto en el carro de compras.
 
 #### Elementos de datos
 
@@ -669,6 +705,13 @@ Cree los siguientes elementos de datos:
    - **Extensión**: `Adobe Client Data Layer`
    - **Tipo de elemento de datos**: `Data Layer Computed State`
    - **[Opcional] ruta**: `productContext.pricing.specialPrice`
+
+1. URL de imagen del producto:
+
+   - **Nombre**: `product image`
+   - **Extensión**: `Adobe Client Data Layer`
+   - **Tipo de elemento de datos**: `Data Layer Computed State`
+   - **[Opcional] ruta**: `productContext.mainImageUrl`
 
 1. Precio regular del producto:
 
@@ -719,6 +762,8 @@ Cree los siguientes elementos de datos:
    - **Grupo de campos**: `productListItems` > `priceTotal`
    - **Precio total**: **Valor** = `%product price%`
    - **Grupo de campos**: `productListItems` > `currencyCode`
+   - **Grupo de campos**: `productListItems` > `ProductImageUrl`
+   - **ProductImageUrl**: **Valor** = `%product image%`
    - **Código de moneda**: **Valor** = `%currency code%`
    - **Grupo de campos**: `commerce` > `cart` > `cartID`
    - **ID del carro de compras**: **Valor** = `%cart id%`
@@ -741,6 +786,8 @@ Cree los siguientes elementos de datos:
 
 ### viewCart {#viewcart}
 
+Se activa cuando se carga cualquier página del carro de compras.
+
 #### Elementos de datos
 
 Cree los siguientes elementos de datos:
@@ -752,12 +799,19 @@ Cree los siguientes elementos de datos:
    - **Tipo de elemento de datos**: `Data Layer Computed State`
    - **[Opcional] ruta**: `storefrontInstanceContext`
 
-1. Carro de compras:
+1. URL de imagen del producto:
 
+   - **Nombre**: `product image`
+   - **Extensión**: `Adobe Client Data Layer`
+   - **Tipo de elemento de datos**: `Data Layer Computed State`
+   - **[Opcional] ruta**: `productContext.mainImageUrl`
+   1. Carro de compras:
    - **Nombre**: `cart`
    - **Extensión**: `Adobe Client Data Layer`
    - **Tipo de elemento de datos**: `Data Layer Computed State`
    - **[Opcional] ruta**: `shoppingCartContext`
+
+
 
 1. ID del carro de compras:
 
@@ -812,12 +866,14 @@ Cree los siguientes elementos de datos:
    - **Tipo de elemento de datos**: `XDM object`
    - **Grupo de campos**: `productListItems`. Para `productListItems`, puede haber varios elementos precalculados. Select **productListItems** > **Rellenar toda la matriz**.
    - **Elemento de datos**: `%product list items%`
+   - **Grupo de campos**: `productListItems` > `ProductImageUrl`
+   - **ProductImageUrl**: **Valor** = `%product image%`
    - **Grupo de campos**: `commerce` > `cart` > `cartID`
    - **ID del carro de compras**: **Valor** = `%cart id%`
    - **Grupo de campos**: `commerce` > `productListViews` > `value`
    - **value**: **Valor** = `1`
 
-#### Reglas 
+#### Reglas
 
 - **Nombre**: `view cart`
 - **Extensión**: `Adobe Client Data Layer`
@@ -832,6 +888,8 @@ Cree los siguientes elementos de datos:
 - **Datos XDM**: `%view cart%`
 
 ### removeFromCart {#removefromcart}
+
+Se activa cuando se elimina un producto de un carro de compras o cada vez que se reduce la cantidad de un producto del carro de compras.
 
 #### Elementos de datos
 
@@ -936,6 +994,8 @@ Cree los siguientes elementos de datos:
 
 ### initiateCheckout {#initiatecheckout}
 
+Se activa cuando el comprador hace clic en un botón de cierre de compra.
+
 #### Elementos de datos
 
 Cree los siguientes elementos de datos:
@@ -946,6 +1006,13 @@ Cree los siguientes elementos de datos:
    - **Extensión**: `Adobe Client Data Layer`
    - **Tipo de elemento de datos**: `Data Layer Computed State`
    - **[Opcional] ruta**: `storefrontInstanceContext`
+
+1. URL de imagen del producto:
+
+   - **Nombre**: `product image`
+   - **Extensión**: `Adobe Client Data Layer`
+   - **Tipo de elemento de datos**: `Data Layer Computed State`
+   - **[Opcional] ruta**: `productContext.mainImageUrl`
 
 1. Carro de compras:
 
@@ -1007,6 +1074,8 @@ Cree los siguientes elementos de datos:
    - **Tipo de elemento de datos**: `XDM object`
    - **Grupo de campos**: `productListItems`. Para `productListItems`, puede haber varios elementos precalculados. Select **productListItems** > **Rellenar toda la matriz**.
    - **Elemento de datos**: `%product list items%`
+   - **Grupo de campos**: `productListItems` > `ProductImageUrl`
+   - **ProductImageUrl**: **Valor** = `%product image%`
    - **Grupo de campos**: `commerce` > `cart` > `cartID`
    - **ID del carro de compras**: **Valor** = `%cart id%`
    - **Grupo de campos**: `commerce` > `checkouts` > `value`
@@ -1028,6 +1097,8 @@ Cree los siguientes elementos de datos:
 
 ### placeOrder {#placeorder}
 
+Se activa cuando el comprador realiza un pedido.
+
 #### Elementos de datos
 
 Cree los siguientes elementos de datos:
@@ -1038,6 +1109,13 @@ Cree los siguientes elementos de datos:
    - **Extensión**: `Adobe Client Data Layer`
    - **Tipo de elemento de datos**: `Data Layer Computed State`
    - **[Opcional] ruta**: `storefrontInstanceContext`
+
+1. URL de imagen del producto:
+
+   - **Nombre**: `product image`
+   - **Extensión**: `Adobe Client Data Layer`
+   - **Tipo de elemento de datos**: `Data Layer Computed State`
+   - **[Opcional] ruta**: `productContext.mainImageUrl`
 
 1. Carro de compras:
 
@@ -1168,6 +1246,8 @@ Cree los siguientes elementos de datos:
    - **Tipo de elemento de datos**: `XDM object`
    - **Grupo de campos**: `productListItems`. Para `productListItems`, puede haber varios elementos precalculados. Select **productListItems** > **Rellenar toda la matriz**.
    - **Elemento de datos**: `%product list items%`
+   - **Grupo de campos**: `productListItems` > `ProductImageUrl`
+   - **ProductImageUrl**: **Valor** = `%product image%`
    - **Grupo de campos**: `commerce` > `order`
    - **Identificador único**: **Valor** = `%commerce order%`
    - **Grupo de campos**: `commerce` > `shipping`
