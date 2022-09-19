@@ -4,9 +4,9 @@ description: Pruebe el plan para verificar la funcionalidad de cumplimiento de l
 role: User, Admin
 level: Intermediate
 exl-id: 77285a66-5161-407b-94cd-b3f412d7949d
-source-git-commit: 556cbf803a0f8569e8561d2b33b7a976065ae814
+source-git-commit: 0a1d70465247422db44daee302c67fe1a5a29d32
 workflow-type: tm+mt
-source-wordcount: '2652'
+source-wordcount: '2657'
 ht-degree: 0%
 
 ---
@@ -96,12 +96,12 @@ Esta sección del plan de prueba cubre la sincronización de inventario y pedido
 <tr>
 <td><strong>Nueva solicitud push, sincronización de API: pedido del cliente</strong></td>
 <td>El cliente envía un pedido de recogida de tienda.</td>
-<td><ul><li>En la vista Orden de administración, una <strong>Usuario administrador de Adobe Commerce</strong> ve que el estado de sincronización de pedidos se ha actualizado a <code>Sent</code></li><li>El registro de detalles del pedido incluye el mensaje <code>Order was sent to BOPIS solution for sync, it’s not yet acknowledged yet.</code></li></ul></td>
+<td><ul><li>En la vista Orden de administración, una <strong>Usuario administrador de Adobe Commerce</strong> ve que el estado de sincronización de pedidos se ha actualizado a <code>Sent</code></li><li>El registro de detalles del pedido incluye el mensaje <code>Order was sent to BOPIS solution for sync, it's not yet acknowledged yet.</code></li></ul></td>
 </tr>
 <tr>
 <td><strong>Nuevo pedido push, sincronización de API: el administrador envía el pedido</strong></td>
 <td>Un Adobe Commerce <strong>Administrador</strong> envía un pedido de recogida.</td>
-<td><ul><li>En la vista Orden de administración, el estado de sincronización de pedidos se actualiza a <code>Sent</code>.</li><li>El registro de detalles del pedido incluye el mensaje <code>Order was sent to BOPIS solution for sync, it’s not yet acknowledged yet.</code></li></ul></td>
+<td><ul><li>En la vista Orden de administración, el estado de sincronización de pedidos se actualiza a <code>Sent</code>.</li><li>El registro de detalles del pedido incluye el mensaje <code>Order was sent to BOPIS solution for sync, it's not yet acknowledged yet.</code></li></ul></td>
 </tr>
 <tr>
 <td><strong>Nueva inserción de pedido, cola de excepción<strong></td>
@@ -161,7 +161,7 @@ Esta sección del plan de prueba incluye escenarios para probar el flujo de trab
 <li>Recibo del correo electrónico de devolución del pedido: <code>$x amount was refunded</code></li>
 <li>El estado del pedido es <code>Processing</code>.</li>
 <li>Nota de crédito creada en Adobe Commerce (Esperar hasta que cron funcione).</li>
-<li>Si no se seleccionaron algunos artículos, confirme que la variable [!UICONTROL Ready for Pickup] se muestra el correo electrónico con la sección nilpick o return . <code>DISPLAY COMMENT HISTORY</code> shows <code>Order is ready for pickup, but some items not available.</code>.</li>
+<li>Si no se seleccionaron algunos artículos, confirme que la variable [!UICONTROL Ready for Pickup] se muestra el correo electrónico con la sección de selección o reembolso nulo. <code>DISPLAY COMMENT HISTORY</code> shows <code>Order is ready for pickup, but some items not available.</code>.</li>
 <li><code>CUSTOMER NOTIFIED</code> el indicador es <code>true</code>.</li>
 </ul>
 </td>
@@ -566,25 +566,25 @@ Esta sección del plan de prueba cubre escenarios para probar los flujos de trab
 <tr>
 <td>
 <strong>Selección de pedido único: ruta feliz, recogida de borde de la curva</strong></td>
-<td>Elija artículos de una y varias cantidades. No hay nilpicks ni acopio en el lado de la curva (con ensayo).
+<td>Elija artículos de una y varias cantidades. No hay ningún selector ni acopio en el lado de la curva (con ensayo).
 </td>
 <td>
 </td>
 </tr>
 <tr>
 <td><strong>Selección de varios pedidos: ruta feliz, recogida de curvas</strong></td>
-<td>Artículos únicos y multicantidad. No hay nilpicks ni acopio en el lado del cursor (con ensayo)</td>
+<td>Artículos únicos y multicantidad. No hay ningún selector ni acopio en el lado del cursor (con ensayo)</td>
 <td></td>
 </tr>
 <tr>
 <td><strong>Selección de un solo pedido: recuperación de ruta feliz en la tienda</strong></td>
-<td>Artículos únicos y multicantidad. No hay nilpicks ni se realiza la recogida en el lugar de almacenamiento (con ensayo)</td>
+<td>Artículos únicos y multicantidad. No hay ninguna selección ni se realiza la recogida en el lugar (con ensayo)</td>
 <td>
 </td>
 </tr>
 <tr>
 <td><strong>Selección de varios pedidos: ruta feliz, recogida en la tienda</strong></td>
-<td>Elija artículos de una y varias cantidades. No hay nilpicks ni acopio en el lado de la curva (con ensayo).</td>
+<td>Elija artículos de una y varias cantidades. No hay ningún selector ni acopio en el lado de la curva (con ensayo).</td>
 <td></td>
 </tr>
 <tr>

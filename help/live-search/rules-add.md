@@ -1,10 +1,10 @@
 ---
-title: '"Agregar reglas"'
+title: "Agregar reglas"
 description: '"Aprenda a crear [!DNL Live Search] reglas".'
 exl-id: c6b92ef5-3b08-47f9-8412-955a9c95a9ee
-source-git-commit: bffbede99865e9085f60392e474065a454446370
+source-git-commit: ed245e440f6db59d8eba66afeddb840420da0cf7
 workflow-type: tm+mt
-source-wordcount: '1282'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -24,7 +24,7 @@ Para generar una regla, el primer paso es utilizar el editor de reglas para defi
 
 ## Paso 2: Describir las condiciones
 
-Las condiciones son los requisitos para almacenar en déclencheur un evento. Una regla puede tener hasta diez condiciones y veinticinco eventos.
+Las condiciones son los requisitos para almacenar en déclencheur un evento. Una regla puede tener hasta diez condiciones y 25 eventos.
 
 ![Regla: genere su regla](assets/rules-add-workspace.png)
 
@@ -37,7 +37,7 @@ Las condiciones son los requisitos para almacenar en déclencheur un evento. Una
    * La consulta de búsqueda comienza por : introduzca un carácter o una cadena de texto que debe estar al principio de la consulta del comprador.
    * La consulta de búsqueda termina con : introduzca un carácter o una cadena de texto que debe estar al final de la consulta del comprador.
 
-   Los resultados aparecen inmediatamente en la variable *Probar la regla* y se numeran por prioridad. Puede usar la variable *Resultados por fila* en la esquina superior derecha para cambiar el número de productos en cada fila.
+   Los resultados aparecen inmediatamente en la variable *Probar la regla* y se numeran por prioridad. Puede usar la variable *Resultados por fila* en la parte superior derecha para cambiar el número de productos en cada fila.
 
    ![Regla: simple](assets/rule-simple-test.png)
 
@@ -52,7 +52,7 @@ Inicialmente, el panel de prueba procesa la consulta desde el cuadro de búsqued
 ### Varias condiciones
 
 1. Para generar una regla con varias condiciones, haga clic en **Añadir condición**.
-Una regla puede tener hasta 10 condiciones. El operador lógico que une dos condiciones se basa en la *Coincidencia* configuración. De forma predeterminada, *Coincidencia* es `All` y el operador lógico es `AND`.
+Una regla puede tener hasta diez condiciones. El operador lógico que une dos condiciones se basa en la *Coincidencia* configuración. De forma predeterminada, *Coincidencia* es `All` y el operador lógico es `AND`.
 
    ![Reglas - La consulta de búsqueda contiene](assets/rules-search-query-contains-and.png)
 
@@ -67,7 +67,7 @@ Una regla puede tener hasta 10 condiciones. El operador lógico que une dos cond
 
    La variable *Coincidencia* determina el operador lógico que se utiliza para unir varias condiciones. Cambio de la variable *Coincidencia* cambia todos los operadores lógicos de la regla. No es posible combinar `AND` y `OR` en la misma regla.
 
-   En este ejemplo, en lugar de buscar &quot;pantalones de yoga&quot;, hay dos consultas separadas que buscan &quot;yoga&quot; o &quot;pantalones&quot;. Esta regla es menos específica y se activará con mayor frecuencia en la tienda que en la otra.
+   En este ejemplo, en lugar de buscar &quot;pantalones de yoga&quot;, hay dos consultas separadas que buscan &quot;yoga&quot; o &quot;pantalones&quot;. Esta regla es menos específica y se activa con mayor frecuencia en la tienda que en la otra.
 
    ![Reglas - Coincidencia](assets/rules-match.png)
 
@@ -75,9 +75,9 @@ Una regla puede tener hasta 10 condiciones. El operador lógico que une dos cond
 
 ## Paso 3: Añadir eventos
 
-Los eventos son acciones que cambian los resultados de la búsqueda cuando se cumplen las condiciones. Una sola regla puede tener hasta 25 eventos.
+los eventos son acciones que cambian los resultados de la búsqueda cuando se cumplen las condiciones. Una sola regla puede tener hasta 25 eventos.
 
-1. En *Eventos*, elija el **Evento** que se produzca cuando se cumplan las condiciones asociadas.
+1. En *Eventos*, elija el **Evento** cuando se cumplan las condiciones asociadas.
 
    Por ejemplo, elija `Pin a product`. A continuación, introduzca el nombre del producto que desea fijar. Si necesita ayuda, puede encontrar el nombre en el panel de prueba.
 A continuación, introduzca la variable *Posición* donde aparecerá el producto anclado. El producto se mueve a la nueva posición del panel de prueba y se marca con una *Anclado* distintivo de vista previa.
@@ -97,7 +97,7 @@ La información que se introduce aquí aparece en la [Detalles de regla](rules-w
 
 1. En *Detalles*, introduzca un **Nombre** para la regla.
 1. Escriba un breve **Descripción** de la regla.
-1. Introduzca la variable **Fecha de inicio** y **Fecha final** cuándo se activará la regla o elija las fechas del calendario.
+1. Introduzca la variable **Fecha de inicio** y **Fecha final** para que la regla esté activa o elija las fechas del calendario.
 
    Para seleccionar un intervalo de fechas, haga clic en la primera fecha y arrastre para seleccionarlo.
 

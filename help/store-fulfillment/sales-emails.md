@@ -4,9 +4,9 @@ description: Configure las plantillas de correo electrónico transaccional para 
 role: User, Admin
 level: Intermediate
 exl-id: 688732e3-06f0-4613-a589-2d465597eb28
-source-git-commit: 556cbf803a0f8569e8561d2b33b7a976065ae814
+source-git-commit: 31ad67d3f3d11c68341de0306eea37f231b2d9b9
 workflow-type: tm+mt
-source-wordcount: '1215'
+source-wordcount: '1200'
 ht-degree: 0%
 
 ---
@@ -87,7 +87,7 @@ Configure las plantillas de correo electrónico de ventas desde el administrador
 </tr>
 <tr>
 <td><strong>Enviar Pedido Listo Para Recogida De Un Método De Copia De Correo Electrónico</strong></td>
-<td>El método de correo electrónico "copia de carbono" envía para su uso.</td>
+<td>El método de copia de correo electrónico (copia de carbono) que se va a utilizar.</td>
 <td>Vista de la tienda</td>
 <td>No</td>
 </tr>
@@ -136,7 +136,7 @@ Configure las plantillas de correo electrónico de ventas desde el administrador
 </tr>
 <tr>
 <td><strong>Enviar Se Ha Recopilado El Método De Copia De Correo Electrónico</strong></td>
-<td>El método de correo electrónico "copia de carbono" enviar para utilizar.</td>
+<td>El método de copia de correo electrónico (copia de carbono) que se va a utilizar.</td>
 <td>Vista de la tienda</td>
 <td>No</td>
 </tr>
@@ -185,7 +185,7 @@ Configure las plantillas de correo electrónico de ventas desde el administrador
 </tr>
 <tr>
 <td><strong>Enviar Método De Copia Retrasada De Pedido</strong></td>
-<td>El método de correo electrónico "copia de carbono" enviar para utilizar.</td>
+<td>El método de copia de correo electrónico (copia de carbono) que se va a utilizar.</td>
 <td>Vista de la tienda</td>
 <td>No</td>
 </tr>
@@ -236,7 +236,7 @@ Configure las plantillas de correo electrónico de ventas desde el administrador
 </tr>
 <tr>
 <td><strong>Enviar Pedido Cancelado Método De Copia</strong></td>
-<td>El método de correo electrónico "copia de carbono" enviar para utilizar.</td>
+<td>El método de copia de correo electrónico (copia de carbono) que se va a utilizar.</td>
 <td>Vista de la tienda</td>
 <td>No</td>
 </tr>
@@ -292,7 +292,7 @@ Configure las plantillas de correo electrónico de ventas desde el administrador
 </tr>
 <tr>
 <td><strong>Enviar Pedido Parcialmente Cancelado Método De Copia</strong></td>
-<td>El método de correo electrónico "copia de carbono" enviar para utilizar.</td>
+<td>El método de copia de correo electrónico (copia de carbono) que se va a utilizar.</td>
 <td>Vista de la tienda</td>
 <td>No</td>
 </tr>

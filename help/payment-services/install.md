@@ -2,9 +2,9 @@
 title: Instalar [!DNL Payment Services]
 description: Instale la extensión Servicios de pago .
 exl-id: babaa91a-9376-4acb-b934-a89f9df52016
-source-git-commit: 43599d041899251f7716e215284b6eff9312943d
+source-git-commit: 7b31fe7a71c3c238e6448627b2edfe06bbfbc80e
 workflow-type: tm+mt
-source-wordcount: '510'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -27,7 +27,7 @@ Primero debe descargar la extensión desde [Commerce Marketplace](https://experi
 
 ## Instalación de la extensión
 
-Puede instalar el [!DNL Payment Services] extensión para ambas [!DNL Adobe Commerce] en la infraestructura de nube y en las instancias locales, que están vinculadas al ID de Magento ([mageid](https://devdocs.magento.com/marketplace/sellers/profile-personal.html#field-descriptions)) que se proporciona en el proceso de suscripción, con las claves del Compositor. [!DNL Magento] Los clientes de código abierto utilizan las instrucciones locales.
+Puede instalar el [!DNL Payment Services] extensión para ambas [!DNL Adobe Commerce] en la infraestructura de nube y en las instancias locales, que están vinculadas a su cuenta de comercio [mageid](https://devdocs.magento.com/marketplace/sellers/profile-personal.html#field-descriptions) en el proceso de suscripción. [!DNL Magento Open Source] los clientes de utilizan las instrucciones locales.
 
 El Compositor utiliza estas claves durante la instalación inicial de [!DNL Adobe Commerce], o en situaciones en las que las claves del Compositor no se guardaban previamente en el `auth.json` archivo.
 
@@ -57,7 +57,7 @@ Este método se utiliza para instalar la variable [!DNL Payment Services] para u
 
 ### Configuraciones locales y otras configuraciones
 
-Este método se utiliza para instalar la variable [!DNL Payment Services] extensión para una instancia local y [!DNL Magento] Clientes de código abierto.
+Este método se utiliza para instalar la variable [!DNL Payment Services] extensión para una instancia local y [!DNL Magento Open Source] clientes.
 
 1. Para obtener la extensión, ejecute estos comandos:
 
@@ -114,7 +114,7 @@ Si ve el siguiente error que indica que tiene claves de Compositor incorrectas:
 Could not find a matching version of package magento/payment-services. Check the package spelling, your version constraint and that the package is available in a stability which matches your minimum-stability (stable).
 ```
 
-Compruebe que las claves del Compositor estén vinculadas al ID de Magento utilizado durante [!DNL Payment Services] registro.
+Compruebe que las claves del Compositor estén vinculadas al `MageID` se usa durante [!DNL Payment Services] registro.
 
 Para ver qué claves de Compositor están configuradas:
 
@@ -130,7 +130,7 @@ Para ver qué claves de Compositor están configuradas:
    cat /path/to/auth.json
    ```
 
-1. Consulte [qué claves están asociadas con su ID de Magento](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/connect-auth.html).
+1. Consulte [qué claves están asociadas a su cuenta de Commerce `MageID`](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/connect-auth.html).
 
 ### No hay suficiente memoria para PHP
 

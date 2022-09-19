@@ -1,24 +1,24 @@
 ---
-title: '"Componentes de regla"'
+title: "Componentes de regla"
 description: '"Obtenga información sobre [!DNL Live Search] componentes y operadores de regla".'
 exl-id: 4065aec3-a8d4-4d55-b939-16ad7b0f33ee
-source-git-commit: bffbede99865e9085f60392e474065a454446370
+source-git-commit: 0a1d70465247422db44daee302c67fe1a5a29d32
 workflow-type: tm+mt
-source-wordcount: '226'
+source-wordcount: '224'
 ht-degree: 0%
 
 ---
 
 # Componentes de regla
 
-Una regla describe las condiciones necesarias para almacenar en déclencheur los eventos que cambian los resultados de búsqueda devueltos como respuesta a la consulta de un comprador.
+Una regla describe las condiciones necesarias para almacenar en déclencheur eventos que cambian los resultados de búsqueda devueltos en respuesta a la consulta de un comprador.
 
 ## Requisitos
 
-Una regla simple puede tener una sola condición y un solo evento, mientras que una regla compleja puede tener hasta diez condiciones que déclencheur hasta veinticinco eventos.
+Una regla simple puede tener una sola condición y un solo evento, mientras que una regla compleja puede tener hasta diez condiciones que déclencheur hasta 25 eventos.
 Las reglas pueden tener:
 
-* Hasta 10 condiciones
+* Hasta diez condiciones
 * Hasta 25 eventos
 
 El texto de la consulta puede contener:

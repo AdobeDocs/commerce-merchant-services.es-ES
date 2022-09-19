@@ -1,10 +1,10 @@
 ---
-title: '"Administrar facetas"'
+title: "Administrar facetas"
 description: '"Obtenga información sobre cómo administrar las [!DNL Live Search] facetas".'
 exl-id: 1d51a36a-20d6-46b6-b379-11e46c8824a0
-source-git-commit: bffbede99865e9085f60392e474065a454446370
+source-git-commit: a17c9ef193394d86f5439f900ebba3dd68d33b45
 workflow-type: tm+mt
-source-wordcount: '440'
+source-wordcount: '439'
 ht-degree: 0%
 
 ---
@@ -81,4 +81,4 @@ La faceta se elimina de la tienda después de publicar los cambios.
 ## Publicar cambios
 
 1. Para actualizar la tienda con sus cambios, haga clic en **Publicar cambios**.
-1. Espere unos quince minutos para que las actualizaciones aparezcan en su tienda.
+1. Espere unos 15 minutos para que las actualizaciones aparezcan en la tienda.

@@ -2,7 +2,7 @@
 title: Vacíos
 description: Los vacíos permiten liberar los fondos en una cuenta de tarjeta de crédito o débito bloqueada o reservada por una autorización por el monto de una compra.
 exl-id: 029a7038-2812-46ce-b188-929a7a758d89
-source-git-commit: bcb817775fe9cd9ac7096931dd40d5ec0c4a5cfc
+source-git-commit: 7b31fe7a71c3c238e6448627b2edfe06bbfbc80e
 workflow-type: tm+mt
 source-wordcount: '226'
 ht-degree: 0%
@@ -17,7 +17,7 @@ con [!DNL Payment Services], puede utilizar la funcionalidad de comercio existen
 >
 >Solo puede anular una transacción si el pago aún no se ha capturado.
 
-Si su tienda está [configurado](https://docs.magento.com/user-guide/configuration/sales/payment-methods.html#payment-actions){target=&quot;_blank&quot;} para autorizar solo (no capturar) fondos en el punto de venta, una compra en la tienda resulta en un pedido con un `Processing` en el Administrador de Magento.
+Si su tienda está [configurado](https://docs.magento.com/user-guide/configuration/sales/payment-methods.html#payment-actions){target=&quot;_blank&quot;} para autorizar solo (no capturar) fondos en el punto de venta, una compra en la tienda resulta en un pedido con un `Processing` en el Administrador de comercio.
 
 También puede [cancelar una solicitud](https://docs.magento.com/user-guide/sales/order-update.html#cancel-a-pending-order){target=&quot;_blank&quot;} que no se factura. Las autorizaciones no capturadas también se anulan como parte de ese proceso de cancelación.
 

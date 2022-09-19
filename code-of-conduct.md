@@ -1,7 +1,7 @@
 ---
-source-git-commit: f03ca23f659d08d48715a4bd9d4d32a53c4a3a95
+source-git-commit: bd428fcbd592de91054710a50bfea8d10905f734
 workflow-type: tm+mt
-source-wordcount: '431'
+source-wordcount: '429'
 ht-degree: 0%
 
 ---
@@ -9,7 +9,7 @@ ht-degree: 0%
 
 ## Nuestra promesa
 
-Con el fin de fomentar un entorno abierto y acogedor, nosotros, como colaboradores y administradores, nos comprometemos a hacer de la participación en nuestro proyecto y en nuestra comunidad una experiencia libre de acoso para todos, independientemente de la edad, tamaño corporal, discapacidad, etnia, identidad y expresión de género, nivel de experiencia, nacionalidad, apariencia personal, raza, religión o identidad y orientación sexual.
+Con el fin de fomentar un entorno abierto y acogedor, los colaboradores y administradores se comprometen a hacer de la participación en nuestro proyecto y en nuestra comunidad una experiencia libre de acoso para todos, independientemente de la edad, tamaño corporal, discapacidad, etnia, identidad y expresión de género, nivel de experiencia, nacionalidad, apariencia personal, raza, religión o identidad y orientación sexual.
 
 ## Nuestros estándares
 
@@ -41,11 +41,11 @@ Este código de conducta se aplica tanto en espacios de proyecto como en espacio
 
 ## Aplicación
 
-Puede informarse de casos de comportamiento abusivo, acosador o inaceptable poniéndose en contacto con el equipo del proyecto en Grp-opensourceoffice@adobe.com. Todas las denuncias serán examinadas e investigadas y darán lugar a una respuesta que se considere necesaria y adecuada a las circunstancias. El equipo del proyecto está obligado a mantener la confidencialidad con respecto al denunciante de un incidente.
+Puede informarse de casos de comportamiento abusivo, acosador o inaceptable poniéndose en contacto con el equipo del proyecto en Grp-opensourceoffice@adobe.com. Todas las denuncias se examinan e investigan y dan lugar a una respuesta que se considera necesaria y adecuada a las circunstancias. El equipo del proyecto está obligado a mantener la confidencialidad con respecto al denunciante de un incidente.
 Pueden publicarse por separado más detalles sobre las políticas específicas de ejecución.
 
 Los administradores del proyecto que no sigan o hagan cumplir el Código de Conducta de buena fe pueden tener repercusiones temporales o permanentes determinadas por otros miembros de la dirección del proyecto.
 
 ## Atribución
 
-El presente Código de conducta es una adaptación de la [Pacto del colaborador](https://contributor-covenant.org), versión 1.4, disponible en [https://contributor-covenant.org/version/1/4](https://contributor-covenant.org/version/1/4/)
+El presente Código de conducta es una adaptación de la [Pacto del colaborador](https://www.contributor-covenant.org/), versión 1.4, disponible en [https://www.contributor-covenant.org/it/version/1/4/code-of-conduct/](https://www.contributor-covenant.org/it/version/1/4/code-of-conduct/).

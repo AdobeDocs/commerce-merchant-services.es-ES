@@ -1,10 +1,10 @@
 ---
-title: '"Instalar [!DNL Live Search]"'
+title: "Instalar [!DNL Live Search]"
 description: '"Obtenga información sobre cómo instalar, actualizar y desinstalar [!DNL Live Search] de Adobe Commerce".'
 exl-id: aa251bb0-d52c-4cff-bccb-76a08ae2a3b2
-source-git-commit: bffbede99865e9085f60392e474065a454446370
+source-git-commit: a17c9ef193394d86f5439f900ebba3dd68d33b45
 workflow-type: tm+mt
-source-wordcount: '1267'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -179,7 +179,7 @@ Para obtener más ayuda, consulte [[!DNL Live Search] catálogo no sincronizado]
 
 ### Actualizaciones de productos futuras
 
-Después de la sincronización inicial, las actualizaciones de productos incrementales pueden tardar hasta quince minutos en estar disponibles para la búsqueda en tiendas. Para obtener más información, vaya a [Indexación: Actualizaciones de productos de transmisión](indexing.md).
+Después de la sincronización inicial, las actualizaciones de productos incrementales pueden tardar hasta 15 minutos en estar disponibles para la búsqueda en tiendas. Para obtener más información, vaya a [Indexación: Actualizaciones de productos de transmisión](indexing.md).
 
 ## Probar la conexión {#test-connection}
 
