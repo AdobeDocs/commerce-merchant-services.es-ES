@@ -1,9 +1,9 @@
 ---
 title: consulta de productos
 description: '''Una guía de referencia para la consulta de GraphQL para el servicio de catálogo de Adobe Commerce''.'
-source-git-commit: 7edfdd71c0900a6bdc7c064a29a6cce405a361ab
+source-git-commit: d9b8c89f6d04aa9d569b450af2893b92938119ad
 workflow-type: tm+mt
-source-wordcount: '1226'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # consulta de productos
 
-El servicio de catálogo para Adobe Commerce `products` la consulta devuelve detalles sobre los SKU especificados como entrada. Aunque esta consulta tiene el mismo nombre que la [`products` query](https://devdocs.magento.com//guides/v2.4/graphql/queries/products.html) que se proporciona con Adobe Commerce y Magento Open Source principales, hay algunas diferencias.
+El servicio de catálogo para Adobe Commerce `products` la consulta devuelve detalles sobre los SKU especificados como entrada. Aunque esta consulta tiene el mismo nombre que la [`products` query](https://devdocs.magento.com/guides/v2.4/graphql/queries/products.html) que se proporciona con Adobe Commerce y Magento Open Source principales, hay algunas diferencias.
 
 La consulta del servicio de catálogo requiere uno o más valores de SKU como entrada. La consulta está diseñada principalmente para recuperar información y procesar los siguientes tipos de contenido:
 
