@@ -4,9 +4,9 @@ description: Utilice el informe de pagos para obtener una total transparencia en
 role: User
 level: Intermediate
 exl-id: f3f99474-cd28-4c8f-b0ea-dca8e014b108
-source-git-commit: 27d280fb9f49715a455ff55279416f7df4ada56d
+source-git-commit: 0bd6137ec7cd5da04ae6a48f06cd5aec254b46ef
 workflow-type: tm+mt
-source-wordcount: '1322'
+source-wordcount: '1339'
 ht-degree: 0%
 
 ---
@@ -154,9 +154,9 @@ Los informes de pago incluyen la siguiente información.
 | [!UICONTROL Code] | Código de transacción que indica Crédito (*CR*) o débito (*DR*) |
 | [!UICONTROL Reference ID] | ID de transacción original para el que este evento está relacionado |
 | [!UICONTROL Invoice] | ID de factura (uno por pedido) de la transacción |
-| [!UICONTROL Commerce order] | ID de pedido de comercio <br> <br>Para ver [información del pedido](https://docs.magento.com/user-guide/sales/orders.html), haga clic en el ID. |
-| [!UICONTROL Commerce trans] | ID de transacción de comercio |
-| [!UICONTROL Pay method] | Tipo de tarjeta de crédito—*[!UICONTROL BANK]*, *[!UICONTROL PAYPAL]*, *[!UICONTROL CREDIT_CARD]*—y el proveedor de tarjetas asociado (por ejemplo, *Visa* o *MasterCard*) |
+| [!UICONTROL Commerce order] | ID de pedido de comercio <br> <br>Para ver [información del pedido](https://docs.magento.com/user-guide/sales/orders.html){target=&quot;_blank&quot;}, haga clic en el ID. |
+| [!UICONTROL Commerce trans] | ID de transacción de comercio <br> <br>Para ver [información de transacción](https://docs.magento.com/user-guide/sales/transactions.html){target=&quot;_blank&quot;}, haga clic en el ID. |
+| [!UICONTROL Pay method] | Tipo de tarjeta de crédito—*[!UICONTROL BANK]*, *[!UICONTROL PAYPAL]*, *[!UICONTROL APPLE_PAY]*, *[!UICONTROL CREDIT_CARD]*—y el proveedor de tarjetas asociado (por ejemplo, *Visa* o *MasterCard*) |
 | [!UICONTROL Trans amt] | Importe de la transacción |
 | [!UICONTROL Cur] | Unidad de divisa para el importe de transacción |
 | [!UICONTROL Pending] | Cantidad pendiente de desembolso |

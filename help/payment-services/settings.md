@@ -4,9 +4,9 @@ description: Después de la instalación, puede configurar [!DNL Payment Service
 role: Admin, User
 level: Intermediate
 exl-id: 108f2b24-39c1-4c87-8deb-d82ee1c24d55
-source-git-commit: 31ad67d3f3d11c68341de0306eea37f231b2d9b9
+source-git-commit: 0bd6137ec7cd5da04ae6a48f06cd5aec254b46ef
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '1236'
 ht-degree: 0%
 
 ---
@@ -169,3 +169,11 @@ Puede configurar [!DNL PayPal Smart Buttons] estilo [en la configuración hereda
 | [!UICONTROL Responsive Button Height] | Vista de la tienda | Define si los botones de pago utilizan una altura predeterminada. Opciones: [!UICONTROL Yes] / [!UICONTROL No] |
 | [!UICONTROL Height] | Vista de la tienda | Defina la altura de los botones de pago. Valor predeterminado: ninguno |
 | [!UICONTROL Label] | Vista de la tienda | Defina la etiqueta que aparece en los botones de pago. Opciones: [!UICONTROL PayPal] / [!UICONTROL Checkout] / [!UICONTROL Buynow] / [!UICONTROL Pay] / [!UICONTROL Installment] |
+
+## Usar varias cuentas de PayPal
+
+En Servicios de pago, puede utilizar varias cuentas de PayPal en **one** cuenta de comerciante a nivel de sitio web. Por ejemplo, si está operando sus tiendas en varios países (que utilizan diferentes [currency](https://docs.magento.com/user-guide/stores/currency.html)) o quiere usar Adobe Commerce en algunas partes de su negocio, pero no *all*, puede configurar su cuenta de comerciante para utilizar varias cuentas de PayPal.
+
+Consulte [Ámbito de sitio, tienda y vista](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html) para obtener más información sobre la jerarquía de sitios web, tiendas y vistas de tiendas.
+
+Su representante de ventas puede crear un [scope](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings) para su cuenta de comerciante y a bordo del sitio adicional con PayPal para que cualquiera de los botones de PayPal que configure para aparecer se muestre en su sitio. Póngase en contacto con su representante de ventas para obtener ayuda sobre el uso de varias cuentas de PayPal para sus sitios web.
