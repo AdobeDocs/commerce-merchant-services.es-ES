@@ -4,9 +4,9 @@ description: Después de la instalación, puede configurar [!DNL Payment Service
 role: Admin, User
 level: Intermediate
 exl-id: 108f2b24-39c1-4c87-8deb-d82ee1c24d55
-source-git-commit: 0bd6137ec7cd5da04ae6a48f06cd5aec254b46ef
+source-git-commit: 65787d91c098e8f5d4ae46cba4d5e226b6301ecc
 workflow-type: tm+mt
-source-wordcount: '1236'
+source-wordcount: '1555'
 ht-degree: 0%
 
 ---
@@ -21,9 +21,13 @@ Para configurar [!DNL Payment Services] para [!DNL Adobe Commerce] y [!DNL Magen
 >
 > Para la configuración heredada o de varios almacenes, consulte la [Configurar en el administrador](configure-admin.md) tema.
 
-## Habilitar servicios de pago
+## Configuración general
 
-Puede habilitar [!DNL Payment Services] para su sitio web y habilite pruebas de entorno limitado o pagos activos en la variable [!UICONTROL General] para obtener más información.
+La variable [!UICONTROL General] La configuración proporciona la capacidad de habilitar o deshabilitar los servicios de pago como método de pago y agregar información a las transacciones de clientes para marcar o prefijar un sitio web o una vista de tienda con información personalizada.
+
+### Habilitar servicios de pago
+
+Puede habilitar [!DNL Payment Services] para su sitio web y habilite pruebas de entorno limitado o pagos activos.
 
 1. En el _Administrador_ barra lateral, vaya a **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**.
 
@@ -33,7 +37,7 @@ Puede habilitar [!DNL Payment Services] para su sitio web y habilite pruebas de 
 
    La variable _[!UICONTROL General]_incluye la configuración utilizada para habilitar [!DNL Payment Services] como método de pago.
 
-1. Para habilitar [!DNL Payment Services] como método de pago para su tienda, en la _[!UICONTROL General]_sección, alternar (**[!UICONTROL Enable Payment Services as payment method]**) a `Yes`.
+1. Para habilitar [!DNL Payment Services] como método de pago para su tienda, en la _[!UICONTROL General]_sección, alternar **[!UICONTROL Enable Payment Services as payment method]**a `Yes`.
 
 1. Si sigue probando [!DNL Payment Services] para su tienda, establezca **Modo de pago** a `Sandbox`. Si está listo para activar los pagos, configúrelo en `Production`.
 
@@ -49,7 +53,31 @@ Puede habilitar [!DNL Payment Services] para su sitio web y habilite pruebas de 
 
 Ahora puede cambiar la configuración predeterminada de [opciones de pago](#configure-payment-options) funciones y visualización de tienda.
 
-### Opciones de configuración generales
+### Agregar descriptor de software
+
+Puede añadir un [!UICONTROL Soft Descriptor] a la configuración de sus sitios web o vistas de tiendas individuales. Los descriptores de software muestran los estados bancarios de transacciones con clientes. Si tiene varias tiendas, marcas o catálogos, por ejemplo, puede definir fácilmente entre ellos añadiendo texto personalizado al [!UICONTROL Soft Descriptor] campo .
+
+1. En el _Administrador_ barra lateral, vaya a **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**.
+
+   ![Vista de inicio](assets/payment-services-menu-small.png)
+
+1. Haga clic **[!UICONTROL Settings]**. Consulte [Introducción a [!DNL Payment Services] Página principal](payments-home.md) para obtener más información.
+1. Seleccione el sitio web o la vista de tienda, en la **[!UICONTROL Scope]** menú desplegable, para el que desea crear un descriptor de software. Para la configuración inicial, deje esto como **[!UICONTROL Default]** para establecer el valor predeterminado.
+1. Agregue el texto personalizado (hasta 22 caracteres) en el campo de texto y reemplace `Custom descriptor`.
+1. Haga clic **[!UICONTROL Save]**.
+1. Para crear un descriptor de software que no sea el predeterminado configurado para un sitio web o una vista de tienda:
+   1. Seleccione el sitio web o la vista de tienda, en la **[!UICONTROL Scope]** menú desplegable, para el que desea crear un descriptor de software.
+   1. Alternar *off* **[!UICONTROL Use website]** (o **[!UICONTROL Use default]**, según el ámbito que haya seleccionado).
+   1. Añada el texto personalizado en el campo de texto.
+   1. Haga clic **[!UICONTROL Save]**.
+1. Para habilitar para un sitio web o almacenar, vea el descriptor de software predeterminado *o* descriptor de software utilizado para el sitio web principal:
+   1. Seleccione el sitio web o la vista de tienda, en la **[!UICONTROL Scope]** menú desplegable, para el cual desea habilitar un descriptor de software existente.
+   1. Alternar *en* **[!UICONTROL Use website]** (o **[!UICONTROL Use default]**, según el ámbito que haya seleccionado).
+   1. Haga clic **[!UICONTROL Save]**.
+
+   Si intenta salir de esta vista sin guardar los cambios, aparecerá un modal que le pedirá que descarte los cambios, continúe editando o guarde los cambios.
+
+### Opciones de configuración
 
 | Campo | Ámbito | Descripción |
 |---|---|---|
@@ -57,6 +85,7 @@ Ahora puede cambiar la configuración predeterminada de [opciones de pago](#conf
 | [!UICONTROL Payment mode] | vista de tienda | Defina el método o el entorno para su tienda. Opciones: [!UICONTROL Sandbox] / [!UICONTROL Production] |
 | [!UICONTROL Sandbox Merchant ID] | vista de tienda | El ID del comerciante del simulador de pruebas, que se genera automáticamente durante la incorporación al simulador de pruebas. |
 | [!UICONTROL Production Merchant ID] | vista de tienda | El ID del comerciante de producción, que se genera automáticamente durante la incorporación al entorno limitado. |
+| [!UICONTROL Soft Descriptor] | vista de sitio web o tienda | Agregue un descriptor de software a sus sitios web y vistas de tienda para agregar información a las transacciones de clientes que delimiten marcas, tiendas o líneas de productos. La variable [!UICONTROL Use website] se aplica cualquier descriptor de software añadido a nivel de sitio web. La variable [!UICONTROL Use default] la opción aplica cualquier descriptor de software agregado como predeterminado. |
 
 ## Configurar las opciones de pago
 
@@ -144,7 +173,7 @@ También puede configurar la variable _[!UICONTROL Button style]_opciones de los
 
 1. Para habilitar la etiqueta en un diseño horizontal, cambie el **[!UICONTROL Show tagline]** selector.
 1. Para modificar el **[!UICONTROL Color]**, seleccione la opción de color que desee.
-1. Para modificar el **[!UICONTROL Shape]**, seleccione `Pill` o `Rect`.
+1. Para modificar el **[!UICONTROL Shape]**, seleccione `Pill` o `Rectangle`.
 1. Para habilitar el selector de altura del botón, active la opción **[!UICONTROL Responsive button height]** selector.
 1. Para modificar el **[!UICONTROL Label]**, seleccione la opción de etiqueta que desee.
 
