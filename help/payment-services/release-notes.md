@@ -2,9 +2,9 @@
 title: "[!DNL Payment Services] Notas de la versión"
 description: Revise las notas de la versión para obtener información sobre todas las [!DNL Payment Services] versiones.
 exl-id: 104aa2c7-7735-4ac2-8ed1-a03cd9911273
-source-git-commit: 5d791896f647391993f668a018b3eb9194c4cf3f
+source-git-commit: 39c0140961fa9de5075087bbc3fbec0e14560860
 workflow-type: tm+mt
-source-wordcount: '1165'
+source-wordcount: '1166'
 ht-degree: 0%
 
 ---
@@ -57,11 +57,11 @@ _28 de junio de 2021_
 
 _30 de septiembre de 2022_
 
-![Nuevo](../assets/new.svg)<!-- Issue PAY-784 --> Los servicios de pago ahora incluyen la capacidad de configurar una cuenta de comerciante para [usar varias cuentas comerciales de PayPal](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/configure/settings.html#use-multiple-business-accounts). Esto permite al comerciante operar sus tiendas en varios países utilizando distintas divisas, o usar Adobe Commerce para una parte de su negocio.
+![Nuevo](../assets/new.svg)<!-- Issue PAY-784 --> Los servicios de pago ahora incluyen la capacidad de configurar una cuenta de comerciante para [usar varias cuentas comerciales de PayPal](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/configure/settings.html#use-multiple-paypal-accounts). Esto permite al comerciante operar sus tiendas en varios países utilizando distintas divisas, o usar Adobe Commerce para una parte de su negocio.
 
 ![Nuevo](../assets/new.svg)<!-- Issue PAY-3231 --> Los comerciantes pueden [añadir un [!UICONTROL Soft Descriptor]](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/configure/settings.html#add-soft-descriptor) a sitios web o configuraciones de vistas de almacén individuales que se muestran en los estados bancarios de transacciones de clientes para delinear marcas, tiendas o líneas de producto.
 
-![Nuevo](../assets/new.svg)<!-- Issue PAY-3707 --> [Habilitar o deshabilitar campos de tarjeta de crédito y botones inteligentes de PayPal](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/configure/settings.html) para el cierre de compra en la configuración de Servicios de pago.
+![Nuevo](../assets/new.svg)<!-- Issue PAY-3707 --> [Habilitar o deshabilitar campos de tarjeta de crédito y botones inteligentes de PayPal](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/configure/settings.html#configure-payment-options) para el cierre de compra en la configuración de Servicios de pago.
 
 ![Se ha corregido un problema](../assets/fix.svg)<!-- Issue PAY-3546 --> Cuando un cliente hace clic en **[!UICONTROL Edit cart]**, la página redirige a la página del carro de compras y muestra los elementos actualizados en lugar de mostrar un carro vacío.
 

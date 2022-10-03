@@ -4,7 +4,7 @@ description: Utilice el informe de pagos para obtener una total transparencia en
 role: User
 level: Intermediate
 exl-id: f3f99474-cd28-4c8f-b0ea-dca8e014b108
-source-git-commit: 0bd6137ec7cd5da04ae6a48f06cd5aec254b46ef
+source-git-commit: 39c0140961fa9de5075087bbc3fbec0e14560860
 workflow-type: tm+mt
 source-wordcount: '1339'
 ht-degree: 0%
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 [!DNL Payment Services] para [!DNL Adobe Commerce] y [!DNL Magento Open Source] ofrece informes completos para que pueda obtener una visión clara de los pedidos y pagos de su tienda.
 
-![Vista Informes financieros](assets/reports-view-new.png)
+![Vista Informes financieros](assets/report-view.png)
 
 Hay dos vistas de informes de pago disponibles para que pueda ver información detallada sobre todos sus pagos:
 
@@ -34,7 +34,7 @@ La vista Visualización de datos de pagos está disponible en la página princip
 
 En el _Administrador_ barra lateral, vaya a **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** para ver el gráfico de visualización de datos de créditos frente a débitos y los promedios móviles a lo largo del tiempo.
 
-![Visualización de datos de pago en el administrador](assets/payouts-data.png)
+![Visualización de datos de pago en el administrador](assets/payouts-report.png)
 
 Haga clic en **[!UICONTROL View Report]** para desplazarse a la tabla detallada [Vista de informes de rutas](#payouts-report-view).
 
