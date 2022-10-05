@@ -2,7 +2,7 @@
 title: '[!DNL Quick Checkout] Notas de la versión'
 description: Revise las notas de la versión para obtener información sobre todas las [!DNL Quick Checkout] versiones.
 exl-id: 511be2fc-d24d-4323-a47a-d376e38a5c47
-source-git-commit: 4dd8008901dbdbfaf1de5b1aa166dc70dd02440f
+source-git-commit: 7c99f1aa4bed9878625d855509448494d5547d56
 workflow-type: tm+mt
 source-wordcount: '0'
 ht-degree: 0%
@@ -20,6 +20,24 @@ Estas notas de la versión describen la versión inicial de [!DNL Quick Checkout
 Consulte [Próximas versiones](https://devdocs.magento.com/release/) para obtener más información sobre los programas de versiones y la asistencia técnica.
 
 Consulte [Disponibilidad](https://devdocs.magento.com/release/availability.html) en la documentación para desarrolladores para obtener más información sobre la compatibilidad del producto.
+
+## Actualizaciones del panel de administración
+
+Estas notas de la versión describen los cambios y correcciones que se produjeron y se publicaron fuera de las versiones de funciones habituales para el panel de administración.
+
++++Actualizaciones del panel de administración
+
+_5 de octubre de 2022_
+
+![Nuevo](../assets/new.svg)<!-- Issue BOLT-379 --> [!DNL Quick Checkout] El panel de administración integra un [visita guiada por Gainsight](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/onboarding.html).
+
+![Nuevo](../assets/new.svg)<!-- Issue BOLT-377 --> La variable **Informes** en la ficha [!DNL Quick Checkout] El panel de administración contiene la descripción de los diagramas y la información de informes que estará disponible próximamente.
+
+![Nuevo](../assets/new.svg)<!-- Issue BOLT-377 --> La variable **Informes** en la ficha [!DNL Quick Checkout] El panel de administración muestra el intervalo de fechas del filtro para los diagramas y la información de informes que estará disponible próximamente.
+
+![Se ha corregido un problema](../assets/fix.svg)<!-- Issue BOLT-369 --> [[!DNL Quick Checkout] Panel de administración](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/onboarding.html#enable-extension) ahora muestra la versión reaccionar de la aplicación en el pie de página.
+
++++
 
 ## Versión 1.2.0
 
