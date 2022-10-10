@@ -5,9 +5,9 @@ seo-title: Services for Adobe Commerce
 seo-description: Access the product documentation for hosted services that help Adobe Commerce and Magento Open Source merchants support key components of their business.
 breadcrumb-title: Documentación
 exl-id: b3502f96-0809-442c-9208-abb3bc6e18ec
-source-git-commit: 4fcab515a816c03320fa035df3e9f6dfdd8643a9
+source-git-commit: 8d36cd54e6e5ca2fe70afd0152c23fa73031aea0
 workflow-type: tm+mt
-source-wordcount: '611'
+source-wordcount: '519'
 ht-degree: 0%
 
 ---
@@ -69,7 +69,7 @@ Adobe proporciona una colección de servicios para ayudar a los comerciantes a s
     <div><a href="https://experienceleague.adobe.com/docs/commerce-channels/amazon/guide-overview.html">
     <strong>[!DNL Amazon Sales Channel]</strong></a>
     </div>
-    <p><em>Integre sus tiendas con el mayor destino de compras por Internet del mundo. Este servicio permite las ventas de Amazon al conectar Commerce con su cuenta de Amazon Seller Central y proporcionar tanto la automatización como la sincronización de los datos de catálogo y pedido. Administre completamente todos los listados de Amazon, implemente reglas de precios simples o inteligentes y mantenga sus pedidos e inventarios a través de un único panel de comercio.</em></p>
+    <p><em>Integre sus tiendas con el mayor destino de compras de Internet del mundo. Este servicio permite las ventas de Amazon al conectar Commerce con su cuenta de Amazon Seller Central y proporcionar tanto la automatización como la sincronización de los datos de catálogo y pedido. Administre completamente todos los listados de Amazon, implemente reglas de precios simples o inteligentes y mantenga sus pedidos e inventarios a través de un único panel de comercio.</em></p>
     </br>
   </td>
 </tr>
@@ -87,10 +87,20 @@ La variable [Servicio de catálogo](https://experienceleague.adobe.com/docs/comm
 
 Los siguientes elementos son cambios recientes en la documentación:
 
-* *Servicios de pago*—Instrucciones añadidas para [descarga de la extensión](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/get-started/install.html#download-the-extension), se ha mejorado el flujo de trabajo de [conexión al conector de Commerce Services](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/get-started/connect.html)y [información añadida](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/get-started/connect.html) al tema Conectar el servicio para que el usuario determine si sus servicios ya están conectados (y qué hacer si no lo están).
-* ¡Ya disponible!—[Servicio de catálogo](https://experienceleague.adobe.com/docs/commerce-merchant-services/catalog-service/overview.html) para Adobe Commerce
-* *Live Search*—Se ha añadido nueva información a [Instalar Live Search](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/onboard/install.html) y [Información general sobre la incorporación](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/onboard/onboarding-overview.html) temas sobre el motor de búsqueda OpenSearch introducido en los nuevos módulos (para disponibilidad en Adobe Commerce v2.4.6).
-* *Conector del Experience Platform*—Se ha añadido un tema [acerca del uso de etiquetas](https://experienceleague.adobe.com/docs/commerce-merchant-services/experience-platform-connector/event-forwarding/using-tags.html) y un tema [acerca de cómo cargar un perfil de comprador](https://experienceleague.adobe.com/docs/commerce-merchant-services/experience-platform-connector/fundamentals/profile.html) temas que explican cómo crear perfiles y utilizar la etiqueta AEP.
-* *Cierre rápido*—Mejorado [Tema de incorporación](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/onboarding.html) reordenando los pasos e incluyendo los cambios de producto más recientes presentes en la interfaz de usuario del administrador.
-* *Servicios de pago*—[Apple Pay ya está disponible](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/payments-options.html#apple-pay-button) en Servicios de pago.
-* *Conector del Experience Platform*—Se ha añadido una nueva [tema sobre la actualización del esquema XDM](https://experienceleague.adobe.com/docs/commerce-merchant-services/experience-platform-connector/fundamentals/update-xdm.html) con nombres de campo específicos de Adobe Commerce.
+* **Servicios de pago**<!-- Issue PAY-3483, PAY-3611, PAY-3655, PAY-3705, PAY-3742 -->
+   * *NUEVO* Se ha añadido un [Tema de datos disponible](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/data.html) en esta sección se explica cómo utilizar los datos de informes financieros con fines de reconciliación externa.
+   * Documentación revisada para incluir el [nueva vista de visualización de datos](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/payouts.html#payouts-data-visualization-view) en Informes de rutas .
+   * Se ha revisado el tema Configuración para incluir información sobre [vista previa de cómo aparecerán los botones de pago en una tienda](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/configure/settings.html#payment-buttons) cuando se cambia la configuración y se agregan instrucciones para [activar/desactivar los botones inteligentes de tarjeta de crédito y PayPal para el cierre de compra](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/configure/settings.html#configure-payment-options).
+* **Cierre rápido**<!-- BOLT-406 -->
+   * *NUEVO* Se ha añadido un [tema de información general sobre el Panel de administración](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/quick-checkout-admin-panel/admin-panel.html).
+   * *NUEVO* Se ha añadido un [tema de configuración de usuario](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/quick-checkout-admin-panel/user-roles-setup.html) para guiar al usuario en la configuración de funciones y permisos.
+
+<!-- 
+|   Service    |    Change   |   Type    |
+|  ---  |  ---  |  ---  |
+|  [**Payment Services**](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/guide-overview.html)  |   Added an [Available data topic](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/data.html) that explains how to use financial reporting data for external reconciliation purposes.    |    New   |
+|       |   Revised documentation to include the [new data visualization view](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/payouts.html#payouts-data-visualization-view) in Payouts reporting.    |    Update   |
+|       |   Revised the Settings topic to include information about [previewing how payment buttons will appear in a store](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/configure/settings.html#payment-buttons) when the configuration is changed and how to [enable/disable credit card and PayPal smart buttons for checkout](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/configure/settings.html#configure-payment-options).    |   Update    |
+|   [**Quick Checkout**](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/overview.html)    |    Added an [overview topic about the Admin Panel](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/quick-checkout-admin-panel/admin-panel.html).   |   New    |
+|       |   Added a [user setup topic](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/quick-checkout-admin-panel/user-roles-setup.html) to guide the user in configuring roles and permissions.    |       |
+ -->
