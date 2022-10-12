@@ -2,9 +2,9 @@
 title: "[!DNL Live Search] Notas de la versión"
 description: '"La información de la última versión de [!DNL Live Search] de Adobe Commerce".'
 exl-id: 2a581e43-35f5-48ce-9752-844430ccdebf
-source-git-commit: 974c77fb427f85058bb2c59d8e3818cb7c148e04
+source-git-commit: ab7bb72826ff3aee1ce93d30dde0a752ef8069de
 workflow-type: tm+mt
-source-wordcount: '885'
+source-wordcount: '931'
 ht-degree: 1%
 
 ---
@@ -37,6 +37,8 @@ Recomendamos a los usuarios que actualicen y prueben antes de pasar a producció
 
 * ![Error](../assets/bug.svg) : las sugerencias provienen de productos que no se pueden mostrar al grupo de clientes.
 * ![Error](../assets/bug.svg) - Los productos no se muestran si no se añaden al &quot;catálogo compartido predeterminado&quot;.
+* ![Error](../assets/bug.svg) - El adaptador de búsqueda no representa el bloque &quot;No&quot; para los atributos booleanos de producto aunque los productos estén configurados con el atributo y el bloque &quot;No&quot; se devuelva en la respuesta.
+* Aunque algunos productos y consultas pueden devolver resultados que no sean en inglés, actualmente no se admiten consultas en varios idiomas.
 * B2B con Live Search para PWA Studio no estará disponible hasta que el PWA Studio añada soporte para él.
 * Las anulaciones de productos y la fuente de atributos de producto pueden tener problemas de sincronización que requieren que los administradores se ejecuten `bin/magento indexer:reset` y `bin/magento indexer:reindex` para volver a sincronizar correctamente.
 * Si activa o desactiva las funciones Permisos del catálogo/Catálogo compartido/B2B, la variable `catalog_data_exporter_product_overrides` el indexador no se actualiza y se marca incorrectamente como `valid`. Uso `bin/magento saas:resync --feed=productOverrides` para solucionar el problema.
