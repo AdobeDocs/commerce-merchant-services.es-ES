@@ -1,10 +1,10 @@
 ---
 title: Eventos
-description: Descubra qué datos captura cada evento y vea la definición completa del esquema.
+description: Descubra qué datos captura cada evento.
 exl-id: b0c88af3-29c1-4661-9901-3c6d134c2386
-source-git-commit: 589d22f488572411b6632ac37d7bc5b752f72e2d
+source-git-commit: aaaab3d11c15a69856711a41e889a5d0208aedd2
 workflow-type: tm+mt
-source-wordcount: '1818'
+source-wordcount: '1977'
 ht-degree: 0%
 
 ---
@@ -13,15 +13,19 @@ ht-degree: 0%
 
 A continuación se enumeran los eventos de comercio disponibles al instalar la extensión del conector del Experience Platform. Los datos que recopilan estos eventos se envían al perímetro de Adobe Experience Platform. También puede crear [eventos personalizados](custom-events.md) para recopilar datos adicionales no proporcionados de forma predeterminada.
 
-Además de los datos que recopilan los eventos siguientes, también obtiene [datos adicionales](https://experienceleague.adobe.com/docs/experience-platform/edge/data-collection/automatic-information.html) proporcionado por el SDK web de Adobe Experience Platform.
+Además de los datos que recopilan los eventos siguientes, también obtiene [otros datos](https://experienceleague.adobe.com/docs/experience-platform/edge/data-collection/automatic-information.html) proporcionado por el SDK web de Adobe Experience Platform.
 
 >[!NOTE]
 >
->Todos los eventos incluyen la variable `personID` , que es un identificador único de la persona.
+>Todos los eventos de tienda incluyen el `personID` , que es un identificador único de la persona.
 
 ## addToCart
 
-Se activa cuando se agrega un producto al carro de compras o cuando se incrementa la cantidad de un producto en el carro de compras. [Esquema completo](https://github.com/adobe/magento-storefront-event-collector/blob/main/src/handlers/product/addToCartAEP.ts).
+Se activa cuando se agrega un producto al carro de compras o cuando se incrementa la cantidad de un producto en el carro de compras.
+
+### Nombre de evento XDM
+
+`commerce.productListAdds`
 
 ### Tipo
 
@@ -34,10 +38,71 @@ En la tabla siguiente se describen los datos recopilados para este evento.
 | Campo | Descripción |
 |---|---|
 | `productListAdds` | Indica si un producto se agregó a un carro de compras. Un valor de `1` indica que se agregó un producto. |
+| `productListItems` | Una matriz de productos agregados al carro de compras |
 | `SKU` | Unidad de mantenimiento de existencias. Identificador único del producto. |
 | `name` | El nombre para mostrar o el nombre legible en lenguaje natural del producto |
-| `priceTotal` | El total de este pedido después de aplicar todos los descuentos e impuestos |
-| `quantity` | Número de unidades que el cliente ha indicado que requiere del producto |
+| `priceTotal` | El precio total del artículo de línea de producto |
+| `quantity` | Número de unidades de producto agregadas al carro de compras |
+| `discountAmount` | Indica la cantidad de descuento aplicada |
+| `currencyCode` | La variable [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) moneda para el producto |
+| `productImageUrl` | URL de la imagen principal del producto |
+| `selectedOptions` | Campo utilizado para un producto configurable. `attribute` identifica un atributo del producto configurable, como `size` o `color` y `value` identifica el valor del atributo como `small` o `black`. |
+| `cartID` | ID exclusivo que identifica el carro de compras del cliente |
+
+## openCart
+
+Se activa cuando se crea un nuevo carro de compras, que es cuando se agrega un producto a un carro vacío.
+
+### Nombre de evento XDM
+
+`commerce.productListOpens`
+
+### Tipo
+
+Tienda
+
+### Datos recopilados
+
+En la tabla siguiente se describen los datos recopilados para este evento.
+
+| Campo | Descripción |
+|---|---|
+| `productListOpens` | Indica si se creó un carro de compras. Un valor de `1` indica que se creó un carro de compras. |
+| `productListItems` | Una matriz de productos agregados al carro de compras |
+| `SKU` | Unidad de mantenimiento de existencias. Identificador único del producto. |
+| `name` | El nombre para mostrar o el nombre legible en lenguaje natural del producto |
+| `priceTotal` | El precio total del artículo de línea de producto |
+| `quantity` | Número de unidades de producto agregadas al carro de compras |
+| `discountAmount` | Indica la cantidad de descuento aplicada |
+| `currencyCode` | La variable [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) moneda para el producto |
+| `productImageUrl` | URL de la imagen principal del producto |
+| `selectedOptions` | Campo utilizado para un producto configurable. `attribute` identifica un atributo del producto configurable, como `size` o `color` y `value` identifica el valor del atributo como `small` o `black`. |
+| `cartID` | ID exclusivo que identifica el carro de compras del cliente |
+
+## removeFromCart
+
+Se activa cada vez que se elimina un producto o cada vez que se reduce la cantidad de un producto en el carro de compras.
+
+### Nombre de evento XDM
+
+`commerce.productListRemovals`
+
+### Tipo
+
+Tienda
+
+### Datos recopilados
+
+En la tabla siguiente se describen los datos recopilados para este evento.
+
+| Campo | Descripción |
+|---|---|
+| `productListRemovals` | Indica si un producto se eliminó del carro de compras. Un valor de `1` indica que un producto se eliminó del carro de compras. |
+| `productListItems` | Una matriz de productos eliminados del carro de compras |
+| `SKU` | Unidad de mantenimiento de existencias. Identificador único del producto. |
+| `name` | El nombre para mostrar o el nombre legible en lenguaje natural del producto |
+| `priceTotal` | El precio total del artículo de línea de producto |
+| `quantity` | Número de unidades de producto eliminadas del carro de compras |
 | `discountAmount` | Indica la cantidad de descuento aplicada |
 | `currencyCode` | La variable [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) moneda para el producto |
 | `productImageUrl` | URL de la imagen principal del producto |
@@ -46,7 +111,11 @@ En la tabla siguiente se describen los datos recopilados para este evento.
 
 ## shoppingCartView
 
-Se activa cuando se carga cualquier página del carro de compras. [Esquema completo](https://github.com/adobe/magento-storefront-event-collector/blob/main/src/handlers/shoppingCart/viewAEP.ts).
+Se activa cuando se carga cualquier página del carro de compras.
+
+### Nombre de evento XDM
+
+`commerce.productListViews`
 
 ### Tipo
 
@@ -59,11 +128,11 @@ En la tabla siguiente se describen los datos recopilados para este evento.
 | Campo | Descripción |
 |---|---|
 | `productListViews` | Indica si se ha visto una lista de productos |
-| `productListItems` | Una matriz de productos agregados a un carro de compras |
+| `productListItems` | Una matriz de productos en el carro de compras |
 | `SKU` | Unidad de mantenimiento de existencias. Identificador único del producto. |
 | `name` | El nombre para mostrar o el nombre legible en lenguaje natural del producto |
-| `priceTotal` | El total de este pedido después de aplicar todos los descuentos e impuestos |
-| `quantity` | Número de unidades que el cliente ha indicado que requiere del producto |
+| `priceTotal` | El precio total del artículo de línea de producto |
+| `quantity` | Número de unidades de producto en el carro de compras |
 | `discountAmount` | Indica la cantidad de descuento aplicada |
 | `currencyCode` | La variable [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) moneda para el producto |
 | `productImageUrl` | URL de la imagen principal del producto |
@@ -72,7 +141,11 @@ En la tabla siguiente se describen los datos recopilados para este evento.
 
 ## pageView
 
-Se activa cuando se carga cualquier página. [Esquema completo](https://github.com/adobe/magento-storefront-event-collector/blob/main/src/handlers/page/viewAEP.ts).
+Se activa cuando se carga cualquier página.
+
+### Nombre de evento XDM
+
+`web.webpagedetails.pageViews`
 
 ### Tipo
 
@@ -88,7 +161,11 @@ En la tabla siguiente se describen los datos recopilados para este evento.
 
 ## productPageView
 
-Se activa cuando se carga cualquier página de producto. [Esquema completo](https://github.com/adobe/magento-storefront-event-collector/blob/main/src/handlers/product/viewAEP.ts).
+Se activa cuando se carga cualquier página de producto.
+
+### Nombre de evento XDM
+
+`commerce.productViews`
 
 ### Tipo
 
@@ -101,10 +178,10 @@ En la tabla siguiente se describen los datos recopilados para este evento.
 | Campo | Descripción |
 |---|---|
 | `productViews` | Indica si se vio el producto |
-| `productListItems` | Una matriz de productos agregados a un carro de compras |
+| `productListItems` | Una matriz de productos en el carro de compras |
 | `SKU` | Unidad de mantenimiento de existencias. Identificador único del producto. |
 | `name` | El nombre para mostrar o el nombre legible en lenguaje natural del producto |
-| `priceTotal` | El total de este pedido después de aplicar todos los descuentos e impuestos |
+| `priceTotal` | El precio total del artículo de línea de producto |
 | `discountAmount` | Indica la cantidad de descuento aplicada |
 | `currencyCode` | La variable [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) moneda para el producto |
 | `productImageUrl` | URL de la imagen principal del producto |
@@ -112,7 +189,11 @@ En la tabla siguiente se describen los datos recopilados para este evento.
 
 ## startCheckout
 
-Se activa cuando el comprador hace clic en un botón de cierre de compra. [Esquema completo](https://github.com/adobe/magento-storefront-event-collector/blob/main/src/handlers/shoppingCart/initiateCheckoutAEP.ts).
+Se activa cuando el comprador hace clic en un botón de cierre de compra.
+
+### Nombre de evento XDM
+
+`commerce.checkouts`
 
 ### Tipo
 
@@ -125,11 +206,11 @@ En la tabla siguiente se describen los datos recopilados para este evento.
 | Campo | Descripción |
 |---|---|
 | `checkouts` | Indica si se produjo una acción durante el proceso de cierre de compra |
-| `productListItems` | Una matriz de productos agregados a un carro de compras |
+| `productListItems` | Una matriz de productos en el carro de compras |
 | `SKU` | Unidad de mantenimiento de existencias. Identificador único del producto. |
 | `name` | El nombre para mostrar o el nombre legible en lenguaje natural del producto |
-| `priceTotal` | El total de este pedido después de aplicar todos los descuentos e impuestos |
-| `quantity` | Número de unidades que el cliente ha indicado que requiere del producto |
+| `priceTotal` | El precio total del artículo de línea de producto |
+| `quantity` | Número de unidades de producto en el carro de compras |
 | `discountAmount` | Indica la cantidad de descuento aplicada |
 | `currencyCode` | La variable [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) moneda para el producto |
 | `productImageUrl` | URL de la imagen principal del producto |
@@ -138,7 +219,11 @@ En la tabla siguiente se describen los datos recopilados para este evento.
 
 ## completeCheckout
 
-Se activa cuando el comprador realiza un pedido. [Esquema completo](https://github.com/adobe/magento-storefront-event-collector/blob/main/src/handlers/checkout/placeOrderAEP.ts).
+Se activa cuando el comprador realiza un pedido.
+
+### Nombre de evento XDM
+
+`commerce.order`
 
 ### Tipo
 
@@ -163,11 +248,11 @@ En la tabla siguiente se describen los datos recopilados para este evento.
 | `shippingMethod` | El método de envío elegido por el cliente, como envío estándar, envío rápido, recogida en la tienda, etc. |
 | `shippingAmount` | El coste total de envío de los artículos del carro de compras |
 | `promotionID` | Identificador único de la promoción, si lo hay |
-| `productListItems` | Una matriz de productos agregados a un carro de compras |
+| `productListItems` | Una matriz de productos en el carro de compras |
 | `SKU` | Unidad de mantenimiento de existencias. Identificador único del producto. |
 | `name` | El nombre para mostrar o el nombre legible en lenguaje natural del producto |
-| `priceTotal` | El total de este pedido después de aplicar todos los descuentos e impuestos |
-| `quantity` | Número de unidades que el cliente ha indicado que requiere del producto |
+| `priceTotal` | El precio total del artículo de línea de producto |
+| `quantity` | Número de unidades de producto en el carro de compras |
 | `discountAmount` | Indica la cantidad de descuento aplicada |
 | `currencyCode` | La variable [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) código de moneda utilizado para los totales de pedidos. |
 | `productImageUrl` | URL de la imagen principal del producto |
@@ -175,11 +260,15 @@ En la tabla siguiente se describen los datos recopilados para este evento.
 
 ## signIn
 
-Se activa cuando un comprador intenta iniciar sesión. [Esquema completo](https://github.com/adobe/magento-storefront-event-collector/blob/main/src/handlers/account/signInAEP.ts).
+Se activa cuando un comprador intenta iniciar sesión.
 
 >[!NOTE]
 >
 > Este evento se activa cuando se intenta realizar la acción específica. No indica que la acción se haya realizado correctamente.
+
+### Nombre de evento XDM
+
+`userAccount.login`
 
 ### Tipo
 
@@ -201,11 +290,15 @@ En la tabla siguiente se describen los datos recopilados para este evento.
 
 ## signOut
 
-Se activa cuando un comprador intenta cerrar sesión. [Esquema completo](https://github.com/adobe/magento-storefront-event-collector/blob/main/src/handlers/account/signOutAEP.ts).
+Se activa cuando un comprador intenta cerrar sesión.
 
 >[!NOTE]
 >
 > Este evento se activa cuando se intenta realizar la acción específica. No indica que la acción se haya realizado correctamente.
+
+### Nombre de evento XDM
+
+`userAccount.logout`
 
 ### Tipo
 
@@ -223,11 +316,15 @@ En la tabla siguiente se describen los datos recopilados para este evento.
 
 ## createAccount
 
-Se activa cuando un comprador intenta crear una cuenta. [Esquema completo](https://github.com/adobe/magento-storefront-event-collector/blob/main/src/handlers/account/createAccountAEP.ts).
+Se activa cuando un comprador intenta crear una cuenta.
 
 >[!NOTE]
 >
 > Este evento se activa cuando se intenta realizar la acción específica. No indica que la acción se haya realizado correctamente.
+
+### Nombre de evento XDM
+
+`userAccount.createProfile`
 
 ### Tipo
 
@@ -250,11 +347,15 @@ En la tabla siguiente se describen los datos recopilados para este evento.
 
 ## editAccount
 
-Se activa cuando un comprador intenta editar una cuenta. [Esquema completo](https://github.com/adobe/magento-storefront-event-collector/blob/main/src/handlers/account/editAccountAEP.ts).
+Se activa cuando un comprador intenta editar una cuenta.
 
 >[!NOTE]
 >
 > Este evento se activa cuando se intenta realizar la acción específica. No indica que la acción se haya realizado correctamente.
+
+### Nombre de evento XDM
+
+`userAccount.updateProfile`
 
 ### Tipo
 
@@ -293,11 +394,13 @@ Se activa mediante los siguientes eventos en las páginas de resultados de búsq
 - Vaya a la página anterior
 - Navegar a otra página
 
-[Esquema completo](https://github.com/adobe/magento-storefront-event-collector/blob/main/src/handlers/search/searchRequestSentAEP.ts).
-
 >[!NOTE]
 >
 >Los eventos de búsqueda no son compatibles con Adobe Commerce Enterprise Edition con el módulo B2B instalado.
+
+### Nombre de evento XDM
+
+`searchRequest`
 
 ### Tipo
 
@@ -323,11 +426,13 @@ En la tabla siguiente se describen los datos recopilados para este evento.
 
 Se activa cuando la búsqueda activa devuelve resultados para la página de resultados de búsqueda o de pov &quot;search as you type&quot;.
 
-[Esquema completo](https://github.com/adobe/magento-storefront-event-collector/blob/main/src/handlers/search/searchResponseReceivedAEP.ts)
-
 >[!NOTE]
 >
 >Los eventos de búsqueda no son compatibles con Adobe Commerce Enterprise Edition con el módulo B2B instalado.
+
+### Nombre de evento XDM
+
+`searchResponse`
 
 ### Tipo
 
@@ -342,4 +447,4 @@ En la tabla siguiente se describen los datos recopilados para este evento.
 | `searchResponse` | Indica si se ha recibido una respuesta de búsqueda |
 | `suggestions` | Matriz de cadenas que incluyen los nombres de productos y categorías que existen en el catálogo y que son similares a la consulta de búsqueda |
 | `numberOfResults` | El número de productos devueltos |
-| `productListItems` | Una matriz de productos agregados a un carro de compras. Incluye el `SKU`(Unidad de mantenimiento de existencias) y `name` del producto (nombre para mostrar o nombre legible en lenguaje natural). |
+| `productListItems` | Una matriz de productos en el carro de compras. Incluye el `SKU`(Unidad de mantenimiento de existencias) y `name` del producto (nombre para mostrar o nombre legible en lenguaje natural). |

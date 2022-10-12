@@ -2,10 +2,10 @@
 title: Notas de la versión
 description: La información de la última versión del conector Adobe Experience Platform de Adobe Commerce.
 exl-id: 7636664b-488a-46f7-8d19-a9faac126aec
-source-git-commit: 1c881bd5783653304d71a7a4a3db9f3471bd0ae3
+source-git-commit: b41428a7e86b09bee5273828e58c5db6601e7a09
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '114'
+ht-degree: 5%
 
 ---
 
@@ -17,7 +17,14 @@ Estas notas de la versión describen las versiones más recientes del conector d
 * ![Corrección](../assets/fix.svg) - Correcciones y mejoras
 * ![Error](../assets/bug.svg) - Problemas conocidos
 
-## Conector del Experience Platform 1.0.0
+## 2.0.0
+
+* ![Nuevo](../assets/new.svg) - Se agregaron dos nuevas [eventos de tienda](events.md): `openCart` y `removeFromCart`
+* ![Nuevo](../assets/new.svg) - Se ha agregado compatibilidad con un [AEM tienda](overview.md#aem-support)
+* ![Nuevo](../assets/new.svg) - Se ha agregado la capacidad de especificar su propio SDK web de AEP al [conexión](connect-data.md) la instancia de Adobe Commerce al Experience Platform
+* ![Corrección](../assets/fix.svg) - Se ha actualizado el requisito del ámbito del conjunto de datos para que los ID del conjunto de datos deban incluirse en el ámbito del sitio web en lugar de en la vista del almacén
+
+## 1.0.0
 
 * ![Nuevo](../assets/new.svg) - Versión de disponibilidad general
 
