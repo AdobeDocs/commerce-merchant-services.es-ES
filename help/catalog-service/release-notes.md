@@ -2,22 +2,40 @@
 title: '[!DNL Catalog Service] Notas de la versión'
 description: La información de la última versión de [!DNL Catalog Service] para Adobe Commerce.
 exl-id: 9bf8e3f7-5b74-4755-867e-ac1c5000ff33
-source-git-commit: 372dc1cb567121ab86f606d2ace9f19d8e01170b
+source-git-commit: bb557e130a7dbef96c625d65cbe191a4ccbe26d0
 workflow-type: tm+mt
-source-wordcount: '283'
+source-wordcount: '395'
 ht-degree: 1%
 
 ---
 
 # [!DNL Catalog Service] Notas de la versión
 
-{{catalog-service-beta}}
-
 Estas notas de la versión describen las versiones más recientes de [!DNL Catalog Service] e incluyen:
 
 * ![Nuevo](../assets/new.svg) - Nuevas funciones
 * ![Corrección](../assets/fix.svg) - Correcciones y mejoras
 * ![Error](../assets/bug.svg) - Problemas conocidos
+
+## Versión 1.0
+
+Fecha de versión: 2022-10-04 Compatible con Adobe Commerce (EE): 2.4.x Compatible con Adobe Commerce para Cloud (ECE): 2.4.x Estabilidad: Disponibilidad general
+
+![Nuevo](../assets/new.svg) - Ahora admiten productos agrupados y agrupados.
+![Nuevo](../assets/new.svg) - Se han añadido anulaciones de visibilidad B2B. Los productos ahora se pueden buscar y se pueden agregar al carro de compras para grupos de clientes específicos.
+![Corrección](../assets/fix.svg) - El servicio es ahora más estable y ha mejorado el rendimiento.
+
+### Limitaciones conocidas
+
+Estas funciones aún no son compatibles:
+
+* Precio de nivel
+* Las actualizaciones no se reciben cuando se eliminan variantes del catálogo
+* El tamaño máximo de la carga útil de atributos dinámicos es &lt;9 MB
+* Precio fijo de los productos del paquete
+* Precio total de los productos agrupados
+* Compatibilidad con tipos de producto de tarjeta de regalo, descargables y virtuales
+* Precio mínimo publicitado (MAP)
 
 ## Versión 0.3: beta+
 
