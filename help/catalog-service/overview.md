@@ -2,9 +2,9 @@
 title: '[!DNL Catalog Service]'
 description: '''[!DNL Catalog Service] para Adobe Commerce proporciona una forma de recuperar el contenido de las páginas de visualización de productos y de las páginas de listas de productos mucho más rápido que las consultas nativas de Adobe Commerce GraphQL.'
 exl-id: 266faca4-6a65-4590-99a9-65b1705cac87
-source-git-commit: bb557e130a7dbef96c625d65cbe191a4ccbe26d0
+source-git-commit: fb229136728a8e7a8afa077120dbad388d1e4089
 workflow-type: tm+mt
-source-wordcount: '527'
+source-wordcount: '890'
 ht-degree: 0%
 
 ---
@@ -42,6 +42,30 @@ Dado que el servicio evita la comunicación directa con la aplicación, puede re
 Los sistemas principal y de servicio de GraphQL no se comunican directamente entre sí. Puede acceder a cada sistema desde una dirección URL diferente y las llamadas requieren información de encabezado diferente. Los dos sistemas GraphQL están diseñados para utilizarse juntos. La variable [!DNL Catalog Service] El sistema GraphQL aumenta el sistema principal para que las experiencias de tienda de productos sean más rápidas.
 
 Si lo desea, puede implementar [Mesh de API para Adobe Developer App Builder](https://developer.adobe.com/graphql-mesh-gateway/) para integrar los dos sistemas Adobe Commerce GraphQL con API privadas y de terceros y otras interfaces de software mediante Adobe Developer. La red se puede configurar para garantizar que las llamadas enrutadas a cada extremo contengan la información de autorización correcta en los encabezados.
+
+## Detalles arquitectónicos
+
+Las siguientes secciones describen algunas de las diferencias entre los dos sistemas GraphQL.
+
+### Administración de esquemas
+
+Dado que el servicio de catálogo funciona como un servicio, los integradores no necesitan preocuparse por la versión subyacente de Commerce. La sintaxis de las consultas es la misma para todas las versiones. Además, el esquema es coherente para todos los comerciantes. Esta coherencia facilita el establecimiento de prácticas recomendadas y aumenta significativamente la reutilización de las utilidades de tienda.
+
+### Simplificación de los tipos de producto
+
+El esquema reduce la diversidad de tipos de productos a dos casos de uso:
+
+* Los productos simples son los que se definen con un precio y una cantidad únicos. El servicio de catálogo asigna los tipos de producto simples, virtuales, descargables y de tarjetas de regalo a `simpleProductViews`.
+
+* Los productos complejos están compuestos de varios productos simples. El componente productos simples puede tener precios diferentes. También se puede definir un producto complejo para que el comprador pueda especificar la cantidad de productos simples componentes. El servicio de catálogo asigna los tipos de producto configurables, agrupados y agrupados a `complexProductViews`.
+
+Las opciones de productos complejos se unifican y distinguen por su comportamiento, no por el tipo. Cada valor de opción representa un producto simple. Este valor de opción tiene acceso a los atributos de producto simples, incluido el precio. Cuando el comprador selecciona todas las opciones de un producto complejo, la combinación de opciones seleccionadas apunta a un producto simple específico. El producto simple permanece ambiguo hasta que el comprador selecciona un valor para todas las opciones disponibles.
+
+### Precios
+
+Los productos simples representan la unidad de venta base que tiene un precio. El Servicio de Catálogo calcula el precio normal antes de los descuentos, así como el precio final después de los descuentos. Los cálculos de precios pueden incluir impuestos fijos sobre productos. Excluyen las promociones personalizadas.
+
+Un producto complejo no tiene un precio establecido. En su lugar, el Servicio de Catálogo devuelve los precios de las simplificaciones vinculadas. Por ejemplo, un comerciante puede asignar inicialmente los mismos precios a todas las variantes de un producto configurable. Si algunos tamaños o colores no son populares, el comerciante puede reducir los precios de esas variantes. Por lo tanto, el precio del producto complejo (configurable) al principio muestra un rango de precios, reflejando el precio de las variantes estándar y las impopulares. Una vez que el comprador ha seleccionado un valor para todas las opciones disponibles, la tienda muestra un único precio.
 
 ## Implementación
 
