@@ -2,9 +2,9 @@
 title: Recopilación de datos de comercio mediante etiquetas de Adobe Experience Platform
 description: Obtenga información sobre cómo recopilar datos de comercio mediante etiquetas de Adobe Experience Platform.
 exl-id: 852fc7d2-5a5f-4b09-8949-e9607a928b44
-source-git-commit: c7344efead97b0562a146f096123dd84f998fd5e
+source-git-commit: f3c37c9c50c608f9f0ea4582fbcca2b99a3428b5
 workflow-type: tm+mt
-source-wordcount: '2504'
+source-wordcount: '2574'
 ht-degree: 0%
 
 ---
@@ -124,6 +124,7 @@ Para cada uno de los eventos siguientes, asigne los eventos de Adobe Commerce a 
 - [`searchRequestSent`](#searchrequestsent)
 - [`searchResponseReceived`](#searchresponsereceived)
 - [`addToCart`](#addtocart)
+- [`openCart`](#opencart)
 - [&quot;viewCart&quot;](#viewcart)
 - [`removeFromCart`](#removefromcart)
 - [`initiateCheckout`](#initiatecheckout)
@@ -783,6 +784,39 @@ Cree los siguientes elementos de datos:
 - **Tipo de acción**: `Send event`
 - **Tipo**: `commerce.productListAdds`
 - **Datos XDM**: `%add to cart%`
+
+### openCart {#opencart}
+
+Se activa cuando se crea un nuevo carro de compras, lo que sucede cuando se agrega un producto a un carro vacío.
+
+#### Elementos de datos
+
+Cree el siguiente elemento de datos:
+
+1. Abrir carro:
+
+   - **Nombre**: `open cart`
+   - **Extensión**: `Adobe Experience Platform Web SDK`
+   - **Tipo de elemento de datos**: `XDM object`
+   - **Grupo de campos**: `commerce` > `productListOpens` > `value`
+   - **value**: **Valor** = `1`
+   - **Grupo de campos**: `commerce` > `cart` > `cartID`
+   - **ID del carro de compras**: **Valor** = `%cart id%`
+   - **Grupo de campos**: `productListItems`. Para `productListItems`, se pueden precalcular varios elementos. Select **productListItems** > **Proporcionar toda la matriz**.
+
+#### Reglas 
+
+- **Nombre**: `open cart`
+- **Extensión**: `Adobe Client Data Layer`
+- **Tipo de evento**: `Data Pushed`
+- **Evento específico**: `open-cart`
+
+##### Acciones
+
+- **Extensión**: `Adobe Experience Platform Web SDK`
+- **Tipo de acción**: `Send event`
+- **Tipo**: `commerce.productListOpens`
+- **Datos XDM**: `%open cart%`
 
 ### viewCart {#viewcart}
 

@@ -2,9 +2,9 @@
 title: Notas de la versión
 description: La información de la última versión de [!DNL Product Recommendations] de Adobe Commerce.
 exl-id: 1758e688-d26f-45e7-818c-d4726338a6c3
-source-git-commit: ab7bb72826ff3aee1ce93d30dde0a752ef8069de
+source-git-commit: bd1cf8a3b4740594cf6b8678d899d771a886cb2e
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '957'
 ht-degree: 0%
 
 ---
@@ -27,7 +27,7 @@ Consulte la documentación para desarrolladores para [obtenga información sobre
 
 ## Adobe Commerce 2.3.x y 2.4.x
 
-## 4.0.0 de magento/product-recommendations
+### 4.0.0 de magento/product-recommendations
 
 * ![Nuevo](../assets/new.svg) - Agregado [indicadores de disponibilidad](create.md) para ayudarle a visualizar el progreso de la formación de cada tipo de recomendación.
 * ![Nuevo](../assets/new.svg) : Esta es una versión principal. Debe [editar](install-configure.md#update) la raíz `composer.json` para su proyecto. Esta versión también requiere que proporcione dos claves de API al instalar y configurar Product Recommendations: [una clave de producción y una clave de entorno limitado](../landing/saas.md).
@@ -36,12 +36,12 @@ Consulte la documentación para desarrolladores para [obtenga información sobre
 
 * La variable `websiteCode` se devuelve incorrectamente si contiene un guión bajo (_).
 
-## 3.3.7 de magento/product-recommendations
+### 3.3.7 de magento/product-recommendations
 
 * ![Nuevo](../assets/new.svg) - Se ha agregado compatibilidad con PHP 8.1
 * ![Nuevo](../assets/new.svg) - Se ha mejorado el cambio de tamaño de la imagen para que las imágenes de distintos tamaños se gestionen de forma más coherente en la plantilla de visualización de referencia
 
-## 3.3.6 de magento/recomendaciones de productos
+### 3.3.6 de magento/recomendaciones de productos
 
 * ![Nuevo](../assets/new.svg) - Optimizado [!DNL Product Recommendations] metapackage enumerando explícitamente las dependencias
 
