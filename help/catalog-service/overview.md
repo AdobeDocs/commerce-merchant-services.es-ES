@@ -2,9 +2,9 @@
 title: '[!DNL Catalog Service]'
 description: '''[!DNL Catalog Service] para Adobe Commerce proporciona una forma de recuperar el contenido de las páginas de visualización de productos y de las páginas de listas de productos mucho más rápido que las consultas nativas de Adobe Commerce GraphQL.'
 exl-id: 266faca4-6a65-4590-99a9-65b1705cac87
-source-git-commit: fb229136728a8e7a8afa077120dbad388d1e4089
+source-git-commit: 7ab545b8e3d9a795be7ff43246e102b366ad94bd
 workflow-type: tm+mt
-source-wordcount: '890'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -32,12 +32,12 @@ En el diagrama siguiente se muestran los dos sistemas GraphQL:
 
 En el sistema principal de GraphQL, el PWA envía una solicitud a la aplicación Commerce, que recibe cada solicitud, la procesa, posiblemente enviando una solicitud a través de varios subsistemas y, a continuación, devuelve una respuesta a la tienda. Este viaje de ida y vuelta puede causar tiempos de carga de página lentos, lo que puede provocar tasas de conversión más bajas.
 
-[!DNL Catalog Service] envía consultas a una puerta de enlace de GraphQL independiente. El servicio accede a una base de datos independiente que contiene detalles del producto e información relacionada, como atributos del producto, variantes, precios y categorías. El servicio mantiene la base de datos sincronizada con Adobe Commerce mediante la indexación.
+[!DNL Catalog Service] es un servicio de pasarela federado de GraphQL. El servicio accede a una base de datos independiente que contiene detalles del producto e información relacionada, como atributos del producto, variantes, precios y categorías. El servicio mantiene la base de datos sincronizada con Adobe Commerce mediante la indexación.
 Dado que el servicio evita la comunicación directa con la aplicación, puede reducir la latencia del ciclo de solicitud y respuesta.
 
 >[!NOTE]
 >
->La puerta de enlace es para una futura integración con Product Recommendations. En esta versión puede acceder a [!DNL Catalog Service] y [!DNL Live Search] consultas federadas del mismo extremo si tiene una clave de licencia válida para ambos productos.
+>La puerta de enlace es para una futura integración con Product Recommendations. En esta versión, puede acceder a la [!DNL Catalog Service Federated GraphQL] y [!DNL Live Search] consultas federadas del mismo extremo si tiene una clave de licencia válida para ambos productos.
 
 Los sistemas principal y de servicio de GraphQL no se comunican directamente entre sí. Puede acceder a cada sistema desde una dirección URL diferente y las llamadas requieren información de encabezado diferente. Los dos sistemas GraphQL están diseñados para utilizarse juntos. La variable [!DNL Catalog Service] El sistema GraphQL aumenta el sistema principal para que las experiencias de tienda de productos sean más rápidas.
 
