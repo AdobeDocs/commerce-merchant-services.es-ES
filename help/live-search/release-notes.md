@@ -2,10 +2,10 @@
 title: "[!DNL Live Search] Notas de la versión"
 description: '"La información de la última versión de [!DNL Live Search] de Adobe Commerce".'
 exl-id: 2a581e43-35f5-48ce-9752-844430ccdebf
-source-git-commit: ab7bb72826ff3aee1ce93d30dde0a752ef8069de
+source-git-commit: baa2587fc9d048d7a7915b9370b63ac6c2ff93d2
 workflow-type: tm+mt
-source-wordcount: '931'
-ht-degree: 1%
+source-wordcount: '1114'
+ht-degree: 0%
 
 ---
 
@@ -16,6 +16,22 @@ Estas notas de la versión describen las versiones más recientes de [!DNL Live 
 * ![Nuevo](../assets/new.svg) - Nuevas funciones
 * ![Corrección](../assets/fix.svg) - Correcciones y mejoras
 * ![Error](../assets/bug.svg) - Problemas conocidos
+
+## [!DNL Live Search] 2.0.4
+
+* Compatible con Adobe Commerce (EE): 2.4.x
+* Compatible con Adobe Commerce para Cloud (ECE): 2.4.x
+* Estabilidad: Estable
+
+* ![Nuevo](../assets/new.svg) - La búsqueda activa ahora admite el filtrado mediante la configuración &quot;Mostrar productos fuera de existencias&quot; en el administrador. Si &quot;Mostrar productos fuera de existencias&quot; está establecido en false, `inStock = true` se agrega al filtro.
+* ![Corrección](../assets/fix.svg) - Para mejorar el rendimiento, se ha eliminado el bloque &quot;Sugerencias&quot; de la ventana emergente Búsqueda activa. Los datos aún se pasan a través de GraphQL, en caso de que desee reemplazar la función.
+* ![Corrección](../assets/fix.svg) - `categories` y `categoryPath` han reemplazado `categoryIds` para el filtrado de categorías. Obtenga más información en la [productSearch](https://devdocs.magento.com/live-search/product-search.html#filter) tema.
+* ![Corrección](../assets/fix.svg) - Anteriormente, un usuario vinculado a una empresa B2B recibía un código de grupo de clientes incorrecto al realizar búsquedas. La búsqueda activa ahora devuelve el valor correcto.
+* ![Corrección](../assets/fix.svg) - Anteriormente, al buscar un término que no existe, la búsqueda activa devolvía un error. Ese error ya está solucionado.
+
+Los comerciantes deben actualizar la versión de la extensión Live Search >= 2.0.4 para acceder a estas funciones.
+
+Recomendamos a los usuarios que actualicen y prueben antes de pasar a producción. Considere la posibilidad de actualizar el entorno de producción durante las horas de menor actividad después de comprobar los resultados de su entorno de prueba.
 
 ## [!DNL Live Search] 2.0.3
 
