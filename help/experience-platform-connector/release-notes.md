@@ -2,7 +2,7 @@
 title: Notas de la versión
 description: La información de la última versión del conector Adobe Experience Platform de Adobe Commerce.
 exl-id: 7636664b-488a-46f7-8d19-a9faac126aec
-source-git-commit: f3c37c9c50c608f9f0ea4582fbcca2b99a3428b5
+source-git-commit: b0f729a8035d89a8cd45b583df28dedfb36c19d4
 workflow-type: tm+mt
 source-wordcount: '194'
 ht-degree: 3%
@@ -27,12 +27,14 @@ Consulte [Disponibilidad](https://experienceleague.adobe.com/docs/commerce-opera
 
 Estas notas de la versión describen cambios y correcciones de funciones relacionados con las extensiones utilizadas por el conector del Experience Platform.
 
-+++Actualizaciones de servicio alojadas
++++Actualizaciones de servicio compatibles
 
 _12 de octubre de 2022_
 
 * ![Nuevo](../assets/new.svg) - Se agregaron dos [eventos de tienda](events.md): `openCart` y `removeFromCart` al SDK y el recopilador de eventos de tienda de Adobe Commerce
 * ![Nuevo](../assets/new.svg) - Se ha agregado compatibilidad con un [AEM tienda](overview.md#aem-support)
+
++++
 
 ## 2.0.0
 
