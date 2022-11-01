@@ -1,10 +1,10 @@
 ---
-title: '"Estilo [!DNL Popover] Elementos"'
-description: '"Notas técnicas sobre la personalización de la variable [!DNL Live Search storefront popover]"'
+title: "Estilo [!DNL Popover] Elementos"
+description: "Notas técnicas sobre la personalización de la variable [!DNL Live Search storefront popover]"
 exl-id: 033049f2-976e-4299-b026-333ac4b481a3
-source-git-commit: bffbede99865e9085f60392e474065a454446370
+source-git-commit: ba3d983372eb60d5cb42e503c3c26c693668a01e
 workflow-type: tm+mt
-source-wordcount: '205'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -36,13 +36,10 @@ Para obtener más información sobre el estilo de los elementos de tienda, consu
 
 ## Selectores de clases
 
-Los siguientes selectores de clase se pueden usar para aplicar estilo a los elementos de contenedor, sugerencia y producto en la [!DNL popover].
+Los siguientes selectores de clase se pueden usar para aplicar estilo a los elementos de contenedor y producto en la variable [!DNL popover].
 
 * `.livesearch.popover-container`
 * `.livesearch.view-all-footer`
-* `.livesearch.suggestions-container`
-* `.livesearch.suggestions-header`
-* `.livesearch.suggestion`
 * `.livesearch.products-container`
 * `.livesearch.product-result`
 * `.livesearch.product-name`
@@ -50,37 +47,30 @@ Los siguientes selectores de clase se pueden usar para aplicar estilo a los elem
 
 ### Selectores de clase de contenedor
 
-`.livesearch.popover-container`
+#### .livesearch.popover-container
 
 ![[!DNL Popover] container](assets/livesearch-popover-container.png)
 
-`.livesearch.view-all-footer`
+#### .livesearch.view-all-footer
 
 ![Ver todo el pie de página](assets/livesearch-view-all-footer.png)
 
-### Selectores de clases de sugerencias
-
-`.livesearch.suggestions-container`
-![Contenedor de sugerencias](assets/livesearch-suggestions-container.png)
-
-`.livesearch.suggestions-header`
-![Encabezado Sugerencias](assets/livesearch-suggestions-header.png)
-
-`.livesearch.suggestion`
-![Sugerencia](assets/livesearch-suggestion.png)
-
 ### Selectores de clase de producto
 
-`.livesearch.products-container`
+#### .livesearch.products-container
+
 ![Contenedor de producto](assets/livesearch-product-container.png)
 
-`.livesearch.product-result`
+#### .livesearch.product-result
+
 ![Resultado del producto](assets/livesearch-product-result.png)
 
-`.livesearch.product-name`
+#### .livesearch.product-name
+
 ![Nombre del producto](assets/livesearch-product-name.png)
 
-`.livesearch.product-price`
+#### .livesearch.product-price
+
 ![Precio del producto](assets/livesearch-product-price.png)
 
 ## Trabajo con un tema modificado {#working-with-modified-theme}

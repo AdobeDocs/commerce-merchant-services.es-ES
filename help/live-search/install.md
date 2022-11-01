@@ -2,7 +2,7 @@
 title: "Instalar [!DNL Live Search]"
 description: '"Obtenga información sobre cómo instalar, actualizar y desinstalar [!DNL Live Search] de Adobe Commerce".'
 exl-id: aa251bb0-d52c-4cff-bccb-76a08ae2a3b2
-source-git-commit: a17c9ef193394d86f5439f900ebba3dd68d33b45
+source-git-commit: c4039dbf203198ea1218f4e1516a2690fb7c61c4
 workflow-type: tm+mt
 source-wordcount: '0'
 ht-degree: 0%
@@ -251,7 +251,7 @@ Para desinstalar [!DNL Live Search], consulte [Desinstalar módulos](https://dev
 |--- |--- |
 | `module-live-search` | Permite a los comerciantes configurar las opciones de búsqueda para facetas, sinónimos, reglas de consulta, etc., y proporciona acceso a un área de reproducción de GraphQL de solo lectura para probar consultas desde la *Administrador*. |
 | `module-live-search-adapter` | Envía las solicitudes de búsqueda desde la tienda hasta el [!DNL Live Search] y procesa los resultados en la tienda. <br />- Exploración de categorías: Enruta solicitudes desde la tienda [navegación superior](https://docs.magento.com/user-guide/catalog/navigation-top.html) al servicio de búsqueda.<br />- Búsqueda global: envía solicitudes desde la [búsqueda rápida](https://docs.magento.com/user-guide/catalog/search-quick.html) en la parte superior derecha de la tienda, a la [!DNL Live Search] servicio. |
-| `module-live-search-storefront-popover` | Una ventana emergente de &quot;búsqueda a medida que escribe&quot; reemplaza a la búsqueda rápida estándar y devuelve sugerencias de productos dinámicas y miniaturas de los principales resultados de búsqueda. |
+| `module-live-search-storefront-popover` | Una ventana emergente de &quot;búsqueda a medida que escribe&quot; reemplaza a la búsqueda rápida estándar y devuelve datos y miniaturas de los principales resultados de búsqueda. |
 
 ## [!DNL Live Search] dependencias {#dependencies}
 
