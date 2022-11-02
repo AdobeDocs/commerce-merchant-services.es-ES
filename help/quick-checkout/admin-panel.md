@@ -1,9 +1,9 @@
 ---
 title: "[!DNL Quick Checkout] para el panel de administración de Adobe Commerce"
 description: "Aprenda a usar la variable [!DNL Quick Checkout] El panel de administración puede ayudar a incorporar, configurar y visualizar correctamente la extensión."
-source-git-commit: d4b58b0ee3da866d460cf18d96ec9dd27b195f7a
+source-git-commit: bd02a8083d3f4c9cb0422b27d61bd5462187ffc3
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '201'
 ht-degree: 0%
 
 ---
@@ -30,7 +30,7 @@ Consulte la [Incorporación](../quick-checkout/onboarding.md) para obtener más 
 | Campo | Descripción |
 |---|---|
 | [!UICONTROL Overview] | La ficha Información general muestra todos los recursos para [!DNL Quick Checkout]. |
-| [!UICONTROL Reports] | La ficha Informes muestra información general [!DNL Quick Checkout] información de informes. |
+| [!UICONTROL Reports] | La ficha Informes muestra información general [!DNL Quick Checkout] información. |
 
 ## Ayuda y asistencia
 

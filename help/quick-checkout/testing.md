@@ -1,8 +1,8 @@
 ---
-title: '"Prueba de la variable [!DNL Quick Checkout] para la extensión de Adobe Commerce"'
-description: '"La prueba y validación garantizan que la variable [!DNL Quick Checkout] funciona según lo esperado."'
+title: "Prueba de la variable [!DNL Quick Checkout] para la extensión de Adobe Commerce"
+description: "La prueba y validación garantizan que la variable [!DNL Quick Checkout] funciona según lo esperado."
 exl-id: 308f39e1-e2f6-40d8-b876-0f9013effed3
-source-git-commit: 9841db7616c8aa6d5bc5af3e6e92c0abe9a4a1e2
+source-git-commit: bd02a8083d3f4c9cb0422b27d61bd5462187ffc3
 workflow-type: tm+mt
 source-wordcount: '437'
 ht-degree: 0%
@@ -44,15 +44,15 @@ También debe verificar que la información que aparece en los extractos bancari
 Complete un cierre de compra correcto desde su tienda:
 
 1. Vaya a su tienda y coloque los artículos deseados en su carro de compras.
-2. Continúe con el cierre de compra.
-3. Introduzca una dirección de correo electrónico asociada a un [!DNL Bolt] cuando se le pida.
-4. Introduzca la contraseña única (OTP) enviada a la dirección de correo electrónico de la cuenta.
-5. Seleccione el tablero de entorno:
+1. Continúe con el cierre de compra.
+1. Introduzca una dirección de correo electrónico asociada a un [!DNL Bolt] cuando se le pida.
+1. Introduzca la contraseña única (OTP) enviada a la dirección de correo electrónico de la cuenta.
+1. Seleccione el tablero de entorno:
 
    - Sandbox
    - Producción
 
-6. Realice el pedido.
+1. Realice el pedido.
 
 Una vez realizado el pedido, puede ver los detalles de sus pedidos en su _Cuadrícula de pedidos_ vista:
 
