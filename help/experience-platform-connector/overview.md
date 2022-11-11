@@ -2,9 +2,9 @@
 title: Información general de guía
 description: Obtenga información sobre cómo integrar datos de Adobe Commerce con Adobe Experience Platform mediante el conector del Experience Platform.
 exl-id: a8362e71-e21c-4b1d-8e3f-336e748e1018
-source-git-commit: f5d1c39fe1b02d2a661b92f971fba5b3e836dd6a
+source-git-commit: a316b92f75cb227d0c58af07482f9d37568af7ca
 workflow-type: tm+mt
-source-wordcount: '442'
+source-wordcount: '446'
 ht-degree: 0%
 
 ---
@@ -50,5 +50,5 @@ Consulte la [AEM](https://experienceleague.adobe.com/docs/experience-manager-clo
 
 Si necesita información o tiene preguntas que no están incluidas en esta guía, utilice los siguientes recursos:
 
-- [Centro de ayuda](https://support.magento.com/hc/en-us){target=&quot;_blank&quot;}
-- [Entradas de soporte](https://support.magento.com/hc/en-us/articles/360000913794#submit-ticket){target=&quot;_blank&quot;}: envíe un ticket para recibir ayuda adicional.
+- [Centro de ayuda](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/overview.html){target=&quot;_blank&quot;}
+- [Entradas de soporte](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket){target=&quot;_blank&quot;}: envíe un ticket para recibir ayuda adicional.
