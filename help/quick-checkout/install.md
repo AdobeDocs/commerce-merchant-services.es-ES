@@ -2,9 +2,9 @@
 title: "Instalar [!DNL Quick Checkout] para la extensión de Adobe Commerce"
 description: "Siga estos pasos para instalar [!DNL Quick Checkout] en su proyecto de Adobe Commerce."
 exl-id: e1dabc9a-0ab0-4f8d-98d3-7a32abbedcb8
-source-git-commit: 7b31fe7a71c3c238e6448627b2edfe06bbfbc80e
+source-git-commit: d28e8ccd4362b4e32b2eb8c6e1faf38d7c99a4c2
 workflow-type: tm+mt
-source-wordcount: '385'
+source-wordcount: '388'
 ht-degree: 0%
 
 ---
@@ -100,7 +100,7 @@ Cuando lanzamos una nueva versión de [!DNL Quick Checkout], puede actualizar f�
 
 Es posible que vea errores al intentar instalar el [!DNL Quick Checkout] extensión.
 
-Si tiene algún problema durante la [!DNL Quick Checkout] proceso de instalación, consulte [Solución de problemas de cierre de compra rápido](https://support.magento.com/hc/en-us/articles/6909450342541) en el Centro de ayuda de Adobe Commerce.
+Si tiene algún problema durante la [!DNL Quick Checkout] proceso de instalación, consulte [Solución de problemas de cierre de compra rápido](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/quick-checkout-issues.html) en el Centro de ayuda de Adobe Commerce.
 
 ## Requisitos previos
 

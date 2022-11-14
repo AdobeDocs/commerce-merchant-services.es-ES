@@ -2,9 +2,9 @@
 title: "Flujo de cierre de compra para un usuario de Adobe Commerce"
 description: "Descripción general de la variable [!DNL Quick Checkout] flujo para un usuario de Adobe Commerce."
 exl-id: 085e393b-15f6-4d5a-a04d-927b1f95b74e
-source-git-commit: d4b58b0ee3da866d460cf18d96ec9dd27b195f7a
+source-git-commit: d28e8ccd4362b4e32b2eb8c6e1faf38d7c99a4c2
 workflow-type: tm+mt
-source-wordcount: '305'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -38,7 +38,7 @@ Si [!DNL Bolt] se encuentra durante el cierre de compra, los compradores pueden 
 
 Si el comprador ha iniciado sesión en Adobe Commerce antes del cierre de compra, la variable [!DNL Bolt] La ventana emergente OTP no aparecerá durante el cierre de compra.
 
-Si tiene problemas al realizar un pedido como usuario de Adobe Commerce existente, consulte la [Solución de problemas de cierre de compra rápido](https://support.magento.com/hc/en-us/articles/6909450342541) en el Centro de ayuda de Adobe Commerce.
+Si tiene problemas al realizar un pedido como usuario de Adobe Commerce existente, consulte la [Solución de problemas de cierre de compra rápido](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/quick-checkout-issues.html) en el Centro de ayuda de Adobe Commerce.
 
 ## Nuevo [!DNL Bolt] account
 
