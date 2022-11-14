@@ -2,9 +2,9 @@
 title: Notas de la versión
 description: La información de la última versión de [!DNL Product Recommendations] de Adobe Commerce.
 exl-id: 1758e688-d26f-45e7-818c-d4726338a6c3
-source-git-commit: bd1cf8a3b4740594cf6b8678d899d771a886cb2e
+source-git-commit: 944576fdacd7dbbb704f74ba06d34f64eac41122
 workflow-type: tm+mt
-source-wordcount: '957'
+source-wordcount: '967'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,6 @@ ht-degree: 0%
 
 Las notas de la versión contienen actualizaciones de las siguientes [!DNL Product Recommendations] módulos:
 
-* A partir de marzo de 2021, [!DNL Product Recommendations] ahora son compatibles con [PWA Studio](https://developer.adobe.com/commerce/pwa-studio/integrations/product-recommendations/) tiendas.
 * [!DNL Product Recommendations] metapackage: `magento/product-recommendations`
 * Compatibilidad del Creador de páginas con [!DNL Product Recommendations] (opcional): `magento/module-page-builder-product-recommendations`
 * Compatibilidad del tipo de recomendación de similitud visual con [!DNL Product Recommendations] (opcional): `magento/module-visual-product-recommendations`
@@ -26,6 +25,10 @@ Las notas de la versión incluyen:
 Consulte la documentación para desarrolladores para [obtenga información sobre la compatibilidad del producto](https://devdocs.magento.com/release/availability.html).
 
 ## Adobe Commerce 2.3.x y 2.4.x
+
+### 4.0.1 de magento/product-recommendations
+
+* ![Corrección](../assets/fix.svg) - Anteriormente, Product Recommendations mostraba un error cuando la moneda de visualización se cambiaba a una moneda no predeterminada. El cambio de divisas ahora funciona correctamente.
 
 ### 4.0.0 de magento/product-recommendations
 
