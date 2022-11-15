@@ -2,9 +2,9 @@
 title: "Información general sobre la incorporación"
 description: "[!DNL Live Search] flujo de incorporación, requisitos del sistema, límites y limitaciones"
 exl-id: 45f6c1ae-544b-47ef-9feb-c1a05f93108a
-source-git-commit: 5a17c601f84c7e366801c17fad96c1e598b1adfe
+source-git-commit: b4cdbc3b166a3aae5b4219196a86cb681744d435
 workflow-type: tm+mt
-source-wordcount: '365'
+source-wordcount: '366'
 ht-degree: 0%
 
 ---
@@ -34,9 +34,9 @@ En este momento, la variable [!DNL Live Search] la API de búsqueda/categoría t
 
 ### Indexación
 
-* Indexa hasta 300 atributos de producto por vista de tienda
-* Indexa solo los productos de la base de datos de Adobe Commerce
-* No indexa páginas de CMS
+* Indexa hasta 300 atributos de producto por vista de tienda.
+* Indexa solamente los productos de la base de datos de Adobe Commerce.
+* Las páginas de CMS no están indexadas.
 
 ### Consulta
 
@@ -45,13 +45,13 @@ En este momento, la variable [!DNL Live Search] la API de búsqueda/categoría t
 
 ### Reglas
 
-* El número máximo de reglas por ID de espacio de datos es 50.
+* El número máximo de reglas por vista de tienda es de 50.
 * El número máximo de condiciones por regla es 10.
 * El número máximo de eventos por regla es de 25.
 
 ### Sinónimos
 
-* [!DNL Live Search] puede administrar hasta 200 sinónimos por `Data Space ID`.
+* [!DNL Live Search] puede administrar hasta 200 sinónimos por vista de tienda.
 
 ### versión beta del PWA
 
