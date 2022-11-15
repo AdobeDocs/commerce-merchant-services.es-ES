@@ -2,10 +2,10 @@
 title: "[!DNL Live Search] Notas de la versión"
 description: '"La información de la última versión de [!DNL Live Search] de Adobe Commerce".'
 exl-id: 2a581e43-35f5-48ce-9752-844430ccdebf
-source-git-commit: baa2587fc9d048d7a7915b9370b63ac6c2ff93d2
+source-git-commit: 87b60e28e45466bf4271953c6704a53e6d43d73a
 workflow-type: tm+mt
-source-wordcount: '1114'
-ht-degree: 0%
+source-wordcount: '1166'
+ht-degree: 1%
 
 ---
 
@@ -16,6 +16,18 @@ Estas notas de la versión describen las versiones más recientes de [!DNL Live 
 * ![Nuevo](../assets/new.svg) - Nuevas funciones
 * ![Corrección](../assets/fix.svg) - Correcciones y mejoras
 * ![Error](../assets/bug.svg) - Problemas conocidos
+
+## [!DNL Live Search] 2,0,5
+
+* Compatible con Adobe Commerce (EE): 2.4.x
+* Compatible con Adobe Commerce para Cloud (ECE): 2.4.x
+* Estabilidad: Estable
+
+* ![Corrección](../assets/fix.svg) - La búsqueda activa generaría un error cuando los recursos del SDK no estaban disponibles debido a problemas de red. Este error se ha corregido.
+
+Los comerciantes deben actualizar la versión de la extensión Live Search >= 2.0.5 para acceder a estas funciones.
+
+Se recomienda actualizar y probar antes de pasar a producción. Considere la posibilidad de actualizar el entorno de producción durante las horas de menor actividad después de comprobar los resultados de su entorno de prueba.
 
 ## [!DNL Live Search] 2.0.4
 
@@ -30,8 +42,6 @@ Estas notas de la versión describen las versiones más recientes de [!DNL Live 
 * ![Corrección](../assets/fix.svg) - Anteriormente, al buscar un término que no existe, la búsqueda activa devolvía un error. Ese error ya está solucionado.
 
 Los comerciantes deben actualizar la versión de la extensión Live Search >= 2.0.4 para acceder a estas funciones.
-
-Recomendamos a los usuarios que actualicen y prueben antes de pasar a producción. Considere la posibilidad de actualizar el entorno de producción durante las horas de menor actividad después de comprobar los resultados de su entorno de prueba.
 
 ## [!DNL Live Search] 2.0.3
 
