@@ -2,9 +2,9 @@
 title: Integración e instalación
 description: Obtenga información sobre cómo instalar [!DNL Catalog Service]
 exl-id: 4e9fbdc9-67a1-4703-b8c0-8b159e0cc2a7
-source-git-commit: 683b599e183f1269cdd6c3772d1b33c43cf1156e
+source-git-commit: c740e75c9fe12b062683fa957d0c6623d8180e4f
 workflow-type: tm+mt
-source-wordcount: '320'
+source-wordcount: '432'
 ht-degree: 0%
 
 ---
@@ -41,15 +41,11 @@ Utilice este método para instalar el [!DNL Catalog Service] para una instancia 
 1. Abra el `<Commerce_root>/composer.json` en un editor de texto y actualice la variable `require` como se indica a continuación:
 
    ```json
-   "require": {
-    "magento/composer-root-update-plugin": "^2.0.2",
-    "magento/magento-cloud-metapackage": ">=2.4.5 <2.4.6",
-    "magento/saas-export": "^101.4.0",
-    "magento/commerce-data-export": "^101.3.1",
-    "magento/commerce-data-export-ee": "^101.3.1",
-    "magento/services-id": "^3.0.1",
-    "magento/services-connector": "1.2.1"
-    }
+   "require":{
+   "magento/composer-root-update-plugin":"^2.0.2",
+   "magento/magento-cloud-metapackage":">=2.4.5 <2.4.6",
+   "magento/catalog-service": "^1.0.0"
+      }
    ```
 
 1. Pruebe la nueva configuración localmente y actualice las dependencias:
@@ -70,13 +66,8 @@ Utilice este método para instalar el [!DNL Catalog Service] extensión para una
 
    ```json
    "require": {
-     "magento/magento-cloud-metapackage": ">=2.4.3 <2.4.4",
-     "magento/composer-root-update-plugin": "~1.1",
-     "magento/saas-export": "^101.3.1",
-     "magento/commerce-data-export": "^101.2.4",    
-     "magento/commerce-data-export-ee": "^101.2.4",
-     "magento/services-id": "^3.0.0",
-     "magento/services-connector": "1.2.1"
+   "magento/composer-root-update-plugin":"^2.0.2",
+   "magento/catalog-service": "^1.0.0"
    }
    ```
 
@@ -99,6 +90,23 @@ Utilice este método para instalar el [!DNL Catalog Service] extensión para una
    ```bash
    bin/magento cache:clean
    ```
+
+
+## Servicio de catálogo y red de API
+
+La variable [Mesh de API](https://developer.adobe.com/graphql-mesh-gateway/gateway/overview/) permite a los desarrolladores integrar API privadas o de terceros y otras interfaces con productos de Adobe mediante Adobe IO.
+
+El primer paso para utilizar la red de API con el servicio de catálogo es conectar la red de API a su instancia. Consulte las instrucciones detalladas en [Crear una red](https://developer.adobe.com/graphql-mesh-gateway/gateway/create-mesh/).
+
+Para completar la configuración, necesitará la variable [Paquete CLI de IO de Adobe](https://developer.adobe.com/runtime/docs/guides/tools/cli_install/) instalado.
+
+Una vez que Mesh está configurado en el Adobe IO, ejecute el siguiente comando para conectar la nueva red.
+
+```bash
+aio api-mesh:source:install "CommerceCatalogServiceGraph"
+```
+
+Después de ejecutar este comando, el servicio de catálogo debe ejecutarse a través de la red de API.
 
 ## Configurar la exportación del catálogo
 
