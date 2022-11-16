@@ -2,9 +2,9 @@
 title: "Información general sobre la incorporación"
 description: "[!DNL Live Search] flujo de incorporación, requisitos del sistema, límites y limitaciones"
 exl-id: 45f6c1ae-544b-47ef-9feb-c1a05f93108a
-source-git-commit: b4cdbc3b166a3aae5b4219196a86cb681744d435
+source-git-commit: 8e541924d6a69f963e150057b82e682e1e5d3801
 workflow-type: tm+mt
-source-wordcount: '366'
+source-wordcount: '332'
 ht-degree: 0%
 
 ---
@@ -62,9 +62,6 @@ En este momento, la variable [!DNL Live Search] la API de búsqueda/categoría t
 ### No compatible en este momento
 
 * La variable [Búsqueda avanzada](https://docs.magento.com/user-guide/catalog/search-advanced.html) módulo se desactiva cuando [!DNL Live Search] está instalado y se elimina el vínculo Búsqueda avanzada del pie de página de la tienda.
-* [Grupos de clientes](https://docs.magento.com/user-guide/customers/customer-groups.html)
 * [Grupos de precios personalizados](https://docs.magento.com/user-guide/catalog/product-price-group.html)
 * Múltiples ubicaciones de inventario que usa [MCOM](https://docs.magento.com/user-guide/mcom.html) u otras extensiones OMS
-* [Capacidades integradas B2B](https://business.adobe.com/products/magento/b2b-ecommerce.html)
 * Los precios del producto no incluyen [IVA](https://docs.magento.com/user-guide/tax/vat.html) (IVA).
-* Los productos fuera de existencias aparecen en los resultados de búsqueda, independientemente del [Opciones de stock](https://docs.magento.com/user-guide/catalog/inventory-options-global.html) configuración.
