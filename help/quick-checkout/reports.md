@@ -1,13 +1,13 @@
 ---
-title: "[!DNL Quick Checkout] creación de informes"
-description: '"[!DNL Quick Checkout] ofrece información completa sobre los informes".'
-source-git-commit: bd02a8083d3f4c9cb0422b27d61bd5462187ffc3
+title: '[!DNL Quick Checkout] sistema de informes'
+description: '''[!DNL Quick Checkout] ofrece información completa sobre los informes."'
+exl-id: 91c687f4-9953-4c2f-b240-73430603e6a1
+source-git-commit: dd9eab0d6b88a6c723ec10b882a4bb668d66973f
 workflow-type: tm+mt
-source-wordcount: '265'
+source-wordcount: '283'
 ht-degree: 0%
 
 ---
-
 
 # Informes
 
@@ -28,9 +28,9 @@ Los gráficos de la sección Información general muestran información detallad
 | Gráfico | Descripción |
 |---|---|
 | [!UICONTROL Checkout abandonment] | El porcentaje de visitantes que abandonan el proceso de cierre de compra sin completar una compra. |
-| [!UICONTROL Checkout abandonment breakdown] | El abandono del cierre de compra se divide por tipo de visitante. Opciones: [!UICONTROL Bolt] / [!UICONTROL Merchant] / [!UICONTROL Guest] |
+| [!UICONTROL Checkout abandonment breakdown] | El abandono del cierre de compra se divide por tipo de visitante. La información del objeto muestra una diferencia porcentual entre Perno y Invitado. Opciones: [!UICONTROL Bolt] / [!UICONTROL Merchant] / [!UICONTROL Guest] |
 | [!UICONTROL Average checkout time] | Tiempo promedio que un visitante tarda en completar el proceso de cierre de compra. |
-| [!UICONTROL Average checkout time breakdown] | El tiempo promedio de cierre de compra se divide por tipo de visitante. Opciones: [!UICONTROL Bolt] / [!UICONTROL Merchant] / [!UICONTROL Guest] |
+| [!UICONTROL Average checkout time breakdown] | El tiempo promedio de cierre de compra se divide por tipo de visitante. La información del objeto muestra una diferencia porcentual entre Perno y Invitado. Opciones: [!UICONTROL Bolt] / [!UICONTROL Merchant] / [!UICONTROL Guest] |
 | [!UICONTROL Orders by account type] | Pedidos distribuidos por tipo de visitante. Opciones: [!UICONTROL Bolt] / [!UICONTROL Merchant] / [!UICONTROL Guest] |
 
 ## Informes de tendencias
@@ -55,4 +55,3 @@ Puede filtrar los resultados que se muestran por fecha o los ajustes preestablec
 |---|---|
 | [!UICONTROL Preset] | Menú desplegable que muestra los ajustes preestablecidos predeterminados que se pueden usar para mostrar intervalos específicos de datos. De forma predeterminada: Últimos 30 días |
 | [!UICONTROL Date range] | Menú desplegable que permite seleccionar un intervalo específico de datos en función de las fechas seleccionadas. |
-
