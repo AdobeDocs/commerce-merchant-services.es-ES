@@ -4,9 +4,9 @@ description: Obtenga información sobre cómo instalar y utilizar [!DNL Payment 
 role: User
 level: Intermediate
 exl-id: e4d8d789-fcf6-4aaa-bc4e-42ce21c6dd6c
-source-git-commit: 3f753f6a91c9f2c29def90d323c004a689056e71
+source-git-commit: c993a2afe5b4da478ab57cbb391bb524d83c3d1a
 workflow-type: tm+mt
-source-wordcount: '391'
+source-wordcount: '434'
 ht-degree: 0%
 
 ---
@@ -39,6 +39,7 @@ Tanto si es una pequeña empresa, como si es una empresa de tamaño mediano o un
 * [**Opciones de pago**](payments-options.md): configure las opciones de pago para personalizar los métodos disponibles para los clientes de la tienda (o multitienda).
 * **Informe financiero de gestión del flujo de caja**—Sincronizar [detalles de pago](order-payment-status.md) con pedidos para obtener total transparencia del volumen procesado, el saldo de pagos y detalles [informes a nivel de transacción](payouts.md) para la reconciliación financiera.
 * **Precio transparente**—Los precios son claros y por adelantado; lo que ves es lo que obtienes.
+* **Experiencia de cierre de compra eficiente**: Elimine las barreras para un cierre de compra rápido y simple y cree clientes fieles con [bóveda de tarjetas](https://experienceleague-review.com/docs/commerce-merchant-services/payment-services/payments-checkout/vaulting.html) y [Compra instantánea](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/point-of-purchase/checkout-instant-purchase.html) (habilitado de forma predeterminada para Adobe Commerce).
 
 ## Disponibilidad
 

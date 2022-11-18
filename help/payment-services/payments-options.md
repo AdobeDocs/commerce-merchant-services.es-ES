@@ -2,9 +2,9 @@
 title: Opciones de pago
 description: Configure las opciones de pago para personalizar los métodos disponibles para los clientes de la tienda.
 exl-id: 95e648e6-6cb8-4226-b5ea-e1857212f20a
-source-git-commit: c7afa798096e07409fb36a3d08f7e5b2a5ce40db
+source-git-commit: c993a2afe5b4da478ab57cbb391bb524d83c3d1a
 workflow-type: tm+mt
-source-wordcount: '948'
+source-wordcount: '1001'
 ht-degree: 0%
 
 ---
@@ -30,6 +30,8 @@ Existen diferentes comportamientos para cada método de pago según la ubicació
 ## [!UICONTROL Credit Card Fields]
 
 [!UICONTROL Credit Card Fields] proporcionar un cierre de compra simple y seguro para métodos de pago con tarjeta de crédito o tarjeta de débito. Cuando un comprador cierra la compra utilizando campos de tarjeta de crédito, introduce su nombre, dirección de facturación e información de tarjeta de crédito o débito para realizar el pedido. La información de sus clientes se utiliza de forma segura durante la sesión de compra para guiarlos sin problemas a través del flujo de cierre de compra.
+
+Habilitar [bóveda de tarjetas de crédito](#vaulting) para que sus tiendas permitan a los compradores almacenar (guardar) la información de su tarjeta de crédito para realizar una compra rápida más tarde.
 
 Puede configurar [!UICONTROL Credit Card Fields] en la configuración de la tienda o en la página de inicio de los servicios de pago. Consulte [Configuración](settings.md#credit-card-fields) para obtener más información.
 
@@ -104,6 +106,12 @@ Cuando un cliente cierra la compra directamente desde la página del producto, m
 Si el cliente cancela el pedido, el artículo de la página de producto actual se agrega al carro de compras del cliente, uniéndose a cualquier otro artículo presente en el carro de compras. Esta función permite al cliente adquirir rápidamente el artículo que está viendo, al mismo tiempo que mantiene cualquier otro artículo que agregó al carro de compras anteriormente al examinar productos.
 
 Cuando un cliente introduce el flujo de cierre de compra desde la página del producto, la página de cierre de compra se simplifica (la vista solo muestra los datos y las opciones relacionados con el pedido).
+
+## Bóveda de tarjetas de crédito
+
+Los compradores pueden almacenar (o &quot;guardar&quot;) la información de sus tarjetas de crédito para futuras compras a nivel de sitio web (cualquier tienda dentro de la cuenta del mismo comerciante).
+
+Consulte [Bóveda de tarjetas de crédito](vaulting.md) para obtener más información.
 
 ## Seguridad
 

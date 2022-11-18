@@ -2,9 +2,9 @@
 title: Seguridad y cumplimiento
 description: Revise los requisitos de seguridad y cumplimiento para su sitio.
 exl-id: 083c5a12-1d78-48b5-b9e3-612b104ce7e0
-source-git-commit: 9596815e31402f23b399b223f3221074331c1773
+source-git-commit: c993a2afe5b4da478ab57cbb391bb524d83c3d1a
 workflow-type: tm+mt
-source-wordcount: '296'
+source-wordcount: '369'
 ht-degree: 0%
 
 ---
@@ -30,6 +30,10 @@ Los comerciantes pueden completar un [cuestionario de autoevaluación (SAQ)](htt
 ### Campos de tarjeta de crédito
 
 Con los campos de la tarjeta de crédito, no se pasan datos regulados por PCI a través de los servicios. No es necesario que almacene o mantenga esos datos, lo que reduce enormemente las preocupaciones de cumplimiento de PCI.
+
+### Bóveda de tarjetas
+
+Cuando un comprador [vaults (o &quot;guarda&quot;): la información de su tarjeta de crédito](vaulting.md) para futuras compras en sus tiendas, la información mínima de la tarjeta de crédito se comparte con el comprador (los últimos cuatro dígitos, la fecha de caducidad de la tarjeta y la marca de la tarjeta). La información de la tarjeta de crédito se almacena en el proveedor de pagos. Cuando una tarjeta caduca o ya no necesita la información guardada, puede eliminarla para que el proveedor de pagos ya no almacene la información.
 
 ### Botones inteligentes PayPal
 
