@@ -2,9 +2,9 @@
 title: Integración e instalación
 description: Obtenga información sobre cómo instalar [!DNL Catalog Service]
 exl-id: 4e9fbdc9-67a1-4703-b8c0-8b159e0cc2a7
-source-git-commit: c740e75c9fe12b062683fa957d0c6623d8180e4f
+source-git-commit: ea4b386d7e378b30641e623cb190923dc50563d8
 workflow-type: tm+mt
-source-wordcount: '432'
+source-wordcount: '456'
 ht-degree: 0%
 
 ---
@@ -91,7 +91,6 @@ Utilice este método para instalar el [!DNL Catalog Service] extensión para una
    bin/magento cache:clean
    ```
 
-
 ## Servicio de catálogo y red de API
 
 La variable [Mesh de API](https://developer.adobe.com/graphql-mesh-gateway/gateway/overview/) permite a los desarrolladores integrar API privadas o de terceros y otras interfaces con productos de Adobe mediante Adobe IO.
@@ -103,7 +102,16 @@ Para completar la configuración, necesitará la variable [Paquete CLI de IO de 
 Una vez que Mesh está configurado en el Adobe IO, ejecute el siguiente comando para conectar la nueva red.
 
 ```bash
-aio api-mesh:source:install "CommerceCatalogServiceGraph"
+aio api-mesh:source:install "CommerceCatalogServiceGraph" -f variables.json
+```
+
+donde `variables.json` es un archivo independiente que almacena los valores más utilizados para IO de Adobe.
+Por ejemplo, la clave de API se puede guardar en el archivo :
+
+```json
+{
+    "CATALOG_SERVICE_API_KEY":"your_api_key"
+}
 ```
 
 Después de ejecutar este comando, el servicio de catálogo debe ejecutarse a través de la red de API.
