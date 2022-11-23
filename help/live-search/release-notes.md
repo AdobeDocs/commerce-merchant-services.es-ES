@@ -2,10 +2,10 @@
 title: "[!DNL Live Search] Notas de la versión"
 description: '"La información de la última versión de [!DNL Live Search] de Adobe Commerce".'
 exl-id: 2a581e43-35f5-48ce-9752-844430ccdebf
-source-git-commit: 8e541924d6a69f963e150057b82e682e1e5d3801
+source-git-commit: bece7022324da4b38d3cb9b375dc0e391ffb3a88
 workflow-type: tm+mt
-source-wordcount: '1191'
-ht-degree: 1%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -37,7 +37,7 @@ Se recomienda actualizar y probar antes de pasar a producción. Considere la pos
 
 * ![Nuevo](../assets/new.svg) - La búsqueda activa ahora admite el filtrado mediante la configuración &quot;Mostrar productos fuera de existencias&quot; en el administrador. Si &quot;Mostrar productos fuera de existencias&quot; está establecido en false, `inStock = true` se agrega al filtro.
 * ![Corrección](../assets/fix.svg) - Para mejorar el rendimiento, se ha eliminado el bloque &quot;Sugerencias&quot; de la ventana emergente Búsqueda activa. Los datos aún se pasan a través de GraphQL, en caso de que desee reemplazar la función.
-* ![Corrección](../assets/fix.svg) - `categories` y `categoryPath` han reemplazado `categoryIds` para el filtrado de categorías. Obtenga más información en la [productSearch](https://devdocs.magento.com/live-search/product-search.html#filter) tema.
+* ![Corrección](../assets/fix.svg) - `categories` y `categoryPath` han reemplazado `categoryIds` para el filtrado de categorías. Obtenga más información en la [productSearch](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search/) tema.
 * ![Corrección](../assets/fix.svg) - Anteriormente, un usuario vinculado a una empresa B2B recibía un código de grupo de clientes incorrecto al realizar búsquedas. La búsqueda activa ahora devuelve el valor correcto.
 * ![Corrección](../assets/fix.svg) - Anteriormente, al buscar un término que no existe, la búsqueda activa devolvía un error. Ese error ya está solucionado.
 
@@ -85,7 +85,7 @@ Existente [!DNL Live Search] las instalaciones deben actualizarse a [!DNL Live S
 * ![Nuevo](../assets/new.svg) - Beta [PWA](https://developer.adobe.com/commerce/pwa-studio/) compatibilidad para [!DNL Live Search].
 * ![Nuevo](../assets/new.svg) - El [!DNL Live Search] el proceso de instalación se actualiza con cambios de proceso avanzados.
 * ![Corrección](../assets/fix.svg) - [Búsqueda avanzada](https://docs.magento.com/user-guide/catalog/search-advanced.html) vínculo eliminado del pie de página de la tienda.
-* ![Error](../assets/bug.svg) - Los siguientes atributos de producto no son compatibles con [API de Magento GraphQL](https://devdocs.magento.com/guides/v2.4/graphql) cuando se utiliza en relación con la versión beta de PWA: `description`, `name`, `short_description`
+* ![Error](../assets/bug.svg) - Los siguientes atributos de producto no son compatibles con [API de Magento GraphQL](https://developer.adobe.com/commerce/webapi/graphql/) cuando se utiliza en relación con la versión beta de PWA: `description`, `name`, `short_description`
 * ![Error](../assets/bug.svg) - La versión beta de PWA para [!DNL Live Search] no es compatible [gestión de eventos](https://devdocs.magento.com/shared-services/storefront-events-sdk.html).
 
 ## [!DNL Live Search] 1.3.1 {#131}
@@ -106,7 +106,7 @@ Existente [!DNL Live Search] las instalaciones deben actualizarse a [!DNL Live S
 
 * ![Nuevo](../assets/new.svg) - [Rendimiento](performance.md) tablero de informes proporciona información sobre los términos de búsqueda que utilizan los compradores.
 * ![Nuevo](../assets/new.svg) - [!DNL Live Search] [SDK de eventos de tienda](https://devdocs.magento.com/shared-services/storefront-events-sdk.html) proporciona acceso a una capa de datos común con servicios de publicación de eventos y suscripción, y métricas.
-* ![Corrección](../assets/fix.svg) - El [[!DNL Storefront Popover]](https://devdocs.magento.com/live-search/storefront-popover.html) tiene un nuevo `active` para la `.search-autocomplete` contenedor que controla la visibilidad.
+* ![Corrección](../assets/fix.svg) - El [[!DNL Storefront popover]](storefront-popover.md) tiene un nuevo `active` para la `.search-autocomplete` contenedor que controla la visibilidad.
 * ![Corrección](../assets/fix.svg) - En la tienda, el [Términos de búsqueda](https://docs.magento.com/user-guide/marketing/search-terms-popular.html) el vínculo de pie de página se elimina y su caché se deshabilita para [!DNL Live Search] instalaciones.
 * ![Error](../assets/bug.svg) - El parche para el adaptador de búsqueda gestiona los productos duplicados.
 * ![Error](../assets/bug.svg) - [!DNL Live Search] support [fuente única](https://docs.magento.com/user-guide/catalog/inventory-sources.html) ubicaciones de inventario (físicas) con múltiples (virtuales) [stock](https://docs.magento.com/user-guide/catalog/inventory-stock.html). En este momento no se admiten varios orígenes de inventario.

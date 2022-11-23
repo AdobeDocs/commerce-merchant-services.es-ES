@@ -2,9 +2,9 @@
 title: "Información general sobre la incorporación"
 description: "[!DNL Live Search] flujo de incorporación, requisitos del sistema, límites y limitaciones"
 exl-id: 45f6c1ae-544b-47ef-9feb-c1a05f93108a
-source-git-commit: 8e541924d6a69f963e150057b82e682e1e5d3801
+source-git-commit: 1a55f2fb3d56183e5e73d172ebdc40f340e4d520
 workflow-type: tm+mt
-source-wordcount: '332'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -41,7 +41,7 @@ En este momento, la variable [!DNL Live Search] la API de búsqueda/categoría t
 ### Consulta
 
 * [!DNL Live Search] no tiene acceso a la taxonomía completa del árbol de categorías, lo que hace que algunos escenarios de búsqueda de navegación en capas estén más allá de su alcance.
-* [!DNL Live Search] utiliza un extremo de GraphQL único para las consultas con el fin de admitir funciones como facetas inteligentes y búsqueda según el tipo que desee. Aunque similar a la variable [API de Magento GraphQL](https://devdocs.magento.com/guides/v2.4/graphql), hay algunas diferencias y es posible que algunos campos no sean totalmente compatibles en este momento.
+* [!DNL Live Search] utiliza un extremo de GraphQL único para las consultas con el fin de admitir funciones como facetas inteligentes y búsqueda según el tipo que desee. Aunque similar a la variable [API de Magento GraphQL](https://developer.adobe.com/commerce/webapi/graphql/), hay algunas diferencias y es posible que algunos campos no sean totalmente compatibles en este momento.
 
 ### Reglas
 
