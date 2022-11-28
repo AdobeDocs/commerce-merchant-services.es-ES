@@ -2,9 +2,9 @@
 title: Opciones de pago
 description: Configure las opciones de pago para personalizar los métodos disponibles para los clientes de la tienda.
 exl-id: 95e648e6-6cb8-4226-b5ea-e1857212f20a
-source-git-commit: c993a2afe5b4da478ab57cbb391bb524d83c3d1a
+source-git-commit: e3270098edff3931b02a9803c8db4b3e9c75d636
 workflow-type: tm+mt
-source-wordcount: '1001'
+source-wordcount: '1002'
 ht-degree: 0%
 
 ---
@@ -63,7 +63,7 @@ La variable [!DNL Apple Pay] se puede ver en la página del producto, el minicar
 
 >[!NOTE]
 >
-> Para utilizar Apple Pay, póngase en contacto con su representante de ventas para habilitarlo para sus tiendas activas.
+> Para utilizar Apple Pay, póngase en contacto con su representante de ventas o administrador de cuentas para habilitarlo en sus tiendas activas.
 
 ### [!DNL Pay Later] botón
 
