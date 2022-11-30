@@ -2,9 +2,9 @@
 title: '[!DNL Quick Checkout] sistema de informes'
 description: '''[!DNL Quick Checkout] ofrece información completa sobre los informes."'
 exl-id: 91c687f4-9953-4c2f-b240-73430603e6a1
-source-git-commit: dd9eab0d6b88a6c723ec10b882a4bb668d66973f
+source-git-commit: bdfac90aa221f39dfc53eee833c473c7dcb0a042
 workflow-type: tm+mt
-source-wordcount: '283'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 0%
 
 >[!WARNING]
 >
-> Debe habilitar [**Seguimiento de cierre de compra**](../quick-checkout/settings-quick-checkout.md) en el panel de administración, de modo que Adobe Commerce pueda compartir información de cierre de compra con Bolt. De forma predeterminada, esta opción de configuración está definida en **Sí**. Si esta opción está desactivada (se establece en **No**), los informes se verán afectados.
+> Para permitir que Adobe Commerce comparta información de cierre de compra con Bolt, el [**Seguimiento de cierre de compra**](../quick-checkout/settings-quick-checkout.md)  debe estar habilitado en Administración. De forma predeterminada, esta opción de configuración está definida en **Sí**. Si esta opción está definida en **No**, se verán afectados los informes. Bolt actualiza la información de los informes una vez al día a las 03:00 AM, hora estándar del este (EST).
 
 ## Informes de información general
 
