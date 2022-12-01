@@ -2,9 +2,9 @@
 title: "Flujo de cierre de compra para un usuario de Adobe Commerce"
 description: "Descripción general de la variable [!DNL Quick Checkout] flujo para un usuario de Adobe Commerce."
 exl-id: 085e393b-15f6-4d5a-a04d-927b1f95b74e
-source-git-commit: d28e8ccd4362b4e32b2eb8c6e1faf38d7c99a4c2
+source-git-commit: 1f2305df7566cd77a6be161cc9d1265c0291171c
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '323'
 ht-degree: 0%
 
 ---
@@ -36,7 +36,7 @@ Si [!DNL Bolt] se encuentra durante el cierre de compra, los compradores pueden 
 >
 > La ventana emergente OTP de perno solo aparece cuando el comprador está en la página de cierre de compra. El comprador puede optar por no iniciar sesión en Bolt cerrando esa ventana emergente.
 
-Si el comprador ha iniciado sesión en Adobe Commerce antes del cierre de compra, la variable [!DNL Bolt] La ventana emergente OTP no aparecerá durante el cierre de compra.
+Si el comprador ha iniciado sesión en Adobe Commerce antes del cierre de compra, la variable [!DNL Bolt] La ventana emergente de OTP no aparecerá durante el cierre de compra, pero aparecerá un mensaje sugiriendo al comprador que inicie sesión para acceder a su billetera de Bolt.
 
 Si tiene problemas al realizar un pedido como usuario de Adobe Commerce existente, consulte la [Solución de problemas de cierre de compra rápido](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/quick-checkout-issues.html) en el Centro de ayuda de Adobe Commerce.
 

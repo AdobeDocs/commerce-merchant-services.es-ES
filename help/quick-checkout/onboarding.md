@@ -2,9 +2,9 @@
 title: "Incorpore el [!DNL Quick Checkout] para la extensión de Adobe Commerce"
 description: "Aprenda a usar la variable [!DNL Quick Checkout] podría beneficiar a su instancia de Adobe Commerce y cómo incorporar y configurar correctamente la extensión."
 exl-id: 8caf746c-e31b-4331-8b0d-ea0f1e545bdd
-source-git-commit: d28e8ccd4362b4e32b2eb8c6e1faf38d7c99a4c2
+source-git-commit: 1f2305df7566cd77a6be161cc9d1265c0291171c
 workflow-type: tm+mt
-source-wordcount: '770'
+source-wordcount: '826'
 ht-degree: 0%
 
 ---
@@ -132,11 +132,23 @@ Para comprobar si el comprador tiene un [!DNL Bolt] cuenta:
 1. Cambie el ámbito a **Sitio web principal**.
 1. Haga clic en el **Configurar URL de devolución de llamada** botón. Esto habilita [!DNL Bolt] para determinar si el comprador tiene una cuenta. Si lo hacen, aparecerá la ventana emergente de OTP.
 
->[!CAUTION]
->
-> Cambiar el ámbito a la variable **Sitio web principal** garantiza que se establezca la dirección URL adecuada. Cada sitio web puede tener varios dominios.
+   >[!CAUTION]
+   >
+   > Cambiar el ámbito a la variable **Sitio web principal** garantiza que se establezca la dirección URL adecuada. Cada sitio web puede tener varios dominios.
 
 Consulte la [Ámbito de sitio, tienda y vista](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings){target=&quot;_blank&quot;} para obtener más información sobre los ámbitos en Adobe Commerce.
+
+## Configuración de servicios
+
+![Cierre rápido](assets/service-settings.png)
+
+1. Establezca **Habilitar el seguimiento de cierre de compra** a `Yes`.
+
+   >[!CAUTION]
+   >
+   > Deshabilitar esta opción afectará a los informes, ya que Adobe Commerce no puede compartir información de seguimiento de cierre de compra con Bolt.
+
+1. Seleccione el **Siguiente etapa después del inicio de sesión** para cambiar el flujo de navegación después de que el cliente haya iniciado sesión. De forma predeterminada, se establece en la variable **Pagos** página.
 
 ## Obtener ayuda
 
