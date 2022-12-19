@@ -2,9 +2,9 @@
 title: '[!DNL Quick Checkout] Notas de la versión'
 description: Revise las notas de la versión para obtener información sobre todas las [!DNL Quick Checkout] versiones.
 exl-id: 511be2fc-d24d-4323-a47a-d376e38a5c47
-source-git-commit: 1f2305df7566cd77a6be161cc9d1265c0291171c
+source-git-commit: 8b915cd0a8f25934675a2ae00ee2694b7facc1bd
 workflow-type: tm+mt
-source-wordcount: '1040'
+source-wordcount: '1056'
 ht-degree: 0%
 
 ---
@@ -26,6 +26,10 @@ Consulte [Disponibilidad](https://devdocs.magento.com/release/availability.html)
 Estas notas de la versión describen los cambios y correcciones que se produjeron y se publicaron fuera de las versiones de funciones habituales para el panel de administración.
 
 +++Actualizaciones del panel de administración
+
+_14 de diciembre de 2022_
+
+![Se ha corregido un problema](../assets/fix.svg)<!-- Issue BOLT-524 --> La variable [!DNL Quick Checkout] El panel de administración ahora muestra los pedidos totales correctos y la información de informes actualizada.
 
 _30 de noviembre de 2022_
 
@@ -61,7 +65,7 @@ _5 de octubre de 2022_
 
 +++
 
-## Versión 1.4.0
+## v1.4.0
 
 _30 de noviembre de 2022_
 
@@ -71,7 +75,7 @@ _30 de noviembre de 2022_
 
 ![Nuevo](../assets/new.svg)<!-- Issue BOLT-480 --> Una nueva configuración en el [!DNL Quick Checkout] El panel de administración le permite cambiar el flujo de navegación predeterminado a la variable **Envío** una vez que un cliente de Bolt inicia sesión. De forma predeterminada, se configura en la variable **Pagos** página.
 
-## Versión 1.3.0
+## v1.3.0
 
 _2 de noviembre de 2022_
 
@@ -79,7 +83,7 @@ _2 de noviembre de 2022_
 
 ![Nuevo](../assets/new.svg)<!-- Issue BOLT-461 --> Ahora puede ver un mensaje de advertencia en su [!DNL Quick Checkout] Panel de administración si [seguimiento de cierre de compra](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/quick-checkout-reporting/reports.html) está desactivada.
 
-## Versión 1.2.0
+## v1.2.0
 
 _8 de septiembre de 2022_
 
@@ -101,7 +105,7 @@ _8 de septiembre de 2022_
 
 ![Se ha corregido un problema](../assets/fix.svg)<!-- Issue BOLT-369 --> La variable [[!DNL Quick Checkout] Panel de administración](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/onboarding.html#enable-extension) ahora muestra la versión de extensión en el pie de página.
 
-## Versión 1.1.0
+## v1.1.0
 
 _12 de agosto de 2022_
 
