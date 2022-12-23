@@ -2,10 +2,10 @@
 title: "[!DNL Payment Services] Notas de la versión"
 description: Revise las notas de la versión para obtener información sobre todas las [!DNL Payment Services] versiones.
 exl-id: 104aa2c7-7735-4ac2-8ed1-a03cd9911273
-source-git-commit: 955dc08e6b67acc18380248b2ddf1b8f8c70ec03
+source-git-commit: 6d8ce56d8fd26d8dbfebc87a50512570e9f69b2b
 workflow-type: tm+mt
-source-wordcount: '1334'
-ht-degree: 0%
+source-wordcount: '1373'
+ht-degree: 1%
 
 ---
 
@@ -53,7 +53,15 @@ _28 de junio de 2021_
 
 +++
 
-## Versión 1.5.1
+## v1.5.2
+
+_22 de diciembre de 2022_
+
+![Se ha corregido un problema](../assets/fix.svg)<!-- Issue PAY-3992 --> Se ha mejorado la facturación en Servicios de Pago cuando se rechaza un método de pago.
+
+![Se ha corregido un problema](../assets/fix.svg)<!-- Issue PAY-3999 --> Los servicios de pago ahora muestran correctamente los botones inteligentes de PayPal con [Cierre de compra de incendios](https://marketplace.magento.com/swissup-firecheckout.html){target=_blank} plantilla personalizada para la página de cierre de compra.
+
+## v1.5.1
 
 _23 de noviembre de 2022_
 
@@ -61,7 +69,7 @@ _23 de noviembre de 2022_
 
 ![Se ha corregido un problema](../assets/fix.svg)<!-- Issue PAY-3968 --> Los servicios de pago ahora muestran correctamente los datos de pedidos cuando se realiza un pedido desde la página del producto mediante botones inteligentes.
 
-## Versión 1.5.0
+## v1.5.0
 
 _18 de noviembre de 2022_
 
@@ -69,13 +77,13 @@ _18 de noviembre de 2022_
 
 ![Nuevo](../assets/new.svg)<!-- Issue PAY-3950 --> Los comerciantes ahora pueden habilitar la variable [Función de comercio de compra instantánea](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/point-of-purchase/checkout-instant-purchase.html) para sus tiendas, de modo que los compradores puedan (usar [información de tarjetas de crédito abovedada](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/payments-checkout/vaulting.html)) para acelerar el cierre de compra.
 
-## Versión 1.4.1
+## v1.4.1
 
 _14 de octubre de 2022_
 
 ![Corrección](../assets/fix.svg)<!-- Issue PAY-3766 --> Cuando se rechaza el método de pago de un cliente, el mensaje de error visible es más descriptivo. Recomienda al cliente que vuelva a introducir la información de pago y vuelva a intentarlo, pruebe otro método de pago o que se ponga en contacto con su banco en cuanto a la transacción rechazada.
 
-## Versión 1.4.0
+## v1.4.0
 
 _30 de septiembre de 2022_
 
@@ -87,13 +95,13 @@ _30 de septiembre de 2022_
 
 ![Se ha corregido un problema](../assets/fix.svg)<!-- Issue PAY-3546 --> Cuando un cliente hace clic en **[!UICONTROL Edit cart]**, la página redirige a la página del carro de compras y muestra los elementos actualizados en lugar de mostrar un carro vacío.
 
-## Versión 1.3.1
+## v1.3.1
 
 _6 de septiembre de 2022_
 
 ![Se ha corregido un problema](../assets/fix.svg)<!-- Issue PAY-3663 --> Ahora, cuando la tienda de un comerciante está capturando un pedido autorizado con una moneda no global, el proceso de captura se completa y no se muestra ningún error.
 
-## Versión 1.3.0
+## v1.3.0
 
 _9 de agosto de 2022_
 
@@ -101,7 +109,7 @@ _9 de agosto de 2022_
 
 ![Se ha corregido un problema](../assets/fix.svg)<!-- Issue PAY-x --> Apple Pay ahora es compatible con el explorador Safari v15.5 en dispositivos móviles y de escritorio.
 
-## Versión 1.2.0
+## v1.2.0
 
 _29 de junio de 2022_
 
@@ -117,7 +125,7 @@ _29 de junio de 2022_
 
 ![Problema conocido](../assets/bug.svg)<!-- Issue PAY-0 --> [!DNL Payment Services] actualmente es incompatible con `commerce-data-export` v101.20 y posteriores, lo que hace que sea incompatible con el [[!DNL Channel manager] Extensión](https://experienceleague.adobe.com/docs/commerce-channels/channel-manager/guide-overview.html).
 
-## Versión 1.1.0
+## v1.1.0
 
 _31 de marzo de 2022_
 
