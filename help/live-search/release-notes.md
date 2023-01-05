@@ -2,10 +2,10 @@
 title: "[!DNL Live Search] Notas de la versión"
 description: '"La información de la última versión de [!DNL Live Search] de Adobe Commerce".'
 exl-id: 2a581e43-35f5-48ce-9752-844430ccdebf
-source-git-commit: bece7022324da4b38d3cb9b375dc0e391ffb3a88
+source-git-commit: 4566727b4e672033997491bcaf075c48e2a55cc8
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '1004'
+ht-degree: 1%
 
 ---
 
@@ -17,7 +17,7 @@ Estas notas de la versión describen las versiones más recientes de [!DNL Live 
 * ![Corrección](../assets/fix.svg) - Correcciones y mejoras
 * ![Error](../assets/bug.svg) - Problemas conocidos
 
-## [!DNL Live Search] 2,0,5 {#205}
+## [!DNL Live Search] 2.0.5 {#205}
 
 * Compatible con Adobe Commerce (EE): 2.4.x
 * Compatible con Adobe Commerce para Cloud (ECE): 2.4.x
@@ -57,21 +57,7 @@ Los comerciantes deben actualizar la versión de la extensión Live Search >= 2.
 
 Recomendamos a los usuarios que actualicen y prueben antes de pasar a producción. Considere la posibilidad de actualizar el entorno de producción durante las horas de menor actividad después de comprobar los resultados de su entorno de prueba.
 
->[!NOTE]
->
->El soporte B2B se agregará por etapas a partir del 9 de agosto en los servicios back-end, y se espera que la migración se complete para fines de agosto. Si la extensión Live Search no se actualiza, su tienda seguirá funcionando normalmente pero sin funciones B2B.
-
-### Limitaciones conocidas / Errores:
-
-* ![Error](../assets/bug.svg) : las sugerencias provienen de productos que no se pueden mostrar al grupo de clientes.
-* ![Error](../assets/bug.svg) - Los productos no se muestran si no se añaden al &quot;catálogo compartido predeterminado&quot;.
-* ![Error](../assets/bug.svg) - El adaptador de búsqueda no representa el bloque &quot;No&quot; para los atributos booleanos de producto aunque los productos estén configurados con el atributo y el bloque &quot;No&quot; se devuelva en la respuesta.
-* Aunque algunos productos y consultas pueden devolver resultados que no sean en inglés, actualmente no se admiten consultas en varios idiomas.
-* B2B con Live Search para PWA Studio no estará disponible hasta que el PWA Studio añada soporte para él.
-* Las anulaciones de productos y la fuente de atributos de producto pueden tener problemas de sincronización que requieren que los administradores se ejecuten `bin/magento indexer:reset` y `bin/magento indexer:reindex` para volver a sincronizar correctamente.
-* Si activa o desactiva las funciones Permisos del catálogo/Catálogo compartido/B2B, la variable `catalog_data_exporter_product_overrides` el indexador no se actualiza y se marca incorrectamente como `valid`. Uso `bin/magento saas:resync --feed=productOverrides` para solucionar el problema.
-
-## [!DNL Live Search] 2,0 {#20}
+## [!DNL Live Search] 2.0 {#20}
 
 * Compatible con Adobe Commerce (EE): 2.4.x
 * Compatible con Adobe Commerce para Cloud (ECE): 2.4.x
