@@ -2,7 +2,7 @@
 title: Configuración del simulador de pruebas
 description: Usar una cuenta de espacio aislado de PayPal para usar [!DNL Payment Services] en modo de prueba.
 exl-id: 99c14b4e-e6cf-48f9-9546-5c0d5c71464d
-source-git-commit: ab4a2f4d432f74cb48dc4b92468305c93088593a
+source-git-commit: 3596e3e156a834e39da2105e7ac79588d1edd408
 workflow-type: tm+mt
 source-wordcount: '588'
 ht-degree: 0%
@@ -20,9 +20,9 @@ Una cuenta de espacio aislado de PayPal permite usar [!DNL Payment Services] en 
 Para completar la incorporación al entorno limitado:
 
 1. Vaya a la [Página Cuenta de desarrollador de PayPal](https://developer.paypal.com/developer/accounts/).
-1. Haga clic en **[!UICONTROL Log in to Home]** e inicie sesión con su cuenta de prueba de Business Sandbox generada por PayPal Developer Portal o haga clic en **Registrarse** para crear una cuenta.
+1. Haga clic en **[!UICONTROL Log in to Dashboard]** e inicie sesión con su cuenta de prueba de Business Sandbox generada por PayPal Developer Portal o haga clic en **Registrarse** para crear una cuenta.
 1. Cree una cuenta de espacio aislado de PayPal:
-   1. Vaya a _[!UICONTROL SANDBOX]_>**[!UICONTROL Accounts]**.
+   1. Vaya a _[!UICONTROL Testing Tools]_>**[!UICONTROL Sandbox Accounts]**.
    1. Haga clic **[!UICONTROL Create account]**.
 
       Si ha creado una cuenta de espacio aislado de PayPal durante el proceso de incorporación de PayPal, debe [restablecer el entorno limitado de integración](#reset-your-sandbox-account) porque o no puede verificar su correo electrónico.

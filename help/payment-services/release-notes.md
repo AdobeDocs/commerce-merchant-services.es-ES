@@ -2,9 +2,9 @@
 title: "[!DNL Payment Services] Notas de la versión"
 description: Revise las notas de la versión para obtener información sobre todas las [!DNL Payment Services] versiones.
 exl-id: 104aa2c7-7735-4ac2-8ed1-a03cd9911273
-source-git-commit: 6d8ce56d8fd26d8dbfebc87a50512570e9f69b2b
+source-git-commit: c26023b1b63362d42ab351e451168dd50ff962a2
 workflow-type: tm+mt
-source-wordcount: '1373'
+source-wordcount: '1382'
 ht-degree: 1%
 
 ---
@@ -59,7 +59,7 @@ _22 de diciembre de 2022_
 
 ![Se ha corregido un problema](../assets/fix.svg)<!-- Issue PAY-3992 --> Se ha mejorado la facturación en Servicios de Pago cuando se rechaza un método de pago.
 
-![Se ha corregido un problema](../assets/fix.svg)<!-- Issue PAY-3999 --> Los servicios de pago ahora muestran correctamente los botones inteligentes de PayPal con [Cierre de compra de incendios](https://marketplace.magento.com/swissup-firecheckout.html){target=_blank} plantilla personalizada para la página de cierre de compra.
+![Se ha corregido un problema](../assets/fix.svg)<!-- Issue PAY-3999 --> Los servicios de pago ahora muestran correctamente los botones inteligentes de PayPal para los comerciantes mediante [Cierre de compra de incendios](https://marketplace.magento.com/swissup-firecheckout.html){target=_blank} plantilla personalizada para la página de cierre de compra. Anteriormente, el minigráfico mostraba los botones de forma intermitente.
 
 ## v1.5.1
 
