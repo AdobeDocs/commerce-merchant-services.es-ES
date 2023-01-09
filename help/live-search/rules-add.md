@@ -2,7 +2,7 @@
 title: "Agregar reglas"
 description: '"Aprenda a crear [!DNL Live Search] reglas".'
 exl-id: c6b92ef5-3b08-47f9-8412-955a9c95a9ee
-source-git-commit: ed245e440f6db59d8eba66afeddb840420da0cf7
+source-git-commit: 941fdc25f93679593cb3c5db0d29d7a561fcce58
 workflow-type: tm+mt
 source-wordcount: '0'
 ht-degree: 0%
@@ -95,7 +95,7 @@ A continuación, introduzca la variable *Posición* donde aparecerá el producto
 
 La información que se introduce aquí aparece en la [Detalles de regla](rules-workspace.md) panel.
 
-1. En *Detalles*, introduzca un **Nombre** para la regla.
+1. En *Detalles*, introduzca un **Nombre** para la regla. Todos los nombres de reglas deben ser únicos.
 1. Escriba un breve **Descripción** de la regla.
 1. Introduzca la variable **Fecha de inicio** y **Fecha final** para que la regla esté activa o elija las fechas del calendario.
 
@@ -154,7 +154,7 @@ La información que se introduce aquí aparece en la [Detalles de regla](rules-w
 
 | Campo | Descripción |
 |--- |--- |
-| Nombre | Nombre de la regla. |
+| Nombre | Nombre de la regla. Los nombres de las reglas deben ser únicos. |
 | Fecha de inicio | La fecha de inicio de la regla, si está programada. |
 | Fecha final | La fecha de finalización de la regla, si está programada. |
 | Descripción | Una breve descripción de la regla. |
