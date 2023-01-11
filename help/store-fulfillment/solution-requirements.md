@@ -4,9 +4,9 @@ description: Requisitos para el aprovisionamiento e incorporación de la variabl
 role: User, Admin
 level: Intermediate
 exl-id: f9e05049-5904-4f6c-b45d-9f81fbc76b69
-source-git-commit: 421c90f4c8bd687216cd48c72f30301a32115522
+source-git-commit: 842d5b7182d54a1aa5a715662503801816a24c24
 workflow-type: tm+mt
-source-wordcount: '291'
+source-wordcount: '298'
 ht-degree: 2%
 
 ---
@@ -22,19 +22,19 @@ La variable [!DNL Store Fulfillment] está disponible para los clientes de Adobe
 - Adobe Commerce en infraestructura de nube (ECE)
 - Adobe Commerce local (EE)
 
-La solución Store Fulfillment es compatible con las siguientes versiones de software.
+La solución Store Fulfillment es compatible con las versiones de software enumeradas en la *Compatibilidad del software* tabla.
 
 **Compatibilidad del software**
 
 | **Software** | **Versión mínima** | **Versión máxima** |
 |----------------|---------------------|---------------------|
-| Adobe Commerce | 2.4.0 | 2.4.4 |
+| Adobe Commerce | 2.4.0 | 2.4.5 |
 | Compositor | 1.x | 2.x |
-| MariaDB | 10,2 | 10,4 |
-| MySQL | 5,7 | 8,0 |
-| PHP | 7,4 | 8,1 |
+| MariaDB | 10.2 | 10.4 |
+| MySQL | 5.7 | 8.0 |
+| PHP | 7.4 | 8.1 |
 
-Para conocer los requisitos detallados, consulte Adobe Commerce . [Requisitos del sistema](https://devdocs.magento.com/guides/v2.4/install-gde/system-requirements.html) en la documentación para desarrolladores.
+Para conocer los requisitos detallados, consulte Adobe Commerce . [Requisitos del sistema](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html) en el *Guía de instalación de Adobe Commerce*.
 
 ## Requisitos de la aplicación de asistencia de la tienda
 
@@ -52,7 +52,7 @@ El proceso completo para administrar los pedidos de recogida de tiendas se admin
 
 ## Requisitos empresariales
 
-Su empresa debe cumplir los siguientes criterios mínimos para implementar la solución de cumplimiento de almacenamiento.
+Su empresa debe cumplir los siguientes criterios mínimos para implementar la solución de cumplimiento de almacenamiento:
 
 - Solo empresas basadas en EE. UU.
 
