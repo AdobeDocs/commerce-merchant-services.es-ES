@@ -1,9 +1,10 @@
 ---
 title: Colocación y etiquetas
 description: Conozca dónde puede colocar las recomendaciones en varias páginas del sitio y las sugerencias para las etiquetas más utilizadas para cada tipo de recomendación.
-source-git-commit: b3ac6ab9c5877b5c722cd08cc50d746595386ba9
+exl-id: e1025138-49dc-4833-92bb-27e8e415d724
+source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
 workflow-type: tm+mt
-source-wordcount: '556'
+source-wordcount: '557'
 ht-degree: 0%
 
 ---
@@ -58,4 +59,4 @@ En la tabla siguiente se enumeran las páginas de tienda donde puede colocar rec
 | Detalles del producto | En la parte inferior del contenido principal (predeterminado) | Más visitados<br>Más compradas<br>Más agregadas al carro de compras<br>Lo ha visto, ha visto que<br>Visto esto, comprado que<br>Compré esto, compré aquello<br>Más parecido a esto<br>Tendencias<br>Similitud visual |
 | Carro de compras | En la parte inferior del contenido principal (predeterminado) | Más visitados<br>Más compradas<br>Más agregadas al carro de compras<br>Lo ha visto, ha visto que<br>Visto esto, comprado que<br>Compré esto, compré aquello<br>Más parecido a esto<br>Tendencias |
 | Confirmación | En la parte inferior del contenido principal (predeterminado) | Más visitados<br>Más compradas<br>Más agregadas al carro de compras<br>Lo ha visto, ha visto que<br>Visto esto, comprado que<br>Compré esto, compré aquello<br>Más parecido a esto<br>Tendencias |
-| Page Builder | [Arrastrar y soltar](https://docs.magento.com/user-guide/cms/page-builder-add-recommendations.html#add-an-existing-recommendation-unit) para colocar el tipo de contenido | Más visitados<br>Más compradas<br>Más agregadas al carro de compras<br>Recomendado para usted<br>Tendencias |
+| Page Builder | [Arrastrar y soltar](https://experienceleague.adobe.com/docs/commerce-admin/page-builder/add-content/recommendations.html) para colocar el tipo de contenido | Más visitados<br>Más compradas<br>Más agregadas al carro de compras<br>Recomendado para usted<br>Tendencias |

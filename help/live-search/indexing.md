@@ -2,9 +2,9 @@
 title: "[!DNL Live Search] Indexación"
 description: '"Descubra cómo [!DNL Live Search] indexa propiedades de atributos del producto".'
 exl-id: 04441e58-ffac-4335-aa26-893988a89720
-source-git-commit: 0a1d70465247422db44daee302c67fe1a5a29d32
+source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '553'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ Las propiedades de atributos del producto (metadatos) determinan:
 
 El ámbito de los metadatos de atributo es `website/store/store view`.
 
-La variable [!DNL Live Search] La API permite que un cliente ordene por cualquier atributo de producto que tenga la variable [propiedad storefront](https://docs.magento.com/user-guide/stores/attributes-product.html) `Use in Search` configure como `Yes` en el Administrador de Adobe Commerce. Cuando está habilitado, `Search Weight` y `Visible in Advanced Search` se puede configurar para el atributo .
+La variable [!DNL Live Search] La API permite que un cliente ordene por cualquier atributo de producto que tenga la variable [propiedad storefront](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/product-attributes.html) `Use in Search` configure como `Yes` en el Administrador de Adobe Commerce. Cuando está habilitado, `Search Weight` y `Visible in Advanced Search` se puede configurar para el atributo .
 
 >[!NOTE]
 >
@@ -71,7 +71,7 @@ Flujo de trabajo de actualización de flujo de trabajo:
 
 ## Búsqueda de cliente
 
-La variable [!DNL Live Search] La API permite que un cliente ordene según cualquier atributo de producto que se pueda ordenar configurando la variable [propiedad storefront](https://docs.magento.com/user-guide/catalog/product-attributes.html), *Se utiliza para ordenar en listas de productos* a `Yes`. En función del tema, esta configuración hace que el atributo se incluya como opción en la variable [Ordenar por](https://docs.magento.com/user-guide/catalog/navigation.html) control de paginación en páginas de catálogo. Se pueden indexar hasta 300 atributos de producto mediante [!DNL Live Search], con [propiedades de tienda](https://docs.magento.com/user-guide/stores/attributes-product.html) que se pueden buscar y filtrar.
+La variable [!DNL Live Search] La API permite que un cliente ordene según cualquier atributo de producto que se pueda ordenar configurando la variable [propiedad storefront](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/product-attributes.html), *Se utiliza para ordenar en listas de productos* a `Yes`. En función del tema, esta configuración hace que el atributo se incluya como opción en la variable [Ordenar por](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/navigation/navigation.html) control de paginación en páginas de catálogo. Se pueden indexar hasta 300 atributos de producto mediante [!DNL Live Search], con [propiedades de tienda](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/product-attributes.html) que se pueden buscar y filtrar.
 Los metadatos de índice se almacenan en la canalización de indexación y el servicio de búsqueda puede acceder a ellos.
 
 ![[!DNL Live Search] diagrama de API de metadatos de índice](assets/index-metadata-api.svg)

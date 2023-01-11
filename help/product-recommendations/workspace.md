@@ -2,9 +2,9 @@
 title: Espacio de trabajo
 description: Obtenga información sobre cómo configurar, administrar y supervisar el rendimiento de las recomendaciones de productos.
 exl-id: 85a06cc3-91b9-484a-96a9-fc85718e6d70
-source-git-commit: 9f1f05475b2d8401ec33272e3f12e3cc7285478d
+source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
 workflow-type: tm+mt
-source-wordcount: '635'
+source-wordcount: '640'
 ht-degree: 0%
 
 ---
@@ -18,7 +18,7 @@ _Recommendations Workspace_
 
 ## Establecer el ámbito
 
-Inicialmente, la variable [scope](https://docs.magento.com/user-guide/stores/websites-stores-views.html) de todos los ajustes de recomendación está establecido en `Default Store View`. Si la instalación de Commerce incluye varias vistas de tiendas, establezca **Ámbito** a [vista de tienda](https://docs.magento.com/user-guide/configuration/scope.html) donde se aplican las recomendaciones.
+Inicialmente, la variable [scope](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html) de todos los ajustes de recomendación está establecido en `Default Store View`. Si la instalación de Commerce incluye varias vistas de tiendas, establezca **Ámbito** a [vista de tienda](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings) donde se aplican las recomendaciones.
 
 ## Definir intervalo de fechas de métricas
 

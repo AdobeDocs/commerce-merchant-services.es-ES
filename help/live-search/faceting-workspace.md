@@ -1,10 +1,10 @@
 ---
-title: '"Área de trabajo de facetas"'
+title: "Área de trabajo de facetas"
 description: '"Aprenda a recorrer el [!DNL Live Search] espacio de trabajo de facetas".'
 exl-id: b47b5c19-59bb-41e4-9599-3b90cbc44b70
-source-git-commit: bffbede99865e9085f60392e474065a454446370
+source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
 workflow-type: tm+mt
-source-wordcount: '262'
+source-wordcount: '265'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ La variable [!DNL Live Search] workspace enumera todas las facetas que están di
 
 ## Establecer el ámbito
 
-Si la instalación de Adobe Commerce incluye varias vistas de tiendas, establezca **Ámbito** a [vista de tienda](https://docs.magento.com/user-guide/configuration/scope.html) donde se aplica la configuración de faceta.
+Si la instalación de Adobe Commerce incluye varias vistas de tiendas, establezca **Ámbito** a [vista de tienda](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings) donde se aplica la configuración de faceta.
 
 ## Filtrar la lista
 

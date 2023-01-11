@@ -2,9 +2,9 @@
 title: Notas de la versión
 description: La información de la última versión de [!DNL Product Recommendations] de Adobe Commerce.
 exl-id: 1758e688-d26f-45e7-818c-d4726338a6c3
-source-git-commit: 944576fdacd7dbbb704f74ba06d34f64eac41122
+source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
 workflow-type: tm+mt
-source-wordcount: '967'
+source-wordcount: '978'
 ht-degree: 0%
 
 ---
@@ -22,7 +22,7 @@ Las notas de la versión incluyen:
 * ![Nuevo](../assets/new.svg) - Nuevas funciones
 * ![Corrección](../assets/fix.svg) - Correcciones y mejoras
 
-Consulte la documentación para desarrolladores para [obtenga información sobre la compatibilidad del producto](https://devdocs.magento.com/release/availability.html).
+Consulte la documentación para desarrolladores para [obtenga información sobre la compatibilidad del producto](https://experienceleague.adobe.com/docs/commerce-operations/release/product-availability.html).
 
 ## Adobe Commerce 2.3.x y 2.4.x
 
@@ -51,7 +51,7 @@ Consulte la documentación para desarrolladores para [obtenga información sobre
 ### 3.3.5 de magento/product-recommendations
 
 * ![Nuevo](../assets/new.svg) - Agregado [Compatibilidad con B2B](onboarding.md#b2bsupport) en Product Recommendations
-* ![Nuevo](../assets/new.svg) - Se han añadido nuevas fuentes a [sincronizar datos del catálogo](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-catalog-sync.html) a Commerce Services a través de la línea de comandos
+* ![Nuevo](../assets/new.svg) - Se han añadido nuevas fuentes a [sincronizar datos del catálogo](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/data-services/catalog-sync.html) a Commerce Services a través de la línea de comandos
 
 ### 3.3.3 de magento/recomendaciones de productos
 
@@ -79,7 +79,7 @@ Consulte la documentación para desarrolladores para [obtenga información sobre
 
 ### 3.2.5 de magento/recomendaciones de productos
 
-* ![Nuevo](../assets/new.svg) - Se ha cambiado el nombre de los servicios de Magento a [Servicios de comercio](https://docs.magento.com/user-guide/system/saas.html) y una mayor facilidad de uso en el administrador
+* ![Nuevo](../assets/new.svg) - Se ha cambiado el nombre de los servicios de Magento a [Servicios de comercio](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/integration-services/saas.html) y una mayor facilidad de uso en el administrador
 
 ### 3.2.4 de magento/recomendaciones de productos
 
@@ -94,7 +94,7 @@ Consulte la documentación para desarrolladores para [obtenga información sobre
 ### 3.2.2 de magento/recomendaciones de productos
 
 * ![Nuevo](../assets/new.svg) - Se ha añadido la capacidad de [vista previa de los resultados de la recomendación](create.md) en el momento de la creación. Esto puede requerir que actualice el módulo a la versión más reciente.
-* ![Nuevo](../assets/new.svg) - Se ha añadido la capacidad de [monitorizar y administrar](https://docs.magento.com/user-guide/system/catalog-sync.html) el proceso de sincronización del catálogo desde el administrador.
+* ![Nuevo](../assets/new.svg) - Se ha añadido la capacidad de [monitorizar y administrar](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/data-services/catalog-sync.html) el proceso de sincronización del catálogo desde el administrador.
 * ![Nuevo](../assets/new.svg) - Agregado [filtros](filters.md) para controlar qué productos se muestran en recomendaciones.
 * ![Nuevo](../assets/new.svg) - Se ha añadido la variable [Similitud visual](type.md#visualsim) tipo de recomendación.
 
@@ -104,7 +104,7 @@ Consulte la documentación para desarrolladores para [obtenga información sobre
 
 ### 3.1.0 de magento/product-recommendations
 
-* ![Nuevo](../assets/new.svg) - Se ha añadido la capacidad de [resync](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-catalog-sync.html) su catálogo a los servicios SaaS a través de la línea de comandos.
+* ![Nuevo](../assets/new.svg) - Se ha añadido la capacidad de [resync](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/data-services/catalog-sync.html) su catálogo a los servicios SaaS a través de la línea de comandos.
 * ![Nuevo](../assets/new.svg) - Se ha agregado compatibilidad con prefijos de tabla de base de datos
 * ![Corrección](../assets/fix.svg) - Se ha eliminado la compatibilidad con PHP 7.1
 
@@ -153,7 +153,7 @@ Esta es una versión principal. Debe [editar](install-configure.md#update) el ar
 
 ### 1.0.3 de magento/module-page-builder-product-recommendations para Page Builder
 
-* ![Nuevo](../assets/new.svg) - Compatibilidad con el Creador de páginas. Con la integración del Creador de páginas, puede colocar de forma precisa y granulada las unidades de Recomendaciones en cualquier ubicación arbitraria del contenido creado por el Creador de páginas. También puede aplicar estilo a los encabezados y las unidades de recomendación. Vaya a [Page Builder](https://docs.magento.com/user-guide/cms/page-builder-add-recommendations.html) para obtener más información.
+* ![Nuevo](../assets/new.svg) - Compatibilidad con el Creador de páginas. Con la integración del Creador de páginas, puede colocar de forma precisa y granulada las unidades de Recomendaciones en cualquier ubicación arbitraria del contenido creado por el Creador de páginas. También puede aplicar estilo a los encabezados y las unidades de recomendación. Vaya a [Page Builder](https://experienceleague.adobe.com/docs/commerce-admin/page-builder/add-content/recommendations.html) para obtener más información.
 
 ### 2.0.0 de magento/product-recommendations
 
@@ -164,4 +164,4 @@ Esta es una versión principal. Debe [editar](install-configure.md#update) el ar
 Para obtener más información sobre [!DNL Product Recommendations] y [!DNL Product Recommendations] desarrollo:
 
 * [Guía del usuario](overview.md)
-* [Documentación para desarrolladores](https://devdocs.magento.com/recommendations/product-recs.html)
+* [Documentación para desarrolladores](https://experienceleague.adobe.com/docs/commerce-merchant-services/product-recommendations/developer/development-overview.html)

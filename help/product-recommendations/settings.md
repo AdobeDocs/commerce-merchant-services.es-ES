@@ -2,16 +2,16 @@
 title: Configuración
 description: Aprenda a cambiar la fuente de su [!DNL Product Recommendations] y cómo habilitar recomendaciones visuales.
 exl-id: 8c074e11-e0cb-4d55-b646-30279c79bbc2
-source-git-commit: 6d0c7c749fe90c7c204afe47446f3483d8668b53
+source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '411'
 ht-degree: 0%
 
 ---
 
 # Configuración
 
-Cuando [configuración de un espacio de datos SaaS](https://docs.magento.com/user-guide/configuration/services/saas.html) para Recommendations, el espacio de datos SaaS recopila datos de catálogo y datos de comportamiento de tienda. [Adobe Sensei](https://www.adobe.com/sensei.html) analiza esos datos y calcula las asociaciones de productos utilizadas para servir Product Recommendations.
+Cuando [configuración de un espacio de datos SaaS](https://experienceleague.adobe.com/docs/commerce-admin/config/services/saas.html) para Recommendations, el espacio de datos SaaS recopila datos de catálogo y datos de comportamiento de tienda. [Adobe Sensei](https://www.adobe.com/sensei.html) analiza esos datos y calcula las asociaciones de productos utilizadas para servir Product Recommendations.
 
 Los entornos que no son de producción para pruebas o ensayos no suelen tener la cantidad o calidad de datos de comportamiento de tienda para ofrecer recomendaciones de productos realistas. El comportamiento real del comprador a escala solo se puede capturar en un entorno de producción. Para resolver este problema, Adobe Commerce le permite utilizar las recomendaciones de productos de su entorno de producción con otros espacios de datos SaaS que no sean de producción. El uso de datos reales de tienda en un entorno que no sea de producción le permite obtener una vista previa de las recomendaciones que ven los compradores y experimentar con diferentes tipos de recomendaciones y ubicaciones. Los compradores pueden obtener una vista previa de Recommendations desde otro espacio de datos SaaS, pero no hacer clic en él.
 

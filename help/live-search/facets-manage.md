@@ -2,9 +2,9 @@
 title: "Administrar facetas"
 description: '"Obtenga información sobre cómo administrar las [!DNL Live Search] facetas".'
 exl-id: 1d51a36a-20d6-46b6-b379-11e46c8824a0
-source-git-commit: a17c9ef193394d86f5439f900ebba3dd68d33b45
+source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
 workflow-type: tm+mt
-source-wordcount: '439'
+source-wordcount: '441'
 ht-degree: 0%
 
 ---
@@ -36,7 +36,7 @@ Consulte [Configuración](settings.md) para configurar intervalos y agrupaciones
 
 1. Para editar la etiqueta de faceta, realice una de las siguientes acciones:
 
-   * Para un [!DNL Commerce] tienda, edite la [etiqueta de atributo](https://docs.magento.com/user-guide/stores/attributes-product.html).
+   * Para un [!DNL Commerce] tienda, edite la [etiqueta de atributo](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/product-attributes.html).
    * Para una implementación sin encabezado, haga clic en el valor de la primera columna y edite el texto según sea necesario.
 
    ![Editar etiqueta](assets/facet-edit-label.png)

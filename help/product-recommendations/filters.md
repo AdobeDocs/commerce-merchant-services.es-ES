@@ -1,9 +1,10 @@
 ---
 title: Filtrar productos
 description: Defina las condiciones que incluyen o excluyen productos para que no se utilicen como recomendaciones.
-source-git-commit: 7fe89df32dc5363817f957180e5b75e7217fc14a
+exl-id: baab28ff-b529-4cbc-adb7-4fa225e87d4a
+source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
 workflow-type: tm+mt
-source-wordcount: '693'
+source-wordcount: '698'
 ht-degree: 0%
 
 ---
@@ -41,7 +42,7 @@ Los operadores lógicos `AND` y `OR` se utilizan para unir varias condiciones. S
 
 ### Categoría
 
-Los filtros basados en la categoría de un producto utilizan asignaciones de categoría directas y sus subcategorías. Por ejemplo, habilitar una condición de exclusión para la categoría `Gear` excluye los productos asignados a `Gear` y todas sus subcategorías como `Gear/Bags` o `Gear/Fitness Equipment`. Para los comerciantes B2B, el filtro Category se adhiere a cualquier [categorías de productos específicas del cliente](https://docs.magento.com/user-guide/catalog/category-permissions.html) ha configurado.
+Los filtros basados en la categoría de un producto utilizan asignaciones de categoría directas y sus subcategorías. Por ejemplo, habilitar una condición de exclusión para la categoría `Gear` excluye los productos asignados a `Gear` y todas sus subcategorías como `Gear/Bags` o `Gear/Fitness Equipment`. Para los comerciantes B2B, el filtro Category se adhiere a cualquier [categorías de productos específicas del cliente]https://experienceleague.adobe.com/docs/commerce-admin/catalog/categories/category-permissions.html) que ha configurado.
 
 Adobe Commerce recomienda utilizar la siguiente configuración de filtro de categoría al implementar recomendaciones en los tipos de página:
 
@@ -67,11 +68,11 @@ Filtra productos en función de la visibilidad, como: _Catálogo_, _Buscar_, o a
 
 ### Precio
 
-Un filtro basado en el precio del producto utiliza el precio final para realizar la comparación. El precio final incluye cualquier descuento o precio especial disponible para compradores anónimos. Para los comerciantes B2B, el precio mostrado refleja el [precios de grupo específicos del cliente](https://docs.magento.com/user-guide/catalog/pricing-advanced.html#customer-group-price) ha configurado.
+Un filtro basado en el precio del producto utiliza el precio final para realizar la comparación. El precio final incluye cualquier descuento o precio especial disponible para compradores anónimos. Para los comerciantes B2B, el precio mostrado refleja el [precios de grupo específicos del cliente](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/pricing/pricing-advanced.html) ha configurado.
 
 ### Estado de stock
 
 Los siguientes filtros de exclusión se pueden usar para filtrar productos en función del estado de existencias:
 
 - Sin existencias (solo exclusión) Excluye productos que no están en existencias.
-- Bajo en existencias (solo exclusión) Excluye los productos con un bajo nivel de existencias. El estado de existencias bajas se basa en la variable _Solo X Umbral izquierdo_ en [Configuración de inventario](https://docs.magento.com/user-guide/configuration/catalog/inventory.html).
+- Bajo en existencias (solo exclusión) Excluye los productos con un bajo nivel de existencias. El estado de existencias bajas se basa en la variable _Solo X Umbral izquierdo_ en [Configuración de inventario](https://experienceleague.adobe.com/docs/commerce-admin/config/catalog/inventory.html).

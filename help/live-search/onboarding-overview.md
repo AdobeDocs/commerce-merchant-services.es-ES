@@ -2,9 +2,9 @@
 title: "Información general sobre la incorporación"
 description: "[!DNL Live Search] flujo de incorporación, requisitos del sistema, límites y limitaciones"
 exl-id: 45f6c1ae-544b-47ef-9feb-c1a05f93108a
-source-git-commit: 1a55f2fb3d56183e5e73d172ebdc40f340e4d520
+source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '348'
 ht-degree: 0%
 
 ---
@@ -41,7 +41,7 @@ En este momento, la variable [!DNL Live Search] la API de búsqueda/categoría t
 ### Consulta
 
 * [!DNL Live Search] no tiene acceso a la taxonomía completa del árbol de categorías, lo que hace que algunos escenarios de búsqueda de navegación en capas estén más allá de su alcance.
-* [!DNL Live Search] utiliza un extremo de GraphQL único para las consultas con el fin de admitir funciones como facetas inteligentes y búsqueda según el tipo que desee. Aunque similar a la variable [API de Magento GraphQL](https://developer.adobe.com/commerce/webapi/graphql/), hay algunas diferencias y es posible que algunos campos no sean totalmente compatibles en este momento.
+* [!DNL Live Search] utiliza un punto final único de GraphQL para las consultas con el fin de admitir funciones como facetas inteligentes y search-as-you-type. Aunque similar a la variable [API de Magento GraphQL](https://developer.adobe.com/commerce/webapi/graphql/), hay algunas diferencias y es posible que algunos campos no sean totalmente compatibles en este momento.
 
 ### Reglas
 
@@ -56,12 +56,12 @@ En este momento, la variable [!DNL Live Search] la API de búsqueda/categoría t
 ### versión beta del PWA
 
 * La implementación actual del PWA beta de la búsqueda activa requiere más tiempo de procesamiento para devolver los resultados de búsqueda que la búsqueda en vivo con la tienda de comercio nativa.
-* La versión beta de PWA para [!DNL Live Search] no es compatible [gestión de eventos](https://devdocs.magento.com/shared-services/storefront-events-sdk.html).
+* La versión beta de PWA para [!DNL Live Search] no es compatible [gestión de eventos](https://developer.adobe.com/commerce/services/shared-services/storefront-events/sdk/).
 * GraphQL no admite los siguientes atributos de producto cuando se utilizan en relación con la versión beta de [PWA](https://developer.adobe.com/commerce/pwa-studio/): `description`, `name`, `short_description`
 
 ### No compatible en este momento
 
-* La variable [Búsqueda avanzada](https://docs.magento.com/user-guide/catalog/search-advanced.html) módulo se desactiva cuando [!DNL Live Search] está instalado y se elimina el vínculo Búsqueda avanzada del pie de página de la tienda.
-* [Grupos de precios personalizados](https://docs.magento.com/user-guide/catalog/product-price-group.html)
-* Múltiples ubicaciones de inventario que usa [MCOM](https://docs.magento.com/user-guide/mcom.html) u otras extensiones OMS
-* Los precios del producto no incluyen [IVA](https://docs.magento.com/user-guide/tax/vat.html) (IVA).
+* La variable [Búsqueda avanzada](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search.html#advanced-search) módulo se desactiva cuando [!DNL Live Search] está instalado y se elimina el vínculo Búsqueda avanzada del pie de página de la tienda.
+* [Grupos de precios personalizados](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/pricing/product-price-group.html)
+* Múltiples ubicaciones de inventario que usa [MCOM](https://experienceleague.adobe.com/docs/commerce-admin/systems/integrations/mcom.html) u otras extensiones OMS
+* Los precios del producto no incluyen [IVA](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/site-store/taxes/vat.html) (IVA).

@@ -1,10 +1,10 @@
 ---
-title: '"Tipos de facetas"'
-description: '"[!DNL Live Search] las facetas son dinámicas y aparecen en la lista Filtros cuando corresponde."'
+title: "Tipos de facetas"
+description: "[!DNL Live Search] las facetas son dinámicas y aparecen en la lista Filtros cuando corresponde."
 exl-id: 49fb7609-64b3-4ae8-928d-54c99032d919
-source-git-commit: bffbede99865e9085f60392e474065a454446370
+source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
 workflow-type: tm+mt
-source-wordcount: '471'
+source-wordcount: '473'
 ht-degree: 0%
 
 ---
@@ -26,7 +26,7 @@ En tiempo de consulta, [!DNL Live Search] genera los resultados de búsqueda en 
 
 Facetas que se representan para la variable [!DNL Commerce] el adaptador de búsqueda procesa la tienda, que enruta las solicitudes y procesa los resultados en la tienda. Todo [!DNL Commerce] las facetas de tienda se ordenan alfabéticamente con opciones de selección única, independientemente del tipo de entrada asignado al atributo correspondiente. Las facetas disponibles en la tienda se representan según el tema actual y reflejan cualquier personalización hecha a la presentación de la navegación en capas.
 
-En contraste, [headless](https://devdocs.magento.com/guides/v2.4/architecture/archi_perspectives/webapi-vision.html) la API procesa las implementaciones de y admite opciones adicionales. Las facetas sin encabezado se pueden ordenar alfabéticamente o por recuento y pueden tener opciones de selección única o múltiple.
+En contraste, [headless](https://developer.adobe.com/commerce/php/architecture/technical-vision/web-api/) la API procesa las implementaciones de y admite opciones adicionales. Las facetas sin encabezado se pueden ordenar alfabéticamente o por recuento y pueden tener opciones de selección única o múltiple.
 
 ### Seleccionar tipo
 
@@ -42,7 +42,7 @@ Para implementaciones sin encabezado, las facetas se pueden definir como `single
 
 ### Etiquetas de facetas
 
-Para [!DNL Commerce] tienda, la etiqueta de faceta está determinada por el [*Propiedades de atributo*](https://docs.magento.com/user-guide/stores/attribute-product-create.html). Para tiendas con varias vistas, se pueden definir etiquetas adicionales en *Administrar etiquetas*. Para implementaciones sin encabezado, las etiquetas se editan desde el [espacio de trabajo de facetas](faceting-workspace.md).
+Para [!DNL Commerce] tienda, la etiqueta de faceta está determinada por el [*Propiedades de atributo*](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/create/attribute-product-create.html). Para tiendas con varias vistas, se pueden definir etiquetas adicionales en *Administrar etiquetas*. Para implementaciones sin encabezado, las etiquetas se editan desde el [espacio de trabajo de facetas](faceting-workspace.md).
 
 ### Tipo de ordenación
 

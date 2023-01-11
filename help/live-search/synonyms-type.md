@@ -1,10 +1,10 @@
 ---
-title: '"Tipos de sinónimos"'
+title: "Tipos de sinónimos"
 description: '"De una y dos direcciones [!DNL Live Search] los sinónimos amplían la definición de palabras clave".'
 exl-id: 708d7b0d-7361-44f4-ae9e-b92f574ac975
-source-git-commit: cd1b40ffb350a87ea1317be82789f702922881b9
+source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
 workflow-type: tm+mt
-source-wordcount: '513'
+source-wordcount: '516'
 ht-degree: 0%
 
 ---
@@ -53,4 +53,4 @@ Sea coherente con la forma en que se utiliza la terminología en su catálogo. T
 
 ### Asignación de palabras clave
 
-Esta técnica utiliza atributos de producto en los que se pueden buscar, en lugar de sinónimos, para crear asociaciones basadas en palabras clave entre productos. Como resultado, un producto asignado puede aparecer en los resultados de búsqueda de otro producto. Para obtener más información, consulte [Resultados de la búsqueda](https://docs.magento.com/user-guide/catalog/search-results.html).
+Esta técnica utiliza atributos de producto en los que se pueden buscar, en lugar de sinónimos, para crear asociaciones basadas en palabras clave entre productos. Como resultado, un producto asignado puede aparecer en los resultados de búsqueda de otro producto. Para obtener más información, consulte [Resultados de la búsqueda](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search-results.html).

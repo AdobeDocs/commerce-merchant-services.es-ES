@@ -2,9 +2,9 @@
 title: "Espacio de trabajo de reglas"
 description: '"Aprenda a recorrer el [!DNL Live Search] espacio de trabajo de reglas".'
 exl-id: a52839fb-2264-4443-83c3-9eaa2ccb6996
-source-git-commit: 12fc4e0ee4399a50ad3d2ced2664e41aced7198d
+source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
 workflow-type: tm+mt
-source-wordcount: '582'
+source-wordcount: '585'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,7 @@ El espacio de trabajo de reglas enumera la selección actual de reglas y su esta
 
 ## Establecer el ámbito
 
-Si la instalación de Adobe Commerce incluye varias vistas de tiendas, establezca **Ámbito** a [vista de tienda](https://docs.magento.com/user-guide/configuration/scope.html) donde se aplican sus reglas.
+Si la instalación de Adobe Commerce incluye varias vistas de tiendas, establezca **Ámbito** a [vista de tienda](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings) donde se aplican sus reglas.
 
 ## Mostrar u ocultar columnas
 

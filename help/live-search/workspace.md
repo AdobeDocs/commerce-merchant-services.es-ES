@@ -2,9 +2,9 @@
 title: Espacio de trabajo
 description: El espacio de trabajo Búsqueda activa se utiliza para configurar, administrar y supervisar el rendimiento de la búsqueda.
 exl-id: fb85974a-a5f9-4e6c-bd03-451e6457f2d2
-source-git-commit: 1a55f2fb3d56183e5e73d172ebdc40f340e4d520
+source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '236'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ El espacio de trabajo es donde se configura, administra y monitoriza el rendimie
 
 ## Establecer el ámbito
 
-Inicialmente, la variable [scope](https://docs.magento.com/user-guide/configuration/scope.html) de todos [!DNL Live Search] la configuración está definida en `Default Store View`. Si su [!DNL Commerce] la instalación incluye varias vistas de tienda, **Ámbito** a [vista de tienda](https://docs.magento.com/user-guide/stores/websites-stores-views.html) donde se aplica la configuración de faceta.
+Inicialmente, la variable [scope](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings) de todos [!DNL Live Search] la configuración está definida en `Default Store View`. Si su [!DNL Commerce] la instalación incluye varias vistas de tienda, **Ámbito** a [vista de tienda](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html) donde se aplica la configuración de faceta.
 
 ## Opciones de menú
 

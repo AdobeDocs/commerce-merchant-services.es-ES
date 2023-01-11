@@ -1,17 +1,17 @@
 ---
-title: '"Facetas"'
-description: '"[!DNL Live Search] las facetas utilizan varias dimensiones de valores de atributos como criterios de búsqueda."'
+title: "Facetas"
+description: "[!DNL Live Search] las facetas utilizan varias dimensiones de valores de atributos como criterios de búsqueda."
 exl-id: 63c0b255-6be9-41ad-b4bf-13bb7ff098fd
-source-git-commit: 40e7da1cb71bd3c977acb77714c2cab55b3b7bf8
+source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
 workflow-type: tm+mt
-source-wordcount: '382'
+source-wordcount: '399'
 ht-degree: 0%
 
 ---
 
 # Facetas
 
-Las facetas son un método de filtrado de alto rendimiento que utiliza varias dimensiones de valores de atributos como criterios de búsqueda. La búsqueda por facetas es similar, pero considerablemente &quot;más inteligente&quot; que la [navegación por capas](https://docs.magento.com/user-guide/catalog/navigation-layered.html). La lista de filtros disponibles viene determinada por la variable [atributos filtrables](https://docs.magento.com/user-guide/catalog/navigation-layered-filterable-attributes.html) de productos devueltos en los resultados de búsqueda.
+Las facetas son un método de filtrado de alto rendimiento que utiliza varias dimensiones de valores de atributos como criterios de búsqueda. La búsqueda por facetas es similar, pero considerablemente &quot;más inteligente&quot; que la [navegación por capas](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/navigation/navigation-layered.html). La lista de filtros disponibles viene determinada por la variable [atributos filtrables](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/navigation/navigation-layered.html#filterable-attributes) de productos devueltos en los resultados de búsqueda.
 
 ![Resultados de búsqueda filtrados](assets/storefront-search-results-run.png)
 
@@ -28,13 +28,13 @@ Live Search admite hasta:
 
 | Configuración | Descripción |
 |--- |--- |
-| [Configuración de visualización de categoría](https://docs.magento.com/user-guide/catalog/categories-display-settings.html) | Anclaje - `Yes` |
-| [Propiedades de atributo](https://docs.magento.com/user-guide/stores/attribute-product-create.html) | [Tipo de entrada de catálogo](https://docs.magento.com/user-guide/stores/attributes-input-types.html) - `Yes/No`, `Dropdown`, `Multiple Select`, `Price` |
+| [Configuración de visualización de categoría](https://experienceleague.adobe.com/docs/commerce-admin/catalog/categories/create/categories-display-settings.html) | Anclaje - `Yes` |
+| [Propiedades de atributo](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/create/attribute-product-create.html) | [Tipo de entrada de catálogo](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/attributes-input-types.html) - `Yes/No`, `Dropdown`, `Multiple Select`, `Price` |
 | Propiedades de tienda de atributos | Usar en navegación por capas de resultados de búsqueda - `Yes` |
 
 ## Valores de atributo predeterminados
 
-Los siguientes atributos de producto tienen [propiedades de tienda](https://docs.magento.com/user-guide/stores/attributes-product.html) que usa [!DNL Live Search] y activada de forma predeterminada.
+Los siguientes atributos de producto tienen [propiedades de tienda](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/product-attributes.html) que usa [!DNL Live Search] y activada de forma predeterminada.
 
 | Propiedad | Propiedad Storefront | Atributo |
 |---|---|---|

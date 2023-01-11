@@ -2,9 +2,9 @@
 title: Crear nueva recomendación
 description: Obtenga información sobre cómo crear una unidad de recomendación de producto.
 exl-id: d393ab78-0523-463f-9b03-ad3f523dce0f
-source-git-commit: 5fa08429a97c9ed59a339a0eca268f99c1023b7e
+source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '848'
 ht-degree: 0%
 
 ---
@@ -20,11 +20,11 @@ Al activar la unidad de recomendación, Adobe Commerce empieza a [recopilar dato
 
 1. En el _Administrador_ barra lateral, vaya a **Marketing** > _Promociones_ > **Recommendations de producto** para mostrar el _Recommendations de producto_ espacio de trabajo.
 
-1. Especifique la variable [Vista de la tienda](https://docs.magento.com/user-guide/configuration/scope.html) donde desea que se muestren las recomendaciones.
+1. Especifique la variable [Vista de la tienda](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings) donde desea que se muestren las recomendaciones.
 
    >[!NOTE]
    >
-   > Las unidades de recomendación del Generador de páginas solo se pueden crear para la vista de tienda predeterminada. Para obtener más información sobre la creación de recomendaciones de productos con Page Builder, consulte [Añadir contenido: Recommendations de producto](https://docs.magento.com/user-guide/cms/page-builder-add-recommendations.html).
+   > Las unidades de recomendación del Generador de páginas solo se pueden crear para la vista de tienda predeterminada. Para obtener más información sobre la creación de recomendaciones de productos con Page Builder, consulte [Añadir contenido: Recommendations de producto](https://experienceleague.adobe.com/docs/commerce-admin/page-builder/add-content/recommendations.html).
 
 1. Haga clic en **Crear recomendación**.
 
@@ -37,7 +37,7 @@ Al activar la unidad de recomendación, Adobe Commerce empieza a [recopilar dato
    - Detalles del producto
    - Carro de compras
    - Confirmación
-   - [Page Builder](https://docs.magento.com/user-guide/cms/page-builder-add-recommendations.html)
+   - [Page Builder](https://experienceleague.adobe.com/docs/commerce-admin/page-builder/add-content/recommendations.html)
 
    Puede crear hasta cinco unidades de recomendación activas por cada tipo de página y hasta 25 unidades para el Creador de páginas. El tipo de página aparece atenuado Cuando se alcanza el límite.
 

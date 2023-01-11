@@ -1,10 +1,10 @@
 ---
-title: '"Quick Tour"'
+title: "Quick Tour"
 description: '"Haga un rápido recorrido por [!DNL Live Search] de la tienda".'
 exl-id: bcb19506-6617-4c8a-83df-9d961f81e9e8
-source-git-commit: bffbede99865e9085f60392e474065a454446370
+source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
 workflow-type: tm+mt
-source-wordcount: '306'
+source-wordcount: '313'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ Centrándose en la velocidad, la relevancia y la facilidad de uso, [!DNL Live Se
 
 ## Buscar mientras escribe
 
-[!DNL Live Search] responde con productos sugeridos y una imagen en miniatura de los resultados de búsqueda principales en un [pover](storefront-popover.md) como consultas de tipo de comprador en la variable [Buscar](https://docs.magento.com/user-guide/catalog/search-quick.html) en la ventana La variable [detalle del producto](https://docs.magento.com/user-guide/quick-tour/product-page.html) aparece cuando los compradores hacen clic en un producto sugerido o destacado. A _Ver todo_ en el pie de página de la ventana emergente se muestra la página de resultados de la búsqueda.
+[!DNL Live Search] responde con productos sugeridos y una imagen en miniatura de los resultados de búsqueda principales en un [pover](storefront-popover.md) como consultas de tipo de comprador en la variable [Buscar](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search.html#quick-search) en la ventana La variable [detalle del producto](https://experienceleague.adobe.com/docs/commerce-admin/start/storefront/storefront.html#product-page) aparece cuando los compradores hacen clic en un producto sugerido o destacado. A _Ver todo_ en el pie de página de la ventana emergente se muestra la página de resultados de la búsqueda.
 
 [!DNL Live Search] devuelve resultados de &quot;búsqueda a medida que escribe&quot; para una consulta de dos o más caracteres. Para una coincidencia parcial, el número máximo de caracteres por palabra es de 20. El número de caracteres de la consulta no se puede configurar. En la ventana emergente se incluyen los siguientes campos: `name`, `sku`y `category_ids`.
 
