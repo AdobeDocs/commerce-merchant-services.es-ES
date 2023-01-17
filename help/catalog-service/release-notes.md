@@ -2,9 +2,9 @@
 title: '[!DNL Catalog Service] Notas de la versión'
 description: La información de la última versión de [!DNL Catalog Service] para Adobe Commerce.
 exl-id: 9bf8e3f7-5b74-4755-867e-ac1c5000ff33
-source-git-commit: 624c959119958f9fdd15d3d9559092c35d079c2c
+source-git-commit: cfa0b505b0fb793bbc072f9f837551b7e67e9721
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '658'
 ht-degree: 0%
 
 ---
@@ -16,6 +16,34 @@ Estas notas de la versión describen las versiones más recientes de [!DNL Catal
 * ![Nuevo](../assets/new.svg) Nuevas funciones
 * ![Corrección](../assets/fix.svg) Correcciones y mejoras
 * ![Error](../assets/bug.svg) Problemas conocidos
+
+## Versión 1.3
+
+Fecha de versión: 2023-1-17 Compatible con Adobe Commerce (EE): 2.4.x Compatible con Adobe Commerce para Cloud (ECE): 2.4.x Estabilidad: Disponibilidad general
+
+![Nuevo](../assets/new.svg) Se ha simplificado y mejorado la experiencia de integración.
+![Nuevo](../assets/new.svg) Hay nuevos extremos de entorno limitado para clientes disponibles para pruebas previas a la producción.
+![Nuevo](../assets/new.svg) Se agregó compatibilidad con productos virtuales.
+![Corrección](../assets/fix.svg) Mejoras de escalabilidad y rendimiento de la API.
+
+### Limitaciones conocidas
+
+Estas funciones aún no son compatibles:
+
+* Paquete de productos con precio fijo
+* No se reciben actualizaciones cuando se eliminan variantes del catálogo.
+* El tamaño máximo para la carga útil de atributos dinámicos es de 9 MB.
+* Precio de producto de grupo. Se puede calcular con precios de producto simples.
+* En una matriz de imágenes, solo la primera imagen contiene funciones.
+* Muestras de color
+* Carga de la página de detalles del producto a través de la dirección URL del producto.
+
+Las siguientes limitaciones se pueden resolver mediante la API de GraphQL:
+
+* Precio mínimo publicitario
+* Precio de nivel
+* Productos descargables y tarjetas de regalo
+* Categorías (`categories` y `categoryList`)
 
 ## Versión 1.1
 
