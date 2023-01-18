@@ -2,9 +2,9 @@
 title: "Flujo de cierre de compra para un usuario de Adobe Commerce"
 description: "Descripción general de la variable [!DNL Quick Checkout] flujo para un usuario de Adobe Commerce."
 exl-id: 085e393b-15f6-4d5a-a04d-927b1f95b74e
-source-git-commit: 1f2305df7566cd77a6be161cc9d1265c0291171c
+source-git-commit: 1b2847b71e2a6aa843de2e73dfe5f3ad295c7b5f
 workflow-type: tm+mt
-source-wordcount: '323'
+source-wordcount: '405'
 ht-degree: 0%
 
 ---
@@ -39,6 +39,19 @@ Si [!DNL Bolt] se encuentra durante el cierre de compra, los compradores pueden 
 Si el comprador ha iniciado sesión en Adobe Commerce antes del cierre de compra, la variable [!DNL Bolt] La ventana emergente de OTP no aparecerá durante el cierre de compra, pero aparecerá un mensaje sugiriendo al comprador que inicie sesión para acceder a su billetera de Bolt.
 
 Si tiene problemas al realizar un pedido como usuario de Adobe Commerce existente, consulte la [Solución de problemas de cierre de compra rápido](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/quick-checkout-issues.html) en el Centro de ayuda de Adobe Commerce.
+
+### Inicio de sesión automático
+
+Es posible configurar un inicio de sesión automático para [!DNL Quick Checkout] usuarios. Puede activar una configuración para iniciar sesión automáticamente en un usuario durante el cierre de compra.
+
+1. En el _Administrador_ barra lateral, vaya a **Almacenes** > **Configuración** > **Cierre de compra** para acceder a la página de configuración general del administrador de cierre de compra .
+1. En el _Configuración del servicio_ para [!DNL Quick Checkout], proporcione todos los detalles necesarios para configurar el inicio de sesión automático.
+
+Consulte [[!DNL Quick Checkout] configurar configuración de servicio](../quick-checkout/onboarding.md#configure-service-settings) para obtener más información.
+
+>[!NOTE]
+>
+> Inicio de sesión por primera vez **inicio de sesión automático** está habilitado requiere el consentimiento del usuario para autorizarlo aceptando una ventana emergente.
 
 ## Nuevo [!DNL Bolt] account
 

@@ -2,9 +2,9 @@
 title: '[!DNL Quick Checkout] Notas de la versión'
 description: Revise las notas de la versión para obtener información sobre todas las [!DNL Quick Checkout] versiones.
 exl-id: 511be2fc-d24d-4323-a47a-d376e38a5c47
-source-git-commit: 8b915cd0a8f25934675a2ae00ee2694b7facc1bd
+source-git-commit: 1b2847b71e2a6aa843de2e73dfe5f3ad295c7b5f
 workflow-type: tm+mt
-source-wordcount: '1056'
+source-wordcount: '1185'
 ht-degree: 0%
 
 ---
@@ -64,6 +64,20 @@ _5 de octubre de 2022_
 ![Se ha corregido un problema](../assets/fix.svg)<!-- Issue BOLT-369 --> Ahora, la variable [[!DNL Quick Checkout] Panel de administración](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/onboarding.html#enable-extension) muestra la versión de la aplicación en el pie de página.
 
 +++
+
+## v1.5.0
+
+_18 de enero de 2023_
+
+![Nuevo](../assets/new.svg)<!-- Issue BOLT-522 --> Se puede activar o desactivar una nueva configuración para detectar si [compradores](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/manage-checkout/checkout-options/checkout-adobe-commerce.html) se puede iniciar sesión automáticamente en Bolt.
+
+![Nuevo](../assets/new.svg)<!-- Issue BOLT-523 --> Se puede activar o desactivar una nueva configuración que permita a los comerciantes especificar si los compradores pueden iniciar sesión automáticamente en ambas redes o solo en la red de Bolt.
+
+![Se ha corregido un problema](../assets/fix.svg)<!-- Issue BOLT-542 --> Mejoras en la experiencia del usuario al [guardar tarjeta o dirección en una cuenta de Bolt](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/onboarding.html) cuando un comprador proporciona correo electrónico.
+
+![Se ha corregido un problema](../assets/fix.svg)<!-- Issue BOLT-550 --> Mejoras en la experiencia del usuario en [inicio de sesión automático](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/onboarding.html#configure-service-settings) cuando un usuario de Bolt proporciona correo electrónico.
+
+![Se ha corregido un problema](../assets/fix.svg)<!-- Issue BOLT-544 --> Mejoras de compatibilidad para [URL de devolución de llamada](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/onboarding.html#check-shopper-valid-account) con [multisitios](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/multi-sites/ms-overview.html) en Bolt.
 
 ## v1.4.0
 
