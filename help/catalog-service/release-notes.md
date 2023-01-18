@@ -2,9 +2,9 @@
 title: '[!DNL Catalog Service] Notas de la versión'
 description: La información de la última versión de [!DNL Catalog Service] para Adobe Commerce.
 exl-id: 9bf8e3f7-5b74-4755-867e-ac1c5000ff33
-source-git-commit: cfa0b505b0fb793bbc072f9f837551b7e67e9721
+source-git-commit: d377aac8fd42d8c9b1fc0ab6673a6965f50cf452
 workflow-type: tm+mt
-source-wordcount: '658'
+source-wordcount: '659'
 ht-degree: 0%
 
 ---
@@ -38,7 +38,7 @@ Estas funciones aún no son compatibles:
 * Muestras de color
 * Carga de la página de detalles del producto a través de la dirección URL del producto.
 
-Las siguientes limitaciones se pueden resolver mediante la API de GraphQL:
+Las siguientes limitaciones se pueden resolver mediante la API principal de GraphQL:
 
 * Precio mínimo publicitario
 * Precio de nivel
