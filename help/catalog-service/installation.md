@@ -2,9 +2,9 @@
 title: Integración e instalación
 description: Obtenga información sobre cómo instalar [!DNL Catalog Service]
 exl-id: 4e9fbdc9-67a1-4703-b8c0-8b159e0cc2a7
-source-git-commit: e11b4e86efe3483717cf4484a7fcce6e23015f4c
+source-git-commit: 55c35e7775505ab9f6a61a458b6cd6fa4c7f1702
 workflow-type: tm+mt
-source-wordcount: '575'
+source-wordcount: '574'
 ht-degree: 0%
 
 ---
@@ -135,7 +135,7 @@ bin/magento cache:clean
 
 ### Configuración del servicio y la exportación de datos
 
-Después de instalar el servicio de catálogo, debe configurar la variable [Conector de Commerce Services](https://experienceleague.adobe.com/docs/commerce-merchant-services/experience-platform-connector/fundamentals/install.html?lang=en) especificando las claves de API y seleccionando un espacio de datos SaaS.
+Después de instalar el servicio de catálogo, debe configurar la variable [Conector de Commerce Services](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/integration-services/saas.html#apikey) especificando las claves de API y seleccionando un espacio de datos SaaS.
 
 Una vez completada la configuración de SaaS, realice una sincronización de datos inicial siguiendo la guía de sincronización del catálogo.
 
