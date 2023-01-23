@@ -2,9 +2,9 @@
 title: Agregar grupos de campos al esquema XDM
 description: Aprenda a añadir grupos de campos específicos de Adobe Commerce a un esquema XDM.
 exl-id: 4401bbe7-1ccc-4349-a998-9e9ee9db590f
-source-git-commit: f5d1c39fe1b02d2a661b92f971fba5b3e836dd6a
+source-git-commit: c9b1d7e34632f7a54544bc6944144b1833ecc5a5
 workflow-type: tm+mt
-source-wordcount: '266'
+source-wordcount: '347'
 ht-degree: 0%
 
 ---
@@ -24,7 +24,7 @@ Uno de los [pasos de incorporación](overview.md#onboarding-steps) para utilizar
    - Detalles de contacto personal
    - Detalles del comercio
    - Comercio de eventos de Adobe Analytics Experience (si desea enviar datos a Adobe Analytics)
-   - Identificador de persona
+   - Mapa de identidad
 
    >[!NOTE]
    >
@@ -32,4 +32,10 @@ Uno de los [pasos de incorporación](overview.md#onboarding-steps) para utilizar
 
    El esquema XDM ahora contiene grupos de campos específicos del comercio, de modo que los datos recopilados de la tienda de comercio [events](events.md) está representado en el XDM.
 
-1. [Crear un conjunto de datos](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/overview.html) y seleccione el esquema XDM que contiene los grupos de campos específicos de comercio.
+1. [Crear un conjunto de datos](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/experience-cloud/platform.html#create-a-dataset) basado en el esquema creado o actualizado.
+
+   Un conjunto de datos es una construcción de almacenamiento y administración para una recopilación de datos, normalmente una tabla, que contiene un esquema (columnas) y campos (filas). Los conjuntos de datos también contienen metadatos que describen varios aspectos de los datos que almacenan.
+
+1. [Crear un conjunto de datos](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/overview.html) y seleccione el esquema XDM que contiene los grupos de campos específicos de comercio y el conjunto de datos correspondiente.
+
+   El conjunto de datos reenvía los datos recopilados al conjunto de datos. Los datos se representan en el conjunto de datos en función del esquema seleccionado.

@@ -2,10 +2,10 @@
 title: Notas de la versión
 description: La información de la última versión del conector Adobe Experience Platform de Adobe Commerce.
 exl-id: 7636664b-488a-46f7-8d19-a9faac126aec
-source-git-commit: f3d35772d75d1d0711d389a00023834720d63bd9
+source-git-commit: 975854dbdae32e5e51bb57593cf122627d01571f
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '312'
+ht-degree: 2%
 
 ---
 
@@ -35,6 +35,13 @@ _12 de octubre de 2022_
 * ![Nuevo](../assets/new.svg) - Se ha agregado compatibilidad con un [AEM tienda](overview.md#aem-support)
 
 +++
+
+## 2.1.0
+
+_17 de enero de 2023_
+
+* ![Nuevo](../assets/new.svg) - Se ha actualizado el [Administrador del conector del Experience Platform](connect-data.md) para que pueda especificar su propio SDK web de AEP (alloy). Además, se ha agregado una opción para que los comerciantes inscritos en nuestro programa beta de back office envíen [datos de eventos de back office](connect-data.md#data-collection) al borde. Estos eventos contienen [información de estado de pedido](events.md#beta-order-status-events) acerca de un pedido, como si se hubiera realizado, cancelado, reembolsado o enviado un pedido. Si desea participar en el programa beta de back office, póngase en contacto con [drios@adobe.com](mailto:drios@adobe.com).
+* ![Corrección](../assets/fix.svg) Se ha cambiado a `identityMap` en lugar de `personID` al establecer la identidad principal para cualquier dato insertado en el borde.
 
 ## 2.0.1
 

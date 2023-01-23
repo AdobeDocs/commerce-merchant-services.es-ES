@@ -1,9 +1,10 @@
 ---
 title: Cargar perfiles del comprador a Adobe Experience Platform
 description: Obtenga información sobre cómo cargar perfiles de comprador en Adobe Experience Platform.
-source-git-commit: 93133019f8004437ef85db32ff336bfd0e8c6fc2
+exl-id: fd0ee7fa-5274-4640-ba00-bcb2ec78f314
+source-git-commit: 9bf28159fdac3a7237956a536f6a522b4e2918fe
 workflow-type: tm+mt
-source-wordcount: '360'
+source-wordcount: '358'
 ht-degree: 0%
 
 ---
@@ -26,7 +27,7 @@ En este tema, aprenderá a cargar sus perfiles de cliente de Adobe Commerce en P
 
 1. Determine dónde almacena los datos del cliente. Para algunos comerciantes, estos datos se almacenan en Adobe Commerce y se pueden [exportado](https://docs.magento.com/user-guide/system/data-export.html) como archivo CSV. Para otros, puede estar en un sistema de administración de la relación con los clientes (CRM) independiente.
 
-1. Después de determinar dónde almacena los datos de sus clientes, busque los datos adecuados [conector de origen](https://experienceleague.adobe.com/docs/experience-platform/sources/home.html?lang=en) en función de dónde se almacenen los datos de sus clientes. Si no ve un conector de origen apropiado, utilice el [carga de archivos locales](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/local-system/local-file-upload.html) conector e importe los perfiles del comprador de un archivo CSV.
+1. Después de determinar dónde almacena los datos de sus clientes, busque los datos adecuados [conector de origen](https://experienceleague.adobe.com/docs/experience-platform/sources/home.html) en función de dónde se almacenen los datos de sus clientes. Si no ve un conector de origen apropiado, utilice el [carga de archivos locales](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/local-system/local-file-upload.html) conector e importe los perfiles del comprador de un archivo CSV.
 
    >[!NOTE]
    >
