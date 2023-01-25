@@ -2,9 +2,9 @@
 title: "[!DNL Payment Services] Notas de la versión"
 description: Revise las notas de la versión para obtener información sobre todas las [!DNL Payment Services] versiones.
 exl-id: 104aa2c7-7735-4ac2-8ed1-a03cd9911273
-source-git-commit: c26023b1b63362d42ab351e451168dd50ff962a2
+source-git-commit: 1b86831f04250a0a45c09842da0018e20c422e62
 workflow-type: tm+mt
-source-wordcount: '1382'
+source-wordcount: '1445'
 ht-degree: 1%
 
 ---
@@ -29,6 +29,10 @@ Estas notas de la versión describen los cambios y correcciones que se produjero
 
 +++Actualizaciones de servicio alojadas
 
+_25 de enero de 2023_
+
+![Problema conocido](../assets/bug.svg)<!-- Issue PAY-4102 --> Las nuevas instalaciones de Servicios de Pago no pueden configurar Commerce Services, lo que hace que los Servicios de Pago no sean operativos. Para solucionar este problema, actualice la extensión de los servicios de pago a la versión 1.5.3.
+
 _12 de septiembre de 2022_
 
 ![Nuevo](../assets/new.svg)<!-- Issue PAY-3705 --> La variable `increment_id` ya está disponible para su uso en la conciliación de pagos en sistemas ERP externos. Se propaga a la variable [`custom_id` _y_ `invoice_id`](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/data.html#reconcile-with-erp-system), visible tanto en el enlace web de PayPal como en el detalle de actividad del comerciante para un pago.
@@ -52,6 +56,12 @@ _28 de junio de 2021_
 ![Nuevo](../assets/new.svg)<!-- Issue PAY-2761 --> Ahora puede personalizar los datos que aparecen en la [Informe del estado del pago del pedido](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/order-payment-status.html#show-and-hide-columns) y [Informe de rutas](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/payouts.html#show-and-hide-columns) mostrando u ocultando columnas con el control de configuración de columna.
 
 +++
+
+## v1.5.3
+
+_25 de enero de 2022_
+
+![Se ha corregido un problema](../assets/fix.svg)<!-- Issue PAY-4102 --> Se ha publicado una corrección en un problema conocido incompatible con versiones anteriores. Esta versión bloquea la versión de la extensión de ID de servicio a la última versión estable, lo que permite que las nuevas instalaciones de Servicios de pago configuren Commerce Services.
 
 ## v1.5.2
 
