@@ -2,9 +2,9 @@
 title: Información general de guía
 description: Obtenga información sobre cómo integrar datos de Adobe Commerce con Adobe Experience Platform mediante el conector del Experience Platform.
 exl-id: a8362e71-e21c-4b1d-8e3f-336e748e1018
-source-git-commit: c9b1d7e34632f7a54544bc6944144b1833ecc5a5
+source-git-commit: 092f2f4ab9d34466d66fe5b726bfff67a1309c6f
 workflow-type: tm+mt
-source-wordcount: '456'
+source-wordcount: '434'
 ht-degree: 0%
 
 ---
@@ -35,7 +35,6 @@ Para utilizar el conector del Experience Platform, debe tener lo siguiente:
 1. [Crear o actualizar](update-xdm.md) el esquema XDM con grupos de campos específicos de comercio.
 1. [Crear un conjunto de datos](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/experience-cloud/platform.html#create-a-dataset) basado en el esquema creado o actualizado.
 1. [Crear un conjunto de datos](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/overview.html) y seleccione el esquema XDM que contiene los grupos de campos específicos de comercio.
-1. (Opcional) [Cargar perfiles del comprador](profile.md) a Adobe Experience Platform, de modo que los datos de tienda se puedan atribuir a compradores específicos para mejorar su experiencia de compra.
 
 ## Audiencia
 
