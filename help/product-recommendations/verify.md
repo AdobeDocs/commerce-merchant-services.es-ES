@@ -2,16 +2,16 @@
 title: Comprobar colección de eventos
 description: Obtenga información sobre cómo comprobar que los datos de comportamiento se envían a Adobe Commerce.
 exl-id: c8c34db4-9d87-4012-b8f0-e9b1da214305
-source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
+source-git-commit: d8be88f47f103c5d632540dae743ede398a9b7ad
 workflow-type: tm+mt
-source-wordcount: '448'
+source-wordcount: '451'
 ht-degree: 0%
 
 ---
 
 # Comprobar colección de eventos
 
-Tras [instalar y configurar](install-configure.md) el `magento/product-recommendations` , puede comprobar que los datos de comportamiento se envían a Adobe Commerce. Puede utilizar las herramientas para desarrolladores disponibles en Chrome o instalar la extensión de Snowplow Chrome. Si necesita ayuda adicional, consulte [Resolución de problemas [!DNL Product Recommendations] módulo](https://support.magento.com/hc/en-us/articles/360042224851) en la Base de conocimientos de soporte.
+Tras [instalar y configurar](install-configure.md) el `magento/product-recommendations` , puede comprobar que los datos de comportamiento se envían a Adobe Commerce. Puede utilizar las herramientas para desarrolladores disponibles en Chrome o instalar la extensión de Snowplow Chrome. Si necesita ayuda adicional, consulte [Resolución de problemas [!DNL Product Recommendations] módulo](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshoot-product-recommendations-module-in-magento-commerce.html) en la Base de conocimientos de soporte.
 
 ## Verificar con las herramientas para desarrolladores en Chrome
 

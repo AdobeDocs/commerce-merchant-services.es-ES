@@ -4,9 +4,9 @@ description: Configure las opciones generales para habilitar [!DNL Store Fulfill
 role: User, Admin
 level: Intermediate
 exl-id: 51dcfc95-3dd6-40d9-bd26-d8409a25f3c8
-source-git-commit: 0cf5a99891fb6ec0b6e446aac05e64bc97d70e7c
+source-git-commit: c68bf177f79c37cc57b4cc5979b18e1fd4a7e17d
 workflow-type: tm+mt
-source-wordcount: '2543'
+source-wordcount: '2541'
 ht-degree: 0%
 
 ---
@@ -151,7 +151,7 @@ Dado que el archivo de registro de la aplicación puede crecer rápidamente, hab
 
 >[!TIP]
 >
->Para las instalaciones locales de Adobe Commerce, pida al administrador del sistema que configure la rotación de registros para el `var/log/walmart-bopis.log` para minimizar el tamaño. Para las instalaciones locales de Adobe Commerce, consulte [Rotación de registro](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/next-steps/configuration.html?lang=en#server-settings) en el _Guía de instalación de Adobe Commerce_. Para Adobe Commerce en proyectos de infraestructura en la nube, consulte [Ver y administrar registros](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/test/log-locations.html).
+>Para las instalaciones locales de Adobe Commerce, pida al administrador del sistema que configure la rotación de registros para el `var/log/walmart-bopis.log` para minimizar el tamaño. Para las instalaciones locales de Adobe Commerce, consulte [Rotación de registro](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/next-steps/configuration.html#server-settings) en el _Guía de instalación de Adobe Commerce_. Para Adobe Commerce en proyectos de infraestructura en la nube, consulte [Ver y administrar registros](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/test/log-locations.html).
 
 <table>
 <thead>

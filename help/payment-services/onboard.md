@@ -4,9 +4,9 @@ description: Conecte la instancia con [!DNL Payment Services] completando alguno
 role: User
 level: Intermediate
 exl-id: 1ee8c660-0941-4378-a1d7-ae45de3de211
-source-git-commit: 9596815e31402f23b399b223f3221074331c1773
+source-git-commit: d8be88f47f103c5d632540dae743ede398a9b7ad
 workflow-type: tm+mt
-source-wordcount: '328'
+source-wordcount: '344'
 ht-degree: 0%
 
 ---
@@ -56,7 +56,7 @@ Para obtener información sobre cómo crear o acceder a las claves de API, consu
 
 ## Resolución de problemas
 
-* [Resolución de problemas [!DNL Payment Services] instalación](https://support.magento.com/hc/en-us/articles/4406603542541)
-* [Cuenta de espacio aislado de PayPal no verificada](https://support.magento.com/hc/en-us/articles/4406954952461)
-* [Retrasado [!DNL Payment Services] datos del informe](https://support.magento.com/hc/en-us/articles/4406114741517)
-* [La tarjeta de crédito de prueba falla con PayPal cuando se procesan pagos en un entorno Sandbox](https://support.magento.com/hc/en-us/articles/5201041963917)
+* [Resolución de problemas [!DNL Payment Services] instalación](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/payments/payservices-install.html?lang=en)
+* [Cuenta de espacio aislado de PayPal no verificada](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/payments/payservices-paypal-acct.html)
+* [Retrasado [!DNL Payment Services] datos del informe](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/payments/payservices-report-info-delayed.html)
+* [La tarjeta de crédito de prueba falla con PayPal cuando se procesan pagos en un entorno Sandbox](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/payments/payservices-cc-sandbox-failure.html?lang=en)

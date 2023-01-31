@@ -4,9 +4,9 @@ description: '"Instale el [!DNL Store Fulfillment solution] para una tienda de A
 role: User, Admin
 level: Intermediate
 exl-id: 6613268a-7d22-4c54-af89-834921b7f262
-source-git-commit: 556cbf803a0f8569e8561d2b33b7a976065ae814
+source-git-commit: d8be88f47f103c5d632540dae743ede398a9b7ad
 workflow-type: tm+mt
-source-wordcount: '661'
+source-wordcount: '656'
 ht-degree: 0%
 
 ---
@@ -31,11 +31,11 @@ composer require walmart/magento-bopis-metapackage:1.0.0
 
 - **Acceso al cumplimiento de la tienda mediante el archivo de software Walmart Commerce Technologies (archivo .zip)**: durante el proceso de incorporación y habilitación, trabaje con el administrador de su cuenta para obtener acceso al archivo de instalación para la extensión de cumplimiento de la tienda.
 
-- **Información de la cuenta de Adobe Commerce**-La instalación del [!DNL Store Fulfillment] La solución requiere un [[!DNL Commerce] account](https://docs.magento.com/user-guide/magento/magento-account.html){target=&quot;_blank&quot;}. Necesita un ID de cuenta y credenciales con acceso de propietario o administrador a la variable [!DNL Adobe Commerce] proyecto.
+- **Información de la cuenta de Adobe Commerce**-La instalación del [!DNL Store Fulfillment] La solución requiere un [[!DNL Commerce] account](https://docs.magento.com/user-guide/magento/magento-account.html){target="_blank"}. Necesita un ID de cuenta y credenciales con acceso de propietario o administrador a la variable [!DNL Adobe Commerce] proyecto.
 
 - Para [!DNL Adobe Commerce] en los proyectos de infraestructura de nube, los instaladores de software deben tener acceso de administrador al proyecto de Cloud. Consulte [Administrar el acceso de los usuarios](https://devdocs.magento.com/cloud/project/user-admin.html).
 
-- **Experiencia con el Compositor y el[!DNL Commerce CLI]**—Consulte [Instalación general de CLI](https://devdocs.magento.com/extensions/install/){target=&quot;_blank&quot;} para obtener información sobre el uso de estas herramientas para instalar y administrar extensiones en el [!DNL Adobe Commerce] plataforma.
+- **Experiencia con el Compositor y el[!DNL Commerce CLI]**—Consulte [Instalación general de CLI](https://devdocs.magento.com/extensions/install/){target="_blank"} para obtener información sobre el uso de estas herramientas para instalar y administrar extensiones en la variable [!DNL Adobe Commerce] plataforma.
 
 - **Experiencia en la instalación de extensiones de terceros en Adobe Commerce**: para obtener más información, consulte la documentación de Adobe Commerce.
 
@@ -184,7 +184,7 @@ Desde el servidor de Adobe Commerce, compruebe que los módulos de la extensión
 
 ### Pasos adicionales
 
-Si es necesario, use la variable [configuración:static-content:implementar](https://devdocs.magento.com/guides/v2.4/reference/cli/magento-commerce.html#setupstatic-contentdeploy){target=&quot;_blank&quot;} Comando CLI para implementar archivos de vista estáticos en el entorno de producción.
+Si es necesario, use la variable [configuración:static-content:implementar](https://experienceleague.adobe.com/docs/commerce-operations/reference/commerce-on-premises.html){target="_blank"} Comando CLI para implementar archivos de vista estáticos en su entorno de producción.
 
 ```terminal
 php bin/magento setup:static-content:deploy -f
@@ -194,4 +194,4 @@ La variable `-f` es obligatoria si utiliza un tema en blanco.
 
 >[!NOTE]
 >
->Para obtener más información, consulte [El contenido estático implementa las prácticas recomendadas en Adobe Commerce](https://support.magento.com/hc/en-us/articles/360031624091) en el Centro de ayuda de Adobe Commerce.
+>Para obtener más información, consulte [El contenido estático implementa las prácticas recomendadas en Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/development/static-content-deployment.html) en el Centro de ayuda de Adobe Commerce.

@@ -2,9 +2,9 @@
 title: "Instalar [!DNL Live Search]"
 description: '"Obtenga información sobre cómo instalar, actualizar y desinstalar [!DNL Live Search] de Adobe Commerce".'
 exl-id: aa251bb0-d52c-4cff-bccb-76a08ae2a3b2
-source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
+source-git-commit: d8be88f47f103c5d632540dae743ede398a9b7ad
 workflow-type: tm+mt
-source-wordcount: '1279'
+source-wordcount: '1281'
 ht-degree: 0%
 
 ---
@@ -175,7 +175,7 @@ Para comprobar que los datos del catálogo se han exportado desde la instancia d
 * `catalog_data_exporter_products`
 * `catalog_data_exporter_product_attributes`
 
-Para obtener más ayuda, consulte [[!DNL Live Search] catálogo no sincronizado](https://support.magento.com/hc/en-us/articles/4405637804301-Live-search-catalog-not-synchronized) en la Base de conocimientos de soporte.
+Para obtener más ayuda, consulte [[!DNL Live Search] catálogo no sincronizado](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/live-search-catalog-data-sync.html) en la Base de conocimientos de soporte.
 
 ### Actualizaciones de productos futuras
 

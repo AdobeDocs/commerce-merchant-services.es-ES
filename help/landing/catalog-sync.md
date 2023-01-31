@@ -2,9 +2,9 @@
 title: Sincronización del catálogo
 description: Obtenga información sobre cómo exportar datos de productos desde el [!DNL Commerce] servidor a [!DNL Commerce Services] de forma permanente para mantener los servicios actualizados.
 exl-id: 19d29731-097c-4f5f-b8c0-12f9c91848ac
-source-git-commit: 853c55fbae3ccfb7abea8ce074127f2871d55688
+source-git-commit: c68bf177f79c37cc57b4cc5979b18e1fd4a7e17d
 workflow-type: tm+mt
-source-wordcount: '904'
+source-wordcount: '909'
 ht-degree: 0%
 
 ---
@@ -96,11 +96,11 @@ Cuando se déclencheur una resincronización de datos, los datos pueden tardar h
 
 ### La sincronización no se está ejecutando
 
-Si la sincronización no se está ejecutando en una programación o no se ha sincronizado nada, consulte la [Base de conocimientos](https://support.magento.com/hc/en-us/articles/360042224851).
+Si la sincronización no se está ejecutando en una programación o no se ha sincronizado nada, consulte la [Base de conocimientos](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshoot-product-recommendations-module-in-magento-commerce.html).
 
 ### Error de sincronización
 
-Si la sincronización del catálogo tiene un estado de **Error**, envíe un [ticket de asistencia](https://support.magento.com/hc/en-us/articles/360000913794#submit-ticket).
+Si la sincronización del catálogo tiene un estado de **Error**, envíe un [ticket de asistencia](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket).
 
 ## Interfaz de línea de comandos {#resynccmdline}
 
