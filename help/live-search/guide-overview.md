@@ -2,9 +2,9 @@
 title: "[!DNL Live Search] Información general de la guía"
 description: '"[!DNL Live Search] desde Adobe Commerce ofrece una experiencia de búsqueda rápida, superrelevante e intuitiva".'
 exl-id: 11e2ed97-ce80-4826-b914-71688dd29e4b
-source-git-commit: c68bf177f79c37cc57b4cc5979b18e1fd4a7e17d
+source-git-commit: 30acf619c8e46562fb83f2288c324feda0387e05
 workflow-type: tm+mt
-source-wordcount: '242'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -30,7 +30,7 @@ La búsqueda activa tiene tres áreas para administradores:
 
 Si necesita información o tiene preguntas que no están incluidas en esta guía, utilice los siguientes recursos:
 
-[Centro de ayuda](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) - Consulte los artículos de solución de problemas relacionados con la búsqueda en directo .
+[Base de conocimientos](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/overview.html) - Consulte los artículos de solución de problemas relacionados con la búsqueda en directo .
 [Entradas de soporte](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) - Envíe un ticket para recibir ayuda adicional.
 
 Antes de enviar un ticket de asistencia, ejecute lo siguiente desde la línea de comandos para comprobar la versión de Live Search que está instalada:

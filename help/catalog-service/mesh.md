@@ -1,9 +1,9 @@
 ---
 title: '[!DNL Catalog Service and API Mesh]'
 description: '''[!DNL API Mesh] para Adobe Commerce proporciona una forma de integrar varias fuentes de datos a través de un extremo común de GraphQL."'
-source-git-commit: 7b95be48c21e17cb6ba88d326fd061f7de2f8fb5
+source-git-commit: dd9ba7171cf6a199701b1abb8083a65326e89f5d
 workflow-type: tm+mt
-source-wordcount: '228'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -11,6 +11,8 @@ ht-degree: 0%
 # [!DNL Catalog Service and API Mesh]
 
 La variable [Mesh de API para Adobe Developer App Builder](https://developer.adobe.com/graphql-mesh-gateway/gateway/overview/) permite a los desarrolladores integrar API privadas o de terceros y otras interfaces con productos de Adobe mediante Adobe IO.
+
+![Diagrama de arquitectura del catálogo](assets/catalog-service-architecture-mesh.png)
 
 El primer paso para utilizar la red de API con el servicio de catálogo es conectar la red de API a su instancia. Consulte las instrucciones detalladas en [Crear una red](https://developer.adobe.com/graphql-mesh-gateway/gateway/create-mesh/).
 
