@@ -2,9 +2,9 @@
 title: "Flujo de cierre de compra en Adobe Commerce"
 description: '"Descripción general de la variable [!DNL Quick Checkout] en Adobe Commerce".'
 exl-id: 82761627-a0d4-4cb0-aad1-9865fcb550d4
-source-git-commit: d28e8ccd4362b4e32b2eb8c6e1faf38d7c99a4c2
+source-git-commit: 66082614ffe6456e2c24a1e8d9baaa1113fb7ffb
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '217'
 ht-degree: 0%
 
 ---
@@ -19,6 +19,10 @@ Un éxito [!DNL Quick Checkout] consiste en los siguientes pasos:
 1. Continúe con el cierre de compra.
 
 ![Cierre de compra](assets/proceed-checkout.png)
+
+>[!NOTE]
+>
+> Puede habilitar el inicio de sesión automático para su comerciante. Consulte [Tema Activar inicio de sesión automático de Bolt](https://help.bolt.com/products/embedded/direct-api/auto-login/) para obtener más información.
 
 1. Cuando se le solicite, introduzca una dirección de correo electrónico asociada a un [!DNL Bolt] cuenta.
 1. Introduzca la contraseña única (OTP) enviada a esa [!DNL Bolt] dirección de correo electrónico o número de teléfono de la cuenta.

@@ -2,9 +2,9 @@
 title: "Flujo de cierre de compra de un usuario de Bolt en Adobe Commerce"
 description: Información general sobre [!DNL Quick Checkout] flujo para un usuario de Bolt en Adobe Commerce.
 exl-id: 12f58b7e-1f86-4891-b225-9f4be82c2d5d
-source-git-commit: 7c99f1aa4bed9878625d855509448494d5547d56
+source-git-commit: 66082614ffe6456e2c24a1e8d9baaa1113fb7ffb
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '210'
 ht-degree: 0%
 
 ---
@@ -12,6 +12,10 @@ ht-degree: 0%
 # Usuarios invitados
 
 La experiencia de cierre de compra de invitado es diferente de la experiencia del usuario de Adobe. Cuando un comprador introduce una dirección de correo electrónico en el cierre de compra, la variable [!DNL Quick Checkout] la valida y encuentra una [!DNL Bolt] cuenta.
+
+>[!WARNING]
+>
+> La variable [!DNL In-Store Pickup] La funcionalidad (ISPU) no es compatible cuando la función [!DNL Quick Checkout] está activada.
 
 ## Registrados [!DNL Bolt] account
 

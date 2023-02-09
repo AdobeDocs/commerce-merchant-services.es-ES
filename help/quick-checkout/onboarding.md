@@ -2,9 +2,9 @@
 title: "Incorpore el [!DNL Quick Checkout] para la extensión de Adobe Commerce"
 description: "Aprenda a usar la variable [!DNL Quick Checkout] podría beneficiar a su instancia de Adobe Commerce y cómo incorporar y configurar correctamente la extensión."
 exl-id: 8caf746c-e31b-4331-8b0d-ea0f1e545bdd
-source-git-commit: c68bf177f79c37cc57b4cc5979b18e1fd4a7e17d
+source-git-commit: 66082614ffe6456e2c24a1e8d9baaa1113fb7ffb
 workflow-type: tm+mt
-source-wordcount: '832'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -150,6 +150,10 @@ Consulte la [Ámbito de sitio, tienda y vista](https://experienceleague.adobe.co
 
 1. Seleccione el **Siguiente etapa después del inicio de sesión** para cambiar el flujo de navegación después de que el cliente haya iniciado sesión. De forma predeterminada, se establece en la variable **Pagos** página.
 1. Defina si [!DNL Quick Checkout] permite que **inicio de sesión automático** durante el cierre de compra. De forma predeterminada, está habilitado para iniciar sesión automáticamente en el [!DNL Bolt] red.
+
+   >[!NOTE]
+   >
+   > Consulte [Documentación de activación de inicio de sesión automático de Bolt](https://help.bolt.com/products/embedded/direct-api/auto-login/) para obtener más información.
 
 ## Obtener ayuda
 

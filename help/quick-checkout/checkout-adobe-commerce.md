@@ -2,9 +2,9 @@
 title: "Flujo de cierre de compra para un usuario de Adobe Commerce"
 description: "Descripción general de la variable [!DNL Quick Checkout] flujo para un usuario de Adobe Commerce."
 exl-id: 085e393b-15f6-4d5a-a04d-927b1f95b74e
-source-git-commit: 1b2847b71e2a6aa843de2e73dfe5f3ad295c7b5f
+source-git-commit: 66082614ffe6456e2c24a1e8d9baaa1113fb7ffb
 workflow-type: tm+mt
-source-wordcount: '405'
+source-wordcount: '443'
 ht-degree: 0%
 
 ---
@@ -40,7 +40,9 @@ Si el comprador ha iniciado sesión en Adobe Commerce antes del cierre de compra
 
 Si tiene problemas al realizar un pedido como usuario de Adobe Commerce existente, consulte la [Solución de problemas de cierre de compra rápido](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/quick-checkout-issues.html) en el Centro de ayuda de Adobe Commerce.
 
-### Inicio de sesión automático
+## Inicio de sesión automático
+
+El componente Inicio de sesión automático detecta cuándo un comprador tiene una sesión de tornillo activa y registra automáticamente al comprador. Esto omite los pasos de detección de cuenta y código de paso único (OTP) porque el comprador los completó en una sesión anterior.
 
 Es posible configurar un inicio de sesión automático para [!DNL Quick Checkout] usuarios. Puede activar una configuración para iniciar sesión automáticamente en un usuario durante el cierre de compra.
 

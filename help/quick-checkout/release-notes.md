@@ -1,10 +1,10 @@
 ---
-title: '[!DNL Quick Checkout] Notas de la versión'
+title: '''[!DNL Quick Checkout] Notas de la versión'
 description: Revise las notas de la versión para obtener información sobre todas las [!DNL Quick Checkout] versiones.
 exl-id: 511be2fc-d24d-4323-a47a-d376e38a5c47
-source-git-commit: 1b2847b71e2a6aa843de2e73dfe5f3ad295c7b5f
+source-git-commit: 66082614ffe6456e2c24a1e8d9baaa1113fb7ffb
 workflow-type: tm+mt
-source-wordcount: '1185'
+source-wordcount: '1241'
 ht-degree: 0%
 
 ---
@@ -64,6 +64,14 @@ _5 de octubre de 2022_
 ![Se ha corregido un problema](../assets/fix.svg)<!-- Issue BOLT-369 --> Ahora, la variable [[!DNL Quick Checkout] Panel de administración](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/onboarding.html#enable-extension) muestra la versión de la aplicación en el pie de página.
 
 +++
+
+## v1.6.0
+
+_9 de febrero de 2023_
+
+![Se ha corregido un problema](../assets/fix.svg)<!-- Issue BOLT-567 --> Mejoras en la experiencia del usuario al [realización de un pedido](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/onboarding.html) usando la variable [Entrega en la tienda](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/delivery/basic-methods/shipping-in-store-delivery.html) con el método [!DNL Quick Checkout] desactivado.
+
+![Se ha corregido un problema](../assets/fix.svg)<!-- Issue BOLT-569 --> Mejoras en la funcionalidad de cierre de sesión que permiten a los compradores [cierre de sesión desde la red de tornillos](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/user-session-lifetime.html).
 
 ## v1.5.0
 
