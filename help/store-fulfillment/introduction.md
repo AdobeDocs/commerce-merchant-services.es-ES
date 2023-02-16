@@ -1,12 +1,12 @@
 ---
-title: '"Introducción a [!DNL Store Fulfillment]"'
+title: "Introducción a [!DNL Store Fulfillment]"
 description: '"Descubra cómo [!DNL Store Fulfillment for Adobe Commerce by Walmart Commerce Technologies] admite la compra en línea, recogida en tienda (BOPIS) para clientes. Utilice el móvil de asistencia de tienda para optimizar el cumplimiento de BOPIS y el procesamiento de pedidos para los asociados de tiendas y clientes de comercio".'
 role: User
 level: Intermediate
 exl-id: d2f90af8-3eba-499d-84de-4b70ecc7166c
-source-git-commit: 1fb22b4644d41ea5c60aead3fe2c455dfa3382f8
+source-git-commit: 1157fe71dbef07f9db835a5a399f9304af550a86
 workflow-type: tm+mt
-source-wordcount: '606'
+source-wordcount: '605'
 ht-degree: 0%
 
 ---
@@ -41,7 +41,7 @@ La solución Store Fulfillment admite y mejora las capacidades nativas de Adobe 
 
 * Totalmente compatible con el tema de Luma
 
-* Proporciona compatibilidad con GraphQL para tiendas sin periféricos y Venia
+* Compatibilidad parcial con tiendas PWA y sin periféricos
 
 * Admite la aplicación Store Assist de Walmart Commerce Technologies. Esta aplicación envía información de pedidos de recogida directamente al dispositivo de mano del empleado en la ubicación de tienda seleccionada. Con esta información, pueden elegir, poner en escena y entregar artículos a los clientes de forma rápida y precisa cuando llegan a la tienda.
 
