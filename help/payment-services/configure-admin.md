@@ -4,9 +4,9 @@ description: Después de la instalación, puede configurar [!DNL Payment Service
 role: Admin, User
 level: Intermediate
 exl-id: e1a3269d-bdf9-4b0f-972f-e8a0ef469503
-source-git-commit: c993a2afe5b4da478ab57cbb391bb524d83c3d1a
+source-git-commit: 17ba23192fed6cd219411420c5d56b42c94af0f5
 workflow-type: tm+mt
-source-wordcount: '802'
+source-wordcount: '828'
 ht-degree: 0%
 
 ---
@@ -61,9 +61,10 @@ Consulte [Opciones de pago](payments-options.md#paypal-smart-buttons) para obten
 1. En el _[!UICONTROL Payment Services]_, expanda la sección_[!UICONTROL Credit Card Fields]_ para obtener más información.
 1. Para **[!UICONTROL Title]**, escriba el texto (si es necesario) para cambiar el nombre del método de pago como se muestra durante el cierre de compra.
 1. Hasta [configurar la acción de pago](production.md#set-payment-services-as-payment-method), seleccione **[!UICONTROL Authorize]** o **Autorizar y capturar**.
-1. Para **[!UICONTROL Show on checkout page]**, elija `Yes` para activar o desactivar los campos de tarjeta de crédito en la página de cierre de compra.
+1. Para **[!UICONTROL Show on checkout page]**, elija `Yes` para habilitar los campos de tarjeta de crédito en la página de cierre de compra.
 1. Para **[!UICONTROL Vault Enabled]**, elija `Yes` para habilitar el bóveda de tarjetas de crédito para el cierre de compra.
-1. Para **Modo de depuración**, elija `Yes` para activar el modo de depuración (o `No` para desactivarlo).
+1. Para **[!UICONTROL Debug Mode]**, elija `Yes` para activar el modo de depuración (o `No` para desactivarlo).
+1. Para habilitar **[!UICONTROL 3DS Secure authentication]** (`Off` de forma predeterminada) elija `Always` o `When required`.
 1. Haga clic en **[!UICONTROL Save Config]** para guardar los cambios.
 1. Vaya a **[!UICONTROL System]** > **[!UICONTROL Cache Management]** y, a continuación, haga clic en **[!UICONTROL Flush Cache]** para actualizar todas las cachés no válidas.
 
@@ -72,7 +73,10 @@ Consulte [Opciones de pago](payments-options.md#paypal-smart-buttons) para obten
 | Campo | Ámbito | Descripción |
 |---|---|---|
 | [!UICONTROL Title] | vista de tienda | Agregue el texto para mostrarlo como el título de esta opción de pago en la vista Método de pago durante el cierre de compra. Opciones: [!UICONTROL text field] |
-| [!UICONTROL Payment Action] | sitio web | La variable [acción de pago](https://docs.magento.com/user-guide/configuration/sales/payment-methods.html#payment-actions){target=&quot;_blank&quot;} para el método de pago especificado. Opciones: [!UICONTROL Authorize] / [!UICONTROL Authorize and Capture] |
+| [!UICONTROL Payment Action] | sitio web | La variable [acción de pago](https://docs.magento.com/user-guide/configuration/sales/payment-methods.html#payment-actions){target="_blank"} para el método de pago especificado. Opciones: [!UICONTROL Authorize] / [!UICONTROL Authorize and Capture] |
+| [!UICONTROL Show on checkout page] | sitio web | Habilite o deshabilite los campos de la tarjeta de crédito en la página de cierre de compra. Opciones: [!UICONTROL Yes] / [!UICONTROL No] |
+| [!UICONTROL Vault Enabled] | sitio web | Habilite o deshabilite el bóveda de tarjetas de crédito. Opciones: [!UICONTROL Yes] / [!UICONTROL No] |
+| [!UICONTROL 3DS Secure authentication] | sitio web | Habilitar o deshabilitar [3DS Autenticación segura](security.md#3ds). Opciones: [!UICONTROL Always] / [!UICONTROL When Required] / [!UICONTROL Off] |
 | [!UICONTROL Debug Mode] | sitio web | Habilite o deshabilite el modo de depuración. Opciones: [!UICONTROL Yes] / [!UICONTROL No] |
 
 ## [!DNL PayPal Smart Buttons]
@@ -101,7 +105,7 @@ Puede activar y configurar las opciones de pago de los botones inteligentes de P
 | Campo | Ámbito | Descripción |
 |---|---|---|
 | [!UICONTROL Title] | vista de tienda | Agregue el texto que se mostrará como el título de esta opción de pago en la vista Método de pago durante el cierre de compra. Opciones: campo de texto |
-| [!UICONTROL Payment Action] | sitio web | La variable [acción de pago](https://docs.magento.com/user-guide/configuration/sales/payment-methods.html#payment-actions){target=&quot;_blank&quot;} para el método de pago especificado. Opciones: [!UICONTROL Authorize] / [!UICONTROL Authorize and Capture] |
+| [!UICONTROL Payment Action] | sitio web | La variable [acción de pago](https://docs.magento.com/user-guide/configuration/sales/payment-methods.html#payment-actions){target="_blank"} para el método de pago especificado. Opciones: [!UICONTROL Authorize] / [!UICONTROL Authorize and Capture] |
 | [!UICONTROL Display Pay Later Message] | sitio web | Habilite o deshabilite el mensaje Pagar después en el carro de compras, la página del producto, el minicarro y durante el flujo de cierre de compra. Opciones: [!UICONTROL Yes] / [!UICONTROL No] |
 | [!UICONTROL Venmo Enabled] | vista de tienda | Active o desactive la opción de pago Venmo donde se muestran los botones de pago. Opciones: [!UICONTROL Yes] / [!UICONTROL No] |
 | [!UICONTROL Apple Pay Enabled] | vista de tienda | Active o desactive la opción de pago Apple Pay donde se muestran los botones de pago. Opciones: [!UICONTROL Yes] / [!UICONTROL No] |
@@ -126,3 +130,4 @@ Puede activar y configurar las opciones de pago de los botones inteligentes de P
 ## Vaciar la caché
 
 Si cambia la configuración, [vaciar manualmente la caché](/help/payment-services/settings.md#flush-the-cache) para que su tienda muestre los ajustes de configuración más recientes.
+
