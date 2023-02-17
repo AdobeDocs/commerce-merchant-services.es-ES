@@ -2,9 +2,9 @@
 title: "[!DNL Payment Services] Notas de la versión"
 description: Revise las notas de la versión para obtener información sobre todas las [!DNL Payment Services] versiones.
 exl-id: 104aa2c7-7735-4ac2-8ed1-a03cd9911273
-source-git-commit: a9970d8ac1400a63ef60b289150556b70e71ef22
+source-git-commit: e701fe8284ccb021c20ee7233b66d888b2803a23
 workflow-type: tm+mt
-source-wordcount: '1488'
+source-wordcount: '1564'
 ht-degree: 0%
 
 ---
@@ -56,6 +56,14 @@ _28 de junio de 2021_
 ![Nuevo](../assets/new.svg)<!-- Issue PAY-2761 --> Ahora puede personalizar los datos que aparecen en la [Informe del estado del pago del pedido](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/order-payment-status.html#show-and-hide-columns) y [Informe de rutas](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/payouts.html#show-and-hide-columns) mostrando u ocultando columnas con el control de configuración de columna.
 
 +++
+
+## v1.6.0
+
+_17 de febrero de 2023_
+
+![Nuevo](../assets/fix.svg)<!-- Issue PAY-3540 --> Se ha añadido [Función de cumplimiento PCI 3DS para comerciantes que realizan transacciones en la Unión Europea (UE) y Gran Bretaña](security.md#3ds). Este nivel adicional de seguridad, que requiere que los compradores se autentiquen con su emisor de tarjetas de crédito, ayuda a prevenir el fraude en línea y es obligatorio como parte de las regulaciones de cumplimiento de la Unión Europea (UE).
+
+![Nuevo](../assets/fix.svg)<!-- Issue PAY-3609 --> Se ha añadido la capacidad de [habilitar la bóveda de tarjetas en Admin](vaulting.md##use-vaulting-in-the-admin). Esto permite a los comerciantes crear un pedido para los clientes en el Administrador mediante sus métodos de pago en blanco.
 
 ## v1.5.4
 

@@ -2,7 +2,7 @@
 title: Conecte la instancia
 description: Conecte la instancia de Commerce con una clave de API y una clave privada, y especifique el espacio de datos en la configuración.
 exl-id: 5038fd31-bac5-419e-a172-66919a9b5272
-source-git-commit: a983cf30872544d72bd13c3f04f04a35eebcf85d
+source-git-commit: 5aba246ce2a7802954a90c08c7dac2247a71ff6d
 workflow-type: tm+mt
 source-wordcount: '621'
 ht-degree: 0%
@@ -45,10 +45,10 @@ La misma clave de API se puede usar en todas las instancias, pero cada instancia
 Ahora que ha obtenido sus credenciales, puede configurar su proyecto SaaS y el espacio de datos Saas.
 
 1. En el _Administrador_ barra lateral, vaya a **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]**.
-1. Haga clic **[!UICONTROL Configure Commerce Services]**.
+1. Haga clic en **[!UICONTROL Configure Commerce Services]**.
 
    Esta opción está visible si todavía no ha configurado los servicios de comercio para su cuenta.
 
    Se le redirige al área de configuración en el Administrador, **[!UICONTROL Stores]** > _[!UICONTROL Settings]_>**[!UICONTROL Configuration]**>**[!UICONTROL Commerce Services Connector]**, para configurar Commerce Services Connector.
 
-1. Para configurar los servicios de comercio, siga los pasos descritos en [Configuración de SaaS](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/get-started/connect.html#configure-commerce-services).
+1. Para configurar los servicios de comercio, siga los pasos descritos en [Configuración de SaaS](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/integration-services/saas.html#saasenv).
