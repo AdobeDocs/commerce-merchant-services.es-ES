@@ -4,9 +4,9 @@ description: Después de la instalación, puede configurar [!DNL Payment Service
 role: Admin, User
 level: Intermediate
 exl-id: 108f2b24-39c1-4c87-8deb-d82ee1c24d55
-source-git-commit: 17ba23192fed6cd219411420c5d56b42c94af0f5
+source-git-commit: 482182dca95964e68f1637ff1cc7aad84b00e3eb
 workflow-type: tm+mt
-source-wordcount: '1825'
+source-wordcount: '1892'
 ht-degree: 0%
 
 ---
@@ -112,6 +112,7 @@ Consulte [Opciones de pago](payments-options.md#credit-card-fields) para obtener
 1. Para habilitar [3DS Autenticación segura](security.md#3ds) (`Off` de forma predeterminada) active la opción **[!UICONTROL 3DS Secure authentication]** selector para `Always` o `When required`.
 1. Para activar o desactivar los campos de tarjeta de crédito en la página de cierre de compra, active la opción **[!UICONTROL Show on checkout page]** selector.
 1. Para habilitar o deshabilitar [bóveda de tarjetas](#card-vaulting), active la casilla **[!UICONTROL Vault enabled]** selector.
+1. Para habilitar o deshabilitar [métodos de pago con bóveda en el administrador](#card-vaulting) (para que los comerciantes completen los pedidos de los clientes en el administrador mediante su método de pago en blanco), active la opción **[!UICONTROL Show vaulted methods in Admin]** selector.
 1. Para activar o desactivar el modo de depuración, active la opción **[!UICONTROL Debug Mode]** selector.
 1. Haga clic en **[!UICONTROL Save]**.
 
@@ -127,7 +128,8 @@ Consulte [Opciones de pago](payments-options.md#credit-card-fields) para obtener
 | [!UICONTROL Payment Action] | sitio web | La variable [acción de pago](https://docs.magento.com/user-guide/configuration/sales/payment-methods.html#payment-actions){target="_blank"} para el método de pago especificado. Opciones: [!UICONTROL Authorize] / [!UICONTROL Authorize and Capture] |
 | [!UICONTROL 3DS Secure authentication] | sitio web | Habilitar o deshabilitar [3DS Autenticación segura](security.md#3ds). Opciones: [!UICONTROL Always] / [!UICONTROL When Required] / [!UICONTROL Off] |
 | [!UICONTROL Show on checkout page] | sitio web | Habilite o deshabilite los campos de la tarjeta de crédito para que se muestren en la página de cierre de compra. Opciones: [!UICONTROL Yes] / [!UICONTROL No] |
-| [!UICONTROL Vault enabled] | sitio web | Habilitar o deshabilitar [bóveda de tarjetas de crédito](#card-vaulting). Opciones: [!UICONTROL Yes] / [!UICONTROL No] |
+| [!UICONTROL Vault enabled] | vista de tienda | Habilitar o deshabilitar [bóveda de tarjetas de crédito](vaulting.md). Opciones: [!UICONTROL Yes] / [!UICONTROL No] |
+| [!UICONTROL Show vaulted payment methods in Admin] | vista de tienda | Habilitar o deshabilitar la capacidad del comerciante para completar pedidos para clientes en el Administrador [uso de un método de pago en bóveda](vaulting.md). Opciones: [!UICONTROL Yes] / [!UICONTROL No] |
 | [!UICONTROL Debug Mode] | sitio web | Habilite o deshabilite el modo de depuración. Opciones: [!UICONTROL Yes] / [!UICONTROL No] |
 
 ### Botones de pago
@@ -230,6 +232,8 @@ Para asegurarse de que su tienda muestre la configuración correcta, periódicam
 ## Bóveda de tarjetas
 
 Puede activar la funcionalidad que permite a sus clientes almacenar (o &quot;guardar&quot;) la información de su tarjeta de crédito en su Mi cuenta para usarla en futuras compras.
+
+También puede utilizar la bóveda de tarjetas en el Administrador para realizar pedidos posteriores de clientes existentes.
 
 Habilite o deshabilite el bóveda de tarjetas en el [Configuración del campo de la tarjeta de crédito](#credit-card-fields).
 

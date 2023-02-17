@@ -1,9 +1,10 @@
 ---
 title: Bóveda de tarjetas de crédito
 description: Los compradores pueden almacenar (guardar) los datos de sus tarjetas de crédito para futuras compras.
-source-git-commit: c993a2afe5b4da478ab57cbb391bb524d83c3d1a
+exl-id: b4060307-ffcd-41cb-9b9d-a2fef02f23bd
+source-git-commit: fb0a8295772fc6e23f2910019e1beadd64d7ed70
 workflow-type: tm+mt
-source-wordcount: '165'
+source-wordcount: '304'
 ht-degree: 0%
 
 ---
@@ -24,7 +25,22 @@ También pueden eliminar fácilmente sus tarjetas de crédito abovedadas de [Mé
 
 ## Habilitar bóveda
 
-Puede habilitar la bóveda de tarjetas de crédito para sus tiendas en Servicios de Pago [Configuración](settings.md#card-vaulting).
+Puede habilitar la bóveda de tarjetas de crédito para clientes _y_ comerciantes en Admin: para sus tiendas en [!DNL Payment Services] [Configuración](settings.md#card-vaulting).
+
+## Usar la bóveda en el administrador
+
+Si un cliente tiene una tarjeta de crédito anteriormente abovedada, un comerciante puede crear un pedido subsiguiente para ese cliente en el Administrador mediante sus métodos de pago en blanco.
+
+Solo puede utilizar tarjetas abovedadas en el Administrador si el cliente tiene una cuenta existente y un token válido almacenados en el sistema desde un pago completado anteriormente.
+
+Para crear un pedido en el Administrador de un cliente con su tarjeta de crédito abovedada:
+
+1. [Crear un pedido y agregar productos](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/point-of-purchase/assist/customer-account-create-order.html).
+1. En _[!UICONTROL Payment & Shipping Information]_, seleccione **[!UICONTROL Stored Cards]**como método de pago.
+1. Seleccione el método de pago de tarjeta de crédito con bóveda que desee.
+1. Después de completar cualquier otro paso necesario para la solicitud, [enviarlo](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/point-of-purchase/assist/customer-account-create-order.html?lang=en#step-3%3A-submit-the-order).
+
+   ![Uso de la tarjeta de crédito abovedada en Admin para clientes](assets/admin-vaultedcard.png)
 
 ## Seguridad
 
