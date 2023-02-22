@@ -1,15 +1,15 @@
 ---
-title: Configuración del simulador de pruebas
+title: Configuración del Simulador para pruebas
 description: Usar una cuenta de espacio aislado de PayPal para usar [!DNL Payment Services] en modo de prueba.
 exl-id: 99c14b4e-e6cf-48f9-9546-5c0d5c71464d
-source-git-commit: 5aba246ce2a7802954a90c08c7dac2247a71ff6d
+source-git-commit: 817a01e98876bddf5f41a253501984539b3351cd
 workflow-type: tm+mt
-source-wordcount: '595'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
 
-# Configuración del simulador de pruebas
+# Configuración del Simulador para pruebas
 
 Antes de iniciar la incorporación al simulador de pruebas, debe registrarse en una cuenta gratuita de desarrollador de PayPal y crear cuentas de comerciante (para utilizarlas en la incorporación) y de comprador (para probarlas). Si lo desea, puede crear varias cuentas de desarrollador.
 

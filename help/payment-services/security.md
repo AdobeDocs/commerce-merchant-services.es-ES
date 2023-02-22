@@ -1,15 +1,15 @@
 ---
-title: Seguridad y cumplimiento
+title: Seguridad y cumplimiento de normas
 description: Revise los requisitos de seguridad y cumplimiento para su sitio.
 exl-id: 083c5a12-1d78-48b5-b9e3-612b104ce7e0
-source-git-commit: 17ba23192fed6cd219411420c5d56b42c94af0f5
+source-git-commit: 817a01e98876bddf5f41a253501984539b3351cd
 workflow-type: tm+mt
-source-wordcount: '483'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
 
-# Seguridad y cumplimiento
+# Seguridad y cumplimiento de normas
 
 La seguridad es de suma preocupación en [!DNL Payment Services] y no se pasa ninguna información regulada privada o de la Industria de Tarjetas de Pago (PCI) a través de su [!DNL Payment Services].
 

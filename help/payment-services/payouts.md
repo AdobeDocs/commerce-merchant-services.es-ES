@@ -4,7 +4,7 @@ description: Utilice el informe de pagos para obtener una total transparencia en
 role: User
 level: Intermediate
 exl-id: f3f99474-cd28-4c8f-b0ea-dca8e014b108
-source-git-commit: ddd9fa9b2a709858239c88477f19e8787a0b65c2
+source-git-commit: 817a01e98876bddf5f41a253501984539b3351cd
 workflow-type: tm+mt
 source-wordcount: '0'
 ht-degree: 0%
@@ -154,8 +154,8 @@ Los informes de pago incluyen la siguiente información.
 | [!UICONTROL Code] | Código de transacción que indica Crédito (*CR*) o débito (*DR*) |
 | [!UICONTROL Reference ID] | ID de transacción original para el que este evento está relacionado |
 | [!UICONTROL Invoice] | ID de factura (uno por pedido) de la transacción |
-| [!UICONTROL Commerce order] | ID de pedido de comercio <br> <br>Para ver [información del pedido](https://docs.magento.com/user-guide/sales/orders.html){target=&quot;_blank&quot;}, haga clic en el ID. |
-| [!UICONTROL Commerce trans] | ID de transacción de comercio <br> <br>Para ver [información de transacción](https://docs.magento.com/user-guide/sales/transactions.html){target=&quot;_blank&quot;}, haga clic en el ID. |
+| [!UICONTROL Commerce order] | ID de pedido de comercio <br> <br>Para ver [información del pedido](https://docs.magento.com/user-guide/sales/orders.html){target="_blank"}, haga clic en el ID. |
+| [!UICONTROL Commerce trans] | ID de transacción de comercio <br> <br>Para ver [información de transacción](https://docs.magento.com/user-guide/sales/transactions.html){target="_blank"}, haga clic en el ID. |
 | [!UICONTROL Pay method] | Tipo de tarjeta de crédito—*[!UICONTROL BANK]*, *[!UICONTROL PAYPAL]*, *[!UICONTROL APPLE_PAY]*, *[!UICONTROL CREDIT_CARD]*—y el proveedor de tarjetas asociado (por ejemplo, *Visa* o *MasterCard*) |
 | [!UICONTROL Trans amt] | Importe de la transacción |
 | [!UICONTROL Cur] | Unidad de divisa para el importe de transacción |
@@ -184,19 +184,19 @@ Estos tipos de transacciones pueden anotarse en las transacciones de pago.
 | ------------ | -------------------- |
 | [!UICONTROL PAYMENT] | Dinero movido entre un comprador y un vendedor para un pedido |
 | [!UICONTROL AUTH] | Autorización y autorización anulan transacciones |
-| [!UICONTROL BONUS] | — |
+| [!UICONTROL BONUS] | -- |
 | [!UICONTROL CHARGEBACK] | Transacciones de reversión de comisiones y comisiones de recarga |
-| [!UICONTROL CORRECTION] | — |
-| [!UICONTROL CURRENCY_CONVERSION] | — |
-| [!UICONTROL DEPOSIT] | — |
-| [!UICONTROL DISBURSEMENT] | — |
-| [!UICONTROL DISPUTE] | — |
+| [!UICONTROL CORRECTION] | -- |
+| [!UICONTROL CURRENCY_CONVERSION] | -- |
+| [!UICONTROL DEPOSIT] | -- |
+| [!UICONTROL DISBURSEMENT] | -- |
+| [!UICONTROL DISPUTE] | -- |
 | [!UICONTROL FEES] | Tarifas de socio, comisiones de pago y transacciones de inversión de comisiones |
-| [!UICONTROL HOLD] | — |
-| [!UICONTROL HOLD_RELEASE] | — |
-| [!UICONTROL INCENTIVES] | — |
-| [!UICONTROL OTHERS] | — |
+| [!UICONTROL HOLD] | -- |
+| [!UICONTROL HOLD_RELEASE] | -- |
+| [!UICONTROL INCENTIVES] | -- |
+| [!UICONTROL OTHERS] | -- |
 | [!UICONTROL RECOUP] | Recuperaciones de cuentas bancarias o de pérdidas |
-| [!UICONTROL REFUND] | — |
-| [!UICONTROL REVERSAL] | — |
-| [!UICONTROL WITHDRAWAL] | — |
+| [!UICONTROL REFUND] | -- |
+| [!UICONTROL REVERSAL] | -- |
+| [!UICONTROL WITHDRAWAL] | -- |

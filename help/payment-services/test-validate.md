@@ -2,9 +2,9 @@
 title: Prueba y validación
 description: Las pruebas y la validación ayudan a garantizar que [!DNL Payment Services] funciona según lo esperado y proporciona las mejores opciones de pago para sus clientes
 exl-id: 95b4615e-73b0-41e8-83e2-e65a0b22f10f
-source-git-commit: 41d93ffc2f9d518d9d4cf4abf2d53484821c13f2
+source-git-commit: 817a01e98876bddf5f41a253501984539b3351cd
 workflow-type: tm+mt
-source-wordcount: '482'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -18,7 +18,7 @@ Antes de exponer [!DNL Payment Services] para [!DNL Adobe Commerce] y [!DNL Mage
 Pruebas [!DNL Payment Services] en un entorno sandbox es un paso importante para la validación, aunque es un entorno simulado conectado únicamente al simulador de pruebas de PayPal, no a bancos y comerciantes reales.
 
 1. Complete correctamente el cierre de compra desde la tienda, ya sea con [Campos de tarjeta de crédito](payments-options.md#credit-card-fields) o cualquiera de los [Botones inteligentes PayPal](payments-options.md#paypal-smart-buttons). Consulte [Credenciales de prueba](#testing-credentials) para obtener más información sobre el uso de tarjetas de crédito falsas en las pruebas.
-1. Captura (cuando se produce la acción de pago) [configure como `Authorize and Capture`](onboard.md#set-payment-services-as-payment-method)), [reembolso](refunds.md)o [void](voids.md) el pedido que acaba de completarse. También puede [crear una factura](https://docs.magento.com/user-guide/sales/invoice-create.html){target=&quot;_blank&quot;} para un pedido, si la acción de pago está establecida en `Authorize` en lugar de `Authorize and Capture`.
+1. Captura (cuando se produce la acción de pago) [configure como `Authorize and Capture`](onboard.md#set-payment-services-as-payment-method)), [reembolso](refunds.md)o [void](voids.md) el pedido que acaba de completarse. También puede [crear una factura](https://docs.magento.com/user-guide/sales/invoice-create.html){target="_blank"} para una solicitud, si la acción de pago está definida en `Authorize` en lugar de `Authorize and Capture`.
 1. En un plazo de 24 a 48 horas, consulte la transacción y otra información en la [Informe de rutas](payouts.md).
 1. Consulte los detalles del pedido en la [Informe del estado del pago del pedido](order-payment-status.md).
 

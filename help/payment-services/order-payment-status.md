@@ -1,17 +1,17 @@
 ---
-title: Informe del estado del pago del pedido
+title: Informe de estado de pago de pedido
 description: Utilice el informe de estado de pago de pedidos para obtener visibilidad sobre el estado de pago de sus pedidos e identificar cualquier problema potencial.
 role: User
 level: Intermediate
 exl-id: 192e47b9-d52b-4dcf-a720-38459156fda4
-source-git-commit: ddd9fa9b2a709858239c88477f19e8787a0b65c2
+source-git-commit: 817a01e98876bddf5f41a253501984539b3351cd
 workflow-type: tm+mt
 source-wordcount: '0'
 ht-degree: 0%
 
 ---
 
-# Informe del estado del pago del pedido
+# Informe de estado de pago de pedido
 
 [!DNL Payment Services] para [!DNL Adobe Commerce] y [!DNL Magento Open Source] ofrece informes completos para que pueda obtener una visión clara de los pedidos y pagos de su tienda.
 
@@ -33,11 +33,11 @@ Puede descargar transacciones de estado de pago de pedidos en formato de archivo
 
 La variable [!DNL Payment Services] utiliza los datos de pedidos, y los combina con los datos de pago agregados de otras fuentes (incluyendo PayPal), para proporcionar informes significativos y altamente útiles.
 
-Los datos del pedido se exportan y se mantienen en el servicio de pago. Cuando [cambiar o agregar estados de pedidos](https://docs.magento.com/user-guide/sales/order-status-custom.html){target=&quot;_blank&quot;} o [editar una vista de tienda](https://docs.magento.com/user-guide/stores/stores-all-view-edit.html){target=&quot;_blank&quot;}, [almacenar](https://docs.magento.com/user-guide/stores/store-information.html){target=&quot;_blank&quot;}, o nombre de sitio web, esos datos se combinan con los datos de pago y el informe de estado del pago del pedido se rellena con la información combinada.
+Los datos del pedido se exportan y se mantienen en el servicio de pago. Cuando [cambiar o agregar estados de pedidos](https://docs.magento.com/user-guide/sales/order-status-custom.html){target="_blank"} or [edit a store view](https://docs.magento.com/user-guide/stores/stores-all-view-edit.html){target="_blank"}, [store](https://docs.magento.com/user-guide/stores/store-information.html){target="_blank"}, o el nombre del sitio web, esos datos se combinan con los datos de pago y el informe de estado del pago del pedido se rellena con la información combinada.
 
 Hay dos pasos en este proceso:
 
-1. El índice se cambia con los datos `ON SAVE` (cada vez que se cambia la información del pedido o de la tienda) o `BY SCHEDULE` (en una programación cron preconfigurada), según cómo esté configurada en [Administración de índices](https://docs.magento.com/user-guide/system/index-management.html){target=&quot;_blank&quot;} en Admin.
+1. El índice se cambia con los datos `ON SAVE` (cada vez que se cambia la información del pedido o de la tienda) o `BY SCHEDULE` (en una programación cron preconfigurada), según cómo esté configurada en [Administración de índices](https://docs.magento.com/user-guide/system/index-management.html){target="_blank"} en el menú
 
    De forma predeterminada, se produce la indexación de datos `ON SAVE`, lo que significa que cada vez que algo cambia en el orden, el estado del pedido, la vista del almacén, el almacén o el sitio web, el proceso de reindexación se produce inmediatamente.
 
@@ -53,7 +53,7 @@ Los únicos datos que se exportan y recopilan a efectos de presentación de info
 
 Aunque, de forma predeterminada, la reindexación se produce en `ON SAVE` , se recomienda indexar en `BY SCHEDULE` en el menú contextual. La variable `BY SCHEDULE` El índice se ejecuta en un programa cron de un minuto y los datos modificados aparecen en el informe de estado del pedido en un plazo de dos minutos a partir de cualquier cambio de datos. Esta reindexación programada le ayuda a reducir cualquier presión en su tienda, especialmente si tiene un gran volumen de pedidos entrantes, ya que ocurre en una programación (no a medida que se realiza cada pedido).
 
-Puede cambiar el modo de índice:`ON SAVE` o `BY SCHEDULE`—[en el](https://docs.magento.com/user-guide/system/index-management.html#change-the-index-mode){target=&quot;_blank&quot;}.
+Puede cambiar el modo de índice:`ON SAVE` o `BY SCHEDULE`—[en el](https://docs.magento.com/user-guide/system/index-management.html#change-the-index-mode){target="_blank"}.
 
 Para obtener información sobre cómo configurar la exportación de datos, consulte [Configuración de la línea de comandos](configure-cli.md#configure-data-export).
 
@@ -181,10 +181,10 @@ Los informes de estado de pago de pedidos incluyen la siguiente información.
 
 | Columna | Descripción |
 | ------------ | -------------------- |
-| [!UICONTROL Order ID] | ID de pedido de comercio<br> <br>Para ver [información del pedido](https://docs.magento.com/user-guide/sales/orders.html){target=&quot;_blank&quot;}, haga clic en el ID. |
+| [!UICONTROL Order ID] | ID de pedido de comercio<br> <br>Para ver [información del pedido](https://docs.magento.com/user-guide/sales/orders.html){target="_blank"}, haga clic en el ID. |
 | [!UICONTROL Order Date] | Marca de fecha y hora del pedido |
 | [!UICONTROL Authorized Date] | Marca de fecha y hora de la autorización de pago |
-| [!UICONTROL Order Status] | Comercio actual [estado de pedido](https://docs.magento.com/user-guide/sales/order-status.html){target=&quot;_blank&quot;} |
+| [!UICONTROL Order Status] | Comercio actual [estado de pedido](https://docs.magento.com/user-guide/sales/order-status.html){target="_blank"} |
 | [!UICONTROL Invoiced] | Estado de factura del pedido—*[!UICONTROL No]*, *[!UICONTROL Partial]* o *[!UICONTROL Yes]* |
 | [!UICONTROL Shipped] | Estado de envío del pedido—*[!UICONTROL No]*, *[!UICONTROL Partial]* o *[!UICONTROL Yes]* |
 | [!UICONTROL Order Amt] | Cantidad total general del pedido |

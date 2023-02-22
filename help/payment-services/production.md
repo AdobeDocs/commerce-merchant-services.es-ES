@@ -2,9 +2,9 @@
 title: Habilitar [!DNL Payment Services] para producción
 description: Complete el proceso de incorporación habilitando [!DNL Payment Services] para producción.
 exl-id: 3b1269e8-127b-47f8-9738-9722a5737c63
-source-git-commit: 7b31fe7a71c3c238e6448627b2edfe06bbfbc80e
+source-git-commit: 817a01e98876bddf5f41a253501984539b3351cd
 workflow-type: tm+mt
-source-wordcount: '708'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -22,11 +22,11 @@ Puede poner el servicio en producción y completar la [proceso de incorporación
 Tras [configurar los servicios de comercio](connect.md#configure-commerce-services) y habilite [prueba de entorno limitado](sandbox.md#enable-sandbox-testing) o [pagos en directo](#enable-live-payments), debe establecer [!DNL Payment Services] como método de pago.
 
 1. En el _Administrador_ barra lateral, vaya a **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**.
-1. Haga clic **[!UICONTROL Enable Payment Services]**.
+1. Haga clic en **[!UICONTROL Enable Payment Services]**.
 
    Esta opción está visible si aún no se ha configurado [!DNL Payment Services] como método de pago para uno o más de sus sitios web.
 
-   Se le dirige al área de configuración de la vista Inicio con las opciones relevantes expandidas (**[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > _[!UICONTROL Settings]_), donde puede habilitar la variable [!DNL Payment Services] como [método de pago](https://docs.magento.com/user-guide/configuration/sales/payment-methods.html){target=&quot;_blank&quot;}.
+   Se le dirige al área de configuración de la vista Inicio con las opciones relevantes expandidas (**[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > _[!UICONTROL Settings]_), donde puede habilitar la variable [!DNL Payment Services] como [método de pago](https://docs.magento.com/user-guide/configuration/sales/payment-methods.html){target="_blank"}.
 
 1. En _[!UICONTROL General Configuration]_, conjunto **[!UICONTROL Enable]**a `Yes`.
 1. Establezca **[!UICONTROL Payment Action]**, para ambas _[!UICONTROL Credit Card Fields]_y_[!UICONTROL PayPal Smart Buttons]_, a una de las siguientes opciones:
@@ -36,9 +36,9 @@ Tras [configurar los servicios de comercio](connect.md#configure-commerce-servic
    | `Authorize` | Aprueba la compra y suspende los fondos. La cantidad no se retira hasta que el comerciante la &quot;captura&quot;. |
    | `Authorize and Capture` | Aprueba la compra y el comerciante &quot;captura&quot; los fondos. |
 
-1. Haga clic **[!UICONTROL Save]**.
+1. Haga clic en **[!UICONTROL Save]**.
 1. Haga clic en **[!UICONTROL Go to Payment Services]** para que se le devuelva al [!DNL Payment Services] Hogar.
-1. [Borre la caché](https://docs.magento.com/user-guide/system/cache-management.html){target=&quot;_blank&quot;}.
+1. [Borre la caché](https://docs.magento.com/user-guide/system/cache-management.html){target="_blank"}.
 
    El borrado debe realizarse después de cada cambio de configuración.
 
@@ -47,7 +47,7 @@ Consulte [Configurar servicios de pago](settings.md) para obtener más informaci
 ## Integración completa del comerciante
 
 1. En el _Administrador_ barra lateral, vaya a **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**.
-1. Haga clic **[!UICONTROL Live onboarding]**.
+1. Haga clic en **[!UICONTROL Live onboarding]**.
 
    Esta opción está visible si aún no ha completado la integración activa para [!DNL Payment Services].
 
@@ -106,8 +106,8 @@ Para habilitar los pagos en vivo:
 1. En el _Administrador_ barra lateral, vaya a **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**.
 1. En la página principal, haga clic en **[!UICONTROL Settings]** en la parte superior derecha de la página. Consulte [Página principal](payments-home.md) para obtener más información.
 1. En el _[!UICONTROL General Configuration]_conjunto de secciones **[!UICONTROL Payment mode]**a `Production`.
-1. Haga clic **[!UICONTROL Save]**.
-1. [Borre la caché](https://docs.magento.com/user-guide/system/cache-management.html){target=&quot;_blank&quot;}.
+1. Haga clic en **[!UICONTROL Save]**.
+1. [Borre la caché](https://docs.magento.com/user-guide/system/cache-management.html){target="_blank"}.
 
    >[!IMPORTANT]
    >

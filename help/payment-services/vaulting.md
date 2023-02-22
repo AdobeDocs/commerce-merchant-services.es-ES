@@ -1,15 +1,15 @@
 ---
-title: Bóveda de tarjetas de crédito
+title: Validación de tarjetas de crédito
 description: Los compradores pueden almacenar (guardar) los datos de sus tarjetas de crédito para futuras compras.
 exl-id: b4060307-ffcd-41cb-9b9d-a2fef02f23bd
-source-git-commit: fb0a8295772fc6e23f2910019e1beadd64d7ed70
+source-git-commit: 817a01e98876bddf5f41a253501984539b3351cd
 workflow-type: tm+mt
-source-wordcount: '304'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
 
-# Bóveda de tarjetas de crédito
+# Validación de tarjetas de crédito
 
 Convierta a los clientes únicos en compradores fieles con bóvedas de tarjetas de crédito. Los compradores pueden guardar (o &quot;bóveda&quot;) sus credenciales de tarjeta de crédito durante el cierre de compra para usarlas en una compra posterior para la misma cuenta o para otra tienda dentro de la misma cuenta de comerciante.
 
