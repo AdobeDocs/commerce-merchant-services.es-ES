@@ -4,14 +4,14 @@ description: Configure las opciones generales para habilitar [!DNL Store Fulfill
 role: User, Admin
 level: Intermediate
 exl-id: 51dcfc95-3dd6-40d9-bd26-d8409a25f3c8
-source-git-commit: c68bf177f79c37cc57b4cc5979b18e1fd4a7e17d
+source-git-commit: 4c10ab59ed304002cfde7398762bb70b223180ce
 workflow-type: tm+mt
 source-wordcount: '2541'
 ht-degree: 0%
 
 ---
 
-# Configuración de servicio y ventas de tiendas
+# Configuración de servicio y ventas de tienda
 
 Configurar [!DNL Store Fulfillment] de la variable [!DNL Commerce] El administrador para habilitar la extensión, especificar la configuración de la extensión, configurar los ajustes de seguridad para los usuarios de la aplicación de Store Assist y establecer las opciones para los métodos de envío.
 
@@ -141,7 +141,7 @@ Active la variable [!DNL Store Fulfillment] solución para añadir las funciones
 
 Después de configurar la variable [!UICONTROL Account Credentials], seleccione <strong>[!UICONTROL Validate Credentials]</strong> para verificar y establecer una conexión con el servicio de cumplimiento de la tienda por primera vez.
 
-## Configurar el registro
+## Configuración del registro
 
 Los registros para los servicios de cumplimiento de la tienda están disponibles en el archivo de registro `var/log/walmart-bopis.log`.
 
@@ -530,3 +530,4 @@ Con el método de entrega en la tienda, el cliente puede seleccionar un origen p
 <td>No</td>
 </tr>
 </tbody></table>
+

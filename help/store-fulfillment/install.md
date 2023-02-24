@@ -4,9 +4,9 @@ description: '"Instale el [!DNL Store Fulfillment solution] para una tienda de A
 role: User, Admin
 level: Intermediate
 exl-id: 6613268a-7d22-4c54-af89-834921b7f262
-source-git-commit: d8be88f47f103c5d632540dae743ede398a9b7ad
+source-git-commit: 4c10ab59ed304002cfde7398762bb70b223180ce
 workflow-type: tm+mt
-source-wordcount: '656'
+source-wordcount: '660'
 ht-degree: 0%
 
 ---
@@ -59,7 +59,7 @@ Extraiga el archivo que contiene el paquete de integración para instalar la ext
 
 1. Extraiga el archivo de archivo en el nuevo directorio.
 
-1. Compruebe que los archivos extraídos revisando la lista de archivos.
+1. Compruebe que los archivos se han extraído correctamente revisando la lista de archivos.
 
    ```
    ../var/www/html/artifacts]$ ls -a
@@ -194,4 +194,5 @@ La variable `-f` es obligatoria si utiliza un tema en blanco.
 
 >[!NOTE]
 >
->Para obtener más información, consulte [El contenido estático implementa las prácticas recomendadas en Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/development/static-content-deployment.html) en el Centro de ayuda de Adobe Commerce.
+>Para obtener más información, consulte la [El contenido estático implementa las prácticas recomendadas en Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/development/static-content-deployment.html) en el Centro de ayuda de Adobe Commerce.
+

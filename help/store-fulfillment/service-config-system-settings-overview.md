@@ -3,7 +3,7 @@ title: Información general sobre la configuración del sistema
 description: Obtenga información sobre las categorías de configuración de administración disponibles para la solución de cumplimiento de la tienda y cómo están configuradas.
 role: User, Admin
 level: Intermediate
-source-git-commit: 4ea03b3be11056526adc42d875b1e26a24736d15
+source-git-commit: 4c10ab59ed304002cfde7398762bb70b223180ce
 workflow-type: tm+mt
 source-wordcount: '227'
 ht-degree: 0%
@@ -38,3 +38,4 @@ En la referencia de configuración de cada tipo, los detalles de configuración 
 - **Requerido** indica si se debe configurar un valor en el campo
 
 Para referencia técnica, también puede encontrar la ruta de configuración interna para cada campo.
+

@@ -1,10 +1,10 @@
 ---
-title: Información general sobre la incorporación para los servicios de entrega de la tienda
+title: Información general sobre la incorporación para los servicios de entrega de tiendas
 description: '''[!DNL Live Search] flujo de incorporación, requisitos del sistema, límites y limitaciones".'
 role: User, Admin
 level: Intermediate
 exl-id: f8e403ac-9bbd-4ea2-b209-9b1a8d1e32a2
-source-git-commit: 1fb22b4644d41ea5c60aead3fe2c455dfa3382f8
+source-git-commit: 4c10ab59ed304002cfde7398762bb70b223180ce
 workflow-type: tm+mt
 source-wordcount: '364'
 ht-degree: 0%

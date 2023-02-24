@@ -1,18 +1,18 @@
 ---
-title: Correos electrónicos de ventas
+title: Plantillas de correo electrónico de ventas
 description: Configure las plantillas de correo electrónico transaccional para comunicarse con los clientes y almacenar administradores durante el proceso de cumplimiento de los pedidos de recogida de tiendas.
 role: User, Admin
 level: Intermediate
 exl-id: 688732e3-06f0-4613-a589-2d465597eb28
-source-git-commit: 31ad67d3f3d11c68341de0306eea37f231b2d9b9
+source-git-commit: 4c10ab59ed304002cfde7398762bb70b223180ce
 workflow-type: tm+mt
-source-wordcount: '1200'
+source-wordcount: '1202'
 ht-degree: 0%
 
 ---
 
 
-# Correos electrónicos de ventas
+# Plantillas de correo electrónico de ventas
 
 El cumplimiento de la tienda ofrece un conjunto ampliado de plantillas de correo electrónico transaccional para admitir los flujos de trabajo de pedidos y cumplimiento. Ofrecen comunicación y mensajería coherentes y automatizadas en todos los canales, lo que permite notificar a los administradores de clientes y tiendas los cambios en el estado de los pedidos, las instrucciones para los pedidos de recogida en la tienda y mucho más.
 

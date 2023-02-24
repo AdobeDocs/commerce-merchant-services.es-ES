@@ -4,9 +4,9 @@ description: Pruebe el plan para verificar la funcionalidad de cumplimiento de l
 role: User, Admin
 level: Intermediate
 exl-id: 77285a66-5161-407b-94cd-b3f412d7949d
-source-git-commit: 0a1d70465247422db44daee302c67fe1a5a29d32
+source-git-commit: 4c10ab59ed304002cfde7398762bb70b223180ce
 workflow-type: tm+mt
-source-wordcount: '2657'
+source-wordcount: '2660'
 ht-degree: 0%
 
 ---
@@ -76,7 +76,7 @@ Esta sección del plan de prueba cubre la sincronización de inventario y pedido
 <tr>
 <td><strong>Agregar origen de existencias de recogida</strong></td>
 <td>Guarde una nueva fuente de existencias de recogida.</td>
-<td>La sincronización en tiempo real envía los detalles de origen al servicio de GIF de Walmart en un plazo de 5 minutos.</td>
+<td>La sincronización en tiempo real envía los detalles del origen al servicio de GIF de Walmart en 5 minutos.</td>
 </tr>
 <tr>
 <td><strong>Actualizar el origen de existencias de recogida existente</strong></td>
@@ -277,7 +277,7 @@ Esta sección del plan de prueba incluye escenarios para probar el flujo de trab
 <ol>
 <li>Realice el pedido.</li>
 <li>Espere hasta que se sincronice el pedido.</li>
-<li>Compruebe que la factura se ha creado (si se autoriza y captura) y que se ha recibido el correo electrónico de la factura.</li>
+<li>Si la opción de autorización y captura está configurada, compruebe que la factura se haya creado y que el cliente haya recibido el correo electrónico de la factura.</li>
 <li>Elija todos los productos con Postman.</li>
 <li>Registrarse.</li>
 <li>Haga un dispensario.</li>
@@ -566,39 +566,39 @@ Esta sección del plan de prueba cubre escenarios para probar los flujos de trab
 <tr>
 <td>
 <strong>Selección de pedido único: ruta feliz, recogida de borde de la curva</strong></td>
-<td>Elija artículos de una y varias cantidades. No hay ningún selector ni acopio en el lado de la curva (con ensayo).
+<td>Elija artículos de una y varias cantidades. No hay ningún piquete ni una camioneta en el lado de la curva (con ensayo).
 </td>
 <td>
 </td>
 </tr>
 <tr>
 <td><strong>Selección de varios pedidos: ruta feliz, recogida de curvas</strong></td>
-<td>Artículos únicos y multicantidad. No hay ningún selector ni acopio en el lado del cursor (con ensayo)</td>
+<td>Artículos únicos y multicantidad. No hay ningún piquete ni ninguna picadura en el lado de la curva (con ensayo)</td>
 <td></td>
 </tr>
 <tr>
 <td><strong>Selección de un solo pedido: recuperación de ruta feliz en la tienda</strong></td>
-<td>Artículos únicos y multicantidad. No hay ninguna selección ni se realiza la recogida en el lugar (con ensayo)</td>
+<td>Artículos únicos y multicantidad. No hay ningún selector ni ninguna recogida en la tienda (con ensayo)</td>
 <td>
 </td>
 </tr>
 <tr>
 <td><strong>Selección de varios pedidos: ruta feliz, recogida en la tienda</strong></td>
-<td>Elija artículos de una y varias cantidades. No hay ningún selector ni acopio en el lado de la curva (con ensayo).</td>
+<td>Elija artículos de una y varias cantidades. No hay ningún piquete ni una camioneta en el lado de la curva (con ensayo).</td>
 <td></td>
 </tr>
 <tr>
 <td><strong>Selección de un único pedido: ruta no feliz, recogida en la tienda</strong></td>
-<td>Seleccionar elementos únicos y de varias cantidades con selección parcial y simple y, en su lugar, recoger (con ensayo)</td>
+<td>Seleccionar elementos únicos y multicantidad con recogida parcial y sin seleccionar y en la tienda (con ensayo)</td>
 </td>
 <td></td>
 </tr>
 <td><strong>Selección de varios pedidos: no es una recuperación feliz del lado de la curva de ruta</strong></td>
-<td>Seleccionar elementos únicos y de varias cantidades con selección parcial y simple y, en su lugar, recoger (con ensayo)</td>
+<td>Seleccionar elementos únicos y multicantidad con recogida parcial y sin seleccionar y en la tienda (con ensayo)</td>
 <td></td>
 </tr>
 <td><strong>Selección de pedido único: ruta no feliz, recogida de borde de la curva</strong></td>
-<td>Seleccionar artículos de una sola y varias cantidades con selección parcial y sin acopio y acopio en el borde de la curva (con ensayo)</strong></td>
+<td>Seleccionar artículos de una sola y varias cantidades con recogida parcial y sin acopio y cierre (con ensayo)</strong></td>
 </td>
 <td></td>
 </tr>

@@ -1,10 +1,10 @@
 ---
-title: Configuración del sistema de asignación y ubicación del almacén
+title: Configuración del sistema de asignación y ubicación de almacenamiento
 description: Configure un proveedor de distancia para que admita la asignación de ubicación de tienda en la interfaz de usuario de tienda. Las soluciones de entrega de tiendas requieren un proveedor de distancia para habilitar la búsqueda de tiendas minoristas y otras capacidades de asignación y programación para el flujo de trabajo de cumplimiento de extremo a extremo.
 role: User, Admin
 level: Intermediate
 exl-id: d09c4652-e2eb-49dc-8c42-2aa9b6be5d6b
-source-git-commit: 556cbf803a0f8569e8561d2b33b7a976065ae814
+source-git-commit: 4c10ab59ed304002cfde7398762bb70b223180ce
 workflow-type: tm+mt
 source-wordcount: '176'
 ht-degree: 0%

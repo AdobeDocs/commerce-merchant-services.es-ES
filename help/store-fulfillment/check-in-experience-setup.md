@@ -1,10 +1,10 @@
 ---
 title: Configuración de la experiencia de registro
-description: Configure las selecciones de modelo y de marca de automóvil disponibles para los clientes de recogida en el límite cuando completen el formulario de pedido de recogida.
+description: Configure las selecciones de diseño de coche y modelo disponibles para los clientes de recogida de cierre cuando completen el formulario de pedido de recogida.
 role: User, Admin
 level: Intermediate
 exl-id: 341b96cd-bb83-4d07-965c-b09fab24dc81
-source-git-commit: 5e7dcc48c65b2f3f75a33c6e556dcef882a80549
+source-git-commit: 4c10ab59ed304002cfde7398762bb70b223180ce
 workflow-type: tm+mt
 source-wordcount: '170'
 ht-degree: 0%

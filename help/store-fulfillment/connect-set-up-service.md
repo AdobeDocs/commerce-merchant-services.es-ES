@@ -3,16 +3,17 @@ title: Conecte la solución de entrega de la tienda
 description: Establezca las conexiones entre Adobe Commerce y la solución Store Fulfillment creando y autorizando una integración con Adobe Commerce y agregando las credenciales de la cuenta Store Fulfillment a la configuración del servicio Adobe Commerce.
 role: User, Admin
 level: Intermediate
-source-git-commit: 42b0118b427b1e04186793b4a57c058bc1cabdd4
+exl-id: 74c71c43-305a-4ea7-84f8-95f3ce0a9482
+source-git-commit: 4c10ab59ed304002cfde7398762bb70b223180ce
 workflow-type: tm+mt
-source-wordcount: '372'
+source-wordcount: '370'
 ht-degree: 0%
 
 ---
 
 # Conecte la solución de entrega de la tienda
 
-Establezca la conexión entre Adobe Commerce y los servicios de cumplimiento de la tienda configurando las credenciales de autenticación y los datos de conexión necesarios desde el administrador.
+Conecte los servicios de cumplimiento de la tienda con Adobe Commerce agregando las credenciales de autenticación y los datos de conexión necesarios al administrador de Adobe Commerce.
 
 - **[Configurar [!DNL Commerce integration settings]](#create-the-commerce-integration)**-Cree una integración de Adobe Commerce para los servicios de entrega de la tienda y genere los tokens de acceso para autenticar las solicitudes entrantes de los servidores de entrega de la tienda.
 
@@ -59,7 +60,7 @@ Estas credenciales son necesarias para configurar y utilizar el cumplimiento de 
 
 >[!NOTE]
 >
->El proceso de creación de cuentas puede tardar algún tiempo en completarse. Mientras espera las credenciales, [revise y configure otras configuraciones para la solución de cumplimiento de la tienda](service-config-settings-overview.md).
+>El proceso de creación de cuentas puede tardar algún tiempo en completarse. Mientras espera las credenciales, [revisar y configurar otras configuraciones para la solución de cumplimiento de la tienda](service-config-settings-overview.md).
 
 ### Agregar credenciales para conectarse al cumplimiento de la tienda
 
@@ -76,11 +77,3 @@ Estas credenciales son necesarias para configurar y utilizar el cumplimiento de 
 >[!NOTE]
 >
 >Si las credenciales no son válidas, compruebe que ha introducido los valores correctos para cada entorno y vuelva a validar. Póngase en contacto con su representante de cuentas si todavía tiene problemas para conectarse.
-
-
-
-
-
-
-
-

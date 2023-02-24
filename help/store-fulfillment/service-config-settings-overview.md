@@ -3,13 +3,13 @@ title: Información general sobre la configuración para el cumplimiento de la t
 description: Obtenga información sobre los tipos de configuración de administración disponibles para personalizar las capacidades de cumplimiento extendidas que proporciona la solución de cumplimiento de almacenamiento y vincule las instrucciones para completar la configuración.
 role: User, Admin
 level: Intermediate
-source-git-commit: 42b0118b427b1e04186793b4a57c058bc1cabdd4
+exl-id: c432791a-94a0-457d-9ed9-8937846ce4f4
+source-git-commit: 4c10ab59ed304002cfde7398762bb70b223180ce
 workflow-type: tm+mt
 source-wordcount: '386'
 ht-degree: 0%
 
 ---
-
 
 # Información general sobre la configuración para el cumplimiento de la tienda
 

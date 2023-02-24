@@ -4,16 +4,16 @@ description: Configure los mensajes de stock de comerciantes y las funciones dis
 role: User, Admin
 level: Intermediate
 exl-id: 3ac217f7-e823-4578-8416-5ecceb76aa87
-source-git-commit: 4ea03b3be11056526adc42d875b1e26a24736d15
+source-git-commit: 4c10ab59ed304002cfde7398762bb70b223180ce
 workflow-type: tm+mt
-source-wordcount: '430'
+source-wordcount: '413'
 ht-degree: 0%
 
 ---
 
 # Administración de existencias de productos
 
-Como comerciante, puede utilizar Adobe Commerce [Inventory management](https://docs.magento.com/user-guide/catalog/inventory-management.html) opciones de origen y existencias. Además, puede controlar otras opciones de disponibilidad de inventario relacionadas con las operaciones de su tienda de mercadotecnia con la solución de entrega de tiendas.
+Como comerciante, puede utilizar Adobe Commerce [Inventory management](https://docs.magento.com/user-guide/catalog/inventory-management.html) opciones de origen y existencias. Además, puede usar la solución de satisfacción de la tienda para controlar otras opciones de disponibilidad del inventario relacionadas con las operaciones de la tienda de mercantes.
 
 - Opción de entrega a domicilio de las tiendas de mercadotecnia
 
@@ -30,9 +30,9 @@ Configure las opciones de Product Stock desde el administrador: **[!UICONTROL Ca
 ## **Opciones de existencias de productos**
 
 | **Campo** | **Descripción** | **Ámbito** | **Requerido** |
-|----------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------|--------------|
-| **Disponible para la entrega a domicilio** | Establece la disponibilidad de Entrega en Casa (Envío desde tienda) para el producto. Cuando está habilitado, cualquier ubicación de tienda de mercantes asignada con inventario disponible para el producto se considera elegible para la opción Entrega a en casa . Cuando está desactivado, el producto nunca es apto para la entrega a domicilio, aunque una tienda de mercadotecnia tenga inventario disponible.</br></br>En la mayoría de los casos, es suficiente configurar esta opción en el nivel de tienda del comerciante. Sin embargo, puede haber casos únicos para productos específicos, como los que están sujetos a restricciones federales de transporte marítimo, que no deberían ser elegibles para la entrega a domicilio. | Sitio web | No |
-| **[!UICONTROL Available for Store Pickup]** | Configure la disponibilidad de la colección de almacenamiento para el producto. Cuando está habilitado, cualquier ubicación de tienda de mercantes asignada con inventario disponible para el producto se considera elegible para la opción Recogida de tiendas . Cuando está desactivado, el producto nunca es apto para la Recogida de tiendas, aunque un almacén de mercadotecnia tenga inventario disponible.</br></br>Esta opción puede resultar útil en casos en los que esté realizando un seguimiento del inventario de comerciantes en el sistema, pero no desee venderlo a través del canal de comercio electrónico. | Sitio web | No |
+|----------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------|--------------|
+| **Disponible para la entrega a domicilio** | Establece la disponibilidad de Entrega en Casa (Envío desde tienda) para el producto. Cuando está habilitado, cualquier ubicación de tienda de mercantes asignada con inventario disponible para el producto se considera elegible para la opción Entrega a en casa . Cuando esta opción está desactivada, el producto nunca es apto para la entrega a domicilio.</br></br>En la mayoría de los casos, es suficiente configurar esta opción en el nivel de tienda del comerciante. Sin embargo, puede haber casos únicos para productos específicos, como los que están sujetos a restricciones federales de transporte marítimo, que no deberían ser elegibles para la entrega a domicilio. | Sitio web | No |
+| **[!UICONTROL Available for Store Pickup]** | Configure la disponibilidad de la colección de almacenamiento para el producto. Cuando está habilitado, cualquier ubicación de tienda de mercantes asignada con inventario disponible para el producto se considera elegible para la opción Recogida de tiendas . Cuando está desactivado, el producto nunca es apto para la recogida en tiendas.</br></br>Esta opción puede resultar útil para rastrear el inventario de comerciantes del sistema que no desea vender desde el canal de comercio electrónico. | Sitio web | No |
 | **[!UICONTROL UPC / SKU / Custom Scannable Identifier]** | Este atributo ya debe existir como atributo de producto y está relacionado con la variable **[!UICONTROL Barcode Source / Barcode Type]** configuración. Este atributo se utiliza para rastrear un código de barras analizable para sus productos. Este valor puede enviarse cuando se envía un pedido a las tiendas de mercadotecnia para su selección. Los asociados del almacén pueden utilizar el valor con la lista de selección para hacer coincidir los productos del estante utilizando un escáner de códigos de barras. | Vista de la tienda | No |
 
 {style=&quot;table-layout:auto&quot;}

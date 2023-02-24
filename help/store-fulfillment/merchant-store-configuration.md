@@ -1,9 +1,10 @@
 ---
-title: Configuración de Merchant Store
-description: 'Configure las fuentes de Inventory management mejoradas como tiendas de productos. '
+title: Configuración de tiendas de mercante
+description: Configure las fuentes de Inventory management mejoradas como tiendas de productos.
 role: User, Admin
 level: Intermediate
-source-git-commit: 4ea03b3be11056526adc42d875b1e26a24736d15
+exl-id: 7c3444d0-5ecb-4ac1-aa81-e48eea290f5d
+source-git-commit: 4c10ab59ed304002cfde7398762bb70b223180ce
 workflow-type: tm+mt
 source-wordcount: '1209'
 ht-degree: 0%
@@ -141,10 +142,3 @@ Administre la configuración de las tiendas de mercadotecnia desde el administra
 | **[!UICONTROL Is Car Make a Mandatory Field?]**</br>`Extension Attribute: car_make_mandatory` | Especifique si se requiere la identificación del vehículo para los clientes durante el registro.</br></br>Si está activado, se pide al cliente que especifique la marca de su vehículo a su llegada. Si está desactivado, el cliente puede omitir esta entrada. | Global | No |
 | **[!UICONTROL Use Additional Information]**</br> `Extension Attribute: use_additional_information` | Especifique si se admite la recopilación de información adicional del cliente durante el registro. | Global | No |
 | **[!UICONTROL Is Additional Information a Mandatory Field?]**</br>`Extension Attribute: additional_information_mandatory` | Especifique si se requiere información adicional para los clientes durante el registro. </br></br>Si está activado, se solicita al cliente que introduzca información adicional a su llegada. Si está desactivado, el cliente puede omitir esta entrada. | Global | No |
-
-
-
-
-
-
-

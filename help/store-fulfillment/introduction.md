@@ -4,7 +4,7 @@ description: '"Descubra cómo [!DNL Store Fulfillment for Adobe Commerce by Walm
 role: User
 level: Intermediate
 exl-id: d2f90af8-3eba-499d-84de-4b70ecc7166c
-source-git-commit: 1157fe71dbef07f9db835a5a399f9304af550a86
+source-git-commit: 4c10ab59ed304002cfde7398762bb70b223180ce
 workflow-type: tm+mt
 source-wordcount: '605'
 ht-degree: 0%
@@ -78,4 +78,5 @@ El cumplimiento de la tienda mejora Adobe Commerce al añadir funciones para ofr
 >[!TIP]
 >
 > Para obtener una demostración rápida de la solución de entrega de la tienda, consulte la [Información general sobre el cumplimiento de la tienda](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/orders/store-fulfillment.html) disponible en _Vídeos y Tutorials de Adobe Commerce_.
+
 

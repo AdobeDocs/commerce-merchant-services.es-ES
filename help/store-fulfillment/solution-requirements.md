@@ -4,16 +4,16 @@ description: Requisitos para el aprovisionamiento e incorporación de la variabl
 role: User, Admin
 level: Intermediate
 exl-id: f9e05049-5904-4f6c-b45d-9f81fbc76b69
-source-git-commit: 842d5b7182d54a1aa5a715662503801816a24c24
+source-git-commit: 4c10ab59ed304002cfde7398762bb70b223180ce
 workflow-type: tm+mt
-source-wordcount: '298'
+source-wordcount: '307'
 ht-degree: 2%
 
 ---
 
 # Requisitos de cumplimiento de la tienda para Adobe Commerce
 
-Debe satisfacer los siguientes requisitos técnicos y empresariales para instalar y habilitar la solución Store Fulfillment para Adobe Commerce.
+En las siguientes secciones se detallan los requisitos técnicos y empresariales para instalar y habilitar la solución Store Fulfillment para Adobe Commerce.
 
 ## Requisitos de versiones de software y plataforma
 
@@ -24,7 +24,7 @@ La variable [!DNL Store Fulfillment] está disponible para los clientes de Adobe
 
 La solución Store Fulfillment es compatible con las versiones de software enumeradas en la *Compatibilidad del software* tabla.
 
-**Compatibilidad del software**
+**Compatibilidad de software**
 
 | **Software** | **Versión mínima** | **Versión máxima** |
 |----------------|---------------------|---------------------|
@@ -56,7 +56,7 @@ Su empresa debe cumplir los siguientes criterios mínimos para implementar la so
 
 - Solo empresas basadas en EE. UU.
 
-- Minoristas de B2C, fabricantes de CPG que venden D2C o distribuidores que venden D2C o a pequeñas empresas
+- Comerciales a consumidores (B2C) minoristas, productos envasados al consumidor (CPG) Fabricantes que venden directamente a los consumidores (D2C) o distribuidores que venden directamente a consumidores o pequeñas empresas
 
 - Al menos un almacén físico o almacén
 

@@ -1,10 +1,10 @@
 ---
-title: Configuración del proceso de fondo
-description: '"Configure las programaciones de [!DNL Store Fulfillment] procesos en segundo plano utilizados para sincronizar datos con los servicios de cumplimiento."                   '
+title: Configuración del proceso en segundo plano
+description: "Configure las programaciones de [!DNL Store Fulfillment] procesos en segundo plano utilizados para sincronizar datos con los servicios de cumplimiento."
 role: User, Admin
 level: Intermediate
 exl-id: 742ae59e-77a0-4db6-b156-2992d4403be7
-source-git-commit: 42b0118b427b1e04186793b4a57c058bc1cabdd4
+source-git-commit: 4c10ab59ed304002cfde7398762bb70b223180ce
 workflow-type: tm+mt
 source-wordcount: '135'
 ht-degree: 0%
@@ -12,7 +12,7 @@ ht-degree: 0%
 ---
 
 
-# Configuración del proceso de fondo
+# Configuración del proceso en segundo plano
 
 La integración de entrega de almacenamiento utiliza procesos en segundo plano y colas de mensajes para obtener un rendimiento y una escala óptimos. Cree entornos para las tiendas de Adobe Commerce mediante [variables de implementación](https://devdocs.magento.com/cloud/env/variables-deploy.html#cron_consumers_runner) que se inicia automáticamente [ejecute la cola de mensajes](https://devdocs.magento.com/guides/v2.4/config-guide/mq/rabbitmq-overview.html).
 

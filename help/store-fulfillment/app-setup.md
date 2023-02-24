@@ -4,9 +4,9 @@ description: Configure el [!DNL Store Assist] aplicación para administrar los f
 role: User, Admin
 level: Intermediate
 exl-id: bcb5b02b-0141-407a-ad55-6e10e8e1aa90
-source-git-commit: fda4620f57aa7aa9fb930b10f5717fee98983378
+source-git-commit: 4c10ab59ed304002cfde7398762bb70b223180ce
 workflow-type: tm+mt
-source-wordcount: '635'
+source-wordcount: '623'
 ht-degree: 0%
 
 ---
@@ -44,7 +44,7 @@ La aplicación de ayuda de la tienda requiere dos tipos de configuración:
 
    - **Cancelación de la tienda**: especifique si se pueden cancelar pedidos de la tienda y qué funciones tienen permisos de cancelación
 
-   - **Ventana de limpieza de pedidos**: especifique cuánto tiempo ha pasado el [Tiempo de espera estimado](enable-general.md#delivery-method-title-configuration) que un pedido seleccionado permanece en el ensayo antes de ser rebloqueado (por ejemplo, tres días). El valor predeterminado es de 7 días. Si esta configuración está activada, el pedido se cancela automáticamente cuando esta hora caduca. Los artículos se rebloquean y el comerciante recibe un correo electrónico de cancelación.
+   - **Ventana de limpieza de pedidos**: especifique cuánto tiempo ha pasado el [Tiempo de espera estimado](enable-general.md#delivery-method-title-configuration) que un pedido seleccionado permanece en el ensayo antes de ser rebloqueado (por ejemplo, tres días). El valor predeterminado es de siete días. Si esta configuración está activada, el pedido se cancela automáticamente cuando esta hora caduca. Los artículos se rebloquean y el comerciante recibe un correo electrónico de cancelación.
 
    - Personalice todo en las instrucciones de la aplicación (selección, ensayo, desactivación).
 
@@ -63,11 +63,11 @@ Una vez configurada y configurada la aplicación de ayuda de la tienda, Store As
 
 - Compruebe que el dispositivo móvil cumple los requisitos de [requisitos de hardware y software](solution-requirements.md#store-assist-app-requirements) para la solución Store Fulfillment.
 
-- Descargue la aplicación de ayuda de la tienda desde la [Apple App Store](https://apps.apple.com/us/app/store-assist-by-walmart/id1609281539){target=&quot;_blank&quot;} o la variable [Tienda Google Play](https://play.google.com/store/apps/details?id=com.walmart.faas.storeassist){target=&quot;_blank&quot;}.
+- Descargue la aplicación de ayuda de la tienda desde la [Apple App Store](https://apps.apple.com/us/app/store-assist-by-walmart/id1609281539){target="_blank"} or the [Google Play store](https://play.google.com/store/apps/details?id=com.walmart.faas.storeassist){target="_blank"}.
 
 - Store Associates requiere la siguiente información para iniciar sesión:
 
    - **[!UICONTROL Company name]** asociada a la cuenta de Store Assist
 
    - **Credenciales de cuenta de Store Assist**: credenciales de nombre de usuario y contraseña para su cuenta.
-   Un administrador de Adobe Commerce puede crear una cuenta de usuario y establecer permisos para [!DNL Store Assist app] cuentas de usuario para ubicaciones de tiendas que tienen [Recogida en la tienda](merchant-store-configuration.md#pickup-location-configuration) activada en la configuración de las tiendas de administración.
+   Un administrador de Adobe Commerce puede crear y administrar [!DNL Store Assist app] cuentas de usuario de todas las ubicaciones de tiendas que tengan [Recogida en la tienda](merchant-store-configuration.md#pickup-location-configuration) activada en la configuración de las tiendas de administración.
