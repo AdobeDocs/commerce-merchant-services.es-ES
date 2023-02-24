@@ -1,30 +1,30 @@
 ---
 title: '[!DNL Catalog Service and API Mesh]'
 description: '''[!DNL API Mesh] para Adobe Commerce proporciona una forma de integrar varias fuentes de datos a través de un extremo común de GraphQL."'
-source-git-commit: dd9ba7171cf6a199701b1abb8083a65326e89f5d
+source-git-commit: bdceeeeb1ed58c4ffbc87bee24c1eb3754b1cde9
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '234'
 ht-degree: 0%
 
 ---
 
 # [!DNL Catalog Service and API Mesh]
 
-La variable [Mesh de API para Adobe Developer App Builder](https://developer.adobe.com/graphql-mesh-gateway/gateway/overview/) permite a los desarrolladores integrar API privadas o de terceros y otras interfaces con productos de Adobe mediante Adobe IO.
+La variable [Mesh de API para Adobe Developer App Builder](https://developer.adobe.com/graphql-mesh-gateway/gateway/overview/) permite a los desarrolladores integrar API privadas o de terceros y otras interfaces con productos de Adobe mediante Adobe I/O Runtime.
 
 ![Diagrama de arquitectura del catálogo](assets/catalog-service-architecture-mesh.png)
 
 El primer paso para utilizar la red de API con el servicio de catálogo es conectar la red de API a su instancia. Consulte las instrucciones detalladas en [Crear una red](https://developer.adobe.com/graphql-mesh-gateway/gateway/create-mesh/).
 
-Para completar la configuración, necesitará la variable [Paquete CLI de IO de Adobe](https://developer.adobe.com/runtime/docs/guides/tools/cli_install/) instalado.
+Para completar la configuración, instale la variable [Paquete CLI de Adobe Developer](https://developer.adobe.com/runtime/docs/guides/tools/cli_install/).
 
-Una vez que Mesh está configurado en el Adobe IO, ejecute el siguiente comando que agrega un `CommerceCatalogServiceGraph` fuente de su red.
+Una vez que Mesh está configurado en Adobe I/O Runtime, ejecute el siguiente comando que agrega una `CommerceCatalogServiceGraph` fuente de su red.
 
 ```bash
 aio api-mesh:source:install "CommerceCatalogServiceGraph" -f variables.json
 ```
 
-donde `variables.json` es un archivo independiente que almacena los valores más utilizados para IO de Adobe.
+Donde `variables.json` es un archivo independiente que almacena los valores más utilizados para Adobe I/O Runtime.
 Por ejemplo, la clave de API se puede guardar en el archivo :
 
 ```json
@@ -40,7 +40,7 @@ Después de ejecutar este comando, el servicio de catálogo debe ejecutarse a tr
 La red de API permite a los usuarios consumir fuentes de datos externas para mejorar su instancia de Adobe Commerce. También se puede utilizar para configurar los datos de comercio existentes a fin de habilitar nuevas funciones.
 
 En este ejemplo, la red de API se utiliza para habilitar los precios de nivel en Adobe Commerce.
-Sustituya el `name `, `endpoint` y `x-api-key` valores.
+Sustituya el `name `, `endpoint`y `x-api-key` valores.
 
 ```json
 {
