@@ -2,14 +2,14 @@
 title: "[!DNL Quick Checkout] requisitos previos"
 description: "Verifique que su sistema cumpla los requisitos necesarios para usar la variable [!DNL Quick Checkout] para la extensión de Adobe Commerce."
 exl-id: fa61aa73-a2b6-4c69-ab42-cede74c15caa
-source-git-commit: 696aa03404fe270f13835b451b56759675d49778
+source-git-commit: b89427124cf76e7f36076454949191ee1d88f52c
 workflow-type: tm+mt
-source-wordcount: '128'
+source-wordcount: '126'
 ht-degree: 1%
 
 ---
 
-# [!DNL Quick Checkout] requisitos previos
+# [!DNL Quick Checkout] Requisitos previos
 
 La variable [!DNL Quick Checkout] es compatible con ambas [!DNL Magento Open Source] y Adobe Commerce. Consulte [Política del ciclo vital](https://experienceleague.adobe.com/docs/commerce-operations/release/planning/lifecycle-policy.html){target=_blank} para obtener más información sobre las versiones compatibles.
 
