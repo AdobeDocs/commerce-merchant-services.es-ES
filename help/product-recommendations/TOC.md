@@ -2,9 +2,9 @@
 user-guide-title: "[!DNL Product Recommendations] Guía"
 user-guide-description: Esta guía proporciona instrucciones detalladas para su uso [!DNL Product Recommendations] de Adobe Commerce.
 breadcrumb-title: "[!DNL Product Recommendations] Guía"
-source-git-commit: 1dbb0dcf588c71f916755d1b06b41d3244201b7e
+source-git-commit: d56fd57281a5b675e128cca75d4057756a0bf4bf
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '54'
 ht-degree: 0%
 
 ---
@@ -23,6 +23,7 @@ ht-degree: 0%
    - [Configuración](settings.md)
    - [Verificar](verify.md)
    - [Entorno de ensayo](staging-environment.md)
+   - [Integración del creador de páginas](page-builder.md)
 - [!DNL Product Recommendations] Administrador {#admin}
    - [Espacio de trabajo](workspace.md)
    - [Crear](create.md)

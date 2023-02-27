@@ -2,9 +2,9 @@
 title: Incorporación
 description: Conozca los requisitos y las plataformas compatibles en [!DNL Product Recommendations].
 exl-id: ad47ac39-8f6f-4765-84ad-9e3d104385db
-source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
+source-git-commit: d56fd57281a5b675e128cca75d4057756a0bf4bf
 workflow-type: tm+mt
-source-wordcount: '241'
+source-wordcount: '240'
 ht-degree: 0%
 
 ---
@@ -27,16 +27,14 @@ El proceso de incorporación para [!DNL Product Recommendations] requiere acceso
 
 ### Plataformas compatibles
 
-- Adobe Commerce en prem (EE) : 2.4.x
+- Adobe Commerce local (EE) : 2.4.x
 - Adobe Commerce on Cloud (ECE) : 2.4.x
 
 ### Compatibilidad con Page Builder
 
 [!DNL Product Recommendations] se puede agregar a una página como tipo de contenido de Page Builder . Para añadir la compatibilidad de Page Builder a Product Recommendations, consulte [Instalar y configurar](install-configure.md).
 
->[!NOTE]
->
->[!DNL Page Builder] las unidades de recomendación solo se pueden crear para la vista de tienda predeterminada.
+Consulte [[!DNL Page Builder] Integración](page-builder.md) para obtener instrucciones sobre cómo agregar [!DNL Product Recommendations] into [!DNL Page Builder] contenido.
 
 ### Compatibilidad con B2B {#b2bsupport}
 
