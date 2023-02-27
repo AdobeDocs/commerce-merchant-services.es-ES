@@ -4,7 +4,7 @@ description: Configure las opciones generales para habilitar [!DNL Store Fulfill
 role: User, Admin
 level: Intermediate
 exl-id: 51dcfc95-3dd6-40d9-bd26-d8409a25f3c8
-source-git-commit: 4c10ab59ed304002cfde7398762bb70b223180ce
+source-git-commit: 81723645efc5dd1f0179e32ba80bc57fbfc9d799
 workflow-type: tm+mt
 source-wordcount: '2541'
 ht-degree: 0%
@@ -86,7 +86,7 @@ Active la variable [!DNL Store Fulfillment] solución para añadir las funciones
 <tr>
 <td><strong>[!UICONTROL Enabled]</strong></td>
 <td>Habilite o deshabilite la solución. Cuando esté habilitado, configure y use las funcionalidades de cumplimiento de la tienda y establezca la conexión entre su tienda Adobe Commerce y [!DNL Store Fulfillment] servicios. Cuando está desactivado, todas las funciones de entrega de la tienda están deshabilitadas y no hay comunicación entre Adobe Commerce y los servicios de entrega de la tienda. La información del pedido no se puede procesar ni recibir.</td>
-<td>Global</td>
+<td>Sitio web</td>
 <td>Sí</td>
 </tr>
 </tbody>
