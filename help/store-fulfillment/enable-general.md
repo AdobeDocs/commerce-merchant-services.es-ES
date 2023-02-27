@@ -4,9 +4,9 @@ description: Configure las opciones generales para habilitar [!DNL Store Fulfill
 role: User, Admin
 level: Intermediate
 exl-id: 51dcfc95-3dd6-40d9-bd26-d8409a25f3c8
-source-git-commit: 81723645efc5dd1f0179e32ba80bc57fbfc9d799
+source-git-commit: e7493618e00e28e2de5043ae2d7e05a81110d8f1
 workflow-type: tm+mt
-source-wordcount: '2541'
+source-wordcount: '2440'
 ht-degree: 0%
 
 ---
@@ -337,39 +337,6 @@ Configure los ajustes de la cuenta de usuario y la seguridad de contraseña de l
 <tr>
 <td><strong>[!UICONTROL Password Lifetime]</strong></td>
 <td>Número de días que una contraseña sigue siendo válida antes de un cambio de contraseña requerido. Deje esta opción en blanco.</td>
-<td>Global</td>
-<td>No</td>
-</tr>
-</tbody>
-</table>
-
-### Autenticación de dos factores
-
-<table>
-<thead>
-<tr>
-<td><strong>Campo</strong></td>
-<td><strong>Descripción</strong></td>
-<td><strong>Ámbito</strong></td>
-<td><strong>Requerido</strong></td>
-</tr>
- </thead>
- <tbody>
-<tr>
-<td><strong>[!UICONTROL APP User 2FA]</strong></td>
-<td>Habilite o deshabilite la autenticación de dos factores para asociados de tiendas. Cuando se habilita, se solicita a la asociada de almacén que proporcione una contraseña única generada por un proveedor de autenticación.</td>
-<td>Global</td>
-<td>No</td>
-</tr>
-<tr>
-<td><strong>[!UICONTROL APP 2FA Policy]</strong></td>
-<td>Establece la directiva de aplicación para la autenticación de dos factores.<br></br><strong>[!UICONTROL Optional]</strong>: La asociada de tienda puede evitar la autenticación de dos factores si no hay ningún proveedor establecido.<br></br><strong>[!UICONTROL Mandatory]</strong>: El asociado de tienda es necesario para completar la autenticación de dos factores.</td>
-<td>Global</td>
-<td>No</td>
-</tr>
-<tr>
-<td><strong>[!UICONTROL 2FA Providers]</strong></td>
-<td>Seleccione uno o varios servicios de proveedor de autenticación para ofrecer asociados de almacén. Para configurar la autenticación y la autenticación de dos factores, los asociados de la tienda deben instalar la aplicación de autenticación de uno de los proveedores disponibles instalados en sus dispositivos móviles.</td>
 <td>Global</td>
 <td>No</td>
 </tr>

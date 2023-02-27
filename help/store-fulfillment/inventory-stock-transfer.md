@@ -4,9 +4,9 @@ description: '"Configure las existencias para el [!DNL Store Fulfillment solutio
 role: User, Admin
 level: Intermediate
 exl-id: 669d4dce-4cac-4bde-acc5-26c70a51f7f1
-source-git-commit: 4c10ab59ed304002cfde7398762bb70b223180ce
+source-git-commit: e7493618e00e28e2de5043ae2d7e05a81110d8f1
 workflow-type: tm+mt
-source-wordcount: '358'
+source-wordcount: '396'
 ht-degree: 0%
 
 ---
@@ -15,6 +15,10 @@ ht-degree: 0%
 # Transferencia de fuentes de Inventory management
 
 La variable [!DNL Store Fulfillment] utiliza Adobe Commerce Inventory management nativo. De forma predeterminada, la variable [!DNL Commerce] asigna todo el inventario web al inventario predeterminado, que no puede tener asignados orígenes adicionales. Dado que a un sitio web solo se le puede asignar un único inventario, un comerciante debe configurar un nuevo inventario de existencias y, opcionalmente, transferir su inventario de origen predeterminado a un origen asignado al ámbito apropiado. A continuación, la fuente se puede asignar al nuevo inventario de existencias.
+
+>[!IMPORTANT]
+>
+>Los comerciantes deben mantener la fuente predeterminada para todos los productos incluidos en los tipos de producto de grupo y paquete. Estos productos necesitan una cantidad de inventario que cumpla el umbral de cantidad mínima para los artículos de existencias e incluya un estado de existencias de [!UICONTROL In Stock].
 
 Estos cambios de configuración le ayudan a realizar tres tareas:
 

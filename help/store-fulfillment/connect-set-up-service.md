@@ -4,9 +4,9 @@ description: Establezca las conexiones entre Adobe Commerce y la solución Store
 role: User, Admin
 level: Intermediate
 exl-id: 74c71c43-305a-4ea7-84f8-95f3ce0a9482
-source-git-commit: 4c10ab59ed304002cfde7398762bb70b223180ce
+source-git-commit: e7493618e00e28e2de5043ae2d7e05a81110d8f1
 workflow-type: tm+mt
-source-wordcount: '370'
+source-wordcount: '437'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 Conecte los servicios de cumplimiento de la tienda con Adobe Commerce agregando las credenciales de autenticación y los datos de conexión necesarios al administrador de Adobe Commerce.
 
-- **[Configurar [!DNL Commerce integration settings]](#create-the-commerce-integration)**-Cree una integración de Adobe Commerce para los servicios de entrega de la tienda y genere los tokens de acceso para autenticar las solicitudes entrantes de los servidores de entrega de la tienda.
+- **[Configurar [!DNL Commerce integration settings]](#create-an-adobe-commerce-integration)**-Cree una integración de Adobe Commerce para los servicios de entrega de la tienda y genere los tokens de acceso para autenticar las solicitudes entrantes de los servidores de entrega de la tienda.
 
 - **[Configurar las credenciales de cuenta para los servicios de cumplimiento de la tienda](#configure-store-fulfillment-account-credentials)**-Añada sus credenciales para conectar Adobe Commerce a su cuenta de cumplimiento de la tienda.
 
@@ -25,7 +25,7 @@ Conecte los servicios de cumplimiento de la tienda con Adobe Commerce agregando 
 
 ## Creación de una integración con Adobe Commerce
 
-Para integrar Adobe Commerce con los servicios de entrega de tiendas, cree una integración de comercio y genere tokens de acceso que se puedan utilizar para autenticar solicitudes desde los servidores de entrega de tiendas.
+Para integrar Adobe Commerce con los servicios de entrega de tiendas, cree una integración de comercio y genere tokens de acceso que se puedan utilizar para autenticar solicitudes desde los servidores de entrega de tiendas. También debe actualizar el Adobe Commerce [!UICONTROL Consumer Settings] opciones para evitar `The consumer isn't authorized to access %resources.` errores de respuesta en solicitudes de Adobe Commerce a [!DNL Store Fulfillment] servicios.
 
 1. Desde el administrador, cree la integración para el cumplimiento del almacén.
 
@@ -41,10 +41,16 @@ Para integrar Adobe Commerce con los servicios de entrega de tiendas, cree una i
 
 1. Póngase en contacto con su administrador de cuentas para completar la configuración en el lado del cumplimiento de la tienda y para autorizar la integración.
 
+1. Habilitar Adobe Commerce [!UICONTROL Consumer Settings] a [!UICONTROL Allow OAuth Access Tokens to be used as standalone Bearer tokens].
 
->[!NOTE]
+   - Desde el administrador, vaya a **[!UICONTROL Stores]** >  [!UICONTROL Configuration] > **[!UICONTROL Services]** >  **[!UICONTROL OAuth]** > **[!UICONTROL Consumer Settings]**
+
+   - Configure las variables [!UICONTROL Allow OAuth Access Tokens to be used as standalone Bearer tokens] a **[!UICONTROL Yes]**.
+
+>[!IMPORTANT]
 >
->Para obtener instrucciones detalladas, consulte [Integraciones](https://docs.magento.com/user-guide/system/integrations.html) en el _Guía del usuario de Adobe Commerce_.
+> El token de integración es específico del entorno. Si restaura la base de datos para un entorno con los datos de origen de un entorno diferente (por ejemplo, restaurando los datos de producción de un entorno de ensayo), excluya la `oauth_token` de la exportación de la base de datos para que los detalles del token de integración no se sobrescriban durante la operación de restauración.
+
 
 ## Configuración de las credenciales de la cuenta de cumplimiento de la tienda
 
