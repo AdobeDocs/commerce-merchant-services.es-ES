@@ -1,166 +1,106 @@
 ---
-title: '''[!DNL Catalog Service] Notas de la versión'
-description: La información de la última versión de [!DNL Catalog Service] para Adobe Commerce.
+title: '[!DNL Catalog Service] Notas de la versión'
+description: La información de la versión más reciente de [!DNL Catalog Service] para Adobe Commerce.
 exl-id: 9bf8e3f7-5b74-4755-867e-ac1c5000ff33
-source-git-commit: fd3f71a1b3d958f3aa79f0ba6603d30e16e70507
+source-git-commit: 2767de477e274c1855d21d6e678cc6139ff4faa4
 workflow-type: tm+mt
-source-wordcount: '788'
+source-wordcount: '515'
 ht-degree: 0%
 
 ---
 
-# [!DNL Catalog Service] Notas de la versión
+# [!DNL Catalog Service] Notas de versión
 
-Estas notas de la versión describen las versiones más recientes de [!DNL Catalog Service] e incluyen:
+Estas notas de la versión describen las versiones más recientes de [!DNL Catalog Service] e incluir:
 
 ![Nuevo](../assets/new.svg) Nuevas funciones
-![Corrección](../assets/fix.svg) Correcciones y mejoras
+![Fix](../assets/fix.svg) Correcciones y mejoras
 ![Error](../assets/bug.svg) Problemas conocidos
 
 ## Versión principal actual
 
-### Versión 1.4
+### Versión V1.5
 
-Fecha de versión: 2023-2-7 Compatible con Adobe Commerce (EE): 2.4.x Compatible con Adobe Commerce para Cloud (ECE): 2.4.x Estabilidad: Disponibilidad general
+Fecha de versión: 2023-3-6 Compatible con Adobe Commerce (EE): 2.4.4+ Compatible con Adobe Commerce para Cloud (ECE): 2.4.4+ Estabilidad: General Disponibilidad
 
-![Nuevo](../assets/new.svg) Se ha publicado el paquete de metapaquete catálogo-servicio para simplificar los pasos de instalación.
-![Corrección](../assets/fix.svg) Mejoras de escalabilidad y rendimiento de la API.
+![Nuevo](../assets/new.svg) Añadido [`categories`](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/queries/categories/) Funcionalidad de GraphQL.
+![Fix](../assets/fix.svg) Rendimiento y escalabilidad de API mejorados.
+
+### Versión V1.4
+
+Fecha de versión: 2023-2-7 Compatible con Adobe Commerce (EE): 2.4.x Compatible con Adobe Commerce para Cloud (ECE): 2.4.x Estabilidad: General Disponibilidad
+
+![Nuevo](../assets/new.svg) Se ha publicado un metapaquete de servicio de catálogo para simplificar los pasos de instalación.
+![Fix](../assets/fix.svg) Mejoras de rendimiento y escalabilidad de API.
 
 #### Limitaciones conocidas
 
 Estas funciones aún no son compatibles:
 
 * Paquete de productos con precio fijo
-* No se reciben actualizaciones cuando se eliminan variantes del catálogo.
-* El tamaño máximo para la carga útil de atributos dinámicos es de 9 MB.
-* Precio de producto de grupo. Se puede calcular con precios de producto simples.
+* No se recibe ninguna actualización cuando se eliminan variantes del catálogo.
+* El tamaño máximo de la carga útil de atributos dinámicos es de 9 MB.
+* Precio del producto del grupo. Se puede calcular con precios de productos simples.
 * En una matriz de imágenes, solo la primera imagen contiene funciones.
 * Muestras de color
-* Carga de la página de detalles del producto a través de la dirección URL del producto.
+* Carga de la página de detalles del producto mediante la dirección URL del producto.
 
 Las siguientes limitaciones se pueden resolver mediante la API principal de GraphQL:
 
-* Precio mínimo publicitario
-* Precio de nivel
-* Productos descargables y tarjetas de regalo
+* Precio Mínimo Anunciado
+* Precios de nivel
+* Productos descargables y tarjetas regalo
 * Categorías (`categories` y `categoryList`)
 
-### Versión 1.3
+### Versión V1.3
 
 Fecha de versión: 2023-1-17 Compatible con Adobe Commerce (EE): 2.4.x Compatible con Adobe Commerce para Cloud (ECE): 2.4.x Estabilidad: Disponibilidad general
 
-![Nuevo](../assets/new.svg) Se ha simplificado y mejorado la experiencia de integración.
-![Nuevo](../assets/new.svg) Hay nuevos extremos de entorno limitado para clientes disponibles para pruebas previas a la producción.
+![Nuevo](../assets/new.svg) Simplificación y mejora de la experiencia de incorporación.
+![Nuevo](../assets/new.svg) Hay nuevos extremos de zona protegida del cliente disponibles para pruebas previas a la producción.
 ![Nuevo](../assets/new.svg) Se agregó compatibilidad con productos virtuales.
-![Corrección](../assets/fix.svg) Mejoras de escalabilidad y rendimiento de la API.
+![Fix](../assets/fix.svg) Mejoras de rendimiento y escalabilidad de API.
 
-#### Limitaciones conocidas
+### Versión V1.1
 
-Estas funciones aún no son compatibles:
+Fecha de versión: 18-11-2022 Compatible con Adobe Commerce (EE): 2.4.x Compatible con Adobe Commerce para Cloud (ECE): 2.4.x Estabilidad: General Disponibilidad
 
-* Paquete de productos con precio fijo
-* No se reciben actualizaciones cuando se eliminan variantes del catálogo.
-* El tamaño máximo para la carga útil de atributos dinámicos es de 9 MB.
-* Precio de producto de grupo. Se puede calcular con precios de producto simples.
-* En una matriz de imágenes, solo la primera imagen contiene funciones.
-* Muestras de color
-* Carga de la página de detalles del producto a través de la dirección URL del producto.
-
-Las siguientes limitaciones se pueden resolver mediante la API principal de GraphQL:
-
-* Precio mínimo publicitario
-* Precio de nivel
-* Productos descargables y tarjetas de regalo
-* Categorías (`categories` y `categoryList`)
-
-### Versión 1.1
-
-Fecha de versión: 2022-11-18 Compatible con Adobe Commerce (EE): 2.4.x Compatible con Adobe Commerce para Cloud (ECE): 2.4.x Estabilidad: Disponibilidad general
-
-![Nuevo](../assets/new.svg) El servicio de catálogo ahora es compatible con el Adobe [Mesh de API](https://developer.adobe.com/graphql-mesh-gateway/).
-![Corrección](../assets/fix.svg) Hemos mejorado la escalabilidad de la API y el rendimiento general.
-
-#### Limitaciones conocidas
-
-Estas funciones aún no son compatibles:
-
-* Paquete de productos con precio fijo
-* No se reciben actualizaciones cuando se eliminan variantes del catálogo.
-* El tamaño máximo para la carga útil de atributos dinámicos es de 9 MB.
-* Precio de producto de grupo. Se puede calcular con precios de producto simples.
-* En una matriz de imágenes, solo la primera imagen contiene funciones.
-* Muestras de color
-* Carga de la página de detalles del producto a través de la dirección URL del producto.
-
-Las siguientes limitaciones se pueden resolver mediante la API de GraphQL:
-
-* Precio mínimo publicitario
-* Precio de nivel
-* Productos descargables y tarjetas de regalo
-* Categorías (`categories` y `categoryList`)
+![Nuevo](../assets/new.svg) El servicio de catálogo ahora admite Adobes [API Mesh](https://developer.adobe.com/graphql-mesh-gateway/).
+![Fix](../assets/fix.svg) Hemos mejorado la escalabilidad de la API y el rendimiento general.
 
 ### Versión 1.0
 
-Fecha de versión: 2022-10-04 Compatible con Adobe Commerce (EE): 2.4.x Compatible con Adobe Commerce para Cloud (ECE): 2.4.x Estabilidad: Disponibilidad general
+Fecha de versión: 2022-10-04 Compatible con Adobe Commerce (EE): 2.4.x Compatible con Adobe Commerce para Cloud (ECE): 2.4.x Estabilidad: General Disponibilidad
 
-![Nuevo](../assets/new.svg) Ahora admiten productos agrupados y agrupados.
-![Nuevo](../assets/new.svg) Se han agregado anulaciones de visibilidad B2B. Los productos ahora se pueden buscar y se pueden agregar al carro de compras para grupos de clientes específicos.
-![Corrección](../assets/fix.svg) El servicio es ahora más estable y ha mejorado el rendimiento.
-
-#### Limitaciones conocidas
-
-Estas funciones aún no son compatibles:
-
-* Precio de nivel
-* Las actualizaciones no se reciben cuando se eliminan variantes del catálogo
-* El tamaño máximo de la carga útil de atributos dinámicos es &lt;9 MB
-* Precio fijo de los productos del paquete
-* Precio total de los productos agrupados
-* Compatibilidad con tipos de producto de tarjeta de regalo, descargables y virtuales
-* Precio mínimo publicitado (MAP)
+![Nuevo](../assets/new.svg) Ahora admite productos agrupados y agrupados.
+![Nuevo](../assets/new.svg) Se han añadido anulaciones de visibilidad B2B. Ahora se pueden buscar productos y se pueden agregar al carro de compras para grupos de clientes específicos.
+![Fix](../assets/fix.svg) El servicio es ahora más estable y ha mejorado el rendimiento.
 
 ## Versiones anteriores
 
-Versiones ++Beta
++++Versiones beta
 
 ### Versión 0.3: beta+
 
-Fecha de versión: 2022-09-12 Compatible con Adobe Commerce (EE): 2.4.x Compatible con Adobe Commerce para Cloud (ECE): 2.4.x Estabilidad: Beta
+Fecha de versión: 12-09-2022 Compatible con Adobe Commerce (EE): 2.4.x Compatible con Adobe Commerce para Cloud (ECE): 2.4.x Estabilidad: Beta
 
-![Nuevo](../assets/new.svg) Las imágenes para variantes son compatibles: las imágenes de producto se devuelven en función de las opciones seleccionadas
-![Nuevo](../assets/new.svg) Funciones de soporte de precios: permitir que solo los miembros de grupos de clientes específicos vean el precio de los productos
-![Corrección](../assets/fix.svg) Mayor estabilidad y rendimiento del servicio
+![Nuevo](../assets/new.svg) Compatibilidad con imágenes para variantes: las imágenes de producto se devuelven en función de las opciones seleccionadas
+![Nuevo](../assets/new.svg) Funciones para el soporte de precios: permitir que solo los miembros de grupos de clientes específicos vean el precio de los productos
+![Fix](../assets/fix.svg) Estabilidad y rendimiento mejorados del servicio
 ![Nuevo](../assets/new.svg) Las actualizaciones se reciben cuando los productos se eliminan del catálogo
 
-#### Limitaciones conocidas
-
-Estas funciones aún no son compatibles:
-
-* Precio de nivel
-* Paquete y productos agrupados
-* No se reciben actualizaciones cuando se eliminan variantes del catálogo
-* Anulaciones de visibilidad B2B: se pueden buscar productos o agregarlos al carro de compras para grupos de clientes específicos
-
-### Versión beta
+### Lanzamiento beta
 
 Fecha de versión: 2022-08-09 Compatible con Adobe Commerce (EE): 2.4.x Compatible con Adobe Commerce para Cloud (ECE): 2.4.x Estabilidad: Beta
 
-![Nuevo](../assets/new.svg) La variable `products` y `refineProduct` las consultas devuelven los siguientes datos:
+![Nuevo](../assets/new.svg) El `products` y `refineProduct` Las consultas de devuelven los siguientes datos:
 
 * Atributos de producto predefinidos (del sistema).
 * Atributos de producto dinámicos y filtrarlos por función (página de visualización de producto/página de lista de productos).
 * Opciones de producto.
-* Imágenes del producto y filtrarlas por función (PDP/PLP).
-* Un precio específico para productos simples e intervalos de precios para productos configurables.
-* Precios e intervalos de precios del grupo de clientes. Devuelven un precio predeterminado de reserva en compradores sin un grupo de clientes.
-* Tipos de productos que utilizan precios específicos del cliente de B2B.
-
-#### Limitaciones conocidas
-
-* No se admiten paquetes y productos agrupados.
-* No se admite el precio de nivel.
-* En una matriz de imágenes, solo la primera imagen contiene funciones.
-* Las imágenes de las variantes no se recuperan.
-* Las actualizaciones no se reciben cuando se eliminan productos o variantes del catálogo.
+* Imágenes de productos y filtrarlas por función (PDP/PLP).
+* Un precio específico para productos simples y rangos de precios para productos configurables.
+* Precios de grupo de clientes e intervalos de precios. Devuelven un precio predeterminado alternativo para los compradores sin grupo de clientes.
+* Tipos de productos que utilizan precios específicos del cliente B2B.
 
 +++
