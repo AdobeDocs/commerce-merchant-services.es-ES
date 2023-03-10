@@ -2,9 +2,9 @@
 title: "[!DNL Payment Services] Notas de la versión"
 description: Revise las notas de la versión para obtener información acerca de todos los [!DNL Payment Services] versiones.
 exl-id: 104aa2c7-7735-4ac2-8ed1-a03cd9911273
-source-git-commit: 39bd0763b7aa6f853d0bff80c8122e899c1c58d8
+source-git-commit: e076864a117be007eeb8003d9d6a472b704996ba
 workflow-type: tm+mt
-source-wordcount: '1590'
+source-wordcount: '1758'
 ht-degree: 0%
 
 ---
@@ -56,6 +56,26 @@ _28 de junio de 2021_
 ![Nuevo](../assets/new.svg)<!-- Issue PAY-2761 --> Ahora puede personalizar los datos que se muestran en la variable [Informe de estado de pago del pedido](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/order-payment-status.html#show-and-hide-columns) y el [Informe de pagos](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/payouts.html#show-and-hide-columns) mostrando u ocultando columnas mediante el control Configuración de columna.
 
 +++
+
+## v2.0.0
+
+_10 de marzo de 2023_
+
+[!BADGE Compatibilidad]{type=Informative tooltip="Compatibilidad"}
+
+![Nuevo](../assets/new.svg)<!-- Issue PAY-4152 --> Se ha agregado compatibilidad con PHP 8.2 y Adobe Commerce 2.4.6. No compatible con PHP 7.x.
+
+## v1.6.1
+
+_10 de marzo de 2023_
+
+[!BADGE Compatibilidad]{type=Informative tooltip="Compatibilidad"}
+
+![Fix](../assets/fix.svg)<!-- Issue PAY-4226 --> Se ha corregido un problema que impedía que los nuevos comerciantes de servicios de pago utilizaran el cierre de compra en el Administrador. Payment Services anteriormente utilizaba el ID de cliente de Commerce, que no existe para nuevos clientes.
+
+![Fix](../assets/fix.svg)<!-- Issue PAY-4205 --> Se ha corregido un problema que provocaba que el estado de la dirección de envío especificada se reemplazara por el estado en la configuración de impuestos predeterminada durante la desprotección con [Opción PayPal](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/payments-checkout/payments-options.html#paypal-smart-buttons). Ahora, los clientes pueden enviar sus pedidos a un estado distinto del configurado como predeterminado en la configuración de impuestos del comerciante.
+
+![Fix](../assets/fix.svg)<!-- Issue PAY-4202 --> Se ha corregido un problema que impedía que los clientes usaran el depósito de tarjetas para completar una compra o eliminar un método de pago abovedado para una tienda [uso del `Authorize and Capture` acción de pago](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/get-started/production.html#set-payment-services-as-payment-method). Anteriormente, aparecía el error &quot;No se encontró el ID de Provider Vault&quot; cuando el cliente intentaba utilizar o modificar sus tarjetas de crédito abovedadas.
 
 ## v1.6.0
 
