@@ -1,6 +1,6 @@
 ---
 user-guide-title: "[!DNL Quick Checkout] para Adobe Commerce"
-user-guide-description: "Aprenda a usar la variable [!DNL Quick Checkout] podría beneficiar a su instancia de Adobe Commerce y cómo incorporar y configurar correctamente la extensión."
+user-guide-description: "Descubra cómo [!DNL Quick Checkout] podría beneficiar a su instancia de Adobe Commerce y a cómo incorporar y configurar correctamente la extensión."
 breadcrumb-title: Guía de servicios al comerciante
 source-git-commit: b89427124cf76e7f36076454949191ee1d88f52c
 workflow-type: tm+mt
@@ -13,26 +13,26 @@ ht-degree: 0%
 # [!DNL Quick Checkout] para Adobe Commerce {#quick-checkout}
 
 - [Introducción a [!DNL Quick Checkout]](overview.md)
-- [Notas de la versión](release-notes.md)
-- Incorporado [!DNL Quick Checkout] {#getting-started}
+- [Notas de versión](release-notes.md)
+- A bordo [!DNL Quick Checkout] {#getting-started}
    - [Requisitos previos](prerequisites.md)
    - [Instalar](install.md)
    - [Incorporación](onboarding.md)
    - [Configuración](settings-quick-checkout.md)
    - [!DNL Quick Checkout] Panel de administración {#quick-checkout-admin-panel}
-      - [Configuración del panel de administración](admin-panel.md)
+      - [Configurar el panel de administración](admin-panel.md)
       - [Configuración de usuario](user-roles-setup.md)
-   - [!DNL Quick Checkout] creación de informes {#quick-checkout-reporting}
+   - [!DNL Quick Checkout] informe {#quick-checkout-reporting}
       - [Informes](reports.md)
-- Prueba y validación {#test-validate}
+- Probar y validar {#test-validate}
    - [Pruebas](testing.md)
    - [Información para desarrolladores](developer.md)
-- Cierre de compra {#manage-checkout}
+- Finalizar compra {#manage-checkout}
    - [Página de cierre de compra](checkout-page.md)
-   - Opciones de cierre de compra {#checkout-options}
-      - [Flujo de cierre de compra](checkout-flow.md)
-      - [Cierre de compra del usuario con tornillos](checkout-bolt.md)
-      - [Cierre de compra del usuario de Adobe Commerce](checkout-adobe-commerce.md)
+   - Opciones de cierre {#checkout-options}
+      - [Flujo de cierre](checkout-flow.md)
+      - [Cierre de usuario de pernos](checkout-bolt.md)
+      - [Cierre de compra de usuario Adobe Commerce](checkout-adobe-commerce.md)
    - [Métodos de pago](payment-methods.md)
-- [Duración de la sesión del usuario](user-session-lifetime.md)
-- [Crear un pedido en Administración](create-order-admin.md)
+- [Duración de sesión de usuario](user-session-lifetime.md)
+- [Creación de un pedido en Administración](create-order-admin.md)

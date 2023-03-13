@@ -1,6 +1,6 @@
 ---
 user-guide-title: "[!DNL Product Recommendations] Guía"
-user-guide-description: Esta guía proporciona instrucciones detalladas para su uso [!DNL Product Recommendations] de Adobe Commerce.
+user-guide-description: Esta guía proporciona instrucciones detalladas para utilizar [!DNL Product Recommendations] de Adobe Commerce.
 breadcrumb-title: "[!DNL Product Recommendations] Guía"
 source-git-commit: d56fd57281a5b675e128cca75d4057756a0bf4bf
 workflow-type: tm+mt
@@ -9,23 +9,23 @@ ht-degree: 0%
 
 ---
 
-# [!DNL Product Recommendations] para comercio {#product-recommendations}
+# [!DNL Product Recommendations] para Commerce {#product-recommendations}
 
 - [Información general de guía](guide-overview.md)
 - [Introducción a [!DNL Product Recommendations]](overview.md)
-- [Notas de la versión](release-notes.md)
-- Introducción {#getting-started}
+- [Notas de versión](release-notes.md)
+- Primeros pasos {#getting-started}
    - [Incorporación](onboarding.md)
    - [Flujo de trabajo de implementación](implementation-workflow.md)
    - [Datos de comportamiento](behavioral-data.md)
-   - [Sin encabezado](headless.md)
+   - [Headless](headless.md)
    - [Instalar](install-configure.md)
    - [Configuración](settings.md)
    - [Verificar](verify.md)
    - [Entorno de ensayo](staging-environment.md)
-   - [Integración del creador de páginas](page-builder.md)
+   - [Integración de Page Builder](page-builder.md)
 - [!DNL Product Recommendations] Administrador {#admin}
-   - [Espacio de trabajo](workspace.md)
+   - [Workspace](workspace.md)
    - [Crear](create.md)
    - [Editar](edit.md)
    - [Tipos de recomendación](type.md)
@@ -35,4 +35,4 @@ ht-degree: 0%
    - [Información general](development-overview.md)
    - [Recopilar datos](events.md)
    - [Personalizar](customize.md)
-   - [Gestión de restricciones de cookies](setting-cookie.md)
+   - [Controlar restricciones de cookies](setting-cookie.md)
