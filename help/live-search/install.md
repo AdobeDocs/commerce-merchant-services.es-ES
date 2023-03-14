@@ -2,16 +2,16 @@
 title: "Instalar [!DNL Live Search]"
 description: '"Obtenga información sobre cómo instalar, actualizar y desinstalar [!DNL Live Search] de Adobe Commerce".'
 exl-id: aa251bb0-d52c-4cff-bccb-76a08ae2a3b2
-source-git-commit: 484319fc1df6c29c972b57c13bd0ed711e374e99
+source-git-commit: a589956b5594283d7ceb620abc76b2c352f8f524
 workflow-type: tm+mt
-source-wordcount: '1266'
+source-wordcount: '1288'
 ht-degree: 0%
 
 ---
 
 # Instalar [!DNL Live Search]
 
-Live Search se instala como extensión desde Adobe Marketplace. Después del [!DNL Live Search] El módulo de (con módulos de catálogo como dependencias) está instalado y configurado. [!DNL Commerce] comienza a compartir datos de catálogo y búsqueda con los servicios SaaS. En este punto, *Administrador* los usuarios pueden configurar, personalizar y administrar facetas de búsqueda, sinónimos y reglas de comercialización.
+[!DNL Live Search] se instala como una extensión desde Adobe Marketplace. Después del [!DNL Live Search] El módulo de (con módulos de catálogo como dependencias) está instalado y configurado. [!DNL Commerce] comienza a compartir datos de catálogo y búsqueda con los servicios SaaS. En este punto, *Administrador* los usuarios pueden configurar, personalizar y administrar facetas de búsqueda, sinónimos y reglas de comercialización.
 
 En este tema se proporcionan instrucciones para realizar las siguientes acciones:
 
@@ -56,8 +56,7 @@ En esta situación, las operaciones de tienda se interrumpen mientras que la var
 1. Ejecute los siguientes comandos para deshabilitar [!DNL Elasticsearch] y módulos relacionados, e instale [!DNL Live Search]:
 
    ```bash
-   bin/magento module:disable Magento_Elasticsearch Magento_Elasticsearch6 Magento_Elasticsearch7 Magento_ElasticsearchCatalogPermissions Magento_InventoryElasticsearch 
-   Magento_ElasticsearchCatalogPermissionsGraphQl
+   bin/magento module:disable Magento_Elasticsearch Magento_Elasticsearch7 Magento_OpenSearch Magento_ElasticsearchCatalogPermissions Magento_InventoryElasticsearch Magento_ElasticsearchCatalogPermissionsGraphQl
    ```
 
    ```bash
@@ -86,15 +85,15 @@ En esta situación, las operaciones de tienda se interrumpen mientras que la var
 
 ## Método 2: Instalar con el Elasticsearch {#method-2}
 
+>[!IMPORTANT]
+>
+>Debido al anuncio de fin de soporte de Elasticsearch 7 para agosto de 2023, se recomienda que todos los clientes de Adobe Commerce migren al motor de búsqueda OpenSearch 2.x. Para obtener información sobre la migración del motor de búsqueda durante la actualización del producto, consulte [Migración a OpenSearch](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/prepare/opensearch-migration.html) en el _Guía de actualización_.
+
 Este método de incorporación se recomienda al instalar [!DNL Live Search] hasta:
 
 * Una producción existente [!DNL Commerce] instalación
 
 En este escenario, [!DNL Elasticsearch] administra temporalmente las solicitudes de búsqueda de la tienda mientras que la variable [!DNL Live Search] El servicio indexa todos los productos en segundo plano, sin interrupciones en las operaciones normales de la tienda. [!DNL Elasticsearch] está desactivado y [!DNL Live Search] se activa después de indexar y sincronizar todos los datos del catálogo.
-
->[!TIP]
->
->Para evitar errores de escritura, pase el ratón sobre el extremo derecho del cuadro de código y haga clic en [!UICONTROL **Copiar**] y péguelo en la línea de comandos.
 
 1. Para descargar `live-search` ejecute lo siguiente desde la línea de comandos:
 
@@ -209,9 +208,9 @@ Para actualizar [!DNL Live Search], ejecute lo siguiente desde la línea de coma
 composer update magento/live-search --with-dependencies
 ```
 
-Para actualizar a una versión principal como de 1.0.0 a 2.0.0, edite la raíz del proyecto [!DNL Composer] `.json` como se indica a continuación:
+Para actualizar a una versión principal como de 2.0.0 a 3.0.1, edite la raíz del proyecto [!DNL Composer] `.json` como se indica a continuación:
 
-1. Si está instalado `magento/live-search` la versión es `1.3.1` o inferior, y está actualizando a la versión `2.0.0` O superior, ejecute el siguiente comando antes de la actualización:
+1. Si está instalado `magento/live-search` la versión es `2.0.3` o inferior, y está actualizando a la versión `3.0.0` O superior, ejecute el siguiente comando antes de la actualización:
 
    ```bash
    bin/magento module:enable Magento_AdvancedSearch
@@ -230,7 +229,7 @@ Para actualizar a una versión principal como de 1.0.0 a 2.0.0, edite la raíz d
    ```json
    "require": {
       ...
-      "magento/live-search": "^2.0",
+      "magento/live-search": "^3.0",
       ...
     }
    ```
@@ -259,6 +258,6 @@ Lo siguiente [!DNL Live Search] Las dependencias son capturadas por [!DNL Compos
 
 | Dependencia | Descripción |
 |--- |--- |
-| Exportar módulos | Los siguientes módulos recopilan y sincronizan datos del catálogo:<br />`saas-export`<br />`module-bundle-product-exporter`<br />`module-catalog-data-exporter`<br />`module-catalog-inventory-data-exporter`<br />`module-catalog-url-rewrite-data-exporter`<br />`module-configurable-product-data-exporter`<br />`module-data-exporter`<br />`module-parent-product-data-exporter` |
-| `services-connector` | Necesario para configurar la conexión con Commerce Services. |
-| `module-services-id` | Necesario para configurar la conexión con Commerce Services. |
+| Exportar módulos | Los siguientes módulos recopilan y sincronizan datos del catálogo:<br />`module-sass-catalog`<br />`module-sass-product-override`<br />`module-bundle-product-data-exporter`<br />`module-catalog-data-exporter`<br />`module-catalog-inventory-data-exporter`<br />`module-catalog-url-rewrite-data-exporter`<br />`module-configurable-product-data-exporter`<br />`module-data-exporter`<br />`module-parent-product-data-exporter`<br />`module-product-override-data-exporter` |
+| `data-services` | Necesario para configurar la conexión con Commerce Services. |
+| `services-id` | Necesario para configurar la conexión con Commerce Services. |

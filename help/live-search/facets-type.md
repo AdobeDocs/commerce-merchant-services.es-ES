@@ -1,54 +1,42 @@
 ---
 title: "Tipos de facetas"
-description: "[!DNL Live Search] las facetas son dinámicas y aparecen en la lista Filtros cuando corresponde."
+description: '"[!DNL Live Search] las facetas son dinámicas y aparecen en la lista Filtros cuando son relevantes".'
 exl-id: 49fb7609-64b3-4ae8-928d-54c99032d919
-source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
+source-git-commit: 995f528abc0011c6ae7c4c524982c301072ec2eb
 workflow-type: tm+mt
-source-wordcount: '473'
+source-wordcount: '389'
 ht-degree: 0%
 
 ---
 
 # Tipos de facetas
 
-Todo [!DNL Live Search] las facetas son dinámicas y aparecen en la *Filtros* solo cuando corresponda. La lista de facetas disponibles cambia según los productos devueltos. Las siguientes características afectan a su presentación y comportamiento:
+[!DNL Live Search] utiliza una variedad de tipos de facetas, que aparecen en la variable *Filtros* enumere solo cuando sea relevante. La lista de facetas disponibles cambia según los productos devueltos. Las siguientes características afectan su presentación y comportamiento:
 
-* Facetas fijadas : las facetas más utilizadas se pueden fijar en la parte superior de la lista. Las facetas restantes se enumeran en *Tipo de ordenación* orden después de las facetas fijadas.
-* Facetas inteligentes: atributos de producto que [Adobe Sensei](https://www.adobe.com/sensei.html) encuentra más relevante para un conjunto de productos y una consulta. El cálculo tiene en cuenta los metadatos de atributo de todo el catálogo y determina en el momento de la consulta las facetas más relevantes para la consulta.
-* Facetas populares : atributos de producto que están presentes con mayor frecuencia en los resultados de búsqueda.
-* Facetas de precio - Devolver productos por rango de precios. Puede especificar el número de selecciones y el intervalo de intervalo de precios en la variable [*Configuración*](settings.md) pestaña .
+* Facetas ancladas: las facetas más utilizadas se pueden anclar al principio de la lista. Las facetas restantes se enumeran en *Tipo de orden* orden después de las facetas ancladas.
+* Facetas dinámicas: atributos de producto que [Adobe Sensei](https://www.adobe.com/sensei.html) busca lo más relevante para un conjunto de productos y una consulta. El cálculo tiene en cuenta los metadatos de atributos de todo el catálogo y determina, en el momento de la consulta, las facetas más relevantes para la misma.
+* Facetas populares: atributos de producto que están presentes con mayor frecuencia en los resultados de búsqueda.
+* Facetas de precio - Devolver productos por rango de precios. Puede especificar el número de selecciones y el intervalo de rango de precios en la [*Configuración*](settings.md) pestaña.
 
-En tiempo de consulta, [!DNL Live Search] genera los resultados de búsqueda en grupos de facetas inteligentes y populares.
+En el momento de la consulta, [!DNL Live Search] genera los resultados de búsqueda en grupos de facetas dinámicas y populares.
 
-![Facetas - Precio](assets/storefront-search-results-run-price.png)
+![Facetas: precio](assets/storefront-search-results-run-price.png)
 
-## Tienda y opciones sin encabezado
+## Opciones de tienda y sin encabezado
 
-Facetas que se representan para la variable [!DNL Commerce] el adaptador de búsqueda procesa la tienda, que enruta las solicitudes y procesa los resultados en la tienda. Todo [!DNL Commerce] las facetas de tienda se ordenan alfabéticamente con opciones de selección única, independientemente del tipo de entrada asignado al atributo correspondiente. Las facetas disponibles en la tienda se representan según el tema actual y reflejan cualquier personalización hecha a la presentación de la navegación en capas.
+Facetas que se representan para [!DNL Commerce] el adaptador de búsqueda procesa las tiendas, que enruta las solicitudes y procesa los resultados en la tienda. Todo [!DNL Commerce] las facetas de tienda se ordenan alfabéticamente con opciones de selección única, independientemente del tipo de entrada asignado al atributo correspondiente. Las facetas disponibles en la tienda se procesan según la temática actual y reflejan las personalizaciones realizadas en la presentación de la navegación por capas.
 
-En contraste, [headless](https://developer.adobe.com/commerce/php/architecture/technical-vision/web-api/) la API procesa las implementaciones de y admite opciones adicionales. Las facetas sin encabezado se pueden ordenar alfabéticamente o por recuento y pueden tener opciones de selección única o múltiple.
+Por el contrario, [acéfalo](https://developer.adobe.com/commerce/php/architecture/technical-vision/web-api/) La API procesa las implementaciones de y admite opciones adicionales. Las facetas sin encabezado se pueden ordenar alfabéticamente o por recuento, y pueden tener opciones de selección única o múltiple.
 
-### Seleccionar tipo
+### Etiquetas de faceta
 
-Para implementaciones sin encabezado, las facetas se pueden definir como `single select` o `multi-select` con operadores lógicos que determinan el conjunto de productos devuelto. Por ejemplo, `green AND blue` o `green OR blue`.
+Para [!DNL Commerce] en las tiendas, la etiqueta de faceta está determinada por la variable [*Propiedades de atributo*](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/create/attribute-product-create.html). En las tiendas con varias vistas, se pueden definir etiquetas adicionales en *Administrar etiquetas*. Para implementaciones sin encabezado, las etiquetas se editan desde el [faceting workspace](faceting-workspace.md).
 
-![Facetas: Seleccionar tipo](assets/facets-select-type.png)
+### Tipo de orden
 
-| Seleccionar tipo | Descripción |
-|--- |--- |
-| Selección única | Una faceta de selección única ofrece varias opciones, pero permite que el comprador elija solo un valor. |
-| Selección múltiple (o) | (Solo sin encabezado) Los compradores pueden elegir más de una opción y los productos devueltos pueden coincidir con cualquier valor seleccionado. Ejemplo: `green OR blue` |
-| Selección múltiple (y) | (Solo sin encabezado) Los compradores pueden elegir más de una opción y los productos devueltos deben coincidir con todos los valores seleccionados. Ejemplo: `green AND blue` |
+Todas las facetas representadas para la tienda se ordenan alfabéticamente. Para implementaciones sin encabezado, las facetas se pueden ordenar alfabéticamente o por recuento.
 
-### Etiquetas de facetas
-
-Para [!DNL Commerce] tienda, la etiqueta de faceta está determinada por el [*Propiedades de atributo*](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/create/attribute-product-create.html). Para tiendas con varias vistas, se pueden definir etiquetas adicionales en *Administrar etiquetas*. Para implementaciones sin encabezado, las etiquetas se editan desde el [espacio de trabajo de facetas](faceting-workspace.md).
-
-### Tipo de ordenación
-
-Todas las facetas representadas para la tienda se ordenan alfabéticamente. En implementaciones sin encabezado, las facetas se pueden ordenar alfabéticamente o por recuento.
-
-| Tipo de ordenación | Descripción |
+| Tipo de orden | Descripción |
 |--- |--- |
 | Alfabético | En la tienda *Filtros* , las facetas se ordenan alfabéticamente. |
-| Recuento | (Solo sin encabezado) En implementaciones sin encabezado, las facetas también se pueden ordenar por el número de valores encontrados por faceta en el conjunto actual de productos devueltos. |
+| Recuento | (Solo sin encabezado) Para implementaciones sin encabezado, las facetas también se pueden ordenar por el número de valores encontrados por faceta en el conjunto actual de productos devueltos. |

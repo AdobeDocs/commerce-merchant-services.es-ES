@@ -2,9 +2,9 @@
 title: Incorporación
 description: Conozca los requisitos y las plataformas compatibles en [!DNL Product Recommendations].
 exl-id: ad47ac39-8f6f-4765-84ad-9e3d104385db
-source-git-commit: 484319fc1df6c29c972b57c13bd0ed711e374e99
+source-git-commit: fbc7feb29f3633eddbf521f41fc35a10a63dc564
 workflow-type: tm+mt
-source-wordcount: '237'
+source-wordcount: '236'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ El proceso de incorporación para [!DNL Product Recommendations] requiere acceso
 
 ## Requisitos
 
-- Adobe Commerce 2.3.x, 2.4.4+
+- Adobe Commerce 2.4.4+
 - PHP 8.1, 8.2
 - Compositor 2
 
