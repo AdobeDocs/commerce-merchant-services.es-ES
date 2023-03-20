@@ -2,9 +2,9 @@
 title: Personalizar
 description: Obtenga información sobre cómo personalizar las recomendaciones de productos.
 exl-id: b1b8e770-45ec-4403-b79b-4f0a9f7bd959
-source-git-commit: a34c3c8a5caca1bbf611b2df650c562aeeab297b
+source-git-commit: acfaa1d72265e42b973677a7e014ba4b350ec56b
 workflow-type: tm+mt
-source-wordcount: '642'
+source-wordcount: '638'
 ht-degree: 0%
 
 ---
@@ -57,7 +57,7 @@ Cuando [crear](create.md) una recomendación, debe especificar la variable [ubic
    >
    >Los nombres de archivo de la variable `layout` puede ser diferente si su tienda utiliza extensiones de terceros.
 
-1. Modificemos el `catalog_product_view.xml` para que la unidad de recomendación aparezca después de la imagen del producto en la página de detalles del producto. Antes de personalizar este archivo XML, echemos un vistazo al archivo y entendamos las secciones que tendrá que modificar:
+1. Modifique el `catalog_product_view.xml` para que la unidad de recomendación aparezca después de la imagen del producto en la página de detalles del producto. Antes de personalizar este archivo XML, eche un vistazo al archivo y comprenda las secciones que debe modificar:
 
    ```xml
    <?xml version="1.0"?>
@@ -81,7 +81,7 @@ Cuando [crear](create.md) una recomendación, debe especificar la variable [ubic
 
 1. Vamos a modificar este archivo especificando un bloque de contenido diferente.
 
-   Se cambiará el bloque de referencia `name` from `main.content` a `product.info.media`.
+   Cambiar el bloque de referencia `name` from `main.content` a `product.info.media`.
 
    ```xml
    <?xml version="1.0"?>

@@ -2,7 +2,7 @@
 title: Recopilar datos
 description: Descubra cómo los eventos recopilan datos para recomendaciones de productos.
 exl-id: b827d88c-327f-4986-8239-8f1921d8383c
-source-git-commit: 0392077939436f0d2b1c37f403f5365c87f3215e
+source-git-commit: 78f226465b9d84707612596a5aa4622aa7869ee1
 workflow-type: tm+mt
 source-wordcount: '370'
 ht-degree: 0%
