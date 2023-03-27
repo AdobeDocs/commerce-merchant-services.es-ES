@@ -2,10 +2,10 @@
 title: '''[!DNL Store Fulfillment by Walmart Commerce Technologies] Notas de la versión'
 description: '"Revise las notas de la versión para obtener información sobre todas las [!DNL Store Fulfillment by Walmart Commerce Technologies] versiones".'
 exl-id: 04dcec10-fff8-483d-a2c1-4b58e063e0f0
-source-git-commit: 258820e9591f3f47e74c4c9497376fd34512334a
+source-git-commit: 9ce6a5443a930d616eeceeb1f9883cfb5496bc3a
 workflow-type: tm+mt
-source-wordcount: '224'
-ht-degree: 1%
+source-wordcount: '190'
+ht-degree: 2%
 
 ---
 
@@ -19,7 +19,8 @@ Estas notas de la versión describen la versión inicial de [!DNL Store Fulfillm
 
 ## v1.3.0
 
-Fecha de la versión: 2023-02-27 Compatible con Adobe Commerce (EE): 2.4.x Compatible con Adobe Commerce (ECE): 2.4.x Estabilidad: Disponibilidad general
+*27 de febrero de 2023*
+[!BADGE Compatibilidad]{type=Informative tooltip="Compatibilidad"}<br>Versiones de Adobe Commerce 2.4.0 - 2.4.5
 
 Esta versión contiene la siguiente actualización:
 
@@ -27,7 +28,8 @@ Esta versión contiene la siguiente actualización:
 
 ## v1.2.0
 
-Fecha de la versión: 2022-09-27 Compatible con Adobe Commerce (EE): 2.4.x Compatible con Adobe Commerce (ECE): 2.4.x Estabilidad: Disponibilidad general
+*27 de septiembre de 2022*
+[!BADGE Compatibilidad]{type=Informative tooltip="Compatibilidad"}<br>Versiones de Adobe Commerce 2.4.0 - 2.4.5
 
 Esta versión contiene la siguiente actualización:
 
@@ -36,13 +38,19 @@ Esta versión contiene la siguiente actualización:
 
 ## v1.1.0
 
-Fecha de la versión: 2022-07-15 Compatible con Adobe Commerce (EE): 2.4.0 - 2.4.4 Compatible con Adobe Commerce (ECE): 2.4.0 - 2.4.4 Estabilidad: Disponibilidad general
+*15 de julio de 2022*
+[!BADGE Compatibilidad]{type=Informative tooltip="Compatibilidad"}<br>Versiones de Adobe Commerce 2.4.0 - 2.4.4
+
+Estabilidad: Disponibilidad general
 
 ![Nuevo](../assets/fix.svg)<!-- WMTP-731 --> Se ha simplificado el [Configuración de la experiencia de registro](check-in-experience-setup.md) para la aplicación Store Assist añadiendo las selecciones de modelo y fabricación de coche predeterminadas. En la versión anterior, los comerciantes tenían que configurar manualmente las selecciones de modelo y fabricación de autos.
 
 ## v1.0.0
 
-Fecha de la versión: 2022-03-04 Compatible con Adobe Commerce (EE): 2.4.0 - 2.4.4 Compatible con Adobe Commerce (ECE): 2.4.0 - 2.4.4 Estabilidad: Disponibilidad general
+*4 de marzo de 2022*
+[!BADGE Compatibilidad]{type=Informative tooltip="Compatibilidad"}<br>Versiones de Adobe Commerce 2.4.0 - 2.4.4
+
+Estabilidad: Disponibilidad general
 
 ## Aplicación de asistencia de la tienda
 
