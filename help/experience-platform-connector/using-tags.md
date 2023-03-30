@@ -2,9 +2,9 @@
 title: Recopilación de datos de comercio mediante etiquetas de Adobe Experience Platform
 description: Obtenga información sobre cómo recopilar datos de comercio mediante etiquetas de Adobe Experience Platform.
 exl-id: 852fc7d2-5a5f-4b09-8949-e9607a928b44
-source-git-commit: c9b1d7e34632f7a54544bc6944144b1833ecc5a5
+source-git-commit: bd4090c1b1ec417545e041a7c89f46019c07abea
 workflow-type: tm+mt
-source-wordcount: '2522'
+source-wordcount: '2535'
 ht-degree: 0%
 
 ---
@@ -559,6 +559,8 @@ Cree los siguientes elementos de datos:
    - **value**: Aún no está disponible
    - **Grupo de campos**: `siteSearch` > `sort`. Select **Proporcionar todo el objeto**.
    - **Grupo de campos**: `siteSearch` > `filter`. Select **Proporcionar todo el objeto**.
+   - **Grupo de campos**: `searchRequest` > `id`
+   - **Identificador único**: **Valor** = `%search request ID%`
    - **Grupo de campos**: `searchRequest` > `value`
    - **value**: **Valor** = `1`
 
@@ -654,6 +656,8 @@ Cree los siguientes elementos de datos:
    - **Grupo de campos**: `productListItems` > `ProductImageUrl`
    - **ProductImageUrl**: **Valor** = `%product image%`
    - **Elemento de datos**: `%search result products%`
+   - **Grupo de campos**: `searchResponse` > `id`
+   - **Identificador único**: **Valor** = `%search response ID%`
    - **Grupo de campos**: `searchResponse` > `value`
    - **value**: **Valor** = `1`
 
@@ -1361,7 +1365,7 @@ Los siguientes pasos muestran cómo configurar un `pageView` evento con `identit
 
 ## Configuración del consentimiento
 
-El consentimiento de recopilación de datos del conector Adobe Commerce y Experience Platform está habilitado de forma predeterminada. La exclusión se administra mediante la variable [`mg_dnt` cookie](https://docs.magento.com/user-guide/stores/cookie-reference.html). Puede seguir los pasos descritos aquí si decide utilizar `mg_dnt` para administrar el consentimiento. La variable [Documentación del SDK web de Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/edge/consent/supporting-consent.html) tiene varias opciones adicionales para administrar el consentimiento.
+El consentimiento de recopilación de datos del conector Adobe Commerce y Experience Platform está habilitado de forma predeterminada. La exclusión se administra mediante la variable [`mg_dnt` cookie](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-cookie-law.html). Puede seguir los pasos descritos aquí si decide utilizar `mg_dnt` para administrar el consentimiento. La variable [Documentación del SDK web de Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/edge/consent/supporting-consent.html) tiene varias opciones adicionales para administrar el consentimiento.
 
 1. Cree un **Código personalizado principal** elemento de datos (`%do not track cookie%`) para la variable `mg_dnt` cookie:
 
