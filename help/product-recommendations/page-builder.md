@@ -1,9 +1,9 @@
 ---
 title: '[!DNL Page Builder] Integración'
 description: '"Aprenda a utilizar [!DNL Product Recommendations] unidades en Page Builder.'''
-source-git-commit: d56fd57281a5b675e128cca75d4057756a0bf4bf
+source-git-commit: 59ec1a212fbc9ef48658b29cace083e3fb645185
 workflow-type: tm+mt
-source-wordcount: '132'
+source-wordcount: '162'
 ht-degree: 0%
 
 ---
@@ -11,6 +11,10 @@ ht-degree: 0%
 # [!DNL Page Builder] Integración
 
 Product Recommendations puede integrarse con cualquier contenido de Page Builder que implemente en el sitio.
+
+>[!NOTE]
+>
+> Puede tener hasta 25 unidades de recomendación en una página nativa de Page Builder. Las páginas no nativas de Page Builder pueden tener hasta 5 unidades de recomendación. Consulte [Crear nueva recomendación](create.md) para obtener más información.
 
 ## Uso de Recommendations de producto con contenido del Generador de páginas
 
