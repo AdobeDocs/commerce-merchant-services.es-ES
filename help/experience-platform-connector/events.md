@@ -2,9 +2,9 @@
 title: Eventos
 description: Descubra qué datos captura cada evento.
 exl-id: b0c88af3-29c1-4661-9901-3c6d134c2386
-source-git-commit: 76bc0650f32e99f568c061e67290de6c380f46a4
+source-git-commit: 8e5fb65363b2fa39f44da86d7ba0cc5459b18768
 workflow-type: tm+mt
-source-wordcount: '4039'
+source-wordcount: '4100'
 ht-degree: 0%
 
 ---
@@ -338,7 +338,7 @@ En la tabla siguiente se describen los datos recopilados para este evento.
 | Campo | Descripción |
 |---|---|
 | `searchRequest` | Indica si se ha enviado una solicitud de búsqueda |
-| `uniqueIdentifier` | El ID exclusivo para esta solicitud de búsqueda en particular |
+| `id` | El ID exclusivo para esta solicitud de búsqueda en particular |
 | `filter` | Indica si se aplicaron filtros para limitar los resultados de búsqueda |
 | `attribute` (filtro) | La faceta de un elemento que se usa para determinar si se incluye en los resultados de búsqueda |
 | `value` | Valores de atributo utilizados para determinar qué elementos se incluyen en los resultados de búsqueda |
@@ -365,7 +365,7 @@ En la tabla siguiente se describen los datos recopilados para este evento.
 | Campo | Descripción |
 |---|---|
 | `searchResponse` | Indica si se ha recibido una respuesta de búsqueda |
-| `uniqueIdentifier` | El ID exclusivo para esta respuesta de búsqueda en particular |
+| `id` | El ID exclusivo para esta respuesta de búsqueda en particular |
 | `suggestions` | Matriz de cadenas que incluyen los nombres de productos y categorías que existen en el catálogo y que son similares a la consulta de búsqueda |
 | `numberOfResults` | El número de productos devueltos |
 | `productListItems` | Una matriz de productos en el carro de compras. |
@@ -391,8 +391,10 @@ En la tabla siguiente se describen los datos recopilados para este evento.
 
 | Campo | Descripción |
 |---|---|
-| `requisitionListOpens` | Un valor de `1` indica que se abrió una lista de solicitudes |
-| `requisitionList` | Incluye un `ID` , `name`y `description` para la lista de solicitudes |
+| `requisitionList` | Las propiedades de la lista de solicitudes creada por el cliente |
+| `ID` | Identificador único de la lista de solicitudes |
+| `name` | Nombre de la lista de solicitudes especificada por el cliente |
+| `description` | Descripción de la lista de solicitudes especificada por el cliente |
 
 ### addToRequisitionList
 
@@ -410,8 +412,10 @@ En la tabla siguiente se describen los datos recopilados para este evento.
 
 | Campo | Descripción |
 |---|---|
-| `requisitionListAdds` | Un valor de `1` indica que se agregó un producto a la lista de solicitudes |
-| `requisitionList` | Incluye un `ID`,  `name`y `description` para la lista de solicitudes |
+| `requisitionList` | Las propiedades de la lista de solicitudes creada por el cliente |
+| `ID` | Identificador único de la lista de solicitudes |
+| `name` | Nombre de la lista de solicitudes especificada por el cliente |
+| `description` | Descripción de la lista de solicitudes especificada por el cliente |
 | `productListItems` | Conjunto de productos que se agregaron a la lista de solicitudes |
 | `name` | El nombre para mostrar o el nombre legible en lenguaje natural del producto |
 | `SKU` | Unidad de mantenimiento de existencias. Identificador único del producto. |
@@ -419,6 +423,7 @@ En la tabla siguiente se describen los datos recopilados para este evento.
 | `priceTotal` | El precio total del artículo de línea de producto |
 | `discountAmount` | Indica la cantidad de descuento aplicada |
 | `currencyCode` | La variable [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) código de divisa usado para esta partida de pago |
+| `selectedOptions` | Campo utilizado para un producto configurable. `attribute` identifica un atributo del producto configurable, como `size` o `color` y `value` identifica el valor del atributo como `small` o `black`. |
 
 ### removeFromRequisitionList
 
@@ -432,8 +437,10 @@ En la tabla siguiente se describen los datos recopilados para este evento.
 
 | Campo | Descripción |
 |---|---|
-| `requisitionListRemovals` | Un valor de `1` indica que un producto se eliminó de la lista de solicitudes |
-| `requisitionList` | Incluye un `ID`y `description` para la lista de solicitudes |
+| `requisitionList` | Las propiedades de la lista de solicitudes creada por el cliente |
+| `ID` | Identificador único de la lista de solicitudes |
+| `name` | Nombre de la lista de solicitudes especificada por el cliente |
+| `description` | Descripción de la lista de solicitudes especificada por el cliente |
 | `productListItems` | Conjunto de productos que se agregaron a la lista de solicitudes |
 | `name` | El nombre para mostrar o el nombre legible en lenguaje natural del producto |
 | `SKU` | Unidad de mantenimiento de existencias. Identificador único del producto. |
