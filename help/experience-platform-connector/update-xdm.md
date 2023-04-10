@@ -2,9 +2,9 @@
 title: Agregar grupos de campos al esquema XDM
 description: Aprenda a añadir grupos de campos específicos de Adobe Commerce a un esquema XDM.
 exl-id: 4401bbe7-1ccc-4349-a998-9e9ee9db590f
-source-git-commit: c9b1d7e34632f7a54544bc6944144b1833ecc5a5
+source-git-commit: 90356cc593653cf4583da86bc29d69112fc948ba
 workflow-type: tm+mt
-source-wordcount: '347'
+source-wordcount: '346'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,7 @@ Uno de los [pasos de incorporación](overview.md#onboarding-steps) para utilizar
    - Claves de referencia
    - Detalles de contacto personal
    - Detalles del comercio
-   - Comercio de eventos de Adobe Analytics Experience (si desea enviar datos a Adobe Analytics)
+   - Adobe Analytics ExperienceEvent Commerce (si desea enviar datos a Adobe Analytics)
    - Mapa de identidad
 
    >[!NOTE]
