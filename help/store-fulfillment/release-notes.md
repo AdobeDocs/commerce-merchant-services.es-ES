@@ -2,9 +2,9 @@
 title: '''[!DNL Store Fulfillment by Walmart Commerce Technologies] Notas de la versión'
 description: '"Revise las notas de la versión para obtener información sobre todas las [!DNL Store Fulfillment by Walmart Commerce Technologies] versiones".'
 exl-id: 04dcec10-fff8-483d-a2c1-4b58e063e0f0
-source-git-commit: 8cc951721b43df393d58bd55338cf026261db752
+source-git-commit: f506412726449f438ca42dc3f1ef6c7fe08b306a
 workflow-type: tm+mt
-source-wordcount: '178'
+source-wordcount: '194'
 ht-degree: 2%
 
 ---
@@ -16,6 +16,15 @@ Estas notas de la versión describen la versión inicial de [!DNL Store Fulfillm
 ![Nuevo](../assets/new.svg) Nuevas funciones
 ![Se ha corregido un problema](../assets/fix.svg) Correcciones y mejoras
 ![Problema conocido](../assets/bug.svg) Problemas conocidos
+
+## v1.4.0
+
+*13 de abril de 2023*
+
+[!BADGE Compatibilidad]{type=Informative tooltip="Compatibilidad"}
+
+![Nuevo](../assets/fix.svg) [!DNL Store Fulfillment] ahora es [compatible con [!DNL Adobe Commerce] de 2.4.0 a 2.4.6](https://experienceleague.adobe.com/docs/commerce-operations/release/product-availability.html).
+
 
 ## v1.3.0
 
