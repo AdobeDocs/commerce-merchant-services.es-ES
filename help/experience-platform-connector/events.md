@@ -2,9 +2,9 @@
 title: Eventos
 description: Descubra qué datos captura cada evento.
 exl-id: b0c88af3-29c1-4661-9901-3c6d134c2386
-source-git-commit: e31c550416d29f7733c7da7f8895749487965e5d
+source-git-commit: ddacfc053f83be750c63ba376519169b38f7f478
 workflow-type: tm+mt
-source-wordcount: '4592'
+source-wordcount: '4596'
 ht-degree: 0%
 
 ---
@@ -236,10 +236,11 @@ En la tabla siguiente se describen los datos recopilados para este evento.
 
 | Campo | Descripción |
 |---|---|
-| `eventType` | El tipo de evento principal para este registro de serie temporal, como: `userAccount.login` |
 | `person` | Un actor, contacto o propietario individual |
 | `accountID` | Captura el ID de cuenta de usuario |
-| `personalEmailID` | Especifica el identificador único del correo electrónico personal |
+| `accountType` | Captura el tipo de cuenta de usuario, como `Personal` o `Company`, si procede |
+| `personalEmailID` | La dirección técnica, por ejemplo, `name@domain.com` tal como se define comúnmente en RFC2822 y en las normas posteriores |
+| `personalEmail` | Captura detalles de contacto: un correo electrónico e información asociada |
 | `address` | La dirección técnica, por ejemplo, `name@domain.com` tal como se define comúnmente en RFC2822 y en las normas posteriores |
 | `userAccount` | Indica los detalles de lealtad, las preferencias, los procesos de inicio de sesión y otras preferencias de cuenta |
 | `login` | Indica si un visitante ha intentado iniciar sesión |
@@ -260,7 +261,6 @@ En la tabla siguiente se describen los datos recopilados para este evento.
 
 | Campo | Descripción |
 |---|---|
-| `eventType` | El tipo de evento principal para este registro de serie temporal, como: `userAccount.logout` |
 | `userAccount` | Indica los detalles de lealtad, las preferencias, los procesos de inicio de sesión y otras preferencias de cuenta |
 | `logout` | Indica si un visitante ha intentado cerrar la sesión |
 
@@ -280,11 +280,11 @@ En la tabla siguiente se describen los datos recopilados para este evento.
 
 | Campo | Descripción |
 |---|---|
-| `eventType` | El tipo de evento principal para este registro de serie temporal, como: `account.createProfile` |
 | `person` | Un actor, contacto o propietario individual |
 | `accountID` | Captura el ID de cuenta de usuario |
 | `accountType` | Captura el tipo de cuenta de usuario, como `Personal` o `Company`, si procede |
-| `personalEmailID` | Especifica el identificador único del correo electrónico personal |
+| `personalEmailID` | La dirección técnica, por ejemplo, `name@domain.com` tal como se define comúnmente en RFC2822 y en las normas posteriores |
+| `personalEmail` | Captura detalles de contacto: un correo electrónico e información asociada |
 | `address` | La dirección técnica, por ejemplo, `name@domain.com` tal como se define comúnmente en RFC2822 y en las normas posteriores |
 | `userAccount` | Indica los detalles de lealtad, las preferencias, los procesos de inicio de sesión y otras preferencias de cuenta |
 | `createProfile` | Indica si un usuario ha creado un perfil de cuenta |
@@ -305,12 +305,11 @@ En la tabla siguiente se describen los datos recopilados para este evento.
 
 | Campo | Descripción |
 |---|---|
-| `eventType` | El tipo de evento principal para este registro de serie temporal, como: `account.updateProfile` |
 | `person` | Un actor, contacto o propietario individual |
 | `accountID` | Captura el ID de cuenta de usuario |
 | `accountType` | Captura el tipo de cuenta de usuario, como `Personal` o `Company`, si procede |
-| `personalEmailID` | Especifica el identificador único del correo electrónico personal |
-| `personalEmail` | Especifica la dirección de correo electrónico personal |
+| `personalEmailID` | La dirección técnica, por ejemplo, `name@domain.com` tal como se define comúnmente en RFC2822 y en las normas posteriores |
+| `personalEmail` | Captura detalles de contacto: un correo electrónico e información asociada |
 | `address` | La dirección técnica, por ejemplo, `name@domain.com` tal como se define comúnmente en RFC2822 y en las normas posteriores |
 | `userAccount` | Indica los detalles de lealtad, las preferencias, los procesos de inicio de sesión y otras preferencias de cuenta |
 | `updateProfile` | Indica si un usuario ha actualizado su perfil de cuenta |
