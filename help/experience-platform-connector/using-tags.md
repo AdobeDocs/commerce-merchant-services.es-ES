@@ -2,9 +2,9 @@
 title: Recopilación de datos de comercio mediante etiquetas de Adobe Experience Platform
 description: Obtenga información sobre cómo recopilar datos de comercio mediante etiquetas de Adobe Experience Platform.
 exl-id: 852fc7d2-5a5f-4b09-8949-e9607a928b44
-source-git-commit: bd4090c1b1ec417545e041a7c89f46019c07abea
+source-git-commit: bdd1378dcbbe806c98e8486a985389b2d0d4f34e
 workflow-type: tm+mt
-source-wordcount: '2535'
+source-wordcount: '2650'
 ht-degree: 0%
 
 ---
@@ -1319,14 +1319,16 @@ Cree los siguientes elementos de datos:
 - **Tipo**: `commerce.order`
 - **Datos XDM**: `%place order%`
 
-## Configuración de identidad
+## Establecer identidad en eventos de tienda
 
-Los perfiles del conector del Experience Platform se unen y se generan en función del `identityMap` y `personalEmail` campos de identidad en eventos de experiencias XDM. 
+Los eventos de tienda contienen información de perfil basada en la variable `personalEmail` (para eventos de cuenta) y `identityMap` (para todos los demás eventos de tienda). El conector del Experience Platform une y genera perfiles en función de estos dos campos. Sin embargo, cada campo tiene diferentes pasos a seguir para crear perfiles:
 
-Si tiene una configuración anterior que depende de diferentes campos, puede seguir usándolos. Para definir los campos de identidad de perfil de conector de Experience Platform, debe definir los siguientes campos:
+>[!NOTE]
+>
+>Si tiene una configuración anterior que depende de diferentes campos, puede seguir usándolos.
 
-- `personalEmail` - Solo eventos de cuenta : siga los pasos descritos anteriormente para [eventos de cuenta](#createaccount)
-- `identityMap` - Todos los demás eventos. Consulte el siguiente ejemplo.
+- `personalEmail` - Se aplica solo a eventos de cuenta. Siga los pasos, reglas y acciones descritos [above](#createaccount)
+- `identityMap` - Se aplica a todos los demás eventos de tienda. Consulte el siguiente ejemplo.
 
 ### Ejemplo
 
@@ -1337,7 +1339,7 @@ Los siguientes pasos muestran cómo configurar un `pageView` evento con `identit
    ![Configuración del elemento de datos con código personalizado](assets/set-custom-code-ecid.png)
    _Configuración del elemento de datos con código personalizado_
 
-1. Añadir código personalizado ECID:
+1. Select [!UICONTROL Open Editor] y agregue el siguiente código personalizado:
 
    ```javascript
    return alloy("getIdentity").then((result) => {
@@ -1346,6 +1348,12 @@ Los siguientes pasos muestran cómo configurar un `pageView` evento con `identit
            {
                id: ecid,
                primary: true
+           }
+           ],
+           email: [
+           {
+               id: email,
+               primary: false
            }
            ]
        };
@@ -1362,6 +1370,43 @@ Los siguientes pasos muestran cómo configurar un `pageView` evento con `identit
 
    ![Recuperar ECID](assets/rule-retrieve-ecid.png)
    _Recuperar ECID_
+
+## Configuración de la identidad en eventos de back office
+
+A diferencia de los eventos de tienda que utilizan ECID para identificar y vincular información de perfil, los datos de eventos de back office se basan en SaaS y, por lo tanto, no hay ECID disponible. Para los eventos de back office, debe utilizar el correo electrónico para identificar a los compradores de forma única. En esta sección, aprenderá a vincular datos de eventos de back office a un ECID mediante correo electrónico.
+
+1. Cree un elemento de mapa de identidad.
+
+   ![Mapa de identidades de la oficina de atrás](assets/custom-code-backoffice.png)
+   _Crear mapa de identidad de back office_
+
+1. Select [!UICONTROL Open Editor] y agregue el siguiente código personalizado:
+
+```javascript
+const IdentityMap = {
+  "ECID": [
+    {
+      id:  _satellite.getVar('ECID'),
+      primary: true,
+    },
+  ],
+};
+ 
+if (_satellite.getVar('account email')) {
+    IdentityMap.email = [
+        {
+            id: _satellite.getVar('account email'),
+            primary: false,
+        },
+    ];
+}
+return IdentityMap;
+```
+
+1. Agregue este nuevo elemento a cada `identityMap` campo .
+
+   ![Actualizar cada mapa de identidad](assets/add-element-back-office.png)
+   _Actualizar cada mapa de identidad_
 
 ## Configuración del consentimiento
 

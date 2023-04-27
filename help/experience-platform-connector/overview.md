@@ -2,18 +2,18 @@
 title: Información general de guía
 description: Obtenga información sobre cómo integrar datos de Adobe Commerce con Adobe Experience Platform mediante el conector del Experience Platform.
 exl-id: a8362e71-e21c-4b1d-8e3f-336e748e1018
-source-git-commit: 092f2f4ab9d34466d66fe5b726bfff67a1309c6f
+source-git-commit: 22823b662eefa953fcca6ae78f6c37ee8abff3d1
 workflow-type: tm+mt
-source-wordcount: '434'
+source-wordcount: '487'
 ht-degree: 0%
 
 ---
 
 # Información general sobre el conector del Experience Platform
 
-La extensión del conector del Experience Platform permite a los comerciantes de Adobe Commerce enviar datos al perímetro de Adobe Experience Platform para que otros productos de Adobe Experience Cloud, como Adobe Analytics y Adobe Target, puedan utilizar esos datos de comercio. Al conectar los datos de comercio con otros productos de Adobe Experience Cloud, puede realizar tareas como analizar el comportamiento de los usuarios en el sitio, realizar pruebas A/B y crear campañas personalizadas.
+La extensión del conector del Experience Platform permite que los comerciantes de Adobe Commerce envíen [storefront](events.md#storefront-events) y [back office](events.md#back-office-events) a Adobe Experience Platform Edge, de modo que otros productos de Adobe Experience Cloud, como Adobe Analytics y Adobe Target, puedan utilizar esos datos de comercio. Al conectar los datos de comercio con otros productos de Adobe Experience Cloud, puede realizar tareas como analizar el comportamiento de los usuarios en el sitio, realizar pruebas A/B y crear campañas personalizadas.
 
-[Eventos de tienda](events.md) capturar interacciones del comprador, como `View Page`, `View Product`, `Add to Cart`, etc. Los datos capturados no incluyen información de identificación personal (PII). Todos los identificadores de usuario, como los ID de cookie y las direcciones IP, se anonimizan estrictamente. [Más información](https://www.adobe.com/privacy/experience-cloud.html).
+[Eventos de tienda](events.md#storefront-events) capturar interacciones del comprador, como `View Page`, `View Product`, `Add to Cart`y [lista de solicitudes](events.md#b2b-events) información (para comerciantes B2B). [Back Office](events.md#back-office-events) los eventos capturan información sobre el estado de un pedido, por ejemplo, si se realizó, canceló, reembolsó, envió o completó un pedido. Los datos capturados no incluyen información de identificación personal (PII). Todos los identificadores de usuario, como los ID de cookie y las direcciones IP, se anonimizan estrictamente. [Más información](https://www.adobe.com/privacy/experience-cloud.html).
 
 El conector del Experience Platform aparece en el administrador de comercio, en **Sistema** > Servicios > **Conector del Experience Platform**.
 
@@ -25,6 +25,7 @@ Para utilizar el conector del Experience Platform, debe tener lo siguiente:
 
 - Adobe Commerce 2.4.3 o posterior
 - Adobe ID e ID de organización
+- [Capa de datos del cliente de Adobe (ACDL)](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/client-data-layer/overview.html). El ACDL es necesario para recopilar datos de eventos de tienda.
 - Derechos a otros productos DX de Adobe
 
 ## Pasos de incorporación

@@ -2,9 +2,9 @@
 title: Notas de la versión
 description: La información de la última versión del conector Adobe Experience Platform de Adobe Commerce.
 exl-id: 7636664b-488a-46f7-8d19-a9faac126aec
-source-git-commit: 735fd14fad22826b04320644e120d296de19a211
+source-git-commit: 22823b662eefa953fcca6ae78f6c37ee8abff3d1
 workflow-type: tm+mt
-source-wordcount: '391'
+source-wordcount: '345'
 ht-degree: 1%
 
 ---
@@ -19,7 +19,7 @@ Estas notas de la versión contienen actualizaciones del conector del Experience
 
 Para ver los cambios y correcciones de funciones relacionados con las extensiones utilizadas por el conector del Experience Platform, consulte **Actualizaciones de servicio compatibles**.
 
-Consulte [Próximas versiones](https://experienceleague.adobe.com/docs/commerce-operations/release/schedule.html) para obtener más información sobre los programas de versiones y la asistencia técnica.
+Consulte [Próximas versiones](https://experienceleague.adobe.com/docs/commerce-operations/release/planning/schedule.html) para obtener más información sobre los programas de versiones y la asistencia técnica.
 
 Consulte la documentación para desarrolladores para [obtenga información sobre la compatibilidad del producto](https://experienceleague.adobe.com/docs/commerce-operations/release/product-availability.html).
 
@@ -45,6 +45,8 @@ _12 de octubre de 2022_
 
 _30 de marzo de 2023_
 
+[!BADGE Compatibilidad]{type=Informative tooltip="Compatibilidad"}
+
 * ![Nuevo](../assets/new.svg) - Paquete el `commerce-data-export` y `saas-export` dependencias con la variable `experience-platform-connector` extensión. Anteriormente, era necesario instalar estas dependencias por separado. Estas dependencias, junto con la configuración del comerciante, permiten el procesamiento en el servidor de [eventos de back office](events.md#back-office-events).
 * ![Nuevo](../assets/new.svg) - Se ha añadido un nuevo evento de back office llamado [`orderShipmentCompleted`](events.md#ordershipmentcompleted).
 
@@ -52,24 +54,32 @@ _30 de marzo de 2023_
 
 _28 de febrero de 2023_
 
+[!BADGE Compatibilidad]{type=Informative tooltip="Compatibilidad"}
+
 * ![Nuevo](../assets/new.svg) - Se ha agregado compatibilidad con PHP 8.2 para todos los módulos de conector de Experience Platform
 
 ## 2.1.0
 
 _17 de enero de 2023_
 
-* ![Nuevo](../assets/new.svg) - Se ha actualizado el [Administrador del conector del Experience Platform](connect-data.md) para que pueda especificar su propio SDK web de AEP (alloy). Además, se ha agregado una opción para que los comerciantes inscritos en nuestro programa beta de back office envíen [datos de eventos de back office](connect-data.md#data-collection) al borde. Estos eventos contienen [información de estado de pedido](events.md#beta-order-status-events) acerca de un pedido, como si se hubiera realizado, cancelado, reembolsado o enviado un pedido.
+[!BADGE Compatibilidad]{type=Informative tooltip="Compatibilidad"}
+
+* ![Nuevo](../assets/new.svg) - Se ha actualizado el [Administrador del conector del Experience Platform](connect-data.md) para que pueda especificar su propio SDK web de AEP (alloy).
 * ![Corrección](../assets/fix.svg) Se ha cambiado a `identityMap` en lugar de `personID` al establecer la identidad principal para cualquier dato insertado en el borde.
 
 ## 2.0.1
 
 _10 de noviembre de 2022_
 
+[!BADGE Compatibilidad]{type=Informative tooltip="Compatibilidad"}
+
 * ![Se ha corregido un problema](../assets/fix.svg) - Ahora el contexto de Adobe Experience Platform se establece solo después de que el recopilador de eventos de tienda y el SDK de evento de tienda se hayan cargado correctamente.
 
 ## 2.0.0
 
 _12 de octubre de 2022_
+
+[!BADGE Compatibilidad]{type=Informative tooltip="Compatibilidad"}
 
 * ![Nuevo](../assets/new.svg) - Se ha agregado la capacidad de especificar su propio SDK web de AEP al [conexión](connect-data.md) la instancia de Adobe Commerce al Experience Platform
 * ![Corrección](../assets/fix.svg) - Se ha actualizado el requisito del ámbito del conjunto de datos para que los ID del conjunto de datos deban incluirse en el ámbito del sitio web en lugar de en la vista del almacén
@@ -78,11 +88,6 @@ _12 de octubre de 2022_
 
 _9 de agosto de 2022_
 
+[!BADGE Compatibilidad]{type=Informative tooltip="Compatibilidad"}
+
 * ![Nuevo](../assets/new.svg) - Versión de disponibilidad general
-
-## Documentación
-
-Para obtener más información:
-
-* [Documentación para desarrolladores de Adobe Commerce](https://devdocs.magento.com/)
-* [Guía del usuario de Adobe Commerce](https://docs.magento.com/user-guide/)
