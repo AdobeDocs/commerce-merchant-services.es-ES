@@ -2,9 +2,9 @@
 title: '''[!DNL Product Recommendations] Notas de la versión'
 description: La información de la última versión de [!DNL Product Recommendations] de Adobe Commerce.
 exl-id: 1758e688-d26f-45e7-818c-d4726338a6c3
-source-git-commit: 5b6a3c2dc15d41e5245cbf62ed736022f48281fa
+source-git-commit: f955cfc918c19a3c32126d8c9ef8a59b0e0dce0a
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '1102'
 ht-degree: 0%
 
 ---
@@ -17,10 +17,12 @@ Las notas de la versión contienen actualizaciones de las siguientes [!DNL Produ
 * Compatibilidad del Creador de páginas con [!DNL Product Recommendations] (opcional): `magento/module-page-builder-product-recommendations`
 * Compatibilidad del tipo de recomendación de similitud visual con [!DNL Product Recommendations] (opcional): `magento/module-visual-product-recommendations`
 
+Se proporciona compatibilidad con la versión principal actual publicada. Se proporcionan como referencia las notas de la versión de versiones anteriores.
 Las notas de la versión incluyen:
 
 ![Nuevo](../assets/new.svg) Nuevas funciones
 ![Corrección](../assets/fix.svg) Correcciones y mejoras
+![Error](../assets/bug.svg) Problemas conocidos
 
 Consulte la documentación para desarrolladores para [obtenga información sobre la compatibilidad del producto](https://experienceleague.adobe.com/docs/commerce-operations/release/product-availability.html).
 
