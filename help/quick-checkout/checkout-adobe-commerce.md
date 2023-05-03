@@ -2,7 +2,7 @@
 title: "Flujo de cierre de compra para un usuario de Adobe Commerce"
 description: "Descripción general de la variable [!DNL Quick Checkout] flujo para un usuario de Adobe Commerce."
 exl-id: 085e393b-15f6-4d5a-a04d-927b1f95b74e
-source-git-commit: 66082614ffe6456e2c24a1e8d9baaa1113fb7ffb
+source-git-commit: f790732804e110aad298689c0ddf74547ff17618
 workflow-type: tm+mt
 source-wordcount: '443'
 ht-degree: 0%
@@ -23,7 +23,7 @@ Si [!DNL Bolt] se encuentra durante el cierre de compra, los compradores pueden 
 
 1. Introduzca la contraseña única (OTP) enviada a esa [!DNL Bolt] dirección de correo electrónico de la cuenta o móvil, según [preferencias del usuario en la [!DNL Bolt] account](https://help.bolt.com/shoppers/account/account-settings/#how-to-set-preferred-login-method){target=_blank}.
 
-![Ventana emergente de OTP](assets/pop-up.png)
+![Ventana emergente de OTP](assets/new-logo-otp-email.png)
 
 1. Una vez que haya iniciado sesión con su [!DNL Bolt] , los detalles se añaden automáticamente:
 
