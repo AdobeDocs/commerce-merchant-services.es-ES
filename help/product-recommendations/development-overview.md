@@ -2,9 +2,9 @@
 title: Desarrollo del administrador de Product Recommendations
 description: Información general sobre la arquitectura y las funciones de desarrollo de Product Recommendations.
 exl-id: caef5e0c-dd69-4846-8f85-b1c5e1c6a28f
-source-git-commit: 78f226465b9d84707612596a5aa4622aa7869ee1
+source-git-commit: e74bc4aeaa154e751f8d986e0426dd19d55d335e
 workflow-type: tm+mt
-source-wordcount: '386'
+source-wordcount: '397'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ Product Recommendations es una potente herramienta de marketing que puede utiliz
 
 >[!NOTE]
 >
->Si la tienda se implementa mediante PWA Studio, consulte la [documentación del PWA](https://developer.adobe.com/commerce/pwa-studio/integrations/product-recommendations/). Si utiliza una tecnología de front-end personalizada, como React o Vue JS, consulte la guía del usuario para aprender a integrar Product Recommendations en un [headless](headless.md) entorno.
+>Si la tienda se implementa mediante PWA Studio, consulte la [documentación del PWA](https://developer.adobe.com/commerce/pwa-studio/integrations/product-recommendations/). Si utiliza una tecnología de front-end personalizada, como React o Vue JS, consulte la guía del usuario para aprender a integrar Product Recommendations en un [headless](headless.md) entorno. Las instancias sin encabezado deben implementar eventos para activar el espacio de trabajo de Recomendaciones de productos.
 
 ## Información general de arquitectura
 

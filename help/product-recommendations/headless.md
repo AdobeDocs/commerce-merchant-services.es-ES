@@ -2,9 +2,9 @@
 title: Sin encabezado
 description: Aprenda a integrar [!DNL Product Recommendations] en una tienda sin cabeza.
 exl-id: 316d0b0c-5938-4e2f-9d0d-747746cf6056
-source-git-commit: 78f226465b9d84707612596a5aa4622aa7869ee1
+source-git-commit: 521ea4fc2cce809fc12d3958e37089f3e34e1068
 workflow-type: tm+mt
-source-wordcount: '272'
+source-wordcount: '328'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,13 @@ ht-degree: 0%
 
 Puede integrar [!DNL Product Recommendations] en una tienda sin encabezado que utilice [PWA Studio](https://developer.adobe.com/commerce/pwa-studio/) o una tecnología de front-end personalizada, como React o Vue JS.
 
+Los integradores personalizados y sin encabezado deben consultar estas instrucciones de Luma y PWA como implementación sugerida. Existen muchas maneras de implementar Product Recommendations en soluciones sin objetivos y esta documentación no cubre todos los escenarios. Los integradores deben cubrir eventos, diseños y pruebas para sus implementaciones.
+
 [!DNL Product Recommendations] requerir [datos de comportamiento y catálogo](https://experienceleague.adobe.com/docs/commerce-merchant-services/product-recommendations/developer/development-overview.html) para funcionar. El proceso de sincronización de datos del catálogo permanece sin cambios en una implementación sin objetivos, pero se necesitan cambios para la recopilación de datos de comportamiento.
+
+>[!NOTE]
+>
+>Las instancias sin encabezado deben implementar eventos para activar el panel de Recommendations de producto.
 
 Para integrar [!DNL Product Recommendations] en una tienda sin periféricos, debe:
 

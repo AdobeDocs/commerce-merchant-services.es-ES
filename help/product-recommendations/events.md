@@ -2,9 +2,9 @@
 title: Recopilar datos
 description: Descubra cómo los eventos recopilan datos para recomendaciones de productos.
 exl-id: b827d88c-327f-4986-8239-8f1921d8383c
-source-git-commit: 78f226465b9d84707612596a5aa4622aa7869ee1
+source-git-commit: e74bc4aeaa154e751f8d986e0426dd19d55d335e
 workflow-type: tm+mt
-source-wordcount: '370'
+source-wordcount: '411'
 ht-degree: 0%
 
 ---
@@ -34,7 +34,13 @@ La variable [Recopilador de eventos de tienda de Adobe Commerce](https://develop
 
 Si la tienda se implementa con PWA Studio, consulte la [documentación del PWA](https://developer.adobe.com/commerce/pwa-studio/integrations/product-recommendations/). Si utiliza una tecnología de front-end personalizada, como React o Vue JS, consulte la guía del usuario para aprender a integrar Product Recommendations en un [headless](headless.md) entorno.
 
+## Advertencias
+
 Los bloqueadores de anuncios y la configuración de privacidad pueden impedir que `magento/product-recommendations` desde la captura de eventos y podría causar la participación y los ingresos [métricas](workspace.md) que se van a subregistrar.
+
+Eventing no captura todas las transacciones que ocurren en el sitio del comerciante. El evento está pensado para dar al comerciante una idea general de los eventos que están ocurriendo en el sitio.
+
+Las implementaciones sin encabezado deben implementar eventos para activar el panel de Recommendations de producto.
 
 >[!NOTE]
 >
