@@ -2,9 +2,9 @@
 title: Incorporación
 description: Conozca los requisitos y las plataformas compatibles en [!DNL Product Recommendations].
 exl-id: ad47ac39-8f6f-4765-84ad-9e3d104385db
-source-git-commit: e74bc4aeaa154e751f8d986e0426dd19d55d335e
+source-git-commit: 209bdf9c69ff81481d6df7cb8e8832deef13c9f4
 workflow-type: tm+mt
-source-wordcount: '256'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -43,3 +43,7 @@ Recomendaciones de productos que los clientes pueden utilizar [Indexación de pr
 ### Compatibilidad con B2B {#b2bsupport}
 
 Las tiendas B2B suelen requerir lógica compleja que dicta la visibilidad y los precios del producto para cada comprador o grupo de clientes. [!DNL Product Recommendations] now [support](release-notes.md) esta funcionalidad respetándola [permisos de categoría](https://experienceleague.adobe.com/docs/commerce-admin/catalog/categories/category-permissions.html), [catálogos compartidos](https://experienceleague.adobe.com/docs/commerce-admin/b2b/shared-catalogs/catalog-shared.html)y [precios específicos del grupo de clientes](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/pricing/pricing-advanced.html). Por ejemplo, si ha ocultado ciertas categorías del segmento de clientes minoristas, no se mostrarán recomendaciones para productos de esas categorías a un comprador de ese segmento. Además, cuando define un catálogo compartido para grupos de clientes y empresas específicos, dichos compradores ven las recomendaciones solo para los productos a los que pueden acceder. Todos los productos recomendados reflejan un precio correcto específico del grupo de clientes en función del grupo de clientes de cada comprador.
+
+>[!NOTE]
+>
+>Los comerciantes pueden personalizar y ampliar las utilidades o los elementos de tienda utilizando el [Servicio de catálogo](../catalog-service/overview.md) La API de tienda, pero cualquier personalización está fuera del ámbito del equipo de asistencia de Adobe.
