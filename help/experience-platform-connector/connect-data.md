@@ -2,9 +2,9 @@
 title: Conexión de datos de comercio a Adobe Experience Platform
 description: Obtenga información sobre cómo conectar los datos de Commerce a Adobe Experience Platform.
 exl-id: 87898283-545c-4324-b1ab-eec5e26a303a
-source-git-commit: dead0b8dae69476c196652abd43c4966a38c4141
+source-git-commit: 386d5e4245401695d7123a87b7dfb703f1f849e9
 workflow-type: tm+mt
-source-wordcount: '1074'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -56,7 +56,11 @@ En esta sección, debe conectar la instancia de Adobe Commerce a Adobe Experienc
 
 ## Recopilación de datos
 
-En el **Recopilación de datos** , seleccione los datos de tienda o back office para enviarlos al perímetro del Experience Platform. Para asegurarse de que la instancia de Adobe Commerce pueda empezar a recopilar datos, revise la [requisitos previos](overview.md#prerequisites).
+En esta sección, se especifica el tipo de datos que se desea enviar al borde del Experience Platform. Existen dos tipos de datos: del lado del cliente y del lado del servidor.
+
+Los datos del lado del cliente son datos capturados en la tienda. Esto incluye las interacciones del comprador, como `View Page`, `View Product`, `Add to Cart`y [lista de solicitudes](events.md#b2b-events) información (para comerciantes B2B). Los datos del lado del servidor, o los datos de back office, son datos capturados en los servidores de Commerce. Esto incluye información sobre el estado de un pedido, por ejemplo, si se realizó, canceló, reembolsó, envió o completó un pedido.
+
+En el **Recopilación de datos** , seleccione el tipo de datos que desea enviar al borde del Experience Platform. Para asegurarse de que la instancia de Adobe Commerce pueda empezar a recopilar datos, revise la [requisitos previos](overview.md#prerequisites).
 
 Consulte el tema de eventos para obtener más información sobre [storefront](events.md#storefront-events) y [back office](events.md#back-office-events) eventos.
 
@@ -110,11 +114,32 @@ Consulte el tema de eventos para obtener más información sobre [storefront](ev
 | Eventos de Back Office | Si se selecciona, la carga útil de evento contiene información de estado de pedido anónima, como si se ha realizado, cancelado, reembolsado o enviado un pedido. |
 | ID de almacén de datos (sitio web) | ID que permite el flujo de datos de Adobe Experience Platform a otros productos DX de Adobe. Este ID debe estar asociado a un sitio web específico de la instancia de Adobe Commerce específica. Si especifica su propio SDK web de Experience Platform, no especifique un ID de conjunto de datos en este campo. El conector del Experience Platform utiliza el ID del almacén de datos asociado a dicho SDK e ignora cualquier ID del almacén de datos especificado en este campo (si existe). |
 
-## Comprobar que se están enviando datos al Experience Platform
+>[!NOTE]
+>
+>Después de la incorporación, los datos de tienda empiezan a fluir hasta el límite del Experience Platform. Los datos de back office tardan unos 5 minutos en aparecer en el perímetro. Las actualizaciones posteriores son visibles en el perímetro en función de la programación cron.
 
-Después de la incorporación, los datos de tienda empiezan a fluir hasta el límite del Experience Platform. Los datos de back office tardan unos 5 minutos después de la incorporación para que aparezcan al final. Las actualizaciones posteriores son visibles en el perímetro en función de la programación cron.
+## Confirmar que los datos de evento se recopilen
 
-Cuando los datos de comercio se envían al Experience Platform, puede crear informes como los siguientes:
+Para confirmar que los datos se están recopilando en la tienda de comercio, use la variable [Adobe Experience Platform Debugger](https://experienceleague.adobe.com/docs/experience-platform/debugger/home.html) para examinar el sitio de Commerce. Después de confirmar que los datos se están recopilando, puede verificar que los datos de evento de tienda y back office aparezcan en el extremo ejecutando una consulta que devuelva datos del [conjunto de datos creado](overview.md#prerequisites).
 
-![Datos de comercio en Adobe Experience Platform](assets/aem-data-1.png)
-_Datos de comercio en Adobe Experience Platform_
+1. Select **Consultas** en la navegación izquierda del Experience Platform y haga clic en [!UICONTROL Create Query].
+
+   ![Editor de consultas](assets/query-editor.png)
+
+1. Cuando se abra el Editor de consultas, introduzca una consulta que seleccione los datos del conjunto de datos.
+
+   ![Crear consulta](assets/create-query.png)
+
+   Por ejemplo, la consulta puede tener el siguiente aspecto:
+
+   ```sql
+   SELECT * from `your_dataset_name` ORDER by TIMESTAMP DESC
+   ```
+
+1. Una vez ejecutada la consulta, los resultados se muestran en la variable **Resultados** junto a la pestaña **Consola** pestaña . Esta vista muestra el resultado tabular de la consulta.
+
+   ![Editor de consultas](assets/query-results.png)
+
+En este ejemplo, se ven los datos de evento de la variable [`commerce.productListAdds`](events.md#addtocart), [`commerce.productViews`](events.md#productpageview), [`web.webpagedetails.pageViews`](events.md#pageview), etc. Esta vista le permite comprobar que sus datos de comercio llegaron al extremo.
+
+Si los resultados no son los esperados, abra el conjunto de datos y busque las importaciones de lotes con errores. Más información sobre [solución de problemas de las importaciones por lotes](https://experienceleague.adobe.com/docs/experience-platform/ingestion/batch/troubleshooting.html).
