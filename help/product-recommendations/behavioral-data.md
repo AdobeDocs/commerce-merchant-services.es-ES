@@ -2,9 +2,9 @@
 title: Datos de comportamiento
 description: Obtenga información sobre los datos de comportamiento y cuándo puede empezar a utilizarlos.
 exl-id: d68a97b9-1497-4603-a72c-4aaaf6e048cb
-source-git-commit: 371ae21c97021912279381b5e32f953fe3b4f0dd
+source-git-commit: 840b091638aedd3f6ac097a010d035eff997ffe2
 workflow-type: tm+mt
-source-wordcount: '585'
+source-wordcount: '643'
 ht-degree: 0%
 
 ---
@@ -33,11 +33,14 @@ Otras variables que pueden afectar al tiempo necesario para la formación:
 
 - Un mayor volumen de tráfico contribuye a un aprendizaje más rápido
 - Algunos tipos de recomendaciones se entrenan más rápido que otros
-- Adobe Commerce vuelve a calcular los datos de comportamiento cada cuatro horas. Aunque técnicamente puede implementar las unidades de recomendación en ese momento, sepa que las recomendaciones son más precisas cuanto más tiempo se usen en el sitio.
+- Adobe Commerce vuelve a calcular los datos de comportamiento cada cuatro horas. Recommendations es más preciso cuanto más tiempo utilice en su sitio.
 
 Para ayudarle a visualizar el progreso de formación de cada tipo de recomendación, la variable [crear recomendación](create.md) muestra los indicadores de disponibilidad.
 
 Mientras que los datos se recopilan en los modelos de producción y aprendizaje automático están formados, puede implementar la variable [tareas restantes](implementation-workflow.md) necesario para implementar recomendaciones en su tienda. Para cuando haya terminado de probar y configurar las recomendaciones, los modelos de aprendizaje automático han recopilado y calculado datos suficientes para crear recomendaciones relevantes, lo que le permite implementar las recomendaciones en su tienda.
+
+Si no hay tráfico suficiente (vistas, productos comprados, tendencias) para la mayoría de SKU, es posible que no haya datos suficientes para completar el proceso de aprendizaje. Esto puede hacer que el indicador de disponibilidad del administrador parezca atascado.
+Los indicadores de disponibilidad están pensados para proporcionar a los comerciantes otro punto de datos a la hora de elegir qué tipo de recomendaciones es mejor para su almacén. Los números son una guía y es posible que nunca lleguen al 100 %.
 
 ## Recomendaciones de copia de seguridad {#backuprecs}
 
