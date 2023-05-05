@@ -4,9 +4,9 @@ description: Uso de la indexación de precios SaaS para mejorar el rendimiento
 seo-title: Adobe SaaS Price Indexing
 seo-description: Price indexing give performance improvements using SaaS infrastructure
 exl-id: 747c0f3e-dfde-4365-812a-5ab7768342ab
-source-git-commit: 7b2d90eb809eada732ed5d3ad4e038bd9733c440
+source-git-commit: 3820736a25942b147d6e2c7b8820c360d6a0a535
 workflow-type: tm+mt
-source-wordcount: '764'
+source-wordcount: '719'
 ht-degree: 0%
 
 ---
@@ -53,7 +53,7 @@ magento/module-product-override-price-remover
 magento/module-bundle-product-override-data-exporter
 ```
 
-Los clientes que utilizan Luma y Adobe Commerce Core GraphQL pueden instalar un módulo que proporcione compatibilidad con Luma y deshabilite el indexador de precios principal de PHP:
+Los clientes que utilizan Luma y Adobe Commerce Core GraphQL pueden instalar un módulo que proporcione compatibilidad con Luma y Core GraphQL y deshabilite el indizador de precios principal de PHP:
 
 ```
 adobe-commerce/catalog-adapter
@@ -67,17 +67,7 @@ El indizador de precios principal de PHP se puede volver a habilitar si lo neces
 Dependiendo de factores como tipos de productos, complejidad de precios y tamaño del catálogo, la indexación de precios SaaS puede ser la solución adecuada para su tienda. Lea las siguientes limitaciones y determine si esta es una buena solución para su sitio.
 
 Actualmente, la indexación de precios de SaaS es compatible con los tipos de producto simples, agrupados, virtuales, configurables y dinámicos de paquetes.
-Próximamente habrá compatibilidad con los tipos de producto descargables, tarjetas de regalo y Fijo de paquete.
-
-La indexación de precios SaaS admite precios básicos:
-
-* Precio normal mínimo/máximo
-* Precio final mínimo/máximo
-* Precios especiales
-* Precios del grupo de clientes
-* Precios de las reglas del catálogo
-
-Una vez que decida utilizar la nueva fuente de precios, puede ponerse en contacto con [Asistencia](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html) para ayudarle a deshacer la acción.
+La compatibilidad con los tipos de producto descargables, tarjetas de regalo y Fijo de paquete estará disponible próximamente.
 
 Las nuevas fuentes deben sincronizarse manualmente con la variable `resync` [Comando CLI](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/data-services/catalog-sync.html#resynccmdline). De lo contrario, los datos se actualizan en el proceso de sincronización estándar. Obtenga más información sobre [Sincronización del catálogo](../landing/catalog-sync.md) proceso.
 
