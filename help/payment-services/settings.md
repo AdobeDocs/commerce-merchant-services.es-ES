@@ -4,9 +4,9 @@ description: Después de la instalación, puede configurar [!DNL Payment Service
 role: Admin, User
 level: Intermediate
 exl-id: 108f2b24-39c1-4c87-8deb-d82ee1c24d55
-source-git-commit: fac3efb74cdfdb855a3706d84cdca2dcde959940
+source-git-commit: f14b4a1abe9c0f85dc9f070467f94819c1fe89e6
 workflow-type: tm+mt
-source-wordcount: '1898'
+source-wordcount: '1909'
 ht-degree: 0%
 
 ---
@@ -153,7 +153,7 @@ Puede activar y configurar las opciones de pago de los botones inteligentes de P
 
       >[!NOTE]
       >
-      > Para usar Apple, pague [debe tener una cuenta de Apple sandbox tester](https://developer.apple.com/apple-pay/sandbox-testing/#create-a-sandbox-tester-account) (con información falsa de tarjeta de crédito y facturación) para probarla. Cuando esté listo para usar Apple Pay en el simulador de pruebas _o_ modo de producción, después de completar cualquier [pruebas y validación](test-validate.md#test-in-sandbox-environment), póngase en contacto con su representante de ventas para habilitarlo para sus tiendas activas.
+      > Para usar Apple, pague [debe tener una cuenta de Apple sandbox tester](https://developer.apple.com/apple-pay/sandbox-testing/#create-a-sandbox-tester-account) (con información falsa de tarjeta de crédito y facturación) para probarla. Cuando esté listo para usar Apple Pay en el simulador de pruebas _o_ modo de producción, después de completar cualquier [pruebas y validación](test-validate.md#test-in-sandbox-environment), completado [registro propio con [!DNL Apple Pay]](https://developer.paypal.com/docs/checkout/apm/apple-pay/#register-your-live-domain) (_Registrar el dominio de lanzamiento_ solo sección) y [configúrelo para sus tiendas en [!DNL Payment Services]](settings.md#payment-buttons).
 
       Al activar o desactivar la visibilidad de los botones de pago o del mensaje PayPal Pay Later, se muestra una vista previa de esa configuración en la parte inferior de la página Configuración .
 
