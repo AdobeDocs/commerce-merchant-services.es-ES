@@ -1,5 +1,5 @@
 ---
-title: Información general sobre la incorporación para los servicios de entrega de tiendas
+title: Información general de incorporación para los servicios de Store Fulfillment
 description: '''[!DNL Live Search] flujo de incorporación, requisitos del sistema, límites y limitaciones".'
 role: User, Admin
 level: Intermediate
@@ -11,44 +11,44 @@ ht-degree: 0%
 
 ---
 
-# Información general sobre la incorporación para el cumplimiento de la tienda
+# Información general de incorporación para la adquisición de tiendas
 
 Introducción a [!DNL Store Fulfillment for Adobe Commerce by Walmart Commerce Technologies] configurando, configurando y habilitando los siguientes componentes:
 
-- **Extensión de entrega de tiendas**-Instale y configure esta extensión de terceros en la instancia de Adobe Commerce. Después de la instalación, puede configurar y administrar la solución Store Fulfillment desde el Administrador para que sea compatible [!DNL buys online, pickup in store] escenarios (BOPIS) en la tienda de comercio.
+- **Extensión Store Fulfillment**-Instale y configure esta extensión de terceros en la instancia de Adobe Commerce. Después de la instalación, puede configurar y administrar la solución Store Fulfillment desde el administrador hasta el servicio de asistencia [!DNL buys online, pickup in store] (BOPIS) en la tienda de Commerce.
 
-   ![[!DNL Store Fulfillment Service] configuración en la vista Administración](assets/store-fulfillment-admin-home.png)
+   ![[!DNL Store Fulfillment Service] Configuración de en la vista de administración](assets/store-fulfillment-admin-home.png)
 
-- **Cuenta de entrega de la tienda**-Durante el proceso de activación, un administrador de cuentas crea su cuenta de cumplimiento de almacenamiento y le proporciona la información de la cuenta y las credenciales. Estas credenciales son necesarias para habilitar la conexión entre Adobe Commerce y la solución Store Fulfillment.
+- **Cuenta de Store Fulfillment**-Durante el proceso de activación, un administrador de cuentas crea su cuenta de Store Fulfillment y le proporciona la información de la cuenta y las credenciales. Estas credenciales son necesarias para habilitar la conexión entre Adobe Commerce y la solución Store Fulfillment.
 
-- **Aplicación de asistencia de la tienda**: proporciona a los asociados de almacén un flujo de trabajo completo de cumplimiento de almacenamiento para administrar los pedidos BOPIS desde dispositivos móviles. Store Associates puede descargar e instalar el [!DNL Store Assist] para dispositivos iOS y Android™. El proceso de incorporación a la aplicación lo gestiona el Centro de clientes de Walmart Commerce Technologies como un proceso independiente. Sin embargo, [algunos ajustes de configuración de la aplicación](user-setup.md) se completan desde el administrador de Adobe Commerce.
+- **Aplicación Store Assist**: proporciona a los asociados de tienda un flujo de trabajo de cumplimiento de tienda de extremo a extremo para administrar pedidos de BOPIS desde dispositivos móviles. Los Asociados de la Tienda pueden descargar e instalar Walmart [!DNL Store Assist] para dispositivos iOS y Android™. El proceso de incorporación de la aplicación lo administra el Centro de clientes de Walmart Commerce Technologies como un proceso independiente. Sin embargo, [algunos ajustes de configuración de la aplicación](user-setup.md) se completan desde el administrador de Adobe Commerce.
 
-   | Aplicación de asistencia de tienda: vista de introducción | Aplicación de asistencia de la tienda: vista de módulos |
+   | Aplicación de asistencia de tienda: vista de introducción | Aplicación de asistencia de tienda: vista de módulos |
    |-------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------|
-   | ![[!DNL Store Assist App Getting Started] visualización en dispositivos móviles](assets/store-assist-get-started-small.png) | ![[!DNL Store Assist App Orders view] en dispositivo móvil](assets/store-assist-orders-small.png) |
+   | ![[!DNL Store Assist App Getting Started] ver en dispositivo móvil](assets/store-assist-get-started-small.png) | ![[!DNL Store Assist App Orders view] en dispositivo móvil](assets/store-assist-orders-small.png) |
 
 ## Pasos de aprovisionamiento
 
-- **Regístrese para[!DNL Store Fulfillment for Adobe Commerce by Walmart Commerce Technologies]**-Complete el formulario de registro en [business.adobe.com](https://business.adobe.com/resources/store-fulfillment.html)o póngase en contacto con el administrador de cuentas de Adobe Commerce para obtener ayuda.
+- **Suscribirse a[!DNL Store Fulfillment for Adobe Commerce by Walmart Commerce Technologies]**-Completar el formulario de registro el [business.adobe.com](https://business.adobe.com/resources/store-fulfillment.html)o póngase en contacto con el administrador de cuentas de Adobe Commerce para obtener ayuda.
 
-- **Inicio de la solicitud de aprovisionamiento para el cumplimiento de la tienda**-Complete el formulario de admisión proporcionado por su Administrador de cuentas para proporcionar la información necesaria para iniciar el proceso de aprovisionamiento.
+- **Iniciar la solicitud de aprovisionamiento para la satisfacción de tiendas**-Complete el formulario de admisión proporcionado por su administrador de cuentas para proporcionar la información necesaria para iniciar el proceso de aprovisionamiento.
 
-- **Obtenga las credenciales de la cuenta de cumplimiento de la tienda**-Una vez creada la cuenta de satisfacción de la tienda para usted, recibirá las credenciales necesarias para integrar la solución de cumplimiento de la tienda con Adobe Commerce.
+- **Obtén tus credenciales de cuenta de Store Fulfillment**-Una vez creada la cuenta de Store Fulfillment, recibirá las credenciales necesarias para integrar la solución Store Fulfillment con Adobe Commerce.
 
-- **[Descargue el código fuente para instalar el [!DNL Store Fulfillment] Extensión](install.md)**
+- **[Descargue el código fuente para instalar [!DNL Store Fulfillment] extensión](install.md)**
 
 ## Pasos de incorporación
 
 1. [Instalación de la extensión Store Fulfillment para Adobe Commerce](install.md).
 
-1. Desde el administrador, [habilitar la solución](enable-general.md).
+1. Desde el administrador, [activar la solución](enable-general.md).
 
-1. [Configurar la extensión de cumplimiento de la tienda desde el administrador de Adobe Commerce](service-config-settings-overview.md).
+1. [Configuración de la extensión Store Fulfillment desde el administrador de Adobe Commerce](service-config-settings-overview.md).
 
-1. [Conecte el [!DNL Store Fulfillment] con las credenciales de cumplimiento de la tienda proporcionadas a usted](connect-set-up-service.md).
+1. [Conecte el [!DNL Store Fulfillment] mediante las credenciales de Store Fulfillment proporcionadas](connect-set-up-service.md).
 
-1. [Crear usuarios y funciones para la aplicación de ayuda de la tienda](user-setup.md).
+1. [Crear usuarios y funciones para la aplicación de asistencia de tienda](user-setup.md).
 
-1. [Descargar Walmart [!DNL Store Assist] al dispositivo deseado. La aplicación está disponible tanto en la aplicación de Apple (iOS) como en Google Play (Android™)](app-setup.md) tiendas.
+1. [Descargar Walmart&#39;s [!DNL Store Assist] a su dispositivo deseado. La aplicación está disponible tanto en la aplicación de Apple (iOS) como en Google Play (Android™)](app-setup.md) tiendas.
 
-Una vez que haya instalado, configurado, completado la integración correctamente y tenga acceso al [!DNL Store Assist] aplicación, puede [comenzar a crear pedidos y pruebas](test-and-deploy.md).
+Una vez que haya instalado, configurado y completado correctamente la incorporación, y tenga acceso a [!DNL Store Assist] aplicación, puede [empezar a crear pedidos y pruebas](test-and-deploy.md).

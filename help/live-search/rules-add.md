@@ -9,64 +9,64 @@ ht-degree: 0%
 
 ---
 
-# Agregar reglas
+# Añadir reglas
 
-Para generar una regla, el primer paso es utilizar el editor de reglas para definir las condiciones en el texto de consulta del comprador que déclencheur los eventos asociados. A continuación, complete los detalles de la regla, pruebe los resultados y publique la regla.
+Para generar una regla, el primer paso es utilizar el editor de reglas para definir las condiciones en el texto de consulta del comprador que almacenan en déclencheur los eventos asociados. A continuación, complete los detalles de la regla, pruebe los resultados y publique la regla.
 
-## Agregar una regla
+## Añadir una regla
 
-1. En el Administrador, vaya a **Marketing** > SEO y Búsqueda > **[!DNL Live Search]**.
+1. En el Administrador, vaya a **Marketing** > SEO y búsqueda > **[!DNL Live Search]**.
 1. Configure las variables **Ámbito** para identificar el [vista de tienda](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings) donde se aplica la regla.
-1. Haga clic en el **Reglas** pestaña .
-1. Haga clic en **Agregar regla** para iniciar el editor de reglas.
+1. Haga clic en **Reglas** pestaña.
+1. Clic **Añadir regla** para iniciar el editor de reglas.
 
 ## Condiciones
 
 Las condiciones son los requisitos para almacenar en déclencheur un evento. Una regla puede tener hasta diez condiciones y 25 eventos.
 
-![Regla: genere su regla](assets/rules-add-workspace.png)
+![Regla: cree la regla](assets/rules-add-workspace.png)
 
 >[!NOTE]
 >
->Actualmente, no es posible dirigir reglas a un grupo de clientes específico.
+>Actualmente, no es posible segmentar reglas para un grupo de clientes específico.
 
 ### Condición única
 
-1. En *Crear una regla*, seleccione **Condición** para cumplir, y siga las instrucciones para completar la declaración.
+1. En *Genere la regla*, seleccione la **Condición** que debe cumplirse y siga las instrucciones para completar la instrucción.
 
-   * La consulta de búsqueda contiene : introduzca la cadena de texto que debe estar en la consulta del comprador. La configuración Coincidencia determina el grado en que la consulta del comprador coincide con el catálogo. Opciones:<br /> Cualquiera : cualquier parte del texto de consulta del comprador puede coincidir con la condición.<br />Todo : todas las consultas del comprador deben coincidir con la condición.
-   * La consulta de búsqueda es : introduzca una cadena de texto que coincida exactamente con la consulta del comprador. Por ejemplo: &quot;pantalones de yoga&quot;. Reglas con `Search query is` y Coincidir `All` solo puede tener una condición.
-   * La consulta de búsqueda comienza por : introduzca un carácter o una cadena de texto que debe estar al principio de la consulta del comprador.
-   * La consulta de búsqueda termina con : introduzca un carácter o una cadena de texto que debe estar al final de la consulta del comprador.
+   * La consulta de búsqueda contiene: introduzca la cadena de texto que debe estar en la consulta del comprador. La configuración Coincidencia determina el grado de coincidencia de la consulta del comprador con el catálogo. Opciones:<br /> Cualquiera: cualquier parte del texto de consulta del comprador puede coincidir con la condición.<br />Todo: toda la consulta del comprador debe coincidir con la condición.
+   * La consulta de búsqueda es: introduzca una cadena de texto que coincida exactamente con la consulta del comprador. Por ejemplo: &quot;pantalones de yoga&quot;. Reglas con `Search query is` y Coincidencia `All` solo puede tener una condición.
+   * La consulta de búsqueda comienza con: introduzca un carácter o cadena de texto que debe estar al principio de la consulta del comprador.
+   * La consulta de búsqueda termina con: introduzca un carácter o cadena de texto que debe estar al final de la consulta del comprador.
 
-   Los resultados aparecen inmediatamente en la variable *Probar la regla* y se numeran por prioridad. Puede usar la variable *Resultados por fila* en la parte superior derecha para cambiar el número de productos en cada fila.
+   Los resultados aparecen inmediatamente en *Prueba de la regla* y se numeran por prioridad. Puede usar el complemento *Resultados por fila* en la parte superior derecha para cambiar el número de productos en cada fila.
 
    ![Regla: simple](assets/rule-simple-test.png)
 
-1. Para probar otras consultas, cambie el texto de la consulta en la *Probar la regla* cuadro de búsqueda y pulse **Devuelve**.
-Inicialmente, el panel de prueba procesa la consulta desde el cuadro de búsqueda Condiciones . Pero ahora está procesando la consulta desde el cuadro de consulta de prueba. El panel de prueba solo procesa una consulta a la vez.
-1. Si le gusta el resultado, actualice el texto en la *Condiciones* cuadro de búsqueda. A continuación, haga clic en cualquier lugar de la página para actualizar los resultados en el panel de prueba.
-1. Para crear una regla sencilla con una condición, vaya al paso 3: [Añadir eventos](#events).
+1. Para probar otras consultas, cambie el texto de la consulta en *Prueba de la regla* cuadro de búsqueda y pulse **Volver**.
+Inicialmente, el panel de prueba procesa la consulta desde el cuadro de búsqueda Condiciones. Pero ahora está procesando la consulta desde el cuadro de consulta de prueba. El panel de prueba procesa solo una consulta a la vez.
+1. Si le gusta el resultado, actualice el texto en la *Condiciones* cuadro de búsqueda. A continuación, haga clic en cualquier lugar de la página para actualizar los resultados en el panel de pruebas.
+1. Para crear una regla simple con una condición, vaya al paso 3: [Añadir eventos](#events).
 
 ### Varias condiciones
 
 1. Para generar una regla con varias condiciones, haga clic en **Añadir condición**.
-Una regla puede tener hasta diez condiciones. El operador lógico que une dos condiciones se basa en la *Coincidencia* configuración. De forma predeterminada, *Coincidencia* es `All` y el operador lógico es `AND`.
+Una regla puede tener hasta diez condiciones. El operador lógico que une dos condiciones se basa en el actual *Coincidencia* configuración. De forma predeterminada, *Coincidencia* es `All` y el operador lógico es `AND`.
 
-   ![Reglas - La consulta de búsqueda contiene](assets/rules-search-query-contains-and.png)
+   ![Reglas: la consulta de búsqueda contiene](assets/rules-search-query-contains-and.png)
 
 1. Seleccione la segunda condición e introduzca el texto de consulta requerido.
 
-1. Para cambiar la lógica de la regla, cambie la variable **Coincidencia** para determinar la proximidad de los criterios de búsqueda del comprador a la condición de consulta. Establezca **Coincidencia** a uno de los siguientes:
+1. Para cambiar la lógica de la regla, cambie el **Coincidencia** configuración para determinar la precisión con la que los criterios de búsqueda del comprador deben coincidir con la condición de consulta. Establecer **Coincidencia** a uno de los siguientes:
 
-   * Cualquiera - (predeterminado) Todos los operadores lógicos de la regla están definidos como `OR` y los resultados aparecen en el panel de prueba.
-   * Todo : todos los operadores lógicos de la regla se establecen en `AND` y los resultados aparecen en el panel de prueba.
+   * Cualquiera (predeterminado): todos los operadores lógicos de la regla se establecen en `OR` y los resultados aparecerán en el panel de pruebas.
+   * Todos: todos los operadores lógicos de la regla se establecen en `AND` y los resultados aparecerán en el panel de pruebas.
 
-   La variable *Coincidencia* determina el operador lógico que se utiliza para unir varias condiciones. Cambio de la variable *Coincidencia* cambia todos los operadores lógicos de la regla. No es posible combinar `AND` y `OR` en la misma regla.
+   El *Coincidencia* determina el operador lógico que se utiliza para unir varias condiciones. Cambio de la *Coincidencia* La configuración de cambia todos los operadores lógicos de la regla. No es posible combinar `AND` y `OR` en la misma regla.
 
-   En este ejemplo, en lugar de buscar &quot;pantalones de yoga&quot;, hay dos consultas separadas que buscan &quot;yoga&quot; o &quot;pantalones&quot;. Esta regla es menos específica y se activa con mayor frecuencia en la tienda que en la otra.
+   En este ejemplo, en lugar de buscar &quot;pantalones de yoga&quot;, hay dos consultas independientes que buscan &quot;yoga&quot; o &quot;pantalones&quot;. Esta regla es menos específica y se activa con más frecuencia en la tienda que la otra.
 
-   ![Reglas - Coincidencia](assets/rules-match.png)
+   ![Reglas: coincidencia](assets/rules-match.png)
 
 1. Para añadir otra condición, haga clic en **Añadir condición** y repita el proceso.
 
@@ -75,57 +75,57 @@ Una regla puede tener hasta diez condiciones. El operador lógico que une dos co
 La clasificación combina los comportamientos de los usuarios y las estadísticas del sitio para determinar la clasificación del producto.
 Los propietarios de tiendas pueden configurar los siguientes tipos de estrategias de clasificación:
 
-![Reglas - Coincidencia](assets/rules-ranking-type.png)
+![Reglas: coincidencia](assets/rules-ranking-type.png)
 
-* Más comprados: Esto clasifica los productos por compras totales por SKU en los últimos 7 días.
-* La mayoría se añadió al carro de compras: clasificaciones en orden de total de actividades &quot;Añadir al carro de compras&quot; en los 7 días anteriores.
+* Más comprados: esto clasifica los productos según el total de compras por SKU en los 7 días anteriores.
+* Más añadidos al carro de compras: clasifica en orden del total de actividades &quot;Agregar al carro de compras&quot; en los 7 días anteriores.
 * Más visitados: Clasifica mis vistas totales por SKU en los 7 días anteriores.
-* Recomendado para usted: Utiliza el `viewed-viewed` punto de datos : los compradores que vieron este SKU también vieron estos otros SKU.
-* Tendencias: Revisa los eventos de vista de página de las últimas 72 horas para los eventos en segundo plano y de las 24 horas para los eventos en primer plano
-* Ninguno: Los productos se ordenan por relevancia
+* Recomendado para usted: Utiliza el `viewed-viewed` Punto de datos: los compradores que vieron este SKU también vieron estos otros SKU
+* Tendencia: revisa los eventos de vista de página de las últimas 72 horas para los eventos en segundo plano y 24 horas para los eventos en primer plano
+* Ninguno: los productos se ordenan por relevancia
 
-1. Seleccione el tipo de estrategia para la regla. La ventana Probar la regla muestra los resultados esperados.
+1. Seleccione el tipo de estrategia para la regla. La ventana Prueba de la regla muestra los resultados esperados.
 
-## Adición de eventos
+## Añadir eventos
 
-Los eventos son acciones que modifican los resultados de la búsqueda cuando se cumplen las condiciones definidas. Una sola regla puede tener hasta 25 eventos.
+Los eventos son acciones que modifican los resultados de búsqueda cuando se cumplen las condiciones definidas. Una sola regla puede tener hasta 25 eventos.
 
-* Aumento : mueve un producto más alto en los resultados de búsqueda.
-* Bury : mueve un SKU más bajo en los resultados de búsqueda.
-* Anclar un producto: el producto se muestra en la &quot;Posición&quot; seleccionada en la página.
+* Ampliación: mueve un producto a una posición superior en los resultados de búsqueda.
+* Entierro: mueve un SKU a una posición inferior en los resultados de búsqueda.
+* Fijar un producto: el producto se muestra en la &quot;posición&quot; seleccionada en la página.
 * Ocultar un producto: excluye un SKU de los resultados de búsqueda.
 
-La forma más sencilla de fijar un producto es arrastrando y soltando.
+La forma más sencilla de anclar un producto es arrastrando y soltando.
 
-1. Haga clic y arrastre un producto en el panel Prueba . Arrástrela y suéltela en la posición deseada. Los campos Producto y Posición se rellenan automáticamente en el panel Eventos.
+1. Haga clic y arrastre un producto en el panel Prueba. Arrástrela y suéltela en la posición deseada. Los campos Producto y Posición se rellenan automáticamente en el panel Eventos.
 
-   ![Reglas - Coincidencia](assets/rule-event-pin-product.png)
+   ![Reglas: coincidencia](assets/rule-event-pin-product.png)
 
-También puede hacer clic en el icono de la clavija para fijar un producto a su ubicación actual. Utilice el menú contextual de elipsis para &quot;Incrustar en la parte superior&quot; o &quot;Incrustar en la parte inferior&quot;.
+También puede hacer clic en el icono de anclaje para anclar un producto a su ubicación actual. Utilice el menú contextual de los tres puntos para &quot;Anclar al principio&quot; o &quot;Anclar al final&quot;.
 
 >[!NOTE]
 >
->Solo puede fijar productos que se devuelvan en la consulta.
+>Solo puede anclar productos que se devuelven en la consulta.
 
 O los eventos se pueden configurar manualmente:
 
-1. En *Eventos*, elija el **Evento** cuando se cumplan las condiciones asociadas.
+1. En *Eventos*, elija la **Evento** para que tenga lugar cuando se cumplan las condiciones asociadas.
 
    Por ejemplo, elija `Hide a product`. A continuación, introduzca el nombre del producto que desea ocultar. Los productos se sugieren a medida que escribe.
 
-1. Para varios eventos, elija cualquier otro que desee almacenar en déclencheur cuando se cumplan las condiciones.
+1. Para varios eventos, elija cualquier otro evento que desee almacenar en déclencheur cuando se cumplan las condiciones.
 
 ## Detalles adicionales
 
-La información que se introduce aquí aparece en la [Detalles de regla](rules-workspace.md) panel.
+La información introducida aquí aparece en la variable [Detalles de regla](rules-workspace.md) panel.
 
 1. En *Detalles*, introduzca un **Nombre** para la regla. Todos los nombres de reglas deben ser únicos.
-1. Escriba un breve **Descripción** de la regla.
-1. Introduzca la variable **Fecha de inicio** y **Fecha final** para que la regla esté activa o elija las fechas del calendario.
+1. Escriba una descripción breve **Descripción** de la regla.
+1. Introduzca el **Fecha de inicio** y **Fecha de finalización** para que la regla esté activa o seleccione las fechas del calendario.
 
-   Para seleccionar un intervalo de fechas, haga clic en la primera fecha y arrastre para seleccionarlo.
+   Para seleccionar un rango de fechas, haga clic en la primera fecha y arrastre para seleccionarlo.
 
-   ![Regla - Completada](assets/rule-add-details.png)
+   ![Regla: completa](assets/rule-add-details.png)
 
 ## Finalización de la regla
 
@@ -133,20 +133,20 @@ La información que se introduce aquí aparece en la [Detalles de regla](rules-w
 1. Si la regla tiene varias consultas, pruebe cada una de ellas que pueda verse afectada por la regla.
 1. Cuando termine, haga clic en **Guardar y publicar**.
 
-   La regla se agrega a la lista en el espacio de trabajo de reglas.
+   La regla se añade a la lista del espacio de trabajo de reglas.
 
-1. Aunque las reglas activas entren en vigor inmediatamente, es posible que tenga que esperar hasta 15 minutos para que los resultados de la consulta en caché en la tienda se actualicen.
+1. Aunque las reglas activas entran en vigor inmediatamente, es posible que tenga que esperar hasta 15 minutos para que se actualicen los resultados de la consulta en caché en la tienda.
 
 ## Descripciones de campos
 
-### Condiciones (if)
+### Condiciones (si)
 
 | Condición | Descripción |
 |--- |--- |
-| La consulta de búsqueda contiene | Carácter o cadena de texto que se incluye en la consulta del comprador. La consulta del comprador debe coincidir con un solo carácter para cumplir esta condición. |
-| La consulta de búsqueda es | Carácter o cadena de texto que coincida exactamente con la consulta del comprador. Las consultas complejas con varias condiciones no se pueden componer cuando se utiliza esta condición. |
+| La consulta de búsqueda contiene | Un carácter o cadena de texto que se incluye en la consulta del comprador. La consulta del comprador debe coincidir con un solo carácter para cumplir esta condición. |
+| La consulta de búsqueda es | Carácter o cadena de texto que coincide exactamente con la consulta del comprador. Las consultas complejas con varias condiciones no se pueden crear cuando se utiliza esta condición. |
 | La consulta de búsqueda comienza con | La consulta del comprador comienza con este carácter o cadena de texto. |
-| La consulta de búsqueda finaliza con | La consulta del comprador termina con este carácter o cadena de texto. |
+| La consulta de búsqueda termina con | La consulta del comprador termina con este carácter o cadena de texto. |
 
 ### Operadores lógicos
 
@@ -155,7 +155,7 @@ La información que se introduce aquí aparece en la [Detalles de regla](rules-w
 | O | (Predeterminado) El operador lógico `OR` compara dos condiciones y cumple los requisitos para almacenar en déclencheur un evento si al menos una condición es verdadera. |
 | Y | El operador lógico `AND` compara dos condiciones y cumple los requisitos para almacenar en déclencheur un evento si ambas condiciones son verdaderas. |
 
-### Coincidir con operadores
+### Operadores de coincidencia
 
 | Operador | Descripción |
 |--- |--- |
@@ -166,10 +166,10 @@ La información que se introduce aquí aparece en la [Detalles de regla](rules-w
 
 | Evento | Descripción |
 |--- |--- |
-| Aumento | Mueve un SKU o un rango de SKU más alto en los resultados de búsqueda. Cada uno de ellos está marcado con un distintivo de vista previa &quot;potenciado&quot; en los resultados de búsqueda de prueba. |
-| Bury | Mueve un SKU o rango de SKU más abajo en los resultados de búsqueda. Cada uno de ellos está marcado con un distintivo de vista previa &quot;enterrado&quot; en los resultados de búsqueda de prueba. |
-| Incrustar un producto | Adjunta un único SKU a una posición específica en los resultados de búsqueda. El producto se marca con un distintivo de vista previa &quot;anclado&quot; en los resultados de búsqueda de prueba. |
-| Ocultar un producto | Excluye un SKU o rango de SKU de los resultados de búsqueda. |
+| Aumentar | Mueve un SKU o un rango de SKU a una posición superior en los resultados de búsqueda. Cada uno está marcado con un distintivo de vista previa &quot;potenciado&quot; en los resultados de búsqueda de la prueba. |
+| Enterrar | Mueve un SKU o un rango de SKU más abajo en los resultados de búsqueda. Cada uno está marcado con un distintivo de vista previa &quot;enterrado&quot; en los resultados de búsqueda de la prueba. |
+| Fijar un producto | Adjunta un único SKU a una posición específica en los resultados de búsqueda. El producto está marcado con un distintivo de vista previa &quot;anclado&quot; en los resultados de búsqueda de la prueba. |
+| Ocultar un producto | Excluye un SKU o un rango de SKU de los resultados de búsqueda. |
 
 ### Detalles
 
@@ -177,5 +177,5 @@ La información que se introduce aquí aparece en la [Detalles de regla](rules-w
 |--- |--- |
 | Nombre | Nombre de la regla. Los nombres de las reglas deben ser únicos. |
 | Fecha de inicio | La fecha de inicio de la regla, si está programada. |
-| Fecha final | La fecha de finalización de la regla, si está programada. |
-| Descripción | Una breve descripción de la regla. |
+| Fecha de finalización | La fecha de finalización de la regla, si está programada. |
+| Descripción | Breve descripción de la regla. |

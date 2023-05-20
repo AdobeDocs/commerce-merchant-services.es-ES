@@ -1,6 +1,6 @@
 ---
 title: Crear nueva recomendación
-description: Obtenga información sobre cómo crear una unidad de recomendación de producto.
+description: Obtenga información sobre cómo crear una unidad de recomendación de productos.
 exl-id: d393ab78-0523-463f-9b03-ad3f523dce0f
 source-git-commit: d56fd57281a5b675e128cca75d4057756a0bf4bf
 workflow-type: tm+mt
@@ -11,98 +11,98 @@ ht-degree: 0%
 
 # Crear nueva recomendación
 
-Cuando crea una recomendación, crea una _unidad de recomendación_ que contiene el producto recomendado _items_.
+Cuando crea una recomendación, crea un _unidad de recomendación_ que contiene el producto recomendado _items_.
 
 ![Unidad de recomendación](assets/unit.png)
 _Unidad de recomendación_
 
-Al activar la unidad de recomendación, Adobe Commerce empieza a [recopilar datos](workspace.md) para medir impresiones, vistas, clics, etc. La variable [!DNL Product Recommendations] muestra las métricas de cada unidad de recomendación para ayudarle a tomar decisiones comerciales informadas.
+Cuando activa la unidad de recomendación, Adobe Commerce empieza a [recopilar datos](workspace.md) para medir impresiones, vistas, clics, etc. El [!DNL Product Recommendations] La tabla muestra las métricas de cada unidad de recomendación para ayudarle a tomar decisiones comerciales fundadas.
 
-1. En el _Administrador_ barra lateral, vaya a **Marketing** > _Promociones_ > **Recommendations de producto** para mostrar el _Recommendations de producto_ espacio de trabajo.
+1. En el _Administrador_ barra lateral, vaya a **Marketing** > _Promociones_ > **Product Recommendations** para mostrar el _Product Recommendations_ workspace.
 
-1. Especifique la variable [Vista de la tienda](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings) donde desea que se muestren las recomendaciones.
+1. Especifique el [Vista de tienda](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings) donde desee que se muestren las recomendaciones.
 
    >[!NOTE]
    >
-   > Las unidades de recomendación del Generador de páginas deben crearse en la vista de tienda predeterminada, pero luego pueden utilizarse en cualquier lugar. Para obtener más información sobre la creación de recomendaciones de productos con Page Builder, consulte [Añadir contenido: Recommendations de producto](https://experienceleague.adobe.com/docs/commerce-admin/page-builder/add-content/recommendations.html).
+   > Las unidades de recomendación de Page Builder deben crearse en la vista de tienda predeterminada, pero luego pueden utilizarse en cualquier lugar. Para obtener más información sobre la creación de recomendaciones de productos con Page Builder, consulte [Añadir contenido: Recommendations del producto](https://experienceleague.adobe.com/docs/commerce-admin/page-builder/add-content/recommendations.html).
 
-1. Haga clic en **Crear recomendación**.
+1. Clic **Crear recomendación**.
 
 1. En el _Asigne un nombre a la recomendación_ , introduzca un nombre descriptivo para la referencia interna, como `Home page most popular`.
 
-1. En el _Seleccionar tipo de página_ seleccione la página en la que desea que aparezca la recomendación entre las siguientes opciones:
+1. En el _Seleccionar tipo de página_ , seleccione la página en la que desea que aparezca la recomendación entre las siguientes opciones:
 
    - Página principal
    - Categoría
    - Detalles del producto
-   - Carro de compras
+   - Carrito
    - Confirmación
    - [Page Builder](https://experienceleague.adobe.com/docs/commerce-admin/page-builder/add-content/recommendations.html)
 
-   Puede crear hasta cinco unidades de recomendación activas por cada tipo de página y hasta 25 unidades para el Creador de páginas. El tipo de página aparece atenuado Cuando se alcanza el límite.
+   Puede crear hasta cinco unidades de recomendación activas para cada tipo de página y hasta 25 para Page Builder. El tipo de página aparece atenuado cuando se alcanza el límite.
 
    ![Nombre y página de la recomendación](assets/create-recommendation.png)
    _Nombre de recomendación y ubicación de página_
 
-1. En el _Seleccionar tipo de recomendación_ especifique la [tipo de recomendación](type.md) desea que aparezca en la página seleccionada. Para algunas páginas, la variable [placement](placement.md) de recomendaciones se limita a ciertos tipos.
+1. En el _Seleccionar tipo de recomendación_ , especifique la [tipo de recomendación](type.md) desea que aparezca en la página seleccionada. En algunas páginas, la variable [ubicación](placement.md) de recomendaciones se limita a determinados tipos.
 
-   Algunos tipos de recomendación usan datos de comportamiento de sus compradores para [modelos de aprendizaje automático del tren](behavioral-data.md) para crear recomendaciones personalizadas. Para ayudarle a visualizar el progreso de formación de cada tipo de recomendación, esta sección muestra una medida de preparación para cada tipo. Estos indicadores de disponibilidad se calculan en función de dos factores:
+   Algunos tipos de recomendación utilizan datos de comportamiento de sus compradores para lo siguiente [entrenar modelos de aprendizaje automático](behavioral-data.md) para crear recomendaciones personalizadas. Para ayudarle a visualizar el progreso de formación de cada tipo de recomendación, esta sección muestra una medida de la preparación para cada tipo. Estos indicadores de preparación se calculan en función de un par de factores:
 
-   - Tamaño suficiente del conjunto de resultados: ¿Se devuelven suficientes resultados en la mayoría de los escenarios para evitar el uso de [recomendaciones de copia de seguridad](behavioral-data.md#backuprecs)?
+   - Tamaño suficiente del conjunto de resultados: ¿Hay suficientes resultados devueltos en la mayoría de los casos para evitar el uso de? [recomendaciones de copia de seguridad](behavioral-data.md#backuprecs)?
 
-   - Suficiente variedad de conjuntos de resultados: ¿Los productos devueltos representan una variedad de productos de su catálogo? El objetivo de este factor es evitar que una minoría de productos sean los únicos artículos recomendados en todo el sitio.
+   - Variedad del conjunto de resultados suficiente: ¿los productos que se devuelven representan una variedad de productos del catálogo? El objetivo con este factor es evitar tener una minoría de productos siendo los únicos recomendados en todo el sitio.
 
-   En función de los factores anteriores, se calcula y muestra un valor de disponibilidad. Se considera que un tipo de recomendación está listo para implementarse cuando su valor de disponibilidad es del 75 % o superior. Un tipo de recomendación se considera parcialmente listo cuando su preparación es de al menos el 50 %. Por último, se considera que un tipo de recomendación no está listo para implementarse cuando su valor de disponibilidad es inferior al 50%.
+   En función de los factores anteriores, se calcula y se muestra un valor de disponibilidad. Un tipo de recomendación se considera listo para implementar cuando su valor de preparación es del 75 % o superior. Un tipo de recomendación se considera parcialmente listo cuando su preparación es de al menos el 50 %. Por último, se considera que un tipo de recomendación no está listo para implementarse cuando su valor de preparación es inferior al 50 %.
 
    ![Tipo de recomendación](assets/create-recommendation-select-type.png)
    _Tipo de recomendación_
 
-1. En el _Etiqueta de visualización de tienda_ , introduzca el [label](placement.md#recommendation-labels) que son visibles para sus compradores, como &quot;Principales vendedores&quot;.
+1. En el _Etiqueta de visualización de tienda_ , introduzca la [etiqueta](placement.md#recommendation-labels) que es visible para los compradores, como &quot;Principales vendedores&quot;.
 
-1. En el _Elija el número de productos_ , utilice el control deslizante para especificar cuántos productos desea que aparezcan en la unidad de recomendaciones.
+1. En el _Elija el número de productos_ , utilice el control deslizante para especificar cuántos productos desea que aparezcan en la unidad de recomendación.
 
    El valor predeterminado es `5`, con un máximo de `20`.
 
-1. En el _Seleccionar ubicación_ , especifique la ubicación en la que aparecerá la unidad de recomendación en la página.
+1. En el _Seleccionar ubicación_ , especifique la ubicación donde aparecerá la unidad de recomendación en la página.
 
-   - En la parte inferior del contenido principal
-   - En la parte superior del contenido principal
+   - Al final del contenido principal
+   - Al principio del contenido principal
 
-1. (Opcional) Para cambiar el orden de las recomendaciones, seleccione y mueva las filas en la _Elegir posición_ tabla.
+1. (Opcional) Para cambiar el orden de las recomendaciones, seleccione y mueva las filas de la _Elegir posición_ tabla.
 
-   La variable _Elegir posición_ muestra todas las recomendaciones (si las hay) creadas para el tipo de página seleccionado.
+   El _Elegir posición_ Esta sección muestra todas las recomendaciones (si las hay) creadas para el tipo de página seleccionado.
 
    ![Orden de recomendación](assets/create-recommendation-select-placement.png)
    _Orden de recomendación en la página_
 
-1. (Opcional) En la _Filtros_ sección, [aplicar filtros](filters.md) para controlar qué productos aparecen en la unidad de recomendaciones.
+1. (Opcional) En el _Filtros_ sección, [aplicar filtros](filters.md) para controlar qué productos aparecen en la unidad de recomendación.
 
    ![Filtros de recomendación](assets/create-recommendation-filter-products.png)
-   _Filtros de producto de recomendación_
+   _Filtros de productos de Recommendations_
 
 1. Cuando termine, haga clic en una de las siguientes opciones:
 
-   - **Guardar como borrador** para editar la unidad de recomendación más adelante. No se puede modificar el tipo de página o el tipo de recomendación de una unidad de recomendación en estado borrador.
+   - **Guardar como borrador** para editar la unidad de recomendación más adelante. No se puede modificar el tipo de página o el tipo de recomendación de una unidad de recomendación en estado de borrador.
 
    - **Activar** para habilitar la unidad de recomendación en la tienda.
 
-## Vista previa de Recommendations {#preview}
+## Previsualizar Recommendations {#preview}
 
-La variable _Vista previa de productos recomendados_ siempre está disponible con una selección de productos de muestra que podría aparecer en la unidad de recomendación cuando se implemente en la tienda.
+El _Previsualización de productos recomendados_ el panel siempre está disponible con una selección de muestra de productos que podrían aparecer en la unidad de recomendación cuando se implemente en la tienda.
 
-Para probar una recomendación cuando se trabaja en un entorno que no es de producción, puede recuperar los datos de recomendación de un [fuente diferente](settings.md). Esto permite a los comerciantes experimentar con las reglas y obtener una vista previa de las recomendaciones antes de implementarlas en producción.
+Para probar una recomendación cuando se trabaja en un entorno que no es de producción, puede recuperar datos de recomendación de un [fuente diferente](settings.md). Esto permite a los comerciantes experimentar con las reglas y previsualizar las recomendaciones antes de implementarlas en la producción.
 
 | Campo | Descripción |
 |---|---|
-| Nombre | Nombre del producto. |
-| SKU | La unidad de mantenimiento de existencias asignada al producto |
+| Nombre | El nombre del producto. |
+| SKU | La unidad de stock asignada al producto |
 | Precio | El precio del producto. |
-| Tipo de resultado | Principal : indica que se han recopilado suficientes datos de capacitación para mostrar una recomendación.<br />Copia de seguridad: indica que no hay suficientes datos de capacitación recopilados, por lo que se utiliza una recomendación de copia de seguridad para llenar la ranura. Vaya a [Datos de comportamiento](behavioral-data.md) para obtener más información sobre modelos de aprendizaje automático y recomendaciones de copia de seguridad. |
+| Tipo de resultado | Principal: indica que hay suficientes datos de formación recopilados para mostrar una recomendación.<br />Copia de seguridad: indica que no se han recopilado suficientes datos de formación, por lo que se utiliza una recomendación de copia de seguridad para rellenar el espacio. Ir a [Datos de comportamiento](behavioral-data.md) para obtener más información sobre los modelos de aprendizaje automático y las recomendaciones de backup. |
 
-A medida que crea la unidad de recomendaciones, experimente con el tipo de página, el tipo de recomendación y los filtros para obtener información inmediata en tiempo real sobre los productos que se incluirán. A medida que empiece a comprender qué productos aparecen, puede configurar la unidad de recomendaciones para satisfacer sus necesidades comerciales.
+A medida que cree su unidad de recomendación, experimente con el tipo de página, el tipo de recomendación y los filtros para obtener comentarios inmediatos en tiempo real sobre los productos que se incluirán. A medida que empiece a comprender qué productos aparecen, puede configurar la unidad de recomendación para satisfacer sus necesidades comerciales.
 
-Adobe Commerce [filtros](filters.md) recomendaciones para evitar mostrar productos duplicados cuando se implementan varias unidades de recomendación en una sola página. Como resultado, los productos que aparecen en el panel de vista previa pueden diferir de los que aparecen en la tienda.
+Adobe Commerce [filtros](filters.md) recomendaciones para evitar mostrar productos duplicados cuando se implementan varias unidades de recomendaciones en una sola página. Como resultado, los productos que aparecen en el panel de vista previa pueden diferir de los que aparecen en la tienda.
 
 >[!NOTE]
 >
-> No puede obtener una vista previa del `Recently viewed` tipo de recomendación porque los datos no están disponibles en el Administrador.
+> No puede previsualizar el `Recently viewed` Tipo de recomendación porque los datos no están disponibles en el Administrador.

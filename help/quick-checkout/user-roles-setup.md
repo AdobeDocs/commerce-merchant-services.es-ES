@@ -1,6 +1,6 @@
 ---
 title: '[!DNL Quick Checkout] configuración de usuario'
-description: Configure las funciones de usuario y los permisos para mostrar la variable [!DNL Quick Checkout] Panel de administración.
+description: Configure los roles de usuario y los permisos para mostrar el [!DNL Quick Checkout] Panel de administración.
 exl-id: 76393840-8312-41bb-8447-412849815169
 source-git-commit: b89427124cf76e7f36076454949191ee1d88f52c
 workflow-type: tm+mt
@@ -11,27 +11,27 @@ ht-degree: 0%
 
 # [!DNL Quick Checkout] Configuración de usuario
 
-[!DNL Quick Checkout] proporciona a un panel de administración toda la información necesaria para el inicio de la incorporación, mediante la extensión o incluir recursos como el acceso a los documentos, [!DNL Bolt] tablero de mercadotecnia o notas de la versión.
+[!DNL Quick Checkout] proporciona un panel de administración con toda la información necesaria para iniciar la incorporación, utilizar la extensión o incluir recursos como el acceso a documentos, [!DNL Bolt] tablero de comerciantes o notas de la versión.
 
-Para acceder a la [!DNL Quick Checkout] Panel de administración:
+Para acceder a [!DNL Quick Checkout] Panel de administración:
 
-1. En el _Administrador_ barra lateral, vaya a **[!UICONTROL Sales]** > **[!UICONTROL Quick Checkout]**.
+1. En el _Administrador_ barra lateral, navegue hasta **[!UICONTROL Sales]** > **[!UICONTROL Quick Checkout]**.
 
-   ![Menú Compra rápida](assets/overview-admin-panel.png)
+   ![Cierre rápido de menú](assets/overview-admin-panel.png)
 
-Consulte la [Incorporación](../quick-checkout/onboarding.md) para obtener más información sobre cómo configurar la variable [!DNL Quick Checkout] para Adobe Commerce.
+Consulte la [incorporación](../quick-checkout/onboarding.md) para obtener más información sobre cómo configurar el [!DNL Quick Checkout] para Adobe Commerce.
 
-Para permitir al usuario acceder y ver el [!DNL Quick Checkout] Panel de administración, debe comprobar que el usuario tiene asignados los recursos de rol adecuados:
+Para permitir al usuario acceso y visibilidad al [!DNL Quick Checkout] En el panel de administración, debe comprobar que el usuario tiene concedidos los recursos de funciones adecuados:
 
 1. En el _Administrador_ barra lateral, vaya a **[!UICONTROL System]** > Permisos > **[!UICONTROL User Roles]**.
 
    ![Funciones del usuario](assets/user-roles-small.png)
 
-1. En el _Funciones_ ver, haga clic en **Agregar nueva función**
+1. En el _Funciones_ ver, haga clic en **Agregar nuevo rol**
 1. Seleccione el [!DNL Quick Checkout] recursos:
 
-   ![Funciones y permisos de cierre de compra rápido](assets/role-resource-quick-checkout.png)
+   ![Funciones de cierre rápido y permisos](assets/role-resource-quick-checkout.png)
 
-1. Haga clic en **Guardar función**.
+1. Clic **Guardar rol**.
 
-Consulte la [Funciones del usuario](https://docs.magento.com/user-guide/system/permissions-user-roles.html) para obtener más información sobre la definición de una función o la asignación de una función a un usuario.
+Consulte la [Funciones del usuario](https://docs.magento.com/user-guide/system/permissions-user-roles.html) para obtener más información sobre cómo definir una función o asignar una función a un usuario.

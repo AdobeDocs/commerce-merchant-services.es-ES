@@ -1,6 +1,6 @@
 ---
-title: Flujos de trabajo de cumplimiento de Store Assist
-description: Obtenga información sobre los módulos Pick, Stage, Hand-Off y Orders disponibles en la aplicación de asistencia de tienda. Estos módulos habilitan el flujo de trabajo completo de cumplimiento de la tienda para los pedidos de BOPIS. Store Associates utiliza estos módulos para administrar y entregar pedidos de recogida de tiendas a los clientes.
+title: Flujos de trabajo de asistencia de tienda
+description: Obtenga información acerca de los módulos Acopio, Escenario, Entrega y Pedidos disponibles en la aplicación Asistencia en tienda. Estos módulos habilitan el flujo de trabajo de entrega de tiendas de extremo a extremo para pedidos BOPIS. Store Associates utiliza estos módulos para gestionar y entregar pedidos de recogida de tiendas a los clientes.
 role: User
 level: Intermediate
 exl-id: a8414f19-5489-41e9-84d6-39d2e61c2b08
@@ -11,59 +11,59 @@ ht-degree: 0%
 
 ---
 
-# Flujos de trabajo de cumplimiento de Store Assist
+# Flujos de trabajo de asistencia de tienda
 
-La aplicación Store Assist proporciona a Store Associates cuatro módulos para administrar el proceso de cumplimiento en la tienda para la compra en línea y la recogida en pedidos de la tienda:
+La aplicación Store Assist proporciona a Store Associates cuatro módulos para administrar el proceso de cumplimiento en la tienda para comprar en línea y recoger pedidos en la tienda:
 
-- **[Seleccionar](#pick-module)**: obtenga una visibilidad completa de todos los elementos pedidos y las herramientas para asegurarse de que se seleccionan los elementos adecuados y las cantidades correctas. Los asociados del almacén pueden seleccionar uno o varios pedidos simultáneamente para obtener una buena eficacia.
+- **[Seleccionar](#pick-module)**: permite obtener una visibilidad completa de todos los artículos pedidos y de las herramientas para garantizar que se seleccionan los artículos y las cantidades correctas. Los asociados de la tienda pueden elegir uno o varios pedidos simultáneamente para una buena eficacia.
 
-- **[Prueba](#stage-module)**: introduzca una ubicación en la que se realizan los pedidos mientras los clientes viajan a la tienda, de modo que Store Associates pueda encontrarlos fácilmente para realizar la entrega de los pedidos.
+- **[Fase](#stage-module)**: introduzca una ubicación en la que se realicen los pedidos mientras los clientes viajan a la tienda, de modo que los Asociados de tienda puedan encontrarlos fácilmente para la entrega de pedidos.
 
-- **[Desactivar mano](#hand-off-module)**: obtenga notificaciones en tiempo real después de que los clientes lleguen a la tienda para minimizar el tiempo de espera y los pedidos de entrega sin problemas.
+- **[Entrega](#hand-off-module)**: obtenga notificaciones en tiempo real después de que los clientes lleguen a la tienda para minimizar el tiempo de espera y entregar los pedidos sin problemas
 
-- **[Pedidos](#orders-module)**: permite ver una lista de todos los pedidos realizados para un almacén, de modo que todos sepan el número de pedidos y el estado de cada pedido.
+- **[Pedidos](#orders-module)**: permite ver una lista de todos los pedidos realizados para una tienda, de modo que todos sepan la cantidad de pedidos y el estado de cada uno.
 
 >[!NOTE]
 >
->Antes de que Store Associates pueda usar la aplicación Store Assist, un administrador debe completar la [proceso de configuración de la aplicación](app-setup.md).
+>Antes de que Store Associates pueda usar la aplicación Store Assist, un administrador debe completar la [proceso de configuración de aplicación](app-setup.md).
 
-## Seleccionar módulo
+## Elegir módulo
 
-El módulo Pick ayuda a los asociados de la tienda a buscar y analizar los artículos pedidos por el cliente y sacarlos para que los recojan. Se puede ver cuántos pedidos tienen que haberse hecho antes y empezar a recogerlos de inmediato. También puede elegir otros pedidos para elegir primero. Los pedidos se ordenan por tiempo de entrega con pedidos vencidos primero. Los asociados del almacén pueden seleccionar los pedidos que desean seleccionar en el orden que requieran sus operaciones.
+El módulo Pick ayuda a los asociados del almacén a encontrar y escanear los artículos pedidos por el cliente y empaquetarlos para su recogida. Puede ver cuántos pedidos han vencido y empezar a recogerlos de inmediato. También puede elegir otros pedidos para elegir primero. Los pedidos se ordenan por tiempo de vencimiento de entrega con pedidos vencidos primero. Los asociados de la tienda pueden seleccionar los pedidos que desean seleccionar en cualquier pedido que requieran sus operaciones.
 
-Los asociados también pueden elegir elegir elegir entre un pedido a la vez o varios pedidos al mismo tiempo.
+Sus asociados también pueden elegir elegir un pedido a la vez o varios pedidos al mismo tiempo.
 
-Al realizar la selección, los asociados de la tienda verán una lista de todos los artículos que se seleccionarán para cada pedido, sus cantidades, su precio y la descripción del producto del catálogo. Se muestra una barra de progreso para ayudarles a navegar dentro del asistente de almacenamiento mientras seleccionan los pedidos.
+Al realizar la selección, los asociados de la tienda ven una lista de todos los artículos que se van a seleccionar para cada pedido, sus cantidades, el precio y la descripción del producto del catálogo. Se muestra una barra de progreso para ayudarles a navegar dentro de la Asistencia de tienda mientras recogen pedidos.
 
-Una vez que los asociados empiezan a seleccionar y seleccionan los artículos que se van a elegir, se les presenta toda la información del artículo relevante, como: tamaño, color, cantidad, precio, descripción, ajuste y SKU/UPC. Los asociados tienen dos acciones disponibles al seleccionar pedidos:
+Una vez que sus asociados empiezan a seleccionar y seleccionan los artículos que van a seleccionar, se les presenta toda la información relevante del artículo, como: tamaño, color, cantidad, precio, descripción, ajuste y SKU/UPC. Los asociados tienen dos acciones disponibles al acopio de pedidos:
 
-- Indique que no se encuentra el artículo y asígnele un déclencheur de reembolso.
-- Analizar el código de barras en el elemento. El propósito del análisis es verificar que han seleccionado el elemento correcto. En los casos en que la cámara no pueda leer el código de barras, los asociados de la tienda deben introducir manualmente el SKU del elemento que hayan seleccionado.
+- Indica que el artículo no se puede encontrar y déclencheur un reembolso.
+- Escanee el código de barras del elemento. El propósito de la exploración es verificar que seleccionaron el elemento correcto. En caso de que la cámara no pueda leer el código de barras, los socios de la tienda deben introducir manualmente el SKU del artículo que han elegido.
 
-Si los asociados no pueden encontrar un elemento, pueden omitirlo y volver a él más tarde.  El reembolso mencionado anteriormente se emite solamente una vez que completan su etapa de recolección en la orden.
+Si los asociados no pueden encontrar un elemento, pueden omitirlo y volver a él más tarde.  El reembolso mencionado anteriormente se emite solo una vez que completan la fase de recogida del pedido.
 
 ## Módulo de ensayo
 
-El módulo Stage muestra dónde se realiza el pedido registrado hasta que el cliente llega a recogerlo. La configuración de esta ubicación es un paso clave para evitar pedidos perdidos cuando los asociados de la tienda terminan su turno antes de que llegue el cliente o si tiene muchos pedidos. En cualquier caso, esto está diseñado para ayudarle a encontrar rápidamente el orden correcto con toda la información relevante sobre él.
+El módulo Fase muestra dónde se coloca el pedido embolsado hasta que llega el cliente para recogerlo. La configuración de esta ubicación es un paso clave para evitar la pérdida de pedidos cuando los socios de la tienda finalizan su turno antes de que llegue el cliente o si tiene muchos pedidos. En cualquier caso, está diseñado para ayudarle a encontrar rápidamente el pedido correcto con toda la información relevante sobre él.
 
-Puede utilizar una barra de texto de forma libre para indicar dónde se coloca el orden: en el mostrador, en la sala trasera o en la ubicación B3 - todo basado en sus operaciones.
+Puede utilizar una barra de texto de forma libre para indicar dónde se coloca el pedido: debajo del mostrador, en la sala de atrás o en la ubicación B3, todo en función de sus operaciones.
 
-También puede actualizar fácilmente la ubicación de ensayo en la aplicación si sus asociados necesitan colocarla en otro lugar.
+También puede actualizar fácilmente la ubicación de ensayo en la aplicación, si sus asociados necesitan colocarla en otro lugar.
 
-## Módulo de desactivación de mano
+## Módulo de mano libre
 
-La variable [!UICONTROL Hand Off] muestra qué clientes han registrado para recoger sus pedidos y dónde se han realizado sus pedidos y esperan a ellos. Los clientes pueden recoger pedidos en la tienda o en el aparcamiento exterior/costado. La información sobre su ubicación exacta se presenta en este módulo una vez que se han registrado.
+El [!UICONTROL Hand Off] Este módulo muestra qué clientes se han registrado para recoger sus pedidos y dónde se almacenan en zona intermedia sus pedidos y esperar por ellos. Los clientes pueden recoger los pedidos en la tienda o en el aparcamiento exterior / acera. La información sobre su ubicación exacta se presenta en este módulo una vez que se han registrado.
 
-Una vez que seleccione en un pedido que esté listo para la entrega del cliente. Todos pueden ver la información del pedido, incluidos los artículos que no se han encontrado, la ubicación de espera del cliente, el tiempo de espera, la ubicación en la que se ha realizado el pedido y el número de teléfono del cliente, si está disponible.
+Una vez que seleccione un pedido que esté listo para el traspaso de clientes. Todos pueden ver la información del pedido, incluidos los artículos que no se encontraron, la ubicación de espera del cliente, el tiempo de espera, el lugar en el que se realiza el pedido y el número de teléfono del cliente si está disponible.
 
-Es posible que el cliente haya elegido una persona alternativa para recoger el pedido. En este caso, verá el nombre y la información de contacto de la persona que se supone que debe elegir el pedido.
+Es posible que el cliente haya elegido a una persona alternativa para recoger el pedido. En este caso, verá el nombre y la información de contacto de la persona que se supone que debe elegir el pedido.
 
-Al entregar el pedido al cliente, el Asociado de Tiendas debe aceptar el pedido o rechazar ciertos artículos. Una vez que el cliente esté satisfecho, debe firmar el pedido en el dispositivo de su asociado, si una firma de su empresa requiere una firma.
+Al entregar el pedido al cliente, el asociado de tienda debe aceptar el pedido o rechazar determinados artículos. Una vez que el cliente está satisfecho, debe firmar para el pedido en el dispositivo de su socio, si una firma de su compañía requiere una firma.
 
-Si los clientes llegan sin registrarse, sus asociados pueden comprobarlo manualmente.
+Si los clientes llegan sin registrarse, sus asociados pueden registrarlos manualmente.
 
 ## Módulo Pedidos
 
-El módulo Pedidos muestra todos los pedidos existentes y su estado. Cuando un cliente llama para comprobar su pedido, Store Associates puede encontrar la información rápidamente buscando el número o buscando en el módulo Pedidos.
+El módulo Pedidos muestra todos los pedidos existentes y su estado. Cuando un cliente llama para comprobar su pedido, los Asociados de la Tienda pueden encontrar la información rápidamente buscando el número o buscando en el módulo Pedidos.
 
 Store Associates también puede cancelar pedidos desde la página Pedidos de la aplicación Store Assist.

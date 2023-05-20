@@ -1,5 +1,5 @@
 ---
-title: "[!DNL Quick Checkout] para información para desarrolladores de Adobe Commerce"
+title: "[!DNL Quick Checkout] para información de desarrollador de Adobe Commerce"
 description: '"[!DNL Quick Checkout] información para desarrolladores".'
 exl-id: 8926eda4-b4de-4938-a86c-b095616f61f6
 source-git-commit: b89427124cf76e7f36076454949191ee1d88f52c
@@ -9,25 +9,25 @@ ht-degree: 0%
 
 ---
 
-# [!DNL Quick Checkout] Información para desarrolladores
+# [!DNL Quick Checkout] Información del desarrollador
 
-Este tema contiene información para los desarrolladores que trabajan estrechamente con Adobe Commerce y [!DNL Magento Open Source] y desea obtener información detallada sobre el [!DNL Quick Checkout] extensión.
+Este tema contiene información para desarrolladores que trabajan en estrecha colaboración con Adobe Commerce y [!DNL Magento Open Source] y desea obtener información detallada sobre el [!DNL Quick Checkout] extensión.
 
 ## Puntos de extensión
 
-Utilice los puntos de extensión para personalizar la variable [!DNL Quick Checkout].
+Utilice puntos de extensión para personalizar [!DNL Quick Checkout].
 
-Mediante el uso de puntos de extensión, puede realizar personalizaciones sin alterar realmente los componentes principales del código de la aplicación.
+Mediante los puntos de extensión, puede realizar personalizaciones sin alterar realmente los componentes principales del código de la aplicación.
 
-## Paso de detalles de envío
+## Paso Detalles de envío
 
-Se puede utilizar un punto de extensión para personalizar la navegación por pasos automatizada después de iniciar sesión con [!DNL Bolt].
+Se puede utilizar un punto de extensión para personalizar la navegación automatizada por pasos después de iniciar sesión con [!DNL Bolt].
 
 Una vez que un comprador inicia sesión con [!DNL Bolt], toda la información válida se rellena previamente y se redirige al paso de detalles de pago para realizar el pedido. Consulte la [flujo de cierre de compra](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/manage-checkout/checkout-flow.html) para obtener más información.
 
-Este punto de extensión permite evitar la navegación a un paso de pago y puede resultar útil en caso de que haya extensiones que requieran un comprador para realizar acciones adicionales en el paso de envío. Vea a continuación un ejemplo de cómo puede utilizar el punto de extensión con una mezcla:
+Este punto de extensión permite evitar la navegación a un paso de pago y puede resultar útil en caso de que haya extensiones que requieran que un comprador realice acciones adicionales en el paso de envío. Consulte el siguiente ejemplo sobre cómo puede utilizar el punto de extensión con un mixin:
 
-1. Registre una nueva mezcla en el `require-config.js` archivo ubicado en `app/code/Vendor/ModuleName/view/frontend/`.
+1. Registre un nuevo mixin en `require-config.js` archivo ubicado en `app/code/Vendor/ModuleName/view/frontend/`.
 
    ```js
    var config = {
@@ -41,7 +41,7 @@ Este punto de extensión permite evitar la navegación a un paso de pago y puede
    };
    ```
 
-1. Amplíe el modelo en el `can-navigate-to-payment.js` archivo ubicado en `app/code/Vendor/ModuleName/view/frontend/web/js/model/`.
+1. Amplíe el modelo en la `can-navigate-to-payment.js` archivo ubicado en `app/code/Vendor/ModuleName/view/frontend/web/js/model/`.
 
    ```js
    define([
@@ -60,6 +60,6 @@ Este punto de extensión permite evitar la navegación a un paso de pago y puede
 
 >[!WARNING]
 >
-> Este es un ejemplo para un comprador en Alemania (DE) que desea permanecer en el paso de detalles de envío.
+> Este es un ejemplo para un comprador en Alemania (DE) que desea permanecer en el paso Detalles de envío.
 
 Marque [[!DNL Bolt] ayuda para desarrolladores](https://help.bolt.com/developers/) para obtener más información sobre [!DNL Bolt] para desarrolladores.

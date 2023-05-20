@@ -1,6 +1,6 @@
 ---
-title: '''[!DNL Catalog Service] Notas de la versión'
-description: La información de la última versión de [!DNL Catalog Service] para Adobe Commerce.
+title: '[!DNL Catalog Service] Notas de la versión'
+description: La información de la versión más reciente de [!DNL Catalog Service] para Adobe Commerce.
 exl-id: 9bf8e3f7-5b74-4755-867e-ac1c5000ff33
 source-git-commit: f955cfc918c19a3c32126d8c9ef8a59b0e0dce0a
 workflow-type: tm+mt
@@ -9,92 +9,92 @@ ht-degree: 0%
 
 ---
 
-# [!DNL Catalog Service] Notas de la versión
+# [!DNL Catalog Service] Notas de versión
 
 Estas notas de la versión describen las versiones más recientes de [!DNL Catalog Service].
-Se proporciona compatibilidad con la versión principal actual publicada. Se proporcionan como referencia las notas de la versión de versiones anteriores.
+Se proporciona soporte para la versión publicada principal actual. Las notas de la versión de las versiones anteriores se proporcionan como referencia.
 Las actualizaciones incluyen:
 
 ![Nuevo](../assets/new.svg) Nuevas funciones
-![Corrección](../assets/fix.svg) Correcciones y mejoras
+![Fix](../assets/fix.svg) Correcciones y mejoras
 ![Error](../assets/bug.svg) Problemas conocidos
 
 ## Versión principal actual
 
 _25 de abril de 2023_
 
-![Nuevo](../assets/new.svg) Los clientes del servicio de catálogo ahora pueden aprovechar el nuevo [indexador de precios SaaS](../price-index/index.md).
+![Nuevo](../assets/new.svg) Los clientes del servicio de catálogo ahora pueden aprovechar las nuevas [Indexador de precios SaaS](../price-index/index.md).
 
-### Versión 1.7
+### Versión V1.7
 
 _12 de abril de 2023_
 
 [!BADGE Compatibilidad]{type=Informative tooltip="Compatibilidad"}
 
 ![Nuevo](../assets/new.svg) El servicio de catálogo ahora limpia las variantes de producto eliminadas.
-![Corrección](../assets/fix.svg) Mejoras de escalabilidad y performance de la infraestructura.
+![Fix](../assets/fix.svg) Mejoras de rendimiento y escalabilidad de la infraestructura.
 
 #### Limitaciones conocidas
 
 Estas funciones aún no son compatibles:
 
 * Paquete de productos con precio fijo
-* El tamaño máximo para la carga útil de atributos dinámicos es de 9 MB.
-* Precio de producto de grupo. Se puede calcular con precios de producto simples.
+* El tamaño máximo de la carga útil de atributos dinámicos es de 9 MB.
+* Precio del producto del grupo. Se puede calcular con precios de productos simples.
 * En una matriz de imágenes, solo la primera imagen contiene funciones.
 
-Las siguientes limitaciones se pueden resolver utilizando la red de API y la API principal de GraphQL:
+Las siguientes limitaciones se pueden resolver mediante la API Mesh y la API principal de GraphQL:
 
-* Precio mínimo publicitario
-* [Precio de nivel](mesh.md)
-* Productos descargables y tarjetas de regalo
+* Precio Mínimo Anunciado
+* [Precios de nivel](mesh.md)
+* Productos descargables y tarjetas regalo
 
-### Versión 1.6
+### Versión V1.6
 
 _28 de marzo de 2023_
 
 [!BADGE Compatibilidad]{type=Informative tooltip="Compatibilidad"}
 
-![Nuevo](../assets/new.svg) Se agregaron muestras al [`products`](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/queries/products/) consulta.
-![Nuevo](../assets/new.svg) Se ha añadido la capacidad de obtener `entityId` using [Mesh de API](mesh.md).
+![Nuevo](../assets/new.svg) Se han añadido muestras a [`products`](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/queries/products/) consulta.
+![Nuevo](../assets/new.svg) Se ha añadido la capacidad de `entityId` usando [API Mesh](mesh.md).
 
-### Versión 1.5
+### Versión V1.5
 
 _6 de marzo de 2023_
 
 [!BADGE Compatibilidad]{type=Informative tooltip="Compatibilidad"}
 
-![Nuevo](../assets/new.svg) Se ha añadido [`categories`](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/queries/categories/) Funcionalidad de GraphQL.
-![Corrección](../assets/fix.svg) Rendimiento y escalabilidad de API mejorados.
+![Nuevo](../assets/new.svg) Añadido [`categories`](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/queries/categories/) Funcionalidad de GraphQL.
+![Fix](../assets/fix.svg) Rendimiento y escalabilidad de API mejorados.
 
-### Versión 1.4
+### Versión V1.4
 
 _7 de febrero de 2023_
 
 [!BADGE Compatibilidad]{type=Informative tooltip="Compatibilidad"}
 
-![Nuevo](../assets/new.svg) Se ha publicado el paquete de metapaquete catálogo-servicio para simplificar los pasos de instalación.
-![Corrección](../assets/fix.svg) Mejoras de escalabilidad y rendimiento de la API.
+![Nuevo](../assets/new.svg) Se ha publicado un metapaquete de servicio de catálogo para simplificar los pasos de instalación.
+![Fix](../assets/fix.svg) Mejoras de rendimiento y escalabilidad de API.
 
-### Versión 1.3
+### Versión V1.3
 
 _17 de enero de 2023_
 
 [!BADGE Compatibilidad]{type=Informative tooltip="Compatibilidad"}
 
-![Nuevo](../assets/new.svg) Se ha simplificado y mejorado la experiencia de integración.
-![Nuevo](../assets/new.svg) Hay nuevos extremos de entorno limitado para clientes disponibles para pruebas previas a la producción.
+![Nuevo](../assets/new.svg) Simplificación y mejora de la experiencia de incorporación.
+![Nuevo](../assets/new.svg) Hay nuevos extremos de zona protegida del cliente disponibles para pruebas previas a la producción.
 ![Nuevo](../assets/new.svg) Se agregó compatibilidad con productos virtuales.
-![Corrección](../assets/fix.svg) Mejoras de escalabilidad y rendimiento de la API.
+![Fix](../assets/fix.svg) Mejoras de rendimiento y escalabilidad de API.
 
-### Versión 1.1
+### Versión V1.1
 
 _18 de noviembre de 2022_
 
 [!BADGE Compatibilidad]{type=Informative tooltip="Compatibilidad"}
 
-![Nuevo](../assets/new.svg) El servicio de catálogo ahora es compatible con el Adobe [Mesh de API](https://developer.adobe.com/graphql-mesh-gateway/).
-![Corrección](../assets/fix.svg) Mejora de la escalabilidad de la API y rendimiento general.
+![Nuevo](../assets/new.svg) El servicio de catálogo ahora admite Adobes [API Mesh](https://developer.adobe.com/graphql-mesh-gateway/).
+![Fix](../assets/fix.svg) Se ha mejorado la escalabilidad de la API y el rendimiento general.
 
 ### Versión 1.0
 
@@ -102,13 +102,13 @@ _4 de octubre de 2022_
 
 [!BADGE Compatibilidad]{type=Informative tooltip="Compatibilidad"}
 
-![Nuevo](../assets/new.svg) Ahora admiten productos agrupados y agrupados.
-![Nuevo](../assets/new.svg) Se han agregado anulaciones de visibilidad B2B. Los productos ahora se pueden buscar y se pueden agregar al carro de compras para grupos de clientes específicos.
-![Corrección](../assets/fix.svg) El servicio es ahora más estable y ha mejorado el rendimiento.
+![Nuevo](../assets/new.svg) Ahora admite productos agrupados y agrupados.
+![Nuevo](../assets/new.svg) Se han añadido anulaciones de visibilidad B2B. Ahora se pueden buscar productos y se pueden agregar al carro de compras para grupos de clientes específicos.
+![Fix](../assets/fix.svg) El servicio es ahora más estable y ha mejorado el rendimiento.
 
 ## Versiones anteriores
 
-Versiones ++Beta
++++Versiones beta
 
 ### Versión 0.3: beta+
 
@@ -116,25 +116,25 @@ _12 de septiembre de 2022_
 
 [!BADGE Compatibilidad]{type=Informative tooltip="Compatibilidad"}
 
-![Nuevo](../assets/new.svg) Las imágenes para variantes son compatibles: las imágenes de producto se devuelven en función de las opciones seleccionadas
-![Nuevo](../assets/new.svg) Funciones de soporte de precios: permitir que solo los miembros de grupos de clientes específicos vean el precio de los productos
-![Corrección](../assets/fix.svg) Mayor estabilidad y rendimiento del servicio
+![Nuevo](../assets/new.svg) Compatibilidad con imágenes para variantes: las imágenes de producto se devuelven en función de las opciones seleccionadas
+![Nuevo](../assets/new.svg) Funciones para el soporte de precios: permitir que solo los miembros de grupos de clientes específicos vean el precio de los productos
+![Fix](../assets/fix.svg) Estabilidad y rendimiento mejorados del servicio
 ![Nuevo](../assets/new.svg) Las actualizaciones se reciben cuando los productos se eliminan del catálogo
 
-### Versión beta
+### Lanzamiento beta
 
 _9 de agosto de 2022_
 
 [!BADGE Compatibilidad]{type=Informative tooltip="Compatibilidad"}
 
-![Nuevo](../assets/new.svg) La variable `products` y `refineProduct` las consultas devuelven los siguientes datos:
+![Nuevo](../assets/new.svg) El `products` y `refineProduct` Las consultas de devuelven los siguientes datos:
 
 * Atributos de producto predefinidos (del sistema).
 * Atributos de producto dinámicos y filtrarlos por función (página de visualización de producto/página de lista de productos).
 * Opciones de producto.
-* Imágenes del producto y filtrarlas por función (PDP/PLP).
-* Un precio específico para productos simples e intervalos de precios para productos configurables.
-* Precios e intervalos de precios del grupo de clientes. Devuelven un precio predeterminado de reserva en compradores sin un grupo de clientes.
-* Tipos de productos que utilizan precios específicos del cliente de B2B.
+* Imágenes de productos y filtrarlas por función (PDP/PLP).
+* Un precio específico para productos simples y rangos de precios para productos configurables.
+* Precios de grupo de clientes e intervalos de precios. Devuelven un precio predeterminado alternativo para los compradores sin grupo de clientes.
+* Tipos de productos que utilizan precios específicos del cliente B2B.
 
 +++

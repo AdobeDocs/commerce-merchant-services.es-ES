@@ -1,31 +1,31 @@
 ---
-title: Configuración de tiendas de mercante
-description: Configure las fuentes de Inventory management mejoradas como tiendas de productos.
+title: Configuración de tiendas de comerciantes
+description: Configure las fuentes de Inventory management mejoradas como tiendas comerciales.
 role: User, Admin
 level: Intermediate
 exl-id: 7c3444d0-5ecb-4ac1-aa81-e48eea290f5d
 source-git-commit: 4c10ab59ed304002cfde7398762bb70b223180ce
 workflow-type: tm+mt
-source-wordcount: '1209'
+source-wordcount: '1206'
 ht-degree: 0%
 
 ---
 
-# Configuración de tiendas de comerciantes (origen)
+# Configuración de tiendas de comerciantes (fuente)
 
-Esta solución mejora las capacidades nativas de Inventory management al ampliar las fuentes de existencias con funciones orientadas a las operaciones para los comerciantes.
+Esta solución mejora las funciones nativas de Inventory management al ampliar las fuentes de stock con funciones orientadas a las operaciones para los comerciantes.
 
-- Añadir coordenadas geográficas para la ubicación de la tienda
-- Designe el origen como un [!DNL Store Pickup Location] y especificar las capacidades de envío disponibles (Enviar a tienda, Enviar desde tienda)
-- Especifique las opciones de recogida disponibles (en la tienda o en la malla), las instrucciones de recogida personalizadas y otra información para comunicar los detalles de la recogida y las instrucciones a los clientes
+- Agregar coordenadas geográficas para la ubicación de la tienda
+- Designar el origen como [!DNL Store Pickup Location] y especifique las capacidades de envío disponibles (Enviar a tienda, Enviar desde tienda)
+- Especifique las opciones de recogida disponibles (en la tienda o en la acera), las instrucciones de recogida personalizadas y otra información para comunicar los detalles de la recogida y las instrucciones a los clientes
 
-Los términos _source_ y _ubicación de la tienda de mercaderes_ se utilizan de forma intercambiable. Todos los registros son fuentes de inventario, pero las fuentes también pueden ser ubicaciones de tiendas comerciales, según los ajustes de configuración.
+Los términos _origen_ y _ubicación de tienda comercial_ se utilizan indistintamente. Todos los registros son orígenes de inventario, pero los orígenes también pueden ser ubicaciones de tiendas comerciales, según los valores de configuración.
 
-Administre la configuración de las tiendas de mercadotecnia desde el administrador: **[!UICONTROL Stores > Inventory > Sources >  Edit Source]**.
+Administre la configuración de las tiendas del comerciante desde el administrador: **[!UICONTROL Stores > Inventory > Sources >  Edit Source]**.
 
 >[!NOTE]
 >
->Durante el proceso de configuración, puede ser necesario vaciar la caché después de crear fuentes o actualizar fuentes existentes.
+>Durante el proceso de configuración, puede ser necesario vaciar la caché después de crear fuentes o actualizar las fuentes existentes.
 
 ## **General**
 
@@ -39,53 +39,53 @@ Administre la configuración de las tiendas de mercadotecnia desde el administra
 </tr>
 <tr>
 <td><strong>[!UICONTROL Latitude]</strong></br><code>Base Attribute: latitude</code></td>
-<td>Coordenada latitudinal de la ubicación de la tienda del comerciante. Esta información necesaria se utiliza en la búsqueda de ubicación y la ubicación de mapas en la experiencia de tienda. El valor debe coincidir con la dirección exacta del almacén para pasar la validación.</td>
+<td>Coordenada latitudinal de la ubicación del almacén comercial. Esta información necesaria se utiliza en la búsqueda de ubicación y en la ubicación de mapas en la experiencia de la tienda. El valor debe coincidir con la dirección exacta del almacén para pasar la validación.</td>
 <td>Global</td>
 <td>Sí</td>
 </tr>
 <tr>
 <td><strong>[!UICONTROL Longitude]</strong></br><code>Base Attribute: Longitude</code></td>
-<td>Coordenada longitudinal de la ubicación de la tienda del comerciante. Esta información necesaria se utiliza en la búsqueda de ubicación y la ubicación de mapas en la experiencia de tienda. El valor debe coincidir con la dirección exacta del almacén para pasar la validación.</td>
+<td>Coordenada longitudinal de la ubicación del almacén comercial. Esta información necesaria se utiliza en la búsqueda de ubicación y en la ubicación de mapas en la experiencia de la tienda. El valor debe coincidir con la dirección exacta del almacén para pasar la validación.</td>
 <td>Global</td>
 <td>Sí</td>
 </tr>
 <tr>
 <td><strong>[!UICONTROL Use as Pickup Location]</br></strong><code>Base Attribute: is_pickup_location_active</code></td>
-<td>Designe el origen como una ubicación de Recogida de tiendas disponible. Esta configuración determina si la fuente se sincroniza y muestra a los visitantes.</td>
+<td>Designar el origen como ubicación de recogida en tienda disponible. Esta configuración determina si el origen se sincroniza y se muestra a los visitantes.</td>
 <td>Global</td>
 <td>No</td>
 </tr>
 <tr>
 <td><strong>[!UICONTROL Enable Ship to Store]</strong><br><code>Extension Attribute: allow_ship_to_store</code></td>
-<td>Configure las capacidades de envío a almacén en el nivel de origen. Para obtener más información, consulte la opción [General Configuration](enable-general.md) , <strong>[!UICONTROL Enable Ship To Store]
+<td>Configurar las capacidades de envío a tienda en el nivel de origen. Para obtener más información, consulte la opción [Configuración general](enable-general.md), <strong>[!UICONTROL Enable Ship To Store]
 </tr>
 <tr>
 <td><strong>[!UICONTROL Latitude]</strong></br><code>Base Attribute: latitude</code></td>
-<td>Coordenada latitudinal de la ubicación de la tienda del comerciante. Esta información necesaria se utiliza en la búsqueda de ubicación y la ubicación de mapas en la experiencia de tienda. El valor debe coincidir con la dirección exacta del almacén para pasar la validación.</td>
+<td>Coordenada latitudinal de la ubicación del almacén comercial. Esta información necesaria se utiliza en la búsqueda de ubicación y en la ubicación de mapas en la experiencia de la tienda. El valor debe coincidir con la dirección exacta del almacén para pasar la validación.</td>
 <td>Global</td>
 <td>Sí</td>
 </tr>
 <tr>
 <td><strong>[!UICONTROL Longitude]</strong></br><code>Base Attribute: Longitude</code></td>
-<td>Coordenada longitudinal de la ubicación de la tienda del comerciante. Esta información necesaria se utiliza en la búsqueda de ubicación y la ubicación de mapas en la experiencia de tienda. El valor debe coincidir con la dirección exacta del almacén para pasar la validación.</td>
+<td>Coordenada longitudinal de la ubicación del almacén comercial. Esta información necesaria se utiliza en la búsqueda de ubicación y en la ubicación de mapas en la experiencia de la tienda. El valor debe coincidir con la dirección exacta del almacén para pasar la validación.</td>
 <td>Global</td>
 <td>Sí</td>
 </tr>
 <tr>
 <td><strong>[!UICONTROL Use as Pickup Location]</br></strong><code>Base Attribute: is_pickup_location_active</code></td>
-<td>Designe el origen como una ubicación de Recogida de tiendas disponible. Esta configuración determina si la fuente se sincroniza y muestra a los visitantes.</td>
+<td>Designar el origen como ubicación de recogida en tienda disponible. Esta configuración determina si el origen se sincroniza y se muestra a los visitantes.</td>
 <td>Global</td>
 <td>No</td>
 </tr>
 <tr>
 <td><strong>[!UICONTROL Enable Ship to Store]</strong></br> <code>Extension Attribute: [!DNL allow_ship_to_store]</code></td>
-<td>Configure las capacidades de envío a almacén en el nivel de origen. Para obtener más información, consulte la opción [General Configuration](enable-general.md) , <strong>[!UICONTROL Enable Ship To Store]</strong>.</td>
+<td>Configurar las capacidades de envío a tienda en el nivel de origen. Para obtener más información, consulte la opción [Configuración general](enable-general.md), <strong>[!UICONTROL Enable Ship To Store]</strong>.</td>
 <td>Global</td>
 <td>No</td>
 </tr>
 <tr>
 <td><strong>[!UICONTROL Enable Ship From Store]</strong></br><code>Extension Attribute: [!DNL use_as_shipping_source]</code></td>
- <td>Configure las capacidades de envío desde la tienda en el nivel de origen. Para obtener más información, consulte la opción [General Configuration](enable-general.md) , [!UICONTROL Enable Ship From Store].</td>
+ <td>Configurar las capacidades de envío desde la tienda en el nivel de origen. Para obtener más información, consulte la opción [Configuración general](enable-general.md), [!UICONTROL Enable Ship From Store].</td>
 <td>Global</td>
 <td>No</td>
 </tr>
@@ -100,45 +100,45 @@ Administre la configuración de las tiendas de mercadotecnia desde el administra
 
 | **Campo** | **Descripción** | **Ámbito** | **Requerido** |
 |--------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------|--------------|
-| **[!UICONTROL Latitude]**</br>`Base Attribute: latitude` | Coordenada latitudinal de la ubicación de la tienda del comerciante. Esta información necesaria se utiliza en la búsqueda de ubicación y la ubicación de mapas en la experiencia de tienda. El valor debe coincidir con la dirección exacta del almacén para pasar la validación. | Global | Sí |
-| **[!UICONTROL Longitude]**</br>`Base Attribute: Longitude` | Coordenada longitudinal de la ubicación de la tienda del comerciante. Esta información necesaria se utiliza en la búsqueda de ubicación y la ubicación de mapas en la experiencia de tienda. El valor debe coincidir con la dirección exacta del almacén para pasar la validación. | Global | Sí |
-| **[!UICONTROL Use as Pickup Location]**</br>`Base Attribute:[!DNL is_pickup_location_active]` | Designe el origen como una ubicación de Recogida de tiendas disponible. Esta configuración determina si la fuente se sincroniza y muestra a los visitantes. | Global | No |
-| **[!UICONTROL Enable Ship to Store]**</br>`Extension Attribute: [!DNL allow_ship_to_store]` | Configure las capacidades de envío a almacén en el nivel de origen. Para obtener más información, consulte la [Configuración general](enable-general.md) , **[!UICONTROL Enable Ship To Store]**. | Global | No |
-| **[!UICONTROL Enable Ship From Store]**</br>`Extension Attribute: [!DNL use_as_shipping_source]` | Configure las capacidades de envío desde la tienda en el nivel de origen. Para obtener más información, consulte la [Configuración general](enable-general.md) , [!UICONTROL Enable Ship From Store] | Global | No |
+| **[!UICONTROL Latitude]**</br>`Base Attribute: latitude` | Coordenada latitudinal de la ubicación del almacén comercial. Esta información necesaria se utiliza en la búsqueda de ubicación y en la ubicación de mapas en la experiencia de la tienda. El valor debe coincidir con la dirección exacta del almacén para pasar la validación. | Global | Sí |
+| **[!UICONTROL Longitude]**</br>`Base Attribute: Longitude` | Coordenada longitudinal de la ubicación del almacén comercial. Esta información necesaria se utiliza en la búsqueda de ubicación y en la ubicación de mapas en la experiencia de la tienda. El valor debe coincidir con la dirección exacta del almacén para pasar la validación. | Global | Sí |
+| **[!UICONTROL Use as Pickup Location]**</br>`Base Attribute:[!DNL is_pickup_location_active]` | Designar el origen como ubicación de recogida en tienda disponible. Esta configuración determina si el origen se sincroniza y se muestra a los visitantes. | Global | No |
+| **[!UICONTROL Enable Ship to Store]**</br>`Extension Attribute: [!DNL allow_ship_to_store]` | Configurar las capacidades de envío a tienda en el nivel de origen. Para obtener más información, consulte la [Configuración general](enable-general.md) opción, **[!UICONTROL Enable Ship To Store]**. | Global | No |
+| **[!UICONTROL Enable Ship From Store]**</br>`Extension Attribute: [!DNL use_as_shipping_source]` | Configurar las capacidades de envío desde la tienda en el nivel de origen. Para obtener más información, consulte la [Configuración general](enable-general.md) opción, [!UICONTROL Enable Ship From Store] | Global | No |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ## Configuración de ubicación de recogida
 
 | **Campo** | **Descripción** | **Ámbito** | **Requerido** |
 |-----------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------|--------------|
-| **[!UICONTROL Allow In-Store Pickup]**</br>`Extension Attribute: [!DNL store_pickup_enabled]` | Una de las dos opciones de recogida. [!DNL In-Store Pickup] hace referencia a la capacidad de permitir que un cliente introduzca la ubicación de la tienda de comerciantes para recuperar su pedido. </br></br>Cuando está habilitada, esta opción se puede presentar al cliente durante el cierre de compra. </br></br>Esta opción también anula la configuración global a [!UICONTROL Enable In-store Pickup] que se configuró en la variable [!UICONTROL Delivery Method] para [!UICONTROL In-store Pickup] | Global | No |
-| **Instrucciones de recogida en la tienda**</br>`Extension Attribute: store_pickup_instructions` | Un mensaje personalizable entregado al cliente en la variable **Pedido listo para recogida en tienda** notificación por correo electrónico. | Global | No |
-| **Permitir lado de la curva**</br>`Extension Attribute: curbside_enabled` | Una de las dos opciones de recogida. La entrega en la curva permite al cliente estacionar su vehículo en un lugar designado en la ubicación de la tienda de mercantes. En esta situación, el pedido se entrega al cliente mediante un asociado de almacén. </br></br>Cuando está habilitada, esta opción se puede presentar al cliente durante el cierre de compra. Además, es posible que se pida al cliente que describa su vehículo y su estacionamiento durante el proceso de registro. </br></br>Esta opción también anula la configuración global a **Habilitar la selección en el lado de la curva** que se configuró en la variable **Método de entrega** para **Recogida en la tienda** | Global | No |
-| **[!UICONTROL Curbside Instructions]**</br>`Extension Attribute: curbside_instructions` | Un mensaje personalizable entregado al cliente en la variable [!UICONTROL Order Ready For Pickup in Store] notificación por correo electrónico. | Global | No |
-| **[!UICONTROL Estimated Pickup Lead Time]**</br>`Extension Attribute: pickup_lead_time` | Número de minutos necesarios para recibir, seleccionar y preparar la recepción de un pedido. </br></br>Esta información se utiliza para mostrar los tiempos estimados de recogida de pedidos a los clientes en el sitio web.</br></br> Al establecer esta opción, se anula la configuración global de **Tiempo de espera estimado** configurado para el **Método de entrega** en el **Recogida en la tienda** configuración. | Global | No |
-| **[!UICONTROL Estimated Pickup Time Label]**</br>`Extension Attribute: pickup_time_label` | Etiqueta que muestra el número de minutos hasta que un pedido está listo para ser recogido.</br></br> Al personalizar esta etiqueta, puede utilizar el código %1 para insertar su **Tiempo de espera estimado**.</br></br> Al establecer esta opción, se anula la configuración global de [!UICONTROL Estimated Pickup Time Label] configurado para el [!UICONTROL Delivery Method] en el [!UICONTROL In-store Pickup]. | Global | No |
+| **[!UICONTROL Allow In-Store Pickup]**</br>`Extension Attribute: [!DNL store_pickup_enabled]` | Una de las dos opciones de recogida. [!DNL In-Store Pickup] hace referencia a la capacidad de permitir a un cliente introducir la ubicación de la tienda del comerciante para recuperar su pedido. </br></br>Cuando se habilita, esta opción se puede presentar al cliente durante el cierre de compra. </br></br>Esta opción también anula la configuración global de [!UICONTROL Enable In-store Pickup] que se configuró en la [!UICONTROL Delivery Method] para [!UICONTROL In-store Pickup] | Global | No |
+| **Instrucciones de recogida en tienda**</br>`Extension Attribute: store_pickup_instructions` | Un mensaje personalizable enviado al cliente en el **Pedido listo para recoger en tienda** notificación por correo electrónico. | Global | No |
+| **Permitir bordillo**</br>`Extension Attribute: curbside_enabled` | Una de las dos opciones de recogida. La entrega en la acera permite al cliente estacionar su vehículo en un lugar designado en la ubicación de la tienda del comerciante. En esta situación, un dependiente entrega el pedido al cliente. </br></br>Cuando está activada, esta opción se puede presentar al cliente durante el cierre de compra. Además, es posible que se pida al cliente que describa su vehículo y el lugar de estacionamiento durante el proceso de check-in. </br></br>Esta opción también anula la configuración global de **Activar recogida en bordillo** que se configuró en la **Método de envío** para **Recogida en tienda** | Global | No |
+| **[!UICONTROL Curbside Instructions]**</br>`Extension Attribute: curbside_instructions` | Un mensaje personalizable enviado al cliente en el [!UICONTROL Order Ready For Pickup in Store] notificación por correo electrónico. | Global | No |
+| **[!UICONTROL Estimated Pickup Lead Time]**</br>`Extension Attribute: pickup_lead_time` | La cantidad de minutos necesarios antes de recibir un pedido, recogerlo y prepararlo para su recogida. </br></br>Esta información se utiliza para mostrar las horas estimadas de recogida de pedidos a los clientes en el sitio web.</br></br> Al establecer esta opción, se anula la configuración global de **Tiempo de espera de recogida estimado** configurado para la **Método de envío** en el **Recogida en tienda** configuración. | Global | No |
+| **[!UICONTROL Estimated Pickup Time Label]**</br>`Extension Attribute: pickup_time_label` | Etiqueta que muestra el número de minutos hasta que un pedido está listo para ser recogido.</br></br> Al personalizar esta etiqueta, puede utilizar el código %1 para insertar su **Tiempo de espera de recogida estimado**.</br></br> Al establecer esta opción, se anula la configuración global de [!UICONTROL Estimated Pickup Time Label] configurado para la [!UICONTROL Delivery Method] en el [!UICONTROL In-store Pickup]. | Global | No |
 
-### **Horas de apertura**
+### **Horario de apertura**
 
 | **Campo** | **Descripción** | **Ámbito** | **Requerido** |
 |------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------|--------------|
-| **[!UICONTROL Location Timezone]**</br>`Extension Attribute: timezone` | Zona horaria de la ubicación de la tienda de mercantes. Para cada día, establezca las horas de apertura y cierre.</br></br>Estos ajustes se utilizan para optimizar los tiempos de recogida estimados y los informes del servicio de cumplimiento. | Global | Sí |
-| **[!UICONTROL Opening Hours]**</br>`Internal Attribute: inventory_source_opening_hours_dynamic_rows` | Las horas de funcionamiento de la ubicación de la tienda de mercantes. </br></br>Esta información se puede utilizar para optimizar los tiempos de recogida estimados y en los informes de servicio de cumplimiento. | Global | Sí |
+| **[!UICONTROL Location Timezone]**</br>`Extension Attribute: timezone` | Zona horaria de la ubicación de la tienda del comerciante. Para cada día, establezca las horas de apertura y cierre.</br></br>Estos ajustes se utilizan para optimizar los tiempos de recogida estimados y en los informes de servicio de cumplimiento. | Global | Sí |
+| **[!UICONTROL Opening Hours]**</br>`Internal Attribute: inventory_source_opening_hours_dynamic_rows` | El horario de funcionamiento de la ubicación del almacén comercial. </br></br>Esta información se puede utilizar para optimizar los tiempos de recogida estimados y en los informes de servicio de cumplimiento. | Global | Sí |
 
-### Configurar las opciones de la interfaz de Experience Platform Check-in
+### Configuración de las opciones de la interfaz de Check-in Experience
 
 
 
 | **Campo** | **Descripción** | **Ámbito** | **Requerido** |
 |---------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------|--------------|
-| **[!UICONTROL Use Parking Spots]**</br>`Extension Attribute: parking_spots_enabled` | Especifique si la ubicación de la tienda de mercantes tiene plazas de estacionamiento designadas para la recogida en la esquina. </br></br>Cuando esté habilitado, puede configurar los aparcamientos disponibles. | Global | No |
-| **[!UICONTROL Is Parking Spot a Mandatory Field?]**</br>`Extension Attribute: parking_spot_mandatory` | Especifique si se requiere identificación de zona de estacionamiento para los clientes durante la experiencia de compra.</br></br>Si está activado, se pide al cliente que especifique su plaza de estacionamiento al llegar. Si está desactivado, el cliente puede omitir esta entrada. | Global | No |
-| **[!UICONTROL Parking Spots List]**</br> `Internal Attribute: inventory_source_parking_spot_dynamic_rows` | Los aparcamientos disponibles en esta tienda comercial para la recogida en la cordillera. Utilice la interfaz proporcionada para asignar un nombre a cada zona.</br></br> No es necesario nombrar todos los aparcamientos, sólo los lugares destinados a la cortina. Por ejemplo, puede tener disponibles las filas A-G de estacionamiento, pero solo se designan los 8 primeros lugares de la fila A para la recogida en la esquina. En este escenario, puede definir 8 puntos; ex: A1, A2, A3, etc. | Global | No |
-| **[!UICONTROL Allow "Other" Parking Spot Field]**</br>`Extension Attribute: custom_parking_spot_enabled` | Cuando está habilitado, esta configuración permite al cliente describir su lugar de estacionamiento durante el registro de entrada. | Global | No |
-| **[!UICONTROL Use Car Color]**</br>`Extension Attribute: use_car_color` | Especifique si se admite la recopilación del color del vehículo por parte del cliente durante el registro de entrada. </br></br> Las selecciones disponibles para [!UICONTROL Car Color] están configuradas en el [configuración del sistema para la experiencia de registro](check-in-experience-setup.md). | Global | No |
-| **[!UICONTROL Is Car Color a Mandatory Field?]**</br>`Extension Attribute: car_color_mandatory` | Especifique si se requiere la identificación del color del vehículo para los clientes durante el registro.</br></br>Si está activado, se pide al cliente que especifique el color de su vehículo a su llegada. Si está desactivado, el cliente puede omitir esta entrada. | Global | No |
-| **[!UICONTROL Use Car Make]** </br>`Extension Attribute: use_car_make` | Especifique si se admite la recopilación de la marca de vehículo del cliente durante el registro de entrada.</br></br> Las selecciones disponibles para [!UICONTROL Car Make] están configuradas en el [configuración del sistema para la experiencia de registro](check-in-experience-setup.md). | Global | No |
-| **[!UICONTROL Is Car Make a Mandatory Field?]**</br>`Extension Attribute: car_make_mandatory` | Especifique si se requiere la identificación del vehículo para los clientes durante el registro.</br></br>Si está activado, se pide al cliente que especifique la marca de su vehículo a su llegada. Si está desactivado, el cliente puede omitir esta entrada. | Global | No |
-| **[!UICONTROL Use Additional Information]**</br> `Extension Attribute: use_additional_information` | Especifique si se admite la recopilación de información adicional del cliente durante el registro. | Global | No |
-| **[!UICONTROL Is Additional Information a Mandatory Field?]**</br>`Extension Attribute: additional_information_mandatory` | Especifique si se requiere información adicional para los clientes durante el registro. </br></br>Si está activado, se solicita al cliente que introduzca información adicional a su llegada. Si está desactivado, el cliente puede omitir esta entrada. | Global | No |
+| **[!UICONTROL Use Parking Spots]**</br>`Extension Attribute: parking_spots_enabled` | Especifique si la ubicación de la tienda del comerciante tiene lugares de estacionamiento designados para la recogida en la acera. </br></br>Si está activado, puede configurar las plazas de aparcamiento disponibles. | Global | No |
+| **[!UICONTROL Is Parking Spot a Mandatory Field?]**</br>`Extension Attribute: parking_spot_mandatory` | Especifique si se requiere la identificación del lugar de estacionamiento para los clientes durante la experiencia de compra.</br></br>Si está activado, se le pedirá al cliente que especifique su lugar de estacionamiento a la llegada. Si está desactivado, el cliente puede omitir esta entrada. | Global | No |
+| **[!UICONTROL Parking Spots List]**</br> `Internal Attribute: inventory_source_parking_spot_dynamic_rows` | Las plazas de aparcamiento disponibles en esta tienda comercial para la recogida en la acera. Utilice la interfaz proporcionada para asignar un nombre a cada lugar.</br></br> No es necesario nombrar cada lugar de estacionamiento, solo los lugares designados para la acera. Por ejemplo, puede tener filas A-G de estacionamiento disponibles, pero solo los primeros 8 lugares de la fila A están designados para la recogida en la acera. En este escenario, puede definir 8 posiciones; por ejemplo: A1, A2, A3, etc. | Global | No |
+| **[!UICONTROL Allow "Other" Parking Spot Field]**</br>`Extension Attribute: custom_parking_spot_enabled` | Cuando está habilitado, este ajuste permite al cliente describir su lugar de estacionamiento durante el check-in. | Global | No |
+| **[!UICONTROL Use Car Color]**</br>`Extension Attribute: use_car_color` | Especifique si se admitirá la recopilación del color del vehículo del cliente durante el registro de entrada. </br></br> Las selecciones disponibles para [!UICONTROL Car Color] están configuradas en el Administrador [Configuración del sistema para la experiencia de registro](check-in-experience-setup.md). | Global | No |
+| **[!UICONTROL Is Car Color a Mandatory Field?]**</br>`Extension Attribute: car_color_mandatory` | Especifique si es necesaria la identificación del color del vehículo para los clientes durante el registro de entrada.</br></br>Si está activado, se le pedirá al cliente que especifique el color de su vehículo a su llegada. Si está desactivado, el cliente puede omitir esta entrada. | Global | No |
+| **[!UICONTROL Use Car Make]** </br>`Extension Attribute: use_car_make` | Especifique si desea apoyar la recogida del fabricante del vehículo del cliente durante el registro de entrada.</br></br> Las selecciones disponibles para [!UICONTROL Car Make] están configuradas en el Administrador [Configuración del sistema para la experiencia de registro](check-in-experience-setup.md). | Global | No |
+| **[!UICONTROL Is Car Make a Mandatory Field?]**</br>`Extension Attribute: car_make_mandatory` | Especifique si se requiere la identificación del fabricante del vehículo para los clientes durante el registro de entrada.</br></br>Si está activado, se le pedirá al cliente que especifique la marca de su vehículo a su llegada. Si está desactivado, el cliente puede omitir esta entrada. | Global | No |
+| **[!UICONTROL Use Additional Information]**</br> `Extension Attribute: use_additional_information` | Especifique si se admitirá la recopilación de información adicional del cliente durante el registro de entrada. | Global | No |
+| **[!UICONTROL Is Additional Information a Mandatory Field?]**</br>`Extension Attribute: additional_information_mandatory` | Especifique si se requiere información adicional para los clientes durante el registro de entrada. </br></br>Si está activado, se solicita al cliente que introduzca información adicional a su llegada. Si está desactivado, el cliente puede omitir esta entrada. | Global | No |

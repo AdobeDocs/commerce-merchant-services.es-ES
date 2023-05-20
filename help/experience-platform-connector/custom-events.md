@@ -1,23 +1,23 @@
 ---
-title: Crear eventos personalizados
+title: Creación de eventos personalizados
 description: Aprenda a crear eventos personalizados para conectar los datos de Adobe Commerce a otros productos DX de Adobe.
 exl-id: 5a754106-c66a-4280-9896-6d065df8a841
 source-git-commit: 2b735c292920bb0e9052d86bf152748e7ce96079
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '222'
 ht-degree: 0%
 
 ---
 
-# Crear eventos personalizados
+# Creación de eventos personalizados
 
-Puede ampliar el [plataforma de eventos](events.md) creando sus propios eventos de tienda para recopilar datos exclusivos de su industria. Cuando se crea y configura un evento personalizado, se envía a la variable [Recopilador de eventos de Adobe Commerce](https://github.com/adobe/commerce-events/tree/main/packages/commerce-events-collectors).
+Puede ampliar el [plataforma de eventos](events.md) creando sus propios eventos de tienda para recopilar datos exclusivos de su sector. Al crear y configurar un evento personalizado, se envía a la variable [Recopilador de eventos de Adobe Commerce](https://github.com/adobe/commerce-events/tree/main/packages/commerce-events-collectors).
 
-## Administrar eventos personalizados
+## Gestión de eventos personalizados
 
 Los eventos personalizados solo son compatibles con Adobe Experience Platform. Los datos personalizados no se reenvían a los paneles de Adobe Commerce ni a los rastreadores de métricas.
 
-Para cualquier `custom` , el recolector agrega un `personId` (`ecid`) a `customContext` y ajusta un `xdm` antes de reenviar a Edge.
+Para cualquier `custom` evento, el recopilador añade un `personId` (`ecid`) a `customContext` y envuelve un `xdm` objeto que lo rodea antes de reenviarlo a Edge.
 
 Ejemplo:
 
@@ -29,7 +29,7 @@ mse.publish.custom({
 });
 ```
 
-En el borde del Experience Platform:
+En Experience Platform Edge:
 
 ```javascript
 {
@@ -45,15 +45,15 @@ En el borde del Experience Platform:
 >
 > El uso de eventos personalizados puede afectar a los informes predeterminados de Adobe Analytics.
 
-## Gestión de anulaciones de eventos (atributos personalizados)
+## Controlar anulaciones de eventos (atributos personalizados)
 
-Las anulaciones de atributos para eventos estándar solo se admiten para el Experience Platform. Los datos personalizados no se reenvían a los paneles de comercio ni a los rastreadores de métricas.
+Las anulaciones de atributos para eventos estándar solo se admiten para el Experience Platform. Los datos personalizados no se reenvían a los paneles y rastreadores de métricas de Commerce.
 
-Para cualquier evento con un conjunto `customContext`, el selector anula `personId` y los contadores de Adobe Analytics y reenvía todos los demás atributos definidos en `customContext`.
+Para cualquier evento con un conjunto `customContext`, el recolector anula `personId` y Adobe Analytics, y reenvía todos los demás atributos establecidos en `customContext`.
 
 Ejemplos:
 
-Vista de producto con anulaciones publicadas mediante el SDK de Adobe Commerce Events:
+Vista de producto con invalidaciones publicadas mediante el SDK de eventos de Adobe Commerce:
 
 ```javascript
 mse.publish.productPageView({
@@ -61,7 +61,7 @@ mse.publish.productPageView({
 });
 ```
 
-En el borde del Experience Platform:
+En Experience Platform Edge:
 
 ```javascript
 {
@@ -78,7 +78,7 @@ En el borde del Experience Platform:
 }
 ```
 
-La vista de producto con las anulaciones de Adobe Commerce publicadas mediante el SDK de Eventos de Adobe Commerce:
+La vista de producto con invalidaciones de Adobe Commerce publicadas mediante el SDK de eventos de Adobe Commerce:
 
 ```javascript
 mse.publish.productPageView({
@@ -86,7 +86,7 @@ mse.publish.productPageView({
 });
 ```
 
-En el borde del Experience Platform:
+En Experience Platform Edge:
 
 ```javascript
 {
@@ -105,4 +105,4 @@ En el borde del Experience Platform:
 
 >[!NOTE]
 >
-> La anulación de eventos con atributos personalizados puede afectar a los informes predeterminados de Adobe Analytics.
+> Anular los eventos con atributos personalizados puede afectar a los informes predeterminados de Adobe Analytics.

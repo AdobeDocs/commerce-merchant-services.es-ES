@@ -1,6 +1,6 @@
 ---
 title: "Introducción a [!DNL Store Fulfillment]"
-description: '"Descubra cómo [!DNL Store Fulfillment for Adobe Commerce by Walmart Commerce Technologies] admite la compra en línea, recogida en tienda (BOPIS) para clientes. Utilice el móvil de asistencia de tienda para optimizar el cumplimiento de BOPIS y el procesamiento de pedidos para los asociados de tiendas y clientes de comercio".'
+description: '"Aprenda cómo [!DNL Store Fulfillment for Adobe Commerce by Walmart Commerce Technologies] admite la compra en línea, recogida en tienda (BOPIS) para los clientes. Utilice el móvil Store Assist para agilizar el cumplimiento de los BOPIS y el procesamiento de pedidos para los socios de tiendas y clientes de Commerce".'
 role: User
 level: Intermediate
 exl-id: d2f90af8-3eba-499d-84de-4b70ecc7166c
@@ -13,27 +13,27 @@ ht-degree: 0%
 
 # Introducción a [!DNL Store Fulfillment]
 
-La solución Store Fulfillment for Adobe Commerce de Walmart Commerce Technologies es una solución avanzada de cumplimiento omnicanal que se integra con su [!DNL Commerce] tienda para ofrecer una compra en línea superior, recoger en la tienda (BOPIS) experiencia del cliente.
+Store Fulfillment for Adobe Commerce de Walmart Commerce Technologies es una solución de cumplimiento omnicanal avanzada que se integra con su [!DNL Commerce] tienda para ofrecer una experiencia de cliente superior en línea, recogida en tienda (BOPIS).
 
-![Configuración de administración del Adobe de la solución de entrega de almacenamiento](assets/store-fulfillment-admin-home.png)
+![Configuración de administración del Adobe de soluciones Store Fulfillment](assets/store-fulfillment-admin-home.png)
 
-El cumplimiento de la tienda también ofrece un flujo de trabajo de cumplimiento completo que ayuda a los comerciantes a reducir los costes, al mismo tiempo que aumenta las tasas de conversión, el valor de pedido promedio y las tasas de satisfacción del cliente. Este flujo de trabajo ofrece:
+Store Fulfillment también ofrece un flujo de trabajo de entrega de extremo a extremo que ayuda a los comerciantes a reducir los costes a la vez que aumenta las tasas de conversión, el valor promedio de los pedidos y los índices de satisfacción de los clientes. Este flujo de trabajo ofrece:
 
-* **Flexibilidad omnicanal**-Convierta tiendas y almacenes en puntos de recogida y centros de satisfacción.
+* **Flexibilidad omnicanal**-Convierta tiendas y almacenes en puntos de recogida y centros de cumplimiento.
 
-* **Opciones prácticas de recogida de clientes**-Al seleccionar compras en línea, los clientes pueden ver fácilmente la disponibilidad del producto y seleccionar una tienda para la recogida en la tienda o en la barrera.
+* **Cómodas opciones de recogida de clientes**-Al seleccionar las compras en línea, los clientes pueden ver fácilmente la disponibilidad del producto y seleccionar una tienda para la recogida en la tienda o en la acera.
 
-* **Eficiencia del cumplimiento**: la aplicación móvil de ayuda de almacenamiento ayuda a los asociados de almacenamiento a aumentar la velocidad y precisión de cumplimiento de pedidos.
+* **Eficiencia de cumplimiento**: la aplicación móvil Store Assist ayuda a los asociados de la tienda a aumentar la velocidad y precisión de cumplimiento del pedido.
 
-* **Comodidad móvil**-Los clientes reciben notificaciones de pedidos en cada paso. Desde la confirmación del pedido hasta la recepción del pedido, pueden realizar un seguimiento del estado del pedido, obtener instrucciones de registro y comunicarse con los asociados de la tienda cuando lleguen a la tienda.
+* **Comodidad móvil**-Los clientes reciben notificaciones de pedidos en cada paso. Desde la confirmación del pedido hasta la recogida del pedido, pueden rastrear el estado del pedido, obtener instrucciones de registro y comunicarse con los socios de la tienda cuando lleguen a ella.
 
-* **Visibilidad operativa**: mejore la asignación de inventario a nivel de almacén para impulsar el cumplimiento local oportuno.
+* **Visibilidad operativa**: mejore la asignación de inventario a nivel de tienda para impulsar el cumplimiento local oportuno.
 
-## Extensión de entrega de tiendas
+## Extensión Store Fulfillment
 
-La solución Store Fulfillment admite y mejora las capacidades nativas de Adobe Commerce.
+La solución Store Fulfillment admite y mejora las funciones nativas de Adobe Commerce.
 
-* Admite la mayoría de los tipos de producto: simple, configurable, agrupado, agrupado y virtual
+* Admite la mayoría de los tipos de productos: simples, configurables, agrupados, agrupados y virtuales
 
 * Se integra con [[!DNL Adobe Commerce] Inventory management](https://docs.magento.com/user-guide/catalog/inventory-learn-more.html)
 
@@ -41,42 +41,42 @@ La solución Store Fulfillment admite y mejora las capacidades nativas de Adobe 
 
 * Totalmente compatible con el tema de Luma
 
-* Compatibilidad parcial con tiendas PWA y sin periféricos
+* Compatibilidad parcial con tiendas sin encabezado y PWA
 
-* Admite la aplicación Store Assist de Walmart Commerce Technologies. Esta aplicación envía información de pedidos de recogida directamente al dispositivo de mano del empleado en la ubicación de tienda seleccionada. Con esta información, pueden elegir, poner en escena y entregar artículos a los clientes de forma rápida y precisa cuando llegan a la tienda.
+* Admite la aplicación Store Assist de Walmart Commerce Technologies. Esta aplicación entrega la información de la orden de recogida directamente al dispositivo de mano del empleado en la ubicación de la tienda seleccionada. Con esta información, pueden elegir, almacenar en zona intermedia y entregar artículos a los clientes de forma rápida y precisa cuando llegan a la tienda.
 
-## Aplicación de asistencia de la tienda
+## Aplicación de asistencia de tienda
 
-La aplicación Store Assist para dispositivos iOS y Android™ interactúa con [!DNL Walmart Commerce Technologies] para proporcionar funciones de realización omnicanal a sus tiendas minoristas.
+La aplicación Store Assist para dispositivos iOS y Android™ interactúa con [!DNL Walmart Commerce Technologies] para ofrecer funciones de cumplimiento omnicanal a sus tiendas minoristas.
 
-* Envíe pedidos de recogida en la tienda y en el lado de la curva directamente para almacenar los dispositivos móviles de los asociados
+* Envíe pedidos de recogida en la tienda y en la acera directamente para almacenar los dispositivos móviles de sus asociados
 
-* Asegúrese de que los pedidos de la tienda se recogen, se ponen en escena y se entregan a los clientes de forma rápida y precisa cuando llegan a la tienda para que los recojan
+* Asegúrese de que los pedidos de la tienda se recojan, almacenen en zona intermedia y entreguen a los clientes de forma rápida y precisa cuando lleguen a la tienda para recogerlos
 
-* Administre el acceso de los usuarios asociados al almacén, incluidas las políticas de seguridad, la autenticación de dos factores y mucho más
+* Administrar el acceso de los usuarios asociados a la tienda, incluidas las políticas de seguridad, la autenticación de doble factor y mucho más
 
-* Sincronizar automáticamente los datos sobre las ubicaciones y el inventario de las tiendas minoristas con Adobe Commerce
+* Sincronizar automáticamente datos sobre las ubicaciones y el inventario de sus tiendas con Adobe Commerce
 
 ## Experiencia del usuario mejorada
 
-El cumplimiento de la tienda mejora Adobe Commerce al añadir funciones para ofrecer experiencias de compra mejoradas y flujos de trabajo de cumplimiento optimizados.
+Store Fulfillment mejora Adobe Commerce al añadir funciones para ofrecer experiencias de compra mejoradas y flujos de trabajo de cumplimiento optimizados.
 
-* **Selector de ubicación de almacenamiento (SLS)**-Agrega opciones de recogida de tiendas, disponibilidad del inventario y selectores de tiendas a las páginas de productos y carros, además del cierre de compra nativo.
+* **Selector de ubicación de tienda (SLS)**-Agrega opciones de recogida de tiendas, disponibilidad de inventario y selectores de tiendas a las páginas de productos y carros de compras, además del cierre de compra nativo.
 
-* **Disponibilidad de inventario**-Agrega opciones adicionales de configuración global y de producto a Adobe Commerce Inventory management. Estas opciones admiten la asignación de inventario a nivel de almacén para impulsar el cumplimiento local oportuno.
+* **Disponibilidad de inventario**-Añade opciones de producto y configuración global adicionales a Adobe Commerce Inventory management. Estas opciones admiten la asignación de inventario a nivel de tienda para impulsar la realización local oportuna.
 
-* **Mejoras en el carro de compras y el cierre de compra**-Comunica a los clientes las horas de recogida, las ubicaciones y los costes más rápidos disponibles durante su sesión de compra en línea.
+* **Mejoras de carrito y cierre de compra**- Comunica los tiempos de recogida, ubicaciones y costes más rápidos a los clientes durante su sesión de compra en línea.
 
-* **Flujo del proceso de registro**-Añade interfaces para mejorar el proceso de registro del cliente y las interacciones con los asociados de la tienda cuando llegan para la recogida en la tienda o en la zona de interrupción.
+* **Flujo del proceso de registro**-Añade interfaces para mejorar el proceso de registro de clientes y las interacciones con los asociados de la tienda cuando llegan para su recogida en la tienda o en la acera.
 
-* **Mi historial de cuenta**-Amplía el [!DNL Commerce] historial de cuentas para mostrar los pasos en el historial de pedidos.
+* **Historial de mi cuenta**-Amplía el [!DNL Commerce] historial de cuentas para mostrar los pasos del historial de pedidos.
 
-* **Correos electrónicos transaccionales**-Amplía las capacidades de administración de [!UICONTROL Sales Emails] para añadir plantillas de correo electrónico para comprar en línea, recoge las transacciones de la tienda. Las plantillas admiten la comunicación en tiempo real entre clientes y asociados de la tienda durante el proceso de recogida de pedidos.
+* **Correos electrónicos transaccionales**-Amplía las capacidades de administración de [!UICONTROL Sales Emails] para agregar plantillas de correo electrónico para comprar en línea, seleccione las transacciones en la tienda. Las plantillas admiten la comunicación en tiempo real entre clientes y socios de la tienda durante el proceso de recogida de pedidos.
 
-* **Cumplimiento flexible**-Extends [!DNL Commerce] funciones para admitir escenarios de procesamiento de pedidos atrasados, reducciones de cantidad y cumplimiento parcial de pedidos, al tiempo que se facilita cualquier cancelación y nota de crédito necesarias para admitir estos escenarios.
+* **Cumplimiento flexible**-Extiende [!DNL Commerce] funciones compatibles con escenarios para el procesamiento de pedidos pendientes, reducciones de cantidad y satisfacción de pedidos parciales, a la vez que facilitan las cancelaciones y notas de abono necesarias para admitir estos escenarios.
 
 >[!TIP]
 >
-> Para obtener una demostración rápida de la solución de entrega de la tienda, consulte la [Información general sobre el cumplimiento de la tienda](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/orders/store-fulfillment.html) disponible en _Vídeos y Tutorials de Adobe Commerce_.
+> Si desea ver una demostración rápida de la solución Store Fulfillment, consulte la [Información general de Store Fulfillment](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/orders/store-fulfillment.html) disponible en _Vídeos y Tutorials de Adobe Commerce_.
 
 

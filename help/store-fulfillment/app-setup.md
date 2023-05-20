@@ -1,6 +1,6 @@
 ---
-title: Configuración de la aplicación
-description: Configure el [!DNL Store Assist] aplicación para administrar los flujos de trabajo y procesos de cumplimiento de la tienda end-to-end para la compra en línea, realizar pedidos en la tienda.
+title: Configuración de aplicación
+description: Configure las variables [!DNL Store Assist] aplicación para administrar los flujos de trabajo y procesos de cumplimiento de tiendas de extremo a extremo para comprar en línea y recoger pedidos en tiendas.
 role: User, Admin
 level: Intermediate
 exl-id: bcb5b02b-0141-407a-ad55-6e10e8e1aa90
@@ -11,63 +11,63 @@ ht-degree: 0%
 
 ---
 
-# Configuración de la aplicación
+# Configuración de aplicación
 
-Store Assist es una aplicación de plataforma de cumplimiento como servicio (FaaS) basada en Walmart Commerce Technologies. La aplicación proporciona funciones de cumplimiento en la tienda para gestionar [!DNL buy online, pick up in store] (BOPIS) órdenes. Con el asistente de tienda, los asociados de almacén pueden ver qué artículos pidieron los clientes, recogen los artículos correctos con mayor rapidez y configuran los pedidos completados para el envío de recogida en tienda o en el lado del límite a los clientes.
+Store Assist es una aplicación de plataforma de cumplimiento como servicio (FaaS) con tecnología de Walmart Commerce Technologies. La aplicación proporciona funciones de cumplimiento en la tienda para gestionar [!DNL buy online, pick up in store] (BOPIS) pedidos. Con la asistencia de tienda, los socios de tienda pueden ver qué artículos pidieron los clientes, recoger los artículos correctos más rápido y configurar pedidos satisfechos para la entrega de recogida en tienda o en la zona de la calle a los clientes.
 
-La aplicación de asistencia de la tienda recibe toda la información sobre pedidos y clientes, desde los detalles de pedidos hasta los tiempos de recogida, y pone los datos a disposición de los asociados en línea, a través de dispositivos móviles. La aplicación incluye [!UICONTROL Pick], [!UICONTROL Stage], [!UICONTROL Handoff]y [!UICONTROL Orders] módulos para ayudar a Store Associates con actividades de cumplimiento como las siguientes:
+La aplicación Store Assist recibe toda la información de pedidos y clientes (desde los detalles del pedido hasta las horas de recogida) y pone los datos a disposición de los asociados del almacén en línea, a través de dispositivos móviles. La aplicación incluye [!UICONTROL Pick], [!UICONTROL Stage], [!UICONTROL Handoff], y [!UICONTROL Orders] para ayudar a Almacenar se asocia con actividades de cumplimiento como las siguientes:
 
-- Asigne fechas y horas de entrega del pedido.
-- Reciba notificaciones de los clientes cuando lleguen para la recogida de pedidos.
-- Etapa los pedidos para su entrega a los clientes.
-- Rastree el estado de los pedidos de todas las ubicaciones de tiendas asignadas.
+- Asignar fechas y horas de entrega de pedidos.
+- Reciba notificaciones de clientes cuando lleguen para recoger el pedido.
+- Realizar pedidos de entrega a los clientes.
+- Rastree el estado de los pedidos de todos los pedidos en sus ubicaciones de tiendas asignadas.
 
 >[!NOTE]
 >
->Consulte [Flujos de trabajo de cumplimiento de Store Assist](store-assist-modules.md) para obtener más información sobre la aplicación Store Assist.
+>Consulte [Flujos de trabajo de asistencia de almacenamiento](store-assist-modules.md) para obtener más información sobre la aplicación Store Assist.
 
-## Configurar la aplicación de ayuda de la tienda
+## Configuración de la aplicación de asistencia de tienda
 
-La aplicación de ayuda de la tienda requiere dos tipos de configuración:
+La aplicación Store Assist requiere dos tipos de configuración:
 
-- Configuración del sistema de administración de Adobe Commerce para [administrar cuentas de usuario, funciones de usuario, permisos de recursos](user-setup.md)y [las selecciones de modelo y fabricación de automóviles disponibles para los clientes durante el proceso de facturación](check-in-experience-setup.md).
+- Configuración del sistema de administración de Adobe Commerce para [administrar cuentas de usuario, funciones de usuario y permisos de recursos](user-setup.md), y [las selecciones de modelos y marcas de automóviles disponibles para los clientes durante el proceso de check-in](check-in-experience-setup.md).
 
-- Los ajustes de configuración de front-end para personalizar la interfaz de aplicación de Store Assist y otros ajustes, entre ellos:
+- Ajustes de configuración de front-end para personalizar la interfaz de la aplicación Store Assist y otros ajustes, como:
 
-   - **Marca de la aplicación de ayuda de la tienda**: personalice la interfaz de usuario de la aplicación con el logotipo y los colores de su empresa.
+   - **Crear una marca para la aplicación Store Assist**: personalice la interfaz de usuario de la aplicación con el logotipo y los colores de su empresa.
 
-   - **Actualizar las instrucciones predeterminadas**: personalice las instrucciones de los módulos Seleccionar, Escenario, Entrega y Pedido del Asistente de Almacenamiento para guiar a los Asociados de Almacenamiento a través de cada paso del flujo de trabajo de cumplimiento para su empresa.
+   - **Actualizar las instrucciones predeterminadas**: permite personalizar las instrucciones de los módulos Asistencia en tienda, Selección, Ensayo, Entrega y Pedido para guiar a los asociados de tienda en cada paso del flujo de trabajo de cumplimiento de la empresa.
 
-   - **Localización**: seleccione el idioma disponible para la aplicación. Elija el formato de fecha y hora y seleccione las unidades de medida predeterminadas y la moneda predeterminada.
+   - **Localización**: seleccione el idioma disponible para la aplicación. Elija el formato de fecha y hora y seleccione las unidades de medida y la moneda predeterminadas.
 
    - **Tiempo de inactividad**: especifique la cantidad de tiempo que la aplicación debe estar inactiva antes de cerrar la sesión.
 
-   - **Cancelación de la tienda**: especifique si se pueden cancelar pedidos de la tienda y qué funciones tienen permisos de cancelación
+   - **Cancelación de la tienda**: permite especificar si los pedidos se pueden cancelar desde el almacén y qué funciones tienen permisos de cancelación
 
-   - **Ventana de limpieza de pedidos**: especifique cuánto tiempo ha pasado el [Tiempo de espera estimado](enable-general.md#delivery-method-title-configuration) que un pedido seleccionado permanece en el ensayo antes de ser rebloqueado (por ejemplo, tres días). El valor predeterminado es de siete días. Si esta configuración está activada, el pedido se cancela automáticamente cuando esta hora caduca. Los artículos se rebloquean y el comerciante recibe un correo electrónico de cancelación.
+   - **Ventana Limpieza de Pedidos**: permite especificar cuánto tiempo debe transcurrir el [Tiempo de espera de recogida estimado](enable-general.md#delivery-method-title-configuration) Asegúrese de que un pedido seleccionado permanece en el entorno de ensayo antes de volver a estar disponible, por ejemplo, tres días. El valor predeterminado es de siete días. Si esta configuración está activada, la solicitud se cancela automáticamente cuando caduca este tiempo. Los artículos son repuestos y el comerciante recibe un correo electrónico de cancelación.
 
-   - Personalice todo en las instrucciones de la aplicación (selección, ensayo, desactivación).
+   - Personalice todas las instrucciones de la aplicación (picking, ensayo, entrega).
 
-   - **Recogida de notificaciones**: especifique si desea enviar una notificación push para iniciar el proceso de selección después de que un cliente realice un pedido.
+   - **Selección de notificaciones**: permite especificar si se debe enviar una notificación push para iniciar el proceso de picking después de que un cliente realice una solicitud.
 
-   - **Comprobar notificaciones**: permite especificar si se debe enviar una notificación push durante el proceso de registro para los pedidos después del registro, después de que el tiempo de espera del cliente exceda un período de tiempo especificado. O bien, desactive la notificación.
+   - **Registrar notificaciones**: especifique si desea enviar una notificación push durante el proceso de registro para las recogidas de pedidos después del registro, después de que el tiempo de espera del cliente exceda un período de tiempo especificado. O bien, deshabilite la notificación.
 
-   - **Proceso de apagado manual**: habilite procesos opcionales cuando Store Associate envía pedidos al cliente, por ejemplo, requiera una firma del cliente o solicite a la asociada que compruebe el ID del cliente.
+   - **Proceso de entrega**: permite activar procesos opcionales cuando el asociado de tienda envía el pedido al cliente; por ejemplo, para solicitar la firma de un cliente o pedir al asociado que compruebe el ID del cliente.
 
-   - **Habilitar rechazo de elemento al realizar el envío**: permite que los clientes devuelvan o cancelen artículos de pedido durante la entrega del pedido.
-   Trabaje con el equipo de Servicios al cliente de Walmart Commerce Technologies para completar la configuración de front-end para la aplicación de asistencia al almacén.
+   - **Habilitar rechazo de elemento al entregar**: permite a los clientes devolver o cancelar artículos de pedido durante el traspaso de pedidos.
+   Trabaje con el equipo de servicios al cliente de Walmart Commerce Technologies para completar la configuración de front-end de la aplicación Store Assist.
 
 ## Descarga e instalación de aplicaciones
 
-Una vez configurada y configurada la aplicación de ayuda de la tienda, Store Associates puede descargar, instalar e iniciar sesión en la aplicación de asistencia de la tienda desde sus dispositivos móviles.
+Una vez configurada y configurada la aplicación Store Assist, Store Associates puede descargar, instalar e iniciar sesión en la aplicación Store Assist desde sus dispositivos móviles.
 
-- Compruebe que el dispositivo móvil cumple los requisitos de [requisitos de hardware y software](solution-requirements.md#store-assist-app-requirements) para la solución Store Fulfillment.
+- Compruebe que el dispositivo móvil cumple los requisitos [requisitos de hardware y software](solution-requirements.md#store-assist-app-requirements) para la solución Store Fulfillment.
 
-- Descargue la aplicación de ayuda de la tienda desde la [Apple App Store](https://apps.apple.com/us/app/store-assist-by-walmart/id1609281539){target="_blank"} or the [Google Play store](https://play.google.com/store/apps/details?id=com.walmart.faas.storeassist){target="_blank"}.
+- Descargue la aplicación Store Assist desde el [Apple App Store](https://apps.apple.com/us/app/store-assist-by-walmart/id1609281539){target="_blank"} or the [Google Play store](https://play.google.com/store/apps/details?id=com.walmart.faas.storeassist){target="_blank"}.
 
-- Store Associates requiere la siguiente información para iniciar sesión:
+- Store Associates necesita la siguiente información para iniciar sesión:
 
-   - **[!UICONTROL Company name]** asociada a la cuenta de Store Assist
+   - **[!UICONTROL Company name]** asociado a la cuenta de asistencia de tienda
 
-   - **Credenciales de cuenta de Store Assist**: credenciales de nombre de usuario y contraseña para su cuenta.
-   Un administrador de Adobe Commerce puede crear y administrar [!DNL Store Assist app] cuentas de usuario de todas las ubicaciones de tiendas que tengan [Recogida en la tienda](merchant-store-configuration.md#pickup-location-configuration) activada en la configuración de las tiendas de administración.
+   - **Credenciales de cuenta de asistencia de tienda**: credenciales de nombre de usuario y contraseña para su cuenta.
+   Un administrador de Adobe Commerce puede crear y administrar [!DNL Store Assist app] cuentas de usuario para todas las ubicaciones de tiendas que tengan [Recogida en tienda](merchant-store-configuration.md#pickup-location-configuration) Habilitado en la configuración de las tiendas de administración.

@@ -1,6 +1,6 @@
 ---
-title: Configuración de múltiples sitios web y ámbito
-description: Configure las existencias y los métodos de entrega para varios sitios web y ámbitos de almacenamiento.
+title: Configuración de varios sitios web y ámbitos
+description: Configure las existencias y los métodos de envío para varios sitios web y ámbitos de almacenamiento.
 role: User, Admin
 level: Intermediate
 exl-id: 8939046e-1c26-4380-83be-ff8e074e591d
@@ -11,30 +11,30 @@ ht-degree: 0%
 
 ---
 
-# Configuración de múltiples sitios web y ámbito
+# Configuración de varios sitios web y ámbitos
 
-Puede configurar la variable [Ámbito](https://docs.magento.com/user-guide/configuration/scope.html) para que algunos elementos se adapten a varios sitios web, tiendas y vistas de tiendas:
+Puede configurar las variables [Ámbito](https://docs.magento.com/user-guide/configuration/scope.html) para que algunos elementos se adapten a varios sitios web, tiendas y vistas de tiendas:
 
 - [Administrar stock](https://docs.magento.com/user-guide/catalog/inventory-stock.html) por ámbito
 
 - Administrar [!DNL Delivery Methods] por ámbito
 
-Puede asignar existencias a un sitio web o a un ámbito de almacenamiento. A continuación, actualice los orígenes del almacén para establecer los métodos de envío disponibles (entrega a casa, recogida en el almacén).
+Puede asignar existencias a un sitio web o a un ámbito de tienda. A continuación, actualice las fuentes de la tienda para establecer los métodos de entrega disponibles (envío a domicilio, recogida en la tienda).
 
-Después de actualizar la configuración correctamente, las opciones de recogida de la tienda en la página de detalles del producto (PDP) de la tienda de Adobe Commerce solo se pueden seleccionar para los productos disponibles de una fuente de existencias que permita la recogida de la tienda.
+Después de actualizar la configuración correctamente, las opciones de recogida de la tienda en la página de detalles del producto (PDP) de la tienda de Adobe Commerce solo se pueden seleccionar para los productos disponibles en una fuente de existencias que permita la recogida en la tienda.
 
-## Administrar la configuración de recogida en la tienda
+## Administrar configuración de recogida en tienda
 
-Habilitar o deshabilitar el [!UICONTROL In-Store Pickup] opciones para cada sitio web o ámbito de almacenamiento desde el [Configuraciones de métodos de entrega](enable-general.md#delivery-methods) en el menú
+Habilitar o deshabilitar el [!UICONTROL In-Store Pickup] opciones para cada sitio web o ámbito de tienda desde el [Configuraciones del método de envío](enable-general.md#delivery-methods) en el Administrador.
 
 1. Vaya a **[!UICONTROL Stores > Configuration]**.
 
-1. Seleccione el ámbito (Sitio web que desea almacenar) que desea configurar.
+1. Seleccione el ámbito (Sitio web para almacenar) que desea configurar.
 
 1. Con el ámbito seleccionado, vaya a **[!UICONTROL Sales > Delivery Methods]**.
 
-1. Desactivar o habilitar el **[!UICONTROL In-Store Pickup]** Método de entrega.
+1. Desactive o habilite **[!UICONTROL In-Store Pickup]** Método de envío.
 
-También puede administrar si la recogida en la parte de la curva o en la tienda está disponible globalmente en esta sección.
+También puede administrar si la recogida en la acera o en la tienda está disponible globalmente en esta sección.
 
-Administre el [!UICONTROL In-Store Pickup] y [!UICONTROL Delivery Method] configuración por fuente de existencias. Hay muchas otras configuraciones que ofrecen flexibilidad total con respecto a la implementación.
+Administrar el [!UICONTROL In-Store Pickup] y [!UICONTROL Delivery Method] configuración por origen de stock. Existen muchas otras configuraciones para disfrutar de una flexibilidad total respecto a la implementación.

@@ -1,33 +1,33 @@
 ---
 title: Datos disponibles
-description: Utilice los datos de los informes financieros para conciliar los informes con sistemas que no sean de comercio.
+description: Utilice los datos de informes financieros para reconciliar los informes con sistemas que no sean de comercio.
 role: User
 level: Intermediate
 exl-id: dbf41ce9-01f9-45d0-b651-e4c499e83822
 source-git-commit: 817a01e98876bddf5f41a253501984539b3351cd
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '172'
 ht-degree: 0%
 
 ---
 
 # Datos disponibles
 
-Hay disponibles algunos datos de pedidos y pagos para que pueda coordinar los informes financieros de Adobe Commerce en sistemas externos.
+Algunos datos de pedidos y pagos están disponibles para que pueda coordinar la creación de informes financieros de Adobe Commerce en sistemas externos.
 
 ## Reconciliación con el sistema ERP
 
-Puede conciliar los informes financieros de Adobe Commerce con el sistema de planificación de recursos empresariales (ERP) que no sea de Adobe mediante el ID de incremento asociado a un pedido específico.
+Puede reconciliar los informes financieros de Adobe Commerce con su sistema de planificación de recursos empresariales (ERP) que no sea de Adobe mediante el ID de incremento asociado a un pedido específico.
 
-Cuando los servicios de pago envían el pedido comercial a PayPal, el ID de incremento se incluye como la variable `custom_id` _y_ en el `invoice_id` (que también contiene una cadena aleatoria después de la variable `increment_id`).
+Cuando Payment Services envía la solicitud de Commerce a PayPal, el ID de incremento se incluye como `custom_id` _y_ en el `invoice_id` (que también contiene una cadena aleatoria después de `increment_id`).
 
-Los ID son fácilmente accesibles tanto en los detalles de actividad del comerciante para un pago como en el enlace web de PayPal.
+Los ID son fácilmente accesibles tanto en el detalle de la actividad comercial para un pago como en el webhook de PayPal.
 
-La variable `invoice_id` y `custom_id` se muestran cerca de la parte inferior del detalle de actividad del comerciante para un pago:
+El `invoice_id` y `custom_id` se muestran cerca de la parte inferior de los detalles de la actividad del comerciante para un pago:
 
-![`custom_id` en detalles de actividad del comerciante](assets/merchant-activity-ids.png)
+![`custom_id` en detalle de actividad de comerciante](assets/merchant-activity-ids.png)
 
-`custom_id` y `invoice_id` en los detalles del weblock de PayPal:
+`custom_id` y `invoice_id` en los detalles en el webhook de PayPal:
 
 ```json
    ...
@@ -78,5 +78,5 @@ La variable `invoice_id` y `custom_id` se muestran cerca de la parte inferior de
 
 Consulte la documentación de las API de REST de PayPal para obtener más información:
 
-* [`purchase_unit`, en el que `custom_id` y `invoice_id` reside](https://developer.paypal.com/docs/api/orders/v2/#definition-purchase_unit:~:text=Read%20only.-,purchase_unit,-Collapse)
+* [`purchase_unit`, en el que `custom_id` y `invoice_id` residir](https://developer.paypal.com/docs/api/orders/v2/#definition-purchase_unit:~:text=Read%20only.-,purchase_unit,-Contraer)
 * [Mostrar detalles del pedido](https://developer.paypal.com/docs/api/orders/v2/#orders_get)

@@ -11,42 +11,42 @@ ht-degree: 0%
 
 # Datos de comportamiento
 
-Algunos tipos de recomendaciones utilizan datos de comportamiento de sus compradores para entrenar modelos de aprendizaje automático y crear recomendaciones personalizadas. Otros tipos de recomendaciones utilizan solo datos de catálogo y no utilizan datos de comportamiento. Si desea empezar rápidamente, puede utilizar los siguientes tipos de recomendaciones de solo catálogo:
+Algunos tipos de recomendación utilizan datos de comportamiento de los compradores para entrenar modelos de aprendizaje automático y crear recomendaciones personalizadas. Otros tipos de recomendación solo utilizan datos de catálogo y no utilizan datos de comportamiento. Si desea comenzar rápidamente, puede utilizar los siguientes tipos de recomendaciones solo de catálogo:
 
 - `More like this`
 - `Visual similarity`
 
-Entonces, ¿cuándo puede empezar a usar tipos de recomendaciones que utilizan datos de comportamiento? Depende. Esto se denomina _Inicio en frío_ problema.
+Por lo tanto, ¿cuándo puede empezar a utilizar tipos de recomendación que utilicen datos de comportamiento? Depende de ti. Esto se conoce como _Inicio en frío_ problema.
 
-La variable _Inicio en frío_ El problema es una medida del tiempo que un modelo necesita entrenar antes de que pueda considerarse de alta calidad. En las recomendaciones de productos, significa esperar a que Adobe Sensei forme sus modelos de aprendizaje automático antes de implementar unidades de recomendación en el sitio. Cuantos más datos tengan estos modelos, más precisas y útiles serán las recomendaciones. La recopilación de estos datos lleva tiempo y varía en función del volumen de tráfico. Dado que estos datos solo se pueden recopilar en un sitio de producción, lo más recomendable es implementar allí la recopilación de datos lo antes posible. Puede hacerlo de [instalación y configuración](install-configure.md) el `magento/production-recommendations` módulo.
+El _Inicio en frío_ El problema es una medida de cuánto tiempo necesita un modelo para entrenarse antes de que pueda considerarse de alta calidad. En las recomendaciones de productos, se traduce en esperar a que Adobe Sensei entrene sus modelos de aprendizaje automático antes de implementar unidades de recomendaciones en el sitio. Cuantos más datos tengan estos modelos, más precisas y útiles serán las recomendaciones. La recopilación de estos datos lleva tiempo y varía en función del volumen de tráfico. Como estos datos solo se pueden recopilar en un sitio de producción, lo mejor es implementar la recopilación de datos allí lo antes posible. Puede hacer esto por [instalación y configuración](install-configure.md) el `magento/production-recommendations` módulo.
 
-En la tabla siguiente se proporcionan algunas directrices generales sobre la cantidad de tiempo que se tarda en recopilar datos suficientes para cada tipo de recomendación:
+La siguiente tabla proporciona algunas directrices generales sobre la cantidad de tiempo que se tarda en recopilar suficientes datos para cada tipo de recomendación:
 
-| Tipo de recomendación | Tiempo de prueba | Notas |
+| Tipo de recomendación | Tiempo de formación | Notas |
 |---|---|---|
-| Basado en popularidad (`Most viewed`, `Most purchased`, `Most added to cart`) | Varía | Depende del volumen de eventos: las vistas son más comunes y, por lo tanto, aprenden más rápido; luego agrega al carro de compras y luego compra |
-| `Viewed this, viewed that` | Requiere más formación | El volumen de las vistas de productos es bastante alto |
-| `Viewed this, bought that`, `Bought this, bought that` | Requiere la mayor formación | Los eventos de compra son los eventos más raros del sitio de comercio, especialmente en comparación con las vistas de productos |
-| `Trending` | Requiere tres días de datos para establecer una línea de base de popularidad | La tendencia es una medida del impulso reciente en la popularidad de un producto comparada con su propio punto de referencia de popularidad. La puntuación de tendencia de un producto se calcula utilizando un conjunto en primer plano (popularidad reciente de más de 24 horas) y un conjunto de antecedentes (línea de base de popularidad de más de 72 horas). Si un elemento se ha vuelto mucho más popular en las últimas 24 horas en comparación con su popularidad de línea base, entonces recibe una puntuación de tendencia alta. Cada producto tiene esta puntuación, y los más altos en cualquier momento comprenden el conjunto de productos de mayor tendencia. |
+| Basado en popularidad (`Most viewed`, `Most purchased`, `Most added to cart`) | Varía | Depende del volumen de eventos: las vistas son los más comunes y, por lo tanto, aprende más rápido; luego agrega al carro de compras y, por último, compra |
+| `Viewed this, viewed that` | Requiere más formación | El volumen de las vistas de productos es decentemente alto |
+| `Viewed this, bought that`, `Bought this, bought that` | Requiere la mayor cantidad de formación | Los eventos de compra son los eventos más raros en el sitio de comercio, especialmente en comparación con las vistas de productos |
+| `Trending` | Se necesitan tres días de datos para establecer una línea de base de popularidad | La tendencia es una medida del impulso reciente en la popularidad de un producto en comparación con su propia línea de base de popularidad. La puntuación de tendencia de un producto se calcula mediante un conjunto en primer plano (popularidad reciente en 24 horas) y un conjunto de fondo (línea de base de popularidad en 72 horas). Si un artículo se ha vuelto mucho más popular en las últimas 24 horas en comparación con su popularidad de línea de base, entonces recibe una puntuación de tendencia alta. Cada producto tiene esta puntuación, y los más altos en cualquier momento comprenden el conjunto de los productos de tendencia superior. |
 
-Otras variables que pueden afectar al tiempo necesario para la formación:
+Otras variables que pueden afectar al tiempo necesario para entrenar:
 
 - Un mayor volumen de tráfico contribuye a un aprendizaje más rápido
-- Algunos tipos de recomendaciones se entrenan más rápido que otros
-- Adobe Commerce vuelve a calcular los datos de comportamiento cada cuatro horas. Recommendations es más preciso cuanto más tiempo utilice en su sitio.
+- Algunos tipos de recomendación se entrenan más rápido que otros
+- Adobe Commerce vuelve a calcular los datos de comportamiento cada cuatro horas. Recommendations será más preciso cuanto más tiempo se utilice en el sitio.
 
-Para ayudarle a visualizar el progreso de formación de cada tipo de recomendación, la variable [crear recomendación](create.md) muestra los indicadores de disponibilidad.
+Para ayudarle a visualizar el progreso de formación de cada tipo de recomendación, la variable [crear recomendación](create.md) La página muestra indicadores de preparación.
 
-Mientras que los datos se recopilan en los modelos de producción y aprendizaje automático están formados, puede implementar la variable [tareas restantes](implementation-workflow.md) necesario para implementar recomendaciones en su tienda. Para cuando haya terminado de probar y configurar las recomendaciones, los modelos de aprendizaje automático han recopilado y calculado datos suficientes para crear recomendaciones relevantes, lo que le permite implementar las recomendaciones en su tienda.
+Aunque los datos se recopilan en producción y los modelos de aprendizaje automático están formados, puede implementar el [tareas restantes](implementation-workflow.md) necesarias para implementar recomendaciones en tu tienda. En el momento en que haya terminado de probar y configurar las recomendaciones, los modelos de aprendizaje automático han recopilado y calculado suficientes datos para crear recomendaciones relevantes, lo que le permite implementar las recomendaciones en su tienda.
 
-Si no hay tráfico suficiente (vistas, productos comprados, tendencias) para la mayoría de SKU, es posible que no haya datos suficientes para completar el proceso de aprendizaje. Esto puede hacer que el indicador de disponibilidad del administrador parezca atascado.
-Los indicadores de disponibilidad están pensados para proporcionar a los comerciantes otro punto de datos a la hora de elegir qué tipo de recomendaciones es mejor para su almacén. Los números son una guía y es posible que nunca lleguen al 100 %.
+Si no hay tráfico suficiente (vistas, productos comprados, tendencias) para la mayoría de las SKU, es posible que no haya suficientes datos para completar el proceso de aprendizaje. Esto puede hacer que el indicador de disponibilidad del administrador parezca atascado.
+Los indicadores de preparación están pensados para proporcionar a los comerciantes otro punto de datos a la hora de elegir qué tipo de recomendaciones es mejor para su tienda. Los números son una guía y es posible que nunca alcancen el 100%.
 
 ## Recomendaciones de copia de seguridad {#backuprecs}
 
-Si no hay datos de entrada suficientes para proporcionar todos los artículos de recomendación solicitados en una unidad, Adobe Commerce proporciona recomendaciones de copia de seguridad para rellenar las unidades de recomendación. Por ejemplo, si implementa el `Recommended for you` tipo de recomendación para su página principal, un comprador nuevo en su sitio no ha generado suficientes datos de comportamiento para productos personalizados recomendados con precisión. En este caso, Adobe Commerce muestra elementos basados en la variable `Most viewed` tipo de recomendación a este comprador.
+Si no hay datos de entrada suficientes para proporcionar todos los elementos de recomendación solicitados en una unidad, Adobe Commerce proporciona recomendaciones de copia de seguridad para rellenar las unidades de recomendación. Por ejemplo, si implementa la variable `Recommended for you` tipo de recomendación para su página de inicio, un comprador que llega por primera vez al sitio no ha generado suficientes datos de comportamiento para recomendar con precisión productos personalizados. En este caso, Adobe Commerce muestra los elementos en función de la variable `Most viewed` tipo de recomendación para este comprador.
 
-Los siguientes tipos de recomendación se devuelven a `Most viewed` tipo de recomendación si no se recopilan suficientes datos de entrada:
+Los siguientes tipos de recomendación vuelven a `Most viewed` tipo de recomendación si no se recopilan suficientes datos de entrada:
 
 - `Recommended for you`
 - `Viewed this, viewed that`

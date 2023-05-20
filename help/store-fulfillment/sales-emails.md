@@ -1,6 +1,6 @@
 ---
 title: Plantillas de correo electrónico de ventas
-description: Configure las plantillas de correo electrónico transaccional para comunicarse con los clientes y almacenar administradores durante el proceso de cumplimiento de los pedidos de recogida de tiendas.
+description: Configure las plantillas de correo electrónico transaccionales para comunicarse con los clientes y los administradores de las tiendas durante el proceso de cumplimiento de los pedidos de recogida en las tiendas.
 role: User, Admin
 level: Intermediate
 exl-id: 688732e3-06f0-4613-a589-2d465597eb28
@@ -14,9 +14,9 @@ ht-degree: 0%
 
 # Plantillas de correo electrónico de ventas
 
-El cumplimiento de la tienda ofrece un conjunto ampliado de plantillas de correo electrónico transaccional para admitir los flujos de trabajo de pedidos y cumplimiento. Ofrecen comunicación y mensajería coherentes y automatizadas en todos los canales, lo que permite notificar a los administradores de clientes y tiendas los cambios en el estado de los pedidos, las instrucciones para los pedidos de recogida en la tienda y mucho más.
+Store Fulfillment ofrece un conjunto ampliado de plantillas de correo electrónico transaccionales para admitir flujos de trabajo de pedidos y envíos. Ofrecen una comunicación y mensajería coherentes y automatizadas entre canales, que notifican a los administradores de clientes y tiendas sobre los cambios de estado de los pedidos, las instrucciones para los pedidos de recogida en la tienda y mucho más.
 
-Las plantillas de correo electrónico de cumplimiento de almacenamiento están configuradas con la mensajería y la configuración predeterminadas. Los administradores de comerciantes en Adobe Commerce pueden administrar y modificar las configuraciones, y seleccionar las plantillas de correo electrónico para comunicarse con los clientes en diferentes escenarios. Los administradores también pueden configurar y personalizar plantillas.
+Las plantillas de correo electrónico de Store Fulfillment se configuran con la mensajería y la configuración predeterminadas. Los administradores de comerciantes de Adobe Commerce pueden administrar y modificar las configuraciones y seleccionar las plantillas de correo electrónico para comunicarse con los clientes en diferentes situaciones. Los administradores también pueden configurar y personalizar plantillas.
 
 Configure las plantillas de correo electrónico de ventas desde el administrador: **[!UICONTROL Stores > Configuration > Sales > Sales Emails]**.
 
@@ -33,13 +33,13 @@ Configure las plantillas de correo electrónico de ventas desde el administrador
 </thead>
 <tbody><tr>
 <td><strong>Envío asincrónico</strong></td>
-<td>Deshabilite esta función. No se admite el envío asincrónico de correo electrónico. Para obtener el tiempo de comunicación y respuesta más rápido para la recogida de tiendas, envíe correos electrónicos inmediatamente en lugar de enviarlos por lotes. </td>
-<td>Vista de la tienda</td>
+<td>Deshabilite esta función. No se admite el envío asincrónico de correo electrónico. Para obtener la comunicación y el tiempo de respuesta más rápidos para la recogida en tienda, envía correos electrónicos inmediatamente en lugar de enviarlos por lotes. </td>
+<td>Vista de tienda</td>
 <td>No</td>
 </tr>
 </tbody></table>
 
-## Pedido listo para recogida en tienda
+## Pedido listo para recoger en tienda
 
 <table>
 <thead>
@@ -52,43 +52,43 @@ Configure las plantillas de correo electrónico de ventas desde el administrador
 </thead>
 <tbody><tr>
 <td><strong>Habilitado</strong></td>
-<td>Este correo electrónico se envía al cliente cuando el asociado de la tienda ha finalizado la selección de su pedido. Configúrelo en "No" para deshabilitar la notificación por correo electrónico. Si la plantilla de correo electrónico está deshabilitada, no impide que el asociado de almacén seleccione un pedido.</td>
-<td>Vista de la tienda</td>
+<td>Este correo electrónico se envía al cliente cuando el dependiente de la tienda ha completado la selección de su pedido. Establézcalo en "No" para deshabilitar la notificación por correo electrónico. Si la plantilla de correo electrónico está desactivada, no impide que el asociado de la tienda seleccione un pedido.</td>
+<td>Vista de tienda</td>
 <td>No</td>
 </tr>
 <tr>
-<td><strong>Pedido Listo Para Recogida De Remitentes De Correo Electrónico</strong></td>
-<td>La identidad del remitente que se utiliza al enviar la notificación por correo electrónico.</td>
-<td>Vista de la tienda</td>
+<td><strong>Pedido Listo Para La Recogida Remitente De Correo Electrónico</strong></td>
+<td>La identidad del remitente utilizada al enviar la notificación por correo electrónico.</td>
+<td>Vista de tienda</td>
 <td>No</td>
 </tr>
 <tr>
-<td><strong>Plantilla Pedido Listo Para Recogida De Correo Electrónico</strong></td>
-<td>La plantilla de mensaje de correo electrónico utilizada para notificar a los clientes registrados. Con la integración se proporciona una plantilla predeterminada.</td>
-<td>Vista de la tienda</td>
+<td><strong>Orden Listo Para La Recogida Plantilla De Correo Electrónico</strong></td>
+<td>Plantilla de mensaje de correo electrónico utilizada para notificar a los clientes registrados. Con la integración se proporciona una plantilla predeterminada.</td>
+<td>Vista de tienda</td>
 <td>No</td>
 </tr>
-<td><strong>Plantilla de correo electrónico de pedido listo para la recogida para invitado</strong></td>
-<td>La plantilla de mensaje de correo electrónico utilizada para notificar a los clientes invitados. Con la integración se proporciona una plantilla predeterminada.</td>
-<td>Vista de la tienda</td>
+<td><strong>Plantilla de correo electrónico de pedido listo para recoger para invitado</strong></td>
+<td>Plantilla de mensaje de correo electrónico utilizada para notificar a los clientes invitados. Con la integración se proporciona una plantilla predeterminada.</td>
+<td>Vista de tienda</td>
 <td>No</td>
 </tr>
 <tr>
-<td><strong>Plantilla de correo electrónico de pedido listo para recoger para contacto de recogida alternativo</strong></td>
+<td><strong>Orden listo para la recogida Plantilla de correo electrónico para la recogida alternativa Contacto</strong></td>
 <td>La plantilla de mensaje de correo electrónico utilizada para notificar a contactos adicionales nombrados en el pedido. Con la integración se proporciona una plantilla predeterminada.</td>
-<td>Vista de la tienda</td>
+<td>Vista de tienda</td>
 <td>No</td>
 </tr>
 <tr>
-<td><strong>Enviar pedido listo para la copia de correo electrónico de recogida a</strong></td>
-<td>Lista de direcciones de correo electrónico delimitada por comas para enviar una copia de cada notificación.</td>
-<td>Vista de la tienda</td>
+<td><strong>Enviar Copia Del Pedido Listo Para Su Recogida Por Correo Electrónico A</strong></td>
+<td>Una lista delimitada por comas de direcciones de correo electrónico para enviar una copia de cada notificación.</td>
+<td>Vista de tienda</td>
 <td>No</td>
 </tr>
 <tr>
-<td><strong>Enviar Pedido Listo Para Recogida De Un Método De Copia De Correo Electrónico</strong></td>
-<td>El método de copia de correo electrónico (copia de carbono) que se va a utilizar.</td>
-<td>Vista de la tienda</td>
+<td><strong>Enviar Pedido Listo Para Recogida Por Correo Electrónico Método De Copia</strong></td>
+<td>El método de copia de correo electrónico (copia de carbón) que se va a utilizar.</td>
+<td>Vista de tienda</td>
 <td>No</td>
 </tr>
 </tbody></table>
@@ -107,42 +107,42 @@ Configure las plantillas de correo electrónico de ventas desde el administrador
 </thead>
 <tbody><tr>
 <td><strong>Habilitado</strong></td>
-<td>Este correo electrónico se envía al cliente para confirmar que ha recogido su pedido de la tienda. Configúrelo en "No" para deshabilitar la notificación por correo electrónico. Si la plantilla de correo electrónico está desactivada, no impide que el cliente recopile un pedido.</td>
-<td>Vista de la tienda</td>
+<td>Este correo electrónico se envía al cliente cuando para confirmar que ha recogido su pedido de la tienda. Establézcalo en "No" para deshabilitar la notificación por correo electrónico. Si la plantilla de correo electrónico está desactivada, no impide que el cliente recoja un pedido.</td>
+<td>Vista de tienda</td>
 <td>No</td>
 </tr>
 <tr>
-<td><strong>El Pedido Se Ha Recopilado Para El Remitente De Correo Electrónico</strong></td>
-<td>La identidad del remitente que se utiliza al enviar la notificación por correo electrónico.</td>
-<td>Vista de la tienda</td>
+<td><strong>El Pedido Se Ha Recogido En El Remitente De Correo Electrónico</strong></td>
+<td>La identidad del remitente utilizada al enviar la notificación por correo electrónico.</td>
+<td>Vista de tienda</td>
 <td>No</td>
 </tr>
 <tr>
-<td><strong>La Plantilla De Correo Electrónico Del Pedido Se Ha Recopilado</strong></td>
-<td>La plantilla de mensaje de correo electrónico utilizada para notificar a los clientes registrados. Se proporciona una plantilla predeterminada con la integración</td>
-<td>Vista de la tienda</td>
+<td><strong>Se Ha Recogido La Plantilla De Correo Electrónico Del Pedido</strong></td>
+<td>Plantilla de mensaje de correo electrónico utilizada para notificar a los clientes registrados. La integración proporciona una plantilla predeterminada</td>
+<td>Vista de tienda</td>
 <td>No</td>
 </tr>
-<td><strong>La plantilla de correo electrónico del pedido se ha recopilado para el invitado</strong></td>
-<td>La plantilla de mensaje de correo electrónico utilizada para notificar a los clientes invitados. Con la integración se proporciona una plantilla predeterminada.</td>
-<td>Vista de la tienda</td>
-<td>No</td>
-</tr>
-<tr>
-<td><strong>Enviar Se Ha Recopilado Una Copia De Correo Electrónico A</strong></td>
-<td>Lista de direcciones de correo electrónico delimitada por comas para enviar una copia de cada notificación.</td>
-<td>Vista de la tienda</td>
+<td><strong>Se ha recogido el pedido como plantilla de correo electrónico para el invitado</strong></td>
+<td>Plantilla de mensaje de correo electrónico utilizada para notificar a los clientes invitados. Con la integración se proporciona una plantilla predeterminada.</td>
+<td>Vista de tienda</td>
 <td>No</td>
 </tr>
 <tr>
-<td><strong>Enviar Se Ha Recopilado El Método De Copia De Correo Electrónico</strong></td>
-<td>El método de copia de correo electrónico (copia de carbono) que se va a utilizar.</td>
-<td>Vista de la tienda</td>
+<td><strong>Enviar Se Ha Recopilado Una Copia Por Correo Electrónico A</strong></td>
+<td>Una lista delimitada por comas de direcciones de correo electrónico para enviar una copia de cada notificación.</td>
+<td>Vista de tienda</td>
+<td>No</td>
+</tr>
+<tr>
+<td><strong>Enviar Se Ha Recopilado Mediante El Método De Copia De Correo Electrónico</strong></td>
+<td>El método de copia de correo electrónico (copia de carbón) que se va a utilizar.</td>
+<td>Vista de tienda</td>
 <td>No</td>
 </tr>
 </tbody></table>
 
-## Pedido retrasado
+## Pedido aplazado
 
 <table>
 <thead>
@@ -155,38 +155,38 @@ Configure las plantillas de correo electrónico de ventas desde el administrador
 </thead>
 <tbody><tr>
 <td><strong>Habilitado</strong></td>
-<td>Este correo electrónico se envía al cliente para avisarle de un retraso en el procesamiento o la selección de su pedido en la tienda de mercadotecnia. Configúrelo en "No" para deshabilitar la notificación por correo electrónico. Si la plantilla de correo electrónico está desactivada, la función no impide que se retrase un pedido.</td>
-<td>Vista de la tienda</td>
+<td>Este correo electrónico se envía al cliente para notificarle un retraso en el procesamiento o la selección de su pedido en la tienda del comerciante. Establézcalo en "No" para deshabilitar la notificación por correo electrónico. Si la plantilla de correo electrónico está deshabilitada, la función no evita que se retrase una solicitud.</td>
+<td>Vista de tienda</td>
 <td>No</td>
 </tr>
 <tr>
-<td><strong>Solicitar remitente de correo electrónico retrasado
+<td><strong>Solicitar remitente de correo electrónico aplazado
 </strong></td>
-<td>La identidad del remitente que se utiliza al enviar la notificación por correo electrónico.</td>
-<td>Vista de la tienda</td>
+<td>La identidad del remitente utilizada al enviar la notificación por correo electrónico.</td>
+<td>Vista de tienda</td>
 <td>No</td>
 </tr>
 <tr>
-<td><strong>Solicitar plantilla de correo electrónico retrasada</strong></td>
-<td>La plantilla de mensaje de correo electrónico utilizada para notificar a los clientes registrados. Con la integración se proporciona una plantilla predeterminada.</td>
-<td>Vista de la tienda</td>
+<td><strong>Plantilla de correo electrónico con retraso del pedido</strong></td>
+<td>Plantilla de mensaje de correo electrónico utilizada para notificar a los clientes registrados. Con la integración se proporciona una plantilla predeterminada.</td>
+<td>Vista de tienda</td>
 <td>No</td>
 </tr>
-<td><strong>Solicitar plantilla de correo electrónico retrasada para invitado</strong></td>
-<td>La plantilla de mensaje de correo electrónico utilizada para notificar a los clientes invitados. Con la integración se proporciona una plantilla predeterminada.</td>
-<td>Vista de la tienda</td>
-<td>No</td>
-</tr>
-<tr>
-<td><strong>Enviar copia de correo electrónico retrasada de pedido a</strong></td>
-<td>Lista de direcciones de correo electrónico delimitada por comas para enviar una copia de cada notificación.</td>
-<td>Vista de la tienda</td>
+<td><strong>Plantilla de correo electrónico de pedido aplazado para invitado</strong></td>
+<td>Plantilla de mensaje de correo electrónico utilizada para notificar a los clientes invitados. Con la integración se proporciona una plantilla predeterminada.</td>
+<td>Vista de tienda</td>
 <td>No</td>
 </tr>
 <tr>
-<td><strong>Enviar Método De Copia Retrasada De Pedido</strong></td>
-<td>El método de copia de correo electrónico (copia de carbono) que se va a utilizar.</td>
-<td>Vista de la tienda</td>
+<td><strong>Enviar copia de correo electrónico aplazado de pedido a</strong></td>
+<td>Una lista delimitada por comas de direcciones de correo electrónico para enviar una copia de cada notificación.</td>
+<td>Vista de tienda</td>
+<td>No</td>
+</tr>
+<tr>
+<td><strong>Enviar método de copia aplazada de pedido</strong></td>
+<td>El método de copia de correo electrónico (copia de carbón) que se va a utilizar.</td>
+<td>Vista de tienda</td>
 <td>No</td>
 </tr>
 </tbody></table>
@@ -206,44 +206,44 @@ Configure las plantillas de correo electrónico de ventas desde el administrador
 </thead>
 <tbody><tr>
 <td><strong>Habilitado</strong></td>
-<td>Este correo electrónico se envía al cliente para notificarles que su pedido se ha cancelado en la tienda de mercadotecnia. Establecer como <code>No</code> para desactivar la notificación por correo electrónico. Si la plantilla de correo electrónico está desactivada, esta función no impide que se cancele un pedido.</td>
-<td>Vista de la tienda</td>
+<td>Este correo electrónico se envía al cliente para notificarle que su pedido se ha cancelado en la tienda del comerciante. Configure como. <code>No</code> para desactivar la notificación por correo electrónico. Si la plantilla de correo electrónico está desactivada, esta función no impide que se cancele un pedido.</td>
+<td>Vista de tienda</td>
 <td>No</td>
 </tr>
 <tr>
-<td><strong>Solicitar remitente de correo electrónico cancelado
+<td><strong>Remitente de correo electrónico cancelado del pedido
 </strong></td>
-<td>La identidad del remitente que se utiliza al enviar la notificación por correo electrónico.</td>
-<td>Vista de la tienda</td>
+<td>La identidad del remitente utilizada al enviar la notificación por correo electrónico.</td>
+<td>Vista de tienda</td>
 <td>No</td>
 </tr>
 <tr>
-<td><strong>Solicitar plantilla de correo electrónico cancelada</strong></td>
-<td>La plantilla de mensaje de correo electrónico utilizada para notificar a los clientes registrados. Con la integración se proporciona una plantilla predeterminada.</td>
-<td>Vista de la tienda</td>
+<td><strong>Plantilla de correo electrónico de pedido cancelado</strong></td>
+<td>Plantilla de mensaje de correo electrónico utilizada para notificar a los clientes registrados. Con la integración se proporciona una plantilla predeterminada.</td>
+<td>Vista de tienda</td>
 <td>No</td>
 </tr>
 <td><strong>Pedido cancelado para invitado</strong></td>
-<td>La plantilla de mensaje de correo electrónico utilizada para notificar a los clientes invitados. Con la integración se proporciona una plantilla predeterminada.</td>
-<td>Vista de la tienda</td>
+<td>Plantilla de mensaje de correo electrónico utilizada para notificar a los clientes invitados. Con la integración se proporciona una plantilla predeterminada.</td>
+<td>Vista de tienda</td>
 <td>No</td>
 </tr>
 <tr>
-<td><strong>Enviar copia de correo electrónico cancelada de pedido a</strong></td>
-<td>Lista de direcciones de correo electrónico delimitada por comas para enviar una copia de cada notificación.</td>
-<td>Vista de la tienda</td>
+<td><strong>Enviar copia de correo electrónico de pedido cancelado a</strong></td>
+<td>Una lista delimitada por comas de direcciones de correo electrónico para enviar una copia de cada notificación.</td>
+<td>Vista de tienda</td>
 <td>No</td>
 </tr>
 <tr>
-<td><strong>Enviar Pedido Cancelado Método De Copia</strong></td>
-<td>El método de copia de correo electrónico (copia de carbono) que se va a utilizar.</td>
-<td>Vista de la tienda</td>
+<td><strong>Enviar método de copia cancelada de pedido</strong></td>
+<td>El método de copia de correo electrónico (copia de carbón) que se va a utilizar.</td>
+<td>Vista de tienda</td>
 <td>No</td>
 </tr>
 </tbody></table>
 
 
-## Pedido parcialmente cancelado
+## Pedido Parcialmente Cancelado
 
 <table>
 <thead>
@@ -256,44 +256,44 @@ Configure las plantillas de correo electrónico de ventas desde el administrador
 </thead>
 <tbody><tr>
 <td><strong>Habilitado</strong></td>
-<td>Este correo electrónico se envía al cliente para notificarles que parte de su pedido se ha cancelado en la tienda de mercadotecnia. Establecer como <code>No</code> para desactivar la notificación por correo electrónico. Si la plantilla de correo electrónico está desactivada, no impide que se cancele parcialmente un pedido.</td>
-<td>Vista de la tienda</td>
+<td>Este correo electrónico se envía al cliente para notificarle que parte de su pedido se ha cancelado en la tienda del comerciante. Configure como. <code>No</code> para desactivar la notificación por correo electrónico. Si la plantilla de correo electrónico está desactivada, no impide que se cancele parcialmente una solicitud.</td>
+<td>Vista de tienda</td>
 <td>No</td>
 </tr>
 <tr>
-<td><strong>Solicitar remitente de correo electrónico parcialmente cancelado
+<td><strong>Remitente de correo electrónico parcialmente cancelado del pedido
 </strong></td>
-<td>La identidad del remitente que se utiliza al enviar la notificación por correo electrónico.</td>
-<td>Vista de la tienda</td>
+<td>La identidad del remitente utilizada al enviar la notificación por correo electrónico.</td>
+<td>Vista de tienda</td>
 <td>No</td>
 </tr>
 <tr>
-<td><strong>Plantilla de correo electrónico parcialmente cancelada de pedido</strong></td>
-<td>La plantilla de mensaje de correo electrónico utilizada para notificar a los clientes registrados. Con la integración se proporciona una plantilla predeterminada.</td>
-<td>Vista de la tienda</td>
+<td><strong>Plantilla de correo electrónico de pedido parcialmente cancelado</strong></td>
+<td>Plantilla de mensaje de correo electrónico utilizada para notificar a los clientes registrados. Con la integración se proporciona una plantilla predeterminada.</td>
+<td>Vista de tienda</td>
 <td>No</td>
 </tr>
-<td><strong>Plantilla de correo electrónico parcialmente cancelada para contacto de recogida alternativo</strong></td>
+<td><strong>Plantilla de correo electrónico de pedido parcialmente cancelado para contacto de recogida alternativo</strong></td>
 <td>La plantilla de mensaje de correo electrónico utilizada para notificar a contactos adicionales nombrados en el pedido. Con la integración se proporciona una plantilla predeterminada.</td>
-<td>Vista de la tienda</td>
+<td>Vista de tienda</td>
 <td>No</td>
 </tr>
 <tr>
-<td><strong>Pedido parcialmente cancelado para invitado</strong></td>
-<td>La plantilla de mensaje de correo electrónico utilizada para notificar a los clientes invitados. Con la integración se proporciona una plantilla predeterminada.</td>
-<td>Vista de la tienda</td>
+<td><strong>Pedido Parcialmente Cancelado para Invitado</strong></td>
+<td>Plantilla de mensaje de correo electrónico utilizada para notificar a los clientes invitados. Con la integración se proporciona una plantilla predeterminada.</td>
+<td>Vista de tienda</td>
 <td>No</td>
 </tr>
 <tr>
-<td><strong>Enviar copia de correo electrónico parcialmente cancelada a</strong></td>
-<td>Lista de direcciones de correo electrónico delimitada por comas para enviar una copia de cada notificación.</td>
-<td>Vista de la tienda</td>
+<td><strong>Enviar Copia De Correo Electrónico De Pedido Parcialmente Cancelado A</strong></td>
+<td>Una lista delimitada por comas de direcciones de correo electrónico para enviar una copia de cada notificación.</td>
+<td>Vista de tienda</td>
 <td>No</td>
 </tr>
 <tr>
-<td><strong>Enviar Pedido Parcialmente Cancelado Método De Copia</strong></td>
-<td>El método de copia de correo electrónico (copia de carbono) que se va a utilizar.</td>
-<td>Vista de la tienda</td>
+<td><strong>Enviar método de copia de pedido parcialmente cancelado</strong></td>
+<td>El método de copia de correo electrónico (copia de carbón) que se va a utilizar.</td>
+<td>Vista de tienda</td>
 <td>No</td>
 </tr>
 </tbody></table>
@@ -310,29 +310,29 @@ Configure las plantillas de correo electrónico de ventas desde el administrador
 </tr>
 </thead>
 <tbody><tr>
-<td><strong>El Pedido Tiene Enviar A Almacenar Productos Remitente De Correo Electrónico</strong></td>
-<td>Correo electrónico enviado al personal de mercadotecnia especificado como informe agregado de todos los pedidos abiertos que no se pueden seleccionar en un almacén de mercadotecnia hasta que su inventario esté disponible. </br></br> Los comerciantes pueden utilizar este informe para iniciar y administrar las transferencias de inventario entre almacenes o la reposición. </br></br>Esta notificación solo se aplica cuando la variable [!DNL Ship-to-Store] están activadas.
-</br></br>Esta etiqueta no afecta al transportista de envío seleccionado ni a sus etiquetas de método de envío disponibles.</br></br></td>
-<td>Vista de la tienda</td>
+<td><strong>El pedido tiene un remitente de correo electrónico de productos de envío a tienda</strong></td>
+<td>Correo electrónico enviado al personal del comerciante especificado como un informe agregado de todos los pedidos abiertos que no se pueden seleccionar en una tienda de comerciantes hasta que su inventario esté disponible. </br></br> Los comerciantes pueden utilizar este informe para iniciar y administrar las transferencias de inventario de tienda a tienda o el reaprovisionamiento. </br></br>Esta notificación solo se aplica cuando la variable [!DNL Ship-to-Store] Las funciones de están habilitadas.
+</br></br>Esta etiqueta no afecta al transportista seleccionado ni a sus etiquetas de método de envío disponibles.</br></br></td>
+<td>Vista de tienda</td>
 <td>No</td>
 </tr>
 <tr>
-<td><strong>Destinatarios De Correo Electrónico De Envío A Almacén</strong></td>
-<td>Lista de direcciones de correo electrónico delimitada por comas para enviar una copia de cada notificación.</td>
-<td>Vista de la tienda</td>
+<td><strong>Enviar a destinatarios de correo electrónico de tienda</strong></td>
+<td>Una lista delimitada por comas de direcciones de correo electrónico para enviar una copia de cada notificación.</td>
+<td>Vista de tienda</td>
 <td>No</td>
 </tr>
 <tr>
 <td><strong>Plantilla de correo electrónico</strong></td>
-<td>La plantilla de mensaje de correo electrónico utilizada para notificar a los destinatarios. Con la integración se proporciona una plantilla predeterminada.</td>
-<td>Vista de la tienda</td>
+<td>Plantilla del mensaje de correo electrónico utilizada para notificar a los destinatarios. Con la integración se proporciona una plantilla predeterminada.</td>
+<td>Vista de tienda</td>
 <td>No</td>
 </tr>
 </tbody></table>
 
 >[!NOTE]
 >
->Si permite los pedidos anteriores, debe proporcionar una dirección de correo electrónico de administrador para recibir notificaciones sobre estos pedidos. Añada la dirección a las siguientes opciones de configuración: **[!UICONTROL Send Order Delayed Email Copy To]** en el [Retraso de pedido](#order-delayed) plantilla y [!UICONTROL Ship To Store Email Recipients] en el [Enviar a tienda](#ship-to-store) plantilla.
+>Si permite pedidos no satisfechos, debe proporcionar una dirección de correo electrónico de administrador para recibir notificaciones sobre estos pedidos. Añada la dirección a las siguientes opciones de configuración: **[!UICONTROL Send Order Delayed Email Copy To]** en el [Demora de pedido](#order-delayed) plantilla, y [!UICONTROL Ship To Store Email Recipients] en el [Enviar a tienda](#ship-to-store) plantilla.
 
 
 

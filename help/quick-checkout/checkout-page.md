@@ -13,19 +13,19 @@ ht-degree: 0%
 
 La página de cierre de compra es donde los clientes introducen la información necesaria para realizar un pedido.
 
-Ejemplo de página de cierre de compra:
+Un ejemplo de página de cierre de compra:
 
 ![Página de cierre de compra](assets/checkout-page.png)
 
-Para obtener más información sobre la página de cierre de compra estándar de Adobe Commerce, consulte la [página de cierre de compra](https://docs.magento.com/user-guide/quick-tour/checkout-page.html) tema.
+Para obtener más información sobre la página de retirada estándar de Adobe Commerce, consulte la [página de pago y envío](https://docs.magento.com/user-guide/quick-tour/checkout-page.html) tema.
 
 De forma predeterminada, el cierre de compra consta de dos pasos:
 
 - Información de envío
-- Información de revisión y pago
+- Revisar e información de pago
 
 >[!NOTE]
 >
-> Una vez completado el primer paso, el cierre de compra muestra los totales de cierre de compra y la información correspondiente de la barra lateral.
+> Una vez completado el primer paso, el cierre de compra muestra los totales del cierre de compra y la información de la barra lateral correspondiente.
 
-Consulte la [flujo de cierre de compra](../quick-checkout/checkout-flow.md) para obtener más información sobre [!DNL Quick Checkout] flujo.
+Consulte la [flujo de cierre de compra](../quick-checkout/checkout-flow.md) para obtener más información sobre [!DNL Quick Checkout] Flujo.

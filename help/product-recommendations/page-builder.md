@@ -1,7 +1,8 @@
 ---
 title: '[!DNL Page Builder] Integración'
-description: '"Aprenda a utilizar [!DNL Product Recommendations] unidades en Page Builder.'''
-source-git-commit: 59ec1a212fbc9ef48658b29cace083e3fb645185
+description: Aprenda a utilizar [!DNL Product Recommendations] en Page Builder.
+exl-id: dd972642-1fb4-426a-ac68-f56bb5fa2ecf
+source-git-commit: 368059d50133d8b01be83e1616044a61ab094e3c
 workflow-type: tm+mt
 source-wordcount: '162'
 ht-degree: 0%
@@ -10,25 +11,25 @@ ht-degree: 0%
 
 # [!DNL Page Builder] Integración
 
-Product Recommendations puede integrarse con cualquier contenido de Page Builder que implemente en el sitio.
+Product Recommendations se puede integrar en cualquier contenido de Page Builder que implemente en su sitio.
 
 >[!NOTE]
 >
-> Puede tener hasta 25 unidades de recomendación en una página nativa de Page Builder. Las páginas no nativas de Page Builder pueden tener hasta 5 unidades de recomendación. Consulte [Crear nueva recomendación](create.md) para obtener más información.
+> Puede tener hasta 25 unidades de recomendación en una página nativa de Page Builder. Las páginas no nativas del Page Builder pueden tener hasta 5 unidades de recomendación. Consulte [Crear nueva recomendación](create.md) para obtener más información.
 
-## Uso de Recommendations de producto con contenido del Generador de páginas
+## Uso de Product Recommendations con contenido de Page Builder
 
-1. Cree una unidad de recomendación en la vista de tienda predeterminada de un sitio web. Se deben crear en la vista de tienda predeterminada aunque tenga pensado utilizarlas en distintas vistas de tienda.
-1. En el Creador de páginas, seleccione el widget de contenido de Product Recommendations y colóquelo en el sitio.
+1. Cree una unidad de Recommendations en la vista de tienda predeterminada de un sitio web. Deben crearse en la vista de tienda predeterminada aunque tenga pensado usarlos en distintas vistas de tienda.
+1. En Page Builder, seleccione el widget de contenido de Product Recommendations y colóquelo en el sitio.
 
 ![Insertar unidad de recomendación](assets/pb-insert.png)
 
-1. Haga clic en **Editar recomendación de producto**
-1. Haga clic en **Select**
-1. Seleccione la unidad de recomendación creada anteriormente y haga clic en **Agregar selección**
+1. Clic **Editar recomendación de producto**
+1. Clic **Seleccionar**
+1. Seleccione la unidad de Recommendations creada anteriormente y haga clic en **Agregar selección**
 
 ![Insertar unidad de recomendación](assets/pb-select.png)
 
-1. Realice cualquier otra edición en el contenido del Generador de páginas y guarde los cambios.
+1. Realice las demás ediciones en el contenido de Page Builder y guarde los cambios.
 
-En el momento del procesamiento, la unidad de Recomendaciones respeta el contexto y el alcance del contenido del Creador de páginas.
+En el momento del procesamiento, la unidad Recommendations respeta el contexto y el ámbito del contenido de Page Builder.

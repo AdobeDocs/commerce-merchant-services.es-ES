@@ -1,5 +1,5 @@
 ---
-title: Indexación de Precios SaaS
+title: Indexación de precios de SaaS
 description: Uso de la indexación de precios SaaS para mejorar el rendimiento
 seo-title: Adobe SaaS Price Indexing
 seo-description: Price indexing give performance improvements using SaaS infrastructure
@@ -11,13 +11,13 @@ ht-degree: 0%
 
 ---
 
-# Indexación de Precios SaaS
+# Indexación de precios de SaaS
 
-La indexación de precios SaaS acelera el tiempo que se tarda en que los cambios de precios se reflejen en el sitio web de un cliente SaaS después de que se hayan enviado. Este módulo opcional permite que los comerciantes con catálogos grandes y complejos, o con varios sitios web o grupos de clientes, procesen los cambios de precios de forma más rápida y continua.
+La indexación de precios de SaaS acelera el tiempo que tardan los cambios de precios en reflejarse en el sitio web de un cliente de SaaS después de enviarse. Este módulo opcional permite a los comerciantes con catálogos grandes y complejos, o con múltiples sitios web o grupos de clientes, procesar los cambios de precios de forma más rápida y continua.
 
-El mayor cuello de botella de la tubería: los procesos pesados de la computación, como la indexación y el cálculo de precios, se han movido del núcleo PHP a la infraestructura de nube de Adobe. Esto permite a los comerciantes aumentar rápidamente los recursos para impulsar los tiempos de indexación de precios y reflejar esos cambios en los sitios web a velocidades mucho más rápidas.
+El mayor cuello de botella de la canalización: los procesos computacionales pesados como la indexación y el cálculo de precios, se han trasladado del núcleo de PHP a la infraestructura en la nube del Adobe. Esto permite a los comerciantes ampliar rápidamente los recursos para aumentar los tiempos de indexación de precios y reflejar esos cambios en los sitios web a velocidades mucho más rápidas.
 
-El flujo de datos de indexación principal a los servicios SaaS tiene el siguiente aspecto:
+El flujo de datos de indexación principal a los servicios SaaS tiene este aspecto:
 
 ![Flujo de datos predeterminado](assets/old_way.png)
 
@@ -25,13 +25,13 @@ Con la indexación de precios SaaS, el flujo es:
 
 ![Flujo de datos de indexación de precios SaaS](assets/new_way.png)
 
-Todos los comerciantes que cumplan los requisitos pueden beneficiarse de estas mejoras, pero quienes verán las ganancias buenas son clientes con:
+Todos los comerciantes que cumplan los requisitos pueden beneficiarse de estas mejoras, pero los que verán las ganancias más buenas son los clientes con:
 
-* Cambios constantes en los precios: Los comerciantes que requieren cambios repetidos en sus precios para alcanzar objetivos estratégicos como promociones frecuentes, descuentos de temporada o restricciones de inventario.
-* Varios sitios web o grupos de clientes: Comerciantes con catálogos de productos compartidos en varios sitios web (dominios/marcas) y/o grupos de clientes.
-* Gran número de precios únicos en sitios web o grupos de clientes: Comerciantes con amplios catálogos de productos compartidos que contienen precios únicos en sitios web o grupos de clientes, como comerciantes B2B con precios previamente negociados, marcas con diferentes estrategias de precios.
+* Cambios constantes en los precios: los comerciantes que necesitan cambios repetidos en sus precios para cumplir objetivos estratégicos como promociones frecuentes, descuentos estacionales o reducciones de existencias.
+* Varios sitios web o grupos de clientes: comerciantes con catálogos de productos compartidos en varios sitios web (dominios/marcas) o grupos de clientes.
+* Gran cantidad de precios únicos en sitios web o grupos de clientes: comerciantes con catálogos de productos compartidos extensos que contienen precios únicos en sitios web o grupos de clientes, como comerciantes B2B con precios negociados previamente, marcas con diferentes estrategias de precios.
 
-Si tiene aplicaciones de terceros que dependen del indizador de precios principal de PHP, lea la documentación y consulte con el proveedor de extensiones antes de realizar cualquier cambio.
+Si tiene aplicaciones de terceros que dependen del indexador de precios principal de PHP, lea la documentación y consulte con el proveedor de la extensión antes de realizar cualquier cambio.
 
 La indexación de precios SaaS está disponible de forma gratuita para los clientes que utilizan los servicios de Adobe Commerce.
 
@@ -46,13 +46,13 @@ Para utilizar la indexación de precios SaaS, necesita:
 
    * [Servicio de catálogo](../catalog-service/overview.md)
    * [Live Search](../live-search/guide-overview.md)
-   * [Recommendations de producto](../product-recommendations/guide-overview.md)
+   * [Product Recommendations](../product-recommendations/guide-overview.md)
 
 ## Módulos
 
-La indexación de precios SaaS utiliza un conjunto de módulos para proporcionar funcionalidad. La lista de módulos requeridos podría ser ligeramente diferente, dependiendo de la configuración de la tienda.
+La indexación de precios SaaS utiliza un conjunto de módulos para proporcionar funcionalidad. La lista de módulos necesarios puede ser ligeramente diferente, según la configuración de la tienda.
 
-Estos módulos agregan las nuevas fuentes al Administrador. Estas fuentes transfieren los datos necesarios para los cálculos de precios al indizador SaaS e ignoran el indizador de precios principal PHP.
+Estos módulos agregan las nuevas fuentes al administrador. Estas fuentes transfieren los datos necesarios para los cálculos de precios al indexador SaaS e ignoran el indexador de precios principal de PHP.
 
 ```
 magento/module-saas-price
@@ -61,58 +61,58 @@ magento/module-product-override-price-remover
 magento/module-bundle-product-override-data-exporter
 ```
 
-Los clientes que utilizan Luma y Adobe Commerce Core GraphQL pueden instalar un módulo que proporcione compatibilidad con Luma y Core GraphQL y deshabilite el indizador de precios principal de PHP:
+Los clientes que utilizan Luma y Adobe Commerce Core GraphQL pueden instalar un módulo que proporcione compatibilidad con Luma y Core GraphQL y deshabilite el indexador de precios principal de PHP:
 
 ```
 adobe-commerce/catalog-adapter
 ```
 
-La variable `catalog-adapter` solo es compatible con 2.4.5. La compatibilidad con 2.4.4 y 2.4.6 se lanzará próximamente.
-El indizador de precios principal de PHP se puede volver a habilitar si lo necesita una extensión de terceros o cualquier otro motivo.
+El `catalog-adapter` solo es compatible con 2.4.5. La compatibilidad con 2.4.4 y 2.4.6 se publicará en un futuro próximo.
+El indexador de precios principal de PHP puede volver a activarse si es necesario por una extensión de terceros o por cualquier otra razón.
 
 ## Advertencias
 
-Dependiendo de factores como tipos de productos, complejidad de precios y tamaño del catálogo, la indexación de precios SaaS puede ser la solución adecuada para su tienda. Lea las siguientes limitaciones y determine si esta es una buena solución para su sitio.
+Según factores como el tipo de producto, la complejidad del precio y el tamaño del catálogo, la indexación de precios SaaS puede ser la solución adecuada para su tienda. Lea las siguientes limitaciones y determine si esta es una buena solución para su sitio.
 
-Actualmente, la indexación de precios de SaaS es compatible con los tipos de producto simples, agrupados, virtuales, configurables y dinámicos de paquetes.
-La compatibilidad con los tipos de producto descargables, tarjetas de regalo y Fijo de paquete estará disponible próximamente.
+Actualmente, la indexación de precios SaaS admite tipos de producto simples, agrupados, virtuales, configurables y dinámicos agrupados.
+Próximamente se admitirán los tipos de productos descargables, tarjetas de regalo y paquetes fijos
 
-Las nuevas fuentes deben sincronizarse manualmente con la variable `resync` [Comando CLI](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/data-services/catalog-sync.html#resynccmdline). De lo contrario, los datos se actualizan en el proceso de sincronización estándar. Obtenga más información sobre [Sincronización del catálogo](../landing/catalog-sync.md) proceso.
+Las nuevas fuentes deben sincronizarse manualmente con `resync` [comando CLI](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/data-services/catalog-sync.html#resynccmdline). De lo contrario, los datos se actualizan en el proceso de sincronización estándar. Obtenga más información acerca de [Sincronización de catálogo](../landing/catalog-sync.md) proceso.
 
-## Situaciones de uso
+## Escenarios de uso
 
 ### Luma sin dependencias de extensión
 
-* Un comerciante de GraphQL básico de Luma o superior de Commerce que tenga instalado un servicio requerido (Búsqueda activa, Recommendations de productos, Servicio de catálogo)
-* Ninguna extensión de terceros que dependa del indexador de precios principal PHP
-* Venta de productos dinámicos simples, configurables, agrupados, virtuales y de paquetes
+* Un comerciante principal de GraphQL de Luma o Adobe Commerce que tiene instalado un servicio requerido (Live Search, Product Recommendations, Servicio de catálogo)
+* No hay extensiones de terceros que dependan del indexador de precios principal de PHP
+* Venta de productos dinámicos simples, configurables, agrupados, virtuales y agrupados
 
 1. Habilitar nuevas fuentes.
-1. Instale el adaptador de catálogo.
+1. Instale el adaptador del catálogo.
 
-### Luma y Abode Commerce Core GraphQl con dependencias del indexador de precios principal PHP
+### GraphQl principal de Luma y Adobe Commerce con dependencias de indexador de precios principal de PHP
 
-* Un comerciante de GraphQL básico de Luma o superior de Commerce que tenga instalado un servicio compatible (búsqueda en directo, Recommendations de productos, servicio de catálogo)
-* Con una extensión de terceros que se basa en el indexador de precios principal de PHP
-* Venta de productos dinámicos simples, configurables, agrupados, virtuales y de paquetes
+* Un comerciante principal de GraphQL de Luma o Adobe Commerce que tiene instalado un servicio compatible (Live Search, Product Recommendations, Servicio de catálogo)
+* Con una extensión de terceros que depende del indexador de precios principal de PHP
+* Venta de productos dinámicos simples, configurables, agrupados, virtuales y agrupados
 
 1. Habilitar las nuevas fuentes
-1. Instale el adaptador de catálogo.
-1. Vuelva a habilitar el indizador de precios principal de PHP.
-1. Utilice nuevas fuentes y el código de compatibilidad de Luma en la variable `catalog-adapter` módulo.
+1. Instale el adaptador del catálogo.
+1. Vuelva a habilitar el indexador de precios principal de PHP.
+1. Utilice nuevas fuentes y el código de compatibilidad de Luma en la `catalog-adapter` módulo.
 
-### Comerciante sin cabeza
+### Comerciante sin encabezado
 
-* Un comerciante sin objetivos que tiene instalado un servicio compatible (Búsqueda en directo, Recommendations de productos, Servicio de catálogo)
-* Sin dependencia del indizador de precios básico de PHP
-* Venta de productos dinámicos simples, configurables, agrupados, virtuales y de paquetes
+* Un comerciante sin encabezado que tiene instalado un servicio compatible (Live Search, Product Recommendations, Servicio de catálogo)
+* Sin dependencia en el indexador de precios PHP Core
+* Venta de productos dinámicos simples, configurables, agrupados, virtuales y agrupados
 
 1. Habilitar nuevas fuentes
-1. Instale el adaptador de catálogo, que deshabilita el indizador de precios principal de PHP.
+1. Instale el adaptador de catálogo, que desactiva el indexador de precios principal de PHP.
 
 ### Luma/Core GraphQL/Headless con tipos de producto no compatibles
 
-* Luma/Comerciante sin cabeza
-* Venta de tarjetas regalo, productos fijos descargables o paquetes
+* Comerciante de Luma/sin encabezado
+* Venta de tarjetas de regalo, productos descargables o paquetes fijos
 
-Con los tipos de producto actualmente no compatibles, espere a que se admita el tipo de producto completo.
+Con tipos de producto no compatibles actualmente, espere a que se admita todo el tipo de producto.

@@ -1,6 +1,6 @@
 ---
-title: Seguridad y cumplimiento de normas
-description: Revise los requisitos de seguridad y cumplimiento para su sitio.
+title: Seguridad y cumplimiento
+description: Revise los requisitos de seguridad y cumplimiento del sitio.
 exl-id: 083c5a12-1d78-48b5-b9e3-612b104ce7e0
 source-git-commit: bfce1cb702d634647022a92669d704dd82fe41e6
 workflow-type: tm+mt
@@ -9,31 +9,31 @@ ht-degree: 0%
 
 ---
 
-# Seguridad y cumplimiento de normas
+# Seguridad y cumplimiento
 
-La seguridad es de suma preocupación en [!DNL Payment Services] y no se pasa ninguna información regulada privada o de la Industria de Tarjetas de Pago (PCI) a través de su [!DNL Payment Services].
+La seguridad es de suma importancia en [!DNL Payment Services] y no se pasa información privada o regulada por la industria de tarjetas de pago (PCI) a través de su [!DNL Payment Services].
 
 ## Seguridad comercial
 
-[!DNL Adobe Commerce] y [!DNL Magento Open Source] incluye compatibilidad con varias funciones de seguridad.
+[!DNL Adobe Commerce] y [!DNL Magento Open Source] incluyen compatibilidad con varias funciones de seguridad.
 
-Consulte [Seguridad](https://docs.magento.com/user-guide/stores/security.html){target="_blank"} en la guía del usuario principal para revisar las prácticas recomendadas de seguridad, y aprender a administrar sesiones de administración y credenciales, implementar CAPTCHA y administrar las restricciones del sitio web.
+Consulte [Seguridad](https://docs.magento.com/user-guide/stores/security.html){target="_blank"} en la guía del usuario principal para revisar las prácticas recomendadas de seguridad y aprender a administrar las sesiones de administración y las credenciales, implementar CAPTCHA y administrar las restricciones del sitio web.
 
-## Cumplimiento de PCI
+## Conformidad con PCI
 
-La Industria de Tarjetas de Pago (PCI) estableció un conjunto de requisitos para las empresas que aceptan pagos con tarjeta de crédito a través de Internet. Además de mantener un entorno seguro, los comerciantes que manejan la información de las tarjetas de crédito de los clientes son responsables de cumplir algunas directrices estándar.
+La industria de tarjetas de pago (PCI) estableció un conjunto de requisitos para las empresas que aceptan pagos con tarjeta de crédito a través de Internet. Además de mantener un entorno seguro, los comerciantes que gestionan la información de las tarjetas de crédito de los clientes son responsables de cumplir algunas directrices estándar.
 
 Consulte [Directrices de cumplimiento de PCI](https://docs.magento.com/user-guide/stores/compliance-pci.html){target="_blank"} para obtener más información.
 
-Los comerciantes pueden completar un [cuestionario de autoevaluación (SAQ)](https://www.pcisecuritystandards.org/pci_security/completing_self_assessment){target="_blank"}, que es una herramienta de autovalidación para evaluar la seguridad de los datos del titular de la tarjeta.
+Los comerciantes pueden completar una [cuestionario de autoevaluación (CASO)](https://www.pcisecuritystandards.org/pci_security/completing_self_assessment){target="_blank"}, que es una herramienta de autovalidación para evaluar la seguridad de los datos del titular de la tarjeta.
 
 ### Campos de tarjeta de crédito
 
-Con los campos de la tarjeta de crédito, no se pasan datos regulados por PCI a través de los servicios. No es necesario que almacene o mantenga esos datos, lo que reduce enormemente las preocupaciones de cumplimiento de PCI.
+Con los campos de tarjeta de crédito, no se pasan datos regulados por PCI a través de los servicios. No tiene que almacenar ni mantener esos datos, lo que reduce considerablemente los problemas de conformidad con PCI.
 
 ### 3DS
 
-PCI 3-D Secure (3DS) permite la autenticación del comprador con el emisor de su tarjeta de crédito al realizar compras con tarjeta de crédito en línea. Esta capa adicional de seguridad ayuda a prevenir el fraude en línea y es necesaria como parte de las regulaciones de cumplimiento de la Unión Europea (UE).
+PCI 3-D Secure (3DS) permite la autenticación del comprador con el emisor de su tarjeta de crédito al realizar compras con tarjeta de crédito en línea. Este nivel adicional de seguridad ayuda a prevenir el fraude en línea y es necesario como parte de las regulaciones de cumplimiento de la Unión Europea (UE).
 
 [!UICONTROL Payment Services] proporciona funcionalidad 3DS para permitir a los comerciantes cumplir con las regulaciones de la UE y proteger a los clientes y comerciantes de actividades fraudulentas en sus tiendas.
 
@@ -41,22 +41,22 @@ Si usted es un comerciante dentro de la UE o Gran Bretaña donde se requiere el 
 
 >[!NOTE]
 >
->El requisito 3DS se aplica a las operaciones en las que el banco de la empresa y del titular de la tarjeta estén situados en el [Espacio Económico Europeo](https://www.efta.int/eea) (EEE) y Gran Bretaña. Los comerciantes de los Estados Unidos no requieren 3DS, pero pueden habilitarlo para sus transacciones si lo desean.
+>El requisito de la 3DS se aplica a las transacciones en las que el banco del titular de la tarjeta y la empresa se encuentran en el [Espacio Económico Europeo](https://www.efta.int/eea) (EEE) y Gran Bretaña. Los comerciantes estadounidenses no requieren 3DS, pero pueden habilitarlo para sus transacciones si así lo desean.
 
-Los pedidos realizados para el comprador por el personal del comerciante/tienda no están configurados con medidas de cumplimiento 3DS.
+Los pedidos realizados por el comerciante o el personal de la tienda para el comprador no están configurados con medidas de cumplimiento de 3DS.
 
 Consulte [3DS en Configuración](settings.md#3ds) para obtener más información.
 
 ### Bóveda de tarjetas
 
-Cuando un comprador [vaults (o &quot;guarda&quot;): la información de su tarjeta de crédito](vaulting.md) para futuras compras en sus tiendas, la información mínima de la tarjeta de crédito se comparte con el comprador (los últimos cuatro dígitos, la fecha de caducidad de la tarjeta y la marca de la tarjeta). La información de la tarjeta de crédito se almacena en el proveedor de pagos. Cuando una tarjeta caduca o ya no necesita la información guardada, puede eliminarla para que el proveedor de pagos ya no almacene la información.
+Cuando un comprador [Almacena (o &quot;guarda&quot;) la información de su tarjeta de crédito](vaulting.md) para futuras compras en sus tiendas, se comparte información mínima sobre la tarjeta de crédito con el comprador (últimos cuatro dígitos, fecha de caducidad de la tarjeta y marca de la tarjeta). La información de la tarjeta de crédito se almacena con el proveedor de pagos. Cuando una tarjeta caduca o ya no necesita guardar la información, puede eliminar ese token para que el proveedor de pagos ya no almacene la información.
 
 Consulte [Bóveda de tarjetas de crédito](vaulting.md) para obtener más información.
 
-### Botones inteligentes PayPal
+### Botones inteligentes de PayPal
 
-Con los botones inteligentes PayPal, no se pasan datos regulados por PCI a través de sus servicios. No es necesario que almacene o mantenga esos datos, lo que reduce enormemente las preocupaciones de cumplimiento de PCI.
+Con los botones inteligentes de PayPal, no se pasan datos regulados por PCI a través de sus servicios. No tiene que almacenar ni mantener esos datos, lo que reduce considerablemente los problemas de conformidad con PCI.
 
-Por razones de seguridad, PayPal no pasa la dirección de facturación durante el cierre de compra (país, correo electrónico y nombre) es la única información de facturación utilizada. Si lo desea, puede habilitar el cierre de compra de PayPal de su sitio para que devuelva la dirección de facturación completa contactando con PayPal y completando un proceso de verificación.
+Por razones de seguridad, PayPal no pasa la dirección de facturación durante el proceso de pago: el país, el correo electrónico y el nombre son los únicos datos de facturación utilizados. Si lo desea, puede activar el proceso de pago y envío de PayPal para que se devuelva la dirección de facturación completa poniéndose en contacto con PayPal y completando un proceso de verificación de antecedentes.
 
-PayPal también cuenta con una protección integrada contra el fraude que utiliza el aprendizaje automático para luchar contra el fraude. Consulte la [Documentación de protección del vendedor](https://www.paypal.com/us/webapps/mpp/security/seller-protection) para obtener más información.
+PayPal también cuenta con una protección contra el fraude integrada que utiliza el aprendizaje automático para ayudarle a combatir el fraude. Ver PayPal&#39;s [Documentación de protección del vendedor](https://www.paypal.com/us/webapps/mpp/security/seller-protection) para obtener más información.

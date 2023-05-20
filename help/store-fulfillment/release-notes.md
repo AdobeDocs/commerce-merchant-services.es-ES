@@ -1,6 +1,6 @@
 ---
-title: '''[!DNL Store Fulfillment by Walmart Commerce Technologies] Notas de la versión'
-description: '"Revise las notas de la versión para obtener información sobre todas las [!DNL Store Fulfillment by Walmart Commerce Technologies] versiones".'
+title: '[!DNL Store Fulfillment by Walmart Commerce Technologies] Notas de la versión'
+description: "Revise las notas de la versión para obtener información acerca de todos los [!DNL Store Fulfillment by Walmart Commerce Technologies] Versiones de."
 exl-id: 04dcec10-fff8-483d-a2c1-4b58e063e0f0
 source-git-commit: f506412726449f438ca42dc3f1ef6c7fe08b306a
 workflow-type: tm+mt
@@ -9,12 +9,12 @@ ht-degree: 2%
 
 ---
 
-# Notas de la versión
+# Notas de versión
 
-Estas notas de la versión describen la versión inicial de [!DNL Store Fulfillment Services by Walmart Commerce Technologies] e incluyen:
+Estas notas de la versión describen la versión inicial de [!DNL Store Fulfillment Services by Walmart Commerce Technologies] e incluir:
 
 ![Nuevo](../assets/new.svg) Nuevas funciones
-![Se ha corregido un problema](../assets/fix.svg) Correcciones y mejoras
+![Problema corregido](../assets/fix.svg) Correcciones y mejoras
 ![Problema conocido](../assets/bug.svg) Problemas conocidos
 
 ## v1.4.0
@@ -23,7 +23,7 @@ Estas notas de la versión describen la versión inicial de [!DNL Store Fulfillm
 
 [!BADGE Compatibilidad]{type=Informative tooltip="Compatibilidad"}
 
-![Nuevo](../assets/fix.svg) [!DNL Store Fulfillment] ahora es [compatible con [!DNL Adobe Commerce] de 2.4.0 a 2.4.6](https://experienceleague.adobe.com/docs/commerce-operations/release/product-availability.html).
+![Nuevo](../assets/fix.svg) [!DNL Store Fulfillment] es ahora [compatible con [!DNL Adobe Commerce] De 2.4.0 a 2.4.6](https://experienceleague.adobe.com/docs/commerce-operations/release/product-availability.html).
 
 
 ## v1.3.0
@@ -32,9 +32,9 @@ Estas notas de la versión describen la versión inicial de [!DNL Store Fulfillm
 
 [!BADGE Compatibilidad]{type=Informative tooltip="Compatibilidad"}
 
-Esta versión contiene la siguiente actualización:
+Esta versión incluye la siguiente actualización:
 
-![Nuevo](../assets/fix.svg)<!-- WMTP-795 --> Se ha agregado la capacidad de deshabilitar la solución de cumplimiento de almacenamiento para un sitio específico cambiando el ámbito predeterminado para la configuración del sistema de sitio web a global.
+![Nuevo](../assets/fix.svg)<!-- WMTP-795 --> Se ha añadido la capacidad de deshabilitar la solución Store Fulfillment para un sitio específico cambiando el ámbito predeterminado de la configuración del sistema de sitio web a global.
 
 ## v1.2.0
 
@@ -42,9 +42,9 @@ Esta versión contiene la siguiente actualización:
 
 [!BADGE Compatibilidad]{type=Informative tooltip="Compatibilidad"}
 
-Esta versión contiene la siguiente actualización:
+Esta versión incluye la siguiente actualización:
 
-![Nuevo](../assets/fix.svg) [!DNL Store Fulfillment] ahora es [compatible con [!DNL Adobe Commerce] de 2.4.0 a 2.4.5](https://experienceleague.adobe.com/docs/commerce-operations/release/product-availability.html).
+![Nuevo](../assets/fix.svg) [!DNL Store Fulfillment] es ahora [compatible con [!DNL Adobe Commerce] De 2.4.0 a 2.4.5](https://experienceleague.adobe.com/docs/commerce-operations/release/product-availability.html).
 
 
 ## v1.1.0
@@ -53,9 +53,9 @@ Esta versión contiene la siguiente actualización:
 
 [!BADGE Compatibilidad]{type=Informative tooltip="Compatibilidad"}
 
-Estabilidad: Disponibilidad general
+Estabilidad: disponibilidad general
 
-![Nuevo](../assets/fix.svg)<!-- WMTP-731 --> Se ha simplificado el [Configuración de la experiencia de registro](check-in-experience-setup.md) para la aplicación Store Assist añadiendo las selecciones de modelo y fabricación de coche predeterminadas. En la versión anterior, los comerciantes tenían que configurar manualmente las selecciones de modelo y fabricación de autos.
+![Nuevo](../assets/fix.svg)<!-- WMTP-731 --> Simplificación de la [Configuración de la experiencia de registro](check-in-experience-setup.md) para la aplicación Store Assist, añadiendo selecciones predeterminadas de modelo y marca de coche. En la versión anterior, los comerciantes tenían que configurar manualmente la marca del coche y las selecciones del modelo.
 
 ## v1.0.0
 
@@ -63,8 +63,8 @@ Estabilidad: Disponibilidad general
 
 [!BADGE Compatibilidad]{type=Informative tooltip="Compatibilidad"}
 
-Estabilidad: Disponibilidad general
+Estabilidad: disponibilidad general
 
-## Aplicación de asistencia de la tienda
+## Aplicación Store Assist
 
-Para obtener información sobre las nuevas versiones de la aplicación de ayuda de la tienda, consulte la información de la aplicación en la sección [Apple App Store](https://apps.apple.com/us/app/store-assist-by-walmart/id1609281539){target="_blank"} or [Google Play store](https://play.google.com/store/apps/details?id=com.walmart.faas.storeassist){target="_blank"}.
+Para obtener información sobre las nuevas versiones de la aplicación Store Assist, consulte la información de la aplicación en la [Apple App Store](https://apps.apple.com/us/app/store-assist-by-walmart/id1609281539){target="_blank"} or [Google Play store](https://play.google.com/store/apps/details?id=com.walmart.faas.storeassist){target="_blank"}.
