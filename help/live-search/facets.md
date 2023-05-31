@@ -2,7 +2,7 @@
 title: "Facetas"
 description: '"[!DNL Live Search] las facetas utilizan varias dimensiones de valores de atributo como criterios de búsqueda".'
 exl-id: 63c0b255-6be9-41ad-b4bf-13bb7ff098fd
-source-git-commit: e1a512d2c9738f05bb8dcb929dccc7ad81cf7e3e
+source-git-commit: 6d4317df4f921bdc57faa4a7fbb86fc3a1d9e9b2
 workflow-type: tm+mt
 source-wordcount: '401'
 ht-degree: 0%
@@ -21,7 +21,7 @@ Los requisitos de atributos de categoría y producto para faceteado son similare
 
 [!DNL Live Search] admite hasta:
 
-* 200 atributos configurados como facetas
+* 100 atributos configurados como facetas
 * 50 atributos que se pueden ordenar
 * 200 atributos filtrables
 * 200 atributos en los que se puede buscar
