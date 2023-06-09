@@ -4,9 +4,9 @@ description: Después de la instalación, puede configurar [!DNL Payment Service
 role: Admin, User
 level: Intermediate
 exl-id: e1a3269d-bdf9-4b0f-972f-e8a0ef469503
-source-git-commit: 817a01e98876bddf5f41a253501984539b3351cd
+source-git-commit: 2205ec1e4dbd027b2e510419da4bbdac2d7a480e
 workflow-type: tm+mt
-source-wordcount: '866'
+source-wordcount: '954'
 ht-degree: 0%
 
 ---
@@ -97,7 +97,13 @@ Puedes activar y configurar las opciones de pago de los botones inteligentes de 
 1. En el _[!UICONTROL Payment Services]_, expanda la_[!UICONTROL PayPal Smart Buttons]_ sección.
 1. Para cambiar el nombre de la forma de pago como se muestra durante el pago, edite la _[!UICONTROL Title]_field.
 1. Hasta [establecer la acción de pago](production.md#set-payment-services-as-payment-method), seleccione **[!UICONTROL Authorize]** o **[!UICONTROL Authorize and Capture]**.
-1. Para deshabilitar la variable [Mensajería Pagar más tarde](payments-options.md#pay-later-button) (si lo desea), seleccione `No` para **[!UICONTROL Display Pay Later Message]**.
+1. Para habilitar/deshabilitar la variable [Mensajería Pagar más tarde](payments-options.md#pay-later-button), seleccione `Yes`/`No` para **[!UICONTROL Display Pay Later Message]**.
+1. Para mostrar los botones inteligentes de PayPal en la página de pago y envío, selecciona `Yes` para el **[!UICONTROL Show buttons on checkout page]**.
+1. Para mostrar los botones inteligentes de PayPal en la vista previa del minicarrito, selecciona `Yes` para **[!UICONTROL Show buttons in mini cart preview]**.
+1. Para habilitar Venmo como opción de pago, seleccione `Yes` para **[!UICONTROL Venmo Enabled]**.
+1. Para activar Apple Pay como opción de pago, selecciona `Yes` para **[!UICONTROL Apple Pay Enabled]**.
+1. Para activar las tarjetas de crédito y débito de PayPal como opción de pago (botón PayPal Smart), selecciona `Yes` para **[!UICONTROL PayPal Credit and Debit Card Enabled]**.
+1. Para habilitar/deshabilitar la variable [PayPal pagar más tarde](payments-options.md#pay-later-button) opción de pago, seleccione `Yes`/`No` para **[!UICONTROL PayPal Pay Later Enabled]**.
 1. Para activar el modo de depuración, seleccione `Yes` para el **[!UICONTROL Debug Mode]** (`No` lo desactiva).
 1. Para guardar los cambios, haga clic en **[!UICONTROL Save Config]** .
 1. Vaya a **[!UICONTROL System]** > **[!UICONTROL Cache Management]** y haga clic en **[!UICONTROL Flush Cache]** para actualizar todas las cachés no válidas.
@@ -109,13 +115,14 @@ Puedes activar y configurar las opciones de pago de los botones inteligentes de 
 | [!UICONTROL Title] | vista de tienda | Agrega el texto que se mostrará como título para esta opción de pago en la vista Método de pago durante el cierre de compra. Opciones: campo de texto |
 | [!UICONTROL Payment Action] | sitio web | El [acción de pago](https://docs.magento.com/user-guide/configuration/sales/payment-methods.html#payment-actions){target="_blank"} para el método de pago especificado. Opciones: [!UICONTROL Authorize] / [!UICONTROL Authorize and Capture] |
 | [!UICONTROL Display Pay Later Message] | sitio web | Habilite o deshabilite la mensajería Pagar más tarde en el carro de compras, la página del producto, el minicarrito y durante el flujo de cierre de compra. Opciones: [!UICONTROL Yes] / [!UICONTROL No] |
-| [!UICONTROL Venmo Enabled] | vista de tienda | Activa o desactiva la opción de pago Venmo donde se muestran los botones de pago. Opciones: [!UICONTROL Yes] / [!UICONTROL No] |
-| [!UICONTROL Apple Pay Enabled] | vista de tienda | Activa o desactiva la opción de pago de Apple Pay donde se muestran los botones de pago. Opciones: [!UICONTROL Yes] / [!UICONTROL No] |
-| [!UICONTROL PayPal Pay Later Enabled] | vista de tienda | Activar o desactivar la aparición de la opción de pago posterior en la que se muestran los botones de pago. Opciones: [!UICONTROL Yes] / [!UICONTROL No] |
-| [!UICONTROL Debug Mode] | sitio web | Habilite o deshabilite el modo de depuración. Opciones: [!UICONTROL Yes] / [!UICONTROL No] |
+| [!UICONTROL Show buttons on checkout page] | vista de tienda | Habilitar o deshabilitar [!DNL PayPal Smart Buttons] en la página de cierre de compra. Opciones: [!UICONTROL Yes] / [!UICONTROL No] |
 | [!UICONTROL Show buttons on product detail page] | vista de tienda | Habilitar o deshabilitar [!DNL PayPal Smart Buttons] en la página de detalles del producto. Opciones: [!UICONTROL Yes] / [!UICONTROL No] |
 | [!UICONTROL Show buttons in mini-cart preview] | vista de tienda | Habilitar o deshabilitar [!DNL PayPal Smart Buttons] en la vista previa del minicarrito. Opciones: [!UICONTROL Yes] / [!UICONTROL No] |
-| [!UICONTROL Show buttons on cart page] | vista de tienda | Habilitar o deshabilitar [!DNL PayPal Smart Buttons] en la página del carro de compras. Opciones: [!UICONTROL Yes] / [!UICONTROL No] |
+| [!UICONTROL Venmo Enabled] | vista de tienda | Activa o desactiva la opción de pago Venmo donde se muestran los botones de pago. Opciones: [!UICONTROL Yes] / [!UICONTROL No] |
+| [!UICONTROL Apple Pay Enabled] | vista de tienda | Activa o desactiva la opción de pago de Apple Pay donde se muestran los botones de pago. Opciones: [!UICONTROL Yes] / [!UICONTROL No] |
+| [!UICONTROL PayPal Credit and Debit Card Enabled] | vista de tienda | Activa o desactiva las opciones de tarjeta de crédito y débito de PayPal en las que se muestran los botones de pago. Opciones: [!UICONTROL Yes] / [!UICONTROL No] |
+| [!UICONTROL PayPal Pay Later Enabled] | vista de tienda | Activar o desactivar la opción de pago PayPal Más tarde en la que se muestran los botones de pago. Opciones: [!UICONTROL Yes] / [!UICONTROL No] |
+| [!UICONTROL Debug Mode] | sitio web | Habilite o deshabilite el modo de depuración. Opciones: [!UICONTROL Yes] / [!UICONTROL No] |
 
 ### [!DNL PayPal Smart Buttons] Opciones de estilo
 
@@ -132,4 +139,3 @@ Puedes activar y configurar las opciones de pago de los botones inteligentes de 
 ## Vaciar la caché
 
 Si cambia la configuración, [vaciar manualmente la caché](/help/payment-services/settings.md#flush-the-cache) para que la tienda muestre los ajustes de configuración más recientes.
-

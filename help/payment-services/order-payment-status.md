@@ -4,9 +4,9 @@ description: Utilice el informe Estado del pago del pedido para ver mejor el est
 role: User
 level: Intermediate
 exl-id: 192e47b9-d52b-4dcf-a720-38459156fda4
-source-git-commit: 817a01e98876bddf5f41a253501984539b3351cd
+source-git-commit: 8295b7c4ea407f0528d6be69655a8b12f7defe15
 workflow-type: tm+mt
-source-wordcount: '1416'
+source-wordcount: '1828'
 ht-degree: 0%
 
 ---
@@ -15,13 +15,12 @@ ht-degree: 0%
 
 [!DNL Payment Services] para [!DNL Adobe Commerce] y [!DNL Magento Open Source] le ofrece informes completos para que pueda obtener una visión clara de los pedidos y pagos de su tienda.
 
-![Vista de informes financieros](assets/reports-justpayouts.png)
+Existen dos vistas de informes de estado de pagos de pedidos disponibles para que pueda consultar rápidamente el estado de pago de sus pedidos:
 
-El informe Estado del pago del pedido le ayuda a comprender fácilmente dónde se encuentra un pedido específico dentro del flujo de proceso de pago en efectivo. Este informe le permite ver rápidamente el estado de pago de sus pedidos e identificar cualquier problema potencial.
+* **[Vista de visualización del estado de pago del pedido](#order-payment-status-data-visualization-view)**: gráfico disponible en la página de inicio de Payment Services que es una representación visual de los estados de pago agregados por día desde la vista de informe Estado de pago del pedido
+* **[Vista del informe de estado del pago del pedido](#order-payment-status-report-view)**: informe disponible en el estado de pago del pedido que muestra los estados detallados de pago, facturado, enviado, reembolso y disputa de todas las transacciones
 
-No es necesario que abra varias vistas para realizar manualmente pedidos y pagos de referencia cruzada. [!DNL Payment Services] para [!DNL Adobe Commerce] y [!DNL Magento Open Source] le permite obtener una vista general de sus pedidos y pagos, todo ello dentro del informe Estado del pago del pedido.
-
-Consulte los estados de pago, los estados de facturación y envío, los estados de reembolso, los estados de disputa y mucho más en este informe en Admin.
+Las vistas de estado de pago de pedido le ayudan a comprender fácilmente dónde se encuentra un pedido específico dentro del flujo de proceso de pago en efectivo. Estos informes le permiten ver rápidamente los pedidos (según su estado de pago y fecha de pago) e identificar cualquier problema potencial.
 
 Puede descargar transacciones de estado de pago de pedidos en formato de archivo .csv para usarlas en software de contabilidad o gestión de pedidos existente.
 
@@ -29,7 +28,61 @@ Puede descargar transacciones de estado de pago de pedidos en formato de archivo
 >
 >No puede ver informes financieros si no lo ha hecho [Modo en directo incorporado y activado](production.md#enable-live-payments) para [!DNL Payment Services].
 
-## Datos utilizados en el informe
+## Vista de visualización de datos del estado de pago del pedido
+
+La vista de visualización de datos del estado de pago del pedido está disponible en la página de inicio de Payment Services. Es una representación visual de los estados de pago agregados por día del cuadro detallado [Vista del informe de estado del pago del pedido](#order-payment-status-report-view).
+
+En el _Administrador_ barra lateral, vaya a **Ventas** > **Servicios de pago** para ver la visualización de datos [estado del plan de pagos](#statuses-information).
+
+![Visualización de datos de pago en el administrador](assets/orderpayment-dataviz.png){zoomable=yes}
+
+Clic **Ver informe** para ir a la tabla detallada [Vista del informe de estado del pago del pedido](#order-payment-status-report-view).
+
+### Personalizar intervalo de tiempo de estados
+
+De forma predeterminada, se muestran los 30 días de estados de pago.
+
+Desde la vista de visualización Estado de pago del pedido, puede personalizar el periodo de tiempo para los estados de pago que desea consultar seleccionando un intervalo de fechas:
+
+1. En el _Administrador_ barra lateral, vaya a **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**. La vista de visualización de datos del estado de pago del pedido se puede ver en la sección Estado de pago del pedido.
+1. Haga clic en **[!UICONTROL Range]** filtro selector.
+1. Elija el intervalo de fechas aplicable: 30 días, 15 días o 7 días.
+1. Ver la información de estado de las fechas especificadas.
+
+### Información de estados
+
+Los estados de pago de un intervalo de fechas seleccionado se muestran a la izquierda de la vista de visualización de datos Estado de pago del pedido. Las fechas del intervalo de fechas seleccionado se muestran en la parte inferior de la vista. Si no ha habido pedidos en una fecha determinada, esa fecha no aparece.
+
+La vista de visualización de datos de estado de pago del pedido incluye la siguiente información.
+
+| Datos | Descripción |
+| ------------ | -------------------- |
+| [!UICONTROL Orders] | Intervalo de importes para pedidos en un período de tiempo especificado; datos en el eje Y (izquierda) |
+| Intervalo de fechas | Intervalo de fechas para el lapso de tiempo especificado; datos en el eje X (inferior) |
+| Autorizado | Pedido autorizado |
+| Captura solicitada | Captura solicitada para pedido |
+| Captura confirmada | Captura de pedidos completada |
+| Captura parcial | Pedido capturado parcialmente |
+| Error de captura | Error de captura de pedido |
+| Anulado | Pedido anulado |
+
+## Vista del informe de estado del pago del pedido
+
+La vista Informe de estado de pago del pedido está disponible en la vista Estado de pago del pedido de Servicios de pago. Incluye estados detallados (pago, facturado, enviado, reembolso, disputa y más) de todas las transacciones. El [Vista de visualización de datos del estado de pago del pedido](#order-payment-status-data-visualization-view) en Página de inicio de Servicios de pago es una representación visual de los estados de pago agregados por día desde la vista Informe de estado de pago del pedido.
+
+En el _Administrador_ barra lateral, vaya a **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > **[!UICONTROL Order payment status]** para ver la tabla detallada de la vista de informe Estado de los pagos de pedidos.
+
+![Ordenar transacciones de estado de pago en el administrador](assets/orders-report-data.png)
+
+Puede configurar esta vista, según las secciones de este tema, para presentar mejor los datos que desee ver.
+
+Puede [descargar transacciones de pago](#download-order-payment-statuses) en formato de archivo .csv para su uso en software de contabilidad o gestión de pedidos existente.
+
+>[!NOTE]
+>
+>Los datos mostrados en esta tabla se ordenan en orden descendente (`DESC`) de forma predeterminada, con `TRANS DATE`. El `TRANS DATE` es la fecha y hora en que se inició la transacción.
+
+### Datos utilizados en el informe
 
 El [!DNL Payment Services] Este módulo utiliza datos de pedidos y los combina con datos de pagos agregados de otras fuentes (incluido PayPal) para ofrecer informes significativos y muy útiles.
 
@@ -49,7 +102,7 @@ Los únicos datos que se exportan y recopilan con fines informativos son los dat
 >
 >Los datos mostrados en esta tabla se ordenan en orden descendente (`DESC`) de forma predeterminada, con `ORDER DATE`. El `ORDER DATE` es la marca de fecha y hora en la que se creó el pedido.
 
-### Configuración de exportación de datos
+#### Configuración de exportación de datos
 
 Aunque, de forma predeterminada, la reindexación se produce en `ON SAVE` modo, se recomienda indexar en `BY SCHEDULE` modo. El `BY SCHEDULE` El índice se ejecuta en una programación cron de un minuto y los datos modificados aparecen en el informe de estado del pedido en un plazo de dos minutos tras cualquier cambio de datos. Esta reindexación programada le ayuda a reducir cualquier tensión en su tienda, especialmente si tiene un gran volumen de pedidos entrantes, ya que se produce en una programación (no como cada pedido se realiza).
 
@@ -57,19 +110,13 @@ Puede cambiar el modo de índice:`ON SAVE` o `BY SCHEDULE`—[en la Admin](https
 
 Para obtener información sobre cómo configurar la exportación de datos, consulte [Configuración de la línea de comandos](configure-cli.md#configure-data-export).
 
-## Disponibilidad
-
-En el _Administrador_ barra lateral, vaya a **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > **[!UICONTROL Order payment status]** para ver los estados de pago de sus pedidos.
-
-![Ordenar estados de pago en el administrador](assets/order-payment-status-report.png)
-
-## Seleccionar fuente de datos
+### Seleccionar fuente de datos
 
 En la vista Informe de estado de pago del pedido, puede seleccionar el origen de datos—_[!UICONTROL Live]_o_[!UICONTROL Sandbox]_: para el que se desea ver los resultados del informe.
 
-![Selección de fuentes de datos](assets/datasource.png)
+![Selección de fuentes de datos](assets/datasource.png){width=400px}
 
-If _[!UICONTROL Live]_es la fuente de datos seleccionada, puede ver información de informes de las tiendas que utilizan [!DNL Payment Services] in_[!UICONTROL Live]_ modo. If [!UICONTROL Sandbox]_ es la fuente de datos seleccionada, puede ver información del informe para su entorno de espacio aislado.
+If _[!UICONTROL Live]_es la fuente de datos seleccionada, puede ver información de informes de las tiendas que utilizan [!DNL Payment Services] en modo de producción. If_[!UICONTROL Sandbox]_ es la fuente de datos seleccionada, puede ver la información del informe del modo de zona protegida.
 
 Las selecciones de fuentes de datos funcionan de la siguiente manera:
 
@@ -84,7 +131,7 @@ Para seleccionar la fuente de datos de su [!UICONTROL Order Payment Status] info
 
    Los resultados del informe se regeneran en función del origen de datos seleccionado.
 
-## Personalizar fechas/periodo
+### Personalizar fechas/periodo
 
 Desde la vista Informe de estado de pago del pedido, puede personalizar el periodo de tiempo de los estados que desea consultar seleccionando fechas específicas. De forma predeterminada, se muestran en la cuadrícula 30 días de estados de pago del pedido.
 
@@ -93,7 +140,7 @@ Desde la vista Informe de estado de pago del pedido, puede personalizar el perio
 1. Seleccione el intervalo de fechas aplicable.
 1. Permite ver los estados de pago de los pedidos para las fechas especificadas en la cuadrícula.
 
-## Mostrar y ocultar columnas
+### Mostrar y ocultar columnas
 
 El informe Estado de Pago del Pedido muestra todas las columnas de información disponibles de forma predeterminada. Sin embargo, puede personalizar qué columnas ve en el informe.
 
@@ -103,11 +150,11 @@ El informe Estado de Pago del Pedido muestra todas las columnas de información 
 
    El informe Estado de pago del pedido mostrará inmediatamente los cambios realizados en el menú Configuración de columna. Las preferencias de columna se guardarán y permanecerán en vigor si se aleja de la vista Informes.
 
-## Ver estados
+### Ver estados
 
 La vista de informe Estado de Pago del Pedido muestra información completa sobre el estado de la transacción y el estado de pago de cada pedido de Payment Services.
 
-### Estado de transacción
+#### Estado de transacción
 
 De forma predeterminada, se muestran en la cuadrícula 30 días de estados de pago del pedido.
 
@@ -115,15 +162,15 @@ Desplácese a la izquierda y a la derecha para ver [información de estado de pa
 
 El número de filas devueltas en una búsqueda, o que se muestran en los 30 días predeterminados de estados de pago del pedido, se muestra encima de la cuadrícula de vista de estado de pago del pedido junto con el filtro de selector de calendario de fechas del pedido.
 
-### Estado de pago
+#### Estado de pago
 
 La columna Estado de pago muestra el estado actual de cualquier pago. A `Capture failed` el pago muestra un estado de alerta rojo y una `Voided` el pago muestra un estado de alerta gris.
 
-### Estado del reembolso
+#### Estado del reembolso
 
 La columna Estado de reembolso muestra el estado actual de cualquier reembolso. A `Capture failed` el pago muestra un estado de alerta rojo y una `Voided` el pago muestra un estado de alerta gris.
 
-## Actualización de datos del informe
+### Actualización de datos del informe
 
 La vista del informe Estado de los pagos del pedido muestra un _[!UICONTROL Last updated]_marca de tiempo que muestra la última vez que se actualizó la información del informe. De forma predeterminada, los datos del informe Estado de los pagos de los pedidos se actualizan automáticamente cada tres horas.
 
@@ -134,7 +181,7 @@ También puede forzar manualmente la actualización de los datos del informe de 
 
    Se actualizan los datos del informe de estado de pago del pedido, y *[!UICONTROL Update complete]* aparece una confirmación y la información más reciente está presente en la cuadrícula.
 
-## Ver disputas
+### Ver disputas
 
 Puedes ver cualquier disputa sobre los pedidos de tu tienda y navegar hasta el Centro de resolución de PayPal para tomar medidas al respecto, desde el informe de estado de pago del pedido.
 
@@ -146,7 +193,7 @@ Puedes ver cualquier disputa sobre los pedidos de tu tienda y navegar hasta el C
 
    Para ordenar las disputas por estado, haga clic en el encabezado de la columna Disputas.
 
-## Descargar estados de pago de pedidos
+### Descargar estados de pago de pedidos
 
 Puede descargar un archivo .csv con todos los estados visibles en la cuadrícula de la vista Estado de los pagos de pedidos, tanto si visualiza los 30 días de estados predeterminados como si utiliza un periodo de tiempo personalizado.
 
@@ -171,11 +218,7 @@ These order payment status timeframes are currently available in [!DNL Payment S
 | Custom range | Available from the Order payment status dates selector, this can be filtered to show a custom date range. |
 -->
 
-## Información de estado de pago del pedido
-
-La vista Estado del pago del pedido muestra información exhaustiva de cada estado mostrado en la cuadrícula.
-
-### Descripciones de columna
+#### Información de estados
 
 Los informes de estado de pago del pedido incluyen la siguiente información.
 

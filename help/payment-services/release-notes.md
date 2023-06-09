@@ -2,9 +2,9 @@
 title: "[!DNL Payment Services] Notas de la versión"
 description: Revise las notas de la versión para obtener información acerca de todos los [!DNL Payment Services] versiones.
 exl-id: 104aa2c7-7735-4ac2-8ed1-a03cd9911273
-source-git-commit: e076864a117be007eeb8003d9d6a472b704996ba
+source-git-commit: e9209d7361d0dd6b6f502df9a898a5a35c53ec1a
 workflow-type: tm+mt
-source-wordcount: '1758'
+source-wordcount: '1971'
 ht-degree: 0%
 
 ---
@@ -28,6 +28,16 @@ Consulte [Disponibilidad](https://devdocs.magento.com/release/availability.html)
 Estas notas de la versión describen los cambios y correcciones de características que se produjeron y que se lanzaron fuera de las versiones de funciones habituales para el servicio alojado.
 
 +++Actualizaciones de servicios alojados
+
+_9 de junio de 2023_
+
+![Nuevo](../assets/new.svg)<!-- Issue PAY-4288 --> Ahora, los comerciantes pueden [configurar _solamente_ Botones de pago de PayPal](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/payments-checkout/payments-options.html#use-only-paypal-payment-buttons)—y _no_ utiliza la opción de pago con tarjeta de crédito de PayPal para proporcionar una variedad de opciones de pago sin solicitar la aprobación de la tarjeta de crédito de PayPal.
+
+![Nuevo](../assets/new.svg)<!-- Issue PAY-4050 --> Se ha añadido un [vista de visualización de datos](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/order-payment-status.html#order-payment-status-data-visualization-view), que aparece en la página de inicio de Payment Service, para el informe Estado de pago del pedido.
+
+![Problema corregido](../assets/fix.svg)<!-- Issue PAY-4486--> Anteriormente, el botón PayPal Paylater no aparecía en el proceso de pago y envío de los comerciantes del Reino Unido. Ese problema está resuelto.
+
+![Problema corregido](../assets/fix.svg)<!-- Issue PAY-4485--> Las vistas de visualización de datos de informes ahora aparecen en la página principal de servicios de pago cuando se desactiva Servicios de pago.
 
 _25 de enero de 2023_
 
@@ -56,6 +66,22 @@ _28 de junio de 2021_
 ![Nuevo](../assets/new.svg)<!-- Issue PAY-2761 --> Ahora puede personalizar los datos que se muestran en la variable [Informe de estado de pago del pedido](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/order-payment-status.html#show-and-hide-columns) y el [Informe de pagos](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/payouts.html#show-and-hide-columns) mostrando u ocultando columnas mediante el control Configuración de columna.
 
 +++
+
+## v2.1.0
+
+_9 de junio de 2023_
+
+[!BADGE Compatibilidad]{type=Informative tooltip="Compatibilidad"}
+
+![Nuevo](../assets/new.svg)<!-- Issue xxx --> Se ha agregado compatibilidad con Adobe Commerce 2.4.7-beta1.
+
+![Nuevo](../assets/new.svg)<!-- Issue xxx --> Añadido [disponibilidad en los siguientes países y monedas asociadas](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/overview.html#availability): Australia, Francia, Reino Unido.
+
+![Nuevo](../assets/new.svg)<!-- Issue PAY-4296 --> Añadido [recursos ampliados para funciones de administrador](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/configure/settings.html#configure-roles) para garantizar que los usuarios administradores puedan crear y gestionar pedidos de clientes, y puedan ver Servicios de pago en el menú Ventas.
+
+![Nuevo](../assets/new.svg)<!-- Issue PAY-4236 --> Añadido [anulación automática para pedidos que incurren en errores durante el cierre de compra](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/payments-checkout/checkout.html#order-auto-voided-if-error).
+
+![Nuevo](../assets/new.svg)<!-- Issue PAY-4183 --> Funcionalidad creada para [mostrar el botón de opción de pago con tarjeta de crédito/débito](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/payments-checkout/payments-options.html#debit-or-credit-card-button) en la página de cierre de compra.
 
 ## v2.0.0
 

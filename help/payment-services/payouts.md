@@ -4,9 +4,9 @@ description: Utilice el informe Pagos para obtener una transparencia total del i
 role: User
 level: Intermediate
 exl-id: f3f99474-cd28-4c8f-b0ea-dca8e014b108
-source-git-commit: 817a01e98876bddf5f41a253501984539b3351cd
+source-git-commit: 8295b7c4ea407f0528d6be69655a8b12f7defe15
 workflow-type: tm+mt
-source-wordcount: '1335'
+source-wordcount: '1326'
 ht-degree: 0%
 
 ---
@@ -14,8 +14,6 @@ ht-degree: 0%
 # Informe de pagos
 
 [!DNL Payment Services] para [!DNL Adobe Commerce] y [!DNL Magento Open Source] le ofrece informes completos para que pueda obtener una visión clara de los pedidos y pagos de su tienda.
-
-![Vista de informes financieros](assets/reports-justpayouts.png)
 
 Hay dos vistas de informes de pagos disponibles para que pueda ver información detallada sobre todos los pagos:
 
@@ -34,7 +32,7 @@ La vista de visualización de datos Pagos está disponible en la página de inic
 
 En el _Administrador_ barra lateral, vaya a **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** para ver el gráfico de visualización de datos de créditos frente a débitos y los promedios móviles a lo largo del tiempo.
 
-![Visualización de datos de pago en el administrador](assets/payouts-report.png)
+![Visualización de datos de pago en el administrador](assets/payouts-report.png){zoomable=yes}
 
 Clic **[!UICONTROL View Report]** para ir a la tabla detallada [Vista de informe de pagos](#payouts-report-view).
 
@@ -70,13 +68,13 @@ La vista Informe de pagos está disponible en la vista Pagos de Payment Services
 
 En el _Administrador_ barra lateral, vaya a **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > **[!UICONTROL Payouts]** para ver la vista detallada del informe Pagos tabulares.
 
-![Transacciones de pago en el administrador](assets/payouts-report-new.png)
+![Transacciones de pago en el administrador](assets/payouts-report-new.png){zoomable=yes}
 
 Puede configurar esta vista, según las secciones de este tema, para presentar mejor los datos que desee ver.
 
 Consulte los ID de pedido y transacción de comercio vinculados, los importes de transacción, el método de pago por transacción y mucho más, todo ello dentro del informe Pagos en el Administrador.
 
-Puede descargar transacciones de pago en un formato de archivo .csv para su uso en software de contabilidad o gestión de pedidos existente.
+Puede [descargar transacciones de pago](#download-transactions) en formato de archivo .csv para su uso en software de contabilidad o gestión de pedidos existente.
 
 >[!NOTE]
 >
@@ -86,9 +84,9 @@ Puede descargar transacciones de pago en un formato de archivo .csv para su uso 
 
 En la vista Informe de pagos, puede seleccionar el origen de datos—_[!UICONTROL Live]_o_[!UICONTROL Sandbox]_: para el que se desea ver los resultados del informe.
 
-![Selección de fuentes de datos](assets/datasource.png)
+![Selección de fuentes de datos](assets/datasource.png){width=400px}
 
-If _[!UICONTROL Live]_es la fuente de datos seleccionada, donde puede ver información de informes de sus tiendas activas. If [!UICONTROL Sandbox]_ es la fuente de datos seleccionada, puede ver información del informe para su entorno de espacio aislado.
+If _[!UICONTROL Live]_es la fuente de datos seleccionada, puede ver la información del informe de las tiendas en el modo de producción. If_[!UICONTROL Sandbox]_ es la fuente de datos seleccionada, donde puede ver los almacenes de información de informes en el modo de entorno limitado.
 
 Las selecciones de fuentes de datos funcionan de la siguiente manera:
 
@@ -154,27 +152,27 @@ Los informes de pago incluyen la siguiente información.
 | [!UICONTROL Code] | Código de transacción que indica el crédito (*CR*) o débito (*DR.*) |
 | [!UICONTROL Reference ID] | ID de transacción original con el que se relaciona este evento |
 | [!UICONTROL Invoice] | ID de factura (uno por pedido) de la transacción |
-| [!UICONTROL Commerce order] | ID de pedido de comercio <br> <br>Para ver información relacionada [información del pedido](https://docs.magento.com/user-guide/sales/orders.html){target="_blank"}, haga clic en el ID. |
-| [!UICONTROL Commerce trans] | ID de transacción comercial <br> <br>Para ver información relacionada [información de transacción](https://docs.magento.com/user-guide/sales/transactions.html){target="_blank"}, haga clic en el ID. |
-| [!UICONTROL Pay method] | Tipo de tarjeta de crédito—*[!UICONTROL BANK]*, *[!UICONTROL PAYPAL]*, *[!UICONTROL APPLE_PAY]*, *[!UICONTROL CREDIT_CARD]*—y el proveedor de tarjetas asociado (como *Visa* o *MasterCard*) |
-| [!UICONTROL Trans amt] | Importe de la transacción |
-| [!UICONTROL Cur] | Unidad de divisa para importe de transacción |
-| [!UICONTROL Pending] | Importe aún por desembolsar |
-| [!UICONTROL Cur] | Unidad de divisa para el importe pendiente |
-| [!UICONTROL Seller amt] | Importe de los fondos transferidos a o desde un cliente <br> <br>Los fondos que salen de la cuenta de vendedor muestran un prefijo guión (-). |
-| [!UICONTROL Cur] | Unidad de divisa del importe del vendedor |
-| [!UICONTROL Partner fee] | Tarifas de socio asociadas con la transacción <br> <br>Los fondos que se mueven fuera de la cuenta de cuota de socio muestran un prefijo guión (-). |
-| [!UICONTROL Cur] | Unidad monetaria de la tarifa de socio |
-| [!UICONTROL Prov fees] | Tarifas asociadas con la transacción <br> <br>Los fondos que salen de la cuenta de tarifas del proveedor muestran un prefijo guión (-). |
-| [!UICONTROL Cur] | Unidad monetaria de la tarifa de proveedor |
-| [!UICONTROL Fee %] | Porcentaje del importe de la transacción cargado como tarifa |
-| [!UICONTROL Fixed fee] | Importe fijo de tarifa de proveedor |
-| [!UICONTROL Chbk fee] | Cargo por devolución de cargo asociado con la transacción <br> <br>Un prefijo de guión (-) indica que se ha revertido la tarifa de contracargo. |
-| [!UICONTROL Cur] | Unidad de divisa de la tarifa de refacturación |
-| [!UICONTROL Hold amt] | Importe retenido o liberado de la suspensión <br> <br>Un prefijo de guión (-) indica que se están liberando fondos en espera. |
-| [!UICONTROL Cur] | Unidad de divisa para el importe de retención |
-| [!UICONTROL Recoup amt] | Importe recuperado de la cuenta de recuperación <br> <br>Los fondos que salen de la cuenta de recuperación muestran un prefijo guión (-). |
-| [!UICONTROL Cur] | Unidad de divisa para el importe de recuperación |
+| [!UICONTROL Commerce order] | ID de pedido de comercio <br> <br>Para ver información relacionada [información del pedido](https://docs.magento.com/user-guide/sales/orders.html), haga clic en el ID. |
+| [!UICONTROL Commerce trans] | ID de transacción comercial |
+| [!UICONTROL Pay method] | Tipo de tarjeta de crédito—*[!UICONTROL BANK]*, *[!UICONTROL PAYPAL]*, *[!UICONTROL CREDIT_CARD]*—y el proveedor de tarjetas asociado (como *Visa* o *MasterCard*) |
+| [!UICONTROL TRANS AMT] | Importe de la transacción |
+| [!UICONTROL CUR] | Unidad de divisa para importe de transacción |
+| [!UICONTROL PENDING] | Importe aún por desembolsar |
+| [!UICONTROL CUR] | Unidad de divisa para el importe pendiente |
+| [!UICONTROL SELLER AMT] | Importe de los fondos transferidos a o desde un cliente <br> <br>Los fondos que salen de la cuenta de vendedor muestran un prefijo guión (-). |
+| [!UICONTROL CUR] | Unidad de divisa del importe del vendedor |
+| [!UICONTROL PARTNER FEE] | Tarifas de socio asociadas con la transacción <br> <br>Los fondos que se mueven fuera de la cuenta de cuota de socio muestran un prefijo guión (-). |
+| [!UICONTROL CUR] | Unidad monetaria de la tarifa de socio |
+| [!UICONTROL PROV FEES] | Tarifas asociadas con la transacción <br> <br>Los fondos que salen de la cuenta de tarifas del proveedor muestran un prefijo guión (-). |
+| [!UICONTROL CUR] | Unidad monetaria de la tarifa de proveedor |
+| [!UICONTROL FEE %] | Porcentaje del importe de la transacción cargado como tarifa |
+| [!UICONTROL FIXED FEE] | Importe fijo de tarifa de proveedor |
+| [!UICONTROL CHBK FEE] | Cargo por devolución de cargo asociado con la transacción <br> <br>Un prefijo de guión (-) indica que se ha revertido la tarifa de contracargo. |
+| [!UICONTROL CUR] | Unidad de divisa de la tarifa de refacturación |
+| [!UICONTROL HOLD AMT] | Importe retenido o liberado de la suspensión <br> <br>Un prefijo de guión (-) indica que se están liberando fondos en espera. |
+| [!UICONTROL CUR] | Unidad de divisa para el importe de retención |
+| [!UICONTROL RECOUP AMT] | Importe recuperado de la cuenta de recuperación <br> <br>Los fondos que salen de la cuenta de recuperación muestran un prefijo guión (-). |
+| [!UICONTROL CUR] | Unidad de divisa para el importe de recuperación |
 
 ### Tipos de transacciones
 
