@@ -2,9 +2,9 @@
 title: "Agregar reglas"
 description: '"Aprenda a crear [!DNL Live Search] reglas".'
 exl-id: c6b92ef5-3b08-47f9-8412-955a9c95a9ee
-source-git-commit: 2d4c96679b93a97e032fcbb50a27cbd579554795
+source-git-commit: 0b0e9a630162c4c98c6a3af969002def03155267
 workflow-type: tm+mt
-source-wordcount: '1401'
+source-wordcount: '1419'
 ht-degree: 0%
 
 ---
@@ -85,6 +85,10 @@ Los propietarios de tiendas pueden configurar los siguientes tipos de estrategia
 * Ninguno: los productos se ordenan por relevancia
 
 1. Seleccione el tipo de estrategia para la regla. La ventana Prueba de la regla muestra los resultados esperados.
+
+>[!NOTE]
+>
+>Los apóstrofos y las citas en las consultas pueden llevar a algunos problemas menores con clasificación y relevancia en algunos idiomas.
 
 ## Añadir eventos
 

@@ -2,9 +2,9 @@
 title: "Administrar facetas"
 description: '"Aprenda a administrar los recursos existentes [!DNL Live Search] facetas".'
 exl-id: 1d51a36a-20d6-46b6-b379-11e46c8824a0
-source-git-commit: 9bacdb5fd232a3603bcb7abe2e93da9ead794d38
+source-git-commit: bce69f952e70e2e8dcb892357dea41e18f61e5f6
 workflow-type: tm+mt
-source-wordcount: '461'
+source-wordcount: '476'
 ht-degree: 0%
 
 ---
@@ -62,6 +62,10 @@ El pin se vuelve azul y la faceta se mueve a la *Facetas ancladas* sección.
 El pasador se vuelve gris y la faceta se mueve a la *Facetas dinámicas* sección.
 
    ![Facetas ancladas y dinámicas](assets/facets-pinned-unpinned.png)
+
+>[!NOTE]
+>
+>El orden de facetas anclado puede ser incoherente si hay dos etiquetas con el mismo nombre.
 
 ## Mover faceta anclada
 
