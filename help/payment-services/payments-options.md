@@ -2,9 +2,9 @@
 title: Opciones de pago
 description: Configura las opciones de pago para personalizar los métodos disponibles para los clientes de tu tienda.
 exl-id: 95e648e6-6cb8-4226-b5ea-e1857212f20a
-source-git-commit: 44d36c530ba95f38c264ac40123ea12ec98c32b3
+source-git-commit: 36dd961d06f279143e90f3a1f5a6114db14e8c1b
 workflow-type: tm+mt
-source-wordcount: '1156'
+source-wordcount: '1171'
 ht-degree: 0%
 
 ---
@@ -107,7 +107,7 @@ Para poner rápidamente su tienda en modo de producción, puede configurar _sola
 
 Esto le permite:
 
-* Proporcione una variedad de opciones de pago para sus clientes sin solicitar la aprobación de su tarjeta de crédito a través de PayPal.
+* Proporcione una variedad de opciones de pago para sus clientes, incluidos los botones de pago Venmo y PayPal, con la opción de desactivar los campos de tarjeta alojados en PayPal y utilizar un proveedor de tarjeta de crédito existente.
 * Utiliza tu proveedor de tarjetas de crédito existente para realizar pagos con tarjeta de crédito, mientras también usas otras opciones de pago de PayPal.
 * Utiliza los botones de pago de PayPal en una región donde PayPal no admite tarjetas de crédito como opción de pago.
 
