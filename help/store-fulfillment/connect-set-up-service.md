@@ -4,9 +4,9 @@ description: Establezca las conexiones entre Adobe Commerce y la solución Store
 role: User, Admin
 level: Intermediate
 exl-id: 74c71c43-305a-4ea7-84f8-95f3ce0a9482
-source-git-commit: e7493618e00e28e2de5043ae2d7e05a81110d8f1
+source-git-commit: 19c4d3263c22914672b38c5dc5ec9908889bb9b6
 workflow-type: tm+mt
-source-wordcount: '437'
+source-wordcount: '453'
 ht-degree: 0%
 
 ---
@@ -33,7 +33,10 @@ Para integrar Adobe Commerce con los servicios de Store Fulfillment, crea una in
    - Introduzca su dirección de correo electrónico
    - Introduzca la contraseña de su cuenta de administrador
 
-1. Configurar [!UICONTROL API Resource Access permissions] para la integración: seleccione `[!UICONTROL All]`
+1. Configure los permisos de acceso a recursos de API para la integración con lo siguiente:
+
+   - Ventas > BOPIS Actualización de pedidos
+   - Sistema > Permisos de aplicación de Store Fulfillment
 
 1. Genere los tokens de acceso para la autenticación guardando y activando la integración.
 

@@ -4,7 +4,7 @@ description: Uso de la indexación de precios SaaS para mejorar el rendimiento
 seo-title: Adobe SaaS Price Indexing
 seo-description: Price indexing give performance improvements using SaaS infrastructure
 exl-id: 747c0f3e-dfde-4365-812a-5ab7768342ab
-source-git-commit: a93ada3230d3d29dd6b79f67a61ede38de7dc250
+source-git-commit: 19c4d3263c22914672b38c5dc5ec9908889bb9b6
 workflow-type: tm+mt
 source-wordcount: '752'
 ht-degree: 0%
@@ -83,7 +83,7 @@ Las nuevas fuentes deben sincronizarse manualmente con `resync` [comando CLI](ht
 
 ### Luma sin dependencias de extensión
 
-* Un comerciante principal de GraphQL de Luma o Adobe Commerce que tiene instalado un servicio requerido (Live Search, Product Recommendations, Servicio de catálogo)
+* Un comerciante de Luma o Adobe Commerce Core GraphQL que tiene instalado un servicio requerido (Live Search, Product Recommendations, Servicio de catálogo)
 * No hay extensiones de terceros que dependan del indexador de precios principal de PHP
 * Venta de productos dinámicos simples, configurables, agrupados, virtuales y agrupados
 
@@ -92,7 +92,7 @@ Las nuevas fuentes deben sincronizarse manualmente con `resync` [comando CLI](ht
 
 ### GraphQl principal de Luma y Adobe Commerce con dependencias de indexador de precios principal de PHP
 
-* Un comerciante principal de GraphQL de Luma o Adobe Commerce que tiene instalado un servicio compatible (Live Search, Product Recommendations, Servicio de catálogo)
+* Un comerciante de Luma o Adobe Commerce Core GraphQL que tiene instalado un servicio compatible (Live Search, Product Recommendations, Servicio de catálogo)
 * Con una extensión de terceros que depende del indexador de precios principal de PHP
 * Venta de productos dinámicos simples, configurables, agrupados, virtuales y agrupados
 
