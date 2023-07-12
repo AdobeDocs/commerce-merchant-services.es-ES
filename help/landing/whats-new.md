@@ -4,9 +4,9 @@ description: Recopilación de cambios en la documentación de todos los servicio
 seo-title: Adobe Commerce Services documentation changes
 seo-description: See a collated list of all documentation changes for Adobe Commerce Services and integration services.
 exl-id: dcc613e3-955e-4006-9984-bf05289d3bc1
-source-git-commit: e5e8bd93284a301e467daf7697e6a17b58380d11
+source-git-commit: a375f9fd38ef91d67878989f21fb278c402b3a8f
 workflow-type: tm+mt
-source-wordcount: '116'
+source-wordcount: '221'
 ht-degree: 0%
 
 ---
@@ -15,6 +15,12 @@ ht-degree: 0%
 
 Los siguientes elementos son cambios recientes en la documentación de:
 
-| Servicio | Cambiar | Tipo | | — | — | — | | [**Servicio de catálogo**](../catalog-service/guide-overview.md) | Se ha añadido un ejemplo entityId a [API Mesh](../catalog-service/mesh.md) tema.| Nuevo tema | | [**Product Recommendations**](../product-recommendations/guide-overview.md) | Se ha añadido la versión 5.0 a Product Recommendations. [Notas de versión](../product-recommendations/release-notes.md)| Actualización principal | | [**Servicio de catálogo**](../catalog-service/guide-overview.md) | Se ha actualizado el servicio de catálogo [Notas de versión](../catalog-service/release-notes.md) para la versión del 6 de marzo| Actualización principal | | [**Conector del Experience Platform**](../experience-platform-connector/overview.md) | Se ha añadido documentación para [Eventos B2B](https://experienceleague.adobe.com/docs/commerce-merchant-services/experience-platform-connector/event-forwarding/events.html#b2b-events) y [Back Office](https://experienceleague.adobe.com/docs/commerce-merchant-services/experience-platform-connector/event-forwarding/events.html#back-office-events) Eventos | Actualización principal |
+| Servicio | Cambiar | Tipo |
+| -- | -- | -- |
+| [**Servicios de pago**](../payment-services/overview.md) | Se ha añadido información acerca de la nueva vista de visualización de datos para [Informe de estado de pago del pedido](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/order-payment-status.html). | Actualización principal |
+| [**Servicios de pago**](../payment-services/overview.md) | Se ha añadido un [Tema de cierre de compra](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/payments-checkout/checkout.html) para recopilar información relacionada con el cierre de compra y la sección sobre la anulación automática de pedidos cuando se produce un error durante el cierre de compra. | Nuevo tema |
+| [**Servicios de pago**](../payment-services/overview.md) | Añadido [información sobre el tema Configuración](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/configure/settings.html#configure-roles) Obtenga información sobre la configuración de funciones de administrador mediante recursos de Payment Services para garantizar que los usuarios administradores puedan crear y administrar pedidos para los clientes. | Actualización principal |
+| [**Servicios de pago**](../payment-services/overview.md) | Añade información a [Opciones de pago](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/payments-checkout/payments-options.html#debit-or-credit-card-button), [configuración heredada](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/configure/configure-admin.html#configure-paypal-smart-buttons), y [Configuración](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/configure/settings.html#payment-buttons) temas acerca de cómo habilitar el botón de opción de pago con tarjeta de crédito/débito. | Actualización principal |
+| [**Servicios de pago**](../payment-services/overview.md) | Se ha añadido una nueva sección a [Tema de opciones de pagos](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/payments-checkout/payments-options.html#use-only-paypal-branded-payment-buttons) con información sobre cómo configurar Servicios de pago para que utilice únicamente los botones de pago de la marca PayPal. | Actualización principal |
 
 Esta tabla se actualiza el primer lunes de cada mes.
