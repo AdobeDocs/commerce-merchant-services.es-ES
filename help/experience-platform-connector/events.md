@@ -2,7 +2,7 @@
 title: Eventos
 description: Descubra qué datos captura cada evento.
 exl-id: b0c88af3-29c1-4661-9901-3c6d134c2386
-source-git-commit: 7b34b66d5fb199e75b321a7d7ff0f98a3a0dcf8b
+source-git-commit: 1484a465f3ce5b5578a7c5cf3f5f3b7d68d69c41
 workflow-type: tm+mt
 source-wordcount: '4605'
 ht-degree: 0%
@@ -328,7 +328,7 @@ Utilice el `uniqueIdentifier` campo encontrado en ambos `searchRequestSent` y `s
 
 >[!NOTE]
 >
->Los eventos de búsqueda no son compatibles con Adobe Commerce Enterprise Edition con el módulo B2B instalado.
+>Los eventos de búsqueda no son compatibles con Adobe Commerce Enterprise Edition con la extensión B2B instalada.
 
 #### Datos recopilados de searchRequestSent
 
@@ -337,7 +337,7 @@ En la tabla siguiente se describen los datos recopilados para este evento.
 | Campo | Descripción |
 |---|---|
 | `searchRequest` | Indica si se ha enviado una solicitud de búsqueda |
-| `id` | El ID único de esta solicitud de búsqueda concreta |
+| `id` | El ID único de esta solicitud de búsqueda en particular |
 | `filter` | Indica si se aplicó algún filtro para limitar los resultados de búsqueda |
 | `attribute` (filtro) | La faceta de un elemento utilizada para determinar si se debe incluir en los resultados de búsqueda |
 | `value` | Valores de atributo utilizados para determinar qué elementos se incluyen en los resultados de búsqueda |
@@ -355,7 +355,7 @@ En la tabla siguiente se describen los datos recopilados para este evento.
 
 >[!NOTE]
 >
->Los eventos de búsqueda no son compatibles con Adobe Commerce Enterprise Edition con el módulo B2B instalado.
+>Los eventos de búsqueda no son compatibles con Adobe Commerce Enterprise Edition con la extensión B2B instalada.
 
 #### Datos recopilados de searchResponseReceived
 

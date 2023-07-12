@@ -2,7 +2,7 @@
 title: Conexión de datos de Commerce con Adobe Experience Platform
 description: Aprenda a conectar sus datos de Commerce a Adobe Experience Platform.
 exl-id: 87898283-545c-4324-b1ab-eec5e26a303a
-source-git-commit: 8c2f275354eb4deba151ccdd83302e4b2cc5d4c9
+source-git-commit: 1484a465f3ce5b5578a7c5cf3f5f3b7d68d69c41
 workflow-type: tm+mt
 source-wordcount: '1952'
 ht-degree: 0%
@@ -162,7 +162,7 @@ Para habilitar la recopilación de datos de pedidos históricos para la versión
 
 ### Configuración del pedido beta histórico
 
-Para asegurarse de que el historial de pedidos de los clientes se puede enviar al Experience Platform, debe especificar las credenciales que vinculan la instancia de Commerce al Experience Platform. Si ya ha instalado y habilitado el [Audience Activation](https://experienceleague.adobe.com/docs/commerce-admin/customers/audience-activation.html) , ya ha especificado las credenciales necesarias y puede omitir este paso. Si aún no ha instalado y habilitado el módulo Audience Activation, complete los siguientes pasos:
+Para asegurarse de que el historial de pedidos de los clientes se puede enviar al Experience Platform, debe especificar las credenciales que vinculan la instancia de Commerce al Experience Platform. Si ya ha instalado y habilitado el [Audience Activation](https://experienceleague.adobe.com/docs/commerce-admin/customers/audience-activation.html) extensión, ya ha especificado las credenciales necesarias y puede omitir este paso. Si aún no ha instalado y habilitado la extensión de Audience Activation, complete los siguientes pasos:
 
 >[!NOTE]
 >

@@ -2,9 +2,9 @@
 title: Creación de eventos personalizados
 description: Aprenda a crear eventos personalizados para conectar los datos de Adobe Commerce a otros productos DX de Adobe.
 exl-id: 5a754106-c66a-4280-9896-6d065df8a841
-source-git-commit: 2b735c292920bb0e9052d86bf152748e7ce96079
+source-git-commit: 2e1a0b2a79449562a2716929084f12eeee55a159
 workflow-type: tm+mt
-source-wordcount: '222'
+source-wordcount: '223'
 ht-degree: 0%
 
 ---
