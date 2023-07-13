@@ -3,7 +3,9 @@ user-guide-title: "[!DNL Catalog Service] Guía"
 user-guide-description: '"Esta guía proporciona instrucciones detalladas para utilizar [!DNL Catalog Service] para Adobe Commerce".'
 breadcrumb-title: "[!DNL Catalog Service] Guía"
 hide: true
-source-git-commit: 40cf5c5dc6242b5efe3822b9c574fe5b219cfcd8
+role: Admin
+feature: Services, Catalog Service
+source-git-commit: 9ae4aff1851e9ce9920c4fbf11d2616d6f0f6307
 workflow-type: tm+mt
 source-wordcount: '75'
 ht-degree: 0%
