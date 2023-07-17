@@ -2,7 +2,8 @@
 title: "Flujo de cierre de compra para un usuario de Adobe Commerce"
 description: '"Descripción general del [!DNL Quick Checkout] flujo para un usuario de Adobe Commerce".'
 exl-id: 085e393b-15f6-4d5a-a04d-927b1f95b74e
-source-git-commit: f790732804e110aad298689c0ddf74547ff17618
+feature: Checkout, Services, Storefront
+source-git-commit: b1984a26463e14b8dc9a789421e49e5ea81ad039
 workflow-type: tm+mt
 source-wordcount: '443'
 ht-degree: 0%
@@ -64,4 +65,4 @@ Si no [!DNL Bolt] Cuando se encuentra una cuenta de, los compradores continúan 
 - Revisar método de pago
 - La opción para registrarse en [!DNL Bolt] para cierres de compra más rápidos antes de que aparezca el pedido. El comprador puede aceptar los términos y condiciones para crear su [!DNL Bolt] cuenta.
 
-   ![Recordar [!DNL Bolt]](assets/checkbox-remember-bolt.png)
+  ![Recordar [!DNL Bolt]](assets/checkbox-remember-bolt.png)
