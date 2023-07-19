@@ -2,9 +2,9 @@
 title: "[!DNL Storefront Popover]"
 description: "La [!DNL Live Search storefront popover] devuelve dinámicamente productos sugeridos y miniaturas."
 exl-id: 88fdc3ed-b606-40de-94b7-435be09c4072
-source-git-commit: 3820736a25942b147d6e2c7b8820c360d6a0a535
+source-git-commit: 96a5791c5716f612f473540f27bd3f99b1bfe7c8
 workflow-type: tm+mt
-source-wordcount: '399'
+source-wordcount: '466'
 ht-degree: 0%
 
 ---
@@ -39,9 +39,20 @@ De forma predeterminada, el valor Búsqueda en el catálogo: Límite de autocomp
 1. Configure las variables **Límite de autocompletar** al número de líneas que desea permitir en el [!DNL popover].
 1. Cuando termine, haga clic en **Guardar configuración**.
 
+## Servicio de catálogo
+
+El [Servicio de catálogo para Adobe Commerce](../catalog-service/overview.md) Esta extensión proporciona datos de catálogo de modelos de vista enriquecidos para procesar rápida y completamente experiencias de tienda relacionadas con el producto. El servicio de catálogo se puede usar junto con Live Search para proporcionar una funcionalidad que actualmente no es compatible con la extensión nativa:
+
+* Muestras de color
+* Atributos extendidos
+* Se puede incluir otra información del producto
+
+Los comerciantes pueden personalizar y ampliar widgets o elementos de tienda mediante el servicio de catálogo, pero esto está fuera del ámbito para el equipo de asistencia de Adobe.
+
 ## Limitaciones
 
-* El [!DNL Live Search] [!DNL storefront popover] solo está disponible para tiendas que utilizan el *Luma* o una temática personalizada que se base en *Luma*.
+* El [!DNL Live Search] [!DNL storefront popover] solo está disponible para tiendas que utilizan el *Luma* o una temática personalizada que se base en *Luma*. Las rutas de exploración de la página de resultados de búsqueda no tendrán *Lume* estilo.
 * El [!DNL popover] no es compatible con *Vacío* tema. Consulte [Estilo [!DNL Popover] Elementos](storefront-popover-styling.md) para obtener más información.
 * El [!DNL popover] no es compatible con el formulario de pedido rápido.
-* Los comerciantes pueden personalizar y ampliar widgets o elementos de tienda (por ejemplo: integrar muestras de color en los resultados de Live Search) utilizando [Servicio de catálogo](../catalog-service/overview.md) La API de la tienda está fuera de ámbito para el equipo de asistencia de Adobe.
+* No se admiten listas de deseos ni comparaciones de productos.
+* Solo se admite la moneda base.

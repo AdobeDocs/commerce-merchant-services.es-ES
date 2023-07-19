@@ -3,9 +3,9 @@ title: Instalar y configurar
 description: Obtenga información sobre cómo instalar, actualizar y desinstalar [!DNL Product Recommendations].
 exl-id: fa599f72-1064-41da-ac54-2b3a3c16a1fe
 role: Admin, Developer
-source-git-commit: 9ae4aff1851e9ce9920c4fbf11d2616d6f0f6307
+source-git-commit: 96a5791c5716f612f473540f27bd3f99b1bfe7c8
 workflow-type: tm+mt
-source-wordcount: '501'
+source-wordcount: '514'
 ht-degree: 0%
 
 ---
@@ -100,6 +100,10 @@ composer update --with-dependencies magento/product-recommendations magento/modu
 >[!NOTE]
 >
 > En las versiones 3.x.x de Product Recommendations, solo se necesitaba una sola clave de API. En las versiones 4.x.x y posteriores, debe proporcionar claves de API públicas y privadas de producción, así como claves de API públicas y privadas de zona protegida. Si no proporciona ambos pares de claves API, no podrá acceder a la función de Product Recommendations en el Administrador. La recopilación de datos, sin embargo, continuará en su tienda y las recomendaciones existentes se seguirán mostrando a sus compradores.
+
+## Cortafuegos
+
+Para permitir que Product Recommendations pase por un cortafuegos, añada `commerce.adobe.io` a la lista de permitidos.
 
 ## Desinstalar [!DNL Product Recommendations] {#uninstall}
 
