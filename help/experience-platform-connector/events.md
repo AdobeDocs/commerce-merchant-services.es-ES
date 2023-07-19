@@ -2,7 +2,9 @@
 title: Eventos
 description: Descubra qué datos captura cada evento.
 exl-id: b0c88af3-29c1-4661-9901-3c6d134c2386
-source-git-commit: e8818893d90f91df5b281905eb6bc30df34723ec
+role: Admin, Developer
+feature: Personalization, Integration, Eventing
+source-git-commit: 1d8609a607e0bcb74fdef47fb8e4e582085836e2
 workflow-type: tm+mt
 source-wordcount: '4779'
 ht-degree: 0%
@@ -337,7 +339,7 @@ En la tabla siguiente se describen los datos recopilados para este evento.
 | Campo | Descripción |
 |---|---|
 | `searchRequest` | Indica si se ha enviado una solicitud de búsqueda |
-| `id` | El ID único de esta solicitud de búsqueda concreta |
+| `id` | El ID único de esta solicitud de búsqueda en particular |
 | `filter` | Indica si se aplicó algún filtro para limitar los resultados de búsqueda |
 | `attribute` (filtro) | La faceta de un elemento utilizada para determinar si se debe incluir en los resultados de búsqueda |
 | `value` | Valores de atributo utilizados para determinar qué elementos se incluyen en los resultados de búsqueda |

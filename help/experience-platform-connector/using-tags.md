@@ -2,7 +2,9 @@
 title: Recopilación de datos de Commerce mediante etiquetas de Adobe Experience Platform
 description: Obtenga información sobre cómo recopilar datos de Commerce mediante etiquetas de Adobe Experience Platform.
 exl-id: 852fc7d2-5a5f-4b09-8949-e9607a928b44
-source-git-commit: bdd1378dcbbe806c98e8486a985389b2d0d4f34e
+role: Admin, Developer
+feature: Personalization, Integration
+source-git-commit: 1d8609a607e0bcb74fdef47fb8e4e582085836e2
 workflow-type: tm+mt
 source-wordcount: '2650'
 ht-degree: 0%
@@ -24,9 +26,9 @@ Para recopilar datos de evento de Commerce:
 
 - Instale el [Adobe Commerce Events SDK](https://github.com/adobe/commerce-events/tree/main/packages/commerce-events-sdk). Para las tiendas PHP, consulte la [instalar](install.md) tema. Para ver las tiendas de PWA Studio, consulte la [guía del PWA Studio](https://developer.adobe.com/commerce/pwa-studio/integrations/adobe-commerce/aep/).
 
-   >[!NOTE]
-   >
-   > Hacer **no** [configurar](connect-data.md) el ID de organización y el ID de flujo de datos.
+  >[!NOTE]
+  >
+  > Hacer **no** [configurar](connect-data.md) el ID de organización y el ID de flujo de datos.
 
 ## Asignar datos de tienda de Commerce a Adobe Experience Platform
 
@@ -843,13 +845,13 @@ Cree los siguientes elementos de datos:
    - **Extensión**: `Adobe Client Data Layer`
    - **Tipo de elemento de datos**: `Data Layer Computed State`
    - **[Opcional] ruta**: `productContext.mainImageUrl`
+
    1. Carrito:
+
    - **Nombre**: `cart`
    - **Extensión**: `Adobe Client Data Layer`
    - **Tipo de elemento de datos**: `Data Layer Computed State`
    - **[Opcional] ruta**: `shoppingCartContext`
-
-
 
 1. ID de carrito:
 
