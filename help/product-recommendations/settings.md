@@ -2,9 +2,9 @@
 title: Configuración
 description: Aprenda a cambiar el origen de su [!DNL Product Recommendations] datos y cómo habilitar las recomendaciones visuales.
 exl-id: 8c074e11-e0cb-4d55-b646-30279c79bbc2
-source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
+source-git-commit: 48e350167611a2737d79bf5decccd7f6f24c714c
 workflow-type: tm+mt
-source-wordcount: '411'
+source-wordcount: '437'
 ht-degree: 0%
 
 ---
@@ -14,6 +14,10 @@ ht-degree: 0%
 Cuando usted [configuración de un espacio de datos SaaS](https://experienceleague.adobe.com/docs/commerce-admin/config/services/saas.html) para Recommendations, el espacio de datos SaaS recopila datos de catálogo y datos de comportamiento de tienda. [Adobe Sensei](https://www.adobe.com/sensei.html) analiza esos datos y calcula las asociaciones de productos que se usan para usar Product Recommendations.
 
 Los entornos que no son de producción para pruebas o ensayo generalmente no tienen la cantidad o calidad de los datos de comportamiento de la tienda para ofrecer recomendaciones de productos realistas. El comportamiento real del comprador a escala solo se puede capturar en un entorno de producción. Para solucionar este problema, Adobe Commerce le permite utilizar recomendaciones de productos de su entorno de producción con otros espacios de datos de SaaS que no sean de producción. El uso de datos reales de la tienda en un entorno que no sea de producción le permite obtener una vista previa de las recomendaciones que ven los compradores y experimentar con diferentes tipos de recomendaciones y ubicaciones. Los compradores pueden obtener una vista previa de Recommendations desde un espacio de datos de SaaS diferente, pero no hacer clic en él.
+
+>[!NOTE]
+>
+>Cuando se utiliza Product Recommendations mediante REST, la variable `alternateEnvironmentId` se puede utilizar para especificar otros espacios de datos. Este parámetro no está disponible cuando se utiliza Product Recommendations mediante GraphQL.
 
 ## Elija la fuente de las recomendaciones
 
