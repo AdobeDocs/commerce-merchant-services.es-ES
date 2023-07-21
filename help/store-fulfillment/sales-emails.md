@@ -1,10 +1,11 @@
 ---
 title: Plantillas de correo electrónico de ventas
 description: Configure las plantillas de correo electrónico transaccionales para comunicarse con los clientes y los administradores de las tiendas durante el proceso de cumplimiento de los pedidos de recogida en las tiendas.
-role: User, Admin
+role: Admin
 level: Intermediate
+feature: Shipping/Delivery, Communications, Configuration
 exl-id: 688732e3-06f0-4613-a589-2d465597eb28
-source-git-commit: 4c10ab59ed304002cfde7398762bb70b223180ce
+source-git-commit: 36b57648e156ead801764f3ee4e5e6a0f3245fe6
 workflow-type: tm+mt
 source-wordcount: '1202'
 ht-degree: 0%
@@ -312,7 +313,7 @@ Configure las plantillas de correo electrónico de ventas desde el administrador
 <tbody><tr>
 <td><strong>El pedido tiene un remitente de correo electrónico de productos de envío a tienda</strong></td>
 <td>Correo electrónico enviado al personal del comerciante especificado como un informe agregado de todos los pedidos abiertos que no se pueden seleccionar en una tienda de comerciantes hasta que su inventario esté disponible. </br></br> Los comerciantes pueden utilizar este informe para iniciar y administrar las transferencias de inventario de tienda a tienda o el reaprovisionamiento. </br></br>Esta notificación solo se aplica cuando la variable [!DNL Ship-to-Store] Las funciones de están habilitadas.
-</br></br>Esta etiqueta no afecta al transportista seleccionado ni a sus etiquetas de método de envío disponibles.</br></br></td>
+</br></br>Esta etiqueta no afecta al transportista seleccionado ni a sus etiquetas de método de envío disponibles.</td>
 <td>Vista de tienda</td>
 <td>No</td>
 </tr>

@@ -3,8 +3,9 @@ title: Prueba e implementación de cumplimiento de tienda
 description: Plan de prueba para verificar la funcionalidad de Store Fulfillment. Las pruebas cubren la API de sincronización de inventario, el flujo de trabajo de cumplimiento completo para pedidos cancelados, la administración de usuarios de la aplicación Store Fulfillment y la experiencia de llegada del cliente.
 role: User, Admin
 level: Intermediate
+feature: Shipping/Delivery, User Account, Roles/Permissions
 exl-id: 77285a66-5161-407b-94cd-b3f412d7949d
-source-git-commit: 4c10ab59ed304002cfde7398762bb70b223180ce
+source-git-commit: 36b57648e156ead801764f3ee4e5e6a0f3245fe6
 workflow-type: tm+mt
 source-wordcount: '2660'
 ht-degree: 0%
@@ -84,7 +85,7 @@ Esta sección del plan de prueba cubre la sincronización de inventario y pedido
 <td>La operación de sincronización en tiempo real envía los detalles al GIF de Walmart en 5 minutos</td>
 </tr>
 <tr>
-<td><strong>Origen de stock de recogida</br><code>Is Synced</code> status</br><code>Is Synced</code></strong></td>
+<td><strong>Origen de stock de recogida</br><code>Is Synced</code> status</strong></td>
 <td>Guardar actualizaciones en un origen de stock de recogida existente.</td>
 <td>Después de una operación correcta, el <code>Is Synced</code> de la página Administrar actualizaciones de origen de <code>No</code> hasta <code>Yes</code>.</td>
 </tr>
@@ -166,7 +167,7 @@ Esta sección del plan de prueba incluye escenarios para probar el flujo de trab
 </ul>
 </td>
 </tr>
-<td><strong>Listo para recoger</br></br>Cancelación completa</br>(todos los productos se establecen como seleccionados con 0 qty)</br></strong></td>
+<td><strong>Listo para recoger</br></br>Cancelación completa</br>(todos los productos se establecen como seleccionados con 0 qty)</strong></td>
 <td>
 <ol>
 <li>Realice el pedido.</li>
@@ -250,7 +251,7 @@ Esta sección del plan de prueba incluye escenarios para probar el flujo de trab
 </tr>
 <tr>
 <td><strong>Dispensados (durante la dispensación)</br></br>Cancelación parcial</br>(Algunos productos se dispensan; otros se rechazan).</strong>
-</br></td>
+</td>
 <td>
 <ol>
 <li>Realice el pedido.</li>
@@ -469,7 +470,7 @@ Esta sección del plan de prueba cubre la experiencia de registro para pedidos d
 </tr>
 <tr>
 <td><strong>Contacto alternativo de recogida</br>
-Check-In</br><strong>
+Check-In<strong>
 </td>
 <td>
 Un cliente envía un pedido con la opción de recogida en tienda.</td>

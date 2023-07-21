@@ -1,12 +1,12 @@
 ---
 title: Configuración del proceso en segundo plano
 description: '"Configurar los horarios para [!DNL Store Fulfillment] procesos en segundo plano utilizados en la sincronización de datos con los servicios de cumplimiento".'
-role: User, Admin
+role: Admin, Developer
 level: Intermediate
 exl-id: 742ae59e-77a0-4db6-b156-2992d4403be7
-source-git-commit: 4c10ab59ed304002cfde7398762bb70b223180ce
+source-git-commit: 36b57648e156ead801764f3ee4e5e6a0f3245fe6
 workflow-type: tm+mt
-source-wordcount: '135'
+source-wordcount: '133'
 ht-degree: 0%
 
 ---
@@ -22,4 +22,4 @@ Los procesos en segundo plano se administran mediante Adobe Commerce estándar [
 
 Desde Admin, vaya a **[!UICONTROL Stores > Configuration > Advanced > System > Cron (Scheduled Tasks) > Cron configuration options for group:store_fulfillment]**.
 
-Revise la configuración predeterminada de los servicios de Store Fulfillment. Según el volumen de procesamiento de pedidos y la disponibilidad de recursos, es posible que tenga que ajustar esta configuración.
+Revise la configuración predeterminada de los servicios de Store Fulfillment. Puede personalizar esta configuración en función del volumen de procesamiento de pedidos y la disponibilidad de recursos.

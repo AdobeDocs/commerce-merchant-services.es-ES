@@ -1,12 +1,13 @@
 ---
 title: Configuración de aplicación
 description: Configure las variables [!DNL Store Assist] aplicación para administrar los flujos de trabajo y procesos de cumplimiento de tiendas de extremo a extremo para comprar en línea y recoger pedidos en tiendas.
-role: User, Admin
 level: Intermediate
+role: Admin
+feature: Shipping/Delivery, Configuration, Tools and External Services
 exl-id: bcb5b02b-0141-407a-ad55-6e10e8e1aa90
-source-git-commit: 4c10ab59ed304002cfde7398762bb70b223180ce
+source-git-commit: 36b57648e156ead801764f3ee4e5e6a0f3245fe6
 workflow-type: tm+mt
-source-wordcount: '623'
+source-wordcount: '625'
 ht-degree: 0%
 
 ---
@@ -24,7 +25,7 @@ La aplicación Store Assist recibe toda la información de pedidos y clientes (d
 
 >[!NOTE]
 >
->Consulte [Flujos de trabajo de asistencia de almacenamiento](store-assist-modules.md) para obtener más información sobre la aplicación Store Assist.
+>Para obtener más información acerca de la aplicación Store Assist, consulte la [Flujos de trabajo de asistencia de almacenamiento](store-assist-modules.md) tema.
 
 ## Configuración de la aplicación de asistencia de tienda
 
@@ -55,7 +56,8 @@ La aplicación Store Assist requiere dos tipos de configuración:
    - **Proceso de entrega**: permite activar procesos opcionales cuando el asociado de tienda envía el pedido al cliente; por ejemplo, para solicitar la firma de un cliente o pedir al asociado que compruebe el ID del cliente.
 
    - **Habilitar rechazo de elemento al entregar**: permite a los clientes devolver o cancelar artículos de pedido durante el traspaso de pedidos.
-   Trabaje con el equipo de servicios al cliente de Walmart Commerce Technologies para completar la configuración de front-end de la aplicación Store Assist.
+
+  Trabaje con el equipo de servicios al cliente de Walmart Commerce Technologies para completar la configuración de front-end de la aplicación Store Assist.
 
 ## Descarga e instalación de aplicaciones
 
@@ -70,4 +72,5 @@ Una vez configurada y configurada la aplicación Store Assist, Store Associates 
    - **[!UICONTROL Company name]** asociado a la cuenta de asistencia de tienda
 
    - **Credenciales de cuenta de asistencia de tienda**: credenciales de nombre de usuario y contraseña para su cuenta.
-   Un administrador de Adobe Commerce puede crear y administrar [!DNL Store Assist app] cuentas de usuario para todas las ubicaciones de tiendas que tengan [Recogida en tienda](merchant-store-configuration.md#pickup-location-configuration) Habilitado en la configuración de las tiendas de administración.
+
+  Un administrador de Adobe Commerce puede crear y administrar [!DNL Store Assist app] cuentas de usuario para todas las ubicaciones de tiendas que tengan [Recogida en tienda](merchant-store-configuration.md#pickup-location-configuration) Habilitado en la configuración de las tiendas de administración.

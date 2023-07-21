@@ -1,12 +1,13 @@
 ---
 title: Configuración de tiendas de comerciantes
 description: Configure las fuentes de Inventory management mejoradas como tiendas comerciales.
-role: User, Admin
-level: Intermediate
+role: Admin
+level: Experienced
+feature: Shipping/Delivery, Inventory, Configuration
 exl-id: 7c3444d0-5ecb-4ac1-aa81-e48eea290f5d
-source-git-commit: 4c10ab59ed304002cfde7398762bb70b223180ce
+source-git-commit: 36b57648e156ead801764f3ee4e5e6a0f3245fe6
 workflow-type: tm+mt
-source-wordcount: '1206'
+source-wordcount: '1224'
 ht-degree: 0%
 
 ---
@@ -94,7 +95,13 @@ Administre la configuración de las tiendas del comerciante desde el administrad
 <td>No</td>
 </tr>
 <tr>
-<td><strong>[!UICONTROL Enable Ship From Store]</strong><code>Extension Attribute: [!DNL use_as_shipping_source]</code></td><td></td><td></td><td></td></tr></tbody></table>
+<td><strong>[!UICONTROL Enable Ship From Store]</strong><code></br><code>Extension Attribute: [!DNL use_as_shipping_source]</code></td>
+<td>Configurar las capacidades de envío desde la tienda en el nivel de origen. Para obtener más información, consulte la opción [Configuración general](enable-general.md), [!UICONTROL Enable Ship From Store].</td>
+<td>Global</td>
+<td>No</td>
+</tr>
+</tbody>
+</table>
 
 
 

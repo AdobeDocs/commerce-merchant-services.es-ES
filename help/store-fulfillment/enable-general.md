@@ -1,19 +1,19 @@
 ---
 title: Configuración general
 description: Configure las opciones generales para habilitar [!DNL Store Fulfillment] para su tienda. Configure las opciones globales de extensión, la configuración del sistema para el registro, la sincronización de datos y la seguridad. Proporcione datos clave para permitir la integración entre Adobe Commerce y los servicios Store Fulfillment.
-role: User, Admin
+role: Admin
 level: Intermediate
 exl-id: 51dcfc95-3dd6-40d9-bd26-d8409a25f3c8
-source-git-commit: e7493618e00e28e2de5043ae2d7e05a81110d8f1
+source-git-commit: 36b57648e156ead801764f3ee4e5e6a0f3245fe6
 workflow-type: tm+mt
-source-wordcount: '2440'
+source-wordcount: '2419'
 ht-degree: 0%
 
 ---
 
 # Configuración de ventas y servicio de tienda
 
-Configurar [!DNL Store Fulfillment] desde el [!DNL Commerce] El administrador habilita la extensión, especifica la configuración de la extensión, configura la seguridad de los usuarios de la aplicación Store Assist y establece las opciones de los métodos de envío.
+Activar [!DNL Store Fulfillment] extensión desde el [!DNL Commerce] Para administrar, configure las opciones de extensión, la configuración de seguridad de los usuarios de la aplicación Store Assist y las opciones del método de envío.
 
 >[!IMPORTANT]
 >
@@ -25,11 +25,11 @@ Administre la configuración de los servicios Store Fulfillment desde [!DNL Comm
 
 - Habilite la extensión, configure las opciones globales y especifique las opciones de seguridad de las cuentas y conexiones de los usuarios de la aplicación Store Assist seleccionando **[!UICONTROL Stores > Configuration > Services > Store Fulfillment by Walmart Commerce Technologies]**.
 
-   ![Configuración de servicios de Admin Store para Store Fulfillment](assets/store-services-admin-sf-config.png)
+  ![Configuración de servicios de Admin Store para Store Fulfillment](assets/store-services-admin-sf-config.png)
 
 - Configure los métodos de envío seleccionando **[!UICONTROL Store > Configuration > Sales > Delivery Methods > In-Store Pickup]**.
 
-   ![Configuración de ventas de la tienda de administración para cumplimiento de tienda](assets/store-sales-admin-sf-deliver-config.png)
+  ![Configuración de ventas de la tienda de administración para cumplimiento de tienda](assets/store-sales-admin-sf-deliver-config.png)
 
 ## Configuración básica
 
@@ -109,7 +109,7 @@ Habilite la [!DNL Store Fulfillment] solución para añadir las funciones de rec
 </tr>
 <tr>
 <td><strong>[!UICONTROL API Server URL]</strong></td>
-<td>Dirección URL del punto final de la API de cumplimiento de Walmart Store. Debe ser la dirección URL completa que se proporciona durante el proceso de incorporación. Los clientes de Store Fulfillment reciben una zona protegida y una URL de producción. Al añadir los valores, asegúrese de copiar y pegar la dirección URL completa, incluida la barra diagonal "/".</td>
+<td>Dirección URL del punto final de la API de cumplimiento de Walmart Store. El valor debe ser la dirección URL completa que se proporciona durante el proceso de incorporación. Los clientes de Store Fulfillment reciben una zona protegida y una URL de producción. Al añadir los valores, asegúrese de copiar y pegar la dirección URL completa, incluida la barra diagonal "/".</td>
 <td>Global</td>
 <td>Sí</td>
 </tr>
@@ -190,7 +190,7 @@ Puede ver los detalles sobre las operaciones de sincronización de pedidos desde
 </tr>
 <tr>
 <td><strong>[!UICONTROL Retry Critical Error]</strong></td>
-<td>Especifica los intentos de reintento de una operación de sincronización de registros después de que se produzca un error crítico.<br></br>Se producen errores críticos cada vez que la integración no obtiene una respuesta positiva del servicio de cumplimiento. Esto puede ocurrir cuando el servicio está inactivo o cuando hay un error en los datos del pedido que se envían.<br></br>Cuando se alcanza el umbral de reintento, el elemento permanece en cola pero no se vuelve a procesar. Ver todos los elementos con errores de <strong>[!UICONTROL System > Tools > Store Fulfillment Queue]</strong> Administración en el Administrador. Para solucionar problemas de elementos con errores continuos, póngase en contacto con su administrador de cuentas.</td>
+<td>Especifica los intentos de reintento de una operación de sincronización de registros después de que se produzca un error crítico.<br></br>Se producen errores críticos cada vez que la integración no obtiene una respuesta positiva del servicio de cumplimiento. Estos problemas se producen cuando el servicio está inactivo o cuando hay un error en los datos del pedido que se envían.<br></br>Cuando se alcanza el umbral de reintento, el elemento permanece en cola pero no se vuelve a procesar. Ver todos los elementos con errores de <strong>[!UICONTROL System > Tools > Store Fulfillment Queue]</strong> Administración en el Administrador. Para solucionar problemas de elementos con errores continuos, póngase en contacto con su administrador de cuentas.</td>
 <td>Global</td>
 <td>No</td>
 </tr>
@@ -228,7 +228,7 @@ Puede ver los detalles sobre las operaciones de sincronización de pedidos desde
 <tbody>
 <tr>
 <td><strong>[!UICONTROL Barcode Source]</strong></td>
-<td>Atributo de catálogo que almacena el código analizable de los artículos correspondientes en las ubicaciones de los comerciantes.<br></br>Si solo tiene una ubicación de comerciante, es probable que utilice códigos UPC, mientras que su canal de comercio electrónico identifica los productos por SKU. Si este es su escenario, seleccione el atributo de catálogo que contiene el código UPC.<br></br>Esta configuración garantiza que los pedidos enviados a su lista de artículos de tiendas con el identificador correcto para que los asociados de la tienda puedan analizar los artículos con precisión durante el proceso de selección.<br></br>Si no está seguro, consulte con sus asociados de cumplimiento en el departamento de envío y picking para determinar qué atributo se debe enviar. Es posible que tenga que agregar el atributo adecuado al conjunto de atributos del producto de Adobe Commerce si el atributo no está incluido actualmente en la base de datos.</td>
+<td>Atributo de catálogo que almacena el código analizable de los artículos correspondientes en las ubicaciones de los comerciantes.<br></br>Si solo tiene una ubicación de comerciante, es probable que utilice códigos UPC, mientras que su canal de comercio electrónico identifica los productos por SKU. En esta situación, seleccione el atributo de catálogo que contiene el código UPC.<br></br>Esta configuración garantiza que los pedidos enviados a su lista de artículos de tiendas con el identificador correcto para que los asociados de la tienda puedan analizar los artículos con precisión durante el proceso de selección.<br></br>Si no está seguro, consulte con sus asociados de cumplimiento en el departamento de envío y picking para determinar qué atributo se debe enviar. Si el atributo no está incluido actualmente en la base de datos, puede agregarlo al conjunto de atributos del producto Adobe Commerce.</td>
 <td>Sitio web</td>
 <td>Sí</td>
 </tr>
@@ -240,7 +240,7 @@ Puede ver los detalles sobre las operaciones de sincronización de pedidos desde
 </tr>
 <tr>
 <td><strong>[!UICONTROL Max Number of Items]</strong></td>
-<td>Número máximo de elementos que se van a enviar de la cola de satisfacción de pedidos de tienda al mismo tiempo.<br></br>Los pedidos BOPIS se envían al servicio de cumplimiento en lotes, a intervalos regulares. Esta configuración le permite controlar el tamaño del lote.<br></br>El valor predeterminado es 100 elementos. Según el volumen y la capacidad del pedido, es posible que tenga que ajustar este valor hacia arriba o hacia abajo.</td>
+<td>Número máximo de elementos que se van a enviar de la cola de satisfacción de pedidos de tienda al mismo tiempo.<br></br>Los pedidos BOPIS se envían al servicio de cumplimiento en lotes, a intervalos regulares. Esta configuración le permite controlar el tamaño del lote.<br></br>El valor predeterminado es 100 elementos. Según el volumen y la capacidad del pedido, puede ajustar el valor máximo hacia arriba o hacia abajo.</td>
 <td>Global</td>
 <td>No</td>
 </tr>
@@ -265,7 +265,7 @@ Configure las opciones de envío de Satisfacción de Pedidos que determinan la d
 <tbody>
 <tr>
 <td><strong>[!UICONTROL Enable Ship To Store]</strong></td>
-<td>La configuración de envío a tienda se basa en las capacidades de envío a tienda existentes. Si utiliza Inventory management o si puede aceptar y satisfacer pedidos en ubicaciones de comerciantes sin inventario mediante transferencias de inventario de tienda a tienda, establezca esta opción en "Sí".<br></br>Si no admite la opción de envío a tienda o no desea ofrecerla, establézcalo en "No". Cuando está desactivado, artículos en su catálogo con inventario cero para una tienda comercial, o artículos que están por debajo de la ubicación de [!DNL Out of Stock Threshold], no se ofrecen con las opciones de recogida en tienda.<br></br>Esta es una configuración global que se puede ajustar por ubicación de comerciante.</td>
+<td>La configuración de envío a tienda se basa en las capacidades de envío a tienda existentes. Si utiliza Inventory management o si puede aceptar y satisfacer pedidos en ubicaciones de comerciantes sin inventario mediante transferencias de inventario de tienda a tienda, establezca esta opción en "Sí".<br></br>Si no admite la opción de envío a tienda o no desea ofrecerla, establézcalo en "No". Si está desactivado, los artículos del catálogo con inventario cero para un almacén comercial o los artículos que están por debajo de [!DNL Out of Stock Threshold] para esa ubicación, no se ofrecen con las opciones de recogida en la tienda.<br></br>Puede ajustar el valor de esta configuración por ubicación de comerciante.</td>
 <td>Global</td>
 <td>No</td>
 </tr>
@@ -286,7 +286,7 @@ Configure las opciones de envío de Satisfacción de Pedidos que determinan la d
 <tbody>
 <tr>
 <td><strong>[!UICONTROL Enable Ship From Store]</strong></td>
-<td>Activa o desactiva la opción Entrega en el hogar en las tiendas de comercios. Cuando se habilita, las ubicaciones de las tiendas de comerciantes se consideran en conjunto con otras fuentes asignadas en las existencias asociadas a su sitio web.<br></br>En los servicios estándar de Inventory management, la variable [!DNL Ship from Store] Su opción es inherente y no se puede desactivar. Con la solución Store Fulfillment, puede activarla o desactivarla.<br></br>Esta es una configuración global. También puede ajustar esta configuración por ubicación de comerciante y producto.</td>
+<td>Activa o desactiva la opción Entrega en el hogar en las tiendas de comercios. Cuando se habilita, las ubicaciones de las tiendas de comerciantes se consideran en conjunto con otras fuentes asignadas en las existencias asociadas a su sitio web.<br></br>En los servicios estándar de Inventory management, la variable [!DNL Ship from Store] Su opción es inherente y no se puede desactivar. Con la solución Store Fulfillment, puede activarla o desactivarla.<br></br>Puede ajustar esta configuración por ubicación de comerciante y producto.</td>
 <td>Global</td>
 <td>No</td>
 </tr>
@@ -347,7 +347,7 @@ Configure las opciones de seguridad de la cuenta de usuario y la contraseña de 
 
 La Satisfacción de existencias funciona mediante la ampliación de la Adobe Commerce nativa [!DNL In-Store Delivery] funciones. Después de instalar la extensión, puede configurar los métodos de envío en tienda mediante la siguiente configuración ampliada que se añade al administrador.
 
-- **Recogida en tienda**—Opciones de oferta para el envío en tienda durante el proceso de cierre de compra. Este es el escenario de envío más común para pedidos BOPIS.
+- **Recogida en tienda**—Opciones de oferta para la entrega en tienda durante el proceso de cierre de compra: esta configuración configura los escenarios de entrega más comunes para los pedidos BOPIS.
 
 - **[!UICONTROL Curbside pick up]**-Ofrecer opciones para que los clientes estacionen en una ubicación de la tienda y que un dependiente les entregue su pedido.
 
@@ -436,25 +436,25 @@ Con el método de entrega en tienda, el cliente puede seleccionar un origen para
 </tr>
 <tr>
 <td><strong>Instrucciones de recogida en tienda</strong></td>
-<td>Cuando un pedido está listo para ser recogido en sus tiendas minoristas, el cliente es notificado por correo electrónico. Si el cliente ha seleccionado [!DNL In-Store Pickup] durante el proceso de pago, puedes personalizar las instrucciones de recogida aquí. </br></br>Se trata de una configuración global que se aplica a todas las ubicaciones de tiendas minoristas. También puede personalizar las instrucciones en el nivel de ubicación de la tienda.</td>
+<td>Cuando un pedido está listo para ser recogido en sus tiendas minoristas, el cliente es notificado por correo electrónico. Si el cliente ha seleccionado [!DNL In-Store Pickup] durante el proceso de pago, puedes personalizar las instrucciones de recogida aquí. </br></br>Estas instrucciones se establecen de forma global y se aplican a todas las ubicaciones de tiendas minoristas. También puede personalizar las instrucciones en el nivel de ubicación de la tienda.</td>
 <td>Vista de tienda</td>
 <td>No</td>
 </tr>
 <tr>
 <td><strong>Instrucciones de recogida en bordillo</strong></td>
-<td>Especifica las instrucciones de recogida de pedidos personalizadas que se incluirán en las notificaciones de correo electrónico de los clientes para las solicitudes de recogida en la zona protegida. </br></br>Se trata de una configuración global que se aplica a todas las ubicaciones de tiendas minoristas. También puede personalizar las instrucciones en el nivel de ubicación de la tienda.</td>
+<td>Especifica las instrucciones de recogida de pedidos personalizadas que se incluirán en las notificaciones de correo electrónico de los clientes para las solicitudes de recogida en la zona protegida. </br></br>Estas instrucciones se establecen de forma global y se aplican a todas las ubicaciones de tiendas minoristas. También puede personalizar las instrucciones en el nivel de ubicación de la tienda.</td>
 <td>Vista de tienda</td>
 <td>No</td>
 </tr>
 <tr>
 <td><strong>Tiempo de espera de recogida estimado</strong></td>
-<td>La cantidad de minutos necesarios antes de recibir un pedido, de cumplimentarlo y de prepararlo para su recogida. Esta información se muestra al cliente al seleccionar una ubicación de tienda minorista para la opción de envío Recogida en tienda. Se trata de una configuración global que se aplica a todas las tiendas. También puede personalizar el tiempo de espera en el nivel de ubicación de la tienda.</td>
+<td>La cantidad de minutos necesarios antes de recibir un pedido, de cumplimentarlo y de prepararlo para su recogida. Esta información se muestra al cliente al seleccionar una ubicación de tienda minorista para la opción de envío Recogida en tienda. Esta configuración se aplica a todas las tiendas. También puede personalizar el tiempo de espera en el nivel de ubicación de la tienda.</td>
 <td>Vista de tienda</td>
 <td>No</td>
 </tr>
 <tr>
 <td><strong>Etiqueta de tiempo de recogida estimado</strong></td>
-<td>Muestra el tiempo estimado hasta que un pedido está disponible para la recogida del cliente. Esta información se muestra a los clientes cuando seleccionan una ubicación de tienda para la [!DNL In-Store Pickup] opción de envío. </br></br>Al personalizar esta etiqueta, puede utilizar el código <code>%1</code> para insertar su <strong>Tiempo de espera de recogida estimado</strong>. Por ejemplo:</br></br><code>Ready for Pickup in %1 minutes.</code></br></br>Se trata de una configuración global que se aplica a todas las ubicaciones de tiendas minoristas. También puede personalizar el tiempo de espera en el nivel de ubicación de la tienda.</br></br><code>Ready for Pickup in %1 minutes.</code></br></br></td>
+<td>Muestra el tiempo estimado hasta que un pedido está disponible para la recogida del cliente. Esta información se muestra a los clientes cuando seleccionan una ubicación de tienda para la [!DNL In-Store Pickup] opción de envío. </br></br>Al personalizar esta etiqueta, puede utilizar el código <code>%1</code> para insertar su <strong>Tiempo de espera de recogida estimado</strong>. Por ejemplo:</br></br><code>Ready for Pickup in %1 minutes.</code></br></br>Esta configuración se aplica a todas las tiendas. También puede personalizar el tiempo de espera en el nivel de ubicación de la tienda.</td>
 <td>Vista de tienda</td>
 <td>No</td>
 <tr>
@@ -480,7 +480,7 @@ Con el método de entrega en tienda, el cliente puede seleccionar un origen para
 </thead>
 <tbody><tr>
 <td><strong>En existencia</strong></td>
-<td>Cuando un cliente utiliza la ubicación de la tienda, se muestra la disponibilidad de inventario de los artículos actuales para cada ubicación. </br></br>Puede personalizar la variable <em>[!UICONTROL in-stock]</em> etiqueta de estado aquí.</br></br></td>
+<td>Cuando un cliente utiliza la ubicación de la tienda, se muestra la disponibilidad de inventario de los artículos actuales para cada ubicación. </br></br>Puede personalizar la variable <em>[!UICONTROL in-stock]</em> etiqueta de estado aquí.</td>
 <td>Vista de tienda</td>
 <td>No</td>
 </tr>
@@ -492,7 +492,7 @@ Con el método de entrega en tienda, el cliente puede seleccionar un origen para
 </tr>
 <tr>
 <td><strong>Parcialmente en stock</strong></td>
-<td>Cuando un cliente utiliza la ubicación de la tienda, se muestra la disponibilidad de inventario para cualquier artículo actual en cada ubicación. </br></br>Puede personalizar la variable <em>[!UICONTROL partially in-stock]</em> etiqueta de estado aquí.</br></br></td>
+<td>Cuando un cliente utiliza la ubicación de la tienda, se muestra la disponibilidad de inventario para cualquier artículo actual en cada ubicación. </br></br>Puede personalizar la variable <em>[!UICONTROL partially in-stock]</em> etiqueta de estado aquí.</td>
 <td>Vista de tienda</td>
 <td>No</td>
 </tr>

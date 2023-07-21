@@ -1,10 +1,11 @@
 ---
 title: Flujos de trabajo de asistencia de tienda
 description: Obtenga información acerca de los módulos Acopio, Escenario, Entrega y Pedidos disponibles en la aplicación Asistencia en tienda. Estos módulos habilitan el flujo de trabajo de entrega de tiendas de extremo a extremo para pedidos BOPIS. Store Associates utiliza estos módulos para gestionar y entregar pedidos de recogida de tiendas a los clientes.
-role: User
+role: Leader, Admin, User
 level: Intermediate
+feature: Shipping/Delivery, Tools and External Services, Customer Service
 exl-id: a8414f19-5489-41e9-84d6-39d2e61c2b08
-source-git-commit: 4c10ab59ed304002cfde7398762bb70b223180ce
+source-git-commit: 36b57648e156ead801764f3ee4e5e6a0f3245fe6
 workflow-type: tm+mt
 source-wordcount: '806'
 ht-degree: 0%
@@ -19,7 +20,7 @@ La aplicación Store Assist proporciona a Store Associates cuatro módulos para 
 
 - **[Fase](#stage-module)**: introduzca una ubicación en la que se realicen los pedidos mientras los clientes viajan a la tienda, de modo que los Asociados de tienda puedan encontrarlos fácilmente para la entrega de pedidos.
 
-- **[Entrega](#hand-off-module)**: obtenga notificaciones en tiempo real después de que los clientes lleguen a la tienda para minimizar el tiempo de espera y entregar los pedidos sin problemas
+- **[Entrega](#hand-off-module)**: obtenga notificaciones en tiempo real después de que los clientes lleguen a la tienda para minimizar el tiempo de espera y entregar los pedidos sin problemas.
 
 - **[Pedidos](#orders-module)**: permite ver una lista de todos los pedidos realizados para una tienda, de modo que todos sepan la cantidad de pedidos y el estado de cada uno.
 
