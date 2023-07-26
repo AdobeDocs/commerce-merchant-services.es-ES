@@ -4,7 +4,7 @@ description: Obtenga información sobre cómo instalar, configurar, actualizar y
 exl-id: e78e8ab0-8757-4ab6-8ee1-d2e137fe6ced
 role: Admin, Developer
 feature: Install
-source-git-commit: 64273ad4c1a54b150746a54896caf73ed612c2d1
+source-git-commit: 0c8d9498ea7a30a99f834694ef8a865ad24466ab
 workflow-type: tm+mt
 source-wordcount: '366'
 ht-degree: 0%
@@ -17,7 +17,7 @@ Antes de instalar la extensión, [revisar los requisitos previos](overview.md#pr
 
 ## Instalación de la extensión
 
-La extensión del conector del Experience Platform está disponible en [Adobe Marketplace](https://marketplace.magento.com/magento-experience-platform-connector.html). Al instalar esta extensión desde la línea de comandos del servidor, se conecta a la instalación de Adobe Commerce como [servicio](../landing/saas.md). Una vez completado el proceso, **Conector del Experience Platform** y **Conector de Commerce Services** aparecen en la **Sistema** menú debajo de **Servicios** en el Commerce _Administrador_.
+La extensión del conector del Experience Platform está disponible en [Adobe Marketplace](https://commercemarketplace.adobe.com/magento-experience-platform-connector.html). Al instalar esta extensión desde la línea de comandos del servidor, se conecta a la instalación de Adobe Commerce como [servicio](../landing/saas.md). Una vez completado el proceso, **Conector del Experience Platform** y **Conector de Commerce Services** aparecen en la **Sistema** menú debajo de **Servicios** en el Commerce _Administrador_.
 
 >[!NOTE]
 >

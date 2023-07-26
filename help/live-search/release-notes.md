@@ -3,7 +3,7 @@ title: '[!DNL Live Search] Notas de la versión'
 description: '"La información de la última versión de [!DNL Live Search] de Adobe Commerce".'
 exl-id: 2a581e43-35f5-48ce-9752-844430ccdebf
 feature: Services, Search, Release Notes
-source-git-commit: 9ae4aff1851e9ce9920c4fbf11d2616d6f0f6307
+source-git-commit: 0c8d9498ea7a30a99f834694ef8a865ad24466ab
 workflow-type: tm+mt
 source-wordcount: '1277'
 ht-degree: 0%
@@ -176,4 +176,4 @@ Para obtener más información:
 
 * [Documentación para desarrolladores de Adobe Commerce](https://developer.adobe.com/commerce/docs)
 * [Guía del usuario de Adobe Commerce](https://experienceleague.adobe.com/docs/commerce.html)
-* [[!DNL Live Search] en Marketplace](https://marketplace.magento.com/magento-live-search.html)
+* [[!DNL Live Search] en Marketplace](https://commercemarketplace.adobe.com/magento-live-search.html)
