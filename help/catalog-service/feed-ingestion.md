@@ -1,7 +1,7 @@
 ---
 title: Servicio de ingesta de fuentes
 description: Obtenga información acerca del servicio de ingesta de fuentes para Adobe Commerce
-source-git-commit: b484429a529acfa95f70c5a55b6a5fcdedc887b3
+source-git-commit: 12b1e89924a2eb89494bcb884fc3bc14e87b2b1c
 workflow-type: tm+mt
 source-wordcount: '360'
 ht-degree: 0%
@@ -42,4 +42,4 @@ El servicio de ingesta de fuentes está diseñado para:
 * Clientes con catálogos grandes y complejos
 * Clientes que no utilizan el administrador de Adobe Commerce para administrar los datos del catálogo y que, en su lugar, utilizan un sistema ERP o de terceros para administrar los datos del catálogo
 
-Si está interesado en unirse al programa beta, póngase en contacto con el equipo de en XXXXX@adobe.com.
+Si está interesado en unirse al programa beta, póngase en contacto con el equipo de en sagonzal@adobe.com.
