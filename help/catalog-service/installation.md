@@ -2,9 +2,9 @@
 title: Incorporación e instalación
 description: Obtenga información sobre cómo instalar [!DNL Catalog Service]
 exl-id: 4e9fbdc9-67a1-4703-b8c0-8b159e0cc2a7
-source-git-commit: 96a5791c5716f612f473540f27bd3f99b1bfe7c8
+source-git-commit: 04b1553e7cc16d142b72553ca2a6bb9d6a6b5eb4
 workflow-type: tm+mt
-source-wordcount: '599'
+source-wordcount: '639'
 ht-degree: 0%
 
 ---
@@ -42,6 +42,8 @@ El servicio de catálogo tiene dos entornos disponibles para la incorporación:
 
 - Espacio aislado (https://catalog-service-sandbox.adobe.io/graphql): se utiliza para pruebas y validación antes de activarse
 - Producción (https://catalog-service.adobe.io/graphql)-) utilizada para el tráfico en directo de comerciantes y sitios web de Commerce
+
+Las pruebas de carga solo deben realizarse en el entorno de espacio aislado. Se recomienda que una [Ticket de asistencia](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) se abrirá durante la prueba de carga para que el equipo de servicios pueda anticipar el tráfico adicional del servidor.
 
 ## Instalación y configuración
 
