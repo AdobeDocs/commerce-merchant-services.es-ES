@@ -2,9 +2,9 @@
 title: "Recorrido rápido"
 description: '"Haga un recorrido rápido por [!DNL Live Search] de la tienda".'
 exl-id: bcb19506-6617-4c8a-83df-9d961f81e9e8
-source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
+source-git-commit: 9cf48f6f900385a5cb772adee8834ec9cfe5ee13
 workflow-type: tm+mt
-source-wordcount: '313'
+source-wordcount: '328'
 ht-degree: 0%
 
 ---
@@ -30,6 +30,8 @@ Para enumerar todos los productos devueltos por la consulta &quot;buscar mientra
 ## Búsqueda filtrada con facetas
 
 La búsqueda filtrada utiliza varias dimensiones de valores de atributo o [facetas](facets.md), como criterios de búsqueda. La selección de filtros la define el comerciante y cambia según los productos devueltos, con las facetas más utilizadas ancladas en la parte superior de la lista.
+
+Utilice facetas como parámetros de URL:`http://yourwebsite.com?color=red`y Live Search filtran los resultados en función de estos valores de atributo.
 
 ## Sinónimos
 
