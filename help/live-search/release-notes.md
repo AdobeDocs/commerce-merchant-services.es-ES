@@ -3,9 +3,9 @@ title: '[!DNL Live Search] Notas de la versión'
 description: '"La información de la última versión de [!DNL Live Search] de Adobe Commerce".'
 exl-id: 2a581e43-35f5-48ce-9752-844430ccdebf
 feature: Services, Search, Release Notes
-source-git-commit: 0c8d9498ea7a30a99f834694ef8a865ad24466ab
+source-git-commit: e7e45863dced36ecbd508931df5141bb6f1d8e64
 workflow-type: tm+mt
-source-wordcount: '1277'
+source-wordcount: '1374'
 ht-degree: 0%
 
 ---
@@ -20,15 +20,49 @@ Las actualizaciones incluyen:
 ![Fix](../assets/fix.svg) Correcciones y mejoras
 ![Error](../assets/bug.svg) Problemas conocidos
 
+## Actualizaciones de servicios alojados
+
+Estas notas describen las actualizaciones que se publicaron fuera de una versión con versiones o las mejoras realizadas en el servicio alojado.
+
++++Actualizaciones de servicios alojados
 
 _13 de junio de 2023_
 
-![Nuevo](../assets/new.svg) Live Search ahora admite 5 más [valores de configuración](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/live-search-admin/configuration.html).
 ![Fix](../assets/fix.svg) Se ha corregido un problema por el cual algunos caracteres, como comillas o apóstrofos, causaban problemas de clasificación. La reindexación resolverá estos problemas.
 
 _25 de abril de 2023_
 
 ![Nuevo](../assets/new.svg) Los clientes de Live Search ahora pueden aprovechar las nuevas [Indexador de precios SaaS](../price-index/index.md).
+
++++
+
+## [!DNL Live Search] 3.0.2 {#302}
+
+_7 de agosto de 2023_
+
+[!BADGE Compatibilidad]{type=Informative tooltip="Compatibilidad"}
+
+### Nuevas funciones
+
+Los siguientes valores se han agregado a `storeDetails` objeto:
+
+* &quot;Permitir todos los productos por página&quot;
+* Tipo de cambio
+* &quot;Productos por página en la cuadrícula Valores permitidos&quot;
+* &quot;Productos por página en valor predeterminado de cuadrícula&quot;
+* Idioma del almacén
+
+### Actualizaciones
+
+* Se han agregado módulos de servicio de catálogo al metapaquete para admitir la recuperación avanzada de datos.
+
+Los comerciantes deben actualizar el [!DNL Live Search] versión de la extensión >= 3.0.2 para acceder a estas funciones.
+
+Se recomienda actualizar y probar antes de pasar a producción. Considere la posibilidad de actualizar el entorno de producción durante las horas de menor actividad después de verificar los resultados de su entorno de prueba.
+
+## Versiones anteriores
+
++++3.0.1 y anteriores
 
 ## [!DNL Live Search] 3.0.1 {#301}
 
@@ -73,10 +107,6 @@ _14 de marzo de 2023_
 Los comerciantes deben actualizar el [!DNL Live Search] versión de la extensión >= 3.0.1 para acceder a estas funciones.
 
 Se recomienda actualizar y probar antes de pasar a producción. Considere la posibilidad de actualizar el entorno de producción durante las horas de menor actividad después de verificar los resultados de su entorno de prueba.
-
-## Versiones anteriores
-
-+++2.0.5 y anteriores
 
 ## [!DNL Live Search] 2.0.5 {#205}
 
