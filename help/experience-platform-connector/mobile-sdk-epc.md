@@ -3,9 +3,9 @@ title: Integración del SDK de Adobe Experience Platform Mobile con Commerce
 description: Aprenda a utilizar el SDK de Adobe Experience Platform Mobile con su tienda de comercio personalizada o sin encabezado.
 role: Admin, Developer
 feature: Personalization, Integration, Eventing
-source-git-commit: cae4d26d389376476b9b6a567841a847cc9c9732
+source-git-commit: c5d618788a58109e124a1774b3860cf9c41abb8a
 workflow-type: tm+mt
-source-wordcount: '583'
+source-wordcount: '532'
 ht-degree: 0%
 
 ---
@@ -40,32 +40,33 @@ Una vez completada la configuración del SDK para Experience Platform, añada la
 
 1. Para enviar datos de evento de comercio al Experience Platform mediante el SDK, debe proporcionar un esquema XDM en el código de la aplicación. Este esquema debe coincidir con el esquema [configurado](https://developer.adobe.com/client-sdks/documentation/getting-started/set-up-schemas-and-datasets/) para el SDK en el Experience Platform.
 
-El siguiente ejemplo muestra cómo realizar un seguimiento de la variable `web.webpagedetails.pageViews` y configure el `identityMap` uso del campo de correo electrónico.
+   El siguiente ejemplo muestra cómo realizar un seguimiento de la variable `web.webpagedetails.pageViews` y configure el `identityMap` uso del campo de correo electrónico.
 
-    &quot;javascript
-    let stateName = &quot;luma: content: ios: us: en: home&quot;
-    var xdmData: [String: Any] = [
-    &quot;eventType&quot;: &quot;web.webpagedetails.pageViews&quot;,
-    &quot;web&quot;: [
-    &quot;webPageDetails&quot;: [
-    &quot;pageViews&quot;: [
-    &quot;valor&quot;: 1
-    ],
-    &quot;name&quot;: &quot;Home page&quot;
-    ]
-    ]
-    ]
-    
-    let experienceEvent = ExperienceEvent(xdm: xdmData)
-    Edge.sendEvent(experienceEvent: experienceEvent)
-    
-    // Adobe Experience Platform - Actualizar identidad
-    let emailLabel = &quot;mobileuser@example.com&quot;
-    
-    let identityMap: IdentityMap = IdentityMap()
-    identityMap.add(item: IdentityItem(id: emailLabel), withNamespace: &quot;Email&quot;)
-    Identity.updateIdentities(with: identityMap)
-    &quot;
+   ```swift
+   let stateName = "luma: content: ios: us: en: home"
+   var xdmData: [String: Any] = [
+       "eventType": "web.webpagedetails.pageViews",
+       "web": [
+           "webPageDetails": [
+               "pageViews": [
+                   "value": 1
+               ],
+               "name": "Home page"
+           ]
+       ]
+   ]
+   
+   let experienceEvent = ExperienceEvent(xdm: xdmData)
+   Edge.sendEvent(experienceEvent: experienceEvent)
+   
+   // Adobe Experience Platform - Update Identity
+   
+   let emailLabel = "mobileuser@example.com"
+   
+   let identityMap: IdentityMap = IdentityMap()
+   identityMap.add(item: IdentityItem(id: emailLabel), withNamespace: "Email")
+   Identity.updateIdentities(with: identityMap)
+   ```
 
 1. Conéctese al entorno de Commerce Cloud.
 
