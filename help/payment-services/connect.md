@@ -46,7 +46,7 @@ La misma clave de API se puede utilizar en todas las instancias, pero cada insta
 Ahora que ha obtenido sus credenciales, puede configurar su proyecto SaaS y el espacio de datos Saas.
 
 1. En el _Administrador_ barra lateral, vaya a **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]**.
-1. Clic **[!UICONTROL Configure Commerce Services]**.
+1. Haga clic **[!UICONTROL Configure Commerce Services]**.
 
    Esta opción está visible si aún no ha configurado Commerce Services para su cuenta.
 

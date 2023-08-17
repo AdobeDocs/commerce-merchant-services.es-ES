@@ -1,21 +1,21 @@
 ---
-user-guide-title: "[!DNL Live Search] Guía"
+user-guide-title: “Guía de [!DNL Live Search]”
 user-guide-description: '"Esta guía proporciona instrucciones detalladas para utilizar [!DNL Live Search] de Adobe Commerce".'
-breadcrumb-title: "[!DNL Live Search] Guía"
+breadcrumb-title: “Guía de [!DNL Live Search]”
 role: Admin
 feature: Services, Search
 source-git-commit: 9ae4aff1851e9ce9920c4fbf11d2616d6f0f6307
 workflow-type: tm+mt
 source-wordcount: '96'
-ht-degree: 0%
+ht-degree: 9%
 
 ---
 
 # [!DNL Live Search] para Commerce {#live-search}
 
-- [Información general de guía](guide-overview.md)
+- [Información general de la guía](guide-overview.md)
 - [Introducción a [!DNL Live Search]](overview.md)
-- [Notas de versión](release-notes.md)
+- [Notas de la versión](release-notes.md)
 - Incorporar Live Search {#onboard}
    - [Resumen de incorporación](onboarding-overview.md)
    - [Instalar [!DNL Live Search]](install.md)

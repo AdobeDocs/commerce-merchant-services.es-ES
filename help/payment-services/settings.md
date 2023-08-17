@@ -32,7 +32,7 @@ Puede activar [!DNL Payment Services] para su sitio web y habilite las pruebas d
 
    ![Vista Inicio](assets/payment-services-menu-small.png)
 
-1. Clic **[!UICONTROL Settings]**. Consulte [Introducción a [!DNL Payment Services] Inicio](payments-home.md) para obtener más información.
+1. Haga clic **[!UICONTROL Settings]**. Consulte [Introducción a [!DNL Payment Services] Inicio](payments-home.md) para obtener más información.
 
    El _[!UICONTROL General]_Esta sección incluye la configuración utilizada para habilitar [!DNL Payment Services] como forma de pago.
 
@@ -44,7 +44,7 @@ Puede activar [!DNL Payment Services] para su sitio web y habilite las pruebas d
    >
    >Su _[!UICONTROL Sandbox Merchant ID]_y_[!UICONTROL Production Merchant ID]_ se generan automáticamente y están presentes en sus campos respetables cuando termine la incorporación para la zona protegida o la producción.
 
-1. Clic **[!UICONTROL Save]**.
+1. Haga clic **[!UICONTROL Save]**.
 
    Si intenta salir de esta vista sin guardar los cambios, aparecerá un modal que le pedirá que descarte los cambios, que siga editándolos o que los guarde.
 
@@ -60,19 +60,19 @@ Puede añadir un [!UICONTROL Soft Descriptor] a su sitio web o configuración de
 
    ![Vista Inicio](assets/payment-services-menu-small.png)
 
-1. Clic **[!UICONTROL Settings]**. Consulte [Introducción a [!DNL Payment Services] Inicio](payments-home.md) para obtener más información.
+1. Haga clic **[!UICONTROL Settings]**. Consulte [Introducción a [!DNL Payment Services] Inicio](payments-home.md) para obtener más información.
 1. Seleccione el sitio web o la vista de la tienda, en la **[!UICONTROL Scope]** menú desplegable, para el que desea crear un descriptor temporal. Para la configuración inicial, deje esto como **[!UICONTROL Default]** para establecer el valor predeterminado.
 1. Añada el texto personalizado (hasta 22 caracteres) en el campo de texto y reemplace `Custom descriptor`.
-1. Clic **[!UICONTROL Save]**.
+1. Haga clic **[!UICONTROL Save]**.
 1. Para crear un descriptor temporal distinto del predeterminado configurado para una vista de sitio web o tienda:
    1. Seleccione el sitio web o la vista de la tienda, en la **[!UICONTROL Scope]** menú desplegable, para el que desea crear un descriptor temporal.
    1. Alternar _desactivado_ **[!UICONTROL Use website]** (o **[!UICONTROL Use default]**, en función del ámbito seleccionado).
    1. Añada el texto personalizado en el campo de texto.
-   1. Clic **[!UICONTROL Save]**.
+   1. Haga clic **[!UICONTROL Save]**.
 1. Para habilitar para un sitio web o tienda, consulte el descriptor temporal predeterminado _o_ el descriptor temporal utilizado para el sitio web principal:
    1. Seleccione el sitio web o la vista de la tienda, en la **[!UICONTROL Scope]** menú desplegable, para el que desea activar un descriptor temporal existente.
    1. Alternar _el_ **[!UICONTROL Use website]** (o **[!UICONTROL Use default]**, según el ámbito seleccionado).
-   1. Clic **[!UICONTROL Save]**.
+   1. Haga clic **[!UICONTROL Save]**.
 
    Si intenta salir de esta vista sin guardar los cambios, aparecerá un modal que le pedirá que descarte los cambios, que siga editándolos o que los guarde.
 
@@ -94,7 +94,7 @@ Ahora que ha habilitado [!UICONTROL Payment Services] para su sitio web, puede c
 
    ![Vista Inicio](assets/payment-services-menu-small.png)
 
-1. Clic **[!UICONTROL Settings]**. Consulte [Introducción a [!DNL Payment Services] Inicio](payments-home.md) para obtener más información.
+1. Haga clic **[!UICONTROL Settings]**. Consulte [Introducción a [!DNL Payment Services] Inicio](payments-home.md) para obtener más información.
 1. Configurar opciones de pago para [tarjetas de crédito](#credit-card-fields), [botones de pago](#payment-buttons), y [estilo de botón](#button-style), en las secciones siguientes.
 
 ### Campos de tarjeta de crédito
@@ -115,7 +115,7 @@ Consulte [Opciones de pago](payments-options.md#credit-card-fields) para obtener
 1. Para habilitar o deshabilitar [bóveda de tarjetas](#card-vaulting), cambie el **[!UICONTROL Vault enabled]** selector.
 1. Para habilitar o deshabilitar [Métodos de pago abovedados en el administrador](#card-vaulting) (para que los comerciantes completen los pedidos de los clientes en Admin mediante su método de pago abovedado), active la opción **[!UICONTROL Show vaulted methods in Admin]** selector.
 1. Para habilitar o deshabilitar el modo de depuración, cambie el **[!UICONTROL Debug Mode]** selector.
-1. Clic **[!UICONTROL Save]**.
+1. Haga clic **[!UICONTROL Save]**.
 
    Si intenta salir de esta vista sin guardar los cambios, aparecerá un modal que le pedirá que descarte los cambios, que siga editándolos o que los guarde.
 
@@ -161,7 +161,7 @@ Puedes activar y configurar las opciones de pago de los botones inteligentes de 
      Al activar o desactivar la visibilidad de los botones de pago o del mensaje PayPal Más tarde, se muestra una vista previa visual de esa configuración en la parte inferior de la página Configuración.
 
 1. Para habilitar el modo de depuración, cambie el **[!UICONTROL Debug Mode]** selector.
-1. Clic **[!UICONTROL Save]**.
+1. Haga clic **[!UICONTROL Save]**.
 
    Si intenta salir de esta vista sin guardar los cambios, aparecerá un modal que le pedirá que descarte los cambios, que siga editándolos o que los guarde.
 
@@ -204,7 +204,7 @@ También puede configurar la variable _[!UICONTROL Button style]_opciones de los
 
    ![[!DNL PayPal Smart Buttons] opciones](assets/payment-buttons.png){width="500"}
 
-1. Clic **[!UICONTROL Save]**.
+1. Haga clic **[!UICONTROL Save]**.
 
    Si intenta salir de esta vista sin guardar los cambios, aparecerá un modal que le pedirá que descarte los cambios, que siga editándolos o que los guarde.
 

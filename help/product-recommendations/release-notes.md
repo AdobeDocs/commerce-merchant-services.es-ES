@@ -10,7 +10,7 @@ ht-degree: 0%
 
 ---
 
-# [!DNL Product Recommendations] Notas de versión
+# [!DNL Product Recommendations] Notas de la versión
 
 Las notas de la versión contienen actualizaciones de lo siguiente [!DNL Product Recommendations] módulos:
 

@@ -24,20 +24,20 @@ Para completar la incorporación a la zona protegida:
 1. Clic **[!UICONTROL Log in to Dashboard]** e inicie sesión con su cuenta de prueba de prueba de zona protegida empresarial generada por el PayPal Developer Portal existente o haga clic en **Registrarse** para crear una cuenta de.
 1. Crear una cuenta de zona protegida de PayPal:
    1. Ir a _[!UICONTROL Testing Tools]_>**[!UICONTROL Sandbox Accounts]**.
-   1. Clic **[!UICONTROL Create account]**.
+   1. Haga clic **[!UICONTROL Create account]**.
 
       Si creó una cuenta de zona protegida de PayPal durante el proceso de incorporación a esta zona protegida, debe [restablecer la zona protegida de incorporación](#reset-your-sandbox-account) porque o no puede verificar su correo electrónico.
 
    1. Seleccionar **[!UICONTROL Business]** como Tipo de cuenta y haga clic en **[!UICONTROL Create]**.
    1. En el _[!UICONTROL Sandbox Accounts]_, haga clic en los tres puntos del_[!UICONTROL Manage accounts]_ para la cuenta de zona protegida que ha creado.
-   1. Clic **[!UICONTROL View/edit account]**.
+   1. Haga clic **[!UICONTROL View/edit account]**.
 
       ![PayPal: ver/editar cuenta de zona protegida](assets/onboarding-viewedit-sandbox.png)
 
    1. Copie y guarde el ID de correo electrónico y la contraseña generados por el sistema para uso futuro.
 
 1. En el _Administrador_ barra lateral, vaya a **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**.
-1. Clic **[!UICONTROL Sandbox onboarding]**.
+1. Haga clic **[!UICONTROL Sandbox onboarding]**.
 
    Esta opción está visible si aún no ha completado la incorporación a la zona protegida de [!DNL Payment Services].
 
@@ -46,7 +46,7 @@ Para completar la incorporación a la zona protegida:
    Se le mostrará una ventana de PayPal para conectar una cuenta PayPal y comenzar a aceptar pagos.
 
 1. Introduzca el correo electrónico y la contraseña de la cuenta de zona protegida de PayPal que generó en el paso 3 (no la información de su cuenta comercial de PayPal) y su país o región.
-1. Clic **[!UICONTROL Next]**.
+1. Haga clic **[!UICONTROL Next]**.
 
    ![PayPal: conecta tu cuenta PayPal para realizar pagos](assets/paypal-connectacct.png)
 
@@ -67,7 +67,7 @@ Si ha creado una cuenta de zona protegida de PayPal durante el proceso de incorp
 
 Para restablecer la cuenta de la zona protegida:
 
-1. Clic **[!UICONTROL Reset sandbox]**. [Crear una cuenta de zona protegida empresarial de PayPal](https://developer.paypal.com/docs/api-basics/sandbox/accounts/#create-a-business-sandbox-account).
+1. Haga clic **[!UICONTROL Reset sandbox]**. [Crear una cuenta de zona protegida empresarial de PayPal](https://developer.paypal.com/docs/api-basics/sandbox/accounts/#create-a-business-sandbox-account).
 1. Clic **[!UICONTROL Sandbox onboarding]** y complete el siguiente conjunto de pasos.
 
 ## Habilitar número de teléfono de contacto

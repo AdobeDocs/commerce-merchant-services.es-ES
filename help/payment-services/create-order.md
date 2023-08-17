@@ -6,7 +6,7 @@ feature: Payments, Checkout
 source-git-commit: 90bfa7099924feb308397960cff76bdf177bbe49
 workflow-type: tm+mt
 source-wordcount: '158'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -21,7 +21,7 @@ Puede personalizar Servicios de pago según sus necesidades mediante [[!DNL Paym
 [!DNL Payment Services] están disponibles como método de pago al crear un pedido en Admin:
 
 1. En el _Administrador_ barra lateral, expandir **[!UICONTROL Sales]** y elija **[!UICONTROL Orders]**.
-1. Clic **[!UICONTROL Create New Order]**.
+1. Haga clic **[!UICONTROL Create New Order]**.
 1. Complete las secciones que necesite para el pedido (detalles explicados en [Creación de un pedido](https://docs.magento.com/user-guide/customers/customer-account-create-order.html){target="_blank"}).
 1. En el _[!UICONTROL Payment Method]_, debería poder usar su... [!DNL Payment Services] como forma de pago.
-1. Clic **[!UICONTROL Submit Order]**.
+1. Haga clic **[!UICONTROL Submit Order]**.

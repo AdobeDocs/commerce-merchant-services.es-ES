@@ -1,6 +1,6 @@
 ---
 user-guide-title: Servicios para Adobe Commerce
-user-guide-description: Documentación y recursos para servicios alojados que proporcionan funcionalidades ampliadas a Adobe Commerce y a Magento Open Source.
+user-guide-description: Documentación y recursos para servicios alojados que proporcionan funcionalidades ampliadas a Adobe Commerce y Magento Open Source.
 title: Servicios para Adobe Commerce
 role: Admin, Leader, User
 feature: Personalization, Integration
@@ -8,7 +8,7 @@ recommendations: noDisplay
 source-git-commit: 1858e450d635105d4655ec24a01d2e23ae2e1244
 workflow-type: tm+mt
 source-wordcount: '106'
-ht-degree: 0%
+ht-degree: 24%
 
 ---
 

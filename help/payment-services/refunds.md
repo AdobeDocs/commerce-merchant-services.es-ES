@@ -26,7 +26,7 @@ Consulte [Emisión de una nota de crédito](https://docs.magento.com/user-guide/
 
 >[!NOTE]
 >
->Se produce un error en el caso de los pedidos procesados con PayPal o con tarjeta de crédito si intenta reembolsar parcialmente un pedido por un importe superior al importe del pedido restante (importe original menos el total de los reembolsos existentes) o si emite un reembolso por un importe bueno al importe total del pedido.
+>Se produce un error en los pedidos procesados con PayPal o con tarjeta de crédito si intenta reembolsar parcialmente un pedido por un importe superior al importe del pedido restante (importe original menos el total de los reembolsos existentes) o si emite un reembolso por un importe superior al importe total del pedido.
 
 El [!UICONTROL Payment Action] configuración en su [!UICONTROL Payment Settings] configuration: bien `Authorize` o `Authorize and Capture`: permite determinar el [flujo de trabajo básico de reembolsos](https://docs.magento.com/user-guide/sales/credit-memos.html#refund-workflow){target="_blank"} para pedidos.
 

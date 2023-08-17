@@ -7,11 +7,11 @@ exl-id: 04dcec10-fff8-483d-a2c1-4b58e063e0f0
 source-git-commit: 36b57648e156ead801764f3ee4e5e6a0f3245fe6
 workflow-type: tm+mt
 source-wordcount: '194'
-ht-degree: 2%
+ht-degree: 4%
 
 ---
 
-# Notas de versión
+# Notas de la versión
 
 Estas notas de la versión describen la versión inicial de [!DNL Store Fulfillment Services by Walmart Commerce Technologies] e incluir:
 

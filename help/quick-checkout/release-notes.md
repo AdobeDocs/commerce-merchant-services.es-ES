@@ -10,7 +10,7 @@ ht-degree: 0%
 
 ---
 
-# Notas de versión
+# Notas de la versión
 
 Estas notas de la versión describen la versión inicial de [!DNL Quick Checkout] e incluir:
 

@@ -10,7 +10,7 @@ ht-degree: 0%
 
 ---
 
-# [!DNL Catalog Service] Notas de versión
+# [!DNL Catalog Service] Notas de la versión
 
 Estas notas de la versión describen las versiones más recientes de [!DNL Catalog Service].
 Se proporciona soporte para la versión publicada principal actual. Las notas de la versión de las versiones anteriores se proporcionan como referencia.

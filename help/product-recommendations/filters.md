@@ -21,7 +21,7 @@ Puede configurar varios filtros y habilitar solo los que desee seleccionando la 
 
 Las condiciones pueden ser estáticas o dinámicas.
 
-- Una condición estática utiliza atributos de producto existentes para determinar qué productos pueden aparecer en la unidad. Por ejemplo, puede especificar que solo aparezcan en la unidad los productos en existencias con un precio bueno a 25 $. Las condiciones estáticas están disponibles en todos los tipos de página.
+- Una condición estática utiliza atributos de producto existentes para determinar qué productos pueden aparecer en la unidad. Por ejemplo, puede especificar que solo aparezcan en la unidad los productos en existencias con un precio mayor que 25 $. Las condiciones estáticas están disponibles en todos los tipos de página.
 
 - Una condición dinámica elimina el contexto actual de un comprador, como la categoría o el producto que se está viendo en ese momento. Por ejemplo, al crear una recomendación de producto para implementarla en páginas de detalles de producto, puede crear una condición para recomendar solo productos que se encuentren dentro de un rango de precios relativo del producto que se está viendo en ese momento. Las condiciones dinámicas están disponibles en todos los tipos de página, excepto en la página de inicio y en páginas con recomendaciones colocadas con Page Builder.
 

@@ -8,12 +8,12 @@ feature: Services, Price Indexer
 source-git-commit: 9ae4aff1851e9ce9920c4fbf11d2616d6f0f6307
 workflow-type: tm+mt
 source-wordcount: '25'
-ht-degree: 0%
+ht-degree: 8%
 
 ---
 
 # Indexador De Precios Saas {#price-indexer}
 
-- [Información general de guía](index.md)
+- [Información general de la guía](index.md)
 - [Instalación](installation.md)
 

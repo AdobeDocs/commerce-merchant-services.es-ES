@@ -183,7 +183,7 @@ Estos tipos de transacciones se pueden anotar en las transacciones de pago.
 | ------------ | -------------------- |
 | [!UICONTROL PAYMENT] | Dinero movido entre un comprador y un vendedor para un pedido |
 | [!UICONTROL AUTH] | Transacciones de anulación de autorización y autorización |
-| [!UICONTROL BONUS] | -- |
+| [!UICONTROL BONUS] | — |
 | [!UICONTROL CHARGEBACK] | Transacciones de reversión de comisión y comisión de reintegro |
 | [!UICONTROL CORRECTION] | -- |
 | [!UICONTROL CURRENCY_CONVERSION] | -- |

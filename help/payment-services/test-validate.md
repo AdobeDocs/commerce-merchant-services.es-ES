@@ -40,7 +40,7 @@ Para probar Apple Pay en modo de zona protegida:
 
 ## Prueba en producción
 
-Se recomienda encarecidamente que realice pruebas [!DNL Payment Services] en producción, con tarjetas de crédito reales y bancos, antes de exponer esta funcionalidad a los compradores. Aunque las pruebas [!DNL Payment Services] en la zona protegida es importante, las pruebas en la producción son el método más infalible para garantizar [!DNL Payment Services] funciona según lo esperado.
+Se recomienda encarecidamente que realice pruebas [!DNL Payment Services] en producción, con tarjetas de crédito reales y bancos, antes de exponer esta funcionalidad a los compradores. Aunque las pruebas [!DNL Payment Services] en la zona protegida es importante, la prueba en la producción es el método más infalible para garantizar [!DNL Payment Services] funciona según lo esperado.
 
 Puede probar [!DNL Payment Services] en producción de una de las dos maneras siguientes:
 

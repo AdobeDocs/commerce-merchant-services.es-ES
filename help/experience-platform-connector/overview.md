@@ -1,12 +1,12 @@
 ---
-title: Información general de guía
+title: Información general de la guía
 description: Obtenga información sobre cómo integrar datos de Adobe Commerce con Adobe Experience Platform mediante el conector de Experience Platform.
 exl-id: a8362e71-e21c-4b1d-8e3f-336e748e1018
 recommendations: noCatalog
 source-git-commit: 1d8609a607e0bcb74fdef47fb8e4e582085836e2
 workflow-type: tm+mt
 source-wordcount: '497'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -39,7 +39,7 @@ Para utilizar el conector del Experience Platform, debe tener lo siguiente:
 1. [Conectar con Commerce Services](../landing/saas.md).
 1. [Conectar con Adobe Experience Platform](connect-data.md).
 
-## Audiencia
+## Público
 
 Esta guía está diseñada para el comerciante de Adobe Commerce que desea conectar sus datos de Adobe Commerce a otros productos DX de Adobe.
 

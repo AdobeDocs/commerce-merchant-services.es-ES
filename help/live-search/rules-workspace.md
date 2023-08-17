@@ -5,7 +5,7 @@ exl-id: a52839fb-2264-4443-83c3-9eaa2ccb6996
 source-git-commit: 91d0713a3e57a3748609b6b4bcb723c21a461519
 workflow-type: tm+mt
 source-wordcount: '573'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -37,7 +37,7 @@ Las columnas visibles tienen una marca de verificación azul en el menú de opci
 
 ## Filtrado de reglas por estado
 
-1. Si la tienda tiene muchas reglas, puede filtrar las reglas por estado para acortar la lista. De forma predeterminada, la lista Reglas muestra todas las reglas.
+1. Si la tienda tiene muchas reglas, puede filtrarlas por estado para acortar la lista. De forma predeterminada, la lista Reglas muestra todas las reglas.
 
 1. Para enumerar solo las reglas con una configuración de estado específica, establezca **Estado** a uno de los siguientes:
 

@@ -1,16 +1,16 @@
 ---
-title: Notas de versión
+title: Notas de la versión
 description: La información de la versión más reciente del conector de Adobe Experience Platform de Adobe Commerce.
 exl-id: 7636664b-488a-46f7-8d19-a9faac126aec
 feature: Personalization, Integration, Release Notes
 source-git-commit: 1d8609a607e0bcb74fdef47fb8e4e582085836e2
 workflow-type: tm+mt
 source-wordcount: '465'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
-# Notas de versión
+# Notas de la versión
 
 Estas notas de la versión contienen actualizaciones en el conector del Experience Platform e incluyen:
 

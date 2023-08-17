@@ -6,11 +6,11 @@ feature: Services, Search, Release Notes
 source-git-commit: 3edbbc054fdadfeaa710b8c096db63e0d1961d02
 workflow-type: tm+mt
 source-wordcount: '1390'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
-# [!DNL Live Search] Notas de versión
+# [!DNL Live Search] Notas de la versión
 
 Estas notas de la versión describen las versiones más recientes de [!DNL Live Search].
 Se proporciona soporte para la versión publicada principal actual. Las notas de la versión de las versiones anteriores se proporcionan como referencia.

@@ -23,7 +23,7 @@ Puede poner el servicio en producción y completar la [proceso de incorporación
 Después de usted [configurar los servicios de Commerce](connect.md#configure-commerce-services) y habilite [pruebas de zona protegida](sandbox.md#enable-sandbox-testing) o [pagos pendientes](#enable-live-payments), debe establecer [!DNL Payment Services] como forma de pago.
 
 1. En el _Administrador_ barra lateral, vaya a **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**.
-1. Clic **[!UICONTROL Enable Payment Services]**.
+1. Haga clic **[!UICONTROL Enable Payment Services]**.
 
    Esta opción está visible si aún no ha configurado [!DNL Payment Services] como forma de pago para uno o más de sus sitios web.
 
@@ -37,7 +37,7 @@ Después de usted [configurar los servicios de Commerce](connect.md#configure-co
    | `Authorize` | Aprueba la compra y retiene los fondos. La cantidad no se retira hasta que sea &quot;capturada&quot; por el comerciante. |
    | `Authorize and Capture` | Aprueba la compra y el comerciante &quot;captura&quot; los fondos. |
 
-1. Clic **[!UICONTROL Save]**.
+1. Haga clic **[!UICONTROL Save]**.
 1. Clic **[!UICONTROL Go to Payment Services]** para que se le dirija de nuevo a [!DNL Payment Services] Hogar.
 1. [Borre la caché](https://docs.magento.com/user-guide/system/cache-management.html){target="_blank"}.
 
@@ -48,7 +48,7 @@ Consulte [Configurar servicios de pago](settings.md) para obtener más informaci
 ## Incorporación completa del comerciante
 
 1. En el _Administrador_ barra lateral, vaya a **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**.
-1. Clic **[!UICONTROL Live onboarding]**.
+1. Haga clic **[!UICONTROL Live onboarding]**.
 
    Esta opción está visible si aún no ha completado la incorporación en directo para [!DNL Payment Services].
 
@@ -107,7 +107,7 @@ Para habilitar los pagos activos:
 1. En el _Administrador_ barra lateral, vaya a **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**.
 1. En Inicio, haga clic en **[!UICONTROL Settings]** en la parte superior derecha de la página. Consulte [Inicio](payments-home.md) para obtener más información.
 1. En el _[!UICONTROL General Configuration]_conjunto de secciones **[!UICONTROL Payment mode]**hasta `Production`.
-1. Clic **[!UICONTROL Save]**.
+1. Haga clic **[!UICONTROL Save]**.
 1. [Borre la caché](https://docs.magento.com/user-guide/system/cache-management.html){target="_blank"}.
 
    >[!IMPORTANT]

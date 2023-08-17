@@ -16,7 +16,7 @@ ht-degree: 0%
 
 La aplicación Store Assist proporciona a Store Associates cuatro módulos para administrar el proceso de cumplimiento en la tienda para comprar en línea y recoger pedidos en la tienda:
 
-- **[Seleccionar](#pick-module)**: permite obtener una visibilidad completa de todos los artículos pedidos y de las herramientas para garantizar que se seleccionan los artículos y las cantidades correctas. Los asociados de la tienda pueden elegir uno o varios pedidos simultáneamente para una buena eficacia.
+- **[Seleccionar](#pick-module)**: permite obtener una visibilidad completa de todos los artículos pedidos y de las herramientas para garantizar que se seleccionan los artículos y las cantidades correctas. Los asociados de la tienda pueden elegir uno o varios pedidos simultáneamente para lograr una mayor eficiencia.
 
 - **[Fase](#stage-module)**: introduzca una ubicación en la que se realicen los pedidos mientras los clientes viajan a la tienda, de modo que los Asociados de tienda puedan encontrarlos fácilmente para la entrega de pedidos.
 

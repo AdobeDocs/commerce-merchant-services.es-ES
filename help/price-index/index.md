@@ -25,7 +25,7 @@ Con la indexación de precios SaaS, el flujo es:
 
 ![Flujo de datos de indexación de precios SaaS](assets/new_way.png)
 
-Todos los comerciantes que cumplan los requisitos pueden beneficiarse de estas mejoras, pero los que verán las ganancias más buenas son los clientes con:
+Todos los comerciantes que cumplan los requisitos pueden beneficiarse de estas mejoras, pero los que verán las mayores ganancias son los clientes con:
 
 * Cambios constantes en los precios: los comerciantes que necesitan cambios repetidos en sus precios para cumplir objetivos estratégicos como promociones frecuentes, descuentos estacionales o reducciones de existencias.
 * Varios sitios web o grupos de clientes: comerciantes con catálogos de productos compartidos en varios sitios web (dominios/marcas) o grupos de clientes.

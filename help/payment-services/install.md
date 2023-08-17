@@ -23,7 +23,7 @@ Primero debe descargar la extensión desde [Commerce Marketplace](https://experi
 
 1. Vaya a [Extensión de servicios de pago en el Commerce Marketplace](https://commercemarketplace.adobe.com/magento-payment-services.html).
 1. Para elegir la edición y la versión, alterne **[!UICONTROL Edition]** y **[!UICONTROL Your store version]** a sus selecciones preferidas.
-1. Clic **[!UICONTROL Add to Cart]**.
+1. Haga clic **[!UICONTROL Add to Cart]**.
 1. Complete el cierre de compra y haga clic en **[!UICONTROL Place Order]**.
 1. Consulte el correo electrónico asociado a la descarga de Marketplace para obtener confirmación y detalles del pedido.
 
@@ -104,7 +104,7 @@ Cuando una nueva versión de [!DNL Payment Services] se ha lanzado, puede actual
 
 1. Confirme y envíe los cambios.
 
-## Solución de problemas
+## Resolución de problemas
 
 Puede ver errores al intentar instalar el [!DNL Payment Services] extensión. Utilice los siguientes métodos de solución de problemas para resolver los errores.
 

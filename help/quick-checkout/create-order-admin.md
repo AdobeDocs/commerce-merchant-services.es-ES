@@ -6,7 +6,7 @@ feature: Checkout, Services
 source-git-commit: b1984a26463e14b8dc9a789421e49e5ea81ad039
 workflow-type: tm+mt
 source-wordcount: '190'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -21,11 +21,11 @@ Puede configurar [!DNL Quick Checkout] satisfaga sus necesidades utilizando las 
 Al realizar pedidos en nombre del comprador, la variable [!DNL Quick Checkout] aparece como una de las opciones de métodos de pago disponibles:
 
 1. En el _Administrador_ barra lateral, expandir **[!UICONTROL Sales]** y elija **[!UICONTROL Orders]**.
-1. Clic **[!UICONTROL Create New Order]**.
+1. Haga clic **[!UICONTROL Create New Order]**.
 1. Complete las secciones que necesite para el pedido (detalles explicados en [Creación de un pedido](https://docs.magento.com/user-guide/customers/customer-account-create-order.html){target="_blank"}).
 1. En el _[!UICONTROL Payment Method]_, debería poder usar su... [!DNL Quick Checkout] como forma de pago.
-1. Clic **[!UICONTROL Submit Order]**.
+1. Haga clic **[!UICONTROL Submit Order]**.
 
 >[!IMPORTANT]
 >
-> Los usuarios no pueden usar el inicio de sesión OTP para rellenar automáticamente todos los detalles de envío y pago.
+> Los usuarios no pueden usar el inicio de sesión OTP para rellenar automáticamente todos los datos de envío y pago.

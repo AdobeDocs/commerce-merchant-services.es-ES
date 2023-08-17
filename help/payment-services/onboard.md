@@ -55,7 +55,7 @@ Para obtener información sobre cómo crear o acceder a sus claves API, consulte
 >
 >Si no configura Commerce Services en el Admin (paso 3), no puede configurar la zona protegida ni los pagos activos.
 
-## Solución de problemas
+## Resolución de problemas
 
 * [Solucionar problemas [!DNL Payment Services] instalación](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/payments/payservices-install.html?lang=en)
 * [Cuenta de zona protegida de PayPal no verificada](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/payments/payservices-paypal-acct.html)

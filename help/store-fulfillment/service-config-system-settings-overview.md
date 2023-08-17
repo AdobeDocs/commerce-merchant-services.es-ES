@@ -1,6 +1,6 @@
 ---
 title: Información general de configuración del sistema
-description: Obtenga información acerca de las categorías de opciones de configuración de administración disponibles para la solución Store Fulfillment y cómo se configuran.
+description: Obtenga información sobre las categorías de ajustes de configuración de administración disponibles para la solución Store Fulfillment y cómo se configuran.
 role: Admin
 feature: Shipping/Delivery, System, Configuration
 level: Intermediate
