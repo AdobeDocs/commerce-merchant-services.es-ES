@@ -5,9 +5,9 @@ role: Admin
 level: Intermediate
 feature: Shipping/Delivery, Communications, Configuration
 exl-id: 688732e3-06f0-4613-a589-2d465597eb28
-source-git-commit: 36b57648e156ead801764f3ee4e5e6a0f3245fe6
+source-git-commit: 78b09113e72382053b01d6016276bae3aa545fa3
 workflow-type: tm+mt
-source-wordcount: '1202'
+source-wordcount: '1233'
 ht-degree: 0%
 
 ---
@@ -34,7 +34,7 @@ Configure las plantillas de correo electrónico de ventas desde el administrador
 </thead>
 <tbody><tr>
 <td><strong>Envío asincrónico</strong></td>
-<td>Deshabilite esta función. No se admite el envío asincrónico de correo electrónico. Para obtener la comunicación y el tiempo de respuesta más rápidos para la recogida en tienda, envía correos electrónicos inmediatamente en lugar de enviarlos por lotes. </td>
+<td>Determina si los correos electrónicos de ventas se envían de forma asíncrona. Opciones: <br/>**`Deshabilitar`** - (Predeterminado) Los correos electrónicos de ventas se envían cuando se activa un evento. Utilice la configuración predeterminada para agilizar la comunicación y el tiempo de respuesta de la recogida en tienda. <br/>**`Habilitar`**: al habilitar esta opción, se mueven los procesos que administran las notificaciones por correo electrónico de cierre de compra y procesamiento de pedidos al segundo plano para que se envíen a intervalos predeterminados y regulares.</td>
 <td>Vista de tienda</td>
 <td>No</td>
 </tr>

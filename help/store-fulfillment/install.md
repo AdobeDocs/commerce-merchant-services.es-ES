@@ -5,9 +5,9 @@ role: Admin, Developer
 level: Intermediate
 feature: Shipping/Delivery, Install
 exl-id: 6613268a-7d22-4c54-af89-834921b7f262
-source-git-commit: 36b57648e156ead801764f3ee4e5e6a0f3245fe6
+source-git-commit: 78b09113e72382053b01d6016276bae3aa545fa3
 workflow-type: tm+mt
-source-wordcount: '660'
+source-wordcount: '715'
 ht-degree: 0%
 
 ---
@@ -17,9 +17,13 @@ ht-degree: 0%
 
 Completar la instalación inicial del [!DNL Store Fulfillment for Adobe Commerce by Walmart Commerce Technologies] extensión en un entorno que no es de producción con el administrador de colas en ejecución y el almacenamiento en caché configurado para permitir el control de excepciones. Asegúrese de que el entorno de desarrollo incluya herramientas de desarrollo para garantizar las prácticas recomendadas de funcionamiento y mantenimiento de la instancia de Adobe Commerce.
 
+>[!TIP]
+>
+>Actualice la extensión Store Fulfillment para Adobe Commerce local siguiendo las [instrucciones de actualización](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/modules/upgrade.html) en el _Guía de actualización de Adobe Commerce_. Para obtener información sobre la infraestructura en la nube de Adobe Commerce, consulte [Actualización de una extensión](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/extensions.html#upgrade-an-extension) en el *Guía de Commerce en la infraestructura de Cloud*.
+
 ## Requisitos previos
 
-Revise la [requisitos](solution-requirements.md) para la solución Store Fulfillment y recopile la información necesaria antes de instalar el [!DNL Store Fulfillment] para Adobe Commerce.
+Revise la [requisitos](solution-requirements.md) para la solución Store Fulfillment y recopile la información necesaria antes de instalar o actualizar el [!DNL Store Fulfillment] para Adobe Commerce.
 
 Si ha instalado una versión preliminar o beta de la extensión Store Fulfillment for Adobe Commerce, utilice el siguiente comando para eliminarla antes de instalar la versión actual.
 
@@ -196,4 +200,5 @@ El `-f` es necesaria si utiliza una temática en blanco.
 >[!NOTE]
 >
 >Para obtener más información, consulte la [Contenido estático: implemente prácticas recomendadas en Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/development/static-content-deployment.html) artículo en el Centro de ayuda de Adobe Commerce.
+
 

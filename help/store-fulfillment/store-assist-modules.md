@@ -5,7 +5,7 @@ role: Leader, Admin, User
 level: Intermediate
 feature: Shipping/Delivery, Tools and External Services, Customer Service
 exl-id: a8414f19-5489-41e9-84d6-39d2e61c2b08
-source-git-commit: 36b57648e156ead801764f3ee4e5e6a0f3245fe6
+source-git-commit: 78b09113e72382053b01d6016276bae3aa545fa3
 workflow-type: tm+mt
 source-wordcount: '806'
 ht-degree: 0%
@@ -18,7 +18,7 @@ La aplicación Store Assist proporciona a Store Associates cuatro módulos para 
 
 - **[Seleccionar](#pick-module)**: permite obtener una visibilidad completa de todos los artículos pedidos y de las herramientas para garantizar que se seleccionan los artículos y las cantidades correctas. Los asociados de la tienda pueden elegir uno o varios pedidos simultáneamente para lograr una mayor eficiencia.
 
-- **[Fase](#stage-module)**: introduzca una ubicación en la que se realicen los pedidos mientras los clientes viajan a la tienda, de modo que los Asociados de tienda puedan encontrarlos fácilmente para la entrega de pedidos.
+- **[Fase](#stage-module)**: introduzca la ubicación en la que se realizan los pedidos mientras los clientes viajan a la tienda, de modo que los Asociados de tienda puedan encontrar y entregar los pedidos con mayor rapidez.
 
 - **[Entrega](#hand-off-module)**: obtenga notificaciones en tiempo real después de que los clientes lleguen a la tienda para minimizar el tiempo de espera y entregar los pedidos sin problemas.
 
