@@ -3,9 +3,9 @@ title: Notas de la versión
 description: La información de la versión más reciente del conector de Adobe Experience Platform de Adobe Commerce.
 exl-id: 7636664b-488a-46f7-8d19-a9faac126aec
 feature: Personalization, Integration, Release Notes
-source-git-commit: 1d8609a607e0bcb74fdef47fb8e4e582085836e2
+source-git-commit: 9717de31ee5545a33462776f3b2bc529ec9e08f2
 workflow-type: tm+mt
-source-wordcount: '465'
+source-wordcount: '464'
 ht-degree: 2%
 
 ---
@@ -65,7 +65,7 @@ _13 de junio de 2023_
 
 [!BADGE Compatibilidad]{type=Informative tooltip="Compatibilidad"}
 
-* ![Nuevo](../assets/new.svg) - (Beta) Se ha agregado la capacidad de [enviar pedido histórico](connect-data.md#beta-send-historical-order-data) datos y estado al Experience Platform. Esta función solo está disponible para usuarios beta. Puede unirse a la versión beta enviando un correo electrónico a la siguiente dirección: [dataconnection@adobe.com](mailto:dataconnection@adobe.com).
+* ![Nuevo](../assets/new.svg) - (Beta) Se ha agregado la capacidad de [enviar pedido histórico](connect-data.md#beta-send-historical-order-data) datos y estado al Experience Platform. Esta función solo está disponible para usuarios beta. Puede unirse a la versión beta enviando un correo electrónico a la siguiente dirección: `dataconnection@adobe.com`.
 
 ## 2.2.0
 
