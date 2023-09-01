@@ -3,9 +3,9 @@ title: '[!DNL Quick Checkout] Notas de la versión'
 description: Revise las notas de la versión para obtener información acerca de todos los [!DNL Quick Checkout] versiones.
 exl-id: 511be2fc-d24d-4323-a47a-d376e38a5c47
 feature: Release Notes, Services, Checkout
-source-git-commit: 0c8d9498ea7a30a99f834694ef8a865ad24466ab
+source-git-commit: b0f9aee6603ecbc0c711190adb52440d05219368
 workflow-type: tm+mt
-source-wordcount: '1422'
+source-wordcount: '1428'
 ht-degree: 0%
 
 ---
@@ -18,9 +18,9 @@ Estas notas de la versión describen la versión inicial de [!DNL Quick Checkout
 ![Problema corregido](../assets/fix.svg) Correcciones y mejoras
 ![Problema conocido](../assets/bug.svg) Problemas conocidos
 
-Consulte [Próximas versiones](https://devdocs.magento.com/release/) para obtener más información sobre las programaciones de versiones y la compatibilidad.
+Consulte [Próximas versiones](https://experienceleague.adobe.com/docs/commerce-operations/release/planning/schedule.html) para obtener más información sobre las programaciones de versiones y la compatibilidad.
 
-Consulte [Disponibilidad](https://devdocs.magento.com/release/availability.html) en la documentación para desarrolladores para obtener más información sobre la compatibilidad del producto.
+Consulte [Disponibilidad](https://experienceleague.adobe.com/docs/commerce-operations/release/product-availability.html) en la documentación para desarrolladores para obtener más información sobre la compatibilidad del producto.
 
 ## Actualizaciones del panel de administración
 
@@ -82,7 +82,7 @@ _5 de octubre de 2022_
 
 _24 de febrero de 2023_
 
-[!BADGE Compatibilidad]{type=Informative tooltip="Compatibilidad"}
+[!BADGE Admitido]{type=Informative tooltip="Admitido"}
 
 ![Nuevo](../assets/new.svg)<!-- Issue BOLT-520 --> Versión de disponibilidad general—[[!DNL Quick Checkout]](https://commercemarketplace.adobe.com/magento-quick-checkout.html) ahora está preinstalado en las versiones 2.4.6 y posteriores de Adobe Commerce Cloud.
 
@@ -92,7 +92,7 @@ _24 de febrero de 2023_
 
 _22 de febrero de 2023_
 
-[!BADGE Compatibilidad]{type=Informative tooltip="Compatibilidad"}
+[!BADGE Admitido]{type=Informative tooltip="Admitido"}
 
 ![Problema corregido](../assets/fix.svg)<!-- Issue AC-8002 --> Mejoras en la experiencia del usuario al realizar un pedido con una [Envío Múltiple](https://experienceleague.adobe.com/docs/commerce-admin/config/sales/multishipping-settings.html) método. Esta funcionalidad habilita la visualización de los métodos de pago durante el cierre de compra cuando [!DNL Quick Checkout] está activada.
 
@@ -100,7 +100,7 @@ _22 de febrero de 2023_
 
 _9 de febrero de 2023_
 
-[!BADGE Compatibilidad]{type=Informative tooltip="Compatibilidad"}
+[!BADGE Admitido]{type=Informative tooltip="Admitido"}
 
 ![Problema corregido](../assets/fix.svg)<!-- Issue BOLT-567 --> Mejoras en la experiencia del usuario al [realización de un pedido](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/onboarding.html) uso del [Envío en tienda](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/delivery/basic-methods/shipping-in-store-delivery.html) con el método [!DNL Quick Checkout] desactivado.
 
@@ -110,7 +110,7 @@ _9 de febrero de 2023_
 
 _18 de enero de 2023_
 
-[!BADGE Compatibilidad]{type=Informative tooltip="Compatibilidad"}
+[!BADGE Admitido]{type=Informative tooltip="Admitido"}
 
 ![Nuevo](../assets/new.svg)<!-- Issue BOLT-522 --> Se puede habilitar/deshabilitar una nueva configuración para detectar si [compradores](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/manage-checkout/checkout-options/checkout-adobe-commerce.html) se puede iniciar sesión automáticamente en Bolt.
 
@@ -126,7 +126,7 @@ _18 de enero de 2023_
 
 _30 de noviembre de 2022_
 
-[!BADGE Compatibilidad]{type=Informative tooltip="Compatibilidad"}
+[!BADGE Admitido]{type=Informative tooltip="Admitido"}
 
 ![Nuevo](../assets/new.svg)<!-- Issue BOLT-513 --> Ahora, cuando un cliente de Adobe Commerce ha iniciado sesión en la tienda durante el proceso de cierre de compra y tiene una cuenta de Bolt, se muestra una opción para iniciar sesión en la cuenta de Bolt del comprador.
 
@@ -138,7 +138,7 @@ _30 de noviembre de 2022_
 
 _2 de noviembre de 2022_
 
-[!BADGE Compatibilidad]{type=Informative tooltip="Compatibilidad"}
+[!BADGE Admitido]{type=Informative tooltip="Admitido"}
 
 ![Nuevo](../assets/new.svg)<!-- Issue BOLT-293 --> Ahora, [!DNL Quick Checkout] incluye la capacidad de habilitar un [seguimiento de pago y envío](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/settings-quick-checkout.html#service-settings) que permite a Adobe Commerce compartir información de informes con Bolt.
 
@@ -148,7 +148,7 @@ _2 de noviembre de 2022_
 
 _8 de septiembre de 2022_
 
-[!BADGE Compatibilidad]{type=Informative tooltip="Compatibilidad"}
+[!BADGE Admitido]{type=Informative tooltip="Admitido"}
 
 ![Nuevo](../assets/new.svg)<!-- Issue BOLT-341 --> Versión de disponibilidad general—[[!DNL Quick Checkout]](https://commercemarketplace.adobe.com/magento-quick-checkout.html) ahora es compatible con las versiones 2.4.5 de Adobe Commerce.
 
@@ -172,7 +172,7 @@ _8 de septiembre de 2022_
 
 _12 de agosto de 2022_
 
-[!BADGE Compatibilidad]{type=Informative tooltip="Compatibilidad"}
+[!BADGE Admitido]{type=Informative tooltip="Admitido"}
 
 ![Problema corregido](../assets/fix.svg)<!-- Issue BOLT-375 --> Mejoras en la experiencia del usuario en [[!DNL Quick Checkout] Panel de administración](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/onboarding.html#enable-extension) ahora incluya solo los parámetros visibles y validados cuando la extensión esté habilitada.
 
@@ -182,7 +182,7 @@ _12 de agosto de 2022_
 
 _9 de agosto de 2022_
 
-[!BADGE Compatibilidad]{type=Informative tooltip="Compatibilidad"}
+[!BADGE Admitido]{type=Informative tooltip="Admitido"}
 
 ![Nuevo](../assets/new.svg)<!-- Issue BOLT-341 --> Versión de disponibilidad general—[[!DNL Quick Checkout]](https://commercemarketplace.adobe.com/magento-quick-checkout.html) ahora es compatible con las versiones de Adobe Commerce 2.4.1 a 2.4.4.
 
