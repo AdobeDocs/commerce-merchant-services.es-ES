@@ -3,7 +3,7 @@ title: '[!DNL Catalog Service] Notas de la versión'
 description: La información de la versión más reciente de [!DNL Catalog Service] para Adobe Commerce.
 exl-id: 9bf8e3f7-5b74-4755-867e-ac1c5000ff33
 feature: Services, Catalog Service, Release Notes
-source-git-commit: 7eece9b341a27637d7ac00216f18b7fad7c50740
+source-git-commit: 822108fb92b2cac7cc62d00db035faed81ae9e25
 workflow-type: tm+mt
 source-wordcount: '496'
 ht-degree: 0%
@@ -26,7 +26,7 @@ Las actualizaciones incluyen:
 
 _18 de julio de 2023_
 
-[!BADGE Compatibilidad]{type=Informative tooltip="Compatibilidad"}
+[!BADGE Admitido]{type=Informative tooltip="Admitido"}
 
 ![Nuevo](../assets/new.svg) El servicio de catálogo ahora admite [`recommendations`](https://developer.adobe.com/commerce/webapi/graphql/schema/product-recommendations/queries/recommendations/) GraphQL consulta el Recommendations del producto.
 
@@ -49,7 +49,7 @@ Las siguientes limitaciones se pueden resolver mediante la API Mesh y la API pri
 
 _27 de junio de 2023_
 
-[!BADGE Compatibilidad]{type=Informative tooltip="Compatibilidad"}
+[!BADGE Admitido]{type=Informative tooltip="Admitido"}
 
 ![Nuevo](../assets/new.svg) El servicio de catálogo ahora puede mostrar productos relacionados en el widget de página de detalles del producto.
 
@@ -57,7 +57,7 @@ _27 de junio de 2023_
 
 _12 de abril de 2023_
 
-[!BADGE Compatibilidad]{type=Informative tooltip="Compatibilidad"}
+[!BADGE Admitido]{type=Informative tooltip="Admitido"}
 
 ![Nuevo](../assets/new.svg) El servicio de catálogo ahora limpia las variantes de producto eliminadas.
 ![Fix](../assets/fix.svg) Mejoras de rendimiento y escalabilidad de la infraestructura.
@@ -66,7 +66,7 @@ _12 de abril de 2023_
 
 _28 de marzo de 2023_
 
-[!BADGE Compatibilidad]{type=Informative tooltip="Compatibilidad"}
+[!BADGE Admitido]{type=Informative tooltip="Admitido"}
 
 ![Nuevo](../assets/new.svg) Se han añadido muestras a [`products`](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/queries/products/) consulta.
 ![Nuevo](../assets/new.svg) Se ha añadido la capacidad de `entityId` usando [API Mesh](mesh.md).
@@ -75,7 +75,7 @@ _28 de marzo de 2023_
 
 _6 de marzo de 2023_
 
-[!BADGE Compatibilidad]{type=Informative tooltip="Compatibilidad"}
+[!BADGE Admitido]{type=Informative tooltip="Admitido"}
 
 ![Nuevo](../assets/new.svg) Añadido [`categories`](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/queries/categories/) Funcionalidad de GraphQL.
 ![Fix](../assets/fix.svg) Rendimiento y escalabilidad de API mejorados.
@@ -84,7 +84,7 @@ _6 de marzo de 2023_
 
 _7 de febrero de 2023_
 
-[!BADGE Compatibilidad]{type=Informative tooltip="Compatibilidad"}
+[!BADGE Admitido]{type=Informative tooltip="Admitido"}
 
 ![Nuevo](../assets/new.svg) Se ha publicado un metapaquete de servicio de catálogo para simplificar los pasos de instalación.
 ![Fix](../assets/fix.svg) Mejoras de rendimiento y escalabilidad de API.
@@ -93,7 +93,7 @@ _7 de febrero de 2023_
 
 _17 de enero de 2023_
 
-[!BADGE Compatibilidad]{type=Informative tooltip="Compatibilidad"}
+[!BADGE Admitido]{type=Informative tooltip="Admitido"}
 
 ![Nuevo](../assets/new.svg) Simplificación y mejora de la experiencia de incorporación.
 ![Nuevo](../assets/new.svg) Hay nuevos extremos de zona protegida del cliente disponibles para pruebas previas a la producción.
@@ -104,7 +104,7 @@ _17 de enero de 2023_
 
 _18 de noviembre de 2022_
 
-[!BADGE Compatibilidad]{type=Informative tooltip="Compatibilidad"}
+[!BADGE Admitido]{type=Informative tooltip="Admitido"}
 
 ![Nuevo](../assets/new.svg) El servicio de catálogo ahora admite Adobes [API Mesh](https://developer.adobe.com/graphql-mesh-gateway/).
 ![Fix](../assets/fix.svg) Se ha mejorado la escalabilidad de la API y el rendimiento general.
@@ -113,7 +113,7 @@ _18 de noviembre de 2022_
 
 _4 de octubre de 2022_
 
-[!BADGE Compatibilidad]{type=Informative tooltip="Compatibilidad"}
+[!BADGE Admitido]{type=Informative tooltip="Admitido"}
 
 ![Nuevo](../assets/new.svg) Ahora admite productos agrupados y agrupados.
 ![Nuevo](../assets/new.svg) Se han añadido anulaciones de visibilidad B2B. Ahora se pueden buscar productos y se pueden agregar al carro de compras para grupos de clientes específicos.
@@ -127,7 +127,7 @@ _4 de octubre de 2022_
 
 _12 de septiembre de 2022_
 
-[!BADGE Compatibilidad]{type=Informative tooltip="Compatibilidad"}
+[!BADGE Admitido]{type=Informative tooltip="Admitido"}
 
 ![Nuevo](../assets/new.svg) Compatibilidad con imágenes para variantes: las imágenes de producto se devuelven en función de las opciones seleccionadas
 ![Nuevo](../assets/new.svg) Funciones para el soporte de precios: permitir que solo los miembros de grupos de clientes específicos vean el precio de los productos
@@ -138,7 +138,7 @@ _12 de septiembre de 2022_
 
 _9 de agosto de 2022_
 
-[!BADGE Compatibilidad]{type=Informative tooltip="Compatibilidad"}
+[!BADGE Admitido]{type=Informative tooltip="Admitido"}
 
 ![Nuevo](../assets/new.svg) El `products` y `refineProduct` Las consultas de devuelven los siguientes datos:
 
