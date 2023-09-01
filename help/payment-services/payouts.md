@@ -5,16 +5,16 @@ role: User
 level: Intermediate
 exl-id: f3f99474-cd28-4c8f-b0ea-dca8e014b108
 feature: Payments, Checkout
-source-git-commit: 90bfa7099924feb308397960cff76bdf177bbe49
+source-git-commit: 9242e8eea078a00445c7f24ffc998b7d978a9775
 workflow-type: tm+mt
-source-wordcount: '1326'
+source-wordcount: '1316'
 ht-degree: 0%
 
 ---
 
 # Informe de pagos
 
-[!DNL Payment Services] para [!DNL Adobe Commerce] y [!DNL Magento Open Source] le ofrece informes completos para que pueda obtener una visión clara de los pedidos y pagos de su tienda.
+[!DNL Payment Services] para [!DNL Adobe Commerce] y [!DNL Magento Open Source] le ofrece informes completos para que pueda obtener una visión clara de las transacciones, pedidos y pagos de su tienda.
 
 Hay dos vistas de informes de pagos disponibles para que pueda ver información detallada sobre todos los pagos:
 
@@ -22,6 +22,8 @@ Hay dos vistas de informes de pagos disponibles para que pueda ver información 
 * **[Vista de informe de pagos](#payouts-report-view)**: informe disponible en Pagos que muestra información detallada sobre los pagos de todas las transacciones
 
 Las vistas de pagos muestran información completa sobre los pagos de un vistazo, lo que permite una total transparencia del importe del pago, el volumen procesado y la creación de informes detallados sobre la transacción para la reconciliación financiera.
+
+Puede [descargar transacciones de pago](#download-transactions) en formato de archivo .csv para su uso en software de contabilidad o gestión de pedidos existente.
 
 >[!NOTE]
 >
@@ -65,15 +67,15 @@ La vista de visualización de datos Pagos incluye la siguiente información.
 
 ## Vista de informe de pagos
 
-La vista Informe de pagos está disponible en la vista Pagos de Payment Services. Incluye toda la información disponible sobre los pagos de tu tienda. El [Vista de visualización de datos de pagos](#payouts-data-visualization-view) en Página de inicio de servicios de pago, se muestra una representación visual de los importes agregados por día en esta vista de informe más detallada.
+La vista Informe de pagos está disponible en la vista Pagos de Payment Services. Incluye toda la información disponible sobre los pagos de tu tienda.
 
-En el _Administrador_ barra lateral, vaya a **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > **[!UICONTROL Payouts]** para ver la vista detallada del informe Pagos tabulares.
+En el _Administrador_ barra lateral, vaya a **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > _[!UICONTROL Payouts]_>**[!UICONTROL View Report]**para ver la vista detallada del informe Pagos tabulares.
 
 ![Transacciones de pago en el administrador](assets/payouts-report-new.png){zoomable=yes}
 
 Puede configurar esta vista, según las secciones de este tema, para presentar mejor los datos que desee ver.
 
-Consulte los ID de pedido y transacción de comercio vinculados, los importes de transacción, el método de pago por transacción y mucho más, todo ello dentro del informe Pagos en el Administrador.
+Consulte ID de pedido y transacción de comercio vinculados, importes de transacción, método de pago por transacción y mucho más, todo dentro de este informe.
 
 Puede [descargar transacciones de pago](#download-transactions) en formato de archivo .csv para su uso en software de contabilidad o gestión de pedidos existente.
 
@@ -83,7 +85,7 @@ Puede [descargar transacciones de pago](#download-transactions) en formato de ar
 
 ### Seleccionar fuente de datos
 
-En la vista Informe de pagos, puede seleccionar el origen de datos—_[!UICONTROL Live]_o_[!UICONTROL Sandbox]_: para el que se desea ver los resultados del informe.
+En la vista Informe de pagos, puede seleccionar el origen de datos—**[!UICONTROL Live]** o **[!UICONTROL Sandbox]**: para el que se desea ver los resultados del informe.
 
 ![Selección de fuentes de datos](assets/datasource.png){width=400px}
 
@@ -97,8 +99,8 @@ Las selecciones de fuentes de datos funcionan de la siguiente manera:
 
 Para seleccionar la fuente de datos del informe Estado de Pagos del Pedido:
 
-1. En el _Administrador_ barra lateral, vaya a **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > **[!UICONTROL Payouts]**.
-1. Clic **[!UICONTROL Data source]** y seleccione _[!UICONTROL Live]_o_[!UICONTROL Sandbox]_.
+1. En el _Administrador_ barra lateral, vaya a **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > _[!UICONTROL Payouts]_>**[!UICONTROL View Report]**.
+1. Clic **[!UICONTROL Data source]** y seleccione **[!UICONTROL Live]** o **[!UICONTROL Sandbox]**.
 
    Los resultados del informe se regeneran en función del origen de datos seleccionado.
 
@@ -114,8 +116,8 @@ Desplácese a la izquierda y a la derecha para ver [información para cada trans
 
 En la vista de informe Pagos, puede personalizar el periodo de tiempo de las transacciones de pago que desee consultar introduciendo fechas específicas o seleccionando un rango de fechas en el selector de fechas:
 
-1. En el _Administrador_ barra lateral, vaya a **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > **[!UICONTROL Payouts]**.
-1. Haga clic en el filtro Selector de calendario de fechas de transacción.
+1. En el _Administrador_ barra lateral, vaya a **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > _[!UICONTROL Payouts]_>**[!UICONTROL View Report]**.
+1. Haga clic en _[!UICONTROL Transaction dates]_filtro selector de calendario.
 1. Seleccione el intervalo de fechas aplicable.
 1. Ver los estados de pagos en la cuadrícula para las fechas especificadas.
 
@@ -123,7 +125,7 @@ En la vista de informe Pagos, puede personalizar el periodo de tiempo de las tra
 
 La vista de informe Pagos muestra la mayoría de las columnas de información disponibles de forma predeterminada. Sin embargo, puede personalizar qué columnas ve en el informe.
 
-1. En el _Administrador_ barra lateral, vaya a **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > **[!UICONTROL Payouts]**.
+1. En el _Administrador_ barra lateral, vaya a **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > _[!UICONTROL Payouts]_>**[!UICONTROL View Report]**.
 1. Haga clic en _Configuración de columna_ icono (![icono de configuración de columna](assets/column-settings.png)).
 1. Para personalizar qué columnas ve en el informe, marque o desmarque columnas en la lista.
 
@@ -133,7 +135,7 @@ La vista de informe Pagos muestra la mayoría de las columnas de información di
 
 Puede descargar un archivo .csv que contenga todas las transacciones visibles en la cuadrícula de la vista Pagos.
 
-1. En el _Administrador_ barra lateral, vaya a **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > **[!UICONTROL Payouts]**.
+1. En el _Administrador_ barra lateral, vaya a **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > _[!UICONTROL Payouts]_>**[!UICONTROL View Report]**.
 1. [Personalice el intervalo de fechas y el periodo de tiempo de sus transacciones](#customize-transactions-timeframe).
 1. Haga clic en _Descargar_ (![](assets/icon-download.png)) icono.
 

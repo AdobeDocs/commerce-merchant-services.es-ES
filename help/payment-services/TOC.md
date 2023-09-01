@@ -6,9 +6,9 @@ index: true
 role: Admin, Leader, User
 feature: Payments, Checkout
 recommendations: noDisplay
-source-git-commit: 90bfa7099924feb308397960cff76bdf177bbe49
+source-git-commit: 9242e8eea078a00445c7f24ffc998b7d978a9775
 workflow-type: tm+mt
-source-wordcount: '79'
+source-wordcount: '85'
 ht-degree: 3%
 
 ---
@@ -37,10 +37,13 @@ ht-degree: 3%
 - [Prueba y validación](test-validate.md)
 - [Creación de un pedido](create-order.md)
 - Informes financieros {#reporting}
+   - [Informe Transacciones](transactions.md)
    - [Informe de estado de pago del pedido](order-payment-status.md)
    - [Informe de pagos](payouts.md)
    - [Datos disponibles](data.md)
 - Administración de pagos {#manage}
    - [Reembolsos](refunds.md)
    - [Vacíos](voids.md)
-- [Seguridad y cumplimiento](security.md)
+- Seguridad {#security-compliance}
+   - [Seguridad y cumplimiento](security.md)
+   - [Protección contra fraudes significativa](fraud-protection.md)

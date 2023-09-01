@@ -5,9 +5,9 @@ role: User
 level: Intermediate
 exl-id: e4d8d789-fcf6-4aaa-bc4e-42ce21c6dd6c
 feature: Payments, Checkout
-source-git-commit: b1984085fa5d10c8202d2a982227e183d0b169e8
+source-git-commit: 9242e8eea078a00445c7f24ffc998b7d978a9775
 workflow-type: tm+mt
-source-wordcount: '459'
+source-wordcount: '466'
 ht-degree: 0%
 
 ---
@@ -38,7 +38,7 @@ Tanto si se trata de una pequeña empresa, un competidor de mercado medio o una 
 
 * [**Incorporación**](onboard.md): el proceso le guía a través de la suscripción comercial, la configuración técnica, las autorizaciones, la configuración del entorno de zona protegida y la activación de pagos en directo.
 * [**Opciones de pago**](payments-options.md)—Configure las opciones de pago para personalizar los métodos disponibles para sus clientes de tienda (o multitienda).
-* **Información financiera de gestión de flujos de efectivo**: sincronizar [datos de pago](order-payment-status.md) con pedidos para obtener total transparencia al volumen procesado, saldo de pago y detalles [informes de nivel de transacción](payouts.md) para la reconciliación financiera.
+* **Información financiera de gestión de flujos de efectivo**: sincronizar [datos de pago](order-payment-status.md) con órdenes para obtener total transparencia al volumen procesado, saldo de pago, [pagos](payouts.md), y detallada [informes de nivel de transacción](transactions.md) para la reconciliación financiera y la máxima visibilidad de las transacciones.
 * **Precios transparentes**—Los precios son claros y claros; lo que se ve es lo que se obtiene.
 * **Experiencia de cierre de compra eficiente**: elimine las barreras para un cierre de compra rápido y sencillo y cree clientes leales con [bóveda de tarjetas](https://experienceleague-review.com/docs/commerce-merchant-services/payment-services/payments-checkout/vaulting.html) y [Compra instantánea](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/point-of-purchase/checkout-instant-purchase.html) (habilitado de forma predeterminada para Adobe Commerce).
 

@@ -3,9 +3,10 @@ title: Seguridad y cumplimiento
 description: Revise los requisitos de seguridad y cumplimiento del sitio.
 exl-id: 083c5a12-1d78-48b5-b9e3-612b104ce7e0
 feature: Payments, Checkout, Compliance
-source-git-commit: 90bfa7099924feb308397960cff76bdf177bbe49
+redirect_from: https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/security.html
+source-git-commit: fef972355565472f0d0851a2e3cace692fb2db67
 workflow-type: tm+mt
-source-wordcount: '524'
+source-wordcount: '549'
 ht-degree: 0%
 
 ---
@@ -61,3 +62,10 @@ Con los botones inteligentes de PayPal, no se pasan datos regulados por PCI a tr
 Por razones de seguridad, PayPal no pasa la dirección de facturación durante el proceso de pago: el país, el correo electrónico y el nombre son los únicos datos de facturación utilizados. Si lo desea, puede activar el proceso de pago y envío de PayPal para que se devuelva la dirección de facturación completa poniéndose en contacto con PayPal y completando un proceso de verificación de antecedentes.
 
 PayPal también cuenta con una protección contra el fraude integrada que utiliza el aprendizaje automático para ayudarle a combatir el fraude. Ver PayPal&#39;s [Documentación de protección del vendedor](https://www.paypal.com/us/webapps/mpp/security/seller-protection) para obtener más información.
+
+## Protección contra el fraude
+
+Puede habilitar la protección contra fraudes automatizada para los servicios de pago con el [Extensión significativa](https://commercemarketplace.adobe.com/signifyd-module-connect.html).
+
+Consulte [Protección contra fraudes significativa](fraud-protection.md) para obtener más información.
+
