@@ -3,9 +3,9 @@ title: '[!DNL Catalog Service]'
 description: '''[!DNL Catalog Service] para Adobe Commerce proporciona una forma de recuperar el contenido de las páginas para mostrar de productos y de las páginas de listas de productos mucho más rápido que las consultas nativas de Adobe Commerce GraphQL."'
 exl-id: 266faca4-6a65-4590-99a9-65b1705cac87
 recommendations: noCatalog
-source-git-commit: 9ae4aff1851e9ce9920c4fbf11d2616d6f0f6307
+source-git-commit: 8e349cb8cfba7c4d828a6f3666a3b27fecfdbd15
 workflow-type: tm+mt
-source-wordcount: '930'
+source-wordcount: '897'
 ht-degree: 0%
 
 ---
@@ -37,10 +37,6 @@ En el sistema principal de GraphQL, el PWA envía una solicitud a la aplicación
 
 [!DNL Catalog Service] es una puerta de enlace de Storefront Services. El servicio accede a una base de datos independiente que contiene detalles del producto e información relacionada, como atributos del producto, variantes, precios y categorías. El servicio mantiene la base de datos sincronizada con Adobe Commerce mediante la indexación.
 Dado que el servicio evita la comunicación directa con la aplicación, puede reducir la latencia del ciclo de solicitud y respuesta.
-
->[!NOTE]
->
->La puerta de enlace es para una futura integración con Product Recommendations. En esta versión, puede acceder a las [!DNL Catalog Service GraphQL] y el [!DNL Live Search] consultas del mismo punto de conexión si tiene una clave de licencia válida para ambos productos.
 
 Los sistemas GraphQL principales y de servicio no se comunican directamente entre sí. Puede acceder a cada sistema desde una dirección URL diferente y las llamadas requieren información de encabezado diferente. Los dos sistemas GraphQL están diseñados para utilizarse juntos. El [!DNL Catalog Service] El sistema de GraphQL aumenta el sistema principal para que las experiencias de tienda de productos sean más rápidas.
 
