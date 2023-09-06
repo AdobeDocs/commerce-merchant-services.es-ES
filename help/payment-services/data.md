@@ -5,7 +5,7 @@ role: User
 level: Intermediate
 exl-id: dbf41ce9-01f9-45d0-b651-e4c499e83822
 feature: Payments, Checkout, Data Import/Export
-source-git-commit: 90bfa7099924feb308397960cff76bdf177bbe49
+source-git-commit: 6ba5a283d9138b4c1be11b80486826304c63247f
 workflow-type: tm+mt
 source-wordcount: '172'
 ht-degree: 0%
@@ -26,7 +26,7 @@ Los ID son fácilmente accesibles tanto en el detalle de la actividad comercial 
 
 El `invoice_id` y `custom_id` se muestran cerca de la parte inferior de los detalles de la actividad del comerciante para un pago:
 
-![`custom_id` en detalle de actividad de comerciante](assets/merchant-activity-ids.png)
+![`custom_id` en detalle de actividad de comerciante](assets/merchant-activity-ids.png){width="600" zoomable="yes"}
 
 `custom_id` y `invoice_id` en los detalles en el webhook de PayPal:
 

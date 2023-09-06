@@ -5,9 +5,9 @@ role: User
 level: Intermediate
 exl-id: 192e47b9-d52b-4dcf-a720-38459156fda4
 feature: Payments, Checkout, Orders
-source-git-commit: 9242e8eea078a00445c7f24ffc998b7d978a9775
+source-git-commit: 6ba5a283d9138b4c1be11b80486826304c63247f
 workflow-type: tm+mt
-source-wordcount: '1868'
+source-wordcount: '1864'
 ht-degree: 0%
 
 ---
@@ -35,7 +35,7 @@ La vista de visualización de datos del estado de pago del pedido está disponib
 
 En el _Administrador_ barra lateral, vaya a **Ventas** > **Servicios de pago** > _Pedidos_ para ver la visualización de datos [estado del plan de pagos](#statuses-information).
 
-![Visualización de datos de pago en el administrador](assets/orderpayment-dataviz.png){zoomable=yes}
+![Visualización de datos de pago en el administrador](assets/orderpayment-dataviz.png){width="800" zoomable="yes"}
 
 Clic **[!UICONTROL View Report]** para ir a la tabla detallada [Vista del informe de estado del pago del pedido](#order-payment-status-report-view).
 
@@ -73,7 +73,7 @@ La vista Informe de estado de pago del pedido está disponible en la vista Inici
 
 En el _Administrador_ barra lateral, vaya a **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > _[!UICONTROL Orders]_>**[!UICONTROL View Report]**para ver la tabla detallada de la vista de informe Estado de los pagos de pedidos.
 
-![Ordenar transacciones de estado de pago en el administrador](assets/orders-report-data.png)
+![Ordenar transacciones de estado de pago en el administrador](assets/orders-report-data.png){width="800" zoomable="yes"}
 
 Puede configurar esta vista, según las secciones de este tema, para presentar mejor los datos que desee ver.
 
@@ -115,7 +115,7 @@ Para obtener información sobre cómo configurar la exportación de datos, consu
 
 En la vista Informe de estado de pago del pedido, puede seleccionar el origen de datos—**[!UICONTROL Live]** _ o **[!UICONTROL Sandbox]**: para el que se desea ver los resultados del informe.
 
-![Selección de fuentes de datos](assets/datasource.png){width=400px}
+![Selección de fuentes de datos](assets/datasource.png){width="300" zoomable="yes"}
 
 If _[!UICONTROL Live]_es la fuente de datos seleccionada, puede ver información de informes de las tiendas que utilizan [!DNL Payment Services] en modo de producción. If_[!UICONTROL Sandbox]_ es la fuente de datos seleccionada, puede ver la información del informe del modo de zona protegida.
 
@@ -156,7 +156,7 @@ En la vista Informe de estado de pagos de pedidos, puede filtrar los resultados 
 El informe Estado de Pago del Pedido muestra todas las columnas de información disponibles de forma predeterminada. Sin embargo, puede personalizar qué columnas ve en el informe.
 
 1. En el _Administrador_ barra lateral, vaya a **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > _[!UICONTROL Orders]_>**[!UICONTROL View Report]**.
-1. Haga clic en _Configuración de columna_ icono (![icono de configuración de columna](assets/column-settings.png)).
+1. Haga clic en _Configuración de columna_ icono (![icono de configuración de columna](assets/column-settings.png){width="20" zoomable="yes"}).
 1. Para personalizar qué columnas ve en el informe, marque o desmarque columnas en la lista.
 
    El informe Estado de pago del pedido mostrará inmediatamente los cambios realizados en el menú Configuración de columna. Las preferencias de columna se guardarán y permanecerán en vigor si se aleja de la vista Informes.
@@ -186,7 +186,7 @@ La vista del informe Estado de los pagos del pedido muestra un _[!UICONTROL Last
 También puede forzar manualmente la actualización de los datos del informe de estado de los pagos de pedidos para ver la información del informe más actualizada.
 
 1. En el _Administrador_ barra lateral, vaya a **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > _[!UICONTROL Orders]_>**[!UICONTROL View Report]**.
-1. Haga clic en _Actualizar_ icono (![icono de actualización](assets/refresh-button-med.png)).
+1. Haga clic en _Actualizar_ icono (![icono de actualización](assets/refresh-button-med.png){width="20" zoomable="yes"}).
 
    Se actualizan los datos del informe de estado de pago del pedido, y *[!UICONTROL Update complete]* aparece una confirmación y la información más reciente está presente en la cuadrícula.
 
@@ -208,7 +208,7 @@ Puede descargar un archivo .csv con todos los estados visibles en la cuadrícula
 
 1. En el _Administrador_ barra lateral, vaya a **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > _[!UICONTROL Orders]_>**[!UICONTROL View Report]**.
 1. Si desea ver los estados de un periodo de tiempo distinto de los últimos 30 días, [personalizar el intervalo de tiempo para los estados](#customize-dates-timeframe).
-1. Haga clic en _Descargar_ (![icono de descarga](assets/icon-download.png)) icono.
+1. Haga clic en _Descargar_ (![icono de descarga](assets/icon-download.png){width="20" zoomable="yes"}) icono.
 
 Los estados de pago del pedido se descargan en formato .csv.
 

@@ -2,7 +2,7 @@
 title: Finalizar compra
 description: Personalice el cierre de compra para adaptarlo a las necesidades de sus clientes.
 feature: Payments, Checkout
-source-git-commit: 90bfa7099924feb308397960cff76bdf177bbe49
+source-git-commit: 6ba5a283d9138b4c1be11b80486826304c63247f
 workflow-type: tm+mt
 source-wordcount: '330'
 ht-degree: 0%
@@ -20,11 +20,11 @@ Si se produce un error durante la desprotección, [!DNL Payment Services] anula/
 
 Aparece un mensaje de error en la página de cierre de compra del comprador. El mensaje puede variar.
 
-![Error al comprobar](assets/user-checkout-error.png "Error al retirar")
+![Error al comprobar](assets/user-checkout-error.png "Error al retirar"){width="600" zoomable="yes"}
 
 También aparece un comentario sobre el pedido cancelado en el Administrador de un específico [pedido](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/order-management/orders/orders.html?lang=en).
 
-![Comentario de pedido cancelado en Administración para pedido](assets/admin-checkout-error.png "Comentario de pedido cancelado en Administración para pedido")
+![Comentario de pedido cancelado en Administración para pedido](assets/admin-checkout-error.png "Comentario de pedido cancelado en Administración para pedido"){width="600" zoomable="yes"}
 
 Si un comprador obtiene autorización para un pedido, pero el pedido no se creó ni se convirtió en un `Capture`, el orden se anula automáticamente. Este proceso garantiza que no se reserve crédito en la tarjeta de crédito del comprador y evita la tarifa del proveedor de pagos que se produce cuando la autorización se anula al final del período estándar de 29 días.
 

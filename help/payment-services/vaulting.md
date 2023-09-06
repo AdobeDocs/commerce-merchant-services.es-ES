@@ -3,7 +3,7 @@ title: Bóveda de tarjeta de crédito
 description: Los compradores pueden guardar los datos de su tarjeta de crédito para futuras compras.
 exl-id: b4060307-ffcd-41cb-9b9d-a2fef02f23bd
 feature: Payments, Checkout
-source-git-commit: 90bfa7099924feb308397960cff76bdf177bbe49
+source-git-commit: 6ba5a283d9138b4c1be11b80486826304c63247f
 workflow-type: tm+mt
 source-wordcount: '304'
 ht-degree: 0%
@@ -14,15 +14,15 @@ ht-degree: 0%
 
 Convierta a los clientes únicos en compradores fieles con depósito de tarjetas de crédito. Los compradores pueden guardar (o &quot;guardar&quot;) las credenciales de su tarjeta de crédito durante el cierre de compra para usarlas en una compra posterior para la misma tienda, u otra, dentro de la misma cuenta de comerciante.
 
-![Guarda su tarjeta de crédito para usarla más tarde](assets/save-card-for-later.png)
+![Guarda su tarjeta de crédito para usarla más tarde](assets/save-card-for-later.png){width="400" zoomable="yes"}
 
 Los compradores utilizan el token almacenado para completar un pago futuro con la información de su tarjeta de crédito guardada.
 
-![Usar credenciales almacenadas para futuras compras](assets/use-stored-card.png)
+![Usar credenciales almacenadas para futuras compras](assets/use-stored-card.png){width="400" zoomable="yes"}
 
 También pueden eliminar fácilmente sus tarjetas de crédito abovedadas de [Métodos de pago almacenados](https://docs.magento.com/user-guide/customers/account-dashboard-stored-payment-methods.html) en Mi cuenta.
 
-![Métodos de pago almacenados en Mi cuenta](assets/stored-payment-methods.png)
+![Métodos de pago almacenados en Mi cuenta](assets/stored-payment-methods.png){width="400" zoomable="yes"}
 
 ## Activar almacenamiento en depósito
 
@@ -41,7 +41,7 @@ Para crear un pedido en Admin para un cliente con su tarjeta de crédito:
 1. Seleccione el método de pago de tarjeta de crédito abovedado que desee.
 1. Después de completar cualquier otro paso necesario para el pedido, [enviarlo](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/point-of-purchase/assist/customer-account-create-order.html?lang=en#step-3%3A-submit-the-order).
 
-   ![Usar tarjeta de crédito abovedada en Admin para el cliente](assets/admin-vaultedcard.png)
+   ![Usar tarjeta de crédito abovedada en Admin para el cliente](assets/admin-vaultedcard.png){width="600" zoomable="yes"}
 
 ## Seguridad
 

@@ -3,7 +3,7 @@ title: Informe de transacciones
 description: Utilice el informe Transacciones para obtener visibilidad sobre las tasas de autorización de transacciones y las tendencias de transacciones.
 role: User
 level: Intermediate
-source-git-commit: dab47a7dcac5d32f4b10cd8b4ce1f7e5dc7fd6c9
+source-git-commit: 6ba5a283d9138b4c1be11b80486826304c63247f
 workflow-type: tm+mt
 source-wordcount: '1162'
 ht-degree: 0%
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 [!DNL Payment Services] para [!DNL Adobe Commerce] y [!DNL Magento Open Source] le ofrece informes completos para que pueda obtener una visión clara de las transacciones, pedidos y pagos de su tienda.
 
-![Informe Transacciones](assets/transactions-report.png){width="600" zoomable="yes"}
+![Informe Transacciones](assets/transactions-report.png){width="700" zoomable="yes"}
 
 El informe Transacciones proporciona visibilidad sobre las tasas de autorización de transacciones y las tendencias negativas de las transacciones para que pueda monitorizar de forma eficaz el estado de su tienda e identificar y abordar de forma preventiva cualquier problema de transacción.
 
@@ -91,7 +91,7 @@ En la vista Informe de transacciones, puede filtrar los resultados de los estado
 El informe Transacciones muestra todas las columnas de información disponibles de forma predeterminada. Sin embargo, puede personalizar qué columnas ve en el informe.
 
 1. En el _Administrador_ barra lateral, vaya a **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > _[!UICONTROL Transactions]_>**[!UICONTROL View Report]**.
-1. Haga clic en **[!UICONTROL Column settings]** icono ![icono de configuración de columna](assets/column-settings.png){width="25"}.
+1. Haga clic en **[!UICONTROL Column settings]** icono ![icono de configuración de columna](assets/column-settings.png){width="20" zoomable="yes"}.
 1. Para personalizar las columnas que se ven en el informe, marque o desmarque las columnas de la lista.
 
    El informe Transacciones muestra inmediatamente los cambios realizados en el menú Configuración de columna. Las preferencias de columna se guardan y se mantienen en vigor si se aleja de la vista Informes.
@@ -103,7 +103,7 @@ La vista del informe Transacciones muestra un _[!UICONTROL Last updated]_marca d
 También puede forzar manualmente una actualización de los datos del informe para ver la información del informe más actualizada.
 
 1. En el _Administrador_ barra lateral, vaya a **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > _[!UICONTROL Transactions]_>**[!UICONTROL View Report]**.
-1. Haga clic en _Actualizar_ icono (![icono de actualización](assets/refresh-button-med.png)).
+1. Haga clic en _Actualizar_ icono (![icono de actualización](assets/refresh-button-med.png){width="20" zoomable="yes"}).
 
    Se actualizan los datos del informe Transacciones, y *[!UICONTROL Update complete]* aparece una confirmación y la información más reciente está presente en la cuadrícula.
 
@@ -113,7 +113,7 @@ Puede descargar un archivo .csv con todas las transacciones visibles en la cuadr
 
 1. En el _Administrador_ barra lateral, vaya a **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > **[!UICONTROL Transactions]**.
 1. Si desea ver las transacciones de un periodo de tiempo diferente a los últimos 30 días, [personalizar el intervalo de tiempo para los estados](#customize-dates-timeframe).
-1. Haga clic en _Descargar_ ![icono de descarga](assets/icon-download.png){width="25"} icono.
+1. Haga clic en _Descargar_ ![icono de descarga](assets/icon-download.png){width="20" zoomable="yes"} icono.
 
 Las transacciones se descargan en formato .csv.
 

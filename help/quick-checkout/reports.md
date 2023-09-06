@@ -3,7 +3,7 @@ title: '[!DNL Quick Checkout] creación de informes'
 description: '''[!DNL Quick Checkout] ofrece información completa sobre los informes."'
 exl-id: 91c687f4-9953-4c2f-b240-73430603e6a1
 feature: Checkout, Services
-source-git-commit: b1984a26463e14b8dc9a789421e49e5ea81ad039
+source-git-commit: 6ba5a283d9138b4c1be11b80486826304c63247f
 workflow-type: tm+mt
 source-wordcount: '294'
 ht-degree: 1%
@@ -14,7 +14,7 @@ ht-degree: 1%
 
 [!DNL Quick Checkout] para Adobe Commerce y Magento Open Source ofrece informes completos para que pueda obtener información detallada de las estadísticas de experiencia de cierre de compra de su tienda.
 
-![Vista Informes](assets/reports-view-big-checkout.png)
+![Vista Informes](assets/reports-view-big-checkout.png){width="600" zoomable="yes"}
 
 >[!WARNING]
 >
@@ -24,7 +24,7 @@ ht-degree: 1%
 
 Los gráficos de la sección Información general muestran información detallada sobre el rendimiento de cierre de compra de su tienda, incluido el tiempo promedio de cierre de compra, las nuevas cuentas creadas durante el cierre de compra o el abandono de cierre de compra.
 
-![Resumen de informes](assets/overview-report-checkout.png)
+![Resumen de informes](assets/overview-report-checkout.png){width="600" zoomable="yes"}
 
 | Gráfico | Descripción |
 |---|---|
@@ -38,7 +38,7 @@ Los gráficos de la sección Información general muestran información detallad
 
 Los gráficos de la sección Tendencias muestran las tendencias de la experiencia de cierre de compra filtradas por tipo de cuenta o por las nuevas cuentas creadas durante el cierre de compra.
 
-![Tendencias de informes](assets/trends-report-checkout.png)
+![Tendencias de informes](assets/trends-report-checkout.png){width="600" zoomable="yes"}
 
 | Gráfico | Descripción |
 |---|---|
@@ -50,7 +50,7 @@ Los gráficos de la sección Tendencias muestran las tendencias de la experienci
 
 Puede filtrar los resultados mostrados por fecha o por ajustes preestablecidos existentes, como **Últimos 30 días**.
 
-![Vista de filtro](assets/filter-view.png)
+![Vista de filtro](assets/filter-view.png){width="300" zoomable="yes"}
 
 | Campo | Descripción |
 |---|---|

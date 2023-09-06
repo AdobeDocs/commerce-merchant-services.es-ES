@@ -3,7 +3,7 @@ title: "Incorporar el [!DNL Quick Checkout] para la extensión de Adobe Commerce
 description: "Descubra cómo [!DNL Quick Checkout] podría beneficiar a su instancia de Adobe Commerce y cómo incorporar y configurar correctamente la extensión."
 exl-id: 8caf746c-e31b-4331-8b0d-ea0f1e545bdd
 feature: Checkout, Services
-source-git-commit: b1984a26463e14b8dc9a789421e49e5ea81ad039
+source-git-commit: 6ba5a283d9138b4c1be11b80486826304c63247f
 workflow-type: tm+mt
 source-wordcount: '847'
 ht-degree: 0%
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 Para empezar a utilizar [!DNL Quick Checkout] para la extensión de Adobe Commerce, debe completar algunos pasos de incorporación para conectar su instancia con la funcionalidad de cierre de compra.
 
-![Cierre de compra rápido](assets/overview-admin-panel.png)
+![Cierre de compra rápido](assets/overview-admin-panel.png){width="800" zoomable="yes"}
 
 1. [Obtener extensión](#get-extension).
 1. [Cree una cuenta de comerciante de producción o de zona protegida con [!DNL Bolt]](#create-account-with-bolt). Proporcione toda la información necesaria para comprobar su identidad.
@@ -29,7 +29,7 @@ Si Gainsight está habilitada, el déclencheur de la variable **Haga el recorrid
 
 1. En el _Administrador_ barra lateral, vaya a **[!UICONTROL Stores]** > **[!UICONTROL Configuration]** > Avanzado:
 
-   ![Cierre de compra rápido](assets/gainsight-admin.png)
+   ![Cierre de compra rápido](assets/gainsight-admin.png){width="500" zoomable="yes"}
 
 Si Gainsight no está habilitada, continúe con los pasos de incorporación.
 
@@ -69,7 +69,7 @@ Para usar la variable [!DNL Quick Checkout] necesita [!DNL Bolt] claves únicas 
 - [!DNL Publishable key]: Una clave utilizada por el front-end para interactuar con [!DNL Bolt] API.
 - [!DNL Signing secret]: se utiliza para la verificación de firmas en solicitudes recibidas de [!DNL Bolt].
 
-  ![Cierre de compra rápido](assets/account-credentials.png)
+  ![Cierre de compra rápido](assets/account-credentials.png){width="500" zoomable="yes"}
 
 Consulte la [[!DNL Bolt] detalles del entorno](https://help.bolt.com/developers/references/environment-details/#about-keys){target="_blank"} página para obtener más información sobre las claves y el secreto de firma de [!DNL Bolt] para el [!DNL Quick Checkout] extensión.
 
@@ -87,7 +87,7 @@ Para conectar a su proveedor de servicios de pago, siga los pasos descritos en l
 1. En el panel izquierdo, expanda **Ventas** y seleccione **Finalizar compra**.
 1. En el [!DNL Quick Checkout] ver, establecer **Activar** hasta `Yes`.
 
-![Cierre de compra rápido](assets/quick-checkout-view-no-enable.png)
+![Cierre de compra rápido](assets/quick-checkout-view-no-enable.png){width="500" zoomable="yes"}
 
 >[!CAUTION]
 >
@@ -100,7 +100,7 @@ Para conectar a su proveedor de servicios de pago, siga los pasos descritos en l
 
 1. Valide las credenciales después de proporcionar su API única y [!DNL Publishable keys].
 
-![Cierre de compra rápido](assets/quick-checkout-main-view.png)
+![Cierre de compra rápido](assets/quick-checkout-main-view.png){width="500" zoomable="yes"}
 
 Consulte la [Configuración](../quick-checkout/settings-quick-checkout.md) para obtener más información sobre las opciones de configuración de [!DNL Quick Checkout] para la extensión de Adobe Commerce.
 
@@ -141,7 +141,7 @@ Consulte la [Sitio, tienda y vista de ámbito](https://experienceleague.adobe.co
 
 ## Configurar ajustes del servicio
 
-![Cierre de compra rápido](assets/service-settings.png)
+![Cierre de compra rápido](assets/service-settings.png){width="500" zoomable="yes"}
 
 1. Establecer **Activar seguimiento de cierre de compra** hasta `Yes`.
 

@@ -3,7 +3,7 @@ title: Configure las variables [!DNL Quick Checkout] para la extensión de Adobe
 description: Conozca las opciones de configuración de la [!DNL Quick Checkout] y cómo incorporar y configurar correctamente la extensión de.
 exl-id: 892e04dc-17d6-45e9-b2ab-c7a0735a75bc
 feature: Checkout, Services
-source-git-commit: b1984a26463e14b8dc9a789421e49e5ea81ad039
+source-git-commit: 6ba5a283d9138b4c1be11b80486826304c63247f
 workflow-type: tm+mt
 source-wordcount: '265'
 ht-degree: 1%
@@ -19,13 +19,13 @@ Para acceder a estas opciones de configuración:
 1. En el _Administrador_ barra lateral, vaya a **Tiendas** > _Configuración_ > **Configuración**.
 1. En el panel izquierdo, expanda **Ventas** y seleccione **Finalizar compra**.
 
-   ![Cierre de compra rápido](assets/config-new-logo-view.png)
+   ![Cierre de compra rápido](assets/config-new-logo-view.png){width="800" zoomable="yes"}
 
 Consulte la [Incorporación](../quick-checkout/onboarding.md) para obtener más información sobre cómo configurar el [!DNL Quick Checkout] para Adobe Commerce.
 
 ## Habilitar extensión
 
-![Cierre de compra rápido](assets/enable-method.png)
+![Cierre de compra rápido](assets/enable-method.png){width="500" zoomable="yes"}
 
 | Campo | Ámbito | Descripción |
 |---|---|---|
@@ -36,7 +36,7 @@ Consulte la [Incorporación](../quick-checkout/onboarding.md) para obtener más 
 
 ## Credenciales de cuenta
 
-![Cierre de compra rápido](assets/account-creds.png)
+![Cierre de compra rápido](assets/account-creds.png){width="500" zoomable="yes"}
 
 | Campo | Ámbito | Descripción |
 |---|---|---|
@@ -48,7 +48,7 @@ Consulte la [Incorporación](../quick-checkout/onboarding.md) para obtener más 
 
 ## Configuración del servicio
 
-![Cierre de compra rápido](assets/service-settings.png)
+![Cierre de compra rápido](assets/service-settings.png){width="500" zoomable="yes"}
 
 | Campo | Ámbito | Descripción |
 |---|---|---|

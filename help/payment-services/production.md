@@ -3,7 +3,7 @@ title: Activar [!DNL Payment Services] para producción
 description: Complete el proceso de incorporación habilitando [!DNL Payment Services] para producción.
 exl-id: 3b1269e8-127b-47f8-9738-9722a5737c63
 feature: Payments, Checkout, Configuration, Install
-source-git-commit: 90bfa7099924feb308397960cff76bdf177bbe49
+source-git-commit: 6ba5a283d9138b4c1be11b80486826304c63247f
 workflow-type: tm+mt
 source-wordcount: '702'
 ht-degree: 0%
@@ -78,7 +78,7 @@ Para habilitar la incorporación activa, debe solicitar el derecho de pagos desd
 1. En el _Administrador_ barra lateral, vaya a **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**.
 1. Clic **[!UICONTROL Get Live Payments]** en su [!DNL Payment Services] Hogar.
 
-   ![Solicitar derechos](assets/request-entitlements.png)
+   ![Solicitar derechos](assets/request-entitlements.png){width="500" zoomable="yes"}
 
 1. Complete el formulario.
 1. Un miembro del equipo de ventas se pondrá en contacto con usted.

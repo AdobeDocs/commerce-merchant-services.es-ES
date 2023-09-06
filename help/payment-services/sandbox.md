@@ -3,7 +3,7 @@ title: Configuración de la zona protegida de pruebas
 description: Utilizar una cuenta de zona protegida de PayPal [!DNL Payment Services] en modo de prueba.
 exl-id: 99c14b4e-e6cf-48f9-9546-5c0d5c71464d
 feature: Payments, Checkout, Configuration, Install
-source-git-commit: 90bfa7099924feb308397960cff76bdf177bbe49
+source-git-commit: 6ba5a283d9138b4c1be11b80486826304c63247f
 workflow-type: tm+mt
 source-wordcount: '595'
 ht-degree: 0%
@@ -32,7 +32,7 @@ Para completar la incorporación a la zona protegida:
    1. En el _[!UICONTROL Sandbox Accounts]_, haga clic en los tres puntos del_[!UICONTROL Manage accounts]_ para la cuenta de zona protegida que ha creado.
    1. Haga clic **[!UICONTROL View/edit account]**.
 
-      ![PayPal: ver/editar cuenta de zona protegida](assets/onboarding-viewedit-sandbox.png)
+      ![PayPal: ver/editar cuenta de zona protegida](assets/onboarding-viewedit-sandbox.png){width="300" zoomable="yes"}
 
    1. Copie y guarde el ID de correo electrónico y la contraseña generados por el sistema para uso futuro.
 
@@ -48,7 +48,7 @@ Para completar la incorporación a la zona protegida:
 1. Introduzca el correo electrónico y la contraseña de la cuenta de zona protegida de PayPal que generó en el paso 3 (no la información de su cuenta comercial de PayPal) y su país o región.
 1. Haga clic **[!UICONTROL Next]**.
 
-   ![PayPal: conecta tu cuenta PayPal para realizar pagos](assets/paypal-connectacct.png)
+   ![PayPal: conecta tu cuenta PayPal para realizar pagos](assets/paypal-connectacct.png){width="300" zoomable="yes"}
 
 1. Siga el flujo de PayPal con las credenciales de la cuenta de la zona protegida guardada anteriormente.
 1. En el _Administrador_ barra lateral, vaya a **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**.
