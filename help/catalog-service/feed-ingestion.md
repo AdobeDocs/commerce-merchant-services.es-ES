@@ -1,9 +1,9 @@
 ---
 title: Servicio de ingesta de fuentes
 description: Obtenga información acerca del servicio de ingesta de fuentes para Adobe Commerce
-source-git-commit: 12b1e89924a2eb89494bcb884fc3bc14e87b2b1c
+source-git-commit: b57fc43d23dbbcbcae31743fd0ab9c1b3d1c1084
 workflow-type: tm+mt
-source-wordcount: '360'
+source-wordcount: '404'
 ht-degree: 0%
 
 ---
@@ -15,9 +15,11 @@ ht-degree: 0%
 >
 >El servicio de ingesta de fuentes se encuentra actualmente en versión beta privada. Todavía no está disponible para uso general.
 
+El servicio de ingesta de fuentes permite a los clientes con catálogos grandes o complejos enviar datos directamente a los servicios de Adobe Commerce.
+
 El servicio de ingesta de fuentes reduce el tiempo que se tarda en procesar los cambios de productos (actualizaciones de precios, adición de nuevos atributos) al omitir la instancia de Adobe Commerce y mover los datos de catálogo de un Enterprise Resource Planning (ERP) de terceros directamente a los servicios de Adobe Commerce.
 
-Este servicio es para clientes que almacenan y administran su catálogo de productos en un sistema externo a la aplicación principal de Adobe Commerce.
+Este servicio es para clientes que almacenan y administran su catálogo de productos en un sistema externo a la aplicación principal de Adobe Commerce. Se proporciona como una API, para que los clientes puedan integrarla en sus sistemas existentes, lo que proporciona una flexibilidad añadida en la forma en que se implementa.
 
 A los clientes con catálogos grandes y complejos o que reciben actualizaciones frecuentes les preocupa que los nuevos datos puedan tardar más de lo deseado en aparecer en la tienda en directo. Dado que el servicio de catálogo sabe qué datos necesita para procesar estas actualizaciones, no es necesario enviar los datos a través del producto principal de comercio, solo para reenviarlos al servicio de catálogo. La eliminación de este paso intermedio es donde se encuentran las ganancias de eficiencia.
 

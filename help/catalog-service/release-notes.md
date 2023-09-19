@@ -3,9 +3,9 @@ title: '[!DNL Catalog Service] Notas de la versión'
 description: La información de la versión más reciente de [!DNL Catalog Service] para Adobe Commerce.
 exl-id: 9bf8e3f7-5b74-4755-867e-ac1c5000ff33
 feature: Services, Catalog Service, Release Notes
-source-git-commit: 822108fb92b2cac7cc62d00db035faed81ae9e25
+source-git-commit: 232dce5db4a82fcec367dce04fb6fba5826b9733
 workflow-type: tm+mt
-source-wordcount: '496'
+source-wordcount: '515'
 ht-degree: 0%
 
 ---
@@ -22,13 +22,14 @@ Las actualizaciones incluyen:
 
 ## Versión principal actual
 
-### Versión V1.11
+### Versión V1.12
 
-_18 de julio de 2023_
+_19 de septiembre de 2023_
 
 [!BADGE Admitido]{type=Informative tooltip="Admitido"}
 
-![Nuevo](../assets/new.svg) El servicio de catálogo ahora admite [`recommendations`](https://developer.adobe.com/commerce/webapi/graphql/schema/product-recommendations/queries/recommendations/) GraphQL consulta el Recommendations del producto.
+![Nuevo](../assets/new.svg) El servicio de catálogo ahora utiliza [Indexación de precios de SaaS](../price-index/index.md).
+![Fix](../assets/fix.svg) Esta versión incluye correcciones de errores y mejoras en el lado del servicio.
 
 #### Limitaciones conocidas
 
@@ -45,13 +46,25 @@ Las siguientes limitaciones se pueden resolver mediante la API Mesh y la API pri
 * [Precios de nivel](mesh.md)
 * Productos descargables y tarjetas regalo
 
+## Versiones anteriores
+
++++ Versiones anteriores
+
+### Versión V1.11
+
+_18 de julio de 2023_
+
+[!BADGE Compatibilidad]{type=Informative tooltip="Compatibilidad"}
+
+![Nuevo](../assets/new.svg) El servicio de catálogo ahora admite [`recommendations`](https://developer.adobe.com/commerce/webapi/graphql/schema/product-recommendations/queries/recommendations/) GraphQL consulta el Recommendations del producto.
+
 ### Versión V1.10
 
 _27 de junio de 2023_
 
 [!BADGE Admitido]{type=Informative tooltip="Admitido"}
 
-![Nuevo](../assets/new.svg) El servicio de catálogo ahora puede mostrar productos relacionados en el widget de página de detalles del producto.
+![Nuevo](../assets/new.svg) La API del servicio de catálogo ahora admite &quot;productos relacionados&quot;.
 
 ### Versión V1.7
 
@@ -118,10 +131,6 @@ _4 de octubre de 2022_
 ![Nuevo](../assets/new.svg) Ahora admite productos agrupados y agrupados.
 ![Nuevo](../assets/new.svg) Se han añadido anulaciones de visibilidad B2B. Ahora se pueden buscar productos y se pueden agregar al carro de compras para grupos de clientes específicos.
 ![Fix](../assets/fix.svg) El servicio es ahora más estable y ha mejorado el rendimiento.
-
-## Versiones anteriores
-
-+++Versiones beta
 
 ### Versión 0.3: beta+
 
