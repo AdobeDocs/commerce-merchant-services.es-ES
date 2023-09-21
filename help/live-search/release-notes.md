@@ -3,9 +3,9 @@ title: '[!DNL Live Search] Notas de la versión'
 description: '"La información de la última versión de [!DNL Live Search] de Adobe Commerce".'
 exl-id: 2a581e43-35f5-48ce-9752-844430ccdebf
 feature: Services, Search, Release Notes
-source-git-commit: 190ff4bd6442f77407675e48850e214e241b392a
+source-git-commit: 44c5d3f73d9cf658a978829ffaef6a79c5d90216
 workflow-type: tm+mt
-source-wordcount: '1662'
+source-wordcount: '1691'
 ht-degree: 0%
 
 ---
@@ -44,29 +44,23 @@ _15 de septiembre de 2023_
 
 ### Nuevas funciones
 
-* Se ha añadido una nueva pestaña de comercialización de categorías. Los usuarios ahora pueden añadir clasificaciones inteligentes y clasificaciones manuales (fijar, aumentar, enterrar, ocultar) por categoría
-* Los usuarios pueden agregar una regla de una sola categoría con clasificación inteligente o manual
-* Los usuarios ahora pueden agregar reglas de clasificación inteligente a las subcategorías
-* Se proporciona información detallada al eliminar subcategorías con clasificación inteligente
-* Se ha añadido la capacidad de eliminar reglas para estrategias de clasificación heredadas
-* Se ha añadido la capacidad de eliminar reglas para una sola categoría
-* Los usuarios ahora pueden buscar por nombre de categoría al agregar una regla
-* Con la vista de árbol de categorías, los usuarios ahora pueden ver qué categoría tiene reglas aplicadas.
-* La vista previa de categorías solo muestra la categoría seleccionada.
+![Nuevo](../assets/new.svg) Se ha añadido una nueva pestaña de comercialización de categorías. Los usuarios ahora pueden añadir clasificaciones inteligentes y clasificaciones manuales (fijar, aumentar, enterrar, ocultar) por categoría
+![Nuevo](../assets/new.svg) Los usuarios pueden agregar una regla de una sola categoría con clasificación inteligente o manual
+![Nuevo](../assets/new.svg) Los usuarios ahora pueden agregar reglas de clasificación inteligente a las subcategorías
+![Nuevo](../assets/new.svg) Se proporciona información detallada al eliminar subcategorías con clasificación inteligente
+![Nuevo](../assets/new.svg) Se ha añadido la capacidad de eliminar reglas para estrategias de clasificación heredadas
+![Nuevo](../assets/new.svg) Se ha añadido la capacidad de eliminar reglas para una sola categoría
+![Nuevo](../assets/new.svg) Los usuarios ahora pueden buscar por nombre de categoría al agregar una regla
+![Nuevo](../assets/new.svg) Con la vista de árbol de categorías, los usuarios ahora pueden ver qué categoría tiene reglas aplicadas.
+![Nuevo](../assets/new.svg) La vista previa de categorías solo muestra la categoría seleccionada.
 
 ### Actualizaciones
 
-* Se cambia el nombre de la pestaña Reglas a Reglas de búsqueda
-* Al clasificar por &quot;tendencias&quot;, ahora puede elegir entre:
-   * 3 días (predeterminado)
-   * 14 días
-   * 30 días
-* Se ha cambiado el nombre de &#39;Eventos&#39; (Amplificar/Fijar/Enterrar/Ocultar) a &#39;Clasificación manual&#39;
-* Se ha cambiado el nombre de &#39;Tipo de clasificación&#39; a &#39;Clasificación inteligente&#39;
-
-### Correcciones
-
-* Correcciones de errores menores
+![Fix](../assets/fix.svg) Se cambia el nombre de la pestaña Reglas a Reglas de búsqueda
+![Fix](../assets/fix.svg) Al clasificar por &quot;tendencias&quot;, ahora puede elegir entre: * 3 días (predeterminado) * 14 días * 30 días
+![Fix](../assets/fix.svg) Se ha cambiado el nombre de &#39;Eventos&#39; (Amplificar/Fijar/Enterrar/Ocultar) a &#39;Clasificación manual&#39;
+![Fix](../assets/fix.svg) Se ha cambiado el nombre de &#39;Tipo de clasificación&#39; a &#39;Clasificación inteligente&#39;
+![Fix](../assets/fix.svg) Correcciones de errores menores
 
 Los comerciantes deben actualizar el [!DNL Live Search] versión de la extensión >= 3.1.1 para acceder a estas funciones.
 
@@ -90,7 +84,7 @@ _1 de septiembre de 2023_
 
 ### Actualizaciones
 
-* El widget de lista de productos se ha actualizado para usar la variable [API del servicio de catálogo](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/queries/product-search/).
+![Fix](../assets/fix.svg) El widget de lista de productos se ha actualizado para usar la variable [API del servicio de catálogo](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/queries/product-search/).
 
 ## [!DNL Live Search] 3.0.2 {#302}
 
@@ -100,7 +94,7 @@ _7 de agosto de 2023_
 
 ### Nuevas funciones
 
-Los siguientes valores se han agregado a `storeDetails` objeto:
+![Nuevo](../assets/new.svg) Los siguientes valores se han agregado a `storeDetails` objeto:
 
 * &quot;Permitir todos los productos por página&quot;
 * Tipo de cambio
@@ -110,11 +104,8 @@ Los siguientes valores se han agregado a `storeDetails` objeto:
 
 ### Actualizaciones
 
-* Se han agregado módulos de servicio de catálogo al metapaquete para admitir la recuperación avanzada de datos.
-
-### Correcciones
-
-* El **Mi cuenta** La navegación por páginas ya no desaparece al utilizar el widget de página de lista de productos.
+![Fix](../assets/fix.svg) Se han agregado módulos de servicio de catálogo al metapaquete para admitir la recuperación avanzada de datos.
+![Fix](../assets/fix.svg) El **Mi cuenta** La navegación por páginas ya no desaparece al utilizar el widget de página de lista de productos.
 
 Los comerciantes deben actualizar el [!DNL Live Search] versión de la extensión >= 3.0.2 para acceder a estas funciones.
 
@@ -124,10 +115,6 @@ Se recomienda actualizar y probar antes de pasar a producción. Considere la pos
 
 El uso del widget de página de lista de productos de Live Search provocará que Google Tag Manager falle. Utilice el adaptador de búsqueda predeterminado si se necesita el Administrador de etiquetas de Google.
 
-## Versiones anteriores
-
-+++3.0.1 y anteriores
-
 ## [!DNL Live Search] 3.0.1 {#301}
 
 _14 de marzo de 2023_
@@ -136,37 +123,33 @@ _14 de marzo de 2023_
 
 ### Nuevas funciones
 
-* Tarjeta del elemento de producto en la previsualización de reglas
-* [Widget de página de lista de productos](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/live-search-storefront/plp-styling.html)
-* [Opciones de filtrado de categorías](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search/#facets)
-* Se ha añadido la capacidad de arrastrar y soltar para crear eventos Pin
-* Nuevas acciones de anclaje:
-   * Fijar en el punto: botón Fijar para crear un evento Fijar con un clic
-   * Anclar a la parte superior: coloca el producto en la primera posición
-   * Fijar para abajo: coloca el producto en la parte inferior de los resultados
-   * Desanclar un evento con un clic
-* [Clasificación inteligente para reglas](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/live-search-admin/rules/rules-add.html#ranking-type)
+![Nuevo](../assets/new.svg) Tarjeta del elemento de producto en la previsualización de reglas
+![Nuevo](../assets/new.svg) [Widget de página de lista de productos](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/live-search-storefront/plp-styling.html)
+![Nuevo](../assets/new.svg) [Opciones de filtrado de categorías](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search/#facets)
+![Nuevo](../assets/new.svg) Se ha añadido la capacidad de arrastrar y soltar para crear eventos Pin
+![Nuevo](../assets/new.svg) Nuevas acciones de anclaje: * Anclar a punto: botón Anclar para crear un evento de anclaje con un clic * Anclar al principio - Coloca el producto en la primera posición * Anclar al final - Coloca el producto en la parte inferior de los resultados * Desanclar un evento con un clic
+![Nuevo](../assets/new.svg) [Clasificación inteligente para reglas](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/live-search-admin/rules/rules-add.html#ranking-type)
 
 ### Actualizaciones
 
-* Configurar reglas ahora ordena automáticamente las posiciones de forma única
-* Al eliminar un evento existente, ahora se actualiza la previsualización
-* Se pueden guardar reglas sin eventos
-* Quitar selector de facetas &quot;Seleccionar tipo&quot;
-* Se ha añadido el nuevo estado &quot;Edición&quot; para reglas no guardadas
+![Fix](../assets/fix.svg) Configurar reglas ahora ordena automáticamente las posiciones de forma única
+![Fix](../assets/fix.svg) Al eliminar un evento existente, ahora se actualiza la previsualización
+![Fix](../assets/fix.svg) Se pueden guardar reglas sin eventos
+![Fix](../assets/fix.svg) Quitar selector de facetas &quot;Seleccionar tipo&quot;
+![Fix](../assets/fix.svg) Se ha añadido el nuevo estado &quot;Edición&quot; para reglas no guardadas
 
 ### Correcciones
 
-* Se ha corregido un error del servidor cuando hay un evento no finalizado durante la operación de guardar
-* Se ha corregido correctamente la eliminación de un evento específico cuando hay varios eventos
-* Se ha corregido el evento de regla existente que no se actualizaba cuando se agregaba un nuevo evento
-* Se ha corregido un segundo clic en &quot;Editar&quot; en los detalles, [!DNL Live Search] página que requiere recarga
-* Sinónimos: se ha corregido un problema por el que, cuando un usuario hacía clic fuera de la entrada, no podía devolver el enfoque al campo
-* Otras correcciones de errores menores y actualizaciones de rendimiento
+![Fix](../assets/fix.svg) Se ha corregido un error del servidor cuando hay un evento no finalizado durante la operación de guardar
+![Fix](../assets/fix.svg) Se ha corregido correctamente la eliminación de un evento específico cuando hay varios eventos
+![Fix](../assets/fix.svg) Se ha corregido el evento de regla existente que no se actualizaba cuando se agregaba un nuevo evento
+![Fix](../assets/fix.svg) Se ha corregido un segundo clic en &quot;Editar&quot; en los detalles, [!DNL Live Search] página que requiere recarga
+![Fix](../assets/fix.svg) Sinónimos: se ha corregido un problema por el que, cuando un usuario hacía clic fuera de la entrada, no podía devolver el enfoque al campo
+![Fix](../assets/fix.svg) Otras correcciones de errores menores y actualizaciones de rendimiento
 
 
-* ![Error](../assets/bug.svg) - La clasificación por &quot;Recomendado para ti&quot; solo se admite dentro de los widgets de Live Search. No es compatible con la funcionalidad de búsqueda predeterminada de Luma y PWA.
-* ![Error](../assets/bug.svg) : Las facetas de atributos de precio personalizados no se representan correctamente en Luma, pero la API filtra correctamente en ellas.
+![Error](../assets/bug.svg) - La clasificación por &quot;Recomendado para ti&quot; solo se admite dentro de los widgets de Live Search. No es compatible con la funcionalidad de búsqueda predeterminada de Luma y PWA.
+![Error](../assets/bug.svg) : Las facetas de atributos de precio personalizados no se representan correctamente en Luma, pero la API filtra correctamente en ellas.
 
 Los comerciantes deben actualizar el [!DNL Live Search] versión de la extensión >= 3.0.1 para acceder a estas funciones.
 
@@ -176,7 +159,7 @@ Se recomienda actualizar y probar antes de pasar a producción. Considere la pos
 
 [!BADGE Admitido]{type="Informativo" tooltip="Admitido"}
 
-* ![Fix](../assets/fix.svg) : Live Search generaría un error cuando los recursos del SDK no estaban disponibles debido a problemas de red. Este error se ha corregido.
+![Fix](../assets/fix.svg) : Live Search generaría un error cuando los recursos del SDK no estaban disponibles debido a problemas de red. Este error se ha corregido.
 
 Los comerciantes deben actualizar la versión de la extensión de Live Search >= 2.0.5 para acceder a estas funciones.
 

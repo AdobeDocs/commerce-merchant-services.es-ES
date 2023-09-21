@@ -2,7 +2,7 @@
 title: Incorporación e instalación
 description: Obtenga información sobre cómo instalar [!DNL Catalog Service]
 exl-id: 4e9fbdc9-67a1-4703-b8c0-8b159e0cc2a7
-source-git-commit: 75ff893bf5867ededa49807835676ddf9b19adc9
+source-git-commit: 44c5d3f73d9cf658a978829ffaef6a79c5d90216
 workflow-type: tm+mt
 source-wordcount: '649'
 ht-degree: 0%
