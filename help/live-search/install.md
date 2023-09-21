@@ -3,9 +3,9 @@ title: "Instalar [!DNL Live Search]"
 description: '"Obtenga información sobre cómo instalar, actualizar y desinstalar [!DNL Live Search] de Adobe Commerce".'
 exl-id: aa251bb0-d52c-4cff-bccb-76a08ae2a3b2
 role: Admin, Developer
-source-git-commit: 96a5791c5716f612f473540f27bd3f99b1bfe7c8
+source-git-commit: 97a743b1f7162af01930a37db448432acb9f89d5
 workflow-type: tm+mt
-source-wordcount: '1299'
+source-wordcount: '1323'
 ht-degree: 0%
 
 ---
@@ -73,6 +73,9 @@ En esta situación, las operaciones de tienda se interrumpen mientras que la var
    * Fuente de productos
    * Fuente de variante del producto
    * Fuente de atributos de catálogo
+   * Fuente de precios de productos
+   * Fuente de datos del sitio web Ámbitos
+   * Fuente de datos de grupos de clientes ámbitos
 
 1. Configure su [Claves de API](#configure-api-keys) y compruebe que los datos del catálogo estén [sincronizado](#synchronize-catalog-data) con [!DNL Live Search] servicios.
 
@@ -121,6 +124,9 @@ En este escenario, [!DNL Elasticsearch] administra temporalmente las solicitudes
    * Fuente de productos
    * Fuente de variante del producto
    * Fuente de atributos de catálogo
+   * Fuente de precios de productos
+   * Fuente de datos del sitio web Ámbitos
+   * Fuente de datos de grupos de clientes ámbitos
 
 1. Configure su [Claves de API](#configure-api-keys) y compruebe que los datos del catálogo estén [sincronizado](#synchronize-catalog-data) con [!DNL Live Search] servicios.
 
@@ -211,7 +217,7 @@ Para actualizar [!DNL Live Search], ejecute lo siguiente desde la línea de coma
 composer update magento/live-search --with-dependencies
 ```
 
-Para actualizar a una versión principal como de 2.0.0 a 3.0.1, edite la raíz del proyecto [!DNL Composer] `.json` como se indica a continuación:
+Para actualizar a una versión principal como de 2.0.0 a 3.1.1, edite la raíz del proyecto [!DNL Composer] `.json` como se indica a continuación:
 
 1. Si está instalado `magento/live-search` la versión es `2.0.3` o inferior, y está actualizando a la versión `3.0.0` O superior, ejecute el siguiente comando antes de la actualización:
 

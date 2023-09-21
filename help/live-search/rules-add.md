@@ -2,9 +2,9 @@
 title: "Agregar reglas"
 description: '"Aprenda a crear [!DNL Live Search] reglas".'
 exl-id: c6b92ef5-3b08-47f9-8412-955a9c95a9ee
-source-git-commit: 0b0e9a630162c4c98c6a3af969002def03155267
+source-git-commit: 8093cf72e9adf846f4c40d302d20c77142368c8e
 workflow-type: tm+mt
-source-wordcount: '1419'
+source-wordcount: '1428'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ Para generar una regla, el primer paso es utilizar el editor de reglas para defi
 
 1. En el Administrador, vaya a **Marketing** > SEO y búsqueda > **[!DNL Live Search]**.
 1. Configure las variables **Ámbito** para identificar el [vista de tienda](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings) donde se aplica la regla.
-1. Haga clic en **Reglas** pestaña.
+1. Haga clic en **Buscar reglas** pestaña.
 1. Clic **Añadir regla** para iniciar el editor de reglas.
 
 ## Condiciones
@@ -70,9 +70,9 @@ Una regla puede tener hasta diez condiciones. El operador lógico que une dos co
 
 1. Para añadir otra condición, haga clic en **Añadir condición** y repita el proceso.
 
-## Tipo de clasificación
+## Clasificación inteligente
 
-La clasificación combina los comportamientos de los usuarios y las estadísticas del sitio para determinar la clasificación del producto.
+La clasificación inteligente combina los comportamientos de los usuarios y las estadísticas del sitio para determinar la clasificación del producto.
 Los propietarios de tiendas pueden configurar los siguientes tipos de estrategias de clasificación:
 
 ![Reglas: coincidencia](assets/rules-ranking-type.png)
@@ -90,9 +90,9 @@ Los propietarios de tiendas pueden configurar los siguientes tipos de estrategia
 >
 >Los apóstrofos y las citas en las consultas pueden llevar a algunos problemas menores con clasificación y relevancia en algunos idiomas.
 
-## Añadir eventos
+## Clasificación manual
 
-Los eventos son acciones que modifican los resultados de búsqueda cuando se cumplen las condiciones definidas. Una sola regla puede tener hasta 25 eventos.
+La clasificación manual (anteriormente denominada Eventos) es una acción que modifica los resultados de la búsqueda cuando se cumplen las condiciones definidas. Una sola regla puede tener hasta 25 eventos.
 
 * Ampliación: mueve un producto a una posición superior en los resultados de búsqueda.
 * Entierro: mueve un SKU a una posición inferior en los resultados de búsqueda.
@@ -166,7 +166,7 @@ La información introducida aquí aparece en la variable [Detalles de regla](rul
 | Cualquiera | Cambia todos los operadores lógicos de la regla a `OR` y devuelve el conjunto de productos coincidentes. |
 | Todo | Cambia todos los operadores lógicos de la regla a `AND` y devuelve el conjunto de productos coincidentes. |
 
-### Eventos
+### Clasificación manual
 
 | Evento | Descripción |
 |--- |--- |

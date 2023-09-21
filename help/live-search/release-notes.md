@@ -3,10 +3,10 @@ title: '[!DNL Live Search] Notas de la versión'
 description: '"La información de la última versión de [!DNL Live Search] de Adobe Commerce".'
 exl-id: 2a581e43-35f5-48ce-9752-844430ccdebf
 feature: Services, Search, Release Notes
-source-git-commit: add4d61f1e97bdf889ab0de694f8c3921caaab50
+source-git-commit: 190ff4bd6442f77407675e48850e214e241b392a
 workflow-type: tm+mt
-source-wordcount: '1459'
-ht-degree: 1%
+source-wordcount: '1662'
+ht-degree: 0%
 
 ---
 
@@ -36,6 +36,52 @@ _25 de abril de 2023_
 
 +++
 
+## [!DNL Live Search] 3.1.1 {#311}
+
+_15 de septiembre de 2023_
+
+[!BADGE Admitido]{type=Informative tooltip="Admitido"}
+
+### Nuevas funciones
+
+* Se ha añadido una nueva pestaña de comercialización de categorías. Los usuarios ahora pueden añadir clasificaciones inteligentes y clasificaciones manuales (fijar, aumentar, enterrar, ocultar) por categoría
+* Los usuarios pueden agregar una regla de una sola categoría con clasificación inteligente o manual
+* Los usuarios ahora pueden agregar reglas de clasificación inteligente a las subcategorías
+* Se proporciona información detallada al eliminar subcategorías con clasificación inteligente
+* Se ha añadido la capacidad de eliminar reglas para estrategias de clasificación heredadas
+* Se ha añadido la capacidad de eliminar reglas para una sola categoría
+* Los usuarios ahora pueden buscar por nombre de categoría al agregar una regla
+* Con la vista de árbol de categorías, los usuarios ahora pueden ver qué categoría tiene reglas aplicadas.
+* La vista previa de categorías solo muestra la categoría seleccionada.
+
+### Actualizaciones
+
+* Se cambia el nombre de la pestaña Reglas a Reglas de búsqueda
+* Al clasificar por &quot;tendencias&quot;, ahora puede elegir entre:
+   * 3 días (predeterminado)
+   * 14 días
+   * 30 días
+* Se ha cambiado el nombre de &#39;Eventos&#39; (Amplificar/Fijar/Enterrar/Ocultar) a &#39;Clasificación manual&#39;
+* Se ha cambiado el nombre de &#39;Tipo de clasificación&#39; a &#39;Clasificación inteligente&#39;
+
+### Correcciones
+
+* Correcciones de errores menores
+
+Los comerciantes deben actualizar el [!DNL Live Search] versión de la extensión >= 3.1.1 para acceder a estas funciones.
+
+Después de instalar la versión 3.1.1, se deben habilitar estos nuevos indexadores:
+
+* Fuente de precios de productos
+* Fuente de datos del sitio web Ámbitos
+* Fuente de datos de grupos de clientes ámbitos
+
+Se recomienda actualizar y probar en control de calidad o ensayo antes de aplicar cambios en producción.
+
+## Versiones anteriores
+
++++3.1.0 y anteriores
+
 ## [!DNL Live Search] 3.1.0 {#310}
 
 _1 de septiembre de 2023_
@@ -45,10 +91,6 @@ _1 de septiembre de 2023_
 ### Actualizaciones
 
 * El widget de lista de productos se ha actualizado para usar la variable [API del servicio de catálogo](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/queries/product-search/).
-
-## Versiones anteriores
-
-+++3.0.2 y anteriores
 
 ## [!DNL Live Search] 3.0.2 {#302}
 

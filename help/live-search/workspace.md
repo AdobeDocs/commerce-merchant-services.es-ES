@@ -2,9 +2,9 @@
 title: '[!DNL Live Search] Workspace'
 description: El [!DNL Live Search] workspace se utiliza para configurar, administrar y supervisar el rendimiento de la búsqueda.
 exl-id: fb85974a-a5f9-4e6c-bd03-451e6457f2d2
-source-git-commit: 166665c3ee27ed7e07e00df0e3eab060f3686869
+source-git-commit: 550c382671fd5bb611cb6c502204dacc9748cffc
 workflow-type: tm+mt
-source-wordcount: '226'
+source-wordcount: '238'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 El espacio de trabajo es donde se configura, administra y supervisa el rendimiento de [!DNL Live Search]. El menú de la parte superior proporciona acceso a las herramientas de cada área funcional.  Las funciones disponibles reflejan la selección actual del menú.
 
-![Faceting workspace](assets/faceting-workspace.png)
+![Faceting workspace](assets/workspace.png)
 
 ## Establecer el ámbito
 
@@ -26,6 +26,7 @@ Inicialmente, la variable [ámbito](https://experienceleague.adobe.com/docs/comm
 | [Rendimiento](performance.md) | El panel proporciona una perspectiva del rendimiento de búsqueda de productos. |
 | [Faceteado](facets.md) | Filtro de alto rendimiento que utiliza varias dimensiones de valores de atributo para restringir los criterios de búsqueda. |
 | [Sinónimos](synonyms.md) | Amplíe el alcance de la búsqueda para incluir las palabras que los compradores podrían utilizar para encontrar productos que difieran de los del catálogo. |
-| [Reglas](rules.md) | Dé forma a la experiencia de búsqueda con reglas lógicas que almacenan en déclencheur las acciones programadas. Impulse, entierre, fije u oculte productos para calibrar los resultados de búsqueda y lograr así sus objetivos empresariales. |
+| [Buscar reglas](rules.md) | Dé forma a la experiencia de búsqueda con reglas lógicas que almacenan en déclencheur las acciones programadas. Impulse, entierre, fije u oculte productos para calibrar los resultados de búsqueda y lograr así sus objetivos empresariales. |
+| [Comercialización por categorías](category-merch.md) | Aplique la regla y la comercialización inteligente en el nivel de categoría. |
 | [GraphQL](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/) | Los desarrolladores que han iniciado sesión en el administrador de su tienda pueden componer y probar consultas con datos de catálogo reales. Para obtener más información, vaya a [Información general de GraphQL](https://developer.adobe.com/commerce/webapi/graphql/) en el [!DNL Live Search] documentación para desarrolladores. |
 | [Configuración](settings.md) | Determine cómo se agrupan los valores de faceta de precio por intervalo de precio en la tienda. |

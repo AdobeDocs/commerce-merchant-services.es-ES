@@ -1,17 +1,17 @@
 ---
-title: "Rules Workspace"
+title: "Espacio de trabajo de reglas de búsqueda"
 description: '"Aprenda a rodear el [!DNL Live Search] rules workspace".'
 exl-id: a52839fb-2264-4443-83c3-9eaa2ccb6996
-source-git-commit: 91d0713a3e57a3748609b6b4bcb723c21a461519
+source-git-commit: 40bcae7a792660f02390f4d55967767b15c84f38
 workflow-type: tm+mt
-source-wordcount: '573'
+source-wordcount: '578'
 ht-degree: 1%
 
 ---
 
-# Rules Workspace
+# Espacio de trabajo Reglas de búsqueda
 
-El espacio de trabajo de reglas muestra la selección actual de reglas y su estado, y proporciona acceso a las herramientas necesarias para crear y administrar reglas. Desde el espacio de trabajo puede:
+El espacio de trabajo Reglas de búsqueda muestra la selección actual de reglas y su estado, y proporciona acceso a las herramientas necesarias para crear y administrar reglas. Desde el espacio de trabajo puede:
 
 * Buscar reglas
 * Ver detalles de la regla
@@ -46,7 +46,7 @@ Las columnas visibles tienen una marca de verificación azul en el menú de opci
    * Inactivo
    * Programado
 
-## Buscar reglas por nombre
+## Buscar reglas de búsqueda por nombre
 
 Empiece a escribir el nombre de la regla o cualquier palabra en el nombre de la misma.
 La búsqueda encuentra las reglas coincidentes a medida que escribe. La cadena de caracteres coincidentes se resalta en el nombre de cada regla encontrada.
@@ -57,7 +57,7 @@ La búsqueda encuentra las reglas coincidentes a medida que escribe. La cadena d
 
 El panel de detalles muestra el nombre de la regla, el estado, las condiciones y los eventos, la fecha de inicio y finalización, la descripción y la fecha de la última edición. Las reglas se pueden habilitar, editar y eliminar desde el panel de detalles.
 
-1. En el *Reglas* , busque la regla en la cuadrícula que desee ver y haga clic en **Más** (...).
+1. En el *Buscar reglas* , busque la regla en la cuadrícula que desee ver y haga clic en **Más** (...).
 1. Clic **Ver detalles**.
 Puede realizar cualquiera de las siguientes acciones desde el panel Ver detalles:
 

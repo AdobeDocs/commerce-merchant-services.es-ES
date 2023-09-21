@@ -3,9 +3,9 @@ title: "Resumen de incorporación"
 description: "[!DNL Live Search] flujo de incorporación, requisitos del sistema, límites y limitaciones"
 exl-id: 45f6c1ae-544b-47ef-9feb-c1a05f93108a
 recommendations: noCatalog
-source-git-commit: 9ae4aff1851e9ce9920c4fbf11d2616d6f0f6307
+source-git-commit: ee8c37dc5dab9fcbc47d3d66e3ae0f99c9cb82d8
 workflow-type: tm+mt
-source-wordcount: '545'
+source-wordcount: '551'
 ht-degree: 0%
 
 ---
@@ -28,6 +28,10 @@ Para empezar a utilizar [!DNL Live Search] para Adobe Commerce, complete el proc
 
 * Adobe Commerce local (EE) : 2.4.4+
 * Adobe Commerce en la nube (ECE) : 2.4.4+
+
+## Extremo
+
+[!DNL Live Search] se comunica a través del punto final en `https://catalog-service.adobe.io/graphql`.
 
 ## Límites y umbrales
 

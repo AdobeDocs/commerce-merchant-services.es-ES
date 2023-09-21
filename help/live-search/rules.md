@@ -1,15 +1,15 @@
 ---
-title: "Reglas"
+title: "Reglas de búsqueda"
 description: '"[!DNL Live Search] las reglas combinan lógica con acciones para dar forma a la experiencia de compra".'
 exl-id: d06a3040-6987-4813-90ae-2f7b3ad0b232
-source-git-commit: 7307702a62a6b2c3e6c6083a59f2ac3587b0985e
+source-git-commit: 40bcae7a792660f02390f4d55967767b15c84f38
 workflow-type: tm+mt
-source-wordcount: '588'
+source-wordcount: '592'
 ht-degree: 0%
 
 ---
 
-# Reglas
+# Buscar reglas
 
 [!DNL Live Search] las reglas combinan lógica con acciones para dar forma a la experiencia de búsqueda de un comprador en su tienda. Puede utilizar reglas para impulsar, enterrar, fijar u ocultar productos con el fin de calibrar los resultados de búsqueda en tiempo real para alcanzar los objetivos de su empresa.
 
@@ -23,7 +23,7 @@ Puede combinar varias condiciones y acciones, y programar una regla para que est
 
 ## Requisitos
 
-Una regla simple puede tener una sola condición y un solo evento, mientras que una regla compleja puede tener hasta diez condiciones que almacenen en déclencheur hasta 25 eventos.
+Una regla de búsqueda simple puede tener una sola condición y un solo evento, mientras que una regla compleja puede tener hasta diez condiciones que almacenen en déclencheur hasta 25 eventos.
 Las reglas pueden tener:
 
 * Hasta diez condiciones
@@ -49,7 +49,7 @@ Al componer una regla compleja, puede resultar útil escribirla con sangría par
 
 ## Orden de prioridad con varias reglas
 
-Solo se aplica una regla a un término de búsqueda a la vez.
+Solo se aplica una regla de búsqueda a un término de búsqueda al mismo tiempo.
 Si se encuentran varias reglas aplicables a una frase de búsqueda, se aplican todas estas reglas. Si hay una colisión entre dos reglas—`rule 1` que aumenta sku1 pero `rule 2` oculta el mismo SKU y, a continuación, la regla aplicada más recientemente (`rule 2`) tiene prioridad.
 
 * Las reglas se ordenan por la marca de tiempo &quot;Última modificación&quot;. La regla modificada más recientemente se aplica primero, y las reglas más antiguas después, en orden de marca de tiempo.

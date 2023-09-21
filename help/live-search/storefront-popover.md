@@ -2,9 +2,9 @@
 title: "[!DNL Storefront Popover]"
 description: "La [!DNL Live Search storefront popover] devuelve dinámicamente productos sugeridos y miniaturas."
 exl-id: 88fdc3ed-b606-40de-94b7-435be09c4072
-source-git-commit: 96a5791c5716f612f473540f27bd3f99b1bfe7c8
+source-git-commit: 441f8c6c6113ce96c5353dcbde170ca600bb0abb
 workflow-type: tm+mt
-source-wordcount: '466'
+source-wordcount: '485'
 ht-degree: 0%
 
 ---
@@ -49,10 +49,13 @@ El [Servicio de catálogo para Adobe Commerce](../catalog-service/overview.md) E
 
 Los comerciantes pueden personalizar y ampliar widgets o elementos de tienda mediante el servicio de catálogo, pero esto está fuera del ámbito para el equipo de asistencia de Adobe.
 
+## Implementaciones sin encabezado
+
+Para aquellos con implementaciones sin encabezado, es posible instalar la ventana emergente de Live Search con un [npm package](https://www.npmjs.com/package/@magento/ds-livesearch-storefront-utils).
+
 ## Limitaciones
 
 * El [!DNL Live Search] [!DNL storefront popover] solo está disponible para tiendas que utilizan el *Luma* o una temática personalizada que se base en *Luma*. Las rutas de exploración de la página de resultados de búsqueda no tendrán *Lume* estilo.
 * El [!DNL popover] no es compatible con *Vacío* tema. Consulte [Estilo [!DNL Popover] Elementos](storefront-popover-styling.md) para obtener más información.
 * El [!DNL popover] no es compatible con el formulario de pedido rápido.
 * No se admiten listas de deseos ni comparaciones de productos.
-* Solo se admite la moneda base.
