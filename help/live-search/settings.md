@@ -1,23 +1,27 @@
 ---
 title: "[!DNL Live Search] Configuración"
-description: '"Configurar intervalos y rangos de facetas de precios para [!DNL Live Search] facetas".'
+description: "Configure las opciones de [!DNL Live Search] servicio."
 exl-id: a0b63116-4b8f-490c-a54e-e21f1b02b634
-source-git-commit: 9bacdb5fd232a3603bcb7abe2e93da9ead794d38
+source-git-commit: d367fdb0cb0ddf67ee1ce31b178fcb29ec5283ad
 workflow-type: tm+mt
-source-wordcount: '240'
+source-wordcount: '310'
 ht-degree: 0%
 
 ---
 
 # Configuración
 
-Utilice el *Configuración* para configurar los intervalos y rangos de facetas de precio que están disponibles como filtros de búsqueda en la tienda. La configuración de la faceta de precio es estática en lugar de dinámica y no se basa en los resultados de búsqueda.
+Utilice el *Configuración* para configurar los intervalos y rangos de facetas de precios y el idioma predeterminado del índice.
 
-Puede especificar el número de grupos de intervalos de precios y cómo se distribuyen los valores de precios entre ellos. Cada rango de precios se superpone con el grupo anterior por uno. Por ejemplo, cinco grupos con un intervalo de veinte crean los siguientes intervalos de precios: 0-20, 20-40, 40-60, 60-80 y >80. Si no hay suficientes productos en el catálogo para rellenar todos los intervalos definidos, la visualización de los grupos disponibles se ajusta en consecuencia. Por ejemplo: 0-20, 60-80, >80.
+Facetado de precios especifica el número de grupos de intervalos de precios y cómo se distribuyen los valores de precios entre ellos.
+
+La configuración de idioma indica a [!DNL Live Search] indica qué idioma esperar al escribir el índice.
 
 ![Configuración](assets/settings.png)
 
-## Configurar agrupaciones de facetas de precios
+## Facetado de precios
+
+Puede especificar el número de grupos de intervalos de precios y cómo se distribuyen los valores de precios entre ellos. Cada rango de precios se superpone con el grupo anterior por uno. Por ejemplo, cinco grupos con un intervalo de 20 crean los siguientes intervalos de precios: 0-20, 20-40, 40-60, 60-80 y >80. Si no hay suficientes productos en el catálogo para rellenar todos los intervalos definidos, la visualización de los grupos disponibles se ajusta en consecuencia. Por ejemplo: 0-20, 60-80, >80.
 
 1. En el Administrador, vaya a **Marketing** > *SEO y búsqueda* > **[!DNL Live Search]**.
 1. En el **Configuración** pestaña debajo de *Facetado de precios*, haga lo siguiente:
@@ -27,9 +31,18 @@ Puede especificar el número de grupos de intervalos de precios y cómo se distr
 
    La configuración actualizada tarda unos 15 minutos en estar disponible en la tienda.
 
-## Descripciones de campos
+### Descripciones de campos
 
 | Campo | Descripción |
 |--- |--- |
 | Número de selecciones | Especifica el número de agrupaciones de intervalos de precios que se pueden usar como filtros de búsqueda en la tienda. Valor predeterminado: 8, Valor máximo: 50 |
-| Valor de intervalo | Especifica el intervalo de rango de precios para cada grupo. Por ejemplo, cinco selecciones con un valor de intervalo de veinte crean cinco agrupaciones de 0-20, 20-40, 40-60, 60-80 y >80. Valor predeterminado: 5, Valor máximo: 10 000 |
+| Valor de intervalo | Especifica el intervalo de rango de precios para cada grupo. Por ejemplo, cinco selecciones con un valor de intervalo de 20 crean cinco agrupaciones de 0-20, 20-40, 40-60, 60-80 y >80. Valor predeterminado: 5, Valor máximo: 10 000 |
+
+## Idioma
+
+La configuración de idioma indica [!DNL Live Search] qué idioma esperar al leer el catálogo y escribir el índice.
+
+Los idiomas tienen diferentes conjuntos de reglas gramaticales: cómo se separan las palabras, tiempos verbales y sinónimos, por ejemplo.
+La configuración Idioma garantiza que se aplique el conjunto correcto de reglas al mecanismo de indexación.
+
+La configuración de idioma debe establecerse en el idioma principal del catálogo.
