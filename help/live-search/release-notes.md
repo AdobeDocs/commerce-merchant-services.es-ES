@@ -3,9 +3,9 @@ title: "[!DNL Live Search] Notas de la versión"
 description: '"La información de la última versión de [!DNL Live Search] de Adobe Commerce".'
 exl-id: 2a581e43-35f5-48ce-9752-844430ccdebf
 feature: Services, Search, Release Notes
-source-git-commit: 21170ecc66891d803b6c45dd8e2fa2135f0e5de1
+source-git-commit: e568609ac1093b36d78250b45e581b63ff35a2ac
 workflow-type: tm+mt
-source-wordcount: '1712'
+source-wordcount: '1725'
 ht-degree: 0%
 
 ---
@@ -129,7 +129,7 @@ _14 de marzo de 2023_
 ![Nuevo](../assets/new.svg) Se ha añadido la capacidad de arrastrar y soltar para crear eventos Pin
 ![Nuevo](../assets/new.svg) Nuevas acciones de anclaje: * Anclar a punto: botón Anclar para crear un evento de anclaje con un clic * Anclar al principio - Coloca el producto en la primera posición * Anclar al final - Coloca el producto en la parte inferior de los resultados * Desanclar un evento con un clic
 ![Nuevo](../assets/new.svg) [Clasificación inteligente para reglas](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/live-search-admin/rules/rules-add.html#ranking-type)
-![Nuevo](../assets/new.svg) [!DNL Live Search] ahora es compatible con el inventario de varias fuentes (MSI). Para utilizar MSI, debe [instalar](install.md#update) el `commerce-data-export` Módulo 102.2.0+. Compruebe su versión con el siguiente comando: `composer update magento/live-search --with-dependencies`.
+![Nuevo](../assets/new.svg) [!DNL Live Search] ahora admite full [Inventory management](https://experienceleague.adobe.com/docs/commerce-admin/inventory/introduction.html) en Commerce (anteriormente conocido como Multi-Source Inventory o MSI). Para habilitar la compatibilidad total, debe [actualizar](install.md#update) el módulo de dependencia `commerce-data-export` a la versión 102.2.0+.
 
 ### Actualizaciones
 
