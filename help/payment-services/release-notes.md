@@ -3,9 +3,9 @@ title: "[!DNL Payment Services] Notas de la versión"
 description: Revise las notas de la versión para obtener información acerca de todos los [!DNL Payment Services] versiones.
 exl-id: 104aa2c7-7735-4ac2-8ed1-a03cd9911273
 feature: Payments, Release Notes
-source-git-commit: eb2d21193ee3bde5e52bddb738564f0265422fe4
+source-git-commit: a5bd06372678512062415702f83e57afb0eeb8da
 workflow-type: tm+mt
-source-wordcount: '2200'
+source-wordcount: '2247'
 ht-degree: 0%
 
 ---
@@ -71,6 +71,14 @@ _28 de junio de 2021_
 ![Nuevo](../assets/new.svg)<!-- Issue PAY-2761 --> Ahora puede personalizar los datos que se muestran en la variable [Informe de estado de pago del pedido](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/order-payment-status.html#show-and-hide-columns) y el [Informe de pagos](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/payouts.html#show-and-hide-columns) mostrando u ocultando columnas mediante el control Configuración de columna.
 
 +++
+
+## v2.2.1
+
+_27 de septiembre de 2023_
+
+[!BADGE Admitido]{type=Informative tooltip="Admitido"}
+
+![Problema corregido](../assets/fix.svg)<!-- Issue PAY-4870 --> Se ha corregido un problema que llenaba incorrectamente el nuevo atributo de encabezado en Storefront al enviar la versión de extensión con la última versión. Anteriormente, con la variable `1.3.0` versión del conector de Commerce Services, no se pudo ampliar el `User-Agent header` desde la extensión Servicios de pago.
 
 ## v2.2.0
 
