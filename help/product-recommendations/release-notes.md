@@ -3,7 +3,7 @@ title: '[!DNL Product Recommendations] Notas de la versión'
 description: La información de la versión más reciente de [!DNL Product Recommendations] de Adobe Commerce.
 exl-id: 1758e688-d26f-45e7-818c-d4726338a6c3
 feature: Services, Recommendations, Release Notes
-source-git-commit: e568609ac1093b36d78250b45e581b63ff35a2ac
+source-git-commit: 7bc63a6b647dd010ef58c5d4d4df7a0a2c3cabe0
 workflow-type: tm+mt
 source-wordcount: '1211'
 ht-degree: 0%
@@ -66,6 +66,7 @@ _25 de abril de 2023_
 
 ![Nuevo](../assets/new.svg) Se ha actualizado Product Recommendations para que admita Adobe Commerce 2.4.6.
 ![Nuevo](../assets/new.svg) Esta es una versión principal. [Editar](install-configure.md#update) la raíz `composer.json` para su proyecto.
+![Nuevo](../assets/new.svg) [!DNL Product Recommendations] ahora admite full [Inventory management](https://experienceleague.adobe.com/docs/commerce-admin/inventory/introduction.html) en Commerce (anteriormente conocido como Multi-Source Inventory o MSI). Para habilitar la compatibilidad total, debe [actualizar](install-configure.md#update) el módulo de dependencia `commerce-data-export` a la versión 102.2.0+.
 
 ### 4.0.1 de magento/product-recommendations
 
@@ -79,7 +80,6 @@ _25 de abril de 2023_
 
 ![Nuevo](../assets/new.svg) Añadido [indicadores de disponibilidad](create.md) para ayudarle a visualizar el progreso de formación de cada tipo de recomendación.
 ![Nuevo](../assets/new.svg) Esta es una versión principal. [Editar](install-configure.md#update) la raíz `composer.json` para su proyecto. Esta versión también requiere que proporcione dos claves de API al instalar y configurar Product Recommendations: [una clave de producción y una clave de zona protegida](../landing/saas.md).
-![Nuevo](../assets/new.svg) [!DNL Product Recommendations] ahora admite full [Inventory management](https://experienceleague.adobe.com/docs/commerce-admin/inventory/introduction.html) en Commerce (anteriormente conocido como Multi-Source Inventory o MSI). Para habilitar la compatibilidad total, debe [actualizar](install-configure.md#update) el módulo de dependencia `commerce-data-export` a la versión 102.2.0+.
 
 #### Limitaciones conocidas
 
