@@ -1,20 +1,21 @@
 ---
-title: Instalación de indexación de precios SaaS
-description: Instalación de la indexación de precios SaaS
+title: Instalación manual de indexación de precios SaaS
+description: Instalación de la indexación de precios SaaS para la versión anterior
 seo-title: SaaS Price Indexing installation
 seo-description: Installing SaaS Price indexing
 exl-id: a607e852-aa04-4be3-9576-a6bf45f8751f
 role: Admin, Developer
-source-git-commit: 9ae4aff1851e9ce9920c4fbf11d2616d6f0f6307
+source-git-commit: be0b8f4c26f11c31da3e5422bb4f4c4af10f2a00
 workflow-type: tm+mt
-source-wordcount: '254'
+source-wordcount: '291'
 ht-degree: 0%
 
 ---
 
-# Instalación de indexación de precios SaaS
+# Instalación manual de indexación de precios SaaS
 
-La configuración de la indexación de precios SaaS requiere la instalación de nuevos módulos y la ejecución de comandos CLI. Los administradores necesitan acceso desde la línea de comandos para completar esta instalación.
+La indexación de precios SaaS está disponible de forma predeterminada para [última versión](index.md#Requirements) de Commerce Services.
+Si no tiene la versión más reciente y desea habilitar la indexación de precios SaaS para su instancia de Adobe Commerce, utilice esta miniguía.
 
 ## Requisitos previos
 
@@ -33,10 +34,10 @@ Existen extensiones que agregan las nuevas fuentes y el código de compatibilida
 1. Añada los siguientes módulos a su `composer.json` archivo:
 
    ```json
-   "magento/module-saas-price": "102.2.0",
-   "magento/module-saas-scopes": "102.2.0",
-   "magento/module-product-override-price-remover": "102.2.0",
-   "magento/module-bundle-product-override-data-exporter": "102.2.0",
+   "magento/module-saas-price": "^102.2.0",
+   "magento/module-saas-scopes": ^"102.2.0",
+   "magento/module-product-override-price-remover": "^102.2.0",
+   "magento/module-bundle-product-override-data-exporter": "^102.2.0",
    ```
 
 1. Ejecute el comando de actualización:
@@ -68,17 +69,12 @@ Después de la actualización, hay tres fuentes nuevas disponibles:
 
 Ejecute los indexadores anteriores manualmente, según sea necesario. De lo contrario, los datos se actualizan en el proceso de sincronización estándar. Más información sobre la [Sincronización de catálogo](../landing/catalog-sync.md) servicio.
 
-Los usuarios de Luma y Adobe Commerce Core GraphQL pueden instalar el `catalog-adapter` que proporciona compatibilidad con Luma y Core GraphQl y desactiva el indexador de precios principal de PHP.
-Para usar la variable `catalog-adapter` módulo, [!DNL Live Search] y [!DNL Catalog Service] primero debe instalarse y configurarse. Siga las [Instalar [!DNL Live Search]](../live-search/install.md) y [Instalación del servicio de catálogo](../catalog-service/installation.md) instrucciones antes de continuar.
 
-Para configurar Live Search y el adaptador de catálogo, siga [Conector de Commerce Services](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/integration-services/saas.html?lang=en) instrucciones.
+Los usuarios de Luma y Adobe Commerce Core GraphQL pueden instalar el [`Catalog Adapter`](catalog-adapter.md) que proporciona compatibilidad con Luma y Core GraphQl y deshabilita el indexador de precios de productos de Adobe Commerce.
 
-```bash
-composer require adobe-commerce/catalog-adapter
-```
+## Advertencias
 
-Si es necesario, el indexador de precios PHP puede ser reactivado con el siguiente comando:
+Antes `103.0.0` versión, indexación de precios SaaS admitida Tipos de producto simples, agrupados, virtuales, configurables y dinámicos agrupados.
+La compatibilidad con los tipos de productos Descargable, Tarjetas de regalo y Paquete fijo está disponible a partir de `magento/module-saas-price:103.0.0` y disponibles de forma predeterminada para los servicios de Commerce admitidos.
 
-```bash
-bin/magento module:disable Magento_PriceIndexerDisabler
-```
+Las nuevas fuentes deben sincronizarse manualmente con `resync` [comando CLI](../landing/catalog-sync.md#resynccmdline). De lo contrario, los datos se actualizan en el proceso de sincronización estándar. Obtenga más información acerca de [Sincronización de catálogo](../landing/catalog-sync.md) proceso.
