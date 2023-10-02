@@ -3,9 +3,9 @@ title: "Resumen de incorporación"
 description: "[!DNL Live Search] flujo de incorporación, requisitos del sistema, límites y limitaciones"
 exl-id: 45f6c1ae-544b-47ef-9feb-c1a05f93108a
 recommendations: noCatalog
-source-git-commit: 21170ecc66891d803b6c45dd8e2fa2135f0e5de1
+source-git-commit: 68c96b6fc74e60ddd44ab8e953c022b8244da281
 workflow-type: tm+mt
-source-wordcount: '525'
+source-wordcount: '548'
 ht-degree: 0%
 
 ---
@@ -64,11 +64,19 @@ Para restringir los grupos de clientes que utilizan permisos de catálogo:
 
 * [!DNL Live Search] puede administrar hasta 200 sinónimos por vista de tienda.
 
+## Comercialización por categorías
+
+La comercialización de categorías le permite configurar [!DNL Live Search] para trabajar en el nivel de categoría del producto.
+
+Este vídeo es una introducción a la comercialización de categorías.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3424617)
+
 ## Indexador de precios
 
 Los clientes de Live Search pueden usar el nuevo [Indexador de precios SaaS](../price-index/index.md), que ofrece actualizaciones de precios y tiempos de sincronización más rápidos.
 
-### soporte de PWA
+## soporte de PWA
 
 [!DNL Live Search] funciona con PWA Studio, pero los usuarios pueden ver pequeñas diferencias en comparación con otras implementaciones de Commerce. La funcionalidad básica, como la página de búsqueda y la lista de productos, funciona en Venia, pero es posible que algunas permutaciones de Graphql no funcionen correctamente. También puede haber diferencias de rendimiento.
 
@@ -96,7 +104,7 @@ Para usar [!DNL Live Search] con PWA Studio, los integradores también deben:
        };
    ```
 
-### Actualmente no es compatible
+## Actualmente no es compatible
 
 * El [Búsqueda avanzada](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search.html#advanced-search) El módulo está desactivado cuando [!DNL Live Search] está instalado y se elimina el vínculo Búsqueda avanzada del pie de página de la tienda.
 * Los precios de los productos no incluyen [impuesto sobre el valor añadido](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/site-store/taxes/vat.html) (IVA).
