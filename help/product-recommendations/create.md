@@ -2,9 +2,9 @@
 title: Crear nueva recomendación
 description: Obtenga información sobre cómo crear una unidad de recomendación de productos.
 exl-id: d393ab78-0523-463f-9b03-ad3f523dce0f
-source-git-commit: d56fd57281a5b675e128cca75d4057756a0bf4bf
+source-git-commit: 2b5ee71618055c48bf4d6a86dbbd4708647b5d7c
 workflow-type: tm+mt
-source-wordcount: '853'
+source-wordcount: '857'
 ht-degree: 0%
 
 ---
@@ -52,7 +52,11 @@ Cuando activa la unidad de recomendación, Adobe Commerce empieza a [recopilar d
 
    - Variedad del conjunto de resultados suficiente: ¿los productos que se devuelven representan una variedad de productos del catálogo? El objetivo con este factor es evitar tener una minoría de productos siendo los únicos recomendados en todo el sitio.
 
-   En función de los factores anteriores, se calcula y se muestra un valor de disponibilidad. Un tipo de recomendación se considera listo para implementar cuando su valor de preparación es del 75 % o superior. Un tipo de recomendación se considera parcialmente listo cuando su preparación es de al menos el 50 %. Por último, se considera que un tipo de recomendación no está listo para implementarse cuando su valor de preparación es inferior al 50 %.
+   En función de los factores anteriores, se calcula y se muestra un valor de disponibilidad. Un tipo de recomendación se considera listo para implementar cuando su valor de preparación es del 75 % o superior. Un tipo de recomendación se considera parcialmente listo cuando su preparación es de al menos el 50 %. Un tipo de recomendación se considera no listo para implementarse cuando su valor de preparación es inferior al 50 %.
+
+   >[!NOTE]
+   >
+   >El indicador puede no llegar nunca al 100%.
 
    ![Tipo de recomendación](assets/create-recommendation-select-type.png)
    _Tipo de recomendación_

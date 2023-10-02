@@ -5,9 +5,9 @@ seo-title: SaaS Price Indexing installation
 seo-description: Installing SaaS Price indexing
 exl-id: a607e852-aa04-4be3-9576-a6bf45f8751f
 role: Admin, Developer
-source-git-commit: be0b8f4c26f11c31da3e5422bb4f4c4af10f2a00
+source-git-commit: b7989b416f852d2c7164d21e8f0598373662b760
 workflow-type: tm+mt
-source-wordcount: '291'
+source-wordcount: '276'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,7 @@ Si no tiene la versión más reciente y desea habilitar la indexación de precio
 ## Requisitos previos
 
 * Adobe Commerce 2.4.4+
-* Al menos uno de los siguientes servicios SaaS instalados:
+* Al menos uno de los siguientes servicios SaaS está instalado:
 
    * [Servicio de catálogo](../catalog-service/overview.md)
    * [Live Search](../live-search/guide-overview.md)
@@ -29,15 +29,15 @@ Si no tiene la versión más reciente y desea habilitar la indexación de precio
 ## Instalación de los módulos necesarios
 
 Según la configuración, el proceso de instalación puede ser ligeramente diferente.
-Existen extensiones que agregan las nuevas fuentes y el código de compatibilidad, y una extensión que elimina la fuente de precios predeterminada.
+Existen extensiones que añaden nuevas fuentes y el código de compatibilidad.
 
 1. Añada los siguientes módulos a su `composer.json` archivo:
 
    ```json
-   "magento/module-saas-price": "^102.2.0",
-   "magento/module-saas-scopes": ^"102.2.0",
-   "magento/module-product-override-price-remover": "^102.2.0",
-   "magento/module-bundle-product-override-data-exporter": "^102.2.0",
+   "magento/module-saas-price": "^103.0",
+   "magento/module-saas-scopes": "^103.0",
+   "magento/module-bundle-product-override-data-exporter": "^103.0",
+   "magento/module-gift-card-product-data-exporter": "^103.0",
    ```
 
 1. Ejecute el comando de actualización:
@@ -70,7 +70,7 @@ Después de la actualización, hay tres fuentes nuevas disponibles:
 Ejecute los indexadores anteriores manualmente, según sea necesario. De lo contrario, los datos se actualizan en el proceso de sincronización estándar. Más información sobre la [Sincronización de catálogo](../landing/catalog-sync.md) servicio.
 
 
-Los usuarios de Luma y Adobe Commerce Core GraphQL pueden instalar el [`Catalog Adapter`](catalog-adapter.md) que proporciona compatibilidad con Luma y Core GraphQl y deshabilita el indexador de precios de productos de Adobe Commerce.
+Para configurar Live Search y el adaptador de catálogo, siga las [Conector de Commerce Services](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/integration-services/saas.html) instrucciones.
 
 ## Advertencias
 
