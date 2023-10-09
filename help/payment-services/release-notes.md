@@ -3,9 +3,9 @@ title: "[!DNL Payment Services] Notas de la versión"
 description: Revise las notas de la versión para obtener información acerca de todos los [!DNL Payment Services] versiones.
 exl-id: 104aa2c7-7735-4ac2-8ed1-a03cd9911273
 feature: Payments, Release Notes
-source-git-commit: a5bd06372678512062415702f83e57afb0eeb8da
+source-git-commit: f61a9c9ed1eedded4b304d2fe3f9e2930d10e027
 workflow-type: tm+mt
-source-wordcount: '2247'
+source-wordcount: '2279'
 ht-degree: 0%
 
 ---
@@ -29,6 +29,10 @@ Consulte [Disponibilidad del producto](https://experienceleague.adobe.com/docs/c
 Estas notas de la versión describen los cambios y correcciones de características que se produjeron y que se lanzaron fuera de las versiones de funciones habituales para el servicio alojado.
 
 +++Actualizaciones de servicios alojados
+
+_10 de octubre de 2023_
+
+![Nuevo problema](../assets/fix.svg)<!-- Issue PAY-4888 --> Ahora, los comerciantes pueden filtrar las transacciones con tarjetas de crédito y débito por los últimos cuatro dígitos del número de tarjeta en el [Informe Transacciones](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/transactions.html).
 
 _12 de julio de 2023_
 
