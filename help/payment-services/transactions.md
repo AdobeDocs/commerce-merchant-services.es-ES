@@ -3,9 +3,10 @@ title: Informe de transacciones
 description: Utilice el informe Transacciones para obtener visibilidad sobre las tasas de autorización de transacciones y las tendencias de transacciones.
 role: User
 level: Intermediate
-source-git-commit: 6ba5a283d9138b4c1be11b80486826304c63247f
+exl-id: dd1d80f9-5983-4181-91aa-971522eb56fa
+source-git-commit: ffbc5ca30a092f5ef2642b051f080fe47ce0e815
 workflow-type: tm+mt
-source-wordcount: '1162'
+source-wordcount: '1216'
 ht-degree: 0%
 
 ---
@@ -40,7 +41,7 @@ Puede configurar esta vista, según las secciones de este tema, para presentar m
 
 Consulte ID de transacción de proveedor y pedido de comercio vinculados, importes de transacción, método de pago por transacción y mucho más, todo dentro de este informe.
 
-No todos los métodos de pago proporcionan la misma granularidad de la información. Por ejemplo, las transacciones con tarjeta de crédito proporcionan códigos de respuesta, AVS y CCV en el informe Transacciones; los botones Smart de PayPal no.
+No todos los métodos de pago proporcionan la misma granularidad de la información. Por ejemplo, las transacciones con tarjeta de crédito proporcionan códigos de respuesta, AVS y CCV, y los últimos cuatro dígitos de la tarjeta en el informe Transacciones; los botones PayPal Smart no.
 
 Puede [descargar transacciones](#download-transactions) en formato de archivo .csv para su uso en software de contabilidad o gestión de pedidos existente.
 
@@ -84,6 +85,7 @@ En la vista Informe de transacciones, puede filtrar los resultados de los estado
 1. Alternar el _[!UICONTROL Payment Method]_opciones para ver los resultados del informe sólo para métodos de pago seleccionados.
 1. Introduzca una _Importe de pedido mínimo_ o _Importe máximo del pedido_ para ver los resultados del informe dentro de ese rango de importes de pedidos.
 1. Introduzca una _[!UICONTROL Order ID]_para buscar una transacción específica.
+1. Introduzca el _[!UICONTROL Card Last Four Digits]_para buscar una tarjeta de crédito o débito específica.
 1. Clic **[!UICONTROL Hide filters]** para ocultar el filtro.
 
 ### Mostrar y ocultar columnas
@@ -126,7 +128,8 @@ Los informes de transacciones incluyen la siguiente información.
 | [!UICONTROL Order ID] | ID de pedido de comercio (contiene solo valores para transacciones correctas y está vacío para transacciones rechazadas)<br> <br>Para ver información relacionada [información del pedido](https://docs.magento.com/user-guide/sales/orders.html){target="_blank"}, haga clic en el ID. |
 | [!UICONTROL Provider Transaction ID] | ID de transacción proporcionado por el proveedor de pagos; contiene solo valores para las transacciones correctas y contiene un guión para las transacciones rechazadas. |
 | [!UICONTROL Transaction Date] | Marca de fecha y hora de transacción |
-| [!UICONTROL Payment Method] | Método de pago de la transacción; disponible para las versiones 1.6.0 y posteriores de los Servicios de pago |
+| [!UICONTROL Payment Method] | Forma de pago de la transacción con información detallada sobre la marca y el tipo de tarjeta. Consulte [tipos de tarjeta](https://developer.paypal.com/docs/api/orders/v2/#definition-card_type) para obtener más información; disponible para las versiones 1.6.0 y posteriores de Payment Services |
+| [!UICONTROL Card Last Four Digits] | Últimos cuatro dígitos de las tarjetas de crédito o débito utilizadas para la transacción |
 | [!UICONTROL Result] | El resultado de la transacción—*[!UICONTROL OK]* (transacción correcta), *[!UICONTROL Rejected by Payment Provider]* (rechazado por PayPal), *[!UICONTROL Rejected by Bank]* (rechazado por el banco que emitió la tarjeta) |
 | [!UICONTROL Response Code] | Código de error que proporciona un motivo de rechazo del proveedor de pagos o del banco; consulte la lista de posibles códigos de respuesta y descripciones para [`Rejected by Bank` status](https://developer.paypal.com/docs/api/orders/v2/#definition-processor_response) y [`Rejected by Payment Provider` status](https://developer.paypal.com/api/rest/reference/orders/v2/errors/). |
 | [!UICONTROL AVS Code] | Código de servicio de verificación de direcciones; la información de respuesta del procesador para las solicitudes de pago. Consulte [lista de posibles códigos y descripciones](https://developer.paypal.com/docs/api/orders/v2/#definition-processor_response) para obtener más información. |
@@ -147,4 +150,3 @@ El _Código de respuesta_ La columna muestra un error específico o un código d
 * `5650`—El banco asociado rechazó la transacción porque el banco requiere una autenticación sólida del cliente ([3DS](security.md#3ds)).
 
 Los códigos de respuesta de error detallados para transacciones fallidas están disponibles para transacciones posteriores al 1 de junio de 2023. Los datos de informe parciales aparecerán para las transacciones que se produjeron antes del 1 de junio de 2023.
-
