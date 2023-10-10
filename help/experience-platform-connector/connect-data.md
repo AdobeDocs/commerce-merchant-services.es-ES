@@ -3,9 +3,9 @@ title: Conexión de datos de Commerce con Adobe Experience Platform
 description: Aprenda a conectar sus datos de Commerce a Adobe Experience Platform.
 exl-id: 87898283-545c-4324-b1ab-eec5e26a303a
 feature: Personalization, Integration, Configuration
-source-git-commit: 6044a60c60bf8f29295a14157230d85d0a1b9e07
+source-git-commit: bcee983ee7f40fbe2ea8eb96317b663ce7363ddd
 workflow-type: tm+mt
-source-wordcount: '2232'
+source-wordcount: '2246'
 ht-degree: 0%
 
 ---
@@ -118,9 +118,13 @@ Consulte el tema de eventos para obtener más información sobre [escaparate](ev
 
 ## Enviar datos de pedidos históricos
 
-Adobe Commerce recoge hasta cinco años de [datos y estado de pedidos históricos](events.md#back-office-events). Puede utilizar el conector del Experience Platform para enviar esos datos históricos al Experience Platform y enriquecer los perfiles de cliente en función de esos pedidos anteriores. Los datos se almacenan en un conjunto de datos dentro de Experience Platform.
+Adobe Commerce recoge hasta cinco años de [datos y estado de pedidos históricos](events.md#back-office-events). Puede utilizar el conector del Experience Platform para enviar esos datos históricos al Experience Platform a fin de enriquecer los perfiles de cliente y personalizar las experiencias del cliente en función de esos pedidos anteriores. Los datos se almacenan en un conjunto de datos dentro de Experience Platform.
 
 Aunque Commerce ya recopila los datos de pedidos históricos, hay que completar varios pasos para enviar esos datos a Experience Platform.
+
+Vea este vídeo para obtener más información sobre los pedidos históricos y, a continuación, complete los siguientes pasos para implementar la recopilación y configuración de pedidos históricos.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3424672)
 
 ### Paso 1: Instalar la recopilación de datos de pedidos históricos
 
@@ -248,12 +252,6 @@ Especifique el intervalo de fechas para los pedidos históricos que desea enviar
 | Desde | Fecha a partir de la cual desea empezar a recopilar datos del historial de pedidos. |
 | Hasta | Fecha a partir de la cual desea finalizar la recopilación de datos del historial de pedidos. |
 | Iniciar sincronización | Inicia el proceso de sincronización de los datos del historial de pedidos con el perímetro del Experience Platform. Este botón está desactivado si la variable **[!UICONTROL Dataset ID]** El campo está en blanco o la ID del conjunto de datos no es válida. |
-
-### Demostración de pedido histórico
-
-Vea este vídeo para obtener más información sobre los pedidos históricos:
-
->[!VIDEO](https://video.tv.adobe.com/v/3424672)
 
 ## Confirmar que se recopilan los datos del evento
 
