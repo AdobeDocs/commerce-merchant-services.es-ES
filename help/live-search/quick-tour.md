@@ -2,9 +2,9 @@
 title: "Recorrido rápido"
 description: '"Haga un recorrido rápido por [!DNL Live Search] de la tienda".'
 exl-id: bcb19506-6617-4c8a-83df-9d961f81e9e8
-source-git-commit: 9cf48f6f900385a5cb772adee8834ec9cfe5ee13
+source-git-commit: 9f045a049ac775ed4673e807ab5e21b8811cde2d
 workflow-type: tm+mt
-source-wordcount: '328'
+source-wordcount: '366'
 ht-degree: 0%
 
 ---
@@ -40,3 +40,7 @@ Utilice facetas como parámetros de URL:`http://yourwebsite.com?color=red`y Live
 ## Reglas de comercialización
 
 Comercialización [reglas](rules.md) dé forma a la experiencia de compra con instrucciones if-then que agregan lógica y eventos a la búsqueda. Puede impulsar o enterrar fácilmente productos para una promoción, una temporada u otro período de tiempo.
+
+## Compatibilidad con términos de búsqueda
+
+[!DNL Live Search] admite Commerce [buscar redirecciones de términos](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search-terms.html). Por ejemplo, los usuarios pueden buscar un término como &quot;Tarifas de envío&quot; y ser llevados directamente a la página de tarifas de envío.

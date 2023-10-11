@@ -3,9 +3,9 @@ title: "Instalar [!DNL Live Search]"
 description: '"Obtenga información sobre cómo instalar, actualizar y desinstalar [!DNL Live Search] de Adobe Commerce".'
 exl-id: aa251bb0-d52c-4cff-bccb-76a08ae2a3b2
 role: Admin, Developer
-source-git-commit: 017299c613cc010d96d90c9b1d88e43304d00e2b
+source-git-commit: bf44c04771069fe6502257b35517c62a5161f81b
 workflow-type: tm+mt
-source-wordcount: '1301'
+source-wordcount: '1265'
 ht-degree: 0%
 
 ---
@@ -40,10 +40,6 @@ Este método de incorporación se recomienda al instalar [!DNL Live Search] a un
 
 En esta situación, las operaciones de tienda se interrumpen mientras que la variable [!DNL Live Search] el servicio indexa todos los productos del catálogo. Durante la instalación, [!DNL Live Search] Los módulos de están activados y [!DNL Elasticsearch] módulos están desactivados.
 
->[!NOTE]
->
->A partir de marzo de 2023, Live Search solo admite la versión 2.4.4 y superior.
-
 1. Instalar Adobe Commerce 2.4.4+ sin [!DNL Live Search].
 
 1. Para descargar `live-search` ejecute lo siguiente desde la línea de comandos:
@@ -51,8 +47,6 @@ En esta situación, las operaciones de tienda se interrumpen mientras que la var
    ```bash
    composer require magento/live-search
    ```
-
-   Para obtener más información, consulte la lista de [!DNL Live Search] [dependencias](#dependencies) que son capturados por [!DNL Composer].
 
 1. Ejecute los siguientes comandos para deshabilitar [!DNL Elasticsearch] y módulos relacionados, e instale [!DNL Live Search]:
 
@@ -104,8 +98,6 @@ En este escenario, [!DNL Elasticsearch] administra temporalmente las solicitudes
    ```bash
    composer require magento/live-search
    ```
-
-   Para obtener más información, consulte la lista de [!DNL Live Search] [dependencias](#live-search-dependencies) que son capturados por [!DNL Composer].
 
 1. Ejecute el siguiente comando para deshabilitar temporalmente la variable [!DNL Live Search] módulos de que sirven a resultados de búsqueda de tiendas.
 

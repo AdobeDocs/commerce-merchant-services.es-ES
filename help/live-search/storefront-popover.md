@@ -2,9 +2,9 @@
 title: "[!DNL Storefront Popover]"
 description: "La [!DNL Live Search storefront popover] devuelve dinámicamente productos sugeridos y miniaturas."
 exl-id: 88fdc3ed-b606-40de-94b7-435be09c4072
-source-git-commit: 44c5d3f73d9cf658a978829ffaef6a79c5d90216
+source-git-commit: bf44c04771069fe6502257b35517c62a5161f81b
 workflow-type: tm+mt
-source-wordcount: '485'
+source-wordcount: '499'
 ht-degree: 0%
 
 ---
@@ -15,6 +15,10 @@ Cuándo [!DNL Live Search] es [instalado](install.md), a [!DNL popover] aparece 
 
 [!DNL Live Search] devuelve los resultados de una consulta de dos caracteres o más. Para una coincidencia parcial, el número máximo de caracteres por palabra es 20. El número de caracteres de una consulta &quot;buscar mientras escribe&quot; no se puede configurar.
 
+De forma predeterminada, [!DNL Live Search] admite [buscar redirecciones de términos](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search-terms.html).
+
+![[!DNL Live Search popover]](assets/storefront-search-as-you-type.png)
+
 ## Atributos de búsqueda
 
 Para obtener resultados con objetivos muy precisos, revise el conjunto de [investigable](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/product-attributes.html) (`searchable=true`) atributos del producto. Para garantizar la relevancia, haga que los atributos solo se puedan buscar si contienen contenido que tenga un significado claro y conciso. Evite utilizar atributos que contengan texto menos preciso y largo, como `description`, que aunque la búsqueda está habilitada de forma predeterminada, puede reducir la precisión de los resultados de búsqueda. Por ejemplo, si una persona busca &quot;pantalones cortos&quot; y hay camisas con una descripción que incluye el término &quot;mangas cortas&quot;, entonces las camisas se incluirán en los resultados de búsqueda.
@@ -24,8 +28,6 @@ Siempre se pueden buscar los atributos siguientes:
 * `sku`
 * `name`
 * `categories`
-
-[[!DNL Live Search popover]](assets/storefront-search-as-you-type.png)
 
 ## [!DNL Popover] tamaño de página
 

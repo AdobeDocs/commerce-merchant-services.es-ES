@@ -4,9 +4,9 @@ user-guide-description: '"Esta guía proporciona instrucciones detalladas para u
 breadcrumb-title: “Guía de [!DNL Live Search]”
 role: Admin
 feature: Services, Search
-source-git-commit: cc921e7e5abe41998497fcd8a6bdcc146dd1acb0
+source-git-commit: bf44c04771069fe6502257b35517c62a5161f81b
 workflow-type: tm+mt
-source-wordcount: '98'
+source-wordcount: '96'
 ht-degree: 9%
 
 ---
@@ -33,7 +33,6 @@ ht-degree: 9%
       - [Tipos de facetas](facets-type.md)
       - [Agregar facetas](facets-add.md)
       - [Administrar facetas](facets-manage.md)
-      - [Notas técnicas](facet-technical-notes.md)
    - [Indexación](indexing.md)
    - [Rendimiento](performance.md)
    - Reglas {#rules}

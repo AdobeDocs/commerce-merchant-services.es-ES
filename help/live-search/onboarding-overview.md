@@ -3,9 +3,9 @@ title: "Resumen de incorporación"
 description: "[!DNL Live Search] flujo de incorporación, requisitos del sistema, límites y limitaciones"
 exl-id: 45f6c1ae-544b-47ef-9feb-c1a05f93108a
 recommendations: noCatalog
-source-git-commit: 68c96b6fc74e60ddd44ab8e953c022b8244da281
+source-git-commit: a6d8c259f232ab27d7ed64558d5d193d59d23cad
 workflow-type: tm+mt
-source-wordcount: '548'
+source-wordcount: '583'
 ht-degree: 0%
 
 ---
@@ -13,10 +13,6 @@ ht-degree: 0%
 # Resumen de incorporación
 
 Para empezar a utilizar [!DNL Live Search] para Adobe Commerce, complete el proceso de incorporación para instalar la extensión, configurar las claves API y sincronizar el catálogo.
-
-## Flujo de incorporación
-
-![[!DNL Live Search] diagrama de incorporación](assets/onboarding-flow.svg)
 
 ## Requisitos {#requirements}
 
@@ -72,6 +68,12 @@ Este vídeo es una introducción a la comercialización de categorías.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3424617)
 
+## Inventory management
+
+[!DNL Live Search] admite [Inventory management](https://experienceleague.adobe.com/docs/commerce-admin/inventory/introduction.html) en Commerce (anteriormente conocido como Multi-Source Inventory o MSI). Para habilitar la compatibilidad total, debe [actualizar](install.md#update) el módulo de dependencia `commerce-data-export` a la versión 102.2.0+.
+
+[!DNL Live Search] devuelve un valor booleano que indica si un producto está disponible en Inventory management, pero no contiene información sobre el origen que tiene las existencias.
+
 ## Indexador de precios
 
 Los clientes de Live Search pueden usar el nuevo [Indexador de precios SaaS](../price-index/index.md), que ofrece actualizaciones de precios y tiempos de sincronización más rápidos.
@@ -107,7 +109,6 @@ Para usar [!DNL Live Search] con PWA Studio, los integradores también deben:
 ## Actualmente no es compatible
 
 * El [Búsqueda avanzada](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search.html#advanced-search) El módulo está desactivado cuando [!DNL Live Search] está instalado y se elimina el vínculo Búsqueda avanzada del pie de página de la tienda.
-* Los precios de los productos no incluyen [impuesto sobre el valor añadido](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/site-store/taxes/vat.html) (IVA).
 * [Precio de nivel](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/pricing/product-price-tier.html) no es compatible con la ventana emergente de Live Search y el widget de página de lista de productos.
 
 ## Cookies
