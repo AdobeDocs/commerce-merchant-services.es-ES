@@ -3,9 +3,9 @@ title: Usar Adobe Journey Optimizer para enviar un correo electrónico de carro 
 description: Aprenda a utilizar Adobe Journey Optimizer para enviar un correo electrónico de carro de compras abandonado.
 role: Admin, Developer
 feature: Personalization, Integration
-source-git-commit: ea54638b597f5eaae04780498558a8fd46821b52
+source-git-commit: 261416654773470edfa3cc22058cccf92ef29cdb
 workflow-type: tm+mt
-source-wordcount: '1064'
+source-wordcount: '1049'
 ht-degree: 0%
 
 ---
@@ -58,17 +58,17 @@ En su entorno de zona protegida de Commerce, vea páginas de productos, añada a
 
    Busque la variable `commerce.checkouts` y examine la carga útil del evento:
 
-       &quot;json
-       &quot;personID&quot;: &quot;84281643067178465783746543501073369488&quot;,
-       &quot;eventType&quot;: &quot;commerce.checkouts&quot;,
-       &quot;_id&quot;: &quot;4b41703f-e42e-485b-8d63-7001e3580856-0&quot;,
-       &quot;commerce&quot;: {
-       &quot;carrito&quot;: {},
-       &quot;cierres de compra&quot;: {
-       &quot;valor&quot;: 1
-       }
-       &quot;
-   
+   ```json
+   "personID": "84281643067178465783746543501073369488", 
+   "eventType": "commerce.checkouts", 
+   "_id": "4b41703f-e42e-485b-8d63-7001e3580856-0", 
+   "commerce": { 
+       "cart": {}, 
+       "checkouts": { 
+           "value": 1 
+       } 
+   ```
+
    Como puede ver, la carga útil de evento completa contiene datos de evento enriquecidos. En la siguiente sección, configurará eventos en Journey Optimizer para detectar y responder a los `commerce.checkouts` evento generado desde su tienda de Commerce.
 
 ## Paso 3: Configuración de eventos en Journey Optimizer
