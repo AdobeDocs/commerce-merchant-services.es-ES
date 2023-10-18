@@ -1,17 +1,17 @@
 ---
-title: "Reglas de búsqueda"
-description: '"[!DNL Live Search] las reglas combinan lógica con acciones para dar forma a la experiencia de compra".'
+title: "Buscar comercialización"
+description: '"[!DNL Live Search] las reglas de comercialización combinan la lógica con las acciones para dar forma a la experiencia de compra".'
 exl-id: d06a3040-6987-4813-90ae-2f7b3ad0b232
-source-git-commit: 40bcae7a792660f02390f4d55967767b15c84f38
+source-git-commit: 888b81683a4e139a35b771d9c573f1f5f0c3b902
 workflow-type: tm+mt
-source-wordcount: '592'
+source-wordcount: '608'
 ht-degree: 0%
 
 ---
 
-# Buscar reglas
+# Buscar comercialización
 
-[!DNL Live Search] las reglas combinan lógica con acciones para dar forma a la experiencia de búsqueda de un comprador en su tienda. Puede utilizar reglas para impulsar, enterrar, fijar u ocultar productos con el fin de calibrar los resultados de búsqueda en tiempo real para alcanzar los objetivos de su empresa.
+La comercialización de búsqueda hace referencia a un conjunto de reglas que combinan lógica con acciones para dar forma a la experiencia de búsqueda de un comprador en su tienda. Puede utilizar reglas de comercialización para impulsar, enterrar, fijar u ocultar productos con el fin de calibrar los resultados de búsqueda en tiempo real para lograr los objetivos de su empresa.
 
 Cada regla tiene tres componentes principales:
 
@@ -68,7 +68,7 @@ Las solicitudes realizadas en el Administrador funcionan de forma ligeramente di
 * Si la regla que se previsualiza no tiene un `query is` y una regla de coincidencia activa posterior con un `query is` se encuentra la condición, el `query is` se aplica la regla.
 * Si la regla que se previsualiza no tiene un `query is` y ninguna otra regla con una condición `query is` Si se encuentra la condición, se aplica la regla que se está previsualizando.
 
-## Reglas de categoría y asignaciones de productos de categoría
+## Asignaciones de productos de comercialización y categorías
 
-[!DNL Live Search] permite filtrar por categorías.
+[!DNL Live Search] permite filtrar por categorías. Consulte [Comercialización por categorías](category-merch.md) para obtener más información.
 Sin embargo, en Adobe Commerce puede crear una categoría virtual con [Asignaciones de productos de categoría](https://experienceleague.adobe.com/docs/commerce-admin/catalog/categories/products-in-category/categories-product-assignments.html). Este tipo de categoría se crea durante la ejecución y no existe en la base de datos de categorías. Por lo tanto, [!DNL Live Search] no se puede leer ni utilizar este tipo de categoría.

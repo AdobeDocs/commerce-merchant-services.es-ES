@@ -1,17 +1,17 @@
 ---
-title: "Espacio de trabajo de reglas de búsqueda"
-description: '"Aprenda a rodear el [!DNL Live Search] rules workspace".'
+title: "Buscar espacio de trabajo de comercialización"
+description: '"Aprenda a utilizar el espacio de trabajo de comercialización de búsqueda".'
 exl-id: a52839fb-2264-4443-83c3-9eaa2ccb6996
-source-git-commit: 40bcae7a792660f02390f4d55967767b15c84f38
+source-git-commit: 888b81683a4e139a35b771d9c573f1f5f0c3b902
 workflow-type: tm+mt
-source-wordcount: '578'
+source-wordcount: '580'
 ht-degree: 1%
 
 ---
 
-# Espacio de trabajo Reglas de búsqueda
+# Buscar espacio de trabajo de comercialización
 
-El espacio de trabajo Reglas de búsqueda muestra la selección actual de reglas y su estado, y proporciona acceso a las herramientas necesarias para crear y administrar reglas. Desde el espacio de trabajo puede:
+El espacio de trabajo Buscar comercialización enumera la selección actual de reglas y su estado, y proporciona acceso a las herramientas necesarias para crear y administrar reglas. Desde el espacio de trabajo puede:
 
 * Buscar reglas
 * Ver detalles de la regla
@@ -19,7 +19,7 @@ El espacio de trabajo Reglas de búsqueda muestra la selección actual de reglas
 * Eliminar reglas
 * Acceso al editor de reglas
 
-![Rules workspace](assets/rules-workspace.png)
+![Buscar espacio de trabajo de comercialización](assets/rules-workspace.png)
 
 ## Establecer el ámbito
 
@@ -57,7 +57,7 @@ La búsqueda encuentra las reglas coincidentes a medida que escribe. La cadena d
 
 El panel de detalles muestra el nombre de la regla, el estado, las condiciones y los eventos, la fecha de inicio y finalización, la descripción y la fecha de la última edición. Las reglas se pueden habilitar, editar y eliminar desde el panel de detalles.
 
-1. En el *Buscar reglas* , busque la regla en la cuadrícula que desee ver y haga clic en **Más** (...).
+1. En el *Buscar comercialización* , busque la regla en la cuadrícula que desee ver y haga clic en **Más** (...).
 1. Clic **Ver detalles**.
 Puede realizar cualquiera de las siguientes acciones desde el panel Ver detalles:
 

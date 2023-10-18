@@ -2,9 +2,9 @@
 title: '[!DNL Live Search] Workspace'
 description: El [!DNL Live Search] workspace se utiliza para configurar, administrar y supervisar el rendimiento de la búsqueda.
 exl-id: fb85974a-a5f9-4e6c-bd03-451e6457f2d2
-source-git-commit: 550c382671fd5bb611cb6c502204dacc9748cffc
+source-git-commit: 888b81683a4e139a35b771d9c573f1f5f0c3b902
 workflow-type: tm+mt
-source-wordcount: '238'
+source-wordcount: '243'
 ht-degree: 0%
 
 ---
@@ -26,7 +26,7 @@ Inicialmente, la variable [ámbito](https://experienceleague.adobe.com/docs/comm
 | [Rendimiento](performance.md) | El panel proporciona una perspectiva del rendimiento de búsqueda de productos. |
 | [Faceteado](facets.md) | Filtro de alto rendimiento que utiliza varias dimensiones de valores de atributo para restringir los criterios de búsqueda. |
 | [Sinónimos](synonyms.md) | Amplíe el alcance de la búsqueda para incluir las palabras que los compradores podrían utilizar para encontrar productos que difieran de los del catálogo. |
-| [Buscar reglas](rules.md) | Dé forma a la experiencia de búsqueda con reglas lógicas que almacenan en déclencheur las acciones programadas. Impulse, entierre, fije u oculte productos para calibrar los resultados de búsqueda y lograr así sus objetivos empresariales. |
-| [Comercialización por categorías](category-merch.md) | Aplique la regla y la comercialización inteligente en el nivel de categoría. |
+| [Buscar comercialización](rules.md) | Dé forma a la experiencia de búsqueda con reglas lógicas que almacenan en déclencheur las acciones programadas. Impulse, entierre, fije u oculte productos para calibrar los resultados de búsqueda y lograr así sus objetivos empresariales. |
+| [Comercialización por categorías](category-merch.md) | Aplicar reglas y comercialización inteligente en el nivel de categoría. |
 | [GraphQL](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/) | Los desarrolladores que han iniciado sesión en el administrador de su tienda pueden componer y probar consultas con datos de catálogo reales. Para obtener más información, vaya a [Información general de GraphQL](https://developer.adobe.com/commerce/webapi/graphql/) en el [!DNL Live Search] documentación para desarrolladores. |
-| [Configuración](settings.md) | Determine cómo se agrupan los valores de faceta de precio por intervalo de precio en la tienda. |
+| [Configuración](settings.md) | Determine cómo se agrupan los valores de faceta de precio por intervalo de precio en la tienda y establezca el idioma de indexación. |

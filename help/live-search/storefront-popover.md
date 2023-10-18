@@ -2,9 +2,9 @@
 title: "[!DNL Storefront Popover]"
 description: "La [!DNL Live Search storefront popover] devuelve dinámicamente productos sugeridos y miniaturas."
 exl-id: 88fdc3ed-b606-40de-94b7-435be09c4072
-source-git-commit: bf44c04771069fe6502257b35517c62a5161f81b
+source-git-commit: 5d76d5537c8625296663239195abd26d4ee24db4
 workflow-type: tm+mt
-source-wordcount: '499'
+source-wordcount: '533'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,10 @@ De forma predeterminada, [!DNL Live Search] admite [buscar redirecciones de tér
 
 ## Atributos de búsqueda
 
-Para obtener resultados con objetivos muy precisos, revise el conjunto de [investigable](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/product-attributes.html) (`searchable=true`) atributos del producto. Para garantizar la relevancia, haga que los atributos solo se puedan buscar si contienen contenido que tenga un significado claro y conciso. Evite utilizar atributos que contengan texto menos preciso y largo, como `description`, que aunque la búsqueda está habilitada de forma predeterminada, puede reducir la precisión de los resultados de búsqueda. Por ejemplo, si una persona busca &quot;pantalones cortos&quot; y hay camisas con una descripción que incluye el término &quot;mangas cortas&quot;, entonces las camisas se incluirán en los resultados de búsqueda.
+Para obtener resultados con objetivos muy precisos, revise el conjunto de [investigable](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/product-attributes.html) (`searchable=true`) atributos del producto. Para garantizar la relevancia, haga que los atributos solo se puedan buscar si contienen contenido que tenga un significado claro y conciso. Evite utilizar atributos que contengan texto menos preciso y largo, como `description`, que aunque la búsqueda está habilitada de forma predeterminada, puede reducir la precisión de los resultados de búsqueda.
+Por ejemplo, si una persona busca &quot;pantalones cortos&quot; y hay camisas con una descripción que incluye el término &quot;mangas cortas&quot;, entonces las camisas se incluirán en los resultados de búsqueda.
+
+[!DNL Live Search] también respeta el [peso](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search-results.html#weighted-search) de un atributo de producto, tal como se establece en Adobe Commerce. Los atributos con un peso mayor aparecerán más arriba en los resultados de búsqueda.
 
 Siempre se pueden buscar los atributos siguientes:
 

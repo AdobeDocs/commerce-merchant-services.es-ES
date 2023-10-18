@@ -3,9 +3,9 @@ title: "[!DNL Live Search] Notas de la versión"
 description: '"La información de la última versión de [!DNL Live Search] de Adobe Commerce".'
 exl-id: 2a581e43-35f5-48ce-9752-844430ccdebf
 feature: Services, Search, Release Notes
-source-git-commit: decb478ecf3b0853933afcd35b99ec176d7262b2
+source-git-commit: 888b81683a4e139a35b771d9c573f1f5f0c3b902
 workflow-type: tm+mt
-source-wordcount: '1747'
+source-wordcount: '1771'
 ht-degree: 0%
 
 ---
@@ -26,13 +26,18 @@ Estas notas describen las actualizaciones que se publicaron fuera de una versió
 
 +++Actualizaciones de servicios alojados
 
+_12 de octubre de 2023_
+
+![Nuevo](../assets/new.svg) Los administradores de Commerce ahora pueden especificar el idioma del índice para [!DNL Live Search]. Consulte [Configuración](settings.md).
+![Fix](../assets/fix.svg) Se cambió el nombre de la pestaña &quot;Reglas de búsqueda&quot; a &quot;Buscar comercialización&quot;.
+
 _13 de junio de 2023_
 
 ![Fix](../assets/fix.svg) Se ha corregido un problema por el cual algunos caracteres, como comillas o apóstrofos, causaban problemas de clasificación. La reindexación resolverá estos problemas.
 
 _25 de abril de 2023_
 
-![Nuevo](../assets/new.svg) Los clientes de Live Search ahora pueden aprovechar las nuevas [Indexador de precios SaaS](../price-index/index.md).
+![Nuevo](../assets/new.svg) [!DNL Live Search] Los clientes de ahora pueden aprovechar las nuevas [Indexador de precios SaaS](../price-index/index.md).
 
 +++
 

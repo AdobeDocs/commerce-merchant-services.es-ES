@@ -3,9 +3,9 @@ title: '''Configuración y configuración de Commerce'' [!DNL Live Search] '''
 description: Describe las opciones de configuración de Adobe Commerce que [!DNL Live Search] puede leer.
 exl-id: a4e9e2dd-e912-4ced-a44a-091ac5334e50
 features: Services, Search, Configuration
-source-git-commit: 694a1c91425f246e497de50530d02f09a3093953
+source-git-commit: 888b81683a4e139a35b771d9c573f1f5f0c3b902
 workflow-type: tm+mt
-source-wordcount: '233'
+source-wordcount: '260'
 ht-degree: 0%
 
 ---
@@ -26,7 +26,11 @@ Hay opciones de configuración de Commerce que [!DNL Live Search] admite. En est
 | Tiendas > Configuración > Moneda > Moneda de visualización predeterminada | Sí con 3.1.0+ | Sí con 3.1.0+ |
 | Tiendas > Configuración > General > Configuración de Divisa > Opciones de Divisa > Divisa Base | Sí | Sí |
 
-Los precios de la página Widget de Lista de Productos y de la ventana emergente ahora se convierten a la moneda de visualización predeterminada con las tasas de cambio configuradas
+Los precios de la página Widget de Lista de Productos y de la ventana emergente ahora se convierten a la moneda de visualización predeterminada con las tasas de cambio configuradas.
+
+## Términos de búsqueda
+
+[!DNL Live Search] admite [buscar redirecciones de términos](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search-terms.html) sobre implementaciones en las que Adobe Commerce gestiona el enrutamiento: Luma y otros temas basados en php.
 
 ## Valores de configuración no admitidos
 

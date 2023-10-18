@@ -1,10 +1,10 @@
 ---
 title: "Agregar reglas"
-description: '"Aprenda a crear [!DNL Live Search] reglas".'
+description: '"Aprenda a crear reglas de comercialización de búsqueda".'
 exl-id: c6b92ef5-3b08-47f9-8412-955a9c95a9ee
-source-git-commit: 8093cf72e9adf846f4c40d302d20c77142368c8e
+source-git-commit: 888b81683a4e139a35b771d9c573f1f5f0c3b902
 workflow-type: tm+mt
-source-wordcount: '1428'
+source-wordcount: '1430'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ Para generar una regla, el primer paso es utilizar el editor de reglas para defi
 
 1. En el Administrador, vaya a **Marketing** > SEO y búsqueda > **[!DNL Live Search]**.
 1. Configure las variables **Ámbito** para identificar el [vista de tienda](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings) donde se aplica la regla.
-1. Haga clic en **Buscar reglas** pestaña.
+1. Haga clic en **Buscar comercialización** pestaña.
 1. Clic **Añadir regla** para iniciar el editor de reglas.
 
 ## Condiciones
