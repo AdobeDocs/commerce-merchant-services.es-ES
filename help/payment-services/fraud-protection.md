@@ -4,13 +4,13 @@ description: Habilitar la protección contra fraudes automatizada para [!DNL Pay
 role: Admin, User
 level: Intermediate
 feature: Payments, Checkout, Configuration, Security
-source-git-commit: 400d1f8a384fceebcd13e9496f8e218e694d2752
+exl-id: 440296bb-a6ff-408b-8195-3027916e4f84
+source-git-commit: 480b35fbc57b8528dbc305aa7db52483ba49d98c
 workflow-type: tm+mt
-source-wordcount: '434'
+source-wordcount: '406'
 ht-degree: 0%
 
 ---
-
 
 # Protección contra fraudes significativa
 
@@ -18,15 +18,9 @@ Puede habilitar la protección contra fraudes automatizada para [!DNL Payment Se
 
 Adobe Commerce es compatible con las versiones 5.4.0 y posteriores de Signifyd. [!DNL Payment Services] admite flujos Signifyd anteriores y posteriores a la autenticación.
 
+Signifyd/[!DNL Payment Services] La integración de proporciona cobertura para tarjetas de crédito, tarjetas de débito, tarjetas abovedadas, pagos a través del administrador y métodos de pago mediante PayPal y Apple Pay. Aunque algunos detalles de las transacciones no se comparten entre los Servicios de pago y Signifyd, Signifyd proporciona una cobertura de riesgo integral para todos los métodos de pago, asegurando la máxima protección.
+
 Consulte [Documentación significativa](https://community.signifyd.com/support/s/article/magento-2-extension-install-guide?language=en_US#downloadandinstallingmagento2extension) para obtener más información sobre la instalación y configuración de la extensión de.
-
-## Limitaciones de integración
-
-Actualmente, las siguientes limitaciones se aplican a la integración entre Signifyd y [!DNL Payment Services]:
-
-* Signifyd/[!DNL Payment Services] La integración de solo admite [campos de tarjeta de crédito](../payment-services/payments-options.md#credit-card-fields) (no botones de pago de PayPal ni Apple Pay). [!DNL Payment Services] envía los datos de los pedidos recibidos mediante los botones de pago de PayPal y Apple Pay a Signify, pero la integración solo proporciona detalles para los pedidos realizados mediante campos de tarjeta de crédito.
-* Signifyd no admite pedidos realizados en Admin por un comerciante para un comprador.
-* Signifyd no admite pedidos realizados con [tarjetas de crédito abovedadas](../payment-services/vaulting.md).
 
 ## Incorporación
 

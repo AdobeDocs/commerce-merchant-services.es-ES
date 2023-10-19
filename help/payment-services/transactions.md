@@ -4,9 +4,9 @@ description: Utilice el informe Transacciones para obtener visibilidad sobre las
 role: User
 level: Intermediate
 exl-id: dd1d80f9-5983-4181-91aa-971522eb56fa
-source-git-commit: ffbc5ca30a092f5ef2642b051f080fe47ce0e815
+source-git-commit: 91acc6e1dfd142caca77c0dc9ba55da34f75dd60
 workflow-type: tm+mt
-source-wordcount: '1216'
+source-wordcount: '1274'
 ht-degree: 0%
 
 ---
@@ -82,6 +82,8 @@ En la vista Informe de transacciones, puede filtrar los resultados de los estado
 1. En el _Administrador_ barra lateral, vaya a **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > _[!UICONTROL Transactions]_>**[!UICONTROL View Report]**.
 1. Haga clic en **[!UICONTROL Filter]** selector.
 1. Alternar el _[!UICONTROL Transaction Result]_opciones para ver los resultados del informe sólo para las transacciones de pedido seleccionadas.
+1. Seleccione el _[!UICONTROL Card Type]_para ver los resultados del informe del tipo de tarjeta seleccionado. Se muestra información de objeto adicional cuando el procesador de pagos no puede identificar el tipo de tarjeta.
+1. Seleccione el _[!UICONTROL Card Brand]_para ver los resultados de los informes de la marca de tarjeta seleccionada. Se muestra información adicional cuando el procesador de pagos no puede identificar la marca de la tarjeta.
 1. Alternar el _[!UICONTROL Payment Method]_opciones para ver los resultados del informe sólo para métodos de pago seleccionados.
 1. Introduzca una _Importe de pedido mínimo_ o _Importe máximo del pedido_ para ver los resultados del informe dentro de ese rango de importes de pedidos.
 1. Introduzca una _[!UICONTROL Order ID]_para buscar una transacción específica.
