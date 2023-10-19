@@ -2,9 +2,9 @@
 title: Incorporación e instalación
 description: Obtenga información sobre cómo instalar [!DNL Catalog Service]
 exl-id: 4e9fbdc9-67a1-4703-b8c0-8b159e0cc2a7
-source-git-commit: f2771983072848e0da4a51d06bec970737ef951a
+source-git-commit: ec8e37078cf1b5182036192a542fdbabe61e68dd
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '624'
 ht-degree: 0%
 
 ---
@@ -73,7 +73,7 @@ Utilice este método para instalar [!DNL Catalog Service] para una instancia de 
 
 ```json
 "require": {
-  "magento/catalog-service": "^3.0.0"
+  "magento/catalog-service": "^3.0.1"
 }
 ```
 
@@ -95,7 +95,7 @@ Utilice este método para instalar [!DNL Catalog Service] extensión para una in
 
 ```json
 "require": {
-    "magento/catalog-service": "^3.0.0"
+    "magento/catalog-service": "^3.0.1"
 }
 ```
 
