@@ -3,9 +3,9 @@ title: '[!DNL Catalog Service] Notas de la versión'
 description: La información de la versión más reciente de [!DNL Catalog Service] para Adobe Commerce.
 exl-id: 9bf8e3f7-5b74-4755-867e-ac1c5000ff33
 feature: Services, Catalog Service, Release Notes
-source-git-commit: ec8e37078cf1b5182036192a542fdbabe61e68dd
+source-git-commit: 59de14773849dfd996b6eac115ed821342ccd48d
 workflow-type: tm+mt
-source-wordcount: '548'
+source-wordcount: '538'
 ht-degree: 1%
 
 ---
@@ -30,7 +30,6 @@ _12 de octubre de 2023_
 
 ![Nuevo](../assets/new.svg) El servicio de catálogo admite `inStock` indicador para variantes de producto.
 ![Nuevo](../assets/new.svg) `urlKey` y `externalId` se han agregado al esquema de GraphQL.
-![Nuevo](../assets/new.svg) El servicio de catálogo ahora es compatible con la API de limpieza.
 
 #### Limitaciones conocidas
 
