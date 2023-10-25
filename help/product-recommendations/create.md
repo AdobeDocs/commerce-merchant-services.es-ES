@@ -2,9 +2,9 @@
 title: Crear nueva recomendación
 description: Obtenga información sobre cómo crear una unidad de recomendación de productos.
 exl-id: d393ab78-0523-463f-9b03-ad3f523dce0f
-source-git-commit: 2b5ee71618055c48bf4d6a86dbbd4708647b5d7c
+source-git-commit: 24a930178873535f23331c9c5295c482d5b8e384
 workflow-type: tm+mt
-source-wordcount: '857'
+source-wordcount: '1007'
 ht-degree: 0%
 
 ---
@@ -32,12 +32,12 @@ Cuando activa la unidad de recomendación, Adobe Commerce empieza a [recopilar d
 
 1. En el _Seleccionar tipo de página_ , seleccione la página en la que desea que aparezca la recomendación entre las siguientes opciones:
 
-   - Página principal
-   - Categoría
-   - Detalles del producto
-   - Carrito
-   - Confirmación
-   - [Page Builder](https://experienceleague.adobe.com/docs/commerce-admin/page-builder/add-content/recommendations.html)
+   * Página principal
+   * Categoría
+   * Detalles del producto
+   * Carrito
+   * Confirmación
+   * [Page Builder](https://experienceleague.adobe.com/docs/commerce-admin/page-builder/add-content/recommendations.html)
 
    Puede crear hasta cinco unidades de recomendación activas para cada tipo de página y hasta 25 para Page Builder. El tipo de página aparece atenuado cuando se alcanza el límite.
 
@@ -45,21 +45,6 @@ Cuando activa la unidad de recomendación, Adobe Commerce empieza a [recopilar d
    _Nombre de recomendación y ubicación de página_
 
 1. En el _Seleccionar tipo de recomendación_ , especifique la [tipo de recomendación](type.md) desea que aparezca en la página seleccionada. En algunas páginas, la variable [ubicación](placement.md) de recomendaciones se limita a determinados tipos.
-
-   Algunos tipos de recomendación utilizan datos de comportamiento de sus compradores para lo siguiente [entrenar modelos de aprendizaje automático](behavioral-data.md) para crear recomendaciones personalizadas. Para ayudarle a visualizar el progreso de formación de cada tipo de recomendación, esta sección muestra una medida de la preparación para cada tipo. Estos indicadores de preparación se calculan en función de un par de factores:
-
-   - Tamaño suficiente del conjunto de resultados: ¿Hay suficientes resultados devueltos en la mayoría de los casos para evitar el uso de? [recomendaciones de copia de seguridad](behavioral-data.md#backuprecs)?
-
-   - Variedad del conjunto de resultados suficiente: ¿los productos que se devuelven representan una variedad de productos del catálogo? El objetivo con este factor es evitar tener una minoría de productos siendo los únicos recomendados en todo el sitio.
-
-   En función de los factores anteriores, se calcula y se muestra un valor de disponibilidad. Un tipo de recomendación se considera listo para implementar cuando su valor de preparación es del 75 % o superior. Un tipo de recomendación se considera parcialmente listo cuando su preparación es de al menos el 50 %. Un tipo de recomendación se considera no listo para implementarse cuando su valor de preparación es inferior al 50 %.
-
-   >[!NOTE]
-   >
-   >El indicador puede no llegar nunca al 100%.
-
-   ![Tipo de recomendación](assets/create-recommendation-select-type.png)
-   _Tipo de recomendación_
 
 1. En el _Etiqueta de visualización de tienda_ , introduzca la [etiqueta](placement.md#recommendation-labels) que es visible para los compradores, como &quot;Principales vendedores&quot;.
 
@@ -69,8 +54,8 @@ Cuando activa la unidad de recomendación, Adobe Commerce empieza a [recopilar d
 
 1. En el _Seleccionar ubicación_ , especifique la ubicación donde aparecerá la unidad de recomendación en la página.
 
-   - Al final del contenido principal
-   - Al principio del contenido principal
+   * Al final del contenido principal
+   * Al principio del contenido principal
 
 1. (Opcional) Para cambiar el orden de las recomendaciones, seleccione y mueva las filas de la _Elegir posición_ tabla.
 
@@ -86,9 +71,50 @@ Cuando activa la unidad de recomendación, Adobe Commerce empieza a [recopilar d
 
 1. Cuando termine, haga clic en una de las siguientes opciones:
 
-   - **Guardar como borrador** para editar la unidad de recomendación más adelante. No se puede modificar el tipo de página o el tipo de recomendación de una unidad de recomendación en estado de borrador.
+   * **Guardar como borrador** para editar la unidad de recomendación más adelante. No se puede modificar el tipo de página o el tipo de recomendación de una unidad de recomendación en estado de borrador.
 
-   - **Activar** para habilitar la unidad de recomendación en la tienda.
+   * **Activar** para habilitar la unidad de recomendación en la tienda.
+
+## Indicadores de preparación
+
+Algunos tipos de recomendación utilizan datos de comportamiento de sus compradores para lo siguiente [entrenar modelos de aprendizaje automático](behavioral-data.md) para crear recomendaciones personalizadas.
+
+Solo requiere datos de catálogo. No se necesitan datos de comportamiento para estos:
+
+* _Más parecido a esto_
+* _Vistos recientemente_
+* _Similitud visual_
+
+Basado en los últimos seis meses de datos de comportamiento de la tienda:
+
+* _Vio esto, vio aquello._
+* _Vio esto, compró aquello._
+* _Compré esto, compré aquello._
+* _Recomendado para usted_
+
+Los tipos de recomendación basados en popularidad utilizan los últimos siete días de datos de comportamiento de tienda:
+
+* Más visitados
+* Más comprados
+* Añadido al carro
+* Tendencia
+
+Se espera que los valores del indicador de preparación fluctúen debido a factores como el tamaño general del catálogo, el volumen de eventos de interacción de productos (vistas, adiciones al carro de compras, compras) y el porcentaje de SKU que registran esos eventos en un intervalo de tiempo determinado, como se ha indicado anteriormente. Por ejemplo, durante el tráfico máximo de la temporada de vacaciones, los indicadores de disponibilidad pueden mostrar valores más altos que en tiempos de volumen normal.
+
+Para ayudarle a visualizar el progreso de formación de cada tipo de recomendación, la variable _Seleccionar tipo de recomendación_ muestra una medida de la disponibilidad para cada tipo. Estos indicadores de preparación se calculan en función de un par de factores:
+
+* Tamaño suficiente del conjunto de resultados: ¿Hay suficientes resultados devueltos en la mayoría de los casos para evitar el uso de? [recomendaciones de copia de seguridad](behavioral-data.md#backuprecs)?
+
+* Variedad del conjunto de resultados suficiente: ¿los productos que se devuelven representan una variedad de productos del catálogo? El objetivo con este factor es evitar tener una minoría de productos siendo los únicos recomendados en todo el sitio.
+
+En función de los factores anteriores, se calcula y se muestra un valor de disponibilidad. Un tipo de recomendación se considera listo para implementar cuando su valor de preparación es del 75 % o superior. Un tipo de recomendación se considera parcialmente listo cuando su preparación es de al menos el 50 %. Un tipo de recomendación se considera no listo para implementarse cuando su valor de preparación es inferior al 50 %. Estas son directrices generales, pero cada caso individual puede variar en función de la naturaleza de los datos recopilados, tal como se ha descrito anteriormente.
+
+![Tipo de recomendación](assets/create-recommendation-select-type.png)
+_Tipo de recomendación_
+
+>[!NOTE]
+>
+>Los indicadores nunca pueden alcanzar el 100%.
 
 ## Previsualizar Recommendations {#preview}
 
