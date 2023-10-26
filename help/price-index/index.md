@@ -3,8 +3,8 @@ title: Indexación de precios de SaaS
 description: Uso de la indexación de precios SaaS para mejorar el rendimiento
 seo-title: Adobe SaaS Price Indexing
 seo-description: Price indexing give performance improvements using SaaS infrastructure
-exl-id: 747c0f3e-dfde-4365-812a-5ab7768342ab
-source-git-commit: b7989b416f852d2c7164d21e8f0598373662b760
+exl-id: 5b92d6ea-cfd6-4976-a430-1a3aeaed51fd
+source-git-commit: 3809d27fc3689519e4a162aa52f481d254aec656
 workflow-type: tm+mt
 source-wordcount: '713'
 ht-degree: 0%
@@ -52,12 +52,9 @@ Los usuarios de Luma y Adobe Commerce Core GraphQL pueden instalar el [`catalog-
 Después de actualizar la instancia de Adobe Commerce con la compatibilidad con la indexación de precios SaaS, sincronice las nuevas fuentes:
 
 ```
-magento/module-saas-price
-magento/module-saas-scopes
-magento/module-product-override-price-remover
-magento/module-bundle-product-override-data-exporter
-magento/module-bundle-product-override-data-exporter
-magento/module-gift-card-product-data-exporter
+bin/magento saas:resync --feed=scopesCustomerGroup
+bin/magento saas:resync --feed=scopesWebsite
+bin/magento saas:resync --feed=prices
 ```
 
 ## Precios para tipos de productos personalizados
