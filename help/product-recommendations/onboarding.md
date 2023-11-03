@@ -2,9 +2,9 @@
 title: Incorporación
 description: Conozca los requisitos y las plataformas compatibles en [!DNL Product Recommendations].
 exl-id: ad47ac39-8f6f-4765-84ad-9e3d104385db
-source-git-commit: 209bdf9c69ff81481d6df7cb8e8832deef13c9f4
+source-git-commit: 8bac6f053cddd3d47c3aa279abf7c96c79ffcd81
 workflow-type: tm+mt
-source-wordcount: '283'
+source-wordcount: '289'
 ht-degree: 0%
 
 ---
@@ -29,6 +29,10 @@ El proceso de incorporación para [!DNL Product Recommendations] requiere acceso
 
 - Adobe Commerce on premise (EE) : 2.4.4+
 - Adobe Commerce en la nube (ECE) : 2.4.4+
+
+## Extremo
+
+[!DNL Product Recommendations] se comunica a través del punto final en `https://catalog-service.adobe.io/graphql`.
 
 ### Compatibilidad con Page Builder
 

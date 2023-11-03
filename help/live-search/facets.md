@@ -2,9 +2,9 @@
 title: "Facetas"
 description: '"[!DNL Live Search] las facetas utilizan varias dimensiones de valores de atributo como criterios de búsqueda".'
 exl-id: 63c0b255-6be9-41ad-b4bf-13bb7ff098fd
-source-git-commit: 4eddad715405f35ea063bab3cf4651fec3beeae5
+source-git-commit: 8bac6f053cddd3d47c3aa279abf7c96c79ffcd81
 workflow-type: tm+mt
-source-wordcount: '517'
+source-wordcount: '515'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 Las facetas son un método de filtrado de alto rendimiento que utiliza varias dimensiones de valores de atributo como criterios de búsqueda. La búsqueda con facetas es similar, pero considerablemente &quot;más inteligente&quot; que el estándar [navegación por capas](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/navigation/navigation-layered.html). La lista de filtros disponibles viene determinada por la variable [atributos filtrables](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/navigation/navigation-layered.html#filterable-attributes) de productos devueltos en los resultados de búsqueda.
 
-[!DNL Live Search] utiliza el `productSearch` consulta, que devuelve facetas y otros datos específicos de [!DNL Live Search]. Consulte [`productSearch` query](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search/) en la documentación para desarrolladores para ver ejemplos de código.
+[!DNL Live Search] utiliza el `productSearch` consulta, que devuelve facetas y otros datos específicos de [!DNL Live Search]. Consulte [`productSearch` query](https://developer.adobe.com/commerce/services/graphql/live-search/product-search/) en la documentación para desarrolladores para ver ejemplos de código.
 
 ![Resultados de búsqueda filtrados](assets/storefront-search-results-run.png)
 

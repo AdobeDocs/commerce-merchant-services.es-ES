@@ -3,9 +3,9 @@ title: '[!DNL Catalog Service] Notas de la versión'
 description: La información de la versión más reciente de [!DNL Catalog Service] para Adobe Commerce.
 exl-id: 9bf8e3f7-5b74-4755-867e-ac1c5000ff33
 feature: Services, Catalog Service, Release Notes
-source-git-commit: 59de14773849dfd996b6eac115ed821342ccd48d
+source-git-commit: 8bac6f053cddd3d47c3aa279abf7c96c79ffcd81
 workflow-type: tm+mt
-source-wordcount: '538'
+source-wordcount: '533'
 ht-degree: 1%
 
 ---
@@ -65,7 +65,7 @@ _18 de julio de 2023_
 
 [!BADGE Admitido]{type=Informative tooltip="Admitido"}
 
-![Nuevo](../assets/new.svg) El servicio de catálogo ahora admite [`recommendations`](https://developer.adobe.com/commerce/webapi/graphql/schema/product-recommendations/queries/recommendations/) GraphQL consulta el Recommendations del producto.
+![Nuevo](../assets/new.svg) El servicio de catálogo ahora admite [`recommendations`](https://developer.adobe.com/commerce/services/graphql/recommendations/recommendations/) GraphQL consulta el Recommendations del producto.
 
 ### Versión V1.10
 
@@ -90,7 +90,7 @@ _28 de marzo de 2023_
 
 [!BADGE Admitido]{type=Informative tooltip="Admitido"}
 
-![Nuevo](../assets/new.svg) Se han añadido muestras a [`products`](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/queries/products/) consulta.
+![Nuevo](../assets/new.svg) Se han añadido muestras a [`products`](https://developer.adobe.com/commerce/services/graphql/catalog-service/products/) consulta.
 ![Nuevo](../assets/new.svg) Se ha añadido la capacidad de `entityId` usando [API Mesh](mesh.md).
 
 ### Versión V1.5
@@ -99,7 +99,7 @@ _6 de marzo de 2023_
 
 [!BADGE Admitido]{type=Informative tooltip="Admitido"}
 
-![Nuevo](../assets/new.svg) Añadido [`categories`](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/queries/categories/) Funcionalidad de GraphQL.
+![Nuevo](../assets/new.svg) Añadido [`categories`](https://developer.adobe.com/commerce/services/graphql/schema/catalog-service/categories/) Funcionalidad de GraphQL.
 ![Fix](../assets/fix.svg) Rendimiento y escalabilidad de API mejorados.
 
 ### Versión V1.4
