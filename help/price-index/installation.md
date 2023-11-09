@@ -3,11 +3,11 @@ title: Instalación manual de indexación de precios SaaS
 description: Instalación de la indexación de precios SaaS para la versión anterior
 seo-title: SaaS Price Indexing installation
 seo-description: Installing SaaS Price indexing
-exl-id: 4577111a-64a4-4e20-b970-3abfa6758247
+exl-id: a607e852-aa04-4be3-9576-a6bf45f8751f
 role: Admin, Developer
-source-git-commit: 3809d27fc3689519e4a162aa52f481d254aec656
+source-git-commit: b2ebf26c9a34e5e2e08b7adbabcc780f24363e3c
 workflow-type: tm+mt
-source-wordcount: '276'
+source-wordcount: '291'
 ht-degree: 0%
 
 ---
@@ -15,12 +15,12 @@ ht-degree: 0%
 # Instalación manual de indexación de precios SaaS
 
 La indexación de precios SaaS está disponible de forma predeterminada para [última versión](index.md#Requirements) de Commerce Services.
-Si no tiene la versión más reciente y desea habilitar la indexación de precios SaaS para su instancia de Adobe Commerce, utilice esta miniguía.
+Si no tiene la versión más reciente y desea habilitar la indexación de precios SaaS para su instancia de Adobe Commerce, utilice esta guía.
 
 ## Requisitos previos
 
 * Adobe Commerce 2.4.4+
-* Al menos uno de los siguientes servicios SaaS está instalado:
+* Al menos uno de los siguientes servicios SaaS instalados:
 
    * [Servicio de catálogo](../catalog-service/overview.md)
    * [Live Search](../live-search/guide-overview.md)
@@ -29,7 +29,7 @@ Si no tiene la versión más reciente y desea habilitar la indexación de precio
 ## Instalación de los módulos necesarios
 
 Según la configuración, el proceso de instalación puede ser ligeramente diferente.
-Existen extensiones que añaden nuevas fuentes y el código de compatibilidad.
+Existen extensiones que agregan las nuevas fuentes y el código de compatibilidad, y una extensión que elimina la fuente de precios predeterminada.
 
 1. Añada los siguientes módulos a su `composer.json` archivo:
 
@@ -52,7 +52,6 @@ Después de la actualización, hay tres fuentes nuevas disponibles:
 * `scopesCustomerGroup` - responsable de prestar los grupos de clientes al servicio
 * `scopesWebsite` : responsable de la entrega de sitios web, grupos de tiendas y vistas de tiendas al servicio
 
-
 1. Configure las nuevas fuentes para que se configuren en el modo &quot;Actualizar según lo programado&quot;:
 
    ```bash
@@ -69,8 +68,7 @@ Después de la actualización, hay tres fuentes nuevas disponibles:
 
 Ejecute los indexadores anteriores manualmente, según sea necesario. De lo contrario, los datos se actualizan en el proceso de sincronización estándar. Más información sobre la [Sincronización de catálogo](../landing/catalog-sync.md) servicio.
 
-
-Para configurar Live Search y el adaptador de catálogo, siga las [Conector de Commerce Services](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/integration-services/saas.html) instrucciones.
+Los usuarios de Luma y Adobe Commerce Core GraphQL pueden instalar el [`Catalog Adapter`](catalog-adapter.md) que proporciona compatibilidad con Luma y Core GraphQl y deshabilita el indexador de precios de productos de Adobe Commerce.
 
 ## Advertencias
 

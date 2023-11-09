@@ -3,9 +3,9 @@ title: Extensión de adaptador de catálogo
 description: Uso del adaptador de catálogo para representar los precios de Commerce Services
 seo-title: Catalog Adapter Extension
 seo-description: Using Catalog Adapter to render prices from Commerce Services
-source-git-commit: 6b578e7113c278a05a64f2db5e032bccc4a9580a
+source-git-commit: a637ece6e806771dfc6359dacececf8ccf05b983
 workflow-type: tm+mt
-source-wordcount: '329'
+source-wordcount: '330'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ El indexador de precios de productos Adobe Commerce está desactivado y no se pu
 ## Requisitos
 
 * Adobe Commerce 2.4.4+
-* Uno de los siguientes Servicios de Commerce instalados:
+* Tener instalados los siguientes servicios de Commerce:
 
    * [Servicio de catálogo](../catalog-service/overview.md)
    * [Live Search](../live-search/guide-overview.md)
@@ -34,14 +34,14 @@ Una vez instalados esos servicios, ejecute el siguiente comando:
 composer require adobe-commerce/catalog-adapter
 ```
 
-## Volver a habilitar el indexador de precios de productos Adobe Commerce
+## Volver a habilitar el indexador de precios de productos de Adobe Commerce
 
 Si tiene aplicaciones de terceros que dependen del indexador predeterminado de precios de productos de Adobe Commerce, puede volver a activarlas con los siguientes comandos:
 
 ```bash
 # re-enable Product Price indexer
 bin/magento module:disable Magento_PriceIndexerDisabler
-# reindex Product Price indexer 
+# re-index Product Price indexer 
 bin/magento index:reindex catalog_product_price
 ```
 
@@ -78,4 +78,4 @@ Los siguientes son algunos ejemplos comunes `Catalog Adapter` escenarios.
 * Un comerciante con una instancia de Commerce sin encabezado con los servicios necesarios instalados (Live Search, Product Recommendations, Servicio de catálogo)
 * No se depende del indexador de precios de producto predeterminado de Adobe Commerce
 
-1. Instale el &quot;desactivador de precios&quot; desde el paquete del adaptador de catálogo
+1. Instale el `magento/module-price-indexer-disabler` del paquete del adaptador de catálogo.

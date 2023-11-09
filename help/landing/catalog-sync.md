@@ -3,9 +3,9 @@ title: Sincronización de catálogo
 description: Obtenga información sobre cómo exportar datos de productos desde [!DNL Commerce] servidor a [!DNL Commerce Services].
 exl-id: 19d29731-097c-4f5f-b8c0-12f9c91848ac
 feature: Catalog Management, Data Import/Export, Catalog Service
-source-git-commit: 151b57d7b31637178c645149d78c0d3670ee1c3e
+source-git-commit: 92129633adadd3ed699ae6427c01622dcb6ae3b4
 workflow-type: tm+mt
-source-wordcount: '1166'
+source-wordcount: '1167'
 ht-degree: 0%
 
 ---
@@ -34,9 +34,9 @@ Con el **Sincronización de catálogo** panel que puede:
 - Ver el estado de sincronización (**En curso**, **Correcto**, **Error**)
 - Ver el número total de productos sincronizados
 - Busque productos sincronizados para ver su estado actual
-- Buscar en el catálogo de la tienda por nombre, SKU, etc
+- Buscar en el catálogo de la tienda por nombre, SKU, etc.
 - Ver los detalles del producto sincronizado en JSON para ayudar a diagnosticar una discrepancia de sincronización
-- Reinicio del proceso de sincronización
+- Volver a iniciar el proceso de sincronización
 
 ### Última sincronización
 
@@ -67,7 +67,6 @@ Si necesita iniciar una resincronización del catálogo antes de que se produzca
 1. En el _Resincronizar datos_ , haga clic en [!UICONTROL Resync].
 
    [!DNL Commerce] sincroniza el catálogo durante la siguiente ventana de sincronización programada. En función del tamaño del catálogo, esta operación puede tardar mucho tiempo.
-
 
 ## Productos de catálogo sincronizados
 
@@ -166,7 +165,7 @@ bin/magento saas:resync --feed categoryPermissions
 
 Si no ve los datos esperados en [!DNL Commerce Service], compruebe si se ha producido un problema durante la sincronización desde el [!DNL Adobe Commerce] instancia a la [!DNL Commerce Service] plataforma.
 
-Hay 2 archivos de registro en el `var/log/` directorio:
+Hay dos archivos de registro en el `var/log/` directorio:
 
 - `commerce-data-export-errors.log` - si se produjo un error durante _recolección_ fase
 - `saas-export-errors.log` - si se produjo un error durante _transmitiendo_ fase
@@ -193,7 +192,7 @@ PERSIST_EXPORTED_FEED=1 bin/magento saas:resync --feed=products
 
 #### Perfilado
 
-Si el proceso de reindexación de una fuente específica lleva una cantidad de tiempo injustificada, ejecute el generador de perfiles para recopilar datos adicionales que puedan ser útiles para el equipo de asistencia. Para ello, pase el `EXPORTER_PROFILER=1`variable de entorno:
+Si el proceso de reindexación de una fuente específica lleva una cantidad de tiempo no razonable, ejecute el generador de perfiles para recopilar datos adicionales que puedan ser útiles para el equipo de asistencia. Para ello, pase el `EXPORTER_PROFILER=1`variable de entorno:
 
 ```bash
 EXPORTER_PROFILER=1 bin/magento indexer:reindex catalog_data_exporter_products
