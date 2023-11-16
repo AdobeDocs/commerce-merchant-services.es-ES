@@ -1,8 +1,8 @@
 ---
-title: "[!DNL Live Search] Indexando"
+title: "[!DNL Live Search] Indexación"
 description: '"Aprenda cómo [!DNL Live Search] indexa las propiedades de atributos de producto".'
 exl-id: 04441e58-ffac-4335-aa26-893988a89720
-source-git-commit: 5d76d5537c8625296663239195abd26d4ee24db4
+source-git-commit: a062133d94cb4898149b9cc878351ca2fad3c09e
 workflow-type: tm+mt
 source-wordcount: '590'
 ht-degree: 0%
