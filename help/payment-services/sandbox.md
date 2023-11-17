@@ -3,9 +3,9 @@ title: Configuración de la zona protegida de pruebas
 description: Utilizar una cuenta de zona protegida de PayPal [!DNL Payment Services] en modo de prueba.
 exl-id: 99c14b4e-e6cf-48f9-9546-5c0d5c71464d
 feature: Payments, Checkout, Configuration, Install
-source-git-commit: 6ba5a283d9138b4c1be11b80486826304c63247f
+source-git-commit: bfb49e3602cc80f97817a8fd8d7c4684a3a3bcd2
 workflow-type: tm+mt
-source-wordcount: '595'
+source-wordcount: '594'
 ht-degree: 0%
 
 ---
@@ -72,7 +72,7 @@ Para restablecer la cuenta de la zona protegida:
 
 ## Habilitar número de teléfono de contacto
 
-El número de teléfono de contacto te permite obtener los números de teléfono de contacto que PayPal recopila de tus clientes. PayPal siempre recopila los números de teléfono de contacto de los titulares de cuentas de PayPal para ayudar a confirmar su identidad y ponerse en contacto con ellos para resolver problemas en sus cuentas o para completar sus procesos de cumplimiento. Sin embargo, PayPal desaconseja el uso de números de teléfono de contacto directamente del comerciante porque puede afectar negativamente a las ventas. Consulte la [PayPal obtener números de teléfono de contacto](https://developer.paypal.com/docs/admin/checkout-settings/#get-contact-telephone-numbers) para obtener más información.
+El número de teléfono de contacto te permite obtener los números de teléfono de contacto que PayPal recopila de tus clientes. PayPal siempre recopila los números de teléfono de contacto de los titulares de cuentas de PayPal para ayudar a confirmar su identidad y ponerse en contacto con ellos para resolver problemas en sus cuentas o para completar sus procesos de cumplimiento. Sin embargo, PayPal desaconseja el uso de números de teléfono de contacto directamente del comerciante porque puede afectar negativamente a las ventas. Consulte la [PayPal obtener números de teléfono de contacto](https://www.sandbox.paypal.com/businessmanage/preferences/website) para obtener más información.
 
 Esta función es `off` de forma predeterminada. Cuando lo habilita, los administradores de tiendas pueden ver los números de teléfono cuando un cliente completa un flujo de cierre de compra con marca fuera de la página de cierre de compra.
 
