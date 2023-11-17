@@ -2,9 +2,9 @@
 title: Widget de página de lista de productos
 description: Activación y estilo de [!DNL Live Search Product Listing Page Widget]
 exl-id: f7346a06-a8c7-4a33-8437-ea4f61d9281f
-source-git-commit: 368059d50133d8b01be83e1616044a61ab094e3c
+source-git-commit: c77b2f9cb55d3eb339dcc900ce606b94c592f559
 workflow-type: tm+mt
-source-wordcount: '252'
+source-wordcount: '273'
 ht-degree: 0%
 
 ---
@@ -16,9 +16,12 @@ El [!DNL Live Search Product Listing Page Widget] (PLP) utiliza la plataforma de
 ## Activación del widget PLP
 
 Si la variable [!DNL Live Search] Cuando el servicio de está instalado, la funcionalidad de búsqueda predeterminada se convierte en [!DNL Live Search] automáticamente.
-El widget PLP debe estar habilitado en Admin.
 
-1. Ir a **Tiendas** > Configuración > **Configuración** > **[!DNL Live Search]** > **Características de tienda** y establecer **Activar widgets de lista de productos** a &quot;Sí&quot;.
+El [!DNL Live Search] El widget PLP está habilitado de forma predeterminada para las nuevas instalaciones. Si va a realizar la actualización [!DNL Live Search] y el widget PLP ya se ha desactivado, seguirá siéndolo.
+
+Para desactivar el widget PLP:
+
+1. Ir a **Tiendas** > Configuración > **Configuración** > **[!DNL Live Search]** > **Características de tienda** y establecer **Activar widgets de lista de productos** a &quot;No&quot;.
 1. Seleccionar **Guardar configuración** para guardar la configuración.
 
 ## Ejemplo de estilo
@@ -28,7 +31,7 @@ Puede personalizar el aspecto del widget PLP para que coincida con su sitio medi
 >[!NOTE]
 >
 >Los elementos con clases personalizadas dentro de una temática de Adobe Commerce no se heredan. Estos elementos deben estar dirigidos por su clase específica para que coincidan con las clases personalizadas; las clases de acción principales no funcionarán en un botón de widget.
->Se heredarán los elementos de destino genéricos dentro de CSS; `button` se aplicará a los botones del widget.
+>Se heredan los elementos de destino genéricos dentro de CSS; `button` se aplica a los botones del widget.
 
 Los divs resaltados contienen la clase de destino `ds-sdk-product-item__product-name`.
 
@@ -126,7 +129,8 @@ Personalice el nombre del producto añadiendo una regla para que esté en mayús
 
 * `.ds-sdk-input`
 * `.ds-sdk-input__label`
-* `.ds-sdk-input__options`
+* `.ds-sdk-product-item__product-swatch-group`
+* `ds-sdk-product-item__product-swatch-item`
 * `.ds-sdk-input_fieldset_show-more`
 
 ![Entrada](assets/plp-css-sdk-input.png)

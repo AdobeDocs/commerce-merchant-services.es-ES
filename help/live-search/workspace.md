@@ -2,9 +2,9 @@
 title: '[!DNL Live Search] Workspace'
 description: El [!DNL Live Search] workspace se utiliza para configurar, administrar y supervisar el rendimiento de la búsqueda.
 exl-id: fb85974a-a5f9-4e6c-bd03-451e6457f2d2
-source-git-commit: 8bac6f053cddd3d47c3aa279abf7c96c79ffcd81
+source-git-commit: c77b2f9cb55d3eb339dcc900ce606b94c592f559
 workflow-type: tm+mt
-source-wordcount: '243'
+source-wordcount: '236'
 ht-degree: 0%
 
 ---
@@ -28,5 +28,5 @@ Inicialmente, la variable [ámbito](https://experienceleague.adobe.com/docs/comm
 | [Sinónimos](synonyms.md) | Amplíe el alcance de la búsqueda para incluir las palabras que los compradores podrían utilizar para encontrar productos que difieran de los del catálogo. |
 | [Buscar comercialización](rules.md) | Dé forma a la experiencia de búsqueda con reglas lógicas que almacenan en déclencheur las acciones programadas. Impulse, entierre, fije u oculte productos para calibrar los resultados de búsqueda y lograr así sus objetivos empresariales. |
 | [Comercialización por categorías](category-merch.md) | Aplicar reglas y comercialización inteligente en el nivel de categoría. |
-| [GraphQL](https://developer.adobe.com/commerce/services/graphql/live-search/) | Los desarrolladores que han iniciado sesión en el administrador de su tienda pueden componer y probar consultas con datos de catálogo reales. Para obtener más información, vaya a [Información general de GraphQL](https://developer.adobe.com/commerce/services/graphql/live-search/) en el [!DNL Live Search] documentación para desarrolladores. |
+| [GraphQL](graphql.md) | Los desarrolladores que han iniciado sesión en el administrador de su tienda pueden componer y probar consultas con datos de catálogo reales. Para obtener más información, vaya a [Información general de GraphQL](https://developer.adobe.com/commerce/webapi/graphql/) en el [!DNL Live Search] documentación para desarrolladores. |
 | [Configuración](settings.md) | Determine cómo se agrupan los valores de faceta de precio por intervalo de precio en la tienda y establezca el idioma de indexación. |
