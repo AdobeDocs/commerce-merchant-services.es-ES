@@ -3,9 +3,9 @@ title: "Resumen de incorporación"
 description: "[!DNL Live Search] flujo de incorporación, requisitos del sistema, límites y limitaciones"
 exl-id: 45f6c1ae-544b-47ef-9feb-c1a05f93108a
 recommendations: noCatalog
-source-git-commit: 48f16a0c5ce6c2a3226acf4a61525cfbf4a0f35f
+source-git-commit: a98e8abe68b684dcddccbf7287126db159159bab
 workflow-type: tm+mt
-source-wordcount: '640'
+source-wordcount: '697'
 ht-degree: 0%
 
 ---
@@ -83,6 +83,15 @@ La comercialización de categorías le permite configurar [!DNL Live Search] par
 Este vídeo es una introducción a la comercialización de categorías.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3424617)
+
+## Repositorio de código Widget
+
+El widget de página de lista de productos y el widget de ventana emergente de búsqueda están disponibles para su descarga en el repositorio de github.
+
+Esto permite a los desarrolladores personalizar completamente la funcionalidad y el estilo. Estos usuarios alojan el código ellos mismos sin dejar de aprovechar el [!DNL Live Search] servicio.
+
+* [Widget PLP](https://github.com/adobe/storefront-product-listing-page)
+* [Barra de búsqueda](https://github.com/adobe/storefront-search-as-you-type)
 
 ## Inventory management
 

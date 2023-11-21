@@ -2,9 +2,9 @@
 title: "Facetas"
 description: '"[!DNL Live Search] las facetas utilizan varias dimensiones de valores de atributo como criterios de búsqueda".'
 exl-id: 63c0b255-6be9-41ad-b4bf-13bb7ff098fd
-source-git-commit: 8bac6f053cddd3d47c3aa279abf7c96c79ffcd81
+source-git-commit: a8643ca9567feb7dde67358eeae321825b0253f2
 workflow-type: tm+mt
-source-wordcount: '515'
+source-wordcount: '579'
 ht-degree: 0%
 
 ---
@@ -29,6 +29,12 @@ Los requisitos de atributos de categoría y producto para faceteado son similare
 * 50 atributos que se pueden ordenar
 * 200 atributos filtrables
 * 200 atributos en los que se puede buscar
+
+>[!NOTE]
+>
+> Si hay más de 200 atributos filtrables definidos, no es determinista qué 200 se indexarán realmente.
+
+Si tiene un gran número de atributos con los que lidiar, considere la posibilidad de combinar atributos en un único &quot;metaatributo&quot;. Por ejemplo, los zapatos generalmente tienen tallas numéricas, mientras que las camisas suelen tener el tamaño &quot;S/M/L/XL&quot;. Estos dos tipos de tamaños se pueden combinar en un único atributo en el que se puede buscar.
 
 | Configuración | Descripción |
 |--- |--- |
