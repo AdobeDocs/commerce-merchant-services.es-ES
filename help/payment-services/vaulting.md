@@ -3,9 +3,9 @@ title: Bóveda de tarjeta de crédito
 description: Los compradores pueden guardar los datos de su tarjeta de crédito para futuras compras.
 exl-id: b4060307-ffcd-41cb-9b9d-a2fef02f23bd
 feature: Payments, Checkout
-source-git-commit: 6ba5a283d9138b4c1be11b80486826304c63247f
+source-git-commit: 6769e29a4ae07b8cf15aa2da3cac2fe8583497e0
 workflow-type: tm+mt
-source-wordcount: '304'
+source-wordcount: '314'
 ht-degree: 0%
 
 ---
@@ -23,6 +23,10 @@ Los compradores utilizan el token almacenado para completar un pago futuro con l
 También pueden eliminar fácilmente sus tarjetas de crédito abovedadas de [Métodos de pago almacenados](https://docs.magento.com/user-guide/customers/account-dashboard-stored-payment-methods.html) en Mi cuenta.
 
 ![Métodos de pago almacenados en Mi cuenta](assets/stored-payment-methods.png){width="400" zoomable="yes"}
+
+>[!WARNING]
+>
+>PayPal puede almacenar actualmente un máximo de cinco tarjetas abovedadas.
 
 ## Activar almacenamiento en depósito
 

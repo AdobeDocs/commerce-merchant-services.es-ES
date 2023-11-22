@@ -3,9 +3,9 @@ title: Conectar su instancia
 description: Conecte la instancia de Commerce con una clave de API y una clave privada, y especifique el espacio de datos en la configuración.
 exl-id: 5038fd31-bac5-419e-a172-66919a9b5272
 feature: Payments, Checkout, Configuration, Saas
-source-git-commit: 90bfa7099924feb308397960cff76bdf177bbe49
+source-git-commit: 6769e29a4ae07b8cf15aa2da3cac2fe8583497e0
 workflow-type: tm+mt
-source-wordcount: '621'
+source-wordcount: '635'
 ht-degree: 0%
 
 ---
@@ -37,11 +37,16 @@ Consulte un [lista de servicios de Commerce disponibles que utilizan la API](htt
 Para obtener información sobre cómo generar una clave de API para entornos de zona protegida o de producción, consulte [Credenciales](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/saas.html#apikey).
 
 >[!IMPORTANT]
+>
 >Se recomienda no regenerar un par de claves de API *y* cambiar el identificador de SaaS o el espacio de datos en una instancia de producción activa. Perderá datos de su instancia si se modifican.
 
 ## Configuración de Commerce Services
 
 La misma clave de API se puede utilizar en todas las instancias, pero cada instancia debe tener su propia [Espacio de datos SaaS](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/saas.html#saasenv).
+
+>[!NOTE]
+>
+>Los comerciantes deben utilizar las mismas claves generadas para el MageID para sus derechos de pago.
 
 Ahora que ha obtenido sus credenciales, puede configurar su proyecto SaaS y el espacio de datos Saas.
 

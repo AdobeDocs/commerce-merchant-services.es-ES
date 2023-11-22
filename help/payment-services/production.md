@@ -3,9 +3,9 @@ title: Activar [!DNL Payment Services] para producción
 description: Complete el proceso de incorporación habilitando [!DNL Payment Services] para producción.
 exl-id: 3b1269e8-127b-47f8-9738-9722a5737c63
 feature: Payments, Checkout, Configuration, Install
-source-git-commit: 6ba5a283d9138b4c1be11b80486826304c63247f
+source-git-commit: 6769e29a4ae07b8cf15aa2da3cac2fe8583497e0
 workflow-type: tm+mt
-source-wordcount: '702'
+source-wordcount: '731'
 ht-degree: 0%
 
 ---
@@ -36,6 +36,10 @@ Después de usted [configurar los servicios de Commerce](connect.md#configure-co
    |---|---|
    | `Authorize` | Aprueba la compra y retiene los fondos. La cantidad no se retira hasta que sea &quot;capturada&quot; por el comerciante. |
    | `Authorize and Capture` | Aprueba la compra y el comerciante &quot;captura&quot; los fondos. |
+
+   >[!IMPORTANT]
+   >
+   >[!DNL Payment Services] admite capturas parciales. Un comerciante puede capturar parcialmente (facturar) partes de un pedido. Por ejemplo, puede capturar cada elemento de forma individual, o un elemento ahora y el resto más tarde.
 
 1. Haga clic **[!UICONTROL Save]**.
 1. Clic **[!UICONTROL Go to Payment Services]** para que se le dirija de nuevo a [!DNL Payment Services] Hogar.
