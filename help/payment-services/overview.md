@@ -5,9 +5,9 @@ role: User
 level: Intermediate
 exl-id: e4d8d789-fcf6-4aaa-bc4e-42ce21c6dd6c
 feature: Payments, Checkout
-source-git-commit: bc8428c619579fecbb5428ba59c76c7a8306659d
+source-git-commit: 03349802fb747028cbd66ed6ce3ca7ad247f4c07
 workflow-type: tm+mt
-source-wordcount: '482'
+source-wordcount: '475'
 ht-degree: 0%
 
 ---
@@ -40,7 +40,7 @@ Tanto si se trata de una pequeña empresa, un competidor de mercado medio o una 
 * [**Opciones de pago**](payments-options.md)—Configure las opciones de pago para personalizar los métodos disponibles para sus clientes de tienda (o multitienda).
 * **Información financiera de gestión de flujos de efectivo**: sincronizar [datos de pago](order-payment-status.md) con órdenes para obtener total transparencia al volumen procesado, saldo de pago, [pagos](payouts.md), y detallada [informes de nivel de transacción](transactions.md) para la reconciliación financiera y la máxima visibilidad de las transacciones.
 * **Precios transparentes**—Los precios son claros y claros; lo que se ve es lo que se obtiene.
-* **Experiencia de cierre de compra eficiente**: elimine las barreras para un cierre de compra rápido y sencillo y cree clientes leales con [bóveda de tarjetas](https://experienceleague-review.com/docs/commerce-merchant-services/payment-services/payments-checkout/vaulting.html) y [Compra instantánea](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/point-of-purchase/checkout-instant-purchase.html) (habilitado de forma predeterminada para Adobe Commerce).
+* **Experiencia de cierre de compra eficiente**: elimine las barreras para un cierre de compra rápido y sencillo y cree clientes leales con [bóveda de tarjetas](vaulting.md) y [Compra instantánea](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/point-of-purchase/checkout-instant-purchase.html) (habilitado de forma predeterminada para Adobe Commerce).
 
 ## Disponibilidad
 
