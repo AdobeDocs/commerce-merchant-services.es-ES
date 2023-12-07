@@ -3,9 +3,9 @@ title: "[!DNL Payment Services] Notas de la versión"
 description: Revise las notas de la versión para obtener información acerca de todos los [!DNL Payment Services] versiones.
 exl-id: 104aa2c7-7735-4ac2-8ed1-a03cd9911273
 feature: Payments, Release Notes
-source-git-commit: 03349802fb747028cbd66ed6ce3ca7ad247f4c07
+source-git-commit: 75dbbe5a1b3bc9a84a5b26ac1b2cb6c0ec639027
 workflow-type: tm+mt
-source-wordcount: '2316'
+source-wordcount: '2132'
 ht-degree: 0%
 
 ---
@@ -76,7 +76,15 @@ _28 de junio de 2021_
 
 +++
 
-## v2.3.0
+## Versión 2.3.1
+
+_7 de diciembre de 2023_
+
+[!BADGE Admitido]{type=Informative tooltip="Admitido"}
+
+![Nuevo](../assets/new.svg)<!-- PAY-5047 --> El tipo de tarjeta de crédito/débito o de método de pago ahora está disponible en la página de pedidos del cliente en la tienda, en el correo electrónico de confirmación de pedidos enviado al comprador y en la [vista de detalles del pedido](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/order-management/orders/order-processing.html#view-an-order) en el Administrador de comercio.
+
+## Versión 2.3.0
 
 _1 de diciembre de 2023_
 
@@ -84,7 +92,7 @@ _1 de diciembre de 2023_
 
 ![Nuevo](../assets/new.svg)<!-- PAY-4381 --> [Payment Services ahora admite la integración con GraphQL](https://developer.adobe.com/commerce/webapi/graphql/payment-services/). Con la compatibilidad de GraphQL con los botones de pago de PayPal, los campos alojados y Apple Pay, Payment Services ahora admite una configuración de Commerce sin encabezado.
 
-## v2.2.1
+## Versión 2.2.1
 
 _27 de septiembre de 2023_
 
@@ -92,7 +100,7 @@ _27 de septiembre de 2023_
 
 ![Problema corregido](../assets/fix.svg)<!-- Issue PAY-4870 --> Se ha corregido un problema que llenaba incorrectamente el nuevo atributo de encabezado en Storefront al enviar la versión de extensión con la última versión. Anteriormente, con la variable `1.3.0` versión del conector de Commerce Services, no se pudo ampliar el `User-Agent header` desde la extensión Servicios de pago.
 
-## v2.2.0
+## Versión 2.2.0
 
 _30 de agosto de 2023_
 
@@ -108,7 +116,7 @@ _30 de agosto de 2023_
 
 ![Nuevo](../assets/new.svg)<!-- PAY-4035 --> Se ha añadido una nueva [Informe Transacciones](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/transactions.html) Acceda a la página de inicio de Administración del servicio de pago para ver las tasas de autorización de transacciones y las tendencias negativas de transacciones, de modo que los comerciantes puedan supervisar de manera eficaz el estado de sus tiendas e identificar cualquier problema relacionado con las transacciones.
 
-## v2.1.0
+## Versión 2.1.0
 
 _9 de junio de 2023_
 
@@ -124,7 +132,7 @@ _9 de junio de 2023_
 
 ![Nuevo](../assets/new.svg)<!-- Issue PAY-4183 --> Funcionalidad creada para [mostrar el botón de opción de pago con tarjeta de crédito/débito](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/payments-checkout/payments-options.html#debit-or-credit-card-button) en la página de cierre de compra.
 
-## v2.0.0
+## Versión 2.0.0
 
 _10 de marzo de 2023_
 
@@ -132,7 +140,7 @@ _10 de marzo de 2023_
 
 ![Nuevo](../assets/new.svg)<!-- Issue PAY-4152 --> Se ha agregado compatibilidad con PHP 8.2 y Adobe Commerce 2.4.6. No compatible con PHP 7.x.
 
-## v1.6.1
+## Versión 1.6.1
 
 _10 de marzo de 2023_
 
@@ -144,7 +152,7 @@ _10 de marzo de 2023_
 
 ![Fix](../assets/fix.svg)<!-- Issue PAY-4202 --> Se ha corregido un problema que impedía que los clientes usaran el depósito de tarjetas para completar una compra o eliminar un método de pago abovedado para una tienda [uso del `Authorize and Capture` acción de pago](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/get-started/production.html#set-payment-services-as-payment-method). Anteriormente, aparecía el error &quot;No se encontró el ID de Provider Vault&quot; cuando el cliente intentaba utilizar o modificar sus tarjetas de crédito abovedadas.
 
-## v1.6.0
+## Versión 1.6.0
 
 _17 de febrero de 2023_
 
@@ -154,7 +162,7 @@ _17 de febrero de 2023_
 
 ![Nuevo](../assets/new.svg)<!-- Issue PAY-3609 --> Se ha añadido la capacidad de [habilitar el almacenamiento de tarjetas en Admin](vaulting.md#use-vaulting-in-the-admin). Esto permite a los comerciantes crear un pedido para los clientes en Admin mediante sus métodos de pago abovedados.
 
-## v1.5.4
+## Versión 1.5.4
 
 _29 de enero de 2023_
 
@@ -162,7 +170,7 @@ _29 de enero de 2023_
 
 ![Problema corregido](../assets/fix.svg)<!-- Issue PAY-4110 --> Se ha corregido un problema que impedía a los compradores realizar un pedido con botones inteligentes en la página del producto, el minicarrito y el carrito. Los compradores ahora pueden completar los pedidos correctamente.
 
-## v1.5.3
+## Versión 1.5.3
 
 _25 de enero de 2023_
 
@@ -170,7 +178,7 @@ _25 de enero de 2023_
 
 ![Problema corregido](../assets/fix.svg)<!-- Issue PAY-4102 --> Se ha publicado una corrección de un problema conocido incompatible con versiones anteriores. Esta versión bloquea la versión de la extensión del ID de servicio a la última versión estable, que vuelve a habilitar las nuevas instalaciones de Servicios de pago para configurar Commerce Services.
 
-## v1.5.2
+## Versión 1.5.2
 
 _22 de diciembre de 2022_
 
@@ -180,7 +188,7 @@ _22 de diciembre de 2022_
 
 ![Problema corregido](../assets/fix.svg)<!-- Issue PAY-3999 --> Servicios de pago ahora muestra correctamente los botones inteligentes de PayPal para los comerciantes que utilizan [Desactivar cierre de compra](https://commercemarketplace.adobe.com/swissup-firecheckout.html){target=_blank} plantilla personalizada para la página de cierre de compra. Anteriormente, la minicart mostraba los botones de forma intermitente.
 
-## v1.5.1
+## Versión 1.5.1
 
 _23 de noviembre de 2022_
 
@@ -190,7 +198,7 @@ _23 de noviembre de 2022_
 
 ![Problema corregido](../assets/fix.svg)<!-- Issue PAY-3968 --> Servicios de pago ahora muestra correctamente los datos del pedido cuando se realiza un pedido desde la página del producto mediante botones inteligentes.
 
-## v1.5.0
+## Versión 1.5.0
 
 _18 de noviembre de 2022_
 
@@ -200,7 +208,7 @@ _18 de noviembre de 2022_
 
 ![Nuevo](../assets/new.svg)<!-- Issue PAY-3950 --> Los comerciantes ahora pueden activar la [Función de compra instantánea de Commerce](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/point-of-purchase/checkout-instant-purchase.html) para sus tiendas, de modo que los compradores puedan (use [información de tarjeta de crédito](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/payments-checkout/vaulting.html)) para acelerar el cierre de compra.
 
-## v1.4.1
+## Versión 1.4.1
 
 _14 de octubre de 2022_
 
@@ -208,7 +216,7 @@ _14 de octubre de 2022_
 
 ![Fix](../assets/fix.svg)<!-- Issue PAY-3766 --> Cuando se rechaza la forma de pago de un cliente, el mensaje de error visible es más descriptivo. Aconseja al cliente que vuelva a introducir la información de pago y vuelva a intentarlo, pruebe otra forma de pago o que se ponga en contacto con su banco para informarle de la transacción rechazada.
 
-## v1.4.0
+## Versión 1.4.0
 
 _30 de septiembre de 2022_
 
@@ -222,7 +230,7 @@ _30 de septiembre de 2022_
 
 ![Problema corregido](../assets/fix.svg)<!-- Issue PAY-3546 --> Cuando un cliente hace clic en **[!UICONTROL Edit cart]**, la página redirige a la página del carro de compras y muestra los elementos actualizados en lugar de mostrar un carro de compras vacío.
 
-## v1.3.1
+## Versión 1.3.1
 
 _6 de septiembre de 2022_
 
@@ -230,7 +238,7 @@ _6 de septiembre de 2022_
 
 ![Problema corregido](../assets/fix.svg)<!-- Issue PAY-3663 --> Ahora, cuando el almacén de un comerciante está capturando un pedido autorizado con una moneda no global, el proceso de captura se completa y no se muestra ningún error.
 
-## v1.3.0
+## Versión 1.3.0
 
 _9 de agosto de 2022_
 
@@ -240,7 +248,7 @@ _9 de agosto de 2022_
 
 ![Problema corregido](../assets/fix.svg)<!-- Issue PAY-x --> Apple Pay ahora es compatible con el navegador Safari v15.5 en dispositivos móviles y de escritorio.
 
-## v1.2.0
+## Versión 1.2.0
 
 _29 de junio de 2022_
 
@@ -258,7 +266,7 @@ _29 de junio de 2022_
 
 ![Problema conocido](../assets/bug.svg)<!-- Issue PAY-0 --> [!DNL Payment Services] actualmente no es compatible con `commerce-data-export` v101.20 y posterior, lo que la hace incompatible con la versión [[!DNL Channel manager] extensión](https://experienceleague.adobe.com/docs/commerce-channels/channel-manager/guide-overview.html).
 
-## v1.1.0
+## Versión 1.1.0
 
 _31 de marzo de 2022_
 
@@ -286,7 +294,7 @@ _31 de marzo de 2022_
 
 ![Problema conocido](../assets/bug.svg)<!-- Issue PAY-2842 --> Probar transacciones de tarjeta de crédito [puede fallar con PayPal](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/payments/payservices-cc-sandbox-failure.html) al procesar pagos en un entorno de zona protegida.
 
-## v1.0.0
+## Versión 1.0.0
 
 _29 de noviembre de 2021_
 
