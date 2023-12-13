@@ -3,7 +3,7 @@ title: Introducción a [!DNL Live Search]
 description: '"[!DNL Live Search] de Adobe Commerce ofrece una experiencia de búsqueda rápida, relevante e intuitiva".'
 exl-id: aca0ef19-ead1-4c79-90c3-db5ec48cb3c1
 recommendations: noCatalog
-source-git-commit: d5df2a098dbbb2ecfb68c36dd12843c963d46b17
+source-git-commit: 9460d7cf2de677557ee3792665c65d2a52a52569
 workflow-type: tm+mt
 source-wordcount: '723'
 ht-degree: 0%
@@ -22,7 +22,7 @@ La parte de Adobe Commerce de la arquitectura de incluye el alojamiento de la b�
 
 * [!DNL Live Search] [widget emergente](storefront-popover.md) es el cuadro que se abre debajo del campo de búsqueda que contiene los resultados de la búsqueda.
 * [Widget de página de lista de productos](plp-styling.md) proporciona una página de lista de productos en la que se puede buscar con soporte de facetas y sinónimos.
-* AEM CIF Componentes de la: [Widget emergente](https://github.com/adobe/aem-cif-guides-venia/pull/319) y el [Widget PLP](https://github.com/adobe/aem-cif-guides-venia/pull/320) AEM permitir que los sitios aprovechen las ventajas [!DNL Live Search].
+* AEM CIF Componentes de la: [Widget emergente](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/content-and-commerce/integrations/live-search-popover.html?lang=en) y el [Widget PLP](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/content-and-commerce/integrations/live-search-plp.html) AEM permitir que los sitios aprovechen las ventajas [!DNL Live Search].
 * [[!DNL Live Search] Administrador](workspace.md) es donde se configuran las reglas, las facetas y los sinónimos.
 
 ## Resumen de flujo de trabajo
