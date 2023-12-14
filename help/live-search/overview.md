@@ -3,9 +3,9 @@ title: Introducción a [!DNL Live Search]
 description: '"[!DNL Live Search] de Adobe Commerce ofrece una experiencia de búsqueda rápida, relevante e intuitiva".'
 exl-id: aca0ef19-ead1-4c79-90c3-db5ec48cb3c1
 recommendations: noCatalog
-source-git-commit: 9460d7cf2de677557ee3792665c65d2a52a52569
+source-git-commit: 12c9fa011662e2e9fd7bb088db97359dcde87915
 workflow-type: tm+mt
-source-wordcount: '723'
+source-wordcount: '722'
 ht-degree: 0%
 
 ---
@@ -70,7 +70,7 @@ La mayoría de los propietarios de tiendas querrán asegurarse de que las [!DNL 
 Los widgets de la ventana emergente y el PLP se pueden diseñar definiendo reglas CSS personalizadas según sea necesario. Consulte [Estilo de elementos emergentes](storefront-popover-styling.md) y [Widget de página de lista de productos](plp-styling.md).
 
 Si desea ampliar la funcionalidad de los widgets, el código fuente de cada uno está disponible en un repositorio público.
-En este escenario, puede personalizar JavaScript para sus propias necesidades y, a continuación, alojar el código personalizado en el sitio. Este script personalizado se comunica con el [!DNL Live Search] y devuelve los resultados como de costumbre, lo que le permite controlar la funcionalidad del widget.
+En esta situación, puede personalizar JavaScript para sus propias necesidades y, a continuación, alojar el código personalizado en su CDN. Este script personalizado se comunica con el [!DNL Live Search] y devuelve los resultados como de costumbre, lo que le permite controlar la funcionalidad del widget.
 
 * [Repositorio de widgets PLP](https://github.com/adobe/storefront-product-listing-page)
 * [Buscar repositorio de barra](https://github.com/adobe/storefront-search-as-you-type)
@@ -83,4 +83,4 @@ Vea este vídeo para obtener más información [!DNL Live Search]:
 
 >[!VIDEO](https://video.tv.adobe.com/v/3418679?quality=12&learn=on)
 
-Para ver un vídeo más detallado sobre cómo utilizar y configurar Live Search, consulte la [Demostración completa el [!DNL Live Search]](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/marketing/live-search-full-demonstration.html) tema.
+Para ver un vídeo más detallado sobre cómo utilizar y configurar Live Search, consulte la [Demostración completa el [!DNL Live Search]](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/getting-started/capabilities/live-search-full-demonstration.html) tema.

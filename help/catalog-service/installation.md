@@ -2,9 +2,9 @@
 title: Incorporación e instalación
 description: Obtenga información sobre cómo instalar [!DNL Catalog Service]
 exl-id: 4e9fbdc9-67a1-4703-b8c0-8b159e0cc2a7
-source-git-commit: 8bac6f053cddd3d47c3aa279abf7c96c79ffcd81
+source-git-commit: 1bd618435df30772e29e5fc95b0536680c63b482
 workflow-type: tm+mt
-source-wordcount: '624'
+source-wordcount: '580'
 ht-degree: 0%
 
 ---
@@ -69,15 +69,13 @@ Consulte [Obtener las claves de autenticación](https://experienceleague.adobe.c
 
 Utilice este método para instalar [!DNL Catalog Service] para una instancia de Commerce Cloud.
 
-1. Abra el `<Commerce_root>/composer.json` en un editor de texto y actualice la sección requerida de la siguiente manera:
+1. Use Compositor para agregar el módulo Servicio de catálogo a su proyecto:
 
-```json
-"require": {
-  "magento/catalog-service": "^3.0.1"
-}
+```bash
+composer require "magento/catalog-service" "^3.0.1"
 ```
 
-1. Pruebe la nueva configuración localmente y actualice las dependencias:
+1. Actualice las dependencias ejecutando:
 
 ```bash
 composer update
@@ -91,12 +89,10 @@ El comando actualiza todas las dependencias.
 
 Utilice este método para instalar [!DNL Catalog Service] extensión para una instancia local.
 
-1. Abra el `<Commerce_root>/composer.json` en un editor de texto y actualice la sección requerida de la siguiente manera:
+1. Use Compositor para agregar el módulo Servicio de catálogo a su proyecto:
 
-```json
-"require": {
-    "magento/catalog-service": "^3.0.1"
-}
+```bash
+composer require "magento/catalog-service" "^3.0.1"
 ```
 
 1. Actualice las dependencias e instale la extensión:
