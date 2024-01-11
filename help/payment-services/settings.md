@@ -5,9 +5,9 @@ role: Admin, User
 level: Intermediate
 exl-id: 108f2b24-39c1-4c87-8deb-d82ee1c24d55
 feature: Payments, Checkout, Configuration
-source-git-commit: 85f8e158509231fb3b30c778309a9ac0fb468131
+source-git-commit: a7ad4130745957d596cba38892d77107e977e2e7
 workflow-type: tm+mt
-source-wordcount: '2410'
+source-wordcount: '2364'
 ht-degree: 0%
 
 ---
@@ -32,7 +32,7 @@ Puede activar [!DNL Payment Services] para su sitio web y habilite las pruebas d
 
    ![Vista Inicio](assets/payment-services-menu-small.png){width="400" zoomable="yes"}
 
-1. Haga clic **[!UICONTROL Settings]**. Consulte [Introducción a [!DNL Payment Services] Inicio](payments-home.md) para obtener más información.
+1. Clic **[!UICONTROL Settings]**. Consulte [Introducción a [!DNL Payment Services] Inicio](payments-home.md) para obtener más información.
 
    El _[!UICONTROL General]_Esta sección incluye la configuración utilizada para habilitar [!DNL Payment Services] como forma de pago.
 
@@ -44,7 +44,7 @@ Puede activar [!DNL Payment Services] para su sitio web y habilite las pruebas d
    >
    >Su _[!UICONTROL Sandbox Merchant ID]_y_[!UICONTROL Production Merchant ID]_ se generan automáticamente y están presentes en sus campos respetables cuando termine la incorporación para la zona protegida o la producción.
 
-1. Haga clic **[!UICONTROL Save]**.
+1. Clic **[!UICONTROL Save]**.
 
    Si intenta salir de esta vista sin guardar los cambios, aparecerá un modal que le pedirá que descarte los cambios, que siga editándolos o que los guarde.
 
@@ -57,19 +57,19 @@ Ahora puede cambiar la configuración predeterminada de [opciones de pago](#conf
 Puede añadir un [!UICONTROL Soft Descriptor] a su sitio web o configuración de vistas de tienda individuales. Los descriptores leves se muestran en los extractos bancarios de transacciones de clientes. Si, por ejemplo, tiene varias tiendas, marcas o catálogos, puede delimitar fácilmente entre ellos añadiendo texto personalizado a la [!UICONTROL Soft Descriptor] field.
 
 1. En el _Administrador_ barra lateral, vaya a **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**.
-1. Haga clic **[!UICONTROL Settings]**. Consulte [Introducción a [!DNL Payment Services] Inicio](payments-home.md) para obtener más información.
+1. Clic **[!UICONTROL Settings]**. Consulte [Introducción a [!DNL Payment Services] Inicio](payments-home.md) para obtener más información.
 1. Seleccione el sitio web o la vista de la tienda, en la **[!UICONTROL Scope]** menú desplegable, para el que desea crear un descriptor temporal. Para la configuración inicial, deje esto como **[!UICONTROL Default]** para establecer el valor predeterminado.
 1. Añada el texto personalizado (hasta 22 caracteres) en el campo de texto y reemplace `Custom descriptor`.
-1. Haga clic **[!UICONTROL Save]**.
+1. Clic **[!UICONTROL Save]**.
 1. Para crear un descriptor temporal distinto del predeterminado configurado para una vista de sitio web o tienda:
    1. Seleccione el sitio web o la vista de la tienda, en la **[!UICONTROL Scope]** menú desplegable, para el que desea crear un descriptor temporal.
    1. Alternar _desactivado_ **[!UICONTROL Use website]** (o **[!UICONTROL Use default]**, en función del ámbito seleccionado).
    1. Añada el texto personalizado en el campo de texto.
-   1. Haga clic **[!UICONTROL Save]**.
+   1. Clic **[!UICONTROL Save]**.
 1. Para habilitar para un sitio web o tienda, consulte el descriptor temporal predeterminado _o_ el descriptor temporal utilizado para el sitio web principal:
    1. Seleccione el sitio web o la vista de la tienda, en la **[!UICONTROL Scope]** menú desplegable, para el que desea activar un descriptor temporal existente.
    1. Alternar _el_ **[!UICONTROL Use website]** (o **[!UICONTROL Use default]**, según el ámbito seleccionado).
-   1. Haga clic **[!UICONTROL Save]**.
+   1. Clic **[!UICONTROL Save]**.
 
    Si intenta salir de esta vista sin guardar los cambios, aparecerá un modal que le pedirá que descarte los cambios, que siga editándolos o que los guarde.
 
@@ -88,7 +88,7 @@ Puede añadir un [!UICONTROL Soft Descriptor] a su sitio web o configuración de
 Ahora que ha habilitado [!UICONTROL Payment Services] para su sitio web, puede cambiar la configuración predeterminada de las funciones de pago y la visualización de la tienda.
 
 1. En el _Administrador_ barra lateral, vaya a **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**.
-1. Haga clic **[!UICONTROL Settings]**. Consulte [Introducción a [!DNL Payment Services] Inicio](payments-home.md) para obtener más información.
+1. Clic **[!UICONTROL Settings]**. Consulte [Introducción a [!DNL Payment Services] Inicio](payments-home.md) para obtener más información.
 1. Configurar opciones de pago para [tarjetas de crédito](#credit-card-fields), [botones de pago](#payment-buttons), y [estilo de botón](#button-style), en las secciones siguientes.
 
 ### Campos de tarjeta de crédito
@@ -107,7 +107,7 @@ Consulte [Opciones de pago](payments-options.md#credit-card-fields) para obtener
 1. Para habilitar o deshabilitar [bóveda de tarjetas](#card-vaulting), cambie el **[!UICONTROL Vault enabled]** selector.
 1. Para habilitar o deshabilitar [Métodos de pago abovedados en el administrador](#card-vaulting) (para que los comerciantes completen los pedidos de los clientes en Admin mediante su método de pago abovedado), active la opción **[!UICONTROL Show vaulted methods in Admin]** selector.
 1. Para habilitar o deshabilitar el modo de depuración, cambie el **[!UICONTROL Debug Mode]** selector.
-1. Haga clic **[!UICONTROL Save]**.
+1. Clic **[!UICONTROL Save]**.
 
    Si intenta salir de esta vista sin guardar los cambios, aparecerá un modal que le pedirá que descarte los cambios, que siga editándolos o que los guarde.
 
@@ -128,7 +128,7 @@ Consulte [Opciones de pago](payments-options.md#credit-card-fields) para obtener
 
 ### Apple Pay
 
-El [!UICONTROL Apple Pay] La opción de pago del botón le permite proporcionar un [!UICONTROL Apple Pay] botón de pago en el cierre de compra de tu tienda.
+El [!UICONTROL Apple Pay] La opción de pago del botón le permite proporcionar un [!UICONTROL Apple Pay] botón de pago en el cierre de compra de la tienda desde el navegador Safari.
 
 Solo puedes usar Apple Pay si completas [Registro automático de Apple Pay mediante PayPal](https://developer.paypal.com/docs/checkout/apm/apple-pay/#register-your-live-domain) y luego [configuración de Apple Pay](settings.md/#payment-buttons) para sus tiendas. Consulte [Opciones de pago](payments-options.md#apple-pay-button) para obtener más información.
 
@@ -143,7 +143,7 @@ Puede habilitar y configurar la variable [!UICONTROL Apple Pay] opción de pago 
 1. Para habilitar o deshabilitar Apple Pay en la vista previa del minicarrito, alterne el **[!UICONTROL Show Apple Pay on the mini cart preview]** selector.
 1. Para habilitar o deshabilitar Apple Pay en la página del carro de compras, cambie el **[!UICONTROL Show Apple Pay on cart page]** selector.
 1. Para habilitar o deshabilitar el modo de depuración, cambie el **[!UICONTROL Debug Mode]** selector.
-1. Haga clic **[!UICONTROL Save]**.
+1. Clic **[!UICONTROL Save]**.
 
    Si intenta salir de esta vista sin guardar los cambios, aparecerá un modal que le pedirá que descarte los cambios, que siga editándolos o que los guarde.
 
@@ -190,7 +190,7 @@ Puedes activar y configurar las opciones de pago de los botones inteligentes de 
      Al activar o desactivar la visibilidad de los botones de pago o del mensaje PayPal Más tarde, se muestra una vista previa visual de esa configuración en la parte inferior de la página Configuración.
 
 1. Para habilitar el modo de depuración, cambie el **[!UICONTROL Debug Mode]** selector.
-1. Haga clic **[!UICONTROL Save]**.
+1. Clic **[!UICONTROL Save]**.
 
    Si intenta salir de esta vista sin guardar los cambios, aparecerá un modal que le pedirá que descarte los cambios, que siga editándolos o que los guarde.
 
@@ -230,11 +230,11 @@ También puede configurar la variable _[!UICONTROL Button style]_opciones de los
 1. Para habilitar el selector de altura del botón, alterne la opción **[!UICONTROL Responsive button height]** selector.
 1. Para modificar **[!UICONTROL Label]**, seleccione la opción de etiqueta que desee.
 
-   A medida que cambia las opciones de configuración de diseño, color, forma, altura y etiqueta, aparece una vista previa visual de esa configuración en la parte inferior de la página Configuración.
+   A medida que cambia las opciones de configuración de diseño, color, forma, altura y etiqueta, aparece una vista previa visual de esa configuración en la parte inferior de la página Configuración. En la siguiente imagen, la variable **[!UICONTROL Shape]** se establece en _Rectángulo_ y el **[!UICONTROL Label]** se establece en _PayPal (recomendado)_.
 
    ![[!DNL PayPal Smart Buttons] opciones](assets/payment-buttons.png){width="400" zoomable="yes"}
 
-1. Haga clic **[!UICONTROL Save]**.
+1. Clic **[!UICONTROL Save]**.
 
    Si intenta salir de esta vista sin guardar los cambios, aparecerá un modal que le pedirá que descarte los cambios, que siga editándolos o que los guarde.
 
