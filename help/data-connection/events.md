@@ -4,9 +4,9 @@ description: Descubra qué datos captura cada evento.
 exl-id: b0c88af3-29c1-4661-9901-3c6d134c2386
 role: Admin, Developer
 feature: Personalization, Integration, Eventing
-source-git-commit: f90ef4d2732a0b0676e0899712f94b41a1c2d85a
+source-git-commit: 136cd11e65674ec6e797aeaabd80750a50324566
 workflow-type: tm+mt
-source-wordcount: '6894'
+source-wordcount: '6957'
 ht-degree: 0%
 
 ---
@@ -236,7 +236,7 @@ En la tabla siguiente se describen los datos recopilados para este evento.
 
 | Descripción | Nombre de evento de XDM |
 |---|---|
-| Se activa cuando el comprador realiza un pedido. | `commerce.order` |
+| Se activa cuando el comprador realiza un pedido. | `commerce.purchases` |
 
 #### Datos recopilados de completeCheckout
 
@@ -560,6 +560,29 @@ En la tabla siguiente se describen los datos recopilados para este evento.
 | `productListItems.selectedOptions` | Campo utilizado para un producto configurable. |
 | `productListItems.selectedOptions.attribute` | Identifica un atributo del producto configurable, como `size` o `color`. |
 | `productListItems.selectedOptions.value` | Identifica el valor del atributo como `small` o `black`. |
+
+### deleteRequisitionList
+
+| Descripción | Nombre de evento de XDM |
+|---|---|
+| Se activa cuando un comprador elimina una lista de solicitudes. | `commerce.requisitionListDeletes` |
+
+#### Datos recopilados de deleteRequisitionList
+
+En la tabla siguiente se describen los datos recopilados para este evento.
+
+| Campo | Descripción |
+|---|---|
+| `commerce.requisitionListDeletes` | Indica que se ha eliminado una lista de solicitudes. |
+| `commerce.requisitionList` | Las propiedades de la lista de solicitudes creada por el cliente. |
+| `commerce.requisitionList.ID` | Identificador único de la lista de solicitudes. |
+| `commerce.requisitionList.name` | Nombre de la lista de solicitudes especificada por el cliente. |
+| `commerce.requisitionList.description` | Descripción de la lista de solicitudes especificada por el cliente. |
+| `commerce.commerceScope` | Indica dónde se produjo un evento (vista de tienda, tienda, sitio web, etc.). |
+| `commerce.commerceScope.environmentID` | El ID del entorno. ID alfanumérico de 32 dígitos separado por guiones. |
+| `commerce.commerceScope.storeCode` | El código de almacén único. Puede tener muchas tiendas por sitio web. |
+| `commerce.commerceScope.storeViewCode` | El código de vista de tienda único. Puede tener muchas vistas de la tienda por tienda. |
+| `commerce.commerceScope.websiteCode` | El código único del sitio web. Puede tener muchos sitios web en un entorno. |
 
 ## Eventos de back office
 
