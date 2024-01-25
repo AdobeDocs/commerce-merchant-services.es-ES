@@ -3,9 +3,9 @@ title: Activar [!DNL Payment Services] para producción
 description: Complete el proceso de incorporación habilitando [!DNL Payment Services] para producción.
 exl-id: 3b1269e8-127b-47f8-9738-9722a5737c63
 feature: Payments, Checkout, Configuration, Install
-source-git-commit: 6769e29a4ae07b8cf15aa2da3cac2fe8583497e0
+source-git-commit: ff83c83a054e5b14814cc3076744c5517081a80f
 workflow-type: tm+mt
-source-wordcount: '731'
+source-wordcount: '1006'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,7 @@ Puede poner el servicio en producción y completar la [proceso de incorporación
 Después de usted [configurar los servicios de Commerce](connect.md#configure-commerce-services) y habilite [pruebas de zona protegida](sandbox.md#enable-sandbox-testing) o [pagos pendientes](#enable-live-payments), debe establecer [!DNL Payment Services] como forma de pago.
 
 1. En el _Administrador_ barra lateral, vaya a **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**.
-1. Haga clic **[!UICONTROL Enable Payment Services]**.
+1. Clic **[!UICONTROL Enable Payment Services]**.
 
    Esta opción está visible si aún no ha configurado [!DNL Payment Services] como forma de pago para uno o más de sus sitios web.
 
@@ -41,9 +41,9 @@ Después de usted [configurar los servicios de Commerce](connect.md#configure-co
    >
    >[!DNL Payment Services] admite capturas parciales. Un comerciante puede capturar parcialmente (facturar) partes de un pedido. Por ejemplo, puede capturar cada elemento de forma individual, o un elemento ahora y el resto más tarde.
 
-1. Haga clic **[!UICONTROL Save]**.
+1. Clic **[!UICONTROL Save]**.
 1. Clic **[!UICONTROL Go to Payment Services]** para que se le dirija de nuevo a [!DNL Payment Services] Hogar.
-1. [Borre la caché](https://docs.magento.com/user-guide/system/cache-management.html){target="_blank"}.
+1. [Borre la caché](https://experienceleague.adobe.com/docs/commerce-admin/systems/tools/cache-management.html).
 
    La limpieza debe realizarse después de cada cambio de configuración.
 
@@ -51,14 +51,58 @@ Consulte [Configurar servicios de pago](settings.md) para obtener más informaci
 
 ## Incorporación completa del comerciante
 
+El siguiente paso para permitir que sus tiendas entren en funcionamiento con los servicios de pago es completar la incorporación activa.
+
+Payment Services proporciona [**Avanzadas** (totalmente compatible) y **Standard** Opciones de pago (Pago y envío exprés)](../payment-services/payments-options.md#standard-vs-advanced-payments-experience) y flujos de incorporación, según el país en el que opere y su experiencia de pago preferida.
+
 1. En el _Administrador_ barra lateral, vaya a **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**.
-1. Haga clic **[!UICONTROL Live onboarding]**.
+1. Clic **[!UICONTROL Live onboarding]**.
 
    Esta opción está visible si aún no ha completado la incorporación en directo para [!DNL Payment Services].
 
-   Se le mostrará una ventana de PayPal.
+1. En el _Seleccione su país_ modal, seleccione el país desde el que opera.
 
-1. Continúa con el flujo de PayPal usando las credenciales de tu cuenta PayPal (no las credenciales de tu cuenta de zona protegida) o regístrate en una nueva cuenta PayPal.
+   Payment Services ofrece soporte completo para todas las opciones de pago de [cinco países](../payment-services/overview.md#availability) actualmente. Payment Services proporciona la capacidad de Pago y envío exprés (un subconjunto de opciones de pago) para todos los demás países representados en la lista de países.
+
+   El país que elija en la lista determinará las opciones de pago y el flujo de incorporación:[Avanzadas](#advanced-onboarding) (totalmente compatible) o [Standard](#standard-onboarding) (Pago y envío rápido): disponible para usted.
+
+>[!TIP]
+>
+> Una vez que elija y continúe con una opción de incorporación (Estándar o Avanzada), debe volver a completar la incorporación para actualizar o reducir la categoría desde la selección inicial.
+
+### Incorporación avanzada
+
+Este flujo de incorporación está disponible para los comerciantes de [países con pleno apoyo](../payment-services/overview.md#availability).
+
+Una vez seleccionado el país:
+
+1. En el modal que aparece, seleccione **Avanzadas**.
+
+   Para el **Standard** , continúe con la [Flujo de incorporación estándar](#standard-onboarding).
+
+1. Clic **Continuar**.
+1. Continúe con el flujo de PayPal para la incorporación avanzada totalmente compatible, usando las credenciales de su cuenta de PayPal (no las credenciales de su cuenta de zona protegida) _o_ regístrate en una nueva cuenta PayPal.
+
+>[!IMPORTANT]
+>
+>**Incorporación avanzada** requiere que los comerciantes [solicitar derechos de pagos](#request-payments-entitlement-from-adobe) para habilitar la incorporación en directo.
+
+### Incorporación estándar
+
+Este flujo de incorporación estándar está disponible para comerciantes de países disponibles para los que [solo admite el cierre de compra exprés](../payment-services/overview.md#availability) se proporciona.
+
+Una vez seleccionado el país:
+
+1. En el _Acuerdo de servicios de pago_ modal que aparece, haga clic en el **Acuerdo de servicios de pago** para ver el acuerdo de Adobe Commerce Payment Services.
+1. En el _Acuerdo de servicios de pago_ modal, haga clic en **Acepto.**.
+1. Continúa con el flujo de PayPal para la incorporación de Pago y envío exprés, usando tus credenciales de cuenta de PayPal (no tus credenciales de cuenta de zona protegida) o regístrate en una nueva cuenta de PayPal.
+
+>[!IMPORTANT]
+>
+>[Campos de Apple Pay y de tarjeta de crédito](../payment-services/payments-options.md) no están disponibles para **Incorporación estándar**.
+
+## Confirmar correo electrónico
+
 1. En la barra lateral de Administración, vaya a **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**
 
    El _[!UICONTROL Live onboarding]_ya no está visible y ve un &quot;&quot;.[!UICONTROL Live payments pending]Cuadro de texto &quot;.
@@ -77,7 +121,7 @@ Consulte [Configurar servicios de pago](settings.md) para obtener más informaci
 
 ## Solicitar derecho de pagos del Adobe
 
-Para habilitar la incorporación activa, debe solicitar el derecho de pagos desde el Adobe:
+Para activar tus tiendas, solicita el derecho de pago desde el Adobe (para [Solo incorporación avanzada](#advanced-onboarding)):
 
 1. En el _Administrador_ barra lateral, vaya a **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**.
 1. Clic **[!UICONTROL Get Live Payments]** en su [!DNL Payment Services] Hogar.
@@ -87,7 +131,7 @@ Para habilitar la incorporación activa, debe solicitar el derecho de pagos desd
 1. Complete el formulario.
 1. Un miembro del equipo de ventas se pondrá en contacto con usted.
 
-También puede solicitar derechos de pago del Adobe en [business.adobe.com](https://business.adobe.com/resources/payment-services.html).
+También puede solicitar el derecho de pagos desde el Adobe en [business.adobe.com](https://business.adobe.com/resources/payment-services.html).
 
 >[!IMPORTANT]
 >
@@ -95,8 +139,7 @@ También puede solicitar derechos de pago del Adobe en [business.adobe.com](http
 
 ## Configurar nivel de precios
 
-Para obtener su [!DNL Payment Services] _ID de comerciante_:
-
+Obtenga su [!DNL Payment Services] _ID de comerciante_:
 
 1. En el _Administrador_ barra lateral, vaya a **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**.
 1. En la vista Inicio, haga clic en **[!UICONTROL Settings]**. Consulte [Inicio](payments-home.md) para obtener más información.
@@ -106,12 +149,12 @@ Para obtener su [!DNL Payment Services] _ID de comerciante_:
 
 A _ID de comerciante de producción_ se genera automáticamente y se rellena en [configuración](configure-admin.md). No cambie ni modifique este ID.
 
-Para habilitar los pagos activos:
+Activar pagos activos:
 
 1. En el _Administrador_ barra lateral, vaya a **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**.
 1. En Inicio, haga clic en **[!UICONTROL Settings]** en la parte superior derecha de la página. Consulte [Inicio](payments-home.md) para obtener más información.
 1. En el _[!UICONTROL General Configuration]_conjunto de secciones **[!UICONTROL Payment mode]**hasta `Production`.
-1. Haga clic **[!UICONTROL Save]**.
+1. Clic **[!UICONTROL Save]**.
 1. [Borre la caché](https://docs.magento.com/user-guide/system/cache-management.html){target="_blank"}.
 
    >[!IMPORTANT]
