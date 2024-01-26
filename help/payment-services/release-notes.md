@@ -3,7 +3,7 @@ title: "[!DNL Payment Services] Notas de la versión"
 description: Revise las notas de la versión para obtener información acerca de todos los [!DNL Payment Services] versiones.
 exl-id: 104aa2c7-7735-4ac2-8ed1-a03cd9911273
 feature: Payments, Release Notes
-source-git-commit: 75dbbe5a1b3bc9a84a5b26ac1b2cb6c0ec639027
+source-git-commit: 5fe23b5aba9ad0a2a6c995fa6ade78f46fe7e3e1
 workflow-type: tm+mt
 source-wordcount: '2132'
 ht-degree: 0%
@@ -168,7 +168,7 @@ _29 de enero de 2023_
 
 [!BADGE Admitido]{type=Informative tooltip="Admitido"}
 
-![Problema corregido](../assets/fix.svg)<!-- Issue PAY-4110 --> Se ha corregido un problema que impedía a los compradores realizar un pedido con botones inteligentes en la página del producto, el minicarrito y el carrito. Los compradores ahora pueden completar los pedidos correctamente.
+![Problema corregido](../assets/fix.svg)<!-- Issue PAY-4110 --> Se ha corregido un problema que impedía a los compradores realizar un pedido mediante botones de pago en la página del producto, el minicarrito y el carrito. Los compradores ahora pueden completar los pedidos correctamente.
 
 ## Versión 1.5.3
 
@@ -186,7 +186,7 @@ _22 de diciembre de 2022_
 
 ![Problema corregido](../assets/fix.svg)<!-- Issue PAY-3992 --> Se ha mejorado la facturación en Servicios de pago cuando se rechaza un método de pago.
 
-![Problema corregido](../assets/fix.svg)<!-- Issue PAY-3999 --> Servicios de pago ahora muestra correctamente los botones inteligentes de PayPal para los comerciantes que utilizan [Desactivar cierre de compra](https://commercemarketplace.adobe.com/swissup-firecheckout.html){target=_blank} plantilla personalizada para la página de cierre de compra. Anteriormente, la minicart mostraba los botones de forma intermitente.
+![Problema corregido](../assets/fix.svg)<!-- Issue PAY-3999 --> Servicios de pago ahora muestra correctamente los botones de pago de PayPal para los comerciantes que utilizan [Desactivar cierre de compra](https://commercemarketplace.adobe.com/swissup-firecheckout.html){target=_blank} plantilla personalizada para la página de cierre de compra. Anteriormente, la minicart mostraba los botones de forma intermitente.
 
 ## Versión 1.5.1
 
@@ -196,7 +196,7 @@ _23 de noviembre de 2022_
 
 ![Nuevo](../assets/new.svg)<!-- Issue PAY-3923 --> Payment Services ahora incluye el número de versión en el encabezado del agente de usuario para que las solicitudes puedan rastrear, filtrar o eliminar los extremos no utilizados.
 
-![Problema corregido](../assets/fix.svg)<!-- Issue PAY-3968 --> Servicios de pago ahora muestra correctamente los datos del pedido cuando se realiza un pedido desde la página del producto mediante botones inteligentes.
+![Problema corregido](../assets/fix.svg)<!-- Issue PAY-3968 --> Servicios de pago ahora muestra correctamente los datos del pedido cuando se realiza un pedido desde la página del producto mediante botones de pago.
 
 ## Versión 1.5.0
 
@@ -226,7 +226,7 @@ _30 de septiembre de 2022_
 
 ![Nuevo](../assets/new.svg)<!-- Issue PAY-3231 --> Los comerciantes pueden [añada un [!UICONTROL Soft Descriptor]](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/configure/settings.html#add-soft-descriptor) a sitios web o a configuraciones de vistas de tiendas individuales que se muestran en los extractos bancarios de las transacciones de los clientes para delimitar marcas, tiendas o líneas de productos.
 
-![Nuevo](../assets/new.svg)<!-- Issue PAY-3707 --> [Activar o desactivar campos de tarjeta de crédito y botones inteligentes de PayPal](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/configure/settings.html#configure-payment-options) para pagar en la configuración de Servicios de pago.
+![Nuevo](../assets/new.svg)<!-- Issue PAY-3707 --> [Activar o desactivar los campos de tarjeta de crédito y los botones de pago de PayPal](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/configure/settings.html#configure-payment-options) para pagar en la configuración de Servicios de pago.
 
 ![Problema corregido](../assets/fix.svg)<!-- Issue PAY-3546 --> Cuando un cliente hace clic en **[!UICONTROL Edit cart]**, la página redirige a la página del carro de compras y muestra los elementos actualizados en lugar de mostrar un carro de compras vacío.
 
@@ -258,7 +258,7 @@ _29 de junio de 2022_
 
 ![Problema corregido](../assets/fix.svg)<!-- Issue PAY-3264 --> Anteriormente, cuando un usuario que iniciaba sesión seleccionaba una dirección de facturación/envío diferente a la predeterminada para su cuenta, se producía un error de cierre de compra. Este problema se ha corregido y ahora se envía la dirección de facturación/envío seleccionada (en lugar de la dirección guardada predeterminada) y el cierre de compra se ha completado correctamente.
 
-![Problema corregido](../assets/fix.svg)<!-- Issue PAY-3314 --> Si desactiva los botones inteligentes de PayPal para el cierre de compra, no se muestran errores.
+![Problema corregido](../assets/fix.svg)<!-- Issue PAY-3314 --> Si desactiva los botones de pago de PayPal para el pago y envío, no se muestran errores.
 
 ![Problema corregido](../assets/fix.svg)<!-- Issue PAY-3330 --> Los pagos ya no fallan durante el pago y envío cuando un usuario invitado introduce un número de teléfono que incluye guiones.
 
@@ -288,7 +288,7 @@ _31 de marzo de 2022_
 
 ![Problema corregido](../assets/fix.svg)<!-- Issue PAY-2742 --> Ahora puedes activar y desactivar los métodos de pago disponibles, como Venmo, en el nivel de vista de tienda. Anteriormente, solo se podían configurar métodos de pago por sitio web.
 
-![Problema corregido](../assets/fix.svg)<!-- Issue PAY-2277 --> Ahora puede seleccionar [habilitar o deshabilitar botones inteligentes de PayPal individuales](settings.md#payment-buttons).
+![Problema corregido](../assets/fix.svg)<!-- Issue PAY-2277 --> Ahora puede seleccionar [activar o desactivar botones de pago individuales de PayPal](settings.md#payment-buttons).
 
 ![Problema corregido](../assets/fix.svg)<!-- Issue PAY-2561 --> Los productos eliminados anteriormente no aparecen en el carro de compras de la _Revisar pedido_ página.
 
@@ -314,7 +314,7 @@ _29 de noviembre de 2021_
 
 ![Nuevo](../assets/new.svg)<!-- Issue PAY-311 --> [!DNL Payment Services] admite precios por niveles flexibles, basados en el volumen total de procesamiento, adaptados a cualquier comerciante.
 
-![Nuevo](../assets/new.svg)<!-- Issue PAY-1443 --> Puede hacerlo fácilmente [personalizar la apariencia](payments-options.md) de botones inteligentes de PayPal y campos de tarjeta de crédito para [!DNL Payment Services] extensión.
+![Nuevo](../assets/new.svg)<!-- Issue PAY-1443 --> Puede hacerlo fácilmente [personalizar la apariencia](payments-options.md) de botones de pago de PayPal y campos de tarjeta de crédito para [!DNL Payment Services] extensión.
 
 ![Problema conocido](../assets/bug.svg)<!-- Issue PAY-2473 --> Uso de [claves de composición incorrectas](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/payments/payservices-install.html) durante la instalación de la extensión evita que el usuario [autentificación](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/connect-auth.html) con el correcto `MAGEID`.
 

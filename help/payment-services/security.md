@@ -4,9 +4,9 @@ description: Revise los requisitos de seguridad y cumplimiento del sitio.
 exl-id: 083c5a12-1d78-48b5-b9e3-612b104ce7e0
 feature: Payments, Checkout, Compliance
 redirect_from: https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/security.html
-source-git-commit: fef972355565472f0d0851a2e3cace692fb2db67
+source-git-commit: 5fe23b5aba9ad0a2a6c995fa6ade78f46fe7e3e1
 workflow-type: tm+mt
-source-wordcount: '549'
+source-wordcount: '525'
 ht-degree: 0%
 
 ---
@@ -55,9 +55,9 @@ Cuando un comprador [Almacena (o &quot;guarda&quot;) la información de su tarje
 
 Consulte [Bóveda de tarjetas de crédito](vaulting.md) para obtener más información.
 
-### Botones inteligentes de PayPal
+### Botones de pago de PayPal
 
-Con los botones inteligentes de PayPal, no se pasan datos regulados por PCI a través de sus servicios. No tiene que almacenar ni mantener esos datos, lo que reduce considerablemente los problemas de conformidad con PCI.
+Con los botones de pago de PayPal, no se pasan datos regulados por PCI a través de sus servicios. No tiene que almacenar ni mantener esos datos, lo que reduce considerablemente los problemas de conformidad con PCI.
 
 Por razones de seguridad, PayPal no pasa la dirección de facturación durante el proceso de pago: el país, el correo electrónico y el nombre son los únicos datos de facturación utilizados. Si lo desea, puede activar el proceso de pago y envío de PayPal para que se devuelva la dirección de facturación completa poniéndose en contacto con PayPal y completando un proceso de verificación de antecedentes.
 

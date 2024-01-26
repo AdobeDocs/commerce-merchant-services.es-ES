@@ -4,9 +4,9 @@ description: Utilice el informe Transacciones para obtener visibilidad sobre las
 role: User
 level: Intermediate
 exl-id: dd1d80f9-5983-4181-91aa-971522eb56fa
-source-git-commit: 91acc6e1dfd142caca77c0dc9ba55da34f75dd60
+source-git-commit: 5fe23b5aba9ad0a2a6c995fa6ade78f46fe7e3e1
 workflow-type: tm+mt
-source-wordcount: '1274'
+source-wordcount: '1240'
 ht-degree: 0%
 
 ---
@@ -41,7 +41,7 @@ Puede configurar esta vista, según las secciones de este tema, para presentar m
 
 Consulte ID de transacción de proveedor y pedido de comercio vinculados, importes de transacción, método de pago por transacción y mucho más, todo dentro de este informe.
 
-No todos los métodos de pago proporcionan la misma granularidad de la información. Por ejemplo, las transacciones con tarjeta de crédito proporcionan códigos de respuesta, AVS y CCV, y los últimos cuatro dígitos de la tarjeta en el informe Transacciones; los botones PayPal Smart no.
+No todos los métodos de pago proporcionan la misma granularidad de la información. Por ejemplo, las transacciones con tarjeta de crédito proporcionan códigos de respuesta, AVS y CCV, y los últimos cuatro dígitos de la tarjeta en el informe Transacciones; los botones de pago de PayPal no.
 
 Puede [descargar transacciones](#download-transactions) en formato de archivo .csv para su uso en software de contabilidad o gestión de pedidos existente.
 

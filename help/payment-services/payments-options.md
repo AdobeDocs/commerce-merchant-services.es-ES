@@ -3,7 +3,7 @@ title: Opciones de pago
 description: Configura las opciones de pago para personalizar los métodos disponibles para los clientes de tu tienda.
 exl-id: 95e648e6-6cb8-4226-b5ea-e1857212f20a
 feature: Payments, Checkout, Configuration
-source-git-commit: ff83c83a054e5b14814cc3076744c5517081a80f
+source-git-commit: 7ea19e5c47142e31995c570c5e1efb50850d99b2
 workflow-type: tm+mt
 source-wordcount: '1044'
 ht-degree: 0%
@@ -64,13 +64,13 @@ El [!DNL Apple Pay] El botón está visible desde la página de producto, el min
 
 Puede configurar [!UICONTROL Apple Pay] en la configuración de la tienda o en la página de inicio de Payment Services. Consulte [Configuración](settings.md#apple-pay) para obtener más información.
 
-## [!DNL PayPal Smart Buttons]
+## [!DNL PayPal Payment Buttons]
 
-[!DNL PayPal Smart Buttons], que utilizan PayPal para completar una compra, almacena la dirección de envío del comprador, las direcciones de facturación y los datos de pago para su uso posterior. Los compradores pueden utilizar cualquier forma de pago previamente almacenada u ofrecida por PayPal.
+[!DNL PayPal payment buttons], que utilizan PayPal para completar una compra, almacena la dirección de envío del comprador, las direcciones de facturación y los datos de pago para su uso posterior. Los compradores pueden utilizar cualquier forma de pago previamente almacenada u ofrecida por PayPal.
 
 ![Botón PayPal](assets/paypal-button.png){width="350" zoomable="yes"}
 
-Puede configurar [!UICONTROL PayPal Smart Buttons] en la configuración de la tienda o en [!DNL Payment Services] Hogar.  Consulte [Configuración](settings.md#payment-buttons) para obtener más información.
+Puede configurar [!UICONTROL PayPal payment buttons] en la configuración de la tienda o en [!DNL Payment Services] Hogar.  Consulte [Configuración](settings.md#payment-buttons) para obtener más información.
 
 Ver PayPal&#39;s [Documentación de métodos de pago](https://developer.paypal.com/docs/checkout/payment-methods/) para saber en qué países está disponible actualmente cada método de pago.
 

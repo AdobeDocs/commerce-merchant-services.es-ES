@@ -3,9 +3,9 @@ title: Probar y validar
 description: Las pruebas y la validación ayudan a garantizar que [!DNL Payment Services] Las funciones de funcionan según lo esperado y proporcionan las mejores opciones de pago para sus clientes
 exl-id: 95b4615e-73b0-41e8-83e2-e65a0b22f10f
 feature: Payments, Checkout
-source-git-commit: 75ff893bf5867ededa49807835676ddf9b19adc9
+source-git-commit: 5fe23b5aba9ad0a2a6c995fa6ade78f46fe7e3e1
 workflow-type: tm+mt
-source-wordcount: '492'
+source-wordcount: '469'
 ht-degree: 0%
 
 ---
@@ -18,7 +18,7 @@ Antes de exponer [!DNL Payment Services] para [!DNL Adobe Commerce] y [!DNL Mage
 
 Pruebas [!DNL Payment Services] en un entorno de zona protegida es un paso de validación importante, aunque sea un entorno simulado conectado únicamente a la zona protegida de PayPal, no a bancos y comerciantes reales.
 
-1. Completa un pago y envío correcto desde tu tienda, ya sea con [Campos de tarjeta de crédito](payments-options.md#credit-card-fields) o cualquiera de los [Botones inteligentes de PayPal](payments-options.md#paypal-smart-buttons). Consulte [Credenciales de prueba](#testing-credentials) para obtener más información sobre el uso de tarjetas de crédito falsas para realizar pruebas.
+1. Completa un pago y envío correcto desde tu tienda, ya sea con [Campos de tarjeta de crédito](payments-options.md#credit-card-fields) o cualquiera de los [Botones de pago de PayPal](payments-options.md#paypal-smart-buttons). Consulte [Credenciales de prueba](#testing-credentials) para obtener más información sobre el uso de tarjetas de crédito falsas para realizar pruebas.
 1. Capturar (cuando su acción de pago sea [establezca en `Authorize and Capture`](onboard.md#set-payment-services-as-payment-method)), [reembolsar](refunds.md), o [anular](voids.md) el pedido que acaba de completar. También puede hacer lo siguiente [crear una factura](https://docs.magento.com/user-guide/sales/invoice-create.html){target="_blank"} para un pedido, si la acción de pago está configurada en `Authorize` en lugar de `Authorize and Capture`.
 1. En un plazo de 24 a 48 horas, consulte la transacción y otra información en la [Informe de pagos](payouts.md).
 1. Consulte los detalles del pedido en la [Informe de estado de pago del pedido](order-payment-status.md).
