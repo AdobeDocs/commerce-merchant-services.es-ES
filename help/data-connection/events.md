@@ -4,7 +4,7 @@ description: Descubra qué datos captura cada evento.
 exl-id: b0c88af3-29c1-4661-9901-3c6d134c2386
 role: Admin, Developer
 feature: Personalization, Integration, Eventing
-source-git-commit: 136cd11e65674ec6e797aeaabd80750a50324566
+source-git-commit: 9001cd24db0941b7c7edcfd5b10464dc90084fd7
 workflow-type: tm+mt
 source-wordcount: '6957'
 ht-degree: 0%
@@ -586,7 +586,7 @@ En la tabla siguiente se describen los datos recopilados para este evento.
 
 ## Eventos de back office
 
-Los eventos de back office contienen información sobre el estado de un pedido, como si se ha realizado, cancelado, reembolsado, enviado o completado. Los datos que recopilan estos eventos del lado del servidor muestran una vista 360 del pedido del comprador. Esta vista ayuda a los comerciantes a dirigir o analizar mejor todo el estado del pedido al desarrollar campañas de marketing. Por ejemplo, puede identificar tendencias en ciertas categorías de productos que funcionan bien en diferentes épocas del año. Por ejemplo, ropa de invierno que se vende mejor durante los meses más fríos o ciertos colores de producto que los compradores están interesados en los últimos años. Además, los datos de estado de los pedidos pueden ayudarle a calcular el valor de cliente de por vida al comprender la tendencia de un comprador a realizar conversiones en función de pedidos anteriores.
+Los eventos de back office contienen información sobre el estado de un pedido, como si se hubiera realizado un pedido [colocado](#orderplaced), [cancelado](#ordercancelled), [reembolsado](#orderitemreturncompleted), [enviado](#ordershipmentcompleted), o [completado](#ordershipmentcompleted). Los datos que recopilan estos eventos del lado del servidor muestran una vista 360 del pedido del comprador. Esta vista ayuda a los comerciantes a dirigir o analizar mejor todo el estado del pedido al desarrollar campañas de marketing. Por ejemplo, puede identificar tendencias en ciertas categorías de productos que funcionan bien en diferentes épocas del año. Por ejemplo, ropa de invierno que se vende mejor durante los meses más fríos o ciertos colores de producto que los compradores están interesados en los últimos años. Además, los datos de estado de los pedidos pueden ayudarle a calcular el valor de cliente de por vida al comprender la tendencia de un comprador a realizar conversiones en función de pedidos anteriores.
 
 >[!NOTE]
 >
