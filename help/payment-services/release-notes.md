@@ -3,9 +3,9 @@ title: "[!DNL Payment Services] Notas de la versión"
 description: Revise las notas de la versión para obtener información acerca de todos los [!DNL Payment Services] versiones.
 exl-id: 104aa2c7-7735-4ac2-8ed1-a03cd9911273
 feature: Payments, Release Notes
-source-git-commit: 5fe23b5aba9ad0a2a6c995fa6ade78f46fe7e3e1
+source-git-commit: 8b619669ed0558fbd4769206e20062e819e1e6f3
 workflow-type: tm+mt
-source-wordcount: '2132'
+source-wordcount: '2153'
 ht-degree: 0%
 
 ---
@@ -75,6 +75,14 @@ _28 de junio de 2021_
 ![Nuevo](../assets/new.svg)<!-- Issue PAY-2761 --> Ahora puede personalizar los datos que se muestran en la variable [Informe de estado de pago del pedido](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/order-payment-status.html#show-and-hide-columns) y el [Informe de pagos](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/payouts.html#show-and-hide-columns) mostrando u ocultando columnas mediante el control Configuración de columna.
 
 +++
+
+## Versión 2.3.2
+
+_26 de enero de 2024_
+
+[!BADGE Admitido]{type=Informative tooltip="Admitido"}
+
+![Fix](../assets/fix.svg)<!-- PAY-5183 --> Se corrigieron problemas de rendimiento de REST/GraphQL. Ahora, el botón de tarjeta de crédito se procesa cuando se obtiene a través de la API.
 
 ## Versión 2.3.1
 
