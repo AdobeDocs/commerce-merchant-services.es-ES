@@ -2,9 +2,10 @@
 title: '[!DNL Live Search] Eventos'
 description: Descubra cómo los eventos recopilan datos para [!DNL Live Search].
 feature: Services, Eventing
-source-git-commit: c14ba55bee54954ffcfe760e26dc1d69646ecd69
+exl-id: b0c72212-9be0-432d-bb8d-e4c639225df3
+source-git-commit: 8d669cf6042340659574c86a43836a02954f24ce
 workflow-type: tm+mt
-source-wordcount: '468'
+source-wordcount: '462'
 ht-degree: 0%
 
 ---
@@ -39,17 +40,17 @@ En esta tabla se describen los eventos que utiliza [!DNL Live Search] estrategia
 
 ## Eventos de panel requeridos
 
-Algunos eventos son necesarios para rellenar la variable [Tablero de Live Search](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/live-search-admin/performance.html)
+Algunos eventos son necesarios para rellenar la variable [Tablero de Live Search](performance.md)
 
-| Área de panel | Eventos |
-| ----- | ---- | 
-| Búsquedas únicas | `search-request-sent`,`search-response-received` |
-| Búsquedas sin resultados | `search-request-sent`,`search-response-received` |
-| Tasa de resultados cero | `search-request-sent`,`search-response-received` |
-| Búsquedas frecuentes | `search-request-sent`,`search-response-received` |
-| El Promedio de posición del clic | `search-request-sent`,`search-response-received`, `search-results-view`, `search-product-click` |
-| Tasa de pulsaciones | `search-request-sent`,`search-response-received`, `search-results-view`, `search-product-click` |
-| Tasa de conversión | `search-request-sent`,`search-response-received`, `search-results-view`, `search-product-click`,`product-view`,`add-to-cart`,`place-order` |
+| Área de panel | Eventos | Campo de combinación |
+| ------------------- | ------------- | ---------- |
+| Búsquedas únicas | `page-view`, `search-request-sent`, | searchRequestId |
+| Búsquedas sin resultados | `page-view`, `search-request-sent`, | searchRequestId |
+| Tasa de resultados cero | `page-view`, `search-request-sent`, | searchRequestId |
+| Búsquedas frecuentes | `page-view`, `search-request-sent`, | searchRequestId |
+| El Promedio de posición del clic | `page-view`, `search-request-sent`, `search-response-received`, `search-results-view`, `search-product-click` | searchRequestId |
+| Tasa de pulsaciones | `page-view`, `search-request-sent`, `search-response-received`, `search-results-view`, `search-product-click` | searchRequestId, sku |
+| Tasa de conversión | `page-view`, `search-request-sent`, `search-response-received`, `search-results-view`, `search-product-click`, `product-view`, `add-to-cart`, `place-order` | searchRequestId, sku |
 
 ### Contextos requeridos
 
