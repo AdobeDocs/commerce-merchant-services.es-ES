@@ -3,14 +3,14 @@ title: '[!DNL Catalog Service] Notas de la versión'
 description: La información de la versión más reciente de [!DNL Catalog Service] para Adobe Commerce.
 exl-id: 9bf8e3f7-5b74-4755-867e-ac1c5000ff33
 feature: Services, Catalog Service, Release Notes
-source-git-commit: 8996772883b001babc09a3ae5a63310b23e58ae0
+source-git-commit: 4ce37b03937cf5a8413831c720d05387031a6094
 workflow-type: tm+mt
-source-wordcount: '537'
-ht-degree: 1%
+source-wordcount: '547'
+ht-degree: 0%
 
 ---
 
-# [!DNL Catalog Service] Notas de la versión
+# [!DNL Catalog Service] Notas de versión
 
 Estas notas de la versión describen las versiones más recientes de [!DNL Catalog Service].
 Se proporciona soporte para la versión publicada principal actual. Las notas de la versión de las versiones anteriores se proporcionan como referencia.
@@ -22,21 +22,20 @@ Las actualizaciones incluyen:
 
 ## Versión principal actual
 
-### Versión V1.13
+### Versión V1.16
 
-_12 de octubre de 2023_
+_13 de febrero de 2023_
 
 [!BADGE Admitido]{type=Informative tooltip="Admitido"}
 
-![Nuevo](../assets/new.svg) El servicio de catálogo admite `inStock` indicador para variantes de producto.
-![Nuevo](../assets/new.svg) `urlKey` y `externalId` se han agregado al esquema de GraphQL.
-![Nuevo](../assets/new.svg) Ahora se admiten productos descargables y tarjetas regalo.
+![Nuevo](../assets/new.svg) La API del servicio de catálogo ahora admite vídeos de productos.
+![Fix](../assets/fix.svg) Ahora se admiten productos agrupados con precios fijos.
+![Fix](../assets/fix.svg) Las opciones sin existencias ahora se muestran en el widget PDP.
 
 #### Limitaciones conocidas
 
 Estas funciones aún no son compatibles:
 
-* Paquete de productos con precio fijo
 * El tamaño máximo de la carga útil de atributos dinámicos es de 9 MB.
 * Precio del producto del grupo. Se puede calcular con precios de productos simples.
 * En una matriz de imágenes, solo la primera imagen contiene funciones.
@@ -49,6 +48,16 @@ Las siguientes limitaciones se pueden resolver mediante la API Mesh y la API pri
 ## Versiones anteriores
 
 +++ Versiones anteriores
+
+### Versión V1.13
+
+_12 de octubre de 2023_
+
+[!BADGE Admitido]{type=Informative tooltip="Admitido"}
+
+![Nuevo](../assets/new.svg) El servicio de catálogo admite `inStock` indicador para variantes de producto.
+![Nuevo](../assets/new.svg) `urlKey` y `externalId` se han agregado al esquema de GraphQL.
+![Nuevo](../assets/new.svg) Ahora se admiten productos descargables y tarjetas regalo.
 
 ### Versión V1.12
 

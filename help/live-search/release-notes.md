@@ -3,14 +3,14 @@ title: "[!DNL Live Search] Notas de la versión"
 description: '"La información de la última versión de [!DNL Live Search] de Adobe Commerce".'
 exl-id: 2a581e43-35f5-48ce-9752-844430ccdebf
 feature: Services, Search, Release Notes
-source-git-commit: ff7a2549893eab63f552a2a866939adc90de4a78
+source-git-commit: 2b0ca3f5a68e75ef4b4e71ac7705b17534e16845
 workflow-type: tm+mt
-source-wordcount: '1869'
+source-wordcount: '1822'
 ht-degree: 0%
 
 ---
 
-# [!DNL Live Search] Notas de la versión
+# [!DNL Live Search] Notas de versión
 
 Estas notas de la versión describen las versiones más recientes de [!DNL Live Search].
 Se proporciona soporte para la versión publicada principal actual. Las notas de la versión de las versiones anteriores se proporcionan como referencia.
@@ -41,6 +41,38 @@ _25 de abril de 2023_
 
 ![Nuevo](../assets/new.svg) [!DNL Live Search] Los clientes de ahora pueden aprovechar las nuevas [Indexador de precios SaaS](../price-index/index.md).
 
+## [!DNL Live Search] 4.1.0 {#410}
+
+_13 de febrero de 2024_
+
+[!BADGE Admitido]{type=Informative tooltip="Admitido"}
+
+### Nuevas funciones
+
+![Nuevo](../assets/new.svg) [!DNL Live Search] ahora admite la configuración de una regla predeterminada para [Buscar comercialización](rules.md).
+![Nuevo](../assets/new.svg) Se han añadido varias funciones nuevas a [Widget PLP](plp-styling.md):
+
+* Alternancia de vista de lista/cuadrícula
+* Botones Añadir al carro
+* Compatibilidad con muestras
+* Varias imágenes por producto
+* Reguladores de precios
+* Compatibilidad de idiomas
+
+Los comerciantes deben actualizar el [!DNL Live Search] extensión a la versión >= 4.1.0 para acceder a estas funciones.
+
+Después de instalar la versión 3.1.1 o superior de, habilite los nuevos indexadores:
+
+* Fuente de precios de productos
+* Fuente de datos del sitio web Ámbitos
+* Fuente de datos de grupos de clientes ámbitos
+
+Después de la actualización, pruebe la configuración actualizada en Control de calidad o Ensayo antes de insertar los cambios en producción.
+
+## Versiones anteriores
+
++++4.0.0 y anteriores
+
 ## [!DNL Live Search] 4.0.0 {#400}
 
 _13 de noviembre de 2023_
@@ -61,27 +93,11 @@ _13 de noviembre de 2023_
 ![Fix](../assets/fix.svg) Estilos CSS reconfigurados para aislar mejor las clases de widgets.
 ![Fix](../assets/fix.svg) Correcciones de errores menores
 
-Los comerciantes deben actualizar el [!DNL Live Search] extensión a la versión >= 4.0.0 para acceder a estas funciones.
-
-Después de instalar la versión 3.1.1 o superior de, habilite los nuevos indexadores:
-
-* Fuente de precios de productos
-* Fuente de datos del sitio web Ámbitos
-* Fuente de datos de grupos de clientes ámbitos
-
-Después de la actualización, pruebe la configuración actualizada en Control de calidad o Ensayo antes de insertar los cambios en producción.
-
-## Versiones anteriores
-
-+++3.1.1 y anteriores
-
-## [!DNL Live Search] 3.1.1 {#311}
+## [!DNL Live Search] 3.1.1. {#311}
 
 _15 de septiembre de 2023_
 
 [!BADGE Admitido]{type=Informative tooltip="Admitido"}
-
-
 
 ![Nuevo](../assets/new.svg) Se ha añadido una nueva pestaña de comercialización de categorías. Los usuarios ahora pueden añadir clasificaciones inteligentes y clasificaciones manuales (fijar, aumentar, enterrar, ocultar) por categoría
 ![Nuevo](../assets/new.svg) Los usuarios pueden agregar una regla de una sola categoría con clasificación inteligente o manual
@@ -217,7 +233,7 @@ Los comerciantes deben actualizar el [!DNL Live Search] versión de la extensió
 
 Se recomienda a los usuarios actualizar y probar antes de pasar a producción. Considere la posibilidad de actualizar el entorno de producción durante las horas de menor actividad después de verificar los resultados de su entorno de prueba.
 
-### [!DNL Live Search] 2.0 {#20}
+### [!DNL Live Search] 2,0 {#20}
 
 [!BADGE Admitido]{type="Informativo" tooltip="Admitido"}
 

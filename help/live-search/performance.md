@@ -1,15 +1,15 @@
 ---
-title: "Rendimiento"
+title: "Panel de rendimiento"
 description: '"La [!DNL Live Search] El panel de rendimiento proporciona una perspectiva de los términos de búsqueda que utilizan los compradores".'
 exl-id: ee2053fc-98c5-4d2c-9345-4d1f9a3180fb
-source-git-commit: 0b0bf898719338f5dacd55d8e89aaf2c9fa8a3c0
+source-git-commit: d9d9506b2555bc30d6fbec67c65fa220d9a51e91
 workflow-type: tm+mt
-source-wordcount: '456'
+source-wordcount: '481'
 ht-degree: 0%
 
 ---
 
-# Rendimiento
+# Panel de rendimiento
 
 El [!DNL Live Search] El panel de rendimiento proporciona una perspectiva de los términos de búsqueda que utilizan los compradores. La información se puede utilizar para identificar tendencias, aumentar los clics y mejorar la tasa de conversión. El panel Rendimiento proporciona una instantánea de las métricas de búsqueda para un intervalo de fechas específico e incluye los siguientes informes:
 
@@ -18,6 +18,8 @@ El [!DNL Live Search] El panel de rendimiento proporciona una perspectiva de los
 * Resultados frecuentes
 
 ![Rendimiento](assets/performance-unique-searches.png)
+
+También puede consultar la [Tablero de administración de datos](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-dashboard.html) para obtener más datos sobre la sincronización de datos.
 
 ## Ver un informe
 
@@ -29,7 +31,6 @@ El [!DNL Live Search] El panel de rendimiento proporciona una perspectiva de los
 >[!NOTE]
 >
 >El panel de rendimiento se actualiza cada 12 horas.
-
 
 ## Descripciones de campos
 

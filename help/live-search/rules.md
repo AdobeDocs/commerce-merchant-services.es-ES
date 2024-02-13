@@ -2,9 +2,9 @@
 title: "Buscar comercialización"
 description: '"[!DNL Live Search] las reglas de comercialización combinan la lógica con las acciones para dar forma a la experiencia de compra".'
 exl-id: d06a3040-6987-4813-90ae-2f7b3ad0b232
-source-git-commit: 888b81683a4e139a35b771d9c573f1f5f0c3b902
+source-git-commit: 2b0ca3f5a68e75ef4b4e71ac7705b17534e16845
 workflow-type: tm+mt
-source-wordcount: '608'
+source-wordcount: '681'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ Cada regla tiene tres componentes principales:
 * Eventos: las acciones que se realizan cuando se cumplen las condiciones.
 * Detalles: nombre de la regla, y marco temporal y descripción opcionales.
 
-Puede combinar varias condiciones y acciones, y programar una regla para que esté activa durante un periodo.
+Puede combinar varias condiciones y acciones, y programar una regla para que esté activa durante un periodo. También puede establecer una regla predeterminada que se aplique incluso cuando no se haya definido ningún término de búsqueda.
 
 ## Requisitos
 
@@ -46,6 +46,10 @@ Los operadores de coincidencia `All` y `Any` determine el operador lógico que s
 * `Any` - Utiliza el `OR` operador lógico para unir varias condiciones.
 
 Al componer una regla compleja, puede resultar útil escribirla con sangría para describir las condiciones, los eventos asociados y los nombres de producto o SKU necesarios para devolver los resultados que desea lograr. A continuación, genere la regla y pruebe el resultado.
+
+## Regla predeterminada
+
+Puede establecer una regla predeterminada que se aplique cuando no se proporciona ningún término de búsqueda o cuando no se puede aplicar ninguna otra regla de búsqueda. Si establece la regla predeterminada en Más compradas, todas las consultas tendrán ese tipo de clasificación de forma predeterminada, a menos que se sustituyan por un término de búsqueda más específico. No se puede establecer ningún término de búsqueda para la regla predeterminada.
 
 ## Orden de prioridad con varias reglas
 

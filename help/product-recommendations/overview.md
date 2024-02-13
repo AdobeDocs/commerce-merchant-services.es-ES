@@ -3,9 +3,9 @@ title: Introducción a [!DNL Product Recommendations]
 description: '''[!DNL Product Recommendations] son una potente herramienta de marketing que puede utilizar para aumentar las conversiones, aumentar los ingresos y estimular la participación del comprador".'
 exl-id: 818ac876-58c9-4c68-975e-53da59ed6b52
 recommendations: noCatalog
-source-git-commit: 9ae4aff1851e9ce9920c4fbf11d2616d6f0f6307
+source-git-commit: d9d9506b2555bc30d6fbec67c65fa220d9a51e91
 workflow-type: tm+mt
-source-wordcount: '396'
+source-wordcount: '385'
 ht-degree: 0%
 
 ---
@@ -24,7 +24,9 @@ Si la tienda está implementada con PWA Studio, consulte la [Documentación del 
 
 ## Privacidad
 
-La recopilación de datos para los fines de las recomendaciones del Producto no incluye información de identificación personal (PII). Además, todos los identificadores de usuario, como los ID de cookie y las direcciones IP, se anonimizan estrictamente. Para obtener más información, consulte la [Política de privacidad de Adobe](https://www.adobe.com/privacy/policy.html).
+Recopilación de datos a los efectos de [!DNL Product Recommendations] no incluye información de identificación personal (PII). Además, todos los identificadores de usuario, como los ID de cookie y las direcciones IP, se anonimizan estrictamente. Para obtener más información, consulte la [Política de privacidad de Adobe](https://www.adobe.com/privacy/policy.html).
+
+[!DNL Product Recommendations] Los usuarios de pueden consultar la [Tablero de administración de datos](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-dashboard.html) para obtener más datos sobre la sincronización de datos.
 
 ## Recomendaciones de productos frente a relaciones de productos
 

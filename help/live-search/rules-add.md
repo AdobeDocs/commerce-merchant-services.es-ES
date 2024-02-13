@@ -2,9 +2,9 @@
 title: "Agregar reglas"
 description: '"Aprenda a crear reglas de comercialización de búsqueda".'
 exl-id: c6b92ef5-3b08-47f9-8412-955a9c95a9ee
-source-git-commit: 888b81683a4e139a35b771d9c573f1f5f0c3b902
+source-git-commit: 4ce37b03937cf5a8413831c720d05387031a6094
 workflow-type: tm+mt
-source-wordcount: '1430'
+source-wordcount: '1536'
 ht-degree: 0%
 
 ---
@@ -20,9 +20,16 @@ Para generar una regla, el primer paso es utilizar el editor de reglas para defi
 1. Haga clic en **Buscar comercialización** pestaña.
 1. Clic **Añadir regla** para iniciar el editor de reglas.
 
+## Tipo de regla
+
+Una consulta de búsqueda es donde se define un término de búsqueda, condiciones y tipos de clasificación específicos.
+
+Se puede establecer una regla predeterminada que se aplique a todas las consultas, a menos que se defina una consulta de búsqueda más específica. Solo se puede establecer una regla predeterminada que no puede contener ninguna condición. Si selecciona Predeterminado, no se muestra la interfaz Conditions.
+Elija el tipo de clasificación inteligente predeterminado y cualquier clasificación manual que desee aplicar a todas las búsquedas predeterminadas. Las clasificaciones manuales siempre se aplican.
+
 ## Condiciones
 
-Las condiciones son los requisitos para almacenar en déclencheur un evento. Una regla puede tener hasta diez condiciones y 25 eventos.
+Las condiciones son los requisitos para almacenar en déclencheur un evento. Una regla puede tener hasta diez condiciones y 25 eventos. Una regla predeterminada no puede tener ninguna condición.
 
 ![Regla: cree la regla](assets/rules-add-workspace.png)
 
@@ -52,8 +59,6 @@ Inicialmente, el panel de prueba procesa la consulta desde el cuadro de búsqued
 
 1. Para generar una regla con varias condiciones, haga clic en **Añadir condición**.
 Una regla puede tener hasta diez condiciones. El operador lógico que une dos condiciones se basa en el actual *Coincidencia* configuración. De forma predeterminada, *Coincidencia* es `All` y el operador lógico es `AND`.
-
-   ![Reglas: la consulta de búsqueda contiene](assets/rules-search-query-contains-and.png)
 
 1. Seleccione la segunda condición e introduzca el texto de consulta requerido.
 
@@ -180,6 +185,7 @@ La información introducida aquí aparece en la variable [Detalles de regla](rul
 | Campo | Descripción |
 |--- |--- |
 | Nombre | Nombre de la regla. Los nombres de las reglas deben ser únicos. |
+| Tipo de regla | Predeterminado o Consulta. El valor predeterminado se aplica a todas las reglas, a menos que se defina una regla de consulta más específica. |
 | Fecha de inicio | La fecha de inicio de la regla, si está programada. |
 | Fecha de finalización | La fecha de finalización de la regla, si está programada. |
 | Descripción | Breve descripción de la regla. |
