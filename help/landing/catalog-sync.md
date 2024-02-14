@@ -3,9 +3,9 @@ title: Sincronización de catálogo
 description: Obtenga información sobre cómo exportar datos de productos desde [!DNL Commerce] servidor a [!DNL Commerce Services].
 exl-id: 19d29731-097c-4f5f-b8c0-12f9c91848ac
 feature: Catalog Management, Data Import/Export, Catalog Service
-source-git-commit: 6513fd6dce9648407b0878785f5f59f9f39cd5e1
+source-git-commit: 748fb32913f9e7f0dea21f87be20386d9cc0ad17
 workflow-type: tm+mt
-source-wordcount: '1135'
+source-wordcount: '1131'
 ht-degree: 0%
 
 ---
@@ -13,15 +13,19 @@ ht-degree: 0%
 
 # Sincronización de catálogo
 
->[!NOTE]
->
-> El tablero de sincronización de catálogos ahora es el tablero de administración de datos. Este tablero reformado ahora admite [!DNL Product Recommendations], [!DNL Live Search], y [!DNL Catalog Service]. Los clientes pueden obtener el tablero de administración de datos actualizando a la última versión de uno de esos servicios. Obtenga más información al respecto en la [Tablero de administración de datos](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-dashboard.html) documentación. Este tema actual permanece para los usuarios que aún no se han actualizado y que aún tienen el panel Sincronización de catálogos.
-
 Adobe Commerce utiliza indexadores para compilar datos de catálogo en tablas. El proceso se activa automáticamente mediante [eventos](https://experienceleague.adobe.com/docs/commerce-admin/systems/tools/index-management.html#events-that-trigger-full-reindexing) como un cambio en el precio de un producto o en el nivel de inventario.
 
 El servicio de sincronización de catálogos mueve datos de producto de un [!DNL Adobe Commerce] instancia a la [!DNL Commerce Services] de forma continua para mantener los datos actualizados. Por ejemplo, [[!DNL Product Recommendations]](/help/product-recommendations/overview.md) requiere información actual del catálogo para devolver con precisión las recomendaciones con los nombres, precios y disponibilidad correctos. Utilice el _Sincronización de catálogo_ panel para observar y administrar el proceso de sincronización de [interfaz de línea de comandos](#resynccmdline) para almacenar en déclencheur una sincronización de catálogo y reindexar los datos de producto para su consumo por [!DNL Commerce Services].
 
+>[!NOTE]
+>
+> Para usar la variable _Sincronización de catálogo_ para la interfaz de línea de comandos, debe tener un [Clave de API y espacio de datos SaaS configurado](saas.md).
+
 ## Acceso al panel de sincronización de catálogos
+
+>[!NOTE]
+>
+> El _Sincronización de catálogo_ el tablero solo está disponible cuando la variable _Product Recommendations_ Los módulos de se instalan y reflejan las proyecciones de datos relacionadas únicamente con esa función. Compatibilidad con otros servicios de Commerce como _Live Search_ y _Servicio de catálogo_ están planificados para el futuro.
 
 Para acceder al panel de sincronización de catálogos, seleccione **Sistema** > _Transferencia de datos_ > **Sincronización de catálogo**.
 
@@ -42,7 +46,7 @@ Notifica un estado de sincronización de:
 - **Error** - Muestra la fecha y la hora en que se intentó realizar la sincronización
 - **En curso** - Muestra la fecha y la hora de la última sincronización correcta
 
-El proceso de sincronización del catálogo se ejecuta a través del proceso cron. Si no ve los productos esperados en la tienda o si los productos no reflejan los cambios recientes que ha realizado, puede resolver lo siguiente [problemas de sincronización del catálogo](#resolvesync).
+El proceso de sincronización del catálogo se ejecuta automáticamente cada hora. Si no ve los productos esperados en la tienda o si los productos no reflejan los cambios recientes que ha realizado, puede resolver lo siguiente [problemas de sincronización del catálogo](#resolvesync).
 
 ### Productos sincronizados
 

@@ -2,9 +2,9 @@
 title: Incorporación e instalación
 description: "Aprenda a instalar [!DNL Catalog Service]"
 exl-id: 4e9fbdc9-67a1-4703-b8c0-8b159e0cc2a7
-source-git-commit: 82ed90f48067d7daf20c1a9ebde318d428aad864
+source-git-commit: a0dded0beac3d45f8944016bd73e4ec1ae3eae22
 workflow-type: tm+mt
-source-wordcount: '596'
+source-wordcount: '578'
 ht-degree: 0%
 
 ---
@@ -145,7 +145,3 @@ Para permitir [!DNL Catalog Service] a través de un cortafuegos, añada `commer
 El [Malla de API para el Generador de aplicaciones de Adobe Developer](https://developer.adobe.com/graphql-mesh-gateway/gateway/overview/) permite a los desarrolladores integrar API privadas o de terceros y otras interfaces con productos de Adobe mediante Adobe IO.
 
 Consulte la  [[!DNL Catalog Service] y API Mesh](mesh.md) tema para obtener detalles de instalación y configuración.
-
-## Tablero de administración de datos
-
-Los usuarios pueden consultar la [Tablero de administración de datos](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-dashboard.html) para obtener más datos acerca de [!DNL Catalog Service] sincronización de datos.
