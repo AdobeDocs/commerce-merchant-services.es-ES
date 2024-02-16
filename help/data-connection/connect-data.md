@@ -3,9 +3,9 @@ title: Conexión de datos de Commerce con Adobe Experience Platform
 description: Aprenda a conectar sus datos de Commerce a Adobe Experience Platform.
 exl-id: 87898283-545c-4324-b1ab-eec5e26a303a
 feature: Personalization, Integration, Configuration
-source-git-commit: 4a5877d6e1a5c7d840e36f4913306b0c440bbac5
+source-git-commit: 540c423ecf7e50a36c1137f43a9cf9673658c805
 workflow-type: tm+mt
-source-wordcount: '2213'
+source-wordcount: '2501'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ Al instalar el [!DNL Data Connection] extensión, aparecen dos nuevas páginas d
 
 Para conectar la instancia de Adobe Commerce a Adobe Experience Platform, debe configurar ambos conectores, empezando por el conector de Commerce Services y terminando por el [!DNL Data Connection] extensión.
 
-## Actualizar el conector de Commerce Services
+## Configuración del conector de Commerce Services
 
 Si ya ha instalado un servicio de Adobe Commerce, probablemente ya haya configurado el conector de Commerce Services. Si no es así, debe completar las siguientes tareas en la [Conector de Commerce Services](../landing/saas.md) página:
 
@@ -29,11 +29,53 @@ Si ya ha instalado un servicio de Adobe Commerce, probablemente ya haya configur
 
 Después de configurar el conector de Commerce Services, configure las variables [!DNL Data Connection] extensión.
 
-## Actualice el [!DNL Data Connection] extensión
+## Configure las variables [!DNL Data Connection] extensión
 
-En esta sección, puede conectar la instancia de Adobe Commerce a Adobe Experience Platform mediante el ID de la organización. A continuación, puede especificar el tipo de datos (tienda y back office) que se enviarán al perímetro del Experience Platform.
+En esta sección, aprenderá a configurar el [!DNL Data Connection] extensión.
 
-## General
+### Agregar detalles de cuenta de servicio y credenciales
+
+Si planea recopilar y enviar [datos de pedidos históricos](#send-historical-order-data) o [Datos de perfil del cliente (Beta)](#send-customer-profile-data), debe agregar los detalles de cuenta de servicio y credenciales. Además, si está configurando la variable [Audience Activation](https://experienceleague.adobe.com/docs/commerce-admin/customers/audience-activation.html) extensión, debe completar estos pasos.
+
+Si solo recopila y envía datos de tienda o de back office, puede ir al [general](#general) sección.
+
+#### Paso 1: Crear un proyecto en la consola de Adobe Developer
+
+Cree un proyecto en la consola de Adobe Developer que autentique Commerce para poder realizar llamadas a la API de Experience Platform.
+
+Para crear el proyecto, siga los pasos descritos en la sección [Autenticación y acceso a las API de Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/landing/platform-apis/api-authentication.html) tutorial.
+
+A medida que avance en el tutorial, asegúrese de que su proyecto tenga lo siguiente:
+
+- Acceso a lo siguiente [perfiles de producto](https://experienceleague.adobe.com/docs/experience-platform/landing/platform-apis/api-authentication.html#select-product-profiles): **Acceso a todo de producción predeterminado** y **Acceso completo predeterminado de AEP**.
+- La correcta [funciones y permisos están configurados](https://experienceleague.adobe.com/docs/experience-platform/landing/platform-apis/api-authentication.html#assign-api-to-a-role).
+- Si ha decidido utilizar JSON Web Tokens (JWT) como método de autenticación de servidor a servidor, también debe cargar una clave privada.
+
+El resultado de este paso crea un archivo de configuración que se utiliza en el siguiente paso.
+
+#### Paso 2: Descargar archivo de configuración
+
+Descargue la [archivo de configuración de workspace](https://developer.adobe.com/commerce/extensibility/events/project-setup/#download-the-workspace-configuration-file). Copie y pegue el contenido de este archivo en **Detalles de cuenta de servicio/credencial** de la administración de Commerce.
+
+1. En el Administrador de comercio, navegue hasta **Tiendas** > Configuración > **Configuración** > **Servicios** > **[!DNL Data Connection]**.
+
+1. Seleccione el método de autorización de servidor a servidor que implementó desde el **Tipo de autorización de Adobe Developer** menú. Adobe recomienda utilizar OAuth. JWT se ha desaprobado. [Más información](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration/).
+
+1. (Solo JWT) Copie y pegue el contenido de su `private.key` en el archivo **Secreto del cliente** field. Utilice el siguiente comando para copiar el contenido.
+
+   ```bash
+   cat config/private.key | pbcopy
+   ```
+
+   Consulte [Autenticación de cuenta de servicio (JWT)](https://developer.adobe.com/developer-console/docs/guides/authentication/JWT/) para obtener más información sobre `private.key` archivo.
+
+1. Copie el contenido del `<workspace-name>.json` en el archivo **Detalles de cuenta de servicio/credencial** field.
+
+   ![[!DNL Data Connection] Configuración de administración](./assets/epc-admin-config.png){width="700" zoomable="yes"}
+
+1. Clic **Guardar configuración**.
+
+### General
 
 1. En el Administrador, vaya a **Sistema** > Servicios > **[!DNL Data Connection]**.
 
@@ -47,15 +89,19 @@ En esta sección, puede conectar la instancia de Adobe Commerce a Adobe Experien
    >
    >Si especifica su propio SDK web de AEP, la variable [!DNL Data Connection] La extensión de utiliza el ID de flujo de datos asociado con ese SDK y no el ID de flujo de datos especificado en esta página (si lo hay).
 
-## Recopilación de datos
+### Recopilación de datos
 
-En esta sección, se especifica el tipo de datos que se desea enviar al perímetro del Experience Platform. Existen dos tipos de datos: del lado del cliente y del lado del servidor.
+En esta sección, especifique el tipo de datos que desea recopilar y enviar al perímetro del Experience Platform. Existen tres tipos de datos:
 
-Los datos del lado del cliente son datos capturados en la tienda. Esto incluye las interacciones del comprador, como `View Page`, `View Product`, `Add to Cart`, y [lista de solicitudes](events.md#b2b-events) información (para comerciantes B2B). Los datos del lado del servidor, o datos del back office, son datos capturados en los servidores de Commerce. Esto incluye información sobre el estado de un pedido, como si se ha realizado, cancelado, reembolsado, enviado o completado.
+- **Comportamiento** (datos del lado del cliente) son datos capturados en la tienda. Esto incluye las interacciones del comprador, como `View Page`, `View Product`, `Add to Cart`, y [lista de solicitudes](events.md#b2b-events) información (para comerciantes B2B).
+
+- **Back office** (datos del lado del servidor) son datos capturados en los servidores de Commerce. Esto incluye información sobre el estado de un pedido, como si se ha realizado, cancelado, reembolsado, enviado o completado. También incluye [datos de pedidos históricos](#send-historical-order-data).
+
+- (**Beta**) **Perfil** son datos relacionados con la información de perfil del comprador. Aprender [más](#send-customer-profile-data).
 
 Para asegurarse de que la instancia de Adobe Commerce puede comenzar la recopilación de datos, revise la [requisitos previos](overview.md#prerequisites).
 
-Consulte el tema de eventos para obtener más información sobre [escaparate](events.md#storefront-events) y [back office](events.md#back-office-events) eventos.
+Consulte el tema de eventos para obtener más información sobre [escaparate](events.md#storefront-events), [back office](events.md#back-office-events), y [perfil](events.md#customer-profile-events-server-side) eventos.
 
 >[!NOTE]
 >
@@ -67,7 +113,7 @@ Consulte el tema de eventos para obtener más información sobre [escaparate](ev
 
    >[!NOTE]
    >
-   >Si selecciona **Eventos de back office**, todos los datos de back office se envían al perímetro del Experience Platform. Si un comprador decide excluirse de la recopilación de datos, debe establecer explícitamente la preferencia de privacidad del comprador en el Experience Platform. Esto es diferente a los eventos de tienda en los que el coleccionista ya gestiona el consentimiento en función de las preferencias del comprador. [Más información](https://experienceleague.adobe.com/docs/experience-platform/landing/governance-privacy-security/consent/adobe/dataset.html) acerca de la configuración de la preferencia de privacidad de un comprador en el Experience Platform.
+   >Si selecciona **Eventos de back office**, todos los datos de back office se envían al perímetro del Experience Platform. Si un comprador decide excluirse de la recopilación de datos, debe establecer explícitamente la preferencia de privacidad del comprador en el Experience Platform. Esto es diferente a los eventos de tienda en los que el coleccionista ya gestiona el consentimiento en función de las preferencias del comprador. Aprender [más](https://experienceleague.adobe.com/docs/experience-platform/landing/governance-privacy-security/consent/adobe/dataset.html) acerca de la configuración de la preferencia de privacidad de un comprador en el Experience Platform.
 
 1. (Omita este paso si utiliza su propio SDK web de AEP). [Crear](https://experienceleague.adobe.com/docs/experience-platform/datastreams/configure.html#create) Cree una secuencia de datos en Adobe Experience Platform o seleccione una secuencia de datos existente que desee utilizar para la recopilación. Introduzca el ID de la secuencia de datos en **ID de flujo de datos** field.
 
@@ -95,7 +141,7 @@ Consulte el tema de eventos para obtener más información sobre [escaparate](ev
       bin/magento saas:resync --feed orders
       ```
 
-## Descripciones de campos
+#### Descripciones de campos
 
 | Campo | Descripción |
 |--- |--- |
@@ -108,11 +154,44 @@ Consulte el tema de eventos para obtener más información sobre [escaparate](ev
 | ID de flujo de datos (sitio web) | ID que permite que los datos fluyan desde Adobe Experience Platform a otros productos DX de Adobe. Este ID debe estar asociado a un sitio web específico dentro de la instancia de Adobe Commerce específica. Si especifica su propio SDK web de Experience Platform, no especifique ningún ID de flujo de datos en este campo. El [!DNL Data Connection] La extensión de utiliza el ID de flujo de datos asociado con ese SDK e ignora cualquier ID de flujo de datos especificado en este campo (si lo hay). |
 | ID del conjunto de datos (sitio web) | ID del conjunto de datos que contiene los datos de Commerce. Este campo es obligatorio a menos que haya anulado la selección del campo **Eventos de tienda** o **Eventos de back office** casillas de verificación. Además, si utiliza su propio SDK web de Experience Platform y, por lo tanto, no especificó un ID de conjunto de datos, debe agregar el ID del conjunto de datos asociado a su conjunto de datos. De lo contrario, no podrá guardar este formulario. |
 
->[!NOTE]
->
->Después de la incorporación, los datos de la tienda comienzan a fluir al perímetro del Experience Platform. Los datos del back office tardan unos cinco minutos en aparecer en el perímetro. Las actualizaciones posteriores son visibles en el perímetro en función de la programación de cron.
+Después de la incorporación, los datos de la tienda comienzan a fluir al perímetro del Experience Platform. Los datos del back office tardan unos cinco minutos en aparecer en el perímetro. Las actualizaciones posteriores son visibles en el perímetro en función de la programación de cron.
 
-## Enviar datos de pedidos históricos
+### Envío de datos de perfil de cliente
+
+>[!IMPORTANT]
+>
+>Esta función está en versión beta. Si desea unirse al programa beta, envíe una solicitud a [dataconnection@adobe.com](mailto:dataconnection@adobe.com).
+
+Existen dos tipos de datos de perfil que puede enviar al Experience Platform: registros de perfil y eventos de perfil de series temporales.
+
+Un registro de perfil contiene datos que se guardan cuando un comprador crea un perfil en su instancia de Commerce, como el nombre del comprador. Cuando el esquema y el conjunto de datos estén [configurado correctamente](profile-data.md), se envía un registro de perfil al Experience Platform y se reenvía al servicio de segmentación y administración de perfiles de Adobe: [Real-Time CDP](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/intro/rtcdp-intro/overview.html).
+
+Los eventos de perfil de series temporales contienen datos sobre la información de perfil del comprador; por ejemplo, si crean, editan o eliminan una cuenta del sitio. Cuando los datos de evento de perfil se envían al Experience Platform, residen en un conjunto de datos donde otros productos DX pueden utilizarlos.
+
+1. Asegúrese de que tiene [proporcionado](#add-service-account-and-credential-details) cuenta de servicio y detalles de credenciales.
+
+1. Asegúrese de tener un esquema y un conjunto de datos especificados para [ingesta de datos de registro de perfil](profile-data.md) y [ingesta de datos de eventos de perfil de series temporales](update-xdm.md#time-series-profile-event-data).
+
+1. Coloque una marca de verificación en **Perfiles de cliente** casilla de verificación si desea enviar datos de perfil al Experience Platform.
+
+1. Introduzca el **ID de conjunto de datos de perfil**.
+
+   Los datos del registro de perfil deben utilizar un conjunto de datos diferente al que utiliza actualmente para los datos de evento de comportamiento y de back office.
+
+1. Si no desea transmitir eventos de perfil a través del mismo ID de flujo de datos que utiliza para los datos de comportamiento y de back office, quite la marca de la etiqueta **Transmitir perfiles de clientes a través del mismo ID de flujo de datos** e introduzca el ID de la secuencia de datos que desee utilizar en su lugar.
+
+Un registro de perfil puede tardar unos 10 minutos en estar disponible en Real-Time CDP. Los eventos de perfil comienzan a transmitirse inmediatamente.
+
+#### Descripciones de campos
+
+| Campo | Descripción |
+|--- |--- |
+| Perfiles de cliente | Seleccione esta casilla de verificación si desea recopilar y enviar registros de perfil de cliente. |
+| ID de conjunto de datos de perfil | Un registro de perfil debe utilizar un conjunto de datos diferente al conjunto de datos utilizado para los eventos de comportamiento y back office. |
+| Transmitir perfiles de clientes a través del mismo ID de flujo de datos | Decida si desea utilizar el mismo conjunto de datos que se utiliza actualmente para sus eventos de comportamiento y de back office o no. |
+| Flujo de datos para perfiles de clientes | Especifique el conjunto de datos específico del registro de perfil del cliente. |
+
+### Enviar datos de pedidos históricos
 
 Adobe Commerce recoge hasta cinco años de [datos y estado de pedidos históricos](events.md#back-office-events). Puede usar el complemento [!DNL Data Connection] para enviar esos datos históricos al Experience Platform y enriquecer los perfiles de clientes y personalizar las experiencias de los clientes en función de esos pedidos anteriores. Los datos se almacenan en un conjunto de datos dentro de Experience Platform.
 
@@ -122,49 +201,11 @@ Vea este vídeo para obtener más información sobre los pedidos históricos y, 
 
 >[!VIDEO](https://video.tv.adobe.com/v/3424672)
 
-### Paso 1: Crear un proyecto en la consola de Adobe Developer
+#### Configuración del servicio de sincronización de pedidos
 
->[!NOTE]
->
->Si ya ha instalado y habilitado el [Audience Activation](https://experienceleague.adobe.com/docs/commerce-admin/customers/audience-activation.html) extensión, ya ha completado los pasos 1 y 2 y puede pasar al paso 3.
+El servicio de sincronización de pedidos utiliza el [Marco de cola de mensajes](https://developer.adobe.com/commerce/php/development/components/message-queues/) y RabbitMQ. Después de completar estos pasos, los datos de estado de los pedidos se pueden sincronizar con SaaS, que es necesario antes de enviarlos al Experience Platform.
 
-Cree un proyecto en la consola de Adobe Developer que autentique Commerce para poder realizar llamadas a la API de Experience Platform.
-
-Para crear el proyecto, siga los pasos descritos en la sección [Autenticación y acceso a las API de Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/landing/platform-apis/api-authentication.html) tutorial.
-
-A medida que avance en el tutorial, asegúrese de que su proyecto tenga lo siguiente:
-
-- Acceso a lo siguiente [perfiles de producto](https://experienceleague.adobe.com/docs/experience-platform/landing/platform-apis/api-authentication.html#select-product-profiles): **Acceso a todo de producción predeterminado** y **Acceso completo predeterminado de AEP**.
-- La correcta [funciones y permisos están configurados](https://experienceleague.adobe.com/docs/experience-platform/landing/platform-apis/api-authentication.html#assign-api-to-a-role).
-- Si ha decidido utilizar JSON Web Tokens (JWT) como método de autenticación de servidor a servidor, también debe cargar una clave privada.
-
-El resultado de este paso crea un archivo de configuración que se utiliza en el siguiente paso.
-
-### Paso 2: Descargar archivo de configuración
-
-Descargue la [archivo de configuración de workspace](https://developer.adobe.com/commerce/extensibility/events/project-setup/#download-the-workspace-configuration-file). Copie y pegue el contenido de este archivo en **Detalles de cuenta de servicio/credencial** de la administración de Commerce.
-
-1. En el Administrador de comercio, navegue hasta **Tiendas** > Configuración > **Configuración** > **Servicios** > **[!DNL Data Connection]**.
-
-1. Seleccione el método de autorización de servidor a servidor que implementó desde el **Tipo de autorización de Adobe Developer** menú. Adobe recomienda utilizar OAuth. JWT se ha desaprobado. [Más información](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration/).
-
-1. (Solo JWT) Copie y pegue el contenido de su `private.key` en el archivo **Secreto del cliente** field. Utilice el siguiente comando para copiar el contenido.
-
-   ```bash
-   cat config/private.key | pbcopy
-   ```
-
-   Consulte [Autenticación de cuenta de servicio (JWT)](https://developer.adobe.com/developer-console/docs/guides/authentication/JWT/) para obtener más información sobre `private.key` archivo.
-
-1. Copie el contenido del `<workspace-name>.json` en el archivo **Detalles de cuenta de servicio/credencial** field.
-
-   ![[!DNL Data Connection] Configuración de administración](./assets/epc-admin-config.png){width="700" zoomable="yes"}
-
-1. Clic **Guardar configuración**.
-
-### Paso 3: Configuración del servicio de sincronización de pedidos
-
-Después de introducir las credenciales del desarrollador, configure el servicio de sincronización de pedidos. El servicio de sincronización de pedidos utiliza el [Marco de cola de mensajes](https://developer.adobe.com/commerce/php/development/components/message-queues/) y RabbitMQ. Después de completar estos pasos, los datos de estado de los pedidos se pueden sincronizar con SaaS, que es necesario antes de enviarlos al Experience Platform.
+1. Asegúrese de que tiene [proporcionado](#add-service-account-and-credential-details) cuenta de servicio y detalles de credenciales.
 
 1. [Activar](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/service/rabbitmq.html) RabbitMQ.
 
@@ -187,7 +228,7 @@ Después de introducir las credenciales del desarrollador, configure el servicio
 
 Con el servicio de sincronización de pedidos habilitado, puede especificar el intervalo de fechas de pedidos histórico en la variable **[!UICONTROL [!DNL Data Connection]]** página.
 
-### Paso 4: Especifique el intervalo de fechas del historial de pedidos
+#### Especificar intervalo de fechas del historial de pedidos
 
 Especifique el intervalo de fechas para los pedidos históricos que desea enviar al Experience Platform.
 
@@ -200,6 +241,8 @@ Especifique el intervalo de fechas para los pedidos históricos que desea enviar
 1. En el **Desde** y **Hasta** , especifique el intervalo de fechas para los datos de pedidos históricos que desea enviar. No puede seleccionar un intervalo de fecha que exceda de cinco años.
 
 1. Seleccionar **[!UICONTROL Start Sync]** para almacenar en déclencheur la sincronización para comenzar. Los datos históricos de pedidos son datos por lotes, a diferencia de los datos de la tienda y el back office que transmiten los datos. Los datos por lotes tardan unos 45 minutos en llegar a Experience Platform.
+
+##### Descripciones de campos
 
 | Campo | Descripción |
 |--- |--- |
