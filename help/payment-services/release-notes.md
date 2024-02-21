@@ -3,9 +3,9 @@ title: "[!DNL Payment Services] Notas de la versión"
 description: Revise las notas de la versión para obtener información acerca de todos los [!DNL Payment Services] versiones.
 exl-id: 104aa2c7-7735-4ac2-8ed1-a03cd9911273
 feature: Payments, Release Notes
-source-git-commit: 8b619669ed0558fbd4769206e20062e819e1e6f3
+source-git-commit: ac7e16fd7e5e4161ee8935f4ecc6da6ae2e9d9f0
 workflow-type: tm+mt
-source-wordcount: '2153'
+source-wordcount: '2183'
 ht-degree: 0%
 
 ---
@@ -75,6 +75,16 @@ _28 de junio de 2021_
 ![Nuevo](../assets/new.svg)<!-- Issue PAY-2761 --> Ahora puede personalizar los datos que se muestran en la variable [Informe de estado de pago del pedido](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/order-payment-status.html#show-and-hide-columns) y el [Informe de pagos](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/payouts.html#show-and-hide-columns) mostrando u ocultando columnas mediante el control Configuración de columna.
 
 +++
+
+## Versión 2.3.3
+
+_14 de febrero de 2024_
+
+[!BADGE Admitido]{type=Informative tooltip="Admitido"}
+
+![Nuevo](../assets/new.svg)<!-- PAY-5048 --> Se ha agregado compatibilidad con PHP 8.3
+
+![Fix](../assets/fix.svg)<!-- PAY-5048 --> Se ha corregido un error con `is_deleted` Indicador. Ahora, los pedidos no fallan debido a la `Rejected` estado enviado desde la extensión.
 
 ## Versión 2.3.2
 
