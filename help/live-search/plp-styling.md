@@ -2,7 +2,7 @@
 title: Widget de página de lista de productos
 description: Activación y estilo de [!DNL Live Search Product Listing Page Widget]
 exl-id: f7346a06-a8c7-4a33-8437-ea4f61d9281f
-source-git-commit: 2b0ca3f5a68e75ef4b4e71ac7705b17534e16845
+source-git-commit: 4c4facab0368bdeef70a5fd2925072e73d765707
 workflow-type: tm+mt
 source-wordcount: '304'
 ht-degree: 0%
@@ -28,7 +28,7 @@ Para desactivar el widget PLP:
 
 El widget PLP proporciona una serie de funciones que se esperan en una página de producto en la que se puede buscar. Estos incluyen:
 
-* Filtrado por atributos.
+* Filtrado por atributos
 * Compatibilidad con muestras de color
 * Funcionalidad Añadir al carro
 * Compatibilidad con varios idiomas
