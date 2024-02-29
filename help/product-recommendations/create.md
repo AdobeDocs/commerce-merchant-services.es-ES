@@ -2,9 +2,9 @@
 title: Crear nueva recomendación
 description: Obtenga información sobre cómo crear una unidad de recomendación de productos.
 exl-id: d393ab78-0523-463f-9b03-ad3f523dce0f
-source-git-commit: 24a930178873535f23331c9c5295c482d5b8e384
+source-git-commit: 51ff52eba117fe438d592ca886dbca25304a0d15
 workflow-type: tm+mt
-source-wordcount: '1007'
+source-wordcount: '1022'
 ht-degree: 0%
 
 ---
@@ -31,6 +31,10 @@ Cuando activa la unidad de recomendación, Adobe Commerce empieza a [recopilar d
 1. En el _Asigne un nombre a la recomendación_ , introduzca un nombre descriptivo para la referencia interna, como `Home page most popular`.
 
 1. En el _Seleccionar tipo de página_ , seleccione la página en la que desea que aparezca la recomendación entre las siguientes opciones:
+
+   >[!NOTE]
+   >
+   > Product Recommendations no se admite en la página del carro de compras cuando la tienda está configurada para [mostrar la página del carro de compras inmediatamente después de agregar un producto al carro de compras](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/point-of-purchase/cart/cart-configuration.html#redirect-to-cart).
 
    * Página principal
    * Categoría
