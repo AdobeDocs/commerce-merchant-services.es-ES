@@ -3,18 +3,14 @@ title: Registros de perfil
 description: Descubra qué datos captura un registro de perfil.
 role: Admin, Developer
 feature: Personalization, Integration, Eventing
-source-git-commit: 655b5d18a4fb77232523c9c18a9fb362de93c70a
+source-git-commit: 99d1097b98ea18c8a317613b2366a97db131432f
 workflow-type: tm+mt
-source-wordcount: '232'
+source-wordcount: '212'
 ht-degree: 0%
 
 ---
 
-# [!DNL Data Connection] Registros de perfil (beta)
-
->[!NOTE]
->
->Esta función está en versión beta. Si desea unirse al programa beta, envíe una solicitud a [dataconnection@adobe.com](mailto:dataconnection@adobe.com).
+# [!DNL Data Connection] Registros de perfil
 
 A continuación se describen los datos de registro de perfil de Commerce que están disponibles al instalar el [!DNL Data Connection] extensión. Los datos de los registros de perfil se envían a Adobe Experience Platform.
 

@@ -3,18 +3,14 @@ title: Actualizar esquema de registro de perfil para la ingesta de datos de Comm
 description: Obtenga información sobre cómo crear un esquema, un conjunto de datos y un conjunto de datos para recopilar y enviar datos de registro de perfil de Commerce al Experience Platform.
 role: Admin, Developer
 feature: Personalization, Integration
-source-git-commit: 8456f9b81812cf8ace55b7406d8b4fe50332c17a
+source-git-commit: 99d1097b98ea18c8a317613b2366a97db131432f
 workflow-type: tm+mt
-source-wordcount: '261'
+source-wordcount: '242'
 ht-degree: 0%
 
 ---
 
 # Actualizar esquema de registro de perfil para la ingesta de datos de Commerce
-
->[!NOTE]
->
->Esta función está en versión beta. Si desea unirse al programa beta, envíe una solicitud a [dataconnection@adobe.com](mailto:dataconnection@adobe.com).
 
 Cuando los compradores crean un perfil en el sitio de Commerce, se crea un registro de perfil y se capturan datos. Debe crear un esquema y un conjunto de datos específicos para ese registro de perfil para poder transmitir esos datos de perfil al Experience Platform.
 

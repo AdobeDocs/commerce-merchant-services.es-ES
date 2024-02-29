@@ -3,9 +3,9 @@ title: Eventos de Back Office
 description: Descubra qué datos captura cada evento de back office.
 role: Admin, Developer
 feature: Personalization, Integration, Eventing
-source-git-commit: d5824e11b4961b518e35fcf56ff2c7ee00480617
+source-git-commit: 99d1097b98ea18c8a317613b2366a97db131432f
 workflow-type: tm+mt
-source-wordcount: '3599'
+source-wordcount: '3573'
 ht-degree: 0%
 
 ---
@@ -402,10 +402,6 @@ En la tabla siguiente se describen los datos recopilados para este evento.
 | `productListItems.categories.path` | La ruta a la categoría. |
 
 ## Eventos de perfil del cliente (back office)
-
->[!NOTE]
->
->**Beta** Los eventos de perfil generados del lado del servidor están disponibles para los participantes de la versión beta. Si desea unirse al programa beta, envíe una solicitud a [dataconnection@adobe.com](mailto:dataconnection@adobe.com).
 
 Los eventos de perfil capturados del lado del servidor incluyen información de la cuenta, como `accountCreated`, `accountUpdated`, y `accountDeleted`. Estos datos se utilizan para rellenar los detalles clave del cliente que se necesitan para definir mejor los segmentos o ejecutar campañas de marketing, como enviar ofertas de descuento de suscripción, confirmaciones de cambio de cuenta, etc. Hay eventos de perfil similares capturados del [escaparate](#customer-profile-events-storefront).
 
