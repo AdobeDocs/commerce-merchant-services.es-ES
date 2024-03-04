@@ -3,7 +3,7 @@ title: Notas de la versión
 description: La información de la versión más reciente de [!DNL Data Connection] de Adobe Commerce.
 exl-id: 7636664b-488a-46f7-8d19-a9faac126aec
 feature: Personalization, Integration, Release Notes
-source-git-commit: 99d1097b98ea18c8a317613b2366a97db131432f
+source-git-commit: b1a029f07bf6b62443850146c9be0793bc8e7211
 workflow-type: tm+mt
 source-wordcount: '797'
 ht-degree: 0%
@@ -72,9 +72,9 @@ _12 de octubre de 2022_
 
 +++
 
-## 3.2.0-beta1
+## 3.2.0-beta2
 
-_16 de febrero de 2024_
+_4 de marzo de 2024_
 
 [!BADGE Compatibilidad]{type=Informative tooltip="Compatibilidad"}
 
