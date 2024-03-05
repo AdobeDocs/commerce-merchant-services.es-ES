@@ -3,9 +3,9 @@ title: "[!DNL Payment Services] Notas de la versión"
 description: Revise las notas de la versión para obtener información acerca de todos los [!DNL Payment Services] versiones.
 exl-id: 104aa2c7-7735-4ac2-8ed1-a03cd9911273
 feature: Payments, Release Notes
-source-git-commit: 57b140463d457404b57dd23d33c72e48b4c3ac89
+source-git-commit: bcb111a409ee901a231d0bb4475b0c9ec728c95c
 workflow-type: tm+mt
-source-wordcount: '2209'
+source-wordcount: '2229'
 ht-degree: 0%
 
 ---
@@ -29,6 +29,10 @@ Consulte [Disponibilidad del producto](https://experienceleague.adobe.com/docs/c
 Estas notas de la versión describen los cambios y correcciones de características que se produjeron y que se lanzaron fuera de las versiones de funciones habituales para el servicio alojado.
 
 +++Actualizaciones de servicios alojados
+
+_5 de marzo de 2024_
+
+![Problema corregido](../assets/fix.svg)<!-- Issue PAY-5252 --> Ahora, los comerciantes pueden copiar datos de las cuadrículas del panel seleccionando el contenido de una sola celda.
 
 _10 de octubre de 2023_
 
