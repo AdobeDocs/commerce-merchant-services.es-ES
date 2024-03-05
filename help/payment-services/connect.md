@@ -3,9 +3,9 @@ title: Conectar su instancia
 description: Conecte la instancia de Commerce con una clave de API y una clave privada, y especifique el espacio de datos en la configuración.
 exl-id: 5038fd31-bac5-419e-a172-66919a9b5272
 feature: Payments, Checkout, Configuration, Saas
-source-git-commit: 6769e29a4ae07b8cf15aa2da3cac2fe8583497e0
+source-git-commit: 57b140463d457404b57dd23d33c72e48b4c3ac89
 workflow-type: tm+mt
-source-wordcount: '635'
+source-wordcount: '590'
 ht-degree: 0%
 
 ---
@@ -17,6 +17,10 @@ ht-degree: 0%
 * Si tiene *ya está conectada su instancia*, obteniendo y utilizando sus credenciales de API y configurando Commerce Services, puede continuar con [configuración de la zona protegida de pruebas](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/get-started/sandbox.html).
 * Si todavía *necesita conectar su instancia*, vea la información de este tema acerca de [obtención de credenciales de API](#obtain-api-credentials) y [configurar Commerce Services](#configure-commerce-services).
 * Si es usted *no está seguro de si la instancia está conectada*, vaya a **Sistema** > Servicios > **Conector de Commerce Services** y vea los valores de clave de API pública y privada en la [!UICONTROL Sandbox Keys] y [!UICONTROL Production Keys] , y las secciones *Proyecto* y *Espacio de datos* campos en la [!UICONTROL SaaS Identifier] sección. Si esos valores están presentes, la instancia está conectada.
+
+>[!NOTE]
+>
+>Todos los comerciantes con derecho a servicios de pago pueden utilizar un espacio de datos de producción y dos espacios de datos de prueba.
 
 ## Obtener credenciales de API
 
@@ -51,7 +55,7 @@ La misma clave de API se puede utilizar en todas las instancias, pero cada insta
 Ahora que ha obtenido sus credenciales, puede configurar su proyecto SaaS y el espacio de datos Saas.
 
 1. En el _Administrador_ barra lateral, vaya a **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]**.
-1. Haga clic **[!UICONTROL Configure Commerce Services]**.
+1. Clic **[!UICONTROL Configure Commerce Services]**.
 
    Esta opción está visible si aún no ha configurado Commerce Services para su cuenta.
 
