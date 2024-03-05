@@ -2,9 +2,9 @@
 title: "Añadir sinónimos"
 description: '"Agregar [!DNL Live Search] sinónimos para mejorar la respuesta a las solicitudes de búsqueda".'
 exl-id: 6c277d88-cb22-4174-abda-6d6bb65fe3be
-source-git-commit: c4bca0c7238be653dd13b051634c662e5891767d
+source-git-commit: 63318e2eb75bc5fb0a243b6430751b076e541b72
 workflow-type: tm+mt
-source-wordcount: '390'
+source-wordcount: '383'
 ht-degree: 0%
 
 ---
@@ -35,7 +35,7 @@ Siga las instrucciones de la [tipo de sinónimo](synonyms-type.md) que desee cre
 
 1. Introduzca el **Palabra clave** término o frase que debe coincidir.
 1. Introduzca el **Expansión** términos que desee agregar como sinónimos de la palabra clave. Separe varios términos con una coma.
-En este ejemplo, la palabra clave para coincidir es &quot;pantalones&quot; y el conjunto de términos de expansión son &quot;pantalones largos, pantalones, pantalones cortos&quot;.
+En este ejemplo, la palabra clave para coincidir es &quot;pantalones&quot; y el conjunto de términos de expansión son &quot;pantalones, pantalones&quot;.
 
    ![Ejemplo de sinónimo bidireccional](assets/synonym-add-two-way-example.png)
 
@@ -54,7 +54,7 @@ El conjunto de sinónimos aparece en la lista con una flecha bidireccional entre
 
    ![Ejemplo de sinónimo unidireccional](assets/synonym-add-one-way-example.png)
 
-   En este ejemplo, la palabra clave es &quot;pantalones&quot; y los términos de expansión unidireccionales &quot;capris, pantalones de largo de pantorrilla, empujadores de peto&quot; son cada uno un subconjunto de &quot;pantalones&quot;, pero con un significado específico.
+   En este ejemplo, la palabra clave es &quot;pantalones&quot; y los términos de expansión unidireccional &quot;capris, traficantes de coches&quot; son cada uno un subconjunto de &quot;pantalones&quot;, pero con un significado específico.
 
 1. Cuando termine, haga clic en **Guardar**.
 El conjunto de sinónimos aparece en la lista con una flecha unidireccional que señala desde los términos de expansión a la palabra clave para indicar que los términos son subconjuntos de la palabra clave. Un signo más separa cada término de expansión.
