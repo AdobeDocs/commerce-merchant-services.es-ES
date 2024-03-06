@@ -3,7 +3,7 @@ title: '[!DNL Catalog Service]'
 description: '''[!DNL Catalog Service] para Adobe Commerce proporciona una forma de recuperar el contenido de las páginas para mostrar de productos y de las páginas de listas de productos mucho más rápido que las consultas nativas de Adobe Commerce GraphQL."'
 exl-id: 266faca4-6a65-4590-99a9-65b1705cac87
 recommendations: noCatalog
-source-git-commit: d9d9506b2555bc30d6fbec67c65fa220d9a51e91
+source-git-commit: a90fcd8401b7745a65715f68efccdb3ce7c77ccb
 workflow-type: tm+mt
 source-wordcount: '890'
 ht-degree: 0%
@@ -25,7 +25,7 @@ El [!DNL Catalog Service] utiliza [GraphQL](https://graphql.org/) para solicitar
 
 Adobe Commerce tiene dos sistemas GraphQL. El sistema principal de GraphQL proporciona una amplia gama de consultas (operaciones de lectura) y mutaciones (operaciones de escritura) que permiten a un comprador interactuar con muchos tipos de páginas, incluidos productos, cuentas de clientes, carros de compras, cierres de compra y mucho más. Sin embargo, las consultas que devuelven información del producto no están optimizadas para la velocidad. El sistema de GraphQL de servicios solo puede realizar consultas en productos e información relacionada. Estas consultas tienen un mayor rendimiento que las consultas principales similares.
 
-[!DNL Catalog Service] Los clientes de pueden usar el nuevo [Indexador de precios SaaS](../price-index/index.md), que ofrece actualizaciones de precios y tiempos de sincronización más rápidos.
+[!DNL Catalog Service] Los clientes de pueden usar el nuevo [Indexador de precios SaaS](../price-index/price-indexing.md), que ofrece actualizaciones de precios y tiempos de sincronización más rápidos.
 
 ## Arquitectura
 
@@ -68,7 +68,7 @@ Un producto complejo no tiene un precio establecido. En su lugar, el servicio de
 
 >[!NOTE]
 >
-> Clientes de Commerce con [!DNL Catalog Service] puede aprovechar las actualizaciones más rápidas de los cambios de precios y el tiempo de sincronización en sus sitios web con el [Indexador de precios SaaS](../price-index/index.md).
+> Clientes de Commerce con [!DNL Catalog Service] puede aprovechar las actualizaciones más rápidas de los cambios de precios y el tiempo de sincronización en sus sitios web con el [Indexador de precios SaaS](../price-index/price-indexing.md).
 
 ## Implementación
 

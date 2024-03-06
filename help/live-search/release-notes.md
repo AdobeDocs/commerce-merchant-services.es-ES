@@ -3,7 +3,7 @@ title: "[!DNL Live Search] Notas de la versión"
 description: '"La información de la última versión de [!DNL Live Search] de Adobe Commerce".'
 exl-id: 2a581e43-35f5-48ce-9752-844430ccdebf
 feature: Services, Search, Release Notes
-source-git-commit: 89f0cd15e7eeb7f8f1f76df7a3612ba3ef02391e
+source-git-commit: a90fcd8401b7745a65715f68efccdb3ce7c77ccb
 workflow-type: tm+mt
 source-wordcount: '1900'
 ht-degree: 0%
@@ -43,7 +43,7 @@ _13 de junio de 2023_
 
 _25 de abril de 2023_
 
-![Nuevo](../assets/new.svg) [!DNL Live Search] Los clientes de ahora pueden aprovechar las nuevas [Indexador de precios SaaS](../price-index/index.md).
+![Nuevo](../assets/new.svg) [!DNL Live Search] Los clientes de ahora pueden aprovechar las nuevas [Indexador de precios SaaS](../price-index/price-indexing.md).
 
 ## [!DNL Live Search] 4.1.0 {#410}
 

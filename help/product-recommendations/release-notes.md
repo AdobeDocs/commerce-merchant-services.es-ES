@@ -3,7 +3,7 @@ title: '[!DNL Product Recommendations] Notas de la versión'
 description: La información de la versión más reciente de [!DNL Product Recommendations] de Adobe Commerce.
 exl-id: 1758e688-d26f-45e7-818c-d4726338a6c3
 feature: Services, Recommendations, Release Notes
-source-git-commit: bf7dc316f7b7b702836441b35770403d75be6cfd
+source-git-commit: a90fcd8401b7745a65715f68efccdb3ce7c77ccb
 workflow-type: tm+mt
 source-wordcount: '1281'
 ht-degree: 0%
@@ -39,7 +39,7 @@ _18 de julio de 2023_
 
 _25 de abril de 2023_
 
-![Nuevo](../assets/new.svg) Los clientes de Product Recommendations ahora pueden aprovechar [Indexación de precios de SaaS](../price-index/index.md).
+![Nuevo](../assets/new.svg) Los clientes de Product Recommendations ahora pueden aprovechar [Indexación de precios de SaaS](../price-index/price-indexing.md).
 
 +++
 
@@ -64,7 +64,7 @@ _15 de septiembre de 2023_
 
 [!BADGE Admitido]{type=Informative tooltip="Admitido"}
 
-![Nuevo](../assets/new.svg) Se han añadido nuevos módulos para admitir el [Indexador De Precios Saas](../price-index/index.md).
+![Nuevo](../assets/new.svg) Se han añadido nuevos módulos para admitir el [Indexador De Precios Saas](../price-index/price-indexing.md).
 ![Nuevo](../assets/new.svg) Se han añadido nuevos módulos de exportación de datos para admitir la exportación de más tipos de productos, incluidos productos agrupados y tarjetas regalo.
 ![Fix](../assets/fix.svg) El tamaño de la tabla de los productos y las fuentes de precios se han reducido considerablemente. Tablas `catalog_data_exporter_products` y `catalog_data_exporter_product_prices` debería ver una reducción sustancial de tamaño.
 

@@ -1,10 +1,10 @@
 ---
-title: "[!DNL Live Search] Indexación"
+title: "[!DNL Live Search] Indexando"
 description: '"Aprenda cómo [!DNL Live Search] indexa las propiedades de atributos de producto".'
 exl-id: 04441e58-ffac-4335-aa26-893988a89720
-source-git-commit: c77b2f9cb55d3eb339dcc900ce606b94c592f559
+source-git-commit: a90fcd8401b7745a65715f68efccdb3ce7c77ccb
 workflow-type: tm+mt
-source-wordcount: '614'
+source-wordcount: '587'
 ht-degree: 0%
 
 ---
@@ -27,7 +27,7 @@ El [!DNL Live Search] API permite a un cliente ordenar por cualquier atributo de
 
 >[!NOTE]
 >
-> Clientes de Commerce con [!DNL Live Search] puede aprovechar las actualizaciones más rápidas de los cambios de precios y el tiempo de sincronización en sus sitios web con el [Indexador de precios SaaS](../price-index/index.md).
+> Clientes de Commerce con [!DNL Live Search] puede aprovechar las actualizaciones más rápidas de los cambios de precios y el tiempo de sincronización en sus sitios web con el [Indexador de precios SaaS](../price-index/price-indexing.md).
 
 ## Indexando canalización
 
