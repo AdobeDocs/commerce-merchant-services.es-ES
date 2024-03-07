@@ -2,9 +2,9 @@
 title: Desarrollo del administrador de Recommendations del producto
 description: Descripción general de la arquitectura y las funciones de desarrollo de Product Recommendations.
 exl-id: caef5e0c-dd69-4846-8f85-b1c5e1c6a28f
-source-git-commit: e74bc4aeaa154e751f8d986e0426dd19d55d335e
+source-git-commit: a433d970e83792a9f53b2a09afd84c335d980024
 workflow-type: tm+mt
-source-wordcount: '397'
+source-wordcount: '426'
 ht-degree: 0%
 
 ---
@@ -34,6 +34,10 @@ Product Recommendations requiere los siguientes datos:
 - **Catálogo** : metadatos de producto, como nombre, precio, disponibilidad, etc.
 
 Al instalar el `magento/product-recommendations` , Adobe Sensei agrega los datos de comportamiento y de catálogo, creando una Recommendations de producto para cada tipo de recomendación. A continuación, el servicio Product Recommendations implementa esas recomendaciones en la tienda.
+
+>[!NOTE]
+>
+>Para los productos configurables, Product Recommendations utiliza la imagen del producto principal en la unidad recomendada. Si el producto configurable no tiene una imagen especificada, la unidad de recomendación estará vacía para ese producto específico.
 
 ## Pasos siguientes
 
