@@ -2,9 +2,9 @@
 title: "Tipos de sinónimos"
 description: '"Uno y dos vías [!DNL Live Search] los sinónimos amplían la definición de palabras clave".'
 exl-id: 708d7b0d-7361-44f4-ae9e-b92f574ac975
-source-git-commit: 9bacdb5fd232a3603bcb7abe2e93da9ead794d38
+source-git-commit: cb5db979828eb0b678d19c926de2823829717c02
 workflow-type: tm+mt
-source-wordcount: '512'
+source-wordcount: '466'
 ht-degree: 0%
 
 ---
@@ -50,7 +50,3 @@ No es necesario definir las formas singular y plural de una palabra como sinóni
 ### Coherencia
 
 Sea coherente con la forma en que se utiliza la terminología en su catálogo. Tenga en cuenta que puede haber diferencias regionales en el uso y, a veces, diferencias dentro de una industria.
-
-### Asignación de palabras clave
-
-Esta técnica utiliza atributos de producto en los que se pueden buscar, en lugar de sinónimos, para crear asociaciones basadas en palabras clave entre productos. Como resultado, un producto asignado puede aparecer en los resultados de búsqueda de otro producto. Para obtener más información, consulte [Resultados de búsqueda](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search-results.html).
