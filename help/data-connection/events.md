@@ -4,9 +4,9 @@ description: Descubra qué datos captura cada evento de comportamiento.
 exl-id: b0c88af3-29c1-4661-9901-3c6d134c2386
 role: Admin, Developer
 feature: Personalization, Integration, Eventing
-source-git-commit: a433d970e83792a9f53b2a09afd84c335d980024
+source-git-commit: ace61fa579404962a9ca3eb97f61ed50bc43db52
 workflow-type: tm+mt
-source-wordcount: '4496'
+source-wordcount: '4516'
 ht-degree: 0%
 
 ---
@@ -151,6 +151,8 @@ En la tabla siguiente se describen los datos recopilados para este evento.
 | `commerce.commerceScope.storeCode` | El código de almacén único. Puede tener muchas tiendas por sitio web. |
 | `commerce.commerceScope.storeViewCode` | El código de vista de tienda único. Puede tener muchas vistas de la tienda por tienda. |
 | `commerce.commerceScope.websiteCode` | El código único del sitio web. Puede tener muchos sitios web en un entorno. |
+| `commerce.order` | Contiene información sobre el pedido pendiente de uno o más productos. |
+| `commerce.order.discountAmount` | Indica el importe de descuento aplicado a todo el pedido. |
 | `productListItems` | Una matriz de productos que se agregaron al carro de compras. |
 | `productListItems.SKU` | Unidad de stock. El identificador único del producto. |
 | `productListItems.name` | El nombre para mostrar o el nombre legible en lenguaje natural del producto. |

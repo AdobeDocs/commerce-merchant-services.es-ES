@@ -3,9 +3,9 @@ title: "Información general técnica"
 description: "[!DNL Live Search] flujo de incorporación, requisitos del sistema, límites y limitaciones"
 exl-id: 45f6c1ae-544b-47ef-9feb-c1a05f93108a
 recommendations: noCatalog
-source-git-commit: a90fcd8401b7745a65715f68efccdb3ce7c77ccb
+source-git-commit: e8d4215b1f16f1cb34783674cabc046dec135729
 workflow-type: tm+mt
-source-wordcount: '1028'
+source-wordcount: '1023'
 ht-degree: 0%
 
 ---
@@ -31,7 +31,7 @@ En este tema se analizan los requisitos técnicos y las sugerencias para la inst
 
 Como [!DNL Live Search] no tiene acceso a la base de datos de productos completa, [!DNL Live Search] GraphQL y Commerce Core GraphQL no tendrán paridad completa.
 
-Se recomienda llamar directamente a la API de SaaS, específicamente al punto final del servicio de catálogo.
+Se recomienda llamar a las API de SaaS directamente, específicamente al extremo del servicio de catálogo.
 
 * Obtenga rendimiento y reduzca la carga del procesador omitiendo el proceso de Graphql/base de datos de Commerce
 * Aproveche las ventajas de [!DNL Catalog Service] federación a la que llamar [!DNL Live Search], [!DNL Catalog Service], y [!DNL Product Recommendations] desde un único punto final.
@@ -43,8 +43,8 @@ Si tiene una implementación personalizada sin encabezado, consulte la [!DNL Liv
 * [Widget PLP](https://github.com/adobe/storefront-product-listing-page)
 * [Campo Live Search](https://github.com/adobe/storefront-search-as-you-type)
 
-AEM CIF Si no utiliza los componentes predeterminados, como el adaptador de búsqueda o los widgets en Luma, o los widgets de la, tenga en cuenta que los eventos (datos del flujo de navegación que alimentan a Adobe Sensei para las métricas de rendimiento y comercialización inteligentes) no funcionarán de forma predeterminada y requieren desarrollo personalizado para implementar eventos sin encabezado.
-La versión más reciente de [!DNL Live Search] ya utiliza [!DNL Catalog Service] y las instalaciones [!DNL Catalog Service] módulos.
+AEM CIF Si no utiliza los componentes predeterminados, como el adaptador de búsqueda o los widgets en Luma, o los widgets de la, los eventos (datos del flujo de navegación que alimentan a Adobe Sensei para las métricas de rendimiento y comercialización inteligentes) no funcionarán de forma predeterminada y requieren desarrollo personalizado para implementar eventos sin encabezado.
+La versión más reciente de [!DNL Live Search] ya utiliza [!DNL Catalog Service].
 
 ## Límites y umbrales
 
@@ -109,6 +109,7 @@ Para restringir los grupos de clientes que utilizan permisos de catálogo:
 | Letón | Letonia | lv_LV | lv_LV |
 | Noruego | Noruega Bokmal | nb_NO | nb_NO |
 | Neerlandés | Países Bajos | nl_NL | nl_NL |
+| Polaco | Polonia | pl_PL | pl_PL |
 | Portugués | Brasil | pt_BR | pt_BR |
 | Portugués | Portugal | pt_PT | pt_PT |
 | Rumano | Rumanía | ro_RO | ro_RO |
@@ -142,7 +143,7 @@ Esto permite a los desarrolladores personalizar completamente la funcionalidad y
 
 ## Inventory management
 
-[!DNL Live Search] admite [Inventory management](https://experienceleague.adobe.com/docs/commerce-admin/inventory/introduction.html) en Commerce (anteriormente conocido como Multi-Source Inventory o MSI). Para habilitar la compatibilidad total, debe [actualizar](install.md#update) el módulo de dependencia `commerce-data-export` a la versión 102.2.0+.
+[!DNL Live Search] admite [Inventory management](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/introduction) en Commerce (anteriormente conocido como Multi-Source Inventory o MSI). Para habilitar la compatibilidad total, debe [actualizar](install.md#update) el módulo de dependencia `commerce-data-export` a la versión 102.2.0+.
 
 [!DNL Live Search] devuelve un valor booleano que indica si un producto está disponible en Inventory management, pero no contiene información sobre el origen que tiene las existencias.
 
@@ -193,9 +194,9 @@ Para usar [!DNL Live Search] con PWA Studio, los integradores también deben:
 
 ## Actualmente no es compatible
 
-* El [Búsqueda avanzada](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search.html#advanced-search) El módulo está desactivado cuando [!DNL Live Search] está instalado y se elimina el vínculo Búsqueda avanzada del pie de página de la tienda.
-* [Precios de nivel](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/pricing/product-price-tier.html) y [Precios especiales](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/pricing/product-price-special.html) no son compatibles con [!DNL Live Search] y Widget de la página de lista de productos.
+* El [Búsqueda avanzada](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/search/search) El módulo está desactivado cuando [!DNL Live Search] está instalado y se elimina el vínculo Búsqueda avanzada del pie de página de la tienda.
+* [Precios de nivel](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/products/pricing/product-price-tier) y [Precios especiales](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/products/pricing/product-price-special) no son compatibles con [!DNL Live Search] y Widget de la página de lista de productos.
 
 ## Cookies
 
-[!DNL Live Search] recopila datos de interacción del usuario como parte de su funcionalidad base y se utilizan cookies para almacenar estos datos. Al recopilar cualquier información de usuario, el usuario debe aceptar almacenar cookies. [!DNL Live Search] y [!DNL Product Recommendations] compartir el flujo de datos y, por lo tanto, el mismo mecanismo de cookies. Obtenga más información al respecto en [Controlar restricciones de cookies](https://experienceleague.adobe.com/docs/commerce-merchant-services/product-recommendations/developer/setting-cookie.html).
+[!DNL Live Search] recopila datos de interacción del usuario como parte de su funcionalidad base y se utilizan cookies para almacenar estos datos. Al recopilar cualquier información de usuario, el usuario debe aceptar almacenar cookies. [!DNL Live Search] y [!DNL Product Recommendations] compartir el flujo de datos y, por lo tanto, el mismo mecanismo de cookies. Obtenga más información al respecto en [Controlar restricciones de cookies](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/product-recommendations/developer/setting-cookie).

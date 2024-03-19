@@ -3,9 +3,9 @@ title: "Instalar [!DNL Live Search]"
 description: '"Obtenga información sobre cómo instalar, actualizar y desinstalar [!DNL Live Search] de Adobe Commerce".'
 exl-id: aa251bb0-d52c-4cff-bccb-76a08ae2a3b2
 role: Admin, Developer
-source-git-commit: 460065ecf6478e4313bd31ea848e04c7e8e192a3
+source-git-commit: e8d4215b1f16f1cb34783674cabc046dec135729
 workflow-type: tm+mt
-source-wordcount: '1211'
+source-wordcount: '1217'
 ht-degree: 0%
 
 ---
@@ -24,7 +24,7 @@ En este tema se proporcionan instrucciones para realizar las siguientes acciones
 
 Haga lo siguiente:
 
-1. Confirme que [trabajos cron](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs.html) y [indexadores](https://experienceleague.adobe.com/docs/commerce-admin/systems/tools/index-management.html) se están ejecutando.
+1. Confirme que [trabajos cron](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs) y [indexadores](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/index-management) se están ejecutando.
 
 1. Elija el método de incorporación que cumpla sus requisitos y siga las instrucciones.
 
@@ -33,7 +33,7 @@ Haga lo siguiente:
 
 >[!IMPORTANT]
 >
->Debido al anuncio de fin de soporte de Elasticsearch 7 para agosto de 2023, se recomienda que todos los clientes de Adobe Commerce migren al motor de búsqueda OpenSearch 2.x. Para obtener información sobre la migración del motor de búsqueda durante la actualización del producto, consulte [Migración a OpenSearch](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/prepare/opensearch-migration.html) en el _Guía de actualización_.
+>Debido al anuncio de fin de soporte de Elasticsearch 7 para agosto de 2023, se recomienda que todos los clientes de Adobe Commerce migren al motor de búsqueda OpenSearch 2.x. Para obtener información sobre la migración del motor de búsqueda durante la actualización del producto, consulte [Migración a OpenSearch](https://experienceleague.adobe.com/en/docs/commerce-operations/upgrade-guide/prepare/opensearch-migration) en el _Guía de actualización_.
 
 ## Método 1: Instalar sin OpenSearch {#method-1}
 
@@ -66,7 +66,7 @@ En esta situación, las operaciones de tienda se interrumpen mientras que la var
    >
    > Mientras los datos están indexados y sincronizados, las operaciones de búsqueda y exploración de categorías no están disponibles en la tienda. Según el tamaño del catálogo, el proceso puede tardar al menos una hora desde el momento en que se realiza `cron` se ejecuta para sincronizar los datos con [!DNL Live Search] servicios.
 
-1. Compruebe que lo siguiente [indexadores](https://experienceleague.adobe.com/docs/commerce-admin/systems/tools/index-management.html) están configuradas como &quot;Actualizar según lo programado&quot;:
+1. Compruebe que lo siguiente [indexadores](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/index-management) están configuradas como &quot;Actualizar según lo programado&quot;:
 
    * Fuente de productos
    * Fuente de variante del producto
@@ -74,6 +74,8 @@ En esta situación, las operaciones de tienda se interrumpen mientras que la var
    * Fuente de precios de productos
    * Fuente de datos del sitio web Ámbitos
    * Fuente de datos de grupos de clientes ámbitos
+   * Fuente de categorías
+   * Fuente de permisos de categoría
 
 1. Configure su [Claves de API](#configure-api-keys) y compruebe que los datos del catálogo estén [sincronizado](#synchronize-catalog-data) con [!DNL Live Search] servicios.
 
@@ -125,7 +127,7 @@ En este escenario, [!DNL OpenSearch] administra temporalmente las solicitudes de
 
    [!DNL Elasticsearch] sigue administrando las solicitudes de búsqueda de la tienda mientras la variable [!DNL Live Search] El servicio sincroniza los datos del catálogo e indexa los productos en segundo plano.
 
-1. Compruebe que lo siguiente [indexadores](https://experienceleague.adobe.com/docs/commerce-admin/systems/tools/index-management.html) están configuradas como &quot;Actualizar según lo programado&quot;:
+1. Compruebe que lo siguiente [indexadores](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/index-management) están configuradas como &quot;Actualizar según lo programado&quot;:
 
    * Fuente de productos
    * Fuente de variante del producto
@@ -201,7 +203,7 @@ Para comprobar que los datos del catálogo se han exportado desde la instancia d
 * `catalog_data_exporter_products`
 * `catalog_data_exporter_product_attributes`
 
-Para obtener ayuda adicional, consulte [[!DNL Live Search] catálogo no sincronizado](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/live-search-catalog-data-sync.html) en la Base de conocimiento de asistencia.
+Para obtener ayuda adicional, consulte [[!DNL Live Search] catálogo no sincronizado](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/live-search-catalog-data-sync) en la Base de conocimiento de asistencia.
 
 ### Futuras actualizaciones de productos
 
@@ -223,7 +225,7 @@ Para permitir que Live Search pase por un cortafuegos, añada `commerce.adobe.io
 
 ## Comprobación de la versión instalada
 
-Antes de actualizar Live Search, ejecute lo siguiente desde la línea de comandos para comprobar la versión de Live Search instalada actualmente:
+Antes de actualizar Live Search, ejecute lo siguiente desde la línea de comandos para comprobar la versión de Live Search instalada:
 
 ```bash
 composer show magento/module-live-search | grep version
@@ -271,14 +273,14 @@ Para actualizar a una versión principal como de 3.1.1 a 4.0.0, edite la raíz d
 
 ## Desinstalación [!DNL Live Search] {#uninstall}
 
-Para desinstalar [!DNL Live Search], consulte [Desinstalación de módulos](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/tutorials/uninstall-modules.html).
+Para desinstalar [!DNL Live Search], consulte [Desinstalación de módulos](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/uninstall-modules).
 
 ## [!DNL Live Search] paquetes {#packages}
 
 | Paquete | Descripción |
 |--- |--- |
 | `module-live-search` | Permite a los comerciantes definir la configuración de búsqueda para facetas, sinónimos, reglas de consulta, etc., y proporciona acceso a un área de reproducción de GraphQL de solo lectura para probar consultas desde *Administrador*. |
-| `module-live-search-adapter` | Enruta las solicitudes de búsqueda desde la tienda a [!DNL Live Search] y procesa los resultados en la tienda. <br />- Navegador de categorías - Enruta las solicitudes desde la tienda [navegación superior](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/navigation/navigation-top.html) al servicio de búsqueda.<br />- Búsqueda global: enruta solicitudes desde el [búsqueda rápida](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search.html#quick-search) situado en la esquina superior derecha de la tienda, junto al [!DNL Live Search] servicio. |
+| `module-live-search-adapter` | Enruta las solicitudes de búsqueda desde la tienda a [!DNL Live Search] y procesa los resultados en la tienda. <br />- Navegador de categorías - Enruta las solicitudes desde la tienda [navegación superior](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/navigation/navigation-top) al servicio de búsqueda.<br />- Búsqueda global: enruta solicitudes desde el [búsqueda rápida](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/search/search) situado en la esquina superior derecha de la tienda, junto al [!DNL Live Search] servicio. |
 | `module-live-search-storefront-popover` | Una ventana emergente de &quot;búsqueda mientras escribe&quot; reemplaza la búsqueda rápida estándar y devuelve datos y miniaturas de los resultados de búsqueda principales. |
 
 ## [!DNL Live Search] dependencias {#dependencies}
