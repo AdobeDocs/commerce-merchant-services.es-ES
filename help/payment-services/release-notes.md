@@ -3,7 +3,7 @@ title: "[!DNL Payment Services] Notas de la versión"
 description: Revise las notas de la versión para obtener información acerca de todos los [!DNL Payment Services] versiones.
 exl-id: 104aa2c7-7735-4ac2-8ed1-a03cd9911273
 feature: Payments, Release Notes
-source-git-commit: 0dc370409ace6ac6b0a56511cd0071cf525620f1
+source-git-commit: 0c7bbe78100a323b19b59422a97e6eed83cbc22c
 workflow-type: tm+mt
 source-wordcount: '2379'
 ht-degree: 0%
@@ -80,7 +80,7 @@ _28 de junio de 2021_
 
 ## Versión 2.4.0
 
-_14 de marzo de 2024_
+_20 de marzo de 2024_
 
 [!BADGE Admitido]{type=Informative tooltip="Admitido"}
 
