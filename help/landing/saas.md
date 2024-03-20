@@ -4,9 +4,9 @@ description: Obtenga información sobre cómo integrar la instancia de Adobe Com
 exl-id: 28027a83-449b-4b96-b926-a7bfbfd883d8
 feature: Services, Saas
 role: Admin, User
-source-git-commit: 4a5877d6e1a5c7d840e36f4913306b0c440bbac5
+source-git-commit: 2d6b80b5133eb00ac42a5f2b64c5846ad30e56c4
 workflow-type: tm+mt
-source-wordcount: '859'
+source-wordcount: '866'
 ht-degree: 0%
 
 ---
@@ -105,7 +105,7 @@ Todos los proyectos SaaS asociados a sus claves aparecen en la **Proyecto** en e
 >
 > Si genera claves nuevas en la sección del portal de API de Mi cuenta, actualice inmediatamente las claves de API en la configuración de la administración. Si genera claves nuevas y no las actualiza en el Administrador, las extensiones SaaS dejarán de funcionar y perderá datos valiosos.
 
-Para cambiar los nombres del proyecto SaaS o del espacio de datos, haga clic en **Cambiar nombre**.
+Para cambiar los nombres del proyecto de SaaS o del espacio de datos, haga clic en **Cambiar nombre** junto a uno de ellos. Cambiar el nombre no afecta al servicio porque el nombre es sólo una etiqueta para ayudarle a identificar y diferenciar entre proyectos y espacios de datos.
 
 ## Organización de IMS (opcional) {#organizationid}
 
