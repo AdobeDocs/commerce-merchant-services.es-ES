@@ -5,9 +5,9 @@ role: User
 level: Intermediate
 exl-id: 192e47b9-d52b-4dcf-a720-38459156fda4
 feature: Payments, Checkout, Orders
-source-git-commit: 6ba5a283d9138b4c1be11b80486826304c63247f
+source-git-commit: 0dc370409ace6ac6b0a56511cd0071cf525620f1
 workflow-type: tm+mt
-source-wordcount: '1864'
+source-wordcount: '2045'
 ht-degree: 0%
 
 ---
@@ -83,9 +83,36 @@ Puede [descargar transacciones de pago](#download-order-payment-statuses) en for
 >
 >Los datos mostrados en esta tabla se ordenan en orden descendente (`DESC`) de forma predeterminada, con `TRANS DATE`. El `TRANS DATE` es la fecha y hora en que se inició la transacción.
 
+### Actualizaciones del estado de pago
+
+Determinados métodos de pago requieren un período de tiempo para capturar el pago. [!DNL Payment Services] ahora detecta los estados pendientes de una transacción de pago en un pedido mediante:
+
+* Detección sincrónica `pending capture` transacciones
+* Supervisión asincrónica `pending capture` transacciones
+
+>[!NOTE]
+>
+>La detección de los estados pendientes de las transacciones de pago de un pedido evita el envío accidental de pedidos si el pago aún no se ha recibido. Esto puede ocurrir en las transacciones de cheques electrónicos y PayPal.
+
+#### Detección sincrónica de transacciones de captura pendientes
+
+Detectar automáticamente transacciones de captura en un `Pending` estado y evitar que los pedidos introduzcan un `Processing` estado cuando se detecta una transacción de este tipo.
+
+Durante el cierre de compra del cliente o cuando un administrador crea una factura para un pago autorizado anteriormente, [!DNL Payment Services] detecta automáticamente las transacciones de captura en un `Pending` estado y traslada los pedidos correspondientes a `Payment Review` estado.
+
+#### Monitorización asíncrona de transacciones de captura pendientes
+
+Detectar cuando una transacción de captura pendiente introduce un `Completed` estado para que los comerciantes puedan reanudar el procesamiento del pedido afectado.
+
+Para asegurarse de que este proceso funciona según lo esperado, los comerciantes deben configurar un nuevo trabajo cron. Una vez configurado el trabajo para que se ejecute automáticamente, no se esperan otras intervenciones del comerciante.
+
+Consulte [Configuración de trabajos cron](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs.html). Una vez configurado, el nuevo trabajo se ejecuta cada 30 minutos para recuperar las actualizaciones de los pedidos que se encuentran en un `Payment Review` estado.
+
+Los comerciantes pueden comprobar el estado de pago actualizado a través de la vista Informe de estado de pago del pedido.
+
 ### Datos utilizados en el informe
 
-El [!DNL Payment Services] Este módulo utiliza datos de pedidos y los combina con datos de pagos agregados de otras fuentes (incluido PayPal) para ofrecer informes significativos y muy útiles.
+[!DNL Payment Services] utiliza datos de pedidos y los combina con datos de pagos agregados de otras fuentes (incluido PayPal) para ofrecer informes significativos y muy útiles.
 
 Los datos de pedidos se exportan y se mantienen en el servicio de pago. Cuando usted [cambiar o agregar estados de pedidos](https://docs.magento.com/user-guide/sales/order-status-custom.html) o [editar una vista de tienda](https://docs.magento.com/user-guide/stores/stores-all-view-edit.html), [almacenar](https://docs.magento.com/user-guide/stores/store-information.html), o nombre del sitio web, esos datos se combinan con los datos de pago y el informe de estado de pago del pedido se rellena con la información combinada.
 
@@ -132,9 +159,9 @@ Para seleccionar la fuente de datos de su [!UICONTROL Order Payment Status] info
 
    Los resultados del informe se regeneran en función del origen de datos seleccionado.
 
-### Personalizar fechas/periodo
+### Personalizar intervalo de fechas de pedidos
 
-Desde la vista Informe de estado de pago del pedido, puede personalizar el periodo de tiempo de los estados que desea consultar seleccionando fechas específicas. De forma predeterminada, se muestran en la cuadrícula 30 días de estados de pago del pedido.
+Desde la vista Informe de estado de pago del pedido, puede personalizar el periodo de tiempo de los resultados de estado que desea consultar seleccionando fechas específicas. De forma predeterminada, se muestran en la cuadrícula 30 días de estados de pago del pedido.
 
 1. En el _Administrador_ barra lateral, vaya a **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > _[!UICONTROL Orders]_>**[!UICONTROL View Report]**.
 1. Haga clic en _[!UICONTROL Order dates]_filtro selector de calendario.
@@ -148,7 +175,7 @@ En la vista Informe de estado de pagos de pedidos, puede filtrar los resultados 
 1. En el _Administrador_ barra lateral, vaya a **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > _[!UICONTROL Orders]_>**[!UICONTROL View Report]**.
 1. Haga clic en **[!UICONTROL Filter]** selector.
 1. Alternar el _Estado de pago_ opciones para ver los resultados del informe sólo para estados de pago de pedidos seleccionados.
-1. Introduzca una _Importe de pedido mínimo_ o _Importe máximo del pedido_ para ver los resultados del informe dentro de ese rango de importes de pedidos.
+1. Consultar los resultados del informe dentro de un rango de importes de pedido introduciendo una _[!UICONTROL Min Order Amount]_o _[!UICONTROL Max Order Amount_].
 1. Clic **[!UICONTROL Hide filters]** para ocultar el filtro.
 
 ### Mostrar y ocultar columnas
@@ -159,7 +186,7 @@ El informe Estado de Pago del Pedido muestra todas las columnas de información 
 1. Haga clic en _Configuración de columna_ icono (![icono de configuración de columna](assets/column-settings.png){width="20" zoomable="yes"}).
 1. Para personalizar qué columnas ve en el informe, marque o desmarque columnas en la lista.
 
-   El informe Estado de pago del pedido mostrará inmediatamente los cambios realizados en el menú Configuración de columna. Las preferencias de columna se guardarán y permanecerán en vigor si se aleja de la vista Informes.
+   El informe Estado de pago del pedido muestra inmediatamente los cambios realizados en el menú Configuración de columna. Las preferencias de columna se guardan y se mantienen en vigor si se aleja de la vista Informes.
 
 ### Ver estados
 
@@ -197,10 +224,10 @@ Puedes ver cualquier disputa sobre los pedidos de tu tienda y navegar hasta el C
 1. En el _Administrador_ barra lateral, vaya a **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > _[!UICONTROL Orders]_>**[!UICONTROL View Report]**.
 1. Vaya a **[!UICONTROL Disputes column]**.
 1. Vea las disputas de un pedido específico y consulte [el estado de la disputa](#order-payment-status-information).
-1. Haga clic en el vínculo de ID de disputa (que comienza con _PP-D-_) para ir a [Centro de resolución de PayPal](https://www.paypal.com/us/smarthelp/article/what-is-the-resolution-center-faq3327).
+1. Revise los detalles de la disputa de [Centro de resolución de PayPal](https://www.paypal.com/us/cshelp/article/what-is-the-resolution-center-help246) haciendo clic en el vínculo de ID de disputa que comienza por _PP-D-_.
 1. Tome las medidas apropiadas para la disputa, según sea necesario.
 
-   Para ordenar las disputas por estado, haga clic en el encabezado de la columna Disputas.
+   Para ordenar las disputas por estado, haga clic en [!UICONTROL Disputes] encabezado de columna.
 
 ### Descargar estados de pago de pedidos
 

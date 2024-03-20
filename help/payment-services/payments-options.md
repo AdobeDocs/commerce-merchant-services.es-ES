@@ -3,9 +3,9 @@ title: Opciones de pago
 description: Configura las opciones de pago para personalizar los métodos disponibles para los clientes de tu tienda.
 exl-id: 95e648e6-6cb8-4226-b5ea-e1857212f20a
 feature: Payments, Checkout, Configuration
-source-git-commit: 8dd4f629fa60959588cee4ea22f9fb577f338716
+source-git-commit: 0dc370409ace6ac6b0a56511cd0071cf525620f1
 workflow-type: tm+mt
-source-wordcount: '1054'
+source-wordcount: '1150'
 ht-degree: 0%
 
 ---
@@ -34,7 +34,7 @@ Hay diferentes comportamientos para cada método de pago según dónde se encuen
 * **Avanzadas** - Todo disponible [opciones de pagos](../payment-services/payments-options.md) están disponibles para el [países con pleno apoyo](../payment-services/overview.md#availability). Durante la incorporación para habilitar los pagos activos, seleccione la [Opción de incorporación avanzada](../payment-services/production.md#advanced-onboarding).
 * **Standard** - Un subconjunto de opciones de pagos (Pago y envío exprés) —tarjetas de crédito y débito de PayPal— está disponible para otros países compatibles. [Campos de tarjeta de crédito](#credit-card-fields) y [Apple Pay](#apple-pay-button) no están disponibles para esta opción de incorporación. Durante la incorporación para habilitar los pagos activos, seleccione la [Opción de incorporación estándar](../payment-services/production.md#standard-onboarding).
 
-Consulte [Activar [!DNL Payment Services] para producción](../payment-services/production.md#complete-merchant-onboarding) para obtener información acerca de cómo completar la incorporación avanzada y estándar.
+Consulte [Activar [!DNL Payment Services] para producción](../payment-services/production.md#complete-merchant-onboarding) para obtener información sobre cómo completar la incorporación avanzada y estándar.
 
 ## [!UICONTROL Credit Card Fields]
 
@@ -50,7 +50,7 @@ También puede cambiar el diseño, la anchura, la altura y el estilo exterior de
 
 ## [!DNL Apple Pay] botón
 
-Los clientes pueden utilizar [[!DNL Apple Pay]](https://www.apple.com/apple-pay/), que utiliza credenciales de pago de tarjeta de crédito y débito almacenadas en un dispositivo iOS o macOS, para realizar compras.
+Los clientes pueden utilizar [[!DNL Apple Pay]](https://www.apple.com/apple-pay/), que utiliza las credenciales de pago de las tarjetas de crédito y débito almacenadas en un dispositivo iOS o macOS para realizar compras.
 
 [!DNL Apple Pay] solo está disponible en el explorador Safari. Los comerciantes pueden añadir hasta 99 dominios por cuenta de comerciante.
 
@@ -64,15 +64,31 @@ El [!DNL Apple Pay] El botón está visible desde la página de producto, el min
 
 Puede configurar [!UICONTROL Apple Pay] en la configuración de la tienda o en la página de inicio de Payment Services. Consulte [Configuración](settings.md#apple-pay) para obtener más información.
 
+## [!DNL Google Pay] botón
+
+Los clientes pueden utilizar [[!DNL Google Pay]](https://pay.google.com/about/) al añadir los datos de pago a su cuenta de Google, donde se almacenan de forma segura para una experiencia de pago sin problemas.
+
+[!DNL Google Pay] solo está disponible en determinados países o regiones y en determinados dispositivos. Consulte [[!DNL Google Pay] documentación](https://developer.paypal.com/docs/checkout/apm/google-pay/#link-googlepayintegration) para obtener más información.
+
+![Botón Google Pay en el pago y envío](assets/google-pay-button.png){width="500" zoomable="yes"}
+
+El [!DNL Google Pay] El botón está visible desde la página de producto, el minicarrito, el carro de compras y las vistas de cierre de compra.
+
+Puede configurar [!UICONTROL Google Pay] en la configuración de la tienda o en la página de inicio de Payment Services. Consulte [Configuración](settings.md) para obtener más información.
+
+>[!NOTE]
+>
+> El [!DNL Google Pay] La API solo se puede utilizar en sitios web en un contexto seguro. Consulte [Solución de problemas](https://developers.google.com/pay/api/web/support/troubleshooting) para obtener más información.
+
 ## [!DNL PayPal Payment Buttons]
 
 [!DNL PayPal payment buttons], que utilizan PayPal para completar una compra, almacena la dirección de envío del comprador, las direcciones de facturación y los datos de pago para su uso posterior. Los compradores pueden utilizar cualquier forma de pago previamente almacenada u ofrecida por PayPal.
 
 ![Botón PayPal](assets/paypal-button.png){width="350" zoomable="yes"}
 
-Puede configurar [!UICONTROL PayPal payment buttons] en la configuración de la tienda o en [!DNL Payment Services] Hogar.  Consulte [Configuración](settings.md#payment-buttons) para obtener más información.
+Puede configurar [!UICONTROL PayPal payment buttons] en la configuración de la tienda o en [!DNL Payment Services] Hogar. Consulte [Configuración](settings.md#payment-buttons) para obtener más información.
 
-Ver PayPal&#39;s [Documentación de métodos de pago](https://developer.paypal.com/docs/checkout/payment-methods/) para saber en qué países está disponible actualmente cada método de pago.
+Conoce la disponibilidad de formas de pago por país en PayPal [Documentación de métodos de pago](https://developer.paypal.com/docs/checkout/payment-methods/).
 
 ### [!DNL PayPal] botón
 
@@ -102,7 +118,7 @@ El [!DNL Pay Later] El botón está visible desde la página de producto, el min
 
 Ver información sobre las ofertas de Pago posterior en [Documentación de ofertas de PayPal más tarde](https://developer.paypal.com/docs/checkout/pay-later/us/). Utilice el **País o región** para seleccionar una región de interés.
 
-Consulte [Configuración](settings.md#payment-buttons) para obtener información sobre cómo deshabilitar/habilitar el [!DNL Pay Later] mensajería.
+Obtenga información sobre cómo deshabilitar o habilitar el [!DNL Pay Later] mensajería actualizando el [Configuración](settings.md#payment-buttons) configuración.
 
 ## Usar sólo botones de pago de PayPal
 
@@ -110,9 +126,9 @@ Para poner rápidamente su tienda en modo de producción, puede configurar _sola
 
 Esto le permite:
 
-* Proporcione una variedad de opciones de pago para sus clientes, incluidos los botones de pago Venmo y PayPal, con la opción de desactivar los campos de tarjeta alojados en PayPal y utilizar un proveedor de tarjeta de crédito existente.
-* Utiliza tu proveedor de tarjetas de crédito existente para realizar pagos con tarjeta de crédito, mientras también usas otras opciones de pago de PayPal.
-* Utiliza los botones de pago de PayPal en una región donde PayPal no admite tarjetas de crédito como opción de pago.
+* Proporcione varias opciones de pago para sus clientes, incluidos los botones de pago Venmo y PayPal, con la opción de desactivar los campos de tarjeta alojados en PayPal y utilizar un proveedor de tarjeta de crédito existente.
+* Utiliza tu proveedor de tarjetas de crédito existente para realizar pagos con tarjeta de crédito, al mismo tiempo que utilizas otras opciones de pago de PayPal.
+* Utiliza los botones de pago de PayPal en las regiones donde PayPal no admite tarjetas de crédito como opción de pago.
 
 Hasta **capturar pagos con _solamente_ Botones de pago PayPal (_no_ la opción de pago con tarjeta de crédito PayPal)**:
 
