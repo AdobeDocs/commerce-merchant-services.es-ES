@@ -4,9 +4,9 @@ description: Aprenda a utilizar el SDK de Adobe Experience Platform Mobile con s
 role: Admin, Developer
 feature: Personalization, Integration, Eventing
 exl-id: d1340b15-e7de-42b5-ad64-d4c31f0db029
-source-git-commit: 2afe6d36ada662500f5a4a08779664d6591271e8
+source-git-commit: 593e92ebf890bd7d9bfef1cd13be727ca6be172b
 workflow-type: tm+mt
-source-wordcount: '480'
+source-wordcount: '526'
 ht-degree: 0%
 
 ---
@@ -157,4 +157,10 @@ Una vez completada la configuración del SDK para Experience Platform, añada la
 
    Ahora ha integrado el SDK móvil de Adobe Experience Platform con su aplicación móvil de Commerce. Los datos de eventos fluyen desde la aplicación al perímetro del Experience Platform.
 
-Para obtener información sobre cómo recuperar audiencias de Real-Time CDP desde la aplicación de comercio móvil e informar sobre reglas de precios del carro de compras y bloques dinámicos, consulte [Audience Activation](https://experienceleague.adobe.com/docs/commerce-admin/customers/audience-activation.html#retrieve-audiences-using-the-adobe-experience-platform-mobile-sdk).
+## Cómo distinguir los eventos de comercio generados a partir de aplicaciones móviles
+
+Todo [eventos](events.md) contiene un campo llamado `channel`. El `channel` el campo contiene `channel._id` y `channel._type` que para una tienda de Luma tiene valores de área de nombres de `"https://ns.adobe.com/xdm/channels/web"` y `"https://ns.adobe.com/xdm/channel-types/web"` respectivamente. Sin embargo, para una tienda móvil, los valores de área de nombres son `"https://ns.adobe.com/xdm/channels/mobile-app"` y `"https://ns.adobe.com/xdm/channel-types/mobile"` respectivamente.
+
+## Pasos siguientes
+
+Para obtener información sobre cómo recuperar audiencias de Real-Time CDP desde la aplicación de comercio móvil para informar sobre reglas de precios del carro de compras, bloques dinámicos y reglas de productos relacionadas, consulte [Audience Activation](https://experienceleague.adobe.com/docs/commerce-admin/customers/audience-activation.html#retrieve-audiences-using-the-adobe-experience-platform-mobile-sdk).

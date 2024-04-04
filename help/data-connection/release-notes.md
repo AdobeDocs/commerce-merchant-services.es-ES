@@ -3,9 +3,9 @@ title: Notas de la versión
 description: La información de la versión más reciente de [!DNL Data Connection] de Adobe Commerce.
 exl-id: 7636664b-488a-46f7-8d19-a9faac126aec
 feature: Personalization, Integration, Release Notes
-source-git-commit: c95b1fc9393c507dd757c74c30473590760d47a6
+source-git-commit: 2b168c0ef07324c7fc7b3cfd464742b257d073ec
 workflow-type: tm+mt
-source-wordcount: '797'
+source-wordcount: '826'
 ht-degree: 0%
 
 ---
@@ -71,6 +71,15 @@ _12 de octubre de 2022_
 ![Nuevo](../assets/new.svg) - Se ha añadido la compatibilidad con un [AEM tienda de artículos para el hogar](overview.md#aem-support).
 
 +++
+
+## 3.1.1.
+
+[!BADGE Compatibilidad]{type=Informative tooltip="Compatibilidad"}
+
+_4 de abril de 2024_
+
+![Nuevo](../assets/new.svg) - Añadido soporte para PHP 8.3 para todos [!DNL Data Connection] extensiones.
+![Nuevo](../assets/new.svg) - Se agregó un artículo sobre cómo [integrar](mobile-sdk-epc.md) el SDK de Adobe Experience Platform Mobile con Commerce.
 
 ## 3.2.0-beta2
 
