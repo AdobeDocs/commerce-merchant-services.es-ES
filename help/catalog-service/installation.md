@@ -2,9 +2,9 @@
 title: Incorporación e instalación
 description: "Aprenda a instalar [!DNL Catalog Service]"
 exl-id: 4e9fbdc9-67a1-4703-b8c0-8b159e0cc2a7
-source-git-commit: 6a7efbe0424e35cdec9cb00275d9a953feccaa5b
+source-git-commit: 8a98e069cd9ec3d2c4fec33485e5c8186d94518f
 workflow-type: tm+mt
-source-wordcount: '607'
+source-wordcount: '629'
 ht-degree: 0%
 
 ---
@@ -47,7 +47,7 @@ El proceso de incorporación para [!DNL Catalog Service] requiere acceso a la l�
 - Zona protegida (`https://catalog-service-sandbox.adobe.io/graphql`): se utiliza para pruebas y validación antes de activarse
 - Producción (`https://catalog-service.adobe.io/graphql`): se utiliza para el tráfico en directo de comerciantes y sitios web de Commerce.
 
-Todas las instancias de prueba de Commerce deben utilizar el punto de conexión de zona protegida.
+Todas las instancias de prueba de Commerce deben utilizar el extremo de zona protegida.
 
 Las pruebas de carga solo deben realizarse en el extremo de la zona protegida. Se recomienda que una [Ticket de asistencia](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) se abrirá durante la prueba de carga para que el equipo de servicios pueda anticipar el tráfico adicional del servidor.
 
@@ -120,7 +120,7 @@ Utilice este método para instalar [!DNL Catalog Service] extensión para una in
 
 Después de la instalación [!DNL Catalog Service], debe configurar la variable [Conector de Commerce Services](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/integration-services/saas.html#apikey) especificando las claves API y seleccionando un espacio de datos SaaS.
 
-Una vez completada la configuración de SaaS, realice una sincronización de datos inicial siguiendo el [Sincronización de catálogo](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/data-services/catalog-sync.html) guía.
+Una vez completada la configuración de SaaS, realice una sincronización de datos inicial utilizando [Tablero de administración de datos](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-dashboard). Puede utilizar este panel para monitorizar el estado de sincronización de los datos de producto transferidos desde la base de datos de Commerce a los servicios SaaS de Commerce.
 
 Para asegurarse de que la exportación del catálogo se ejecuta correctamente:
 
@@ -128,13 +128,13 @@ Para asegurarse de que la exportación del catálogo se ejecuta correctamente:
 - Compruebe que los indexadores se están ejecutando.
 - Asegúrese de que la variable `Catalog Attributes Feed, Product Feed, Product Overrides Feed`, y `Product Variant Feed` Los indexadores se definen como &quot;Actualizar por programación&quot;.
 
-La sincronización inicial puede tardar entre unos minutos y horas, según el tamaño del catálogo. Después de la sincronización inicial, el catálogo exporta datos de producto del servidor de Commerce a los servicios de Commerce de forma continua para mantener los servicios actualizados. Para monitorizar el estado de la sincronización, consulte la [[!DNL Data Management Dashboard]](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-dashboard.html).
+La sincronización inicial puede tardar entre unos minutos y horas, según el tamaño del catálogo. Después de la sincronización inicial, el catálogo exporta datos de productos del servidor de Commerce a los servicios de Commerce de forma continua para mantener los servicios actualizados. Para monitorizar el estado de la sincronización, consulte la [[!DNL Data Management Dashboard]](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-dashboard.html).
 
 ### Acceso al servicio
 
 El [!DNL Catalog Service] Se puede acceder a la API mediante comandos del POST a través de HTTPS.
 
-Para obtener la clave API, vaya al área del conector de Commerce Service en el administrador y copie la clave API pública.
+Para obtener la clave API, vaya al área de Commerce Service Connector en el administrador y copie la clave API pública.
 
 Lea el [Documentación de GraphQL](https://developer.adobe.com/commerce/services/graphql/) para comprender cómo consultar y enviar los encabezados necesarios para generar solicitudes de API.
 
