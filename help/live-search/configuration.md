@@ -1,11 +1,11 @@
 ---
-title: '''Configuración y configuración de Commerce'' [!DNL Live Search] '''
+title: 'Configuración de Commerce y [!DNL Live Search] '
 description: Describe las opciones de configuración de Adobe Commerce que [!DNL Live Search] puede leer.
 exl-id: a4e9e2dd-e912-4ced-a44a-091ac5334e50
 features: Services, Search, Configuration
-source-git-commit: 888b81683a4e139a35b771d9c573f1f5f0c3b902
+source-git-commit: d1cd70e66e616c052418c719f6da23b010a22241
 workflow-type: tm+mt
-source-wordcount: '260'
+source-wordcount: '279'
 ht-degree: 0%
 
 ---
@@ -41,3 +41,4 @@ Los precios de la página Widget de Lista de Productos y de la ventana emergente
 | Tiendas > Configuración > Catálogo > Tienda > Modo de lista | Se representa correctamente, pero los eventos no se envían para algunas interacciones de página |
 | Tiendas > Configuración > Catálogo > Buscar en el catálogo > Longitud máxima de la consulta | No implementado; los servicios de búsqueda aceptan hasta 255 caracteres |
 | Configuración > Ventas > Impuestos > Configuración De Visualización De Precios > Mostrar Precios De Productos En El Catálogo |  |
+| Tiendas > Configuración > Catálogo > Tienda > Lista de productos Ordenar por | No se aplica al [!DNL Live Search] [Widget de página de lista de productos](plp-styling.md) |
