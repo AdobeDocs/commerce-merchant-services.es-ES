@@ -3,7 +3,7 @@ title: "[!DNL Live Search] Notas de la versión"
 description: '"La información de la última versión de [!DNL Live Search] de Adobe Commerce".'
 exl-id: 2a581e43-35f5-48ce-9752-844430ccdebf
 feature: Services, Search, Release Notes
-source-git-commit: ace61fa579404962a9ca3eb97f61ed50bc43db52
+source-git-commit: 20b4fc2dc0f6cba325e4bc79778ce4852eb189c2
 workflow-type: tm+mt
 source-wordcount: '1925'
 ht-degree: 0%
@@ -54,7 +54,7 @@ _19 de marzo de 2024_
 ### Nuevas funciones
 
 ![Nuevo](../assets/new.svg) Se ha añadido compatibilidad con para [Polaco](technical-overview.md#language-support).
-![Nuevo](../assets/new.svg) [!DNL Live Search] ahora es compatible con PHP 8.3 para instalaciones que ejecutan Adobe Commerce 2.4.4.
+![Nuevo](../assets/new.svg) [!DNL Live Search] ahora es compatible con PHP 8.3 para instalaciones que ejecutan Adobe Commerce 2.4.7.
 
 ## [!DNL Live Search] 4.1.0 {#410}
 
@@ -193,7 +193,7 @@ _14 de marzo de 2023_
 ![Nuevo](../assets/new.svg) Se ha añadido la capacidad de arrastrar y soltar para crear eventos Pin
 ![Nuevo](../assets/new.svg) Nuevas acciones de anclaje: * Anclar a punto: botón Anclar para crear un evento de anclaje con un clic * Anclar al principio - Coloca el producto en la primera posición * Anclar al final - Coloca el producto en la parte inferior de los resultados * Desanclar un evento con un clic
 ![Nuevo](../assets/new.svg) [Clasificación inteligente para reglas](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/live-search/live-search-admin/rules/rules-add)
-![Nuevo](../assets/new.svg) [!DNL Live Search] ahora admite full [Inventory management](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/introduction) en Commerce (anteriormente conocido como Multi-Source Inventory o MSI). Para habilitar la compatibilidad total, debe [actualizar](install.md#update) el módulo de dependencia `commerce-data-export` a la versión 102.2.0+.
+![Nuevo](../assets/new.svg) [!DNL Live Search] ahora admite full [Inventory management](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/introduction) en Commerce (anteriormente conocido como Inventario de varias fuentes o MSI). Para habilitar la compatibilidad total, debe [actualizar](install.md#update) el módulo de dependencia `commerce-data-export` a la versión 102.2.0+.
 
 ### Actualizaciones
 

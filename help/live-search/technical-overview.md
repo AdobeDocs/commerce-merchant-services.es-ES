@@ -3,9 +3,9 @@ title: "Información general técnica"
 description: "[!DNL Live Search] flujo de incorporación, requisitos del sistema, límites y limitaciones"
 exl-id: 45f6c1ae-544b-47ef-9feb-c1a05f93108a
 recommendations: noCatalog
-source-git-commit: e8d4215b1f16f1cb34783674cabc046dec135729
+source-git-commit: 18a0e8abd5478963425c4d0030a9a0f1df9d599e
 workflow-type: tm+mt
-source-wordcount: '1023'
+source-wordcount: '1024'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ En este tema se analizan los requisitos técnicos y las sugerencias para la inst
 ## Requisitos {#requirements}
 
 * [Adobe Commerce](https://business.adobe.com/products/magento/magento-commerce.html) 2.4.4+
-* PHP 8.1 / 8.2
+* PHP 8.1/8.2/8.3
 * [!DNL Composer]
 
 ### Plataformas compatibles
@@ -120,7 +120,7 @@ Para restringir los grupos de clientes que utilizan permisos de catálogo:
 | Chino | China | zh_CN | zh_Hans_CN |
 | Chino | Taiwán | zh_TW | zh_Hant_TW |
 
-Si el widget detecta que la configuración de idioma de administración de Commerce (_Tiendas_ > Configuración > _Configuración_ > _General_ > Opciones de país) coincide con un idioma admitido; el valor predeterminado es ese idioma. De lo contrario, los widgets se muestran en inglés de forma predeterminada.
+Si el widget detecta que la configuración de idioma del administrador de Commerce (_Tiendas_ > Configuración > _Configuración_ > _General_ > Opciones de país) coincide con un idioma admitido; el valor predeterminado es ese idioma. De lo contrario, los widgets se muestran en inglés de forma predeterminada.
 
 Los administradores también pueden establecer el idioma de [índice de búsqueda](settings.md#language), para garantizar mejores resultados de búsqueda.
 
@@ -143,7 +143,7 @@ Esto permite a los desarrolladores personalizar completamente la funcionalidad y
 
 ## Inventory management
 
-[!DNL Live Search] admite [Inventory management](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/introduction) en Commerce (anteriormente conocido como Multi-Source Inventory o MSI). Para habilitar la compatibilidad total, debe [actualizar](install.md#update) el módulo de dependencia `commerce-data-export` a la versión 102.2.0+.
+[!DNL Live Search] admite [Inventory management](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/introduction) en Commerce (anteriormente conocido como Inventario de varias fuentes o MSI). Para habilitar la compatibilidad total, debe [actualizar](install.md#update) el módulo de dependencia `commerce-data-export` a la versión 102.2.0+.
 
 [!DNL Live Search] devuelve un valor booleano que indica si un producto está disponible en Inventory management, pero no contiene información sobre el origen que tiene las existencias.
 

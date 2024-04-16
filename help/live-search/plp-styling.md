@@ -2,22 +2,28 @@
 title: Widget de página de lista de productos
 description: Activación y estilo de [!DNL Live Search Product Listing Page Widget]
 exl-id: f7346a06-a8c7-4a33-8437-ea4f61d9281f
-source-git-commit: 4c4facab0368bdeef70a5fd2925072e73d765707
+source-git-commit: d4511219a0244dca7db896419daba1e6694d80de
 workflow-type: tm+mt
-source-wordcount: '304'
+source-wordcount: '324'
 ht-degree: 0%
 
 ---
 
 # Widget de página de lista de productos
 
-El [!DNL Live Search Product Listing Page Widget] (PLP) utiliza la plataforma de Commerce Services para proporcionar una página de lista de productos con un buen rendimiento, en la que se pueden realizar búsquedas y facetas. En este tema se describe cómo habilitar y aplicar estilo al widget PLP.
+El [!DNL Live Search Product Listing Page Widget] (PLP) utiliza la plataforma de Commerce Services para proporcionar una página de lista de productos con rendimiento, en la que se pueden realizar búsquedas y facetas. En este tema se describe cómo habilitar y aplicar estilo al widget PLP.
 
 ## Activación del widget PLP
 
 Si la variable [!DNL Live Search] Cuando el servicio de está instalado, la funcionalidad de búsqueda predeterminada se convierte en [!DNL Live Search] automáticamente.
 
 El [!DNL Live Search] El widget PLP está habilitado de forma predeterminada para las nuevas instalaciones. Si va a realizar la actualización [!DNL Live Search] y el widget PLP ya se ha desactivado, seguirá siéndolo.
+
+>[!IMPORTANT]
+>
+>Si la variable [!DNL Live Search Product Listing Page Widget] está activada, no se puede cambiar la dirección del criterio de ordenación en una página de la lista de productos.
+
+## Desactivación del widget PLP
 
 Para desactivar el widget PLP:
 
