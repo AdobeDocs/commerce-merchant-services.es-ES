@@ -3,7 +3,7 @@ title: '[!DNL Product Recommendations] Notas de la versión'
 description: La información de la versión más reciente de [!DNL Product Recommendations] de Adobe Commerce.
 exl-id: 1758e688-d26f-45e7-818c-d4726338a6c3
 feature: Services, Recommendations, Release Notes
-source-git-commit: ace61fa579404962a9ca3eb97f61ed50bc43db52
+source-git-commit: c3940c399c0639fe53e23cea96b347c7827ecb42
 workflow-type: tm+mt
 source-wordcount: '1276'
 ht-degree: 0%
@@ -88,7 +88,7 @@ _20 de marzo de 2023_
 
 ![Nuevo](../assets/new.svg) Actualizado [!DNL Product Recommendations] para admitir Adobe Commerce 2.4.6.
 ![Nuevo](../assets/new.svg) Esta es una versión principal. [Editar](install-configure.md#update) la raíz `composer.json` para su proyecto.
-![Nuevo](../assets/new.svg) [!DNL Product Recommendations] ahora admite full [Inventory management](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/introduction) en Commerce (anteriormente conocido como Multi-Source Inventory o MSI). Para habilitar la compatibilidad total, debe [actualizar](install-configure.md#update) el módulo de dependencia `commerce-data-export` a la versión 102.2.0+.
+![Nuevo](../assets/new.svg) [!DNL Product Recommendations] ahora admite full [Inventory management](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/introduction) en Commerce (anteriormente conocido como Inventario de varias fuentes o MSI). Para habilitar la compatibilidad total, debe [actualizar](install-configure.md#update) el módulo de dependencia `commerce-data-export` a la versión 102.2.0+.
 
 ### 4.0.1 de magento/product-recommendations
 
