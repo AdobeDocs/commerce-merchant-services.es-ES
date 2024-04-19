@@ -3,19 +3,23 @@ title: Conectar su instancia
 description: Conecte la instancia de Commerce con una clave de API y una clave privada, y especifique el espacio de datos en la configuración.
 exl-id: 5038fd31-bac5-419e-a172-66919a9b5272
 feature: Payments, Checkout, Configuration, Saas
-source-git-commit: 57b140463d457404b57dd23d33c72e48b4c3ac89
+source-git-commit: 5c4fe370507e4154d4495d4c09e2ff8705e53191
 workflow-type: tm+mt
-source-wordcount: '590'
+source-wordcount: '608'
 ht-degree: 0%
 
 ---
 
 # Conectar su instancia
 
-[!DNL Payment Services] cuenta con la tecnología de Commerce Services y se implementa como SaaS (software como servicio). La instancia de Commerce se conecta mediante una clave de API y una clave privada, y se especifica el espacio de datos en la configuración de mediante [Conector de Commerce Services](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/saas.html). **Esta conexión solo se configura una vez.**
+[!DNL Payment Services] cuenta con la tecnología de Commerce Services y se implementa como SaaS (software como servicio). La instancia de Commerce se conecta mediante una clave de API y una clave privada, y se especifica el espacio de datos en la configuración mediante [Conector de Commerce Services](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/saas.html). **Esta conexión solo se configura una vez.**
 
-* Si tiene *ya está conectada su instancia*, obteniendo y utilizando sus credenciales de API y configurando Commerce Services, puede continuar con [configuración de la zona protegida de pruebas](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/get-started/sandbox.html).
-* Si todavía *necesita conectar su instancia*, vea la información de este tema acerca de [obtención de credenciales de API](#obtain-api-credentials) y [configurar Commerce Services](#configure-commerce-services).
+>[!INFO]
+>
+> Consulte nuestra [[!DNL Adobe Commerce] Conector de servicios](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/admin/adobe-commerce-services/configure-adobe-commerce-services-connector.html?lang=en) para obtener más información.
+
+* Si tiene *ya está conectada su instancia*, obteniendo y utilizando sus credenciales de API y configurando los servicios de Commerce, puede continuar con [configuración de la zona protegida de pruebas](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/get-started/sandbox.html).
+* Si todavía *necesita conectar su instancia*, vea la información de este tema acerca de [obtención de credenciales de API](#obtain-api-credentials) y [configurar los servicios de Commerce](#configure-commerce-services).
 * Si es usted *no está seguro de si la instancia está conectada*, vaya a **Sistema** > Servicios > **Conector de Commerce Services** y vea los valores de clave de API pública y privada en la [!UICONTROL Sandbox Keys] y [!UICONTROL Production Keys] , y las secciones *Proyecto* y *Espacio de datos* campos en la [!UICONTROL SaaS Identifier] sección. Si esos valores están presentes, la instancia está conectada.
 
 >[!NOTE]
@@ -24,7 +28,7 @@ ht-degree: 0%
 
 ## Obtener credenciales de API
 
-Para consumir un servicio SaaS de Commerce, debe utilizar las claves de API de la instancia (clave de API pública de Commerce y una clave privada) tanto para la zona protegida como para la producción, que se crean y administran en su [Mi tablero de cuenta](https://account.magento.com/customer/account/login). [El par de claves](https://docs.magento.com/user-guide/configuration/services/saas.html) se puede crear para una cuenta de Commerce, una para la zona protegida y otra para la producción, aunque solo se puede utilizar activamente un par a la vez.
+Para consumir un servicio SaaS de Commerce, debe utilizar las claves de API de la instancia (clave de API pública de Commerce y clave privada) tanto para la zona protegida como para la producción, que se crean y administran en su [Mi tablero de cuenta](https://account.magento.com/customer/account/login). [El par de claves](https://docs.magento.com/user-guide/configuration/services/saas.html) se pueden crear para una cuenta de Commerce (una para la zona protegida y otra para la producción), aunque solo se puede utilizar activamente un par a la vez.
 
 >[!NOTE]
 >
@@ -44,7 +48,7 @@ Para obtener información sobre cómo generar una clave de API para entornos de 
 >
 >Se recomienda no regenerar un par de claves de API *y* cambiar el identificador de SaaS o el espacio de datos en una instancia de producción activa. Perderá datos de su instancia si se modifican.
 
-## Configuración de Commerce Services
+## Configuración de servicios de Commerce
 
 La misma clave de API se puede utilizar en todas las instancias, pero cada instancia debe tener su propia [Espacio de datos SaaS](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/saas.html#saasenv).
 
@@ -57,8 +61,12 @@ Ahora que ha obtenido sus credenciales, puede configurar su proyecto SaaS y el e
 1. En el _Administrador_ barra lateral, vaya a **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]**.
 1. Clic **[!UICONTROL Configure Commerce Services]**.
 
-   Esta opción está visible si aún no ha configurado Commerce Services para su cuenta.
+   Esta opción está visible si aún no ha configurado los servicios de Commerce para su cuenta.
 
-   Se le dirigirá al área de configuración en el Administrador de, **[!UICONTROL Stores]** > _[!UICONTROL Settings]_>**[!UICONTROL Configuration]**>**[!UICONTROL Commerce Services Connector]**, para configurar el conector de Commerce Services.
+   Se le dirigirá al área de configuración en el Administrador de, **[!UICONTROL Stores]** > _[!UICONTROL Settings]_>**[!UICONTROL Configuration]**>**[!UICONTROL Commerce Services Connector]**, para configurar el conector de servicios de Commerce.
 
-1. Para configurar Commerce Services, siga los pasos descritos en [Configuración de SaaS](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/integration-services/saas.html#saasenv).
+1. Para configurar los servicios de Commerce, siga los pasos descritos en [Configuración de SaaS](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/integration-services/saas.html#saasenv).
+
+   >[!INFO]
+   >
+   > Consulte nuestra [[!DNL Adobe Commerce] Conector de servicios](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/admin/adobe-commerce-services/configure-adobe-commerce-services-connector.html?lang=en#configuration-faqs) para obtener más información.
