@@ -4,9 +4,9 @@ description: Obtenga información sobre cómo integrar la instancia de Adobe Com
 exl-id: 28027a83-449b-4b96-b926-a7bfbfd883d8
 feature: Services, Saas
 role: Admin, User
-source-git-commit: 2d6b80b5133eb00ac42a5f2b64c5846ad30e56c4
+source-git-commit: b86464ac65aeb260930fa2f6fed0a4aedbd7eddf
 workflow-type: tm+mt
-source-wordcount: '866'
+source-wordcount: '869'
 ht-degree: 0%
 
 ---
@@ -33,7 +33,7 @@ A continuación se enumeran los [!DNL Commerce] funciones a las que puede accede
 
 En un nivel superior, la [!DNL Commerce Services Connector] se compone de los siguientes elementos principales:
 
-![Arquitectura del conector de Commerce Services](assets/saas-config-sync-workflow.png)
+![Arquitectura del conector de servicios de Commerce](assets/saas-config-sync-workflow.png)
 
 En las secciones siguientes se analiza cada uno de estos elementos con más detalle.
 
@@ -63,7 +63,7 @@ Las claves de API de producción y de zona protegida se generan a partir de la v
 
 1. Repita los pasos anteriores para cada entorno (producción y zona protegida).
 
-   El **Claves de API** ahora muestra sus claves API. Necesita las claves de producción y de la zona protegida al [seleccionar o crear un proyecto SaaS](#createsaasenv).
+   El **Claves de API** ahora muestra las claves API (públicas). Necesita las claves de producción y de zona protegida (Pública+Privada) al [seleccionar o crear un proyecto SaaS](#createsaasenv).
 
 ## Configuración de SaaS {#saasenv}
 
