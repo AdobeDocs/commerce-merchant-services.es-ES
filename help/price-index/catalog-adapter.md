@@ -1,15 +1,15 @@
 ---
 title: Extensión de adaptador de catálogo
-description: Uso del adaptador de catálogo para representar los precios de Commerce Services
+description: Uso del adaptador de catálogo para representar los precios de los servicios de Commerce
 seo-title: Catalog Adapter Extension
 seo-description: Using Catalog Adapter to render prices from Commerce Services
-source-git-commit: a637ece6e806771dfc6359dacececf8ccf05b983
+exl-id: 2c9120eb-aa51-48e9-b6a4-fffe25fc31f2
+source-git-commit: 7d62f8d5539cd744e98d8d6c072d77a2a7c5a256
 workflow-type: tm+mt
-source-wordcount: '330'
+source-wordcount: '332'
 ht-degree: 0%
 
 ---
-
 
 # Adaptador de catálogo
 
@@ -19,10 +19,10 @@ El indexador de precios de productos Adobe Commerce está desactivado y no se pu
 ## Requisitos
 
 * Adobe Commerce 2.4.4+
-* Tener instalados los siguientes servicios de Commerce:
+* Tenga instalados los dos servicios de Commerce siguientes:
 
    * [Servicio de catálogo](../catalog-service/overview.md)
-   * [Live Search](../live-search/guide-overview.md)
+   * [Live Search](../live-search/overview.md)
 
 ## Instalación
 
@@ -47,7 +47,7 @@ bin/magento index:reindex catalog_product_price
 
 ## Deshabilitar indizador de precios de productos para escenario de tienda sin encabezado
 
-Si tiene una instancia de Commerce sin encabezado, es posible que tenga que deshabilitar el indexador de precios de productos Adobe Commerce para reducir la carga en la instancia de Adobe Commerce.
+Si tiene una instancia de Commerce sin encabezado, es posible que tenga que deshabilitar el indexador de precios de productos de Adobe Commerce para reducir la carga en la instancia de Adobe Commerce.
 Esto se hace instalando el `magento/module-price-indexer-disabler` módulo:
 
 ```bash
@@ -73,7 +73,7 @@ Los siguientes son algunos ejemplos comunes `Catalog Adapter` escenarios.
 1. Instale el adaptador del catálogo.
 1. Vuelva a habilitar el indexador de precios de producto predeterminado de Adobe Commerce.
 
-### Instancias de comercio sin encabezado
+### Instancias de Commerce sin encabezado
 
 * Un comerciante con una instancia de Commerce sin encabezado con los servicios necesarios instalados (Live Search, Product Recommendations, Servicio de catálogo)
 * No se depende del indexador de precios de producto predeterminado de Adobe Commerce

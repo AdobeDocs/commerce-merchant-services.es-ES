@@ -3,9 +3,9 @@ title: Comercialización por categorías
 description: Uso [!DNL Live Search] Comercialización por categorías para disfrutar de una experiencia de compra más rápida.
 gourl: ls_catalog_merchandising
 exl-id: 24f159c1-b175-47c1-aca1-8bada118b4b4
-source-git-commit: d5df2a098dbbb2ecfb68c36dd12843c963d46b17
+source-git-commit: 109a4e79a7faac62a4d7c48cadcada1ec28f3c94
 workflow-type: tm+mt
-source-wordcount: '1045'
+source-wordcount: '1053'
 ht-degree: 0%
 
 ---
@@ -13,6 +13,10 @@ ht-degree: 0%
 # Comercialización por categorías
 
 La comercialización de categorías permite a los propietarios de tiendas aplicar [!DNL Live Search] Clasificación inteligente [reglas](rules.md) a categorías y subcategorías de productos.
+
+Este vídeo es una introducción a la comercialización de categorías.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3424617)
 
 Se accede a la funcionalidad en el Administrador en **Marketing** > SEO y búsqueda > **[!DNL Live Search]** > **Comercialización por categorías**.
 

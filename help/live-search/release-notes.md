@@ -3,7 +3,7 @@ title: "[!DNL Live Search] Notas de la versión"
 description: '"La información de la última versión de [!DNL Live Search] de Adobe Commerce".'
 exl-id: 2a581e43-35f5-48ce-9752-844430ccdebf
 feature: Services, Search, Release Notes
-source-git-commit: 20b4fc2dc0f6cba325e4bc79778ce4852eb189c2
+source-git-commit: 471bee273a82304ac35b0ca384a2161d7a3399d6
 workflow-type: tm+mt
 source-wordcount: '1925'
 ht-degree: 0%
@@ -53,8 +53,8 @@ _19 de marzo de 2024_
 
 ### Nuevas funciones
 
-![Nuevo](../assets/new.svg) Se ha añadido compatibilidad con para [Polaco](technical-overview.md#language-support).
-![Nuevo](../assets/new.svg) [!DNL Live Search] ahora es compatible con PHP 8.3 para instalaciones que ejecutan Adobe Commerce 2.4.7.
+![Nuevo](../assets/new.svg) Se ha agregado compatibilidad con polaco.
+![Nuevo](../assets/new.svg) [!DNL Live Search] ahora es compatible con PHP 8.3 para instalaciones que ejecutan Adobe Commerce 2.4.4.
 
 ## [!DNL Live Search] 4.1.0 {#410}
 
@@ -262,7 +262,7 @@ Existente [!DNL Live Search] las instalaciones deben actualizarse a [!DNL Live S
 
 ![Nuevo](../assets/new.svg) [!DNL Live Search] ahora es compatible con PHP 8.1 para instalaciones que ejecutan Adobe Commerce 2.4.4.
 ![Nuevo](../assets/new.svg) El `Magento_ElasticsearchCatalogPermissionsGraphQl` Este módulo se añade a la lista de módulos desactivados durante la instalación.
-![Nuevo](../assets/new.svg) El número de líneas disponibles en la [[!DNL storefront popover]](quick-tour.md) se puede configurar desde el *Administrador*.
+![Nuevo](../assets/new.svg) El número de líneas disponibles en la [[!DNL storefront popover]](overview.md) se puede configurar desde el *Administrador*.
 ![Nuevo](../assets/new.svg) Beta [PWA](https://developer.adobe.com/commerce/pwa-studio/) compatible con [!DNL Live Search].
 ![Nuevo](../assets/new.svg) El [!DNL Live Search] El proceso de instalación de se actualiza con cambios avanzados en el proceso.
 ![Fix](../assets/fix.svg) [Búsqueda avanzada](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/search/search) vínculo eliminado del pie de página de la tienda.

@@ -1,167 +1,110 @@
 ---
-title: "Instalar [!DNL Live Search]"
-description: '"Obtenga información sobre cómo instalar, actualizar y desinstalar [!DNL Live Search] de Adobe Commerce".'
+title: "Introducción a [!DNL Live Search]"
+description: '"Conozca los requisitos del sistema y los pasos de instalación para [!DNL Live Search] de Adobe Commerce".'
 exl-id: aa251bb0-d52c-4cff-bccb-76a08ae2a3b2
 role: Admin, Developer
-source-git-commit: 8a98e069cd9ec3d2c4fec33485e5c8186d94518f
+source-git-commit: a55e3304d590c2bd6a591bdc78a4765ffed46cd1
 workflow-type: tm+mt
-source-wordcount: '1240'
+source-wordcount: '2397'
 ht-degree: 0%
 
 ---
 
-# Instalar [!DNL Live Search]
+# Configurado correctamente con [!DNL Live Search] y [!DNL Catalog Service]
 
-[!DNL Live Search] se instala como una extensión desde Adobe Marketplace. Después del [!DNL Live Search] El módulo de (con módulos de catálogo como dependencias) está instalado y configurado. [!DNL Commerce] comienza a compartir datos de catálogo y búsqueda con los servicios SaaS. En este punto, *Administrador* los usuarios pueden configurar, personalizar y administrar facetas de búsqueda, sinónimos y reglas de comercialización.
+Adobe Commerce [!DNL Live Search] y [!DNL Catalog Service] trabaje en conjunto para proporcionar una solución de búsqueda eficaz, relevante e intuitiva que permita a sus clientes encontrar exactamente lo que necesitan con rapidez. Específicamente, [!DNL Catalog Service] muestra los datos del catálogo para servicios SaaS, como [!DNL Live Search] para usar.
 
-En este tema se proporcionan instrucciones para realizar las siguientes acciones:
-
-* Instalar [!DNL Live Search] (Métodos 1 y 2)
-* [Actualizar [!DNL Live Search]](#update)
-* [Desinstalar [!DNL Live Search]](#uninstall)
-
-## Antes de empezar {#before-you-begin}
-
-Haga lo siguiente:
-
-1. Confirme que [trabajos cron](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs) y [indexadores](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/index-management) se están ejecutando.
-
-1. Elija el método de incorporación que cumpla sus requisitos y siga las instrucciones.
-
-   * [Método 1](#method-1): Instalar sin [!DNL OpenSearch]
-   * [Método 2](#method-2): instale con [!DNL OpenSearch] (Sin tiempo de inactividad)
+Este artículo contiene instrucciones paso a paso para implementar [!DNL Live Search] con [!DNL Catalog Service].
 
 >[!IMPORTANT]
 >
->Debido al anuncio de fin de soporte de Elasticsearch 7 para agosto de 2023, se recomienda que todos los clientes de Adobe Commerce migren al motor de búsqueda OpenSearch 2.x. Para obtener información sobre la migración del motor de búsqueda durante la actualización del producto, consulte [Migración a OpenSearch](https://experienceleague.adobe.com/en/docs/commerce-operations/upgrade-guide/prepare/opensearch-migration) en el _Guía de actualización_.
+>Cuando se trata de buscar sitios, Adobe Commerce le da opciones. Asegúrese de leer [Límites y límites](boundaries-limits.md) antes de la implementación, para garantizar que [!DNL Live Search] es una solución adecuada para sus necesidades empresariales.
 
-## Método 1: Instalar sin OpenSearch {#method-1}
+## Público
 
-Este método de incorporación se recomienda al instalar [!DNL Live Search] a un:
+Este artículo está dirigido al desarrollador o integrador de sistemas de su equipo, responsable de instalar y configurar la instancia de Adobe Commerce.
 
-* Nuevo [!DNL Commerce] instalación
-* Entorno de ensayo
+## Requisitos
 
-En esta situación, las operaciones de tienda se interrumpen mientras que la variable [!DNL Live Search] el servicio indexa todos los productos del catálogo. Durante la instalación, [!DNL Live Search] Los módulos de están activados y [!DNL OpenSearch] módulos están desactivados.
+- [Adobe Commerce](https://business.adobe.com/products/magento/magento-commerce.html) 2.4.4+
+- PHP 8.1/8.2/8.3
+- [!DNL Composer]
 
-1. Instalar Adobe Commerce 2.4.4+ sin [!DNL Live Search].
+## Plataformas compatibles
 
-1. Para descargar `live-search` ejecute lo siguiente desde la línea de comandos:
+- Adobe Commerce en la nube (ECE) : 2.4.4+
+- Adobe Commerce local (EE) : 2.4.4+
 
-   ```bash
-   composer require magento/live-search
-   ```
+## Resumen de flujo de trabajo
 
-1. Ejecute los siguientes comandos para deshabilitar [!DNL OpenSearch] y módulos relacionados, e instale [!DNL Live Search]:
+En un nivel superior, la incorporación [!DNL Live Search] requiere que:
 
-   ```bash
-   bin/magento module:disable Magento_Elasticsearch Magento_Elasticsearch7 Magento_OpenSearch Magento_ElasticsearchCatalogPermissions Magento_InventoryElasticsearch Magento_ElasticsearchCatalogPermissionsGraphQl
-   ```
+- Instalación de la extensión
+- Configuración de las claves API
+- Sincronización de los datos del catálogo
+- Verificar que los datos se hayan exportado
+- Configuración de los datos
+- Prueba de la conexión
+- Personalizar para tu tienda
 
-   ```bash
-   bin/magento setup:upgrade
-   ```
+![Flujo de trabajo de Live Search](assets/livesearch-workflow.png)
 
-   >[!WARNING]
+## 1. Instale el [!DNL Live Search] extensión
+
+[!DNL Live Search] se instala como una extensión desde [Adobe Marketplace](https://commercemarketplace.adobe.com/magento-live-search.html) mediante [Compositor](https://getcomposer.org/). Después de instalar y configurar [!DNL Live Search], ADOBE [!DNL Commerce] comienza a compartir datos de catálogo y búsqueda con los servicios SaaS. En este punto, *Administrador* los usuarios pueden configurar, personalizar y administrar facetas de búsqueda, sinónimos y reglas de comercialización.
+
+>[!NOTE]
+>
+>A partir de [!DNL Live Search] 3.0.2, el [!DNL Catalog Service] La extensión de está empaquetada con el [!DNL Live Search] instalación.
+
+1. Confirme que [trabajos cron](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs) y [indexadores](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/index-management) se están ejecutando.
+
+   >[!IMPORTANT]
    >
-   > Mientras los datos están indexados y sincronizados, las operaciones de búsqueda y exploración de categorías no están disponibles en la tienda. Según el tamaño del catálogo, el proceso puede tardar al menos una hora desde el momento en que se realiza `cron` se ejecuta para sincronizar los datos con [!DNL Live Search] servicios.
+   >Debido al anuncio de fin de soporte de Elasticsearch 7 para agosto de 2023, se recomienda que todos los clientes de Adobe Commerce migren al motor de búsqueda OpenSearch 2.x. Para obtener información sobre la migración del motor de búsqueda durante una actualización de producto, consulte [Migración a OpenSearch](https://experienceleague.adobe.com/en/docs/commerce-operations/upgrade-guide/prepare/opensearch-migration) en el _Guía de actualización_.
 
-1. Compruebe que lo siguiente [indexadores](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/index-management) están configuradas como &quot;Actualizar según lo programado&quot;:
+1. Descargue la `live-search` paquete desde el [Adobe Marketplace](https://commercemarketplace.adobe.com/magento-live-search.html).
 
-   * Fuente de productos
-   * Fuente de variante del producto
-   * Fuente de atributos de catálogo
-   * Fuente de precios de productos
-   * Fuente de datos del sitio web Ámbitos
-   * Fuente de datos de grupos de clientes ámbitos
-   * Fuente de categorías
-   * Fuente de permisos de categoría
-
-1. Configure su [Claves de API](#configure-api-keys) y compruebe que los datos del catálogo estén [sincronizado](#synchronize-catalog-data) con [!DNL Live Search] servicios.
-
-1. Para que las facetas estén disponibles como filtros en la tienda, agregue [facetas](facets-add.md) necesita, de acuerdo con la [requisitos faceteados](facets.md).
-
-   Debe poder agregar facetas después de `cron` ejecuta las fuentes de atributos y exporta los metadatos de atributos.
-
-1. Ejecute el siguiente comando en este orden:
-
-   ```bash
-   bin/magento saas:resync --feed productattributes
-   bin/magento saas:resync --feed products
-   bin/magento saas:resync --feed scopesCustomerGroup
-   bin/magento saas:resync --feed scopesWebsite
-   bin/magento saas:resync --feed prices
-   bin/magento saas:resync --feed productoverrides
-   bin/magento saas:resync --feed variants
-   bin/magento saas:resync --feed categories
-   bin/magento saas:resync --feed categoryPermissions
-   ```
-
-1. [Verificar](#verify-export) que los datos se han exportado.
-
-1. [Prueba](#test-the-connection) la conexión desde la tienda.
-
-## Método 2: Instalar con OpenSearch {#method-2}
-
-Este método de incorporación se recomienda al instalar [!DNL Live Search] hasta:
-
-* Una producción existente [!DNL Commerce] instalación
-
-En este escenario, [!DNL OpenSearch] administra temporalmente las solicitudes de búsqueda de la tienda mientras que la variable [!DNL Live Search] El servicio indexa todos los productos en segundo plano, sin interrupciones en las operaciones normales de la tienda. [!DNL OpenSearch] está desactivado y [!DNL Live Search] se activa después de indexar y sincronizar todos los datos del catálogo.
-
-1. Para descargar `live-search` ejecute lo siguiente desde la línea de comandos:
+1. Ejecute lo siguiente desde la línea de comandos:
 
    ```bash
    composer require magento/live-search
    ```
 
-1. Ejecute el siguiente comando para deshabilitar temporalmente la variable [!DNL Live Search] módulos de que sirven a resultados de búsqueda de tiendas.
+   Si va a agregar el [!DNL Live Search] extensión a **nuevo** Instalación de Adobe Commerce, ejecute lo siguiente para deshabilitar [!DNL OpenSearch] y módulos relacionados, e instale [!DNL Live Search]. A continuación, continúe con el paso 4.
 
    ```bash
-   bin/magento module:disable Magento_LiveSearchAdapter Magento_LiveSearchStorefrontPopover Magento_LiveSearchProductListing 
+      bin/magento module:disable Magento_Elasticsearch Magento_Elasticsearch7 Magento_OpenSearch Magento_ElasticsearchCatalogPermissions Magento_InventoryElasticsearch Magento_ElasticsearchCatalogPermissionsGraphQl
    ```
 
+   Si va a agregar el [!DNL Live Search] extensión a un **existente** Instalación de Adobe Commerce, ejecute lo siguiente para deshabilitar temporalmente [!DNL Live Search] módulos de que sirven a resultados de búsqueda de tiendas. A continuación, continúe con el paso 4:
+
    ```bash
-   bin/magento setup:upgrade
+      bin/magento module:disable Magento_LiveSearchAdapter Magento_LiveSearchStorefrontPopover Magento_LiveSearchProductListing 
    ```
 
    [!DNL Elasticsearch] sigue administrando las solicitudes de búsqueda de la tienda mientras la variable [!DNL Live Search] El servicio sincroniza los datos del catálogo e indexa los productos en segundo plano.
 
-1. Compruebe que lo siguiente [indexadores](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/index-management) están configuradas como &quot;Actualizar según lo programado&quot;:
-
-   * Fuente de productos
-   * Fuente de variante del producto
-   * Fuente de atributos de catálogo
-   * Fuente de precios de productos
-   * Fuente de datos del sitio web Ámbitos
-   * Fuente de datos de grupos de clientes ámbitos
-
-1. Configure su [Claves de API](#configure-api-keys) y compruebe que los datos del catálogo estén [sincronizado](#synchronize-catalog-data) con [!DNL Live Search] servicios.
-
-1. Para que las facetas estén disponibles como filtros en la tienda, agregue [facetas](facets-add.md) necesita, de acuerdo con la [requisitos faceteados](facets.md).
-
-   Debe poder agregar facetas después de `cron` ejecuta las fuentes de productos y atributos, y exporta los metadatos de atributos a [!DNL Live Search] servicios.
-
-1. Ejecute el siguiente comando en este orden:
+1. Ejecute lo siguiente:
 
    ```bash
-   bin/magento saas:resync --feed productattributes
-   bin/magento saas:resync --feed products
-   bin/magento saas:resync --feed scopesCustomerGroup
-   bin/magento saas:resync --feed scopesWebsite
-   bin/magento saas:resync --feed prices
-   bin/magento saas:resync --feed productoverrides
-   bin/magento saas:resync --feed variants
-   bin/magento saas:resync --feed categories
-   bin/magento saas:resync --feed categoryPermissions
+   bin/magento setup:upgrade
    ```
 
-1. Una vez finalizada la sincronización, utilice el [GraphQL playground](https://developer.adobe.com/commerce/services/graphql/live-search/) con la consulta predeterminada para comprobar lo siguiente:
+1. Compruebe que lo siguiente [indexadores](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/index-management) están configuradas como &quot;Actualizar según lo programado&quot;:
 
-   * El recuento de productos devuelto está cerca de lo que se espera en la vista de la tienda.
-   * Se devuelven las facetas.
+   - Fuente de productos
+   - Fuente de variante del producto
+   - Fuente de atributos de catálogo
+   - Fuente de precios de productos
+   - Fuente de datos del sitio web Ámbitos
+   - Fuente de datos de grupos de clientes ámbitos
+   - Fuente de categorías
+   - Fuente de permisos de categoría
 
-1. Ejecute los siguientes comandos para habilitar [!DNL Live Search] módulos, deshabilitar [!DNL OpenSearch], y ejecute `setup`.
+1. Si va a instalar [!DNL Live Search] en una nueva instancia de Commerce, ha terminado y puede pasar al [2. Configuración de claves API](#2-configure-api-keys) sección. Si va a instalar Live Search en una instancia de Commerce existente, continúe con el siguiente paso.
+
+1. Ejecute los siguientes comandos para habilitar la variable [!DNL Live Search] extensión, deshabilitar [!DNL OpenSearch], y ejecute `setup`.
 
    ```bash
    bin/magento module:enable Magento_LiveSearchAdapter Magento_LiveSearchStorefrontPopover  Magento_LiveSearchProductListing 
@@ -176,64 +119,136 @@ En este escenario, [!DNL OpenSearch] administra temporalmente las solicitudes de
    bin/magento setup:upgrade
    ```
 
-1. [Prueba](#test-the-connection) la conexión desde la tienda.
+## 2. Configurar las claves API
 
-## Configuración de claves API {#configure-api-keys}
+La clave de la API de Adobe Commerce y su clave privada asociada son necesarias para conectarse [!DNL Live Search] a una instalación de Adobe Commerce. La clave de API se genera y se mantiene en la cuenta de [!DNL Commerce] titular de la licencia, que puede compartirla con el desarrollador o el integrador de sistemas. A continuación, el desarrollador puede crear y administrar los espacios de datos SaaS en nombre del titular de la licencia. Si ya tiene un conjunto de claves API, no es necesario que las vuelva a generar.
 
-La clave de la API de Adobe Commerce y su clave privada asociada son necesarias para conectarse [!DNL Live Search] a una instalación de Adobe Commerce. La clave de API se genera y se mantiene en la cuenta de [!DNL Commerce] titular de la licencia, que puede compartirla con el desarrollador o SI. A continuación, el desarrollador puede crear y administrar los espacios de datos SaaS en nombre del titular de la licencia.  Si ya tiene un conjunto de claves API, no es necesario que las vuelva a generar.
+Obtenga información sobre cómo configurar las claves API en la [Conector de Commerce Services](../landing/saas.md) artículo.
 
-### Titular de la licencia Adobe Commerce
+## 3. Sincronizar los datos del catálogo {#synchronize-catalog-data}
 
-Para generar una clave API y una clave privada, consulte [Conector de Commerce Services](../landing/saas.md).
+[!DNL Live Search] mueve los datos del catálogo a la infraestructura de SaaS de Adobe. Los datos se indexan y los resultados de búsqueda se envían desde este índice directamente a la tienda. Según el tamaño y la complejidad, la indexación puede tardar entre 30 minutos y un par de horas.
 
-### Desarrollador de Adobe Commerce o SI
+Para comenzar la sincronización inicial de los datos del catálogo con los servicios SaaS, ejecute los siguientes comandos en este orden:
 
-El desarrollador o SI configura el espacio de datos de SaaS como se describe en la *Servicios de Commerce* de la configuración. En el *Administrador*, los servicios de Commerce están disponibles en *Configuración* barra lateral cuando hay un módulo SaaS instalado.
+```bash
+bin/magento saas:resync --feed productattributes
+bin/magento saas:resync --feed products
+bin/magento saas:resync --feed scopesCustomerGroup
+bin/magento saas:resync --feed scopesWebsite
+bin/magento saas:resync --feed prices
+bin/magento saas:resync --feed productoverrides
+bin/magento saas:resync --feed variants
+bin/magento saas:resync --feed categories
+bin/magento saas:resync --feed categoryPermissions
+```
 
-## Sincronización de datos de catálogo {#synchronize-catalog-data}
+Al ejecutar estos comandos, comienza la sincronización inicial de los datos del catálogo con los servicios SaaS.
 
-[!DNL Live Search] requiere datos de productos sincronizados para operaciones de búsqueda y datos de atributos sincronizados para configurar facetas. La sincronización inicial entre el catálogo de productos y el servicio de catálogo comienza cuando [!DNL Live Search] se conecta primero. Según el método de instalación y el tamaño del catálogo, los datos pueden tardar hasta 30 minutos en exportarse e indexarse mediante [!DNL Live Search]. La lista de datos sincronizados y compartidos con el servicio de catálogo se encuentra en el esquema, que se define en:
+>[!WARNING]
+>
+> Mientras los datos están indexados y sincronizados, las operaciones de búsqueda y exploración de categorías no están disponibles en la tienda. Según el tamaño del catálogo, el proceso puede tardar al menos una hora desde el momento en que se realiza `cron` se ejecuta para sincronizar los datos con los servicios SaaS.
 
-`vendor/magento/module-catalog-data-exporter/etc/et_schema.xml`
+### Monitorización del progreso de sincronización
 
-Utilice el [Tablero de administración de datos](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-dashboard) para monitorizar el estado de sincronización de los datos de producto transferidos desde la base de datos de Commerce a los servicios SaaS de Commerce.
+Puede ver los datos sincronizados y compartidos mediante el [Tablero de administración de datos](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-dashboard). Este tablero proporciona información valiosa sobre la disponibilidad de los datos de productos para su tienda, lo que garantiza que se puedan mostrar rápidamente a sus compradores.
 
-### Verificar exportación {#verify-export}
+![Tablero de administración de datos](assets/data-management-dashboard.png)
 
-Para comprobar que los datos del catálogo se han exportado desde la instancia de Adobe Commerce y que están sincronizados para [!DNL Live Search], busque entradas en las tablas siguientes:
+#### Futuras actualizaciones de productos
 
-* `catalog_data_exporter_products`
-* `catalog_data_exporter_product_attributes`
+Después de la sincronización inicial, las actualizaciones incrementales de productos pueden tardar hasta 15 minutos en estar disponibles para la búsqueda de tiendas. Para obtener más información, consulte [Indexación: actualizaciones de productos de streaming](indexing.md).
+
+## 4. Compruebe que los datos se han exportado {#verify-export}
+
+Para comprobar que los datos del catálogo se han exportado desde la instancia de Adobe Commerce y que están sincronizados para [!DNL Live Search], tiene un par de opciones:
+
+- Busque entradas en las tablas siguientes:
+
+   - `catalog_data_exporter_products`
+   - `catalog_data_exporter_product_attributes`
+
+- Utilice el [GraphQL playground](https://developer.adobe.com/commerce/services/graphql/live-search/) con la consulta predeterminada para comprobar lo siguiente:
+
+   - El recuento de productos devuelto está cerca de lo que se espera en la vista de la tienda.
+   - Se devuelven las facetas.
 
 Para obtener ayuda adicional, consulte [[!DNL Live Search] catálogo no sincronizado](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/live-search-catalog-data-sync) en la Base de conocimiento de asistencia.
 
-### Futuras actualizaciones de productos
+## 5. Configurar los datos
 
-Después de la sincronización inicial, las actualizaciones incrementales de productos pueden tardar hasta 15 minutos en estar disponibles para la búsqueda de tiendas. Para obtener más información, vaya a [Indexación: actualizaciones de productos de streaming](indexing.md).
+Configurar correctamente los datos del producto garantiza buenos resultados de búsqueda para los clientes. En esta sección, se habilitan los widgets de la lista de productos y se asignan categorías y atributos.
 
-## Prueba de la conexión {#test-connection}
+### Activar widgets de lista de productos
 
-En la tienda, compruebe lo siguiente:
+Al instalar [!DNL Live Search] 4.0.0+, Los widgets de lista de productos están habilitados de forma predeterminada. Cuando los widgets están habilitados, se utiliza un componente de interfaz de usuario diferente para la página de resultados de búsqueda y la página de exploración de categorías Lista de productos. Este componente de interfaz de usuario realiza llamadas directas a [API del servicio de catálogo](https://developer.adobe.com/commerce/services/graphql/catalog-service/product-search/), lo que se traduce en tiempos de respuesta más rápidos.
 
-* El [!UICONTROL Search] devuelve los resultados correctamente
-* La exploración de categorías devuelve los resultados correctamente
-* Las facetas están disponibles como filtros en las páginas de resultados de búsqueda
+Si tiene un [!DNL Live Search] versión anterior a la 4.0.0 o posterior, debe habilitar manualmente el widget de lista de productos.
 
-Si todo funciona correctamente, ¡enhorabuena! [!DNL Live Search] está instalado, conectado y listo para usar.
+1. Desde el *Administrador*, vaya a **[!UICONTROL Stores]** > _[!UICONTROL Settings]_>**[!UICONTROL Configuration]**.
+1. En **[!UICONTROL Live Search]**, seleccione **[!UICONTROL Storefront Features]**.
+1. Establecer **[!UICONTROL Enable Product Listing Widgets]** hasta `Yes`.
+
+   ![Activar widgets de lista de productos](assets/ls-admin-enable-widget.png)
+
+Cuando cambie esta configuración, el mensaje `Page cache is invalidated` aparece. Debe vaciar la caché del Magento para guardar el cambio.
+
+1. Acceda a la [Administración de caché](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/cache-management) haciendo una de las siguientes acciones:
+
+   - Haga clic en **[!UICONTROL Cache Management]** en el mensaje situado encima del espacio de trabajo.
+   - En el _Administrador_ barra lateral, vaya a **[!UICONTROL System]** > _[!UICONTROL Tools]_>**[!UICONTROL Cache Management]**.
+
+1. Seleccione el **Configuración** [!UICONTROL Cache Type] y haga clic en **[!UICONTROL Flush Magento Cache]**.
+
+   Los cambios en la tienda son inmediatos después de vaciar la caché.
+
+### Asignar categorías
+
+Productos devueltos en [!DNL Live Search] debe asignarse a un [categoría](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/categories/categories). En Luma, por ejemplo, los productos se clasifican en categorías como &quot;Hombres&quot;, &quot;Mujeres&quot; y &quot;Equipos&quot;. También se configuran subcategorías para &quot;Tops&quot;, &quot;Bottom&quot; y &quot;Watches&quot;. Esto permite una mejor granularidad al filtrar.
+
+### Campos que se pueden buscar y filtrar
+
+Se asignan los productos [atributos](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/product-attributes/product-attributes) que se puede utilizar para buscar y filtrar. Los atributos son elementos como &quot;Color&quot;, &quot;Tamaño&quot; o &quot;Tipo de material&quot;. Con estos atributos, los usuarios pueden buscar &quot;tapas verdes&quot;. Cada producto puede tener muchos atributos definidos en la variable [!DNL Commerce] Administrador.
+
+Cada uno de estos atributos se puede definir como [&quot;buscable&quot;](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/search/search) en el Administrador. Cuando se establece como &quot;en los que se pueden realizar búsquedas&quot;, esos atributos están disponibles para su búsqueda [!DNL Live Search].
+
+[Facetas](facets.md) son atributos de producto definidos en [!DNL Live Search] para poder filtrar. Cualquier atributo filtrable puede definirse como una faceta en [!DNL Live Search] pero hay límites a la cantidad de facetas que se pueden buscar al mismo tiempo.
+
+[Sinónimos](synonyms.md) son términos que puede definir para ayudar a guiar a los usuarios hacia el producto correcto. Los usuarios que buscan pantalones pueden escribir &quot;pantalones&quot; o &quot;pantalones&quot;. Puede establecer sinónimos para que estos términos de búsqueda lleven a los usuarios a los resultados de &quot;pantalones&quot;.
+
+## 6. Compruebe la conexión {#test-connection}
+
+Con los datos del catálogo ahora en SaaS, pruebe para asegurarse de que los datos del producto se devuelvan en los siguientes casos:
+
+- El [!UICONTROL Search] devuelve los resultados correctamente
+- La exploración de categorías devuelve los resultados correctamente
+- Las facetas están disponibles como filtros en las páginas de resultados de búsqueda
+
+Si todo funciona correctamente, [!DNL Live Search] está instalado, conectado y listo para usar.
 
 Si encuentra problemas en la tienda, consulte la `var/log/system.log` para errores de comunicación de API o errores en el lado de los servicios.
 
-Para permitir que Live Search pase por un cortafuegos, añada `commerce.adobe.io` a la lista de permitidos.
+Para permitir [!DNL Live Search] a través de un cortafuegos, añada `commerce.adobe.io` a la lista de permitidos.
 
-## Comprobación de la versión instalada
+## 7. Personalizar para tu tienda
+
+Ha instalado el [!DNL Live Search] extensión, sincronizados, validados y configurados de los datos. Ahora, debe asegurarse de que la variable [!DNL Live Search] Los widgets se ajustan al aspecto y la presentación de la tienda.
+
+Puede aplicar estilo a los widgets de ventana emergente y PLP definiendo reglas CSS personalizadas según sea necesario. Consulte [Estilo de elementos emergentes](storefront-popover-styling.md) y [Widget de página de lista de productos](plp-styling.md).
+
+Si desea ampliar la funcionalidad de los widgets, el código fuente de cada uno está disponible en un repositorio público.
+En esta situación, puede personalizar JavaScript para sus propias necesidades y, a continuación, alojar el código personalizado en su CDN. Este script personalizado se comunica con el [!DNL Live Search] y devuelve los resultados como de costumbre, lo que le permite controlar la funcionalidad del widget.
+
+- [Repositorio de widgets PLP](https://github.com/adobe/storefront-product-listing-page)
+- [Buscar repositorio de barra](https://github.com/adobe/storefront-search-as-you-type)
+
+## Actualizando [!DNL Live Search] {#update}
 
 Antes de actualizar Live Search, ejecute lo siguiente desde la línea de comandos para comprobar la versión de Live Search instalada:
 
 ```bash
 composer show magento/module-live-search | grep version
 ```
-
-## Actualizando [!DNL Live Search] {#update}
 
 Para actualizar [!DNL Live Search], ejecute lo siguiente desde la línea de comandos:
 
@@ -267,7 +282,7 @@ Para actualizar a una versión principal como de 3.1.1 a 4.0.0, edite la raíz d
     }
    ```
 
-1. **Guardar** `composer.json`. A continuación, ejecute lo siguiente desde la línea de comandos:
+1. Guardar `composer.json`. A continuación, ejecute lo siguiente desde la línea de comandos:
 
    ```bash
    composer update magento/live-search --with-dependencies
@@ -279,6 +294,8 @@ Para desinstalar [!DNL Live Search], consulte [Desinstalación de módulos](http
 
 ## [!DNL Live Search] paquetes {#packages}
 
+El [!DNL Live Search] La extensión de consta de los siguientes paquetes:
+
 | Paquete | Descripción |
 |--- |--- |
 | `module-live-search` | Permite a los comerciantes definir la configuración de búsqueda para facetas, sinónimos, reglas de consulta, etc., y proporciona acceso a un área de reproducción de GraphQL de solo lectura para probar consultas desde *Administrador*. |
@@ -289,19 +306,155 @@ Para desinstalar [!DNL Live Search], consulte [Desinstalación de módulos](http
 
 Lo siguiente [!DNL Live Search] Las dependencias son capturadas por [!DNL Composer].
 
-* `magento/module-saas-catalog`
-* `magento/module-saas-category`
-* `magento/module-saas-category-permissions`
-* `magento/module-saas-product-override`
-* `magento/module-saas-product-variant`
-* `magento/module-saas-price`
-* `magento/module-saas-scopes`
-* `magento/module-bundle-product-data-exporter`
-* `magento/module-catalog-inventory-data-exporter`
-* `magento/module-catalog-url-rewrite-data-exporter`
-* `magento/module-configurable-product-data-exporter`
-* `magento/module-parent-product-data-exporter`
-* `magento/module-gift-card-product-data-exporter`
-* `magento/module-bundle-product-override-data-exporter`
-* `data-services`
-* `services-id`
+- `magento/module-saas-catalog`
+- `magento/module-saas-category`
+- `magento/module-saas-category-permissions`
+- `magento/module-saas-product-override`
+- `magento/module-saas-product-variant`
+- `magento/module-saas-price`
+- `magento/module-saas-scopes`
+- `magento/module-bundle-product-data-exporter`
+- `magento/module-catalog-inventory-data-exporter`
+- `magento/module-catalog-url-rewrite-data-exporter`
+- `magento/module-configurable-product-data-exporter`
+- `magento/module-parent-product-data-exporter`
+- `magento/module-gift-card-product-data-exporter`
+- `magento/module-bundle-product-override-data-exporter`
+- `data-services`
+- `services-id`
+
+## Conceptos avanzados
+
+Las secciones siguientes proporcionan temas más avanzados al utilizar [!DNL Live Search] y [!DNL Catalog Service].
+
+### Extremo
+
+[!DNL Live Search] se comunica a través del punto final en `https://catalog-service.adobe.io/graphql`.
+
+Como [!DNL Live Search] no tiene acceso a la base de datos de productos completa, [!DNL Live Search] GraphQL y Commerce Core GraphQL no tendrán paridad completa.
+
+Se recomienda llamar a las API de SaaS directamente, específicamente al extremo del servicio de catálogo.
+
+- Obtenga rendimiento y reduzca la carga del procesador omitiendo el proceso de Graphql/base de datos de Commerce
+- Aproveche las ventajas de [!DNL Catalog Service] federación a la que llamar [!DNL Live Search], [!DNL Catalog Service], y [!DNL Product Recommendations] desde un único punto final.
+
+En algunos casos de uso, quizá sea mejor llamar a [!DNL Catalog Service] para obtener detalles del producto y casos similares. Consulte [refineProduct](https://developer.adobe.com/commerce/services/graphql/catalog-service/refine-product/) para obtener más información.
+
+Si tiene una implementación personalizada sin encabezado, consulte la [!DNL Live Search] implementaciones de referencia:
+
+- [Widget PLP](https://github.com/adobe/storefront-product-listing-page)
+- [Campo Live Search](https://github.com/adobe/storefront-search-as-you-type)
+
+AEM CIF Si no utiliza los componentes predeterminados, como el adaptador de búsqueda o los widgets en Luma, o los widgets de la, los eventos (datos del flujo de navegación que alimentan a Adobe Sensei para las métricas de rendimiento y comercialización inteligentes) no funcionarán de forma predeterminada y requieren desarrollo personalizado para implementar eventos sin encabezado.
+
+La versión más reciente de [!DNL Live Search] ya utiliza [!DNL Catalog Service].
+
+### Compatibilidad de idiomas
+
+[!DNL Live Search] los widgets admiten los siguientes idiomas:
+
+|  |  |  |  |
+|--- |--- |--- |--- |
+| Idioma | Región | Código de idioma | Configuración regional del Magento |
+| Búlgaro | Bulgaria | bg_BG | bg_BG |
+| Catalán | España | ca_ES | ca_ES |
+| Checo | República Checa | cs_CZ | cs_CZ |
+| Danés | Dinamarca | da_DK | da_DK |
+| Alemán | Alemania | de_DE | de_DE |
+| Griego | Grecia | el_GR | el_GR |
+| Inglés | Reino Unido | en_GB | en_GB |
+| Inglés | Estados Unidos | en_US | en_US |
+| Español | España | es_ES | es_ES |
+| Estonio | Estonia | et_EE | et_EE |
+| Vasco | España | eu_ES | eu_ES |
+| persa | Irán | fa_IR | fa_IR |
+| Finés | Finlandia | fi_FI | fi_FI |
+| francés | Francia | fr_FR | fr_FR |
+| Gallego | España | gl_ES | gl_ES |
+| Hindi | India | hi_IN | hi_IN |
+| Húngaro | Hungría | hu_HU | hu_HU |
+| Indonesio | Indonesia | id_ID | id_ID |
+| Italiano | Italia | it_IT | it_IT |
+| Coreano | Corea del Sur | ko_KR | ko_KR |
+| Lituano | Lituania | lt_LT | lt_LT |
+| Letón | Letonia | lv_LV | lv_LV |
+| Noruego | Noruega Bokmal | nb_NO | nb_NO |
+| Neerlandés | Países Bajos | nl_NL | nl_NL |
+| Polaco | Polonia | pl_PL | pl_PL |
+| Portugués | Brasil | pt_BR | pt_BR |
+| Portugués | Portugal | pt_PT | pt_PT |
+| Rumano | Rumanía | ro_RO | ro_RO |
+| Ruso | Rusia | ru_RU | ru_RU |
+| Sueco | Suecia | sv_SE | sv_SE |
+| Tailandés | Tailandia | th_TH | th_TH |
+| Turco | Turquía | tr_TR | tr_TR |
+| Chino | China | zh_CN | zh_Hans_CN |
+| Chino | Taiwán | zh_TW | zh_Hant_TW |
+
+Si el widget detecta que la configuración de idioma del administrador de Commerce (_Tiendas_ > Configuración > _Configuración_ > _General_ > Opciones de país) coincide con un idioma admitido; el valor predeterminado es ese idioma. De lo contrario, los widgets se muestran en inglés de forma predeterminada.
+
+Los administradores también pueden establecer el idioma de [índice de búsqueda](settings.md#language), para garantizar mejores resultados de búsqueda.
+
+### Repositorio de código Widget
+
+El widget de página de lista de productos y el widget de campo de Live Search están disponibles para su descarga en el repositorio de github.
+
+Esto permite a los desarrolladores personalizar completamente la funcionalidad y el estilo. Estos usuarios alojan el código ellos mismos sin dejar de aprovechar el [!DNL Live Search] servicio.
+
+- [Widget PLP](https://github.com/adobe/storefront-product-listing-page)
+- [Barra de búsqueda](https://github.com/adobe/storefront-search-as-you-type)
+
+### Inventory management
+
+[!DNL Live Search] admite [Inventory management](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/introduction) en Commerce (anteriormente conocido como Inventario de varias fuentes o MSI). Para habilitar la compatibilidad total, debe [actualizar](install.md#update) el módulo de dependencia `commerce-data-export` a la versión 102.2.0+.
+
+[!DNL Live Search] devuelve un valor booleano que indica si un producto está disponible en Inventory management, pero no contiene información sobre el origen que tiene las existencias.
+
+### Indexador de precios
+
+Los clientes de Live Search pueden usar el nuevo [Indexador de precios SaaS](../price-index/price-indexing.md), que ofrece actualizaciones de precios y tiempos de sincronización más rápidos.
+
+### Tarifa soportada
+
+Los widgets de Live Search admiten la mayoría de los tipos de precio admitidos por Adobe Commerce, pero no todos.
+
+Actualmente, se admiten precios básicos. Los precios avanzados que no son compatibles son:
+
+- Coste
+- Precio Mínimo Anunciado
+
+Observe lo siguiente [API Mesh](../catalog-service/mesh.md) para cálculos de precios más complejos.
+
+El formato de precio admite la configuración regional en la instancia de Commerce: *Tiendas* > Configuración > *Configuración* > General > *General* > Opciones locales > Configuración regional.
+
+### soporte de PWA
+
+[!DNL Live Search] funciona con PWA Studio, pero los usuarios pueden ver pequeñas diferencias en comparación con otras implementaciones de Commerce. La funcionalidad básica, como la página de búsqueda y la lista de productos, funciona en Venia, pero es posible que algunas permutaciones de Graphql no funcionen correctamente. También puede haber diferencias de rendimiento.
+
+- La implementación PWA actual de [!DNL Live Search] requiere más tiempo de procesamiento para devolver resultados de búsqueda que [!DNL Live Search] con la tienda nativa de Commerce.
+- [!DNL Live Search] el PWA in no admite [gestión de eventos](https://developer.adobe.com/commerce/services/shared-services/storefront-events/sdk/). Como resultado, los informes de búsqueda y la comercialización inteligente funcionarán.
+- Filtrado directamente en `description`, `name`, `short_description` no es compatible con GraphQL cuando se utiliza con [PWA](https://developer.adobe.com/commerce/pwa-studio/), pero se devuelven con un filtro más general.
+
+Para usar [!DNL Live Search] con PWA Studio, los integradores también deben:
+
+1. Instalar [livessearch-storefront-utils](https://www.npmjs.com/package/@magento/ds-livesearch-storefront-utils).
+1. Configure las variables `environmentId` en el `storeDetails` objeto.
+
+   ```javascript
+   const storeDetails: StoreDetailsProps = {
+       environmentId: <Storefront_ID>,
+       websiteCode: "base",
+       storeCode: "main_website_store",
+       storeViewCode: "default",
+       searchUnitId: searchUnitId,
+       config: {
+           minQueryLength: 5,
+           pageSize: 8,
+           currencySymbol: "$",
+           },
+       };
+   ```
+
+### Cookies
+
+[!DNL Live Search] recopila datos de interacción del usuario como parte de su funcionalidad base y se utilizan cookies para almacenar estos datos. Al recopilar cualquier información de usuario, el usuario debe aceptar almacenar cookies. [!DNL Live Search] y [!DNL Product Recommendations] compartir el flujo de datos y, por lo tanto, el mismo mecanismo de cookies. Obtenga más información al respecto en [Controlar restricciones de cookies](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/product-recommendations/developer/setting-cookie).
