@@ -4,9 +4,9 @@ description: Descubra qué datos captura cada evento de back office.
 role: Admin, Developer
 feature: Personalization, Integration, Eventing
 exl-id: a5a4f04b-89ac-4020-95ce-984f9f2d8385
-source-git-commit: 0ab1b4b23d25bee722b35fbc8b9717ad6d1c299e
+source-git-commit: 813be62b366b1c76a2b909079cfba31ef8000617
 workflow-type: tm+mt
-source-wordcount: '3571'
+source-wordcount: '3611'
 ht-degree: 0%
 
 ---
@@ -404,7 +404,15 @@ En la tabla siguiente se describen los datos recopilados para este evento.
 
 ## Eventos de perfil de cliente
 
+>[!IMPORTANT]
+>
+>Esta función está en versión beta.
+
 Los eventos de perfil capturados del lado del servidor incluyen información de la cuenta, como `accountCreated`, `accountUpdated`, y `accountDeleted`. Estos datos se utilizan para rellenar los detalles clave del cliente que se necesitan para definir mejor los segmentos o ejecutar campañas de marketing, como enviar ofertas de descuento de suscripción, confirmaciones de cambio de cuenta, etc. Hay eventos de perfil similares capturados del [escaparate](events.md#customer-profile-events).
+
+>[!NOTE]
+>
+>Cada evento de perfil del cliente también incluye el [`identityMap`](https://experienceleague.adobe.com/docs/experience-platform/xdm/field-groups/profile/identitymap.html) , que incluye el ID de cliente de Commerce generado por el sistema como identificador principal del perfil y un ID de correo electrónico que se utiliza como identificador secundario.
 
 ### accountCreated
 
