@@ -4,9 +4,9 @@ description: Descubra qué datos captura un registro de perfil.
 role: Admin, Developer
 feature: Personalization, Integration, Eventing
 exl-id: bd04730d-e37a-48a9-822b-0f4aa68a4651
-source-git-commit: 89607d22ba8e69e0c98fce97e041022e33d01c07
+source-git-commit: c02496fb3f88f4781b79c5e477d5508c3e3d5224
 workflow-type: tm+mt
-source-wordcount: '418'
+source-wordcount: '473'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,7 @@ A continuación se describen los datos capturados para un registro de perfil.
 
 | Campo | Descripción |
 |---|---|
-| `channel` | Contiene información sobre el origen de los datos. Ambos `_id` y `_type` contain [valores de espacio de nombres](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/namespaces.html). |
+| `channel` | Contiene información sobre el origen de los datos. Ambos `_id` y `_type` contain [valores de espacio de nombres](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/schema/namespaces). |
 | `channel._id` | El identificador único del canal, como `"https://ns.adobe.com/xdm/channels/web"`. |
 | `channel._type` | Identifica el origen de los datos del canal, como `"https://ns.adobe.com/xdm/channel-types/web"`. |
 | `person` | Contiene información sobre el cliente. |
@@ -41,21 +41,25 @@ A continuación se describen los datos capturados para un registro de perfil.
 | `billingAddress.city` | El nombre de la ciudad. |
 | `billingAddress.state` | El nombre del estado. Este es un campo de forma libre. |
 | `billingAddress.country` | El nombre del territorio administrado por el gobierno. Distinto a `xdm:countryCode`Sin embargo, este es un campo de forma libre que puede tener el nombre del país en cualquier idioma. |
+| `billingAddress.primary` | Indica si esta es la dirección de facturación principal. El valor siempre es `False`. |
 | `billingAddressPhone` | El número de teléfono asociado con la dirección de facturación. |
 | `billingAddressPhone.number` | El número de teléfono. Tenga en cuenta que el número de teléfono es una cadena y puede incluir caracteres clave como corchetes `()`, guiones `-`o caracteres para indicar identificadores de submarcado como extensiones `x` por ejemplo,  `1-353(0)18391111` o `+613 9403600x1234`. |
+| `billingAddressPhone.primary` | Indica si este es el número de teléfono principal de la dirección de facturación. El valor siempre es `False`. |
 | `shippingAddress` | La dirección postal de envío. |
 | `shippingAddress.street1` | Información principal de la dirección postal, número de piso, número de calle y nombre de la calle. |
 | `shippingAddress.street2` | Segunda línea para información de dirección (opcional) |
 | `shippingAddress.city` | El nombre de la ciudad. |
 | `shippingAddress.state` | El nombre del estado. Este es un campo de forma libre. |
 | `shippingAddress.country` | El nombre del territorio administrado por el gobierno. Distinto a `xdm:countryCode`Sin embargo, este es un campo de forma libre que puede tener el nombre del país en cualquier idioma. |
-| `shippingAddressPhone` | Número de teléfono asociado a la dirección de envío. |
+| `shippingAddress.primary` | Indica si esta es la dirección de envío principal. El valor siempre es `False`. |
+| `shippingAddressPhone` | El número de teléfono asociado con la dirección de envío. |
 | `shippingAddressPhone.number` | El número de teléfono. Tenga en cuenta que el número de teléfono es una cadena y puede incluir caracteres clave como corchetes `()`, guiones `-`o caracteres para indicar identificadores de submarcado como extensiones `x` por ejemplo,  `1-353(0)18391111` o `+613 9403600x1234`. |
+| `shippingAddressPhone.primary` | Indica si este es el número de teléfono principal de la dirección de envío. El valor siempre es `False`. |
 | `userAccount` | Indica detalles de fidelidad, preferencias, procesos de inicio de sesión y otras preferencias de la cuenta. |
 | `userAccount.startDate` | La fecha en la que se creó el perfil por primera vez. |
 
 >[!NOTE]
 >
->Cada registro de perfil también incluye el [`identityMap`](https://experienceleague.adobe.com/docs/experience-platform/xdm/field-groups/profile/identitymap.html) , que incluye el ID de cliente de Commerce generado por el sistema como identificador principal del perfil y un ID de correo electrónico que se utiliza como identificador secundario.
+>Cada registro de perfil también incluye el [`identityMap`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/field-groups/profile/identitymap) , que incluye el ID de cliente de Commerce generado por el sistema como identificador principal del perfil y un ID de correo electrónico que se utiliza como identificador secundario.
 
 Obtenga información sobre cómo [crear un esquema específico de registro de perfil](profile-data.md) que pueden introducir los datos de sus registros de perfil.
