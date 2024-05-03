@@ -4,9 +4,9 @@ description: Obtenga información sobre cómo integrar la instancia de Adobe Com
 exl-id: 28027a83-449b-4b96-b926-a7bfbfd883d8
 feature: Services, Saas
 role: Admin, User
-source-git-commit: e5d9576f0c326dd3a97eeaf9831db0d89b85caff
+source-git-commit: b6775b196ca36448f50a6fed283ef0626e03d286
 workflow-type: tm+mt
-source-wordcount: '875'
+source-wordcount: '907'
 ht-degree: 0%
 
 ---
@@ -39,7 +39,11 @@ En las secciones siguientes se analiza cada uno de estos elementos con más deta
 
 ## Credenciales {#apikey}
 
-Las claves de API de producción y de zona protegida se generan a partir de la variable [!DNL Commerce] cuenta del titular de la licencia, que se identifica mediante una [!DNL Commerce] ID (MageID). Para pasar la validación de derechos para servicios como [!DNL Product Recommendations] o [!DNL Live Search], el titular de la licencia de la organización del comerciante puede generar el conjunto de claves API siempre y cuando la cuenta esté al día. Las claves se pueden compartir, según sea necesario, con el integrador de sistemas o el equipo de desarrollo que gestiona los proyectos y entornos en nombre del titular de la licencia. Además, los integradores de soluciones también pueden utilizar [!DNL Commerce Services]. Si es un integrador de soluciones, el firmante de la variable [!DNL Commerce] el contrato de socio debe generar las claves API.
+Las claves de API de producción y de zona protegida se generan a partir de la variable [!DNL Commerce] cuenta de la [propietario de licencia](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/start/onboarding) que se identifica con un único [!DNL Commerce] ID (MageID). Para pasar la validación de derechos para servicios como [!DNL Product Recommendations] o [!DNL Live Search], el propietario de la licencia de la organización del comerciante puede generar el conjunto de claves API siempre y cuando la cuenta esté al día. Las claves se pueden compartir, según sea necesario, con el integrador de sistemas o el equipo de desarrollo que gestiona los proyectos y entornos en nombre del titular de la licencia. Además, los integradores de soluciones también pueden utilizar [!DNL Commerce Services]. Si es un integrador de soluciones, el firmante de la variable [!DNL Commerce] el contrato de socio debe generar las claves API.
+
+>[!NOTE]
+>
+>El propietario de la licencia suele ser el contacto principal de la cuenta de Adobe Commerce y no siempre es el mismo que el propietario del proyecto de Adobe Commerce en el proyecto de infraestructura en la nube.
 
 ### Generar las claves API de producción y de zona protegida {#genapikey}
 
