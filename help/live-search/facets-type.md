@@ -2,9 +2,9 @@
 title: "Tipos de facetas"
 description: '"[!DNL Live Search] las facetas son dinámicas y aparecen en la lista Filtros cuando son relevantes".'
 exl-id: 49fb7609-64b3-4ae8-928d-54c99032d919
-source-git-commit: 995f528abc0011c6ae7c4c524982c301072ec2eb
+source-git-commit: f96f94a16e1926b7dd2f1ee94f124ac0c823a9e0
 workflow-type: tm+mt
-source-wordcount: '389'
+source-wordcount: '374'
 ht-degree: 0%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 0%
 * Facetas ancladas: las facetas más utilizadas se pueden anclar al principio de la lista. Las facetas restantes se enumeran en *Tipo de orden* orden después de las facetas ancladas.
 * Facetas dinámicas: atributos de producto que [Adobe Sensei](https://www.adobe.com/sensei.html) busca lo más relevante para un conjunto de productos y una consulta. El cálculo tiene en cuenta los metadatos de atributos de todo el catálogo y determina, en el momento de la consulta, las facetas más relevantes para la misma.
 * Facetas populares: atributos de producto que están presentes con mayor frecuencia en los resultados de búsqueda.
-* Facetas de precio - Devolver productos por rango de precios. Puede especificar el número de selecciones y el intervalo de rango de precios en la [*Configuración*](settings.md) pestaña.
+* Facetas de precio - Devolver productos por rango de precios. Puede especificar el número de selecciones y el intervalo de rango de precios en la [*Configuración*](settings.md) workspace.
 
 En el momento de la consulta, [!DNL Live Search] genera los resultados de búsqueda en grupos de facetas dinámicas y populares.
 

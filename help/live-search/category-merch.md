@@ -3,7 +3,7 @@ title: Comercialización por categorías
 description: Uso [!DNL Live Search] Comercialización por categorías para disfrutar de una experiencia de compra más rápida.
 gourl: ls_catalog_merchandising
 exl-id: 24f159c1-b175-47c1-aca1-8bada118b4b4
-source-git-commit: 109a4e79a7faac62a4d7c48cadcada1ec28f3c94
+source-git-commit: 4978bdb5549f5df911863a23fdfbfc9ab9ad05df
 workflow-type: tm+mt
 source-wordcount: '1053'
 ht-degree: 0%
@@ -22,7 +22,7 @@ Se accede a la funcionalidad en el Administrador en **Marketing** > SEO y búsqu
 
 >[!NOTE]
 >
->La comercialización de categorías está disponible con [!DNL Live Search] [3.0.0 o superior](release-notes.md). Si ve la pestaña Comercialización por categorías pero no está rellenada con datos, actualice el [!DNL Live Search] módulo.
+>La comercialización de categorías está disponible con [!DNL Live Search] [3.0.0 o superior](release-notes.md). Si ve el área de trabajo de comercialización de categorías pero no está rellenada con datos, actualice la [!DNL Live Search] módulo.
 
 ![Comercialización por categorías](assets/category_workspace.png)
 

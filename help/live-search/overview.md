@@ -3,16 +3,16 @@ title: Qué es [!DNL Live Search]?
 description: '"[!DNL Live Search] de Adobe Commerce ofrece una experiencia de búsqueda rápida, relevante e intuitiva".'
 exl-id: aca0ef19-ead1-4c79-90c3-db5ec48cb3c1
 recommendations: noCatalog
-source-git-commit: aba552808ea7af540f64f00a2ae4aeaf2b9cc52e
+source-git-commit: 4978bdb5549f5df911863a23fdfbfc9ab9ad05df
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '667'
 ht-degree: 0%
 
 ---
 
 # Qué es [!DNL Live Search]?
 
-[!DNL Live Search] es una extensión de que sustituye a las funciones de búsqueda estándar de Adobe Commerce. El [!DNL Live Search] La extensión se instala con Composer y conecta la [!DNL Commerce] instalación en el [!DNL Live Search] [servicio](../landing/saas.md). Cuando está configurado, el campo de texto de búsqueda predeterminado se sustituye por el [!DNL Live Search] campo de texto. [!DNL Live Search] también instala el widget Página de lista de productos (PLP), que proporciona capacidades de filtrado sólidas al examinar los resultados de búsqueda.
+[!DNL Live Search] es una función que reemplaza las funciones de búsqueda estándar de Adobe Commerce. El [!DNL Live Search] se instala con Composer y conecta la [!DNL Commerce] almacenar en el [Conector de Commerce Services](../landing/saas.md). Cuando está configurado, el campo de texto de búsqueda predeterminado se sustituye por el [!DNL Live Search] campo de texto. [!DNL Live Search] también instala el widget Página de lista de productos (PLP), que proporciona capacidades de filtrado sólidas al examinar los resultados de búsqueda.
 
 Con [!DNL Live Search], puede:
 
@@ -75,7 +75,6 @@ Comercialización [reglas](rules.md) dé forma a la experiencia de compra con in
 
 - [!DNL Live Search] [widget emergente](storefront-popover.md) es el cuadro que se abre debajo del campo de búsqueda que contiene los resultados de la búsqueda.
 - [Widget de página de lista de productos](plp-styling.md) proporciona una página de lista de productos en la que se puede buscar con soporte de facetas y sinónimos.
-- [[!DNL Live Search] Administrador](workspace.md) es donde se configuran las reglas, las facetas y los sinónimos.
 
 ## [!DNL Live Search] workspace
 

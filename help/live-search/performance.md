@@ -1,17 +1,17 @@
 ---
-title: "Panel de rendimiento"
-description: '"La [!DNL Live Search] El panel de rendimiento proporciona una perspectiva de los términos de búsqueda que utilizan los compradores".'
+title: "Rendimiento"
+description: '"La [!DNL Live Search] El espacio de trabajo de rendimiento proporciona una perspectiva de los términos de búsqueda que utilizan los compradores".'
 exl-id: ee2053fc-98c5-4d2c-9345-4d1f9a3180fb
-source-git-commit: 289ac6ac464955f18f3a2448099ad459e6264941
+source-git-commit: 4978bdb5549f5df911863a23fdfbfc9ab9ad05df
 workflow-type: tm+mt
-source-wordcount: '481'
+source-wordcount: '479'
 ht-degree: 0%
 
 ---
 
-# Panel de rendimiento
+# Rendimiento
 
-El [!DNL Live Search] El panel de rendimiento proporciona una perspectiva de los términos de búsqueda que utilizan los compradores. La información se puede utilizar para identificar tendencias, aumentar los clics y mejorar la tasa de conversión. El panel Rendimiento proporciona una instantánea de las métricas de búsqueda para un intervalo de fechas específico e incluye los siguientes informes:
+El *Rendimiento* workspace proporciona una perspectiva de los términos de búsqueda que utilizan los compradores. La información se puede utilizar para identificar tendencias, aumentar los clics y mejorar la tasa de conversión. El espacio de trabajo Rendimiento proporciona una instantánea de las métricas de búsqueda para un intervalo de fechas específico e incluye los siguientes informes:
 
 * Búsquedas únicas
 * Cero resultados
@@ -30,7 +30,7 @@ También puede consultar la [Tablero de administración de datos](https://experi
 
 >[!NOTE]
 >
->El panel de rendimiento se actualiza cada 12 horas.
+>El espacio de trabajo de rendimiento se actualiza cada 12 horas.
 
 ## Descripciones de campos
 
