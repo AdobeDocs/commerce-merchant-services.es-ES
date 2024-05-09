@@ -6,16 +6,16 @@ seo-description: Access the product documentation for hosted services that help 
 breadcrumb-title: Documentación
 exl-id: b3502f96-0809-442c-9208-abb3bc6e18ec
 recommendations: noCatalog
-source-git-commit: 9558367bb80e04af1d55be63fcf4f7382e662436
+source-git-commit: 6368f95bc56cc0bd82f6bfb1d7ba47fa83bd85cb
 workflow-type: tm+mt
-source-wordcount: '454'
+source-wordcount: '371'
 ht-degree: 0%
 
 ---
 
 # Guías de servicios de Adobe Commerce
 
-Adobe proporciona una colección de servicios de Commerce, integration y data para ayudar a los comerciantes a soportar los componentes clave de su negocio.
+Adobe proporciona una colección de servicios de Commerce, integración y datos para ayudar a los comerciantes a dar soporte a componentes clave de su negocio.
 
 >[!BEGINSHADEBOX &quot;Información de versión&quot;]
 
@@ -56,13 +56,6 @@ Consulte [novedades de nuestra documentación de](whats-new.md) o [notas de la v
   </td>
     </tr>
 <tr>
-  <td valign="top" width="200px">
-    <img alt="Cierre de compra rápido" src="assets/quick-checkout.png" width="170px"/></td>
-   <td valign="top"><a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/overview.html"><strong>Cierre de compra rápido</strong></a>  <br><em>(Disponible para Magento Open Source)</em>
-    <div>Convierta a los compradores únicos en titulares de cuentas fieles al ofrecer una experiencia de compra rápida e intuitiva.</div>
-  </td>
-    </tr>
-<tr>
     <td valign="top" width="200px">
        <img alt="Satisfacción de tienda" src="assets/store-fulfillment-landing-graphic.png" width="170px"/></td>
    <td valign="top"><a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/store-fulfillment/guide-overview.html"> <strong>Satisfacción de tienda</strong></a></br>
@@ -92,7 +85,7 @@ Consulte [novedades de nuestra documentación de](whats-new.md) o [notas de la v
   <td valign="top" width="200">
       <img alt="[!DNL Data Connection]" src="assets/live-search.png" width="170px"/></td>
    <td valign="top"><a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/data-connection/overview.html"><strong>[!DNL Data Connection]</strong></a>  
-    <div>Aproveche la conexión entre Adobe Commerce y Adobe Experience Platform Edge para utilizar los datos de comercio para otros productos de Adobe Experience Cloud, como Adobe Analytics y Adobe Target.</div>
+    <div>Aproveche la conexión entre Adobe Commerce y Adobe Experience Platform Edge para utilizar los datos de Commerce para otros productos de Adobe Experience Cloud, como Adobe Analytics y Adobe Target.</div>
   </td>
    </tr>
 <tr>
@@ -100,7 +93,7 @@ Consulte [novedades de nuestra documentación de](whats-new.md) o [notas de la v
        <img alt="[!UICONTROL Services Connector]" src="assets/product-recs.png" width="170px"/></td>
    <td valign="top">
    <a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/integration-services/saas.html"><strong>[!DNL Services Connector]</strong></a>
-    <div>Commerce Services Connector proporciona la integración para su instancia de Adobe Commerce o Magento Open Source mediante una clave de API y una clave privada. Para los servicios de datos (solo Adobe Commerce), también puede especificar el espacio de datos en la configuración.</div>
+    <div>Commerce Services Connector proporciona la integración para la instancia de Adobe Commerce o de Magento Open Source mediante una clave de API y una clave privada. Para los servicios de datos (solo Adobe Commerce), también puede especificar el espacio de datos en la configuración.</div>
   </td>
    </tr>
 </table>
