@@ -3,9 +3,9 @@ title: '[!DNL Product Recommendations] Notas de la versión'
 description: La información de la versión más reciente de [!DNL Product Recommendations] de Adobe Commerce.
 exl-id: 1758e688-d26f-45e7-818c-d4726338a6c3
 feature: Services, Recommendations, Release Notes
-source-git-commit: c3940c399c0639fe53e23cea96b347c7827ecb42
+source-git-commit: 316059288ace6ebaf3748a294d8fe7351fc63bbd
 workflow-type: tm+mt
-source-wordcount: '1276'
+source-wordcount: '1315'
 ht-degree: 0%
 
 ---
@@ -45,6 +45,16 @@ _25 de abril de 2023_
 
 ## Versión principal actual
 
+### 6.0.2 de magento/product-recommendations
+
+_9 de mayo de 2024_
+
+[!BADGE Admitido]{type=Informative tooltip="Admitido"}
+
+![Fix](../assets/fix.svg) Se ha corregido un problema que causaba que al hacer clic en **[!DNL Add to Cart]** Un botón de un producto simple dentro de una unidad de Product Recommendations redirigía al comprador a la página de inicio en lugar de permanecer en la página actual.
+
+### Versiones anteriores
+
 ### 6.0.1 de magento/product-recommendations
 
 _19 de marzo de 2024_
@@ -52,8 +62,6 @@ _19 de marzo de 2024_
 [!BADGE Admitido]{type=Informative tooltip="Admitido"}
 
 ![Nuevo](../assets/new.svg) Se ha agregado compatibilidad con PHP 8.3.
-
-### Versiones anteriores
 
 ### 6.0.0 de magento/product-recommendations
 
