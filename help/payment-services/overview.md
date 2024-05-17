@@ -14,7 +14,7 @@ ht-degree: 0%
 
 # Introducción a [!DNL Payment Services]
 
-[!DNL Payment Services] para [!DNL Adobe Commerce] y [!DNL Magento Open Source] es su solución de autoservicio llave en mano, que incluye pruebas de zona protegida y una configuración sencilla para proporcionar un procesamiento de pagos sólido y seguro para sus sitios web de Commerce.
+[!DNL Payment Services] para [!DNL Adobe Commerce] y [!DNL Magento Open Source] es su solución de autoservicio llave en mano, que incluye pruebas de zonas protegidas y una configuración sencilla, para proporcionar un procesamiento de pagos sólido y seguro para sus sitios web de Commerce.
 
 ![[!DNL Payment Services] vista de administración de extensiones](assets/admin-view.png){width="300" zoomable="yes"}
 
