@@ -4,7 +4,7 @@ description: Obtenga información sobre cómo integrar la instancia de Adobe Com
 exl-id: 28027a83-449b-4b96-b926-a7bfbfd883d8
 feature: Services, Saas
 role: Admin, User
-source-git-commit: b6775b196ca36448f50a6fed283ef0626e03d286
+source-git-commit: 5d3a89b2ef06b2c67ec715ce4f31f22249b336e0
 workflow-type: tm+mt
 source-wordcount: '907'
 ht-degree: 0%
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # [!DNL Commerce Services Connector]
 
-Algunas funciones de Adobe Commerce y Magento Open Source utilizan [!DNL Commerce Services]  e implementado como SaaS (software como servicio). Para utilizar estos servicios, debe conectar su [!DNL Commerce] usando las claves de API de producción y de entorno limitado, y especifique el espacio de datos en la variable [configuración](https://experienceleague.adobe.com/docs/commerce-admin/config/services/saas.html). Solo debe configurar esto una vez.
+Algunas funciones de Adobe Commerce y Magento Open Source utilizan [!DNL Commerce Services] e implementado como SaaS (software como servicio). Para utilizar estos servicios, debe conectar su [!DNL Commerce] usando las claves de API de producción y de entorno limitado, y especifique el espacio de datos en la variable [configuración](https://experienceleague.adobe.com/docs/commerce-admin/config/services/saas.html). Solo debe configurar esto una vez.
 
 ## Servicios disponibles {#availableservices}
 

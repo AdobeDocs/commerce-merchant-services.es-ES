@@ -3,9 +3,9 @@ title: Conectar su instancia
 description: Conecte la instancia de Commerce con una clave de API y una clave privada, y especifique el espacio de datos en la configuración.
 exl-id: 5038fd31-bac5-419e-a172-66919a9b5272
 feature: Payments, Checkout, Configuration, Saas
-source-git-commit: 5c4fe370507e4154d4495d4c09e2ff8705e53191
+source-git-commit: 5d3a89b2ef06b2c67ec715ce4f31f22249b336e0
 workflow-type: tm+mt
-source-wordcount: '608'
+source-wordcount: '636'
 ht-degree: 0%
 
 ---
@@ -36,7 +36,7 @@ Para consumir un servicio SaaS de Commerce, debe utilizar las claves de API de l
 
 Una vez creada, siempre encontrará una clave de API pública en el panel de Mi cuenta. Se puede copiar o eliminar según sea necesario. La clave de API privada se vuelve visible al crear una clave de API pública para simulación de pruebas o producción; solo está disponible para copiarla o guardarla en el cuadro de diálogo siguiente y no se puede acceder a ella posteriormente.
 
-Un par de claves API determinado es válido para todos los servicios de Commerce en un entorno, por lo que si ya tiene Commerce Services configurado para su instancia, su par de claves API ya estará presente en el conector de Commerce Services.
+Un par de claves API determinado es válido para todos los servicios de Commerce en un entorno, por lo que si ya tiene los servicios de Commerce configurados para su instancia, su par de claves API ya estará presente en el conector de servicios de Commerce.
 
 Si se pierde la clave de API, se debe configurar un nuevo par de claves de API [generado](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/get-started/connect.html#generate-an-api-key-and-private-key) y [aplicado](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/get-started/connect.html#configure-saas-project) Vaya a la configuración de Commerce Services Connector en Admin. Si se configuran claves incorrectas o no existe ninguna en la configuración, aparecerá un cuadro de diálogo de error de verificación de cuenta en Payment Services que le notificará que la cuenta no se ha verificado.
 
@@ -70,3 +70,10 @@ Ahora que ha obtenido sus credenciales, puede configurar su proyecto SaaS y el e
    >[!INFO]
    >
    > Consulte nuestra [[!DNL Adobe Commerce] Conector de servicios](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/admin/adobe-commerce-services/configure-adobe-commerce-services-connector.html?lang=en#configuration-faqs) para obtener más información.
+
+## Extremo
+
+[!DNL Payment Services] utiliza el [Conector de Commerce Services](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/saas.html) para conectarse a Commerce Services e implementarlo como SaaS. Esta [!DNL Commerce Services Connector] se comunica a través del punto final en:
+
+* `commerce-beta.adobe.io` para entornos de zona protegida.
+* `commerce.adobe.io for` para entornos en directo.
