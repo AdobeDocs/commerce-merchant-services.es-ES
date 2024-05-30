@@ -5,10 +5,10 @@ breadcrumb-title: "[!DNL Data Connection] extensión para Adobe Commerce"
 role: Admin
 feature: Personalization, Integration
 recommendations: noDisplay
-source-git-commit: 89607d22ba8e69e0c98fce97e041022e33d01c07
+source-git-commit: ae9a87d3a1dd2b20acc534defd51556a9edc31c2
 workflow-type: tm+mt
-source-wordcount: '100'
-ht-degree: 4%
+source-wordcount: '110'
+ht-degree: 3%
 
 ---
 
@@ -31,3 +31,4 @@ ht-degree: 4%
    - [Uso de etiquetas de Adobe Experience Platform](using-tags.md)
 - Caso de uso {#use-cases}
    - [Usar Adobe Journey Optimizer para enviar un correo electrónico de carro de compras abandonado](using-ajo.md)
+   - [Crear una audiencia en Real-Time CDP mediante datos de evento de Commerce](create-audience.md)
