@@ -5,9 +5,9 @@ role: Admin, Developer
 level: Intermediate
 exl-id: 265ab1be-fe52-41f3-85cb-addbc2ddfb17
 feature: Payments, Checkout, Configuration, Integration
-source-git-commit: 90bfa7099924feb308397960cff76bdf177bbe49
+source-git-commit: d1379bb108f2259051641a7bf77cd8b459fd9cbf
 workflow-type: tm+mt
-source-wordcount: '489'
+source-wordcount: '548'
 ht-degree: 0%
 
 ---
@@ -48,11 +48,11 @@ bin/magento indexer:set-mode schedule sales_order_data_exporter sales_order_stat
 >
 >Si no especifica ningún indizador en el comando, todos los indizadores se actualizarán con el mismo valor. Si desea cambiar un indizador específico, debe enumerarlo en el comando.
 
-Para obtener más información sobre cómo cambiar manualmente el modo de un indizador, consulte [Configuración de indexadores](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-index.html#configure-indexers){target="_blank"} in the developer documentation. To learn how to change it in the Admin, see [Index management](https://docs.magento.com/user-guide/system/index-management.html#change-the-index-mode){target="_blank"} en la guía del usuario principal.
+Para obtener más información sobre cómo cambiar manualmente el modo de un indizador, consulte [Configuración de indexadores](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-index.html#configure-indexers){target="_blank"} en la documentación para desarrolladores. Para obtener información sobre cómo cambiarla en el Administrador, consulte [Administración de índices](https://docs.magento.com/user-guide/system/index-management.html#change-the-index-mode){target="_blank"} en la guía del usuario principal.
 
 ### Reindexación manual de datos
 
-Puede reindexar los datos manualmente, en lugar de esperar a que se produzca automáticamente. Consulte [Reindexar](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-index.html#reindex){target="_blank"} in [Manage the Indexers](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-index.html){target="_blank"} para obtener más información.
+Puede reindexar los datos manualmente, en lugar de esperar a que se produzca automáticamente. Consulte [Reindexar](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-index.html#reindex){target="_blank"} in [Administrar los indexadores](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-index.html){target="_blank"} para obtener más información.
 
 Cuándo `BY SCHEDULE` Cuando el modo está configurado, el sistema rastrea las entidades cambiadas y el trabajo cron actualiza el índice para ellas en función de una programación establecida. Consulte [Ejecute cron desde la línea de comandos](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-cron.html#config-cli-cron-group-run) in [Configurar y ejecutar cron](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-cron.html)) para aprender a indexar manualmente el déclencheur mediante trabajos cron.
 
@@ -89,3 +89,15 @@ bin/magento cron:run --group payment_services_data_export
 ```
 
 Para obtener más información sobre la reindexación y los indexadores, consulte la [Administrar los indexadores](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-index.html) en la documentación para desarrolladores.
+
+## Configuración del procesamiento de L2/L3
+
+[!DNL Payment Services] puede procesar datos de nivel 2 y nivel 3 de transacciones de pago con tarjeta para proporcionar información adicional a los comerciantes.
+
+>[!WARNING]
+>
+> La integración con el procesamiento de nivel 2 y nivel 3 con PayPal solo está disponible para comerciantes estadounidenses. Consulte [procesamiento de pago](https://developer.paypal.com/docs/checkout/advanced/processing/){target=_blank} en la documentación para desarrolladores de PayPal para obtener más información.
+
+Si desea utilizar datos de procesamiento L2/L3 para [!DNL Payment Services], o si tiene alguna pregunta, póngase en contacto con su [!DNL Payment Services] administrador de cuentas.
+
+Para obtener más información sobre el procesamiento de L2 y L3 utilizado en [!DNL Payment Services], consulte [Procesamiento de los niveles 2 y 3](levels-card-payment-transactions.md).
