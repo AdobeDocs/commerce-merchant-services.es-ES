@@ -3,9 +3,9 @@ title: '[!DNL Catalog Service] Notas de la versión'
 description: La información de la versión más reciente de [!DNL Catalog Service] para Adobe Commerce.
 exl-id: 9bf8e3f7-5b74-4755-867e-ac1c5000ff33
 feature: Services, Catalog Service, Release Notes
-source-git-commit: a2841b809cfc52798dc3f1bdcc033a77333bf0e5
+source-git-commit: 7293914fab34381deb5bc841d147371f9f3470a5
 workflow-type: tm+mt
-source-wordcount: '627'
+source-wordcount: '677'
 ht-degree: 0%
 
 ---
@@ -26,7 +26,13 @@ Las actualizaciones incluyen:
 
 _23 de mayo de 2024_
 
-![Fix](../assets/fix.svg) El `InStock` El indicador para valores de opción ahora tiene en cuenta el ámbito `enabled` estado de la variante del producto.
+![Fix](../assets/fix.svg) <!--DATA-5033-->El `InStock` El indicador para valores de opción ahora tiene en cuenta el ámbito `enabled` estado de la variante del producto.
+
+![Fix](../assets/fix.svg) <!--DATA-5888-->Añada soporte para los precios de productos que requieren números grandes (hasta 16 dígitos) y una mayor precisión decimal (hasta 4 lugares decimales). Para aplicar las actualizaciones de configuración de precios al catálogo existente, vuelva a sincronizar los datos de catálogo desde el [Panel de administración de datos](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-dashboard), o mediante el uso de [Interfaz de línea de comandos de Adobe Commerce](../landing/catalog-sync.md#command-line-interface).
+
+## Versiones anteriores
+
++++ Versiones anteriores
 
 ### Versión V1.18
 
@@ -37,10 +43,6 @@ _11 de abril de 2024_
 ![Nuevo](../assets/new.svg) Se ha agregado compatibilidad con PHP 8.3.
 
 ![Nuevo](../assets/new.svg) El [`products`](https://developer.adobe.com/commerce/services/graphql/catalog-service/products/) y [`refineProduct`](https://developer.adobe.com/commerce/services/graphql/catalog-service/refine-product/) las consultas ahora devuelven datos de opciones personalizables para productos simples y complejos.<!--DATA-5538-->
-
-## Versiones anteriores
-
-+++ Versiones anteriores
 
 ### Versión V1.17
 

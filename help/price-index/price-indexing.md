@@ -4,9 +4,9 @@ description: Uso de la indexación de precios SaaS para mejorar el rendimiento
 seo-title: Adobe SaaS Price Indexing
 seo-description: Price indexing give performance improvements using SaaS infrastructure
 exl-id: 5b92d6ea-cfd6-4976-a430-1a3aeaed51fd
-source-git-commit: 7d62f8d5539cd744e98d8d6c072d77a2a7c5a256
+source-git-commit: 7293914fab34381deb5bc841d147371f9f3470a5
 workflow-type: tm+mt
-source-wordcount: '409'
+source-wordcount: '414'
 ht-degree: 0%
 
 ---
@@ -14,7 +14,8 @@ ht-degree: 0%
 # Indexación de precios de SaaS
 
 La indexación de precios SaaS acelera el tiempo que tardan los cambios de precios en reflejarse [Servicios de Commerce](../landing/saas.md) después de enviarlos. Esto permite a los comerciantes con catálogos grandes y complejos, o con varios sitios web o grupos de clientes, procesar continuamente los cambios de precios.
-Si tiene una tienda sin encabezado o usa el [catalog-adapter](./catalog-adapter.md) extensión, los clientes pueden desactivar el indexador de precios principal de Adobe Commerce.
+
+Si tiene una tienda sin encabezado o usa el [catalog-adapter](./catalog-adapter.md) Además, los clientes pueden utilizar la indexación de precios SaaS desactivando el indexador de precios principal de Adobe Commerce.
 
 Los procesos computacionales pesados, como la indexación y el cálculo de precios, se han trasladado del núcleo de Commerce a la infraestructura en la nube de Adobe. Esto permite a los comerciantes ampliar rápidamente los recursos para aumentar los tiempos de indexación de precios y reflejar esos cambios más rápido.
 
