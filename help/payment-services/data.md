@@ -1,13 +1,13 @@
 ---
 title: Datos disponibles
-description: Utilice los datos de informes financieros para reconciliar los informes con sistemas que no sean de comercio.
+description: Utilice los datos de informes financieros para reconciliar los informes con sistemas que no sean de Commerce.
 role: User
 level: Intermediate
 exl-id: dbf41ce9-01f9-45d0-b651-e4c499e83822
 feature: Payments, Checkout, Data Import/Export
-source-git-commit: c4068d71eba45ea45b1c1eefc324bf830479e0e3
+source-git-commit: 9a933d41bffc2af453eed00caeb941eb18b23852
 workflow-type: tm+mt
-source-wordcount: '172'
+source-wordcount: '152'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,7 @@ Algunos datos de pedidos y pagos están disponibles para que pueda coordinar la 
 
 Puede reconciliar los informes financieros de Adobe Commerce con su sistema de planificación de recursos empresariales (ERP) que no sea de Adobe mediante el ID de incremento asociado a un pedido específico.
 
-Cuando Payment Services envía la solicitud de Commerce a PayPal, el ID de incremento se incluye como `custom_id` _y_ en el `invoice_id` (que también contiene una cadena aleatoria después de `increment_id`).
+Cuando Servicios de pago envía el pedido de Commerce a PayPal, el ID de incremento se incluye como `custom_id` _y_ en el `invoice_id` (que también contiene una cadena aleatoria después de `increment_id`).
 
 Los ID son fácilmente accesibles tanto en el detalle de la actividad comercial para un pago como en el webhook de PayPal.
 
@@ -79,5 +79,5 @@ El `invoice_id` y `custom_id` se muestran cerca de la parte inferior de los deta
 
 Consulte la documentación de las API de REST de PayPal para obtener más información:
 
-* [`purchase_unit`, en el que `custom_id` y `invoice_id` residir](https://developer.paypal.com/docs/api/orders/v2/#definition-purchase_unit:~:text=Read%20only.-,purchase_unit,-Contraer)
+* [`purchase_unit`, en el que `custom_id` y `invoice_id` residir](https://developer.paypal.com/docs/api/orders/v2/#definition-purchase_unit)
 * [Mostrar detalles del pedido](https://developer.paypal.com/docs/api/orders/v2/#orders_get)
