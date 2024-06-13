@@ -3,9 +3,9 @@ title: '[!DNL Product Recommendations] Notas de la versión'
 description: La información de la versión más reciente de [!DNL Product Recommendations] de Adobe Commerce.
 exl-id: 1758e688-d26f-45e7-818c-d4726338a6c3
 feature: Services, Recommendations, Release Notes
-source-git-commit: 316059288ace6ebaf3748a294d8fe7351fc63bbd
+source-git-commit: 76fb723c2269cfc2af197e7facc588099be8a39f
 workflow-type: tm+mt
-source-wordcount: '1315'
+source-wordcount: '1329'
 ht-degree: 0%
 
 ---
@@ -52,6 +52,7 @@ _9 de mayo de 2024_
 [!BADGE Admitido]{type=Informative tooltip="Admitido"}
 
 ![Fix](../assets/fix.svg) Se ha corregido un problema que causaba que al hacer clic en **[!DNL Add to Cart]** Un botón de un producto simple dentro de una unidad de Product Recommendations redirigía al comprador a la página de inicio en lugar de permanecer en la página actual.
+![Error](../assets/bug.svg) Hay un error de validación causado por el `referenceBlock` elemento en el `ProductRecommendations Layout` Archivo XML.
 
 ### Versiones anteriores
 

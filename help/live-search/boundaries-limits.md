@@ -3,9 +3,9 @@ title: 'Límites y límites'
 description: Obtenga información acerca de los límites y limitaciones de [!DNL Live Search] para garantizar que satisfaga las necesidades de su empresa.
 role: Admin, Developer
 exl-id: ad6737f9-6ecd-4d82-89e7-d95425e4ba53
-source-git-commit: 63c90d4ef0e14c0baaf8c79569a01e5dffa5b450
+source-git-commit: 099a4b9ce3ab71bc3c7ae181be242863a55d0ca9
 workflow-type: tm+mt
-source-wordcount: '651'
+source-wordcount: '644'
 ht-degree: 0%
 
 ---
@@ -43,7 +43,6 @@ Cuando se trata de buscar sitios, Adobe Commerce le da opciones. Revise los lím
 
 ## Consulta
 
-- [!DNL Live Search] no tiene acceso a la taxonomía completa del árbol de categorías, lo que hace que algunos escenarios de búsqueda de navegación por capas estén fuera de su alcance.
 - [!DNL Live Search] utiliza un único [Extremo de GraphQL](https://developer.adobe.com/commerce/services/graphql/live-search/) para que las consultas admitan características como facetas dinámicas y búsqueda a medida que escribe. Aunque es similar a la [API de GraphQL](https://developer.adobe.com/commerce/webapi/graphql/)Sin embargo, existen algunas diferencias y es posible que algunos campos no sean totalmente compatibles.
 - El número máximo de resultados que se pueden devolver en una consulta de búsqueda es 10 000.
 - No es posible filtrar los resultados mediante un atributo de tipo de fecha.
@@ -74,3 +73,4 @@ Cuando se trata de buscar sitios, Adobe Commerce le da opciones. Revise los lím
    - El grupo de clientes &quot;Sin sesión iniciada&quot; debe tener permisos de navegación &quot;Permitir&quot;.
    - Para restringir productos al grupo de clientes &quot;Sin sesión iniciada&quot;, vaya a cada categoría y defina los permisos para cada grupo de clientes.
 - En este momento no se admite la compatibilidad con B2B con Live Search para PWA Studio.
+- Facetas de categoría en [!DNL Live Search] puede mostrar categorías que no se pueden mostrar a un grupo de clientes específico.
