@@ -3,7 +3,7 @@ title: "Introducción a [!DNL Live Search]"
 description: '"Conozca los requisitos del sistema y los pasos de instalación para [!DNL Live Search] de Adobe Commerce".'
 exl-id: aa251bb0-d52c-4cff-bccb-76a08ae2a3b2
 role: Admin, Developer
-source-git-commit: 099a4b9ce3ab71bc3c7ae181be242863a55d0ca9
+source-git-commit: aba1f41965e6c430f569adcf9d940cf399b50b73
 workflow-type: tm+mt
 source-wordcount: '2266'
 ht-degree: 0%
@@ -216,7 +216,7 @@ Para permitir [!DNL Live Search] a través de un cortafuegos, añada `commerce.a
 
 Ha instalado el [!DNL Live Search] extensión, sincronizados, validados y configurados de los datos. Ahora, debe asegurarse de que la variable [!DNL Live Search] Los widgets se ajustan al aspecto y la presentación de la tienda.
 
-Puede aplicar estilo a los widgets de ventana emergente y PLP definiendo reglas CSS personalizadas según sea necesario. Consulte [Estilo de elementos emergentes](storefront-popover-styling.md) y [Widget de página de lista de productos](plp-styling.md).
+Puede aplicar estilo a los widgets de ventana emergente y PLP definiendo reglas CSS personalizadas según sea necesario. Consulte [Estilo de elementos emergentes](storefront-popover.md#styling-popover-example) y [Widget de página de lista de productos](plp-styling.md#styling-example).
 
 Si desea ampliar la funcionalidad de los widgets, el código fuente de cada uno está disponible en un repositorio público.
 En esta situación, puede personalizar JavaScript para sus propias necesidades y, a continuación, alojar el código personalizado en su CDN. Este script personalizado se comunica con el [!DNL Live Search] y devuelve los resultados como de costumbre, lo que le permite controlar la funcionalidad del widget.
