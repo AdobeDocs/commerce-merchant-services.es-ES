@@ -1,15 +1,15 @@
 ---
 title: Revisar registros y solucionar problemas
-description: '"Aprenda a solucionar problemas [!DNL data export] errores al utilizar los registros de exportación de datos y exportación de saas".'
+description: Obtenga información sobre cómo solucionar problemas [!DNL data export] errores al utilizar los registros data-export y saas-export.
 feature: Services
 recommendations: noCatalog
-source-git-commit: 8230756c203cb2b4bdb4949f116c398fcaab84ff
+exl-id: 55903c19-af3a-4115-a7be-9d1efaed8140
+source-git-commit: af9de40a717d2cb55a5f42483bd0e4cbcd913f64
 workflow-type: tm+mt
-source-wordcount: '783'
+source-wordcount: '1071'
 ht-degree: 0%
 
 ---
-
 
 # Revisar registros y solucionar problemas
 
@@ -26,9 +26,7 @@ Los registros están disponibles en `var/log` en el servidor de aplicaciones de 
 | Registro de exportación de SaaS | `saas-export.log` | Proporciona información sobre los datos enviados a los servicios SaaS de Commerce. |
 | Registro de errores de exportación de SaaS | `saas-export-errors.log` | Proporciona información sobre los errores que se producen al enviar datos a los servicios SaaS de Commerce. |
 
-Si no ve los datos esperados para un servicio de Adobe Commerce, utilice los registros de error de la extensión de exportación de datos para determinar dónde se produjo el problema.
-
-Puede ampliar los registros con datos adicionales para el seguimiento y la resolución de problemas. Consulte [Registro extendido](#extended-logging).
+Si no ve los datos esperados para un servicio de Adobe Commerce, utilice los registros de error de la extensión de exportación de datos para determinar dónde se produjo el problema. Además, puede ampliar los registros con datos adicionales para el seguimiento y la resolución de problemas. Consulte [Registro extendido](#extended-logging).
 
 ### Formato de registro
 
@@ -85,7 +83,7 @@ En este ejemplo, la variable `status` Los valores de proporcionan información s
    - **`"synced" < "processed"`** significa que la tabla de fuentes no detectó ningún cambio en el elemento, en comparación con la versión sincronizada anteriormente. Estos elementos se omiten durante la operación de sincronización.
    - **`"synced" > "processed"`** el mismo id de entidad (por ejemplo, `Product ID`) puede tener varios valores en diferentes ámbitos. Por ejemplo, se puede asignar un producto a cinco sitios web. En este caso, es posible que tenga &quot;1 elemento procesado&quot; y &quot;5 sincronizados&quot; elementos.
 
-+++ Ejemplo: Registro de resincronización completo para la fuente de precios
++++ **Ejemplo: Registro de resincronización completo para la fuente de precios**
 
 ```
 Price feed full resync:
@@ -125,7 +123,42 @@ En este ejemplo se agrega una regla que permite consultar los registros de New R
 
 **Ejemplo de cadena de consulta**—`feed.feed:"products" and feed.status:"Complete"`
 
+## Resolución de problemas
+
+Si faltan datos o estos son incorrectos en Commerce Services, compruebe los registros para ver si se ha producido un problema durante la sincronización de la instancia de Adobe Commerce a la plataforma de Commerce Service. Si es necesario, utilice el registro ampliado para agregar información adicional a los registros para la resolución de problemas.
+
+- commerce-data-export-errors.log: si se produjo un error durante la fase de recopilación
+- saas-export-errors.log: si se produjo un error durante la fase de transmisión
+
+Si ve errores no relacionados con la configuración o con extensiones de terceros, envíe un [ticket de asistencia](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=en#submit-ticket) con la mayor cantidad de información posible.
+
+### Resolver problemas de sincronización del catálogo {#resolvesync}
+
+Cuando se sincroniza en déclencheur una sincronización de datos, los datos pueden tardar hasta una hora en actualizarse y se reflejarán en componentes de la interfaz de usuario como la búsqueda en directo y las unidades de recomendación. Si sigue viendo discrepancias entre el catálogo y los datos de la tienda de Commerce o si la sincronización del catálogo falla, consulte lo siguiente:
+
+#### Discrepancia de datos
+
+1. Mostrar la vista detallada del producto en cuestión en los resultados de búsqueda.
+1. Copie la salida JSON y verifique que el contenido coincida con lo que tiene en la [!DNL Commerce] catálogo.
+1. Si el contenido no coincide, realice un cambio menor en el producto del catálogo, como añadir un espacio o un punto.
+1. Espere a que se vuelva a sincronizar o [déclencheur de una resincronización manual](#resync).
+
+#### La sincronización no se está ejecutando
+
+Si la sincronización no se está ejecutando según una programación o no hay nada sincronizado, consulte esto [KnowledgeBase](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshoot-product-recommendations-module-in-magento-commerce.html) artículo.
+
+#### Error de sincronización
+
+Si la sincronización del catálogo tiene un estado de **Error**, envíe un [ticket de asistencia](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket).
+
 ## Registro extendido
+
+Para obtener información de registro adicional, puede utilizar variables de entorno para ampliar registros con datos adicionales para el seguimiento y la resolución de problemas.
+
+Hay dos archivos de registro en el `var/log/` directorio:
+
+- commerce-data-export-errors.log: si se produjo un error durante la fase de recopilación
+- saas-export-errors.log: si se produjo un error durante la fase de transmisión
 
 Puede utilizar variables de entorno para ampliar los registros con datos adicionales para el seguimiento y la resolución de problemas.
 
@@ -164,7 +197,3 @@ Los datos del analizador se almacenan en el registro de exportación de datos (`
 ```
 <Provider class name>, <# of processed entities>, <execution time im ms>, <memory consumption in Mb>
 ```
-
-
-
-

@@ -1,18 +1,23 @@
 ---
 title: Sincronización de datos con exportación de datos SaaS
-description: '"Descubra cómo [!DNL SaaS Data Export] recopila y sincroniza datos entre instancias de Adobe Commerce y servicios SaaS conectados".'
+description: Descubra cómo funciona el [!DNL SaaS Data Export] recopila y sincroniza datos entre instancias de Adobe Commerce y servicios SaaS conectados.
 role: Admin, Developer
 recommendations: noCatalog
-source-git-commit: 8230756c203cb2b4bdb4949f116c398fcaab84ff
+exl-id: 530a6ed7-46ec-45fc-94e9-c850168e8aed
+source-git-commit: af9de40a717d2cb55a5f42483bd0e4cbcd913f64
 workflow-type: tm+mt
-source-wordcount: '694'
+source-wordcount: '770'
 ht-degree: 0%
 
 ---
 
 # Sincronización de datos con exportación de datos SaaS
 
-Al instalar un servicio de Commerce que requiere la exportación de datos, como el servicio de catálogo, Live Search o Product Recommendations, se instala una colección de módulos de exportación de datos Saas para administrar la recopilación de datos y el proceso de sincronización. El diagrama siguiente muestra el flujo de exportación de datos SaaS.
+Al instalar un servicio de Commerce que requiere la exportación de datos, como el servicio de catálogo, Live Search o Product Recommendations, se instala una colección de módulos de exportación de datos Saas para administrar la recopilación de datos y el proceso de sincronización.
+
+La exportación de datos de SaaS mueve continuamente los datos de producto de una instancia de Adobe Commerce a la plataforma de servicios de Commerce para mantener los datos actualizados. Por ejemplo, Product Recommendations requiere información actual del catálogo para devolver con precisión las recomendaciones con los nombres, precios y disponibilidad correctos. Utilice el [Panel de administración de datos](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/user-guides/data-services/catalog-sync) para observar y administrar el proceso de sincronización o la interfaz de línea de comandos para almacenar en déclencheur una sincronización y reindexar los datos del producto para que los consuman los servicios de Commerce.
+
+El diagrama siguiente muestra el flujo de exportación de datos SaaS.
 
 ![Recopilación y flujo de sincronización de exportación de datos SaaS para Adobe Commerce](assets/data-export-flow.png){width="900" zoomable="yes"}
 

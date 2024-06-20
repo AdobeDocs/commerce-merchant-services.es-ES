@@ -3,9 +3,9 @@ title: Sincronización de catálogo
 description: Obtenga información sobre cómo exportar datos de productos desde [!DNL Commerce] servidor a [!DNL Commerce Services].
 exl-id: 19d29731-097c-4f5f-b8c0-12f9c91848ac
 feature: Catalog Management, Data Import/Export, Catalog Service
-source-git-commit: 7d62f8d5539cd744e98d8d6c072d77a2a7c5a256
+source-git-commit: af9de40a717d2cb55a5f42483bd0e4cbcd913f64
 workflow-type: tm+mt
-source-wordcount: '1133'
+source-wordcount: '538'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 0%
 
 Adobe Commerce utiliza indexadores para compilar datos de catálogo en tablas. El proceso se activa automáticamente mediante [eventos](https://experienceleague.adobe.com/docs/commerce-admin/systems/tools/index-management.html#events-that-trigger-full-reindexing) como un cambio en el precio de un producto o en el nivel de inventario.
 
-El servicio de sincronización de catálogos mueve datos de producto de un [!DNL Adobe Commerce] instancia a la [!DNL Commerce Services] de forma continua para mantener los datos actualizados. Por ejemplo, [[!DNL Product Recommendations]](/help/product-recommendations/overview.md) requiere información actual del catálogo para devolver con precisión las recomendaciones con los nombres, precios y disponibilidad correctos. Utilice el _Sincronización de catálogo_ panel para observar y administrar el proceso de sincronización de [interfaz de línea de comandos](#resynccmdline) para almacenar en déclencheur una sincronización de catálogo y reindexar los datos de producto para su consumo por [!DNL Commerce Services].
+El servicio de sincronización de catálogos mueve datos de producto de un [!DNL Adobe Commerce] instancia a la [!DNL Commerce Services] de forma continua para mantener los datos actualizados. Por ejemplo, [[!DNL Product Recommendations]](/help/product-recommendations/overview.md) requiere información actual del catálogo para devolver con precisión las recomendaciones con los nombres, precios y disponibilidad correctos. Utilice el _Sincronización de catálogo_ panel para observar y administrar el proceso de sincronización o la interfaz de línea de comandos para almacenar en déclencheur una sincronización de catálogo y reindexar los datos de producto para su consumo mediante [!DNL Commerce Services]. Consulte [Referencia de la interfaz de la línea de comandos](../data-export/data-export-cli-commands.md) en el _Exportación de datos SaaS_ Guía.
 
 ## Acceso al panel de sincronización de catálogos
 
@@ -81,123 +81,4 @@ El **Productos de catálogo sincronizados** La tabla muestra la siguiente inform
 
 ## Resolver problemas de sincronización del catálogo {#resolvesync}
 
-Cuando se sincroniza en déclencheur un archivo de datos, los datos pueden tardar hasta una hora en actualizarse y se reflejarán en componentes de la interfaz de usuario como unidades de recomendación. Si sigue viendo discrepancias entre el catálogo y los datos de la tienda, o si la sincronización del catálogo ha fallado, consulte lo siguiente:
-
-### Discrepancia de datos
-
-1. Mostrar la vista detallada del producto en cuestión en los resultados de búsqueda.
-1. Copie la salida JSON y verifique que el contenido coincida con lo que tiene en la [!DNL Commerce] catálogo.
-1. Si el contenido no coincide, realice un cambio menor en el producto del catálogo, como añadir un espacio o un punto.
-1. Espere a que se vuelva a sincronizar o [déclencheur de una resincronización manual](#resync).
-
-### La sincronización no se está ejecutando
-
-Si la sincronización no se está ejecutando según una programación o no hay nada sincronizado, consulte esto [KnowledgeBase](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshoot-product-recommendations-module-in-magento-commerce.html) artículo.
-
-### Error de sincronización
-
-Si la sincronización del catálogo tiene un estado de **Error**, envíe un [ticket de asistencia](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket).
-
-## Interfaz de línea de comandos {#resynccmdline}
-
-El `saas:resync` El comando forma parte de `magento/saas-export` y está disponible de forma predeterminada con uno de los [!DNL Commerce Services] productos, como [[!DNL Product Recommendations]](/help/product-recommendations/install-configure.md) o [[!DNL Live Search]](/help/live-search/install.md).
-
->[!NOTE]
->
-> Cuando ejecute una sincronización de datos por primera vez, ejecute el `productattributes` fuente primero, seguido de `productoverrides`, antes de ejecutar el `products` fuente.
-
-Opciones de comando:
-
-```bash
-bin/magento saas:resync --feed <feed name> [no-reindex|cleanup-feed]
-```
-
-En la tabla siguiente se describe la `saas:resync` parámetros y descripciones.
-
-| Parámetro | Descripción | ¿Requerido? |
-|---| ---| ---|
-| `feed` | Especifica la entidad que se debe resincronizar, como `products` | Sí |
-| `no-reindex` | Vuelve a enviar los datos de catálogo existentes a [!DNL Commerce Services] sin reindexación. Cuando no se especifica este parámetro, el comando ejecuta una reindexación completa antes de sincronizar los datos. | No |
-| `cleanup-feed` | Limpie la tabla del indizador de fuentes antes de una sincronización. | No |
-
-El nombre de la fuente puede ser uno de los siguientes:
-
-- `products`— Productos en su catálogo
-- `productattributes`— atributos de producto como `activity`, `gender`, `tops`, `bottoms`, etc.
-- `variants`— Variaciones de un producto configurable, como el color y el tamaño
-- `prices` — Precios de los productos
-- `scopesCustomerGroup` — Grupos de clientes
-- `scopesWebsite` — Sitios web con vistas de la tienda
-- `categories`— Categorías del catálogo
-- `categoryPermissions` - Permisos para cada una de las categorías
-- `productoverrides`— Reglas de precios y visibilidad del catálogo específicas del cliente, como las basadas en permisos de categoría.
-
-Dependiendo del [Servicios de Commerce](../landing/saas.md) están instalados, puede tener diferentes conjuntos de fuentes disponibles para `saas:resync` comando.
-
-No se recomienda ejecutar el `saas:resync` de forma regular. Es posible que tenga que ejecutar el comando manualmente en dos situaciones:
-
-- La sincronización inicial
-- El [ID del espacio de datos SaaS](https://experienceleague.adobe.com/docs/commerce-admin/config/services/saas.html) se ha cambiado
-
-### Sincronización inicial
-
-Cuando déclencheur un `saas:resync` desde la línea de comandos, según el tamaño del catálogo, los datos pueden tardar entre unos minutos y unas horas en actualizarse.
-
-Para la sincronización inicial, se recomienda ejecutar los comandos en el siguiente orden:
-
-```bash
-bin/magento saas:resync --feed productattributes
-bin/magento saas:resync --feed products
-bin/magento saas:resync --feed scopesCustomerGroup
-bin/magento saas:resync --feed scopesWebsite
-bin/magento saas:resync --feed prices
-bin/magento saas:resync --feed productoverrides
-bin/magento saas:resync --feed variants
-bin/magento saas:resync --feed categories
-bin/magento saas:resync --feed categoryPermissions 
-```
-
-### Resolución de problemas
-
-Si no ve los datos esperados en [!DNL Commerce Service], compruebe si se ha producido un problema durante la sincronización desde el [!DNL Adobe Commerce] instancia a la [!DNL Commerce Service] plataforma.
-
-Hay dos archivos de registro en el `var/log/` directorio:
-
-- `commerce-data-export-errors.log` - si se produjo un error durante _recolección_ fase
-- `saas-export-errors.log` - si se produjo un error durante _transmitiendo_ fase
-
-#### Comprobar carga útil de fuente
-
-Puede resultar útil ver la carga útil de fuente que se ha enviado a [!DNL Commerce Service]. Esto se puede hacer pasando la variable de entorno `EXPORTER_EXTENDED_LOG=1`. El `no-reindex` El indicador significa que solo se envían los datos recopilados actualmente.
-
-```bash
-EXPORTER_EXTENDED_LOG=1 bin/magento saas:resync --feed=products --no-reindex
-```
-
-La carga útil está disponible en `var/log/saas-export.log`.
-
-#### Conservar carga útil en tabla de índice de fuentes
-
-Comenzando desde `magento/module-data-exporter:103.0.0` algunas fuentes: fuente de productos, fuentes de precios, mantenga solo los datos mínimos requeridos en la tabla de índices.
-
-No se recomienda conservar los datos de carga útil en la tabla de índice en la producción, pero puede resultar útil en una instancia de desarrollador. Esto se hace pasando el `PERSIST_EXPORTED_FEED=1` variable de entorno:
-
-```bash
-PERSIST_EXPORTED_FEED=1 bin/magento saas:resync --feed=products
-```
-
-#### Perfilado
-
-Si el proceso de reindexación de una fuente específica lleva una cantidad de tiempo no razonable, ejecute el generador de perfiles para recopilar datos adicionales que puedan ser útiles para el equipo de asistencia. Para ello, pase el `EXPORTER_PROFILER=1`variable de entorno:
-
-```bash
-EXPORTER_PROFILER=1 bin/magento indexer:reindex catalog_data_exporter_products
-```
-
-Los datos del analizador se almacenan en `var/log/commerce-data-export.log` con el formato:
-
-`<Provider class name>, <# of processed entities>, <execution time im ms>, <memory consumption in Mb>`
-
-#### Enviar una solicitud de asistencia
-
-Si ve errores no relacionados con la configuración o con extensiones de terceros, envíe un [ticket de asistencia](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) con la mayor cantidad de información posible.
+Consulte [Registros y solución de problemas](../data-export/troubleshooting-logging.md#troubleshooting) en el _Guía de exportación de datos de SaaS_.

@@ -1,10 +1,11 @@
 ---
 title: Interfaz de línea de comandos de exportación de datos SaaS
-description: '"Aprenda a utilizar los comandos de la interfaz de la línea de comandos para administrar fuentes y procesos para [!DNL data export extension] para servicios SaaS de Adobe Commerce".'
+description: Aprenda a utilizar los comandos de la interfaz de la línea de comandos para administrar fuentes y procesos para [!DNL data export extension] para servicios SaaS de Adobe Commerce.
 recommendations: noCatalog
-source-git-commit: 8230756c203cb2b4bdb4949f116c398fcaab84ff
+exl-id: f360d920-7d02-4317-8c56-c7d4c4ed2ff2
+source-git-commit: af9de40a717d2cb55a5f42483bd0e4cbcd913f64
 workflow-type: tm+mt
-source-wordcount: '560'
+source-wordcount: '574'
 ht-degree: 0%
 
 ---
@@ -21,10 +22,24 @@ El Adobe no recomienda el uso de `saas:resync` mandar regularmente. Los escenari
 
 ## Sincronización inicial
 
+>[!NOTE]
+>Si utiliza Live Search o Product Recommendations, no es necesario que ejecute la sincronización inicial. El proceso se inicia automáticamente después de conectar el servicio a la instancia de Commerce.
+
 Cuando déclencheur un `saas:resync` desde la línea de comandos, según el tamaño del catálogo, los datos pueden tardar entre unos minutos y unas pocas horas en actualizarse.
 
->[!NOTE]
->Si utiliza Live Search o Product Recommendations, no es necesario que inicie la sincronización. El proceso se inicia automáticamente después de conectar el servicio a la instancia de Commerce.
+Para la sincronización inicial, Adobe recomienda ejecutar los comandos en el siguiente orden:
+
+```bash
+bin/magento saas:resync --feed productattributes
+bin/magento saas:resync --feed products
+bin/magento saas:resync --feed scopesCustomerGroup
+bin/magento saas:resync --feed scopesWebsite
+bin/magento saas:resync --feed prices
+bin/magento saas:resync --feed productoverrides
+bin/magento saas:resync --feed variants
+bin/magento saas:resync --feed categories
+bin/magento saas:resync --feed categoryPermissions
+```
 
 ## Ejemplos de comandos
 
