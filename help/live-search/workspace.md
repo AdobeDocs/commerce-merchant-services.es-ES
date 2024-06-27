@@ -2,9 +2,9 @@
 title: "Configuración de Live Search"
 description: El [!DNL Live Search] workspace se utiliza para configurar, administrar y supervisar el rendimiento de la búsqueda.
 exl-id: fb85974a-a5f9-4e6c-bd03-451e6457f2d2
-source-git-commit: 099a4b9ce3ab71bc3c7ae181be242863a55d0ca9
+source-git-commit: 5e79bb43449b95b4c6aa0e234a0dbc999c312e59
 workflow-type: tm+mt
-source-wordcount: '828'
+source-wordcount: '921'
 ht-degree: 0%
 
 ---
@@ -14,6 +14,19 @@ ht-degree: 0%
 El espacio de trabajo es donde se configura, administra y supervisa el rendimiento de [!DNL Live Search]. El menú de la parte superior proporciona acceso a las herramientas de cada área funcional. Las funciones disponibles reflejan la selección actual del menú.
 
 ![Workspace](assets/workspace.png)
+
+## Recopilación de datos
+
+Para asegurarse de que cada área funcional del espacio de trabajo contiene los datos correctos, debe configurar la recopilación de datos en función de la implementación de tienda seleccionada:
+
+1. Luma: la recopilación de datos está disponible de forma predeterminada.
+1. Sin encabezado: la recopilación de datos debe configurarse manualmente, según la implementación de la tienda.
+
+Si utiliza una tienda sin encabezado, consulte la siguiente documentación para obtener más información sobre los eventos necesarios que debe agregar:
+
+- [Eventos obligatorios](events.md) para el tablero de Live Search.
+- [Recopilador de eventos de tienda](https://developer.adobe.com/commerce/services/shared-services/storefront-events/collector/) que debe añadirse como requisito previo.
+- [Ejemplos](https://github.com/adobe/commerce-events/tree/main/examples) de la estructura de eventos.
 
 ## Establecer el ámbito
 
@@ -47,9 +60,9 @@ Para permitir que se puedan buscar los atributos, complete los siguientes pasos:
 
 Siempre se pueden buscar los atributos siguientes:
 
-* `sku`
-* `name`
-* `categories`
+- `sku`
+- `name`
+- `categories`
 
 [Facetas](facets.md) son atributos de producto definidos en [!DNL Live Search] para poder filtrar. Puede definir cualquier atributo filtrable como una faceta en [!DNL Live Search], pero hay [límites](boundaries-limits.md) Consultar cuántas facetas se pueden buscar al mismo tiempo.
 
