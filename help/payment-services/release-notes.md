@@ -3,9 +3,9 @@ title: "[!DNL Payment Services] Notas de la versión"
 description: Revise las notas de la versión para obtener información acerca de todos los [!DNL Payment Services] versiones.
 exl-id: 104aa2c7-7735-4ac2-8ed1-a03cd9911273
 feature: Payments, Release Notes
-source-git-commit: 9b4ce379728b126390177d64c10d57b2c587619c
+source-git-commit: 9f0381546a98a8a5d72394adbd3ddd49daf539cb
 workflow-type: tm+mt
-source-wordcount: '2502'
+source-wordcount: '2547'
 ht-degree: 0%
 
 ---
@@ -27,6 +27,10 @@ Obtenga más información acerca de las próximas versiones, la compatibilidad d
 Estas notas de la versión describen los cambios y correcciones de características que se produjeron y que se lanzaron fuera de las versiones de funciones normales para el servicio alojado.
 
 +++Actualizaciones de servicios alojados
+
+_9 de julio de 2024_
+
+![Nuevo problema](../assets/new.svg)<!-- Issue PAY-5488 --> Ahora, los comerciantes pueden ver el ID de cliente de Commerce como una columna en la [informe de transacciones](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/transactions.html) para ayudar a identificar las transacciones que ha realizado un cliente en particular. Además, los comerciantes pueden filtrar el informe de transacciones por este ID de cliente de Commerce para los pedidos asociados.
 
 _5 de marzo de 2024_
 
@@ -171,6 +175,7 @@ _7 de diciembre de 2023_
 [!BADGE Admitido]{type=Informative tooltip="Admitido"}
 
 ![Nuevo](../assets/new.svg)<!-- PAY-5047 --> El tipo de método de pago o marca de tarjeta de crédito/débito ya está disponible en las siguientes ubicaciones:
+
 - la página pedido del cliente en la tienda
 - el correo electrónico de confirmación del pedido enviado al comprador
 - desde el [vista de detalles del pedido](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/order-management/orders/order-processing.html#view-an-order) en el Administrador de Commerce.

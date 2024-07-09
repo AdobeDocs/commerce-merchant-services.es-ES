@@ -4,9 +4,9 @@ description: Utilice el informe Transacciones para obtener visibilidad sobre las
 role: User
 level: Intermediate
 exl-id: dd1d80f9-5983-4181-91aa-971522eb56fa
-source-git-commit: 5fe23b5aba9ad0a2a6c995fa6ade78f46fe7e3e1
+source-git-commit: 9f0381546a98a8a5d72394adbd3ddd49daf539cb
 workflow-type: tm+mt
-source-wordcount: '1240'
+source-wordcount: '1264'
 ht-degree: 0%
 
 ---
@@ -35,15 +35,19 @@ La vista Informe de transacciones está disponible en la vista Transacciones de 
 
 En el _Administrador_ barra lateral, vaya a **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > _[!UICONTROL Transactions]_>**[!UICONTROL View Report]**para ver la tabla detallada de la vista del informe Transacciones.
 
-![Vista del informe de transacciones](assets/transactions-report-detail.png){width="600" zoomable="yes"}
+![Vista del informe de transacciones](assets/transactions-report-view.png){width="600" zoomable="yes"}
 
 Puede configurar esta vista, según las secciones de este tema, para presentar mejor los datos que desee ver.
 
-Consulte ID de transacción de proveedor y pedido de comercio vinculados, importes de transacción, método de pago por transacción y mucho más, todo dentro de este informe.
+Consulte ID de transacción de proveedor y pedido de Commerce vinculados, importes de transacción, método de pago por transacción y mucho más, todo dentro de este informe.
 
 No todos los métodos de pago proporcionan la misma granularidad de la información. Por ejemplo, las transacciones con tarjeta de crédito proporcionan códigos de respuesta, AVS y CCV, y los últimos cuatro dígitos de la tarjeta en el informe Transacciones; los botones de pago de PayPal no.
 
 Puede [descargar transacciones](#download-transactions) en formato de archivo .csv para su uso en software de contabilidad o gestión de pedidos existente.
+
+>[!WARNING]
+>
+> El informe de transacciones no incluirá ninguna captura realizada fuera de [!DNL Payment Services].
 
 ### Seleccionar fuente de datos
 
@@ -127,8 +131,9 @@ Los informes de transacciones incluyen la siguiente información.
 
 | Columna | Descripción |
 | ------------ | -------------------- |
-| [!UICONTROL Order ID] | ID de pedido de comercio (contiene solo valores para transacciones correctas y está vacío para transacciones rechazadas)<br> <br>Para ver información relacionada [información del pedido](https://docs.magento.com/user-guide/sales/orders.html){target="_blank"}, haga clic en el ID. |
+| [!UICONTROL Order ID] | ID de pedido de Commerce (contiene solo valores para transacciones correctas y está vacío para transacciones rechazadas)<br> <br>Para ver información relacionada [información del pedido](https://docs.magento.com/user-guide/sales/orders.html){target="_blank"}, haga clic en el ID. |
 | [!UICONTROL Provider Transaction ID] | ID de transacción proporcionado por el proveedor de pagos; contiene solo valores para las transacciones correctas y contiene un guión para las transacciones rechazadas. |
+| [!UICONTROL Customer ID] | ID de cliente de Commerce de un pedido<br> <br>Consulte [información del cliente](https://experienceleague.adobe.com/en/docs/commerce-admin/customers/customer-accounts/account-create){target="_blank"} para obtener más información. |
 | [!UICONTROL Transaction Date] | Marca de fecha y hora de transacción |
 | [!UICONTROL Payment Method] | Forma de pago de la transacción con información detallada sobre la marca y el tipo de tarjeta. Consulte [tipos de tarjeta](https://developer.paypal.com/docs/api/orders/v2/#definition-card_type) para obtener más información; disponible para las versiones 1.6.0 y posteriores de Payment Services |
 | [!UICONTROL Card Last Four Digits] | Últimos cuatro dígitos de las tarjetas de crédito o débito utilizadas para la transacción |
