@@ -2,7 +2,7 @@
 title: Incorporación e instalación
 description: "Aprenda a instalar [!DNL Catalog Service]"
 exl-id: 4e9fbdc9-67a1-4703-b8c0-8b159e0cc2a7
-source-git-commit: af9de40a717d2cb55a5f42483bd0e4cbcd913f64
+source-git-commit: 6ca91feefbfc2fbc4d5851040b9f1ca3de6a6560
 workflow-type: tm+mt
 source-wordcount: '823'
 ht-degree: 0%
@@ -69,7 +69,7 @@ Instale la última versión de la extensión de servicios de catálogo (`magento
 
 >[!TAB Infraestructura en nube]
 
-Utilice este método para instalar [!DNL Catalog Adapter] para una instancia de Commerce Cloud.
+Utilice este método para instalar [!DNL Catalog Service] para una instancia de Commerce Cloud.
 
 1. En la estación de trabajo local, cambie al directorio del proyecto para su proyecto de Adobe Commerce en la nube.
 
@@ -83,16 +83,16 @@ Utilice este método para instalar [!DNL Catalog Adapter] para una instancia de 
    magento-cloud environment:checkout <environment-id>
    ```
 
-1. Añada el módulo Adaptador de catálogo.
+1. Añada el módulo Servicio de catálogo.
 
    ```bash
-   composer require magento/catalog-adapter --no-update
+   composer require magento/catalog-service --no-update
    ```
 
 1. Actualizar dependencias del paquete.
 
    ```bash
-   composer update "magento/catalog-adapter"
+   composer update "magento/catalog-service"
    ```
 
 1. Confirmar y enviar cambios de código para el `composer.json` y `composer.lock` archivos.
@@ -109,18 +109,18 @@ Utilice este método para instalar [!DNL Catalog Adapter] para una instancia de 
 
 >[!TAB On-Premise]
 
-Utilice este método para instalar [!DNL Catalog Adapter] para una instancia local.
+Utilice este método para instalar [!DNL Catalog Service] para una instancia local.
 
 1. Use Compositor para agregar el módulo Servicio de catálogo a su proyecto:
 
    ```bash
-   composer require magento/catalog-adapter --no-update
+   composer require magento/catalog-service --no-update
    ```
 
 1. Actualice las dependencias e instale la extensión:
 
    ```bash
-   composer update  "magento/catalog-adapter"
+   composer update  "magento/catalog-service"
    ```
 
 1. Actualizar Adobe Commerce:
@@ -145,7 +145,7 @@ Utilice este método para instalar [!DNL Catalog Adapter] para una instancia loc
 
 Después de instalar el [!DNL Catalog Service], complete las siguientes tareas para integrar el servicio de catálogo con la instancia de Adobe Commerce. Esta integración permite la sincronización de datos y la comunicación entre la instancia de Commerce, el servicio de catálogo y otros servicios de soporte.
 
-1. Configure las variables [Conector de Commerce Services](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/user-guides/integration-services/saas) especificando las claves API y seleccionando un espacio de datos SaaS.
+1. Configure las variables [Commerce Services Connector](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/user-guides/integration-services/saas) especificando las claves API y seleccionando un espacio de datos SaaS.
 
    La configuración del Conector de servicios de Commerce es un proceso único necesario para utilizar servicios de Adobe Commerce como el Servicio de catálogo, Live Search y Recommendations de productos. Si ya ha configurado el conector para otro servicio, omita este paso.
 
@@ -175,7 +175,7 @@ Para permitir [!DNL Catalog Service] a través de un cortafuegos, añada `commer
 
 ## Servicio de catálogo y malla de API
 
-El [Malla de API para el Generador de aplicaciones de Adobe Developer](https://developer.adobe.com/graphql-mesh-gateway/gateway/overview/) permite a los desarrolladores integrar API privadas o de terceros y otras interfaces con productos de Adobe mediante Adobe IO.
+El [API Mesh para Adobe Developer App Builder](https://developer.adobe.com/graphql-mesh-gateway/gateway/overview/) permite a los desarrolladores integrar API privadas o de terceros y otras interfaces con productos de Adobe mediante Adobe IO.
 
 Consulte la [[!DNL Catalog Service] y API Mesh](mesh.md) tema para obtener detalles de instalación y configuración.
 

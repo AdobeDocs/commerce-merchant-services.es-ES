@@ -3,9 +3,9 @@ title: '[!DNL Catalog Service] Notas de la versión'
 description: La información de la versión más reciente de [!DNL Catalog Service] para Adobe Commerce.
 exl-id: 9bf8e3f7-5b74-4755-867e-ac1c5000ff33
 feature: Services, Catalog Service, Release Notes
-source-git-commit: 7293914fab34381deb5bc841d147371f9f3470a5
+source-git-commit: 6ca91feefbfc2fbc4d5851040b9f1ca3de6a6560
 workflow-type: tm+mt
-source-wordcount: '677'
+source-wordcount: '741'
 ht-degree: 0%
 
 ---
@@ -29,6 +29,22 @@ _23 de mayo de 2024_
 ![Fix](../assets/fix.svg) <!--DATA-5033-->El `InStock` El indicador para valores de opción ahora tiene en cuenta el ámbito `enabled` estado de la variante del producto.
 
 ![Fix](../assets/fix.svg) <!--DATA-5888-->Añada soporte para los precios de productos que requieren números grandes (hasta 16 dígitos) y una mayor precisión decimal (hasta 4 lugares decimales). Para aplicar las actualizaciones de configuración de precios al catálogo existente, vuelva a sincronizar los datos de catálogo desde el [Panel de administración de datos](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-dashboard), o mediante el uso de [Interfaz de línea de comandos de Adobe Commerce](../landing/catalog-sync.md#command-line-interface).
+
+#### Limitaciones conocidas
+
+Las siguientes funciones aún no son compatibles:
+
+* El tamaño máximo de la carga útil de atributos dinámicos es 9 MB.
+* El precio del producto del grupo se puede calcular con precios de productos simples.
+* En una matriz de imágenes, solo la primera imagen contiene funciones.
+
+Resuelva las siguientes limitaciones utilizando API Mesh y la API principal de GraphQL:
+
+* Precio Mínimo Anunciado
+* Precios de nivel
+* Paquete de productos con precios fijos
+
+Para ver detalles y ejemplos, consulte [Servicio de catálogo y malla de API](mesh.md)
 
 ## Versiones anteriores
 
@@ -59,14 +75,13 @@ _13 de febrero de 2024_
 [!BADGE Admitido]{type=Informative tooltip="Admitido"}
 
 ![Nuevo](../assets/new.svg) La API del servicio de catálogo ahora admite vídeos de productos.
-![Fix](../assets/fix.svg) Ahora se admiten productos agrupados con precios fijos.
 ![Fix](../assets/fix.svg) Las opciones sin existencias ahora se muestran en el widget PDP.
 
 #### Limitaciones conocidas
 
 Estas funciones aún no son compatibles:
 
-* El tamaño máximo de la carga útil de atributos dinámicos es de 9 MB.
+* El tamaño máximo de la carga útil de atributos dinámicos es 9 MB.
 * Precio del producto del grupo. Este valor se puede calcular con precios de productos simples.
 * En una matriz de imágenes, solo la primera imagen contiene funciones.
 
@@ -134,7 +149,7 @@ _6 de marzo de 2023_
 
 [!BADGE Admitido]{type=Informative tooltip="Admitido"}
 
-![Nuevo](../assets/new.svg) Añadido [`categories`](https://developer.adobe.com/commerce/services/graphql/schema/catalog-service/categories/) Funcionalidad de GraphQL.
+![Nuevo](../assets/new.svg) Añadido [`categories`](https://developer.adobe.com/commerce/services/graphql/catalog-service/categories/) Funcionalidad de GraphQL.
 ![Fix](../assets/fix.svg) Rendimiento y escalabilidad de API mejorados.
 
 ### Versión V1.4
@@ -176,7 +191,7 @@ _4 de octubre de 2022_
 ![Nuevo](../assets/new.svg) Se han añadido anulaciones de visibilidad B2B. Ahora se pueden buscar productos y se pueden agregar al carro de compras para grupos de clientes específicos.
 ![Fix](../assets/fix.svg) El servicio es ahora más estable y ha mejorado el rendimiento.
 
-### Versión 0.3: beta+
+### Versión 0.3: Beta+
 
 _12 de septiembre de 2022_
 
@@ -187,7 +202,7 @@ _12 de septiembre de 2022_
 ![Fix](../assets/fix.svg) Estabilidad y rendimiento mejorados del servicio
 ![Nuevo](../assets/new.svg) Las actualizaciones se reciben cuando los productos se eliminan del catálogo
 
-### Lanzamiento beta
+### Versión de Beta
 
 _9 de agosto de 2022_
 
