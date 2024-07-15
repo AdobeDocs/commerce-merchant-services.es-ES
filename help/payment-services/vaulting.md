@@ -5,7 +5,7 @@ exl-id: b4060307-ffcd-41cb-9b9d-a2fef02f23bd
 feature: Payments, Checkout
 source-git-commit: 6769e29a4ae07b8cf15aa2da3cac2fe8583497e0
 workflow-type: tm+mt
-source-wordcount: '314'
+source-wordcount: '292'
 ht-degree: 0%
 
 ---
@@ -14,15 +14,15 @@ ht-degree: 0%
 
 Convierta a los clientes únicos en compradores fieles con depósito de tarjetas de crédito. Los compradores pueden guardar (o &quot;guardar&quot;) las credenciales de su tarjeta de crédito durante el cierre de compra para usarlas en una compra posterior para la misma tienda, u otra, dentro de la misma cuenta de comerciante.
 
-![Guarda su tarjeta de crédito para usarla más tarde](assets/save-card-for-later.png){width="400" zoomable="yes"}
+![Almacenar su tarjeta de crédito para usarla más adelante](assets/save-card-for-later.png){width="400" zoomable="yes"}
 
 Los compradores utilizan el token almacenado para completar un pago futuro con la información de su tarjeta de crédito guardada.
 
-![Usar credenciales almacenadas para futuras compras](assets/use-stored-card.png){width="400" zoomable="yes"}
+![Usar credenciales almacenadas para una compra futura](assets/use-stored-card.png){width="400" zoomable="yes"}
 
-También pueden eliminar fácilmente sus tarjetas de crédito abovedadas de [Métodos de pago almacenados](https://docs.magento.com/user-guide/customers/account-dashboard-stored-payment-methods.html) en Mi cuenta.
+También pueden eliminar fácilmente sus tarjetas de crédito de [Métodos de pago almacenados](https://docs.magento.com/user-guide/customers/account-dashboard-stored-payment-methods.html) en Mi cuenta.
 
-![Métodos de pago almacenados en Mi cuenta](assets/stored-payment-methods.png){width="400" zoomable="yes"}
+![Métodos de pago almacenados en mi cuenta](assets/stored-payment-methods.png){width="400" zoomable="yes"}
 
 >[!WARNING]
 >
@@ -30,7 +30,7 @@ También pueden eliminar fácilmente sus tarjetas de crédito abovedadas de [Mé
 
 ## Activar almacenamiento en depósito
 
-Puede habilitar el depósito de tarjetas de crédito para los clientes _y_ comerciantes en el Administrador, para sus tiendas en [!DNL Payment Services] [Configuración](settings.md#card-vaulting).
+Puede habilitar el depósito de tarjetas de crédito (para clientes _y_ comerciantes del administrador) para sus tiendas en [!DNL Payment Services] [Configuración](settings.md#card-vaulting).
 
 ## Uso del Vault en la administración
 
@@ -40,13 +40,13 @@ Solo puede utilizar tarjetas abovedadas en el administrador si el cliente tiene 
 
 Para crear un pedido en Admin para un cliente con su tarjeta de crédito:
 
-1. [Crear un pedido y añadir productos](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/point-of-purchase/assist/customer-account-create-order.html).
-1. Entrada _[!UICONTROL Payment & Shipping Information]_, seleccione **[!UICONTROL Stored Cards]**como forma de pago.
+1. [Crear un pedido y agregar productos](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/point-of-purchase/assist/customer-account-create-order.html).
+1. En _[!UICONTROL Payment & Shipping Information]_, seleccione **[!UICONTROL Stored Cards]**como método de pago.
 1. Seleccione el método de pago de tarjeta de crédito abovedado que desee.
-1. Después de completar cualquier otro paso necesario para el pedido, [enviarlo](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/point-of-purchase/assist/customer-account-create-order.html?lang=en#step-3%3A-submit-the-order).
+1. Después de completar cualquier otro paso necesario para el pedido, [envíelo](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/point-of-purchase/assist/customer-account-create-order.html?lang=en#step-3%3A-submit-the-order).
 
-   ![Usar tarjeta de crédito abovedada en Admin para el cliente](assets/admin-vaultedcard.png){width="600" zoomable="yes"}
+   ![Usar tarjeta de crédito abovedada en el administrador para el cliente](assets/admin-vaultedcard.png){width="600" zoomable="yes"}
 
 ## Seguridad
 
-La información mínima de la tarjeta de crédito se comparte con el comprador; solo ve los últimos cuatro dígitos, la fecha de caducidad y la marca de su tarjeta de crédito abovedada. La información de la tarjeta de crédito se almacena con el proveedor de pagos para satisfacer [PCI](security.md#PCI-compliance) normas de conformidad.
+La información mínima de la tarjeta de crédito se comparte con el comprador; solo ve los últimos cuatro dígitos, la fecha de caducidad y la marca de su tarjeta de crédito abovedada. La información de la tarjeta de crédito se almacena con el proveedor de pagos para cumplir con los estándares de cumplimiento de [PCI](security.md#PCI-compliance).

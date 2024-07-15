@@ -1,9 +1,10 @@
 ---
 title: Mejora del rendimiento de exportación de datos SaaS
-description: '"Aprenda a mejorar el rendimiento de exportación de datos SaaS para los servicios de Commerce mediante el uso del modo de exportación de datos de varios subprocesos".'
+description: Obtenga información sobre cómo mejorar el rendimiento de exportación de datos SaaS para Commerce Services mediante el modo de exportación de datos de varios subprocesos.
 role: Admin, Developer
 recommendations: noCatalog
-source-git-commit: 8230756c203cb2b4bdb4949f116c398fcaab84ff
+exl-id: 20c81ef4-5a97-45cd-9401-e82910a2ccc3
+source-git-commit: 42a9ea0f62f35db451cd3e780adf530d0699a638
 workflow-type: tm+mt
 source-wordcount: '652'
 ht-degree: 0%
@@ -12,7 +13,7 @@ ht-degree: 0%
 
 # Mejora del rendimiento de exportación de datos SaaS
 
-**Modo de exportación de datos con varios subprocesos** acelera el proceso de exportación dividiendo los datos de fuente en lotes y procesándolos en paralelo.
+**El modo de exportación de datos multiproceso** acelera el proceso de exportación al dividir los datos de las fuentes en lotes y procesarlos en paralelo.
 
 Los desarrolladores o integradores de sistemas pueden mejorar el rendimiento utilizando el modo de exportación de datos de varios subprocesos en lugar del modo predeterminado de un solo subproceso. En el modo de un solo hilo, no hay paralelización del proceso de envío de fuentes. Además, debido a los límites predeterminados establecidos, todos los clientes están restringidos a utilizar un solo subproceso. En la mayoría de los casos, no es necesario personalizar la configuración.
 
@@ -23,13 +24,13 @@ Adobe recomienda utilizar la configuración predeterminada para la ingesta de da
 
 Tenga en cuenta los siguientes factores clave al decidir si desea personalizar la configuración de exportación de datos:
 
-- **Sincronización inicial**-Evaluar el número de productos y [estimar el volumen de datos y el tiempo de transmisión](estimate-data-volume-sync-time.md) en función de la configuración predeterminada. Pregúntese lo siguiente: ¿puede esperar esta sincronización de datos inicial después de incorporar un servicio de Commerce?
+- **Sincronización inicial**: evalúe el número de productos y [estime el volumen de datos y el tiempo de transmisión](estimate-data-volume-sync-time.md) en función de la configuración predeterminada. Pregúntese lo siguiente: ¿puede esperar esta sincronización de datos inicial después de incorporar un servicio de Commerce?
 
-- **Agregar nuevas vistas de la tienda o sitios web**: Si tiene pensado añadir vistas de tiendas o sitios web con el mismo recuento de productos después de publicarlos, calcule el volumen de datos y el tiempo de transmisión. Determine si la hora de sincronización es aceptable con la configuración predeterminada o si es necesario el procesamiento de subprocesos múltiples.
+- **Agregar nuevas vistas de la tienda o sitios web**: si planea agregar vistas de la tienda o sitios web con el mismo recuento de productos después de su lanzamiento, calcule el volumen de datos y el tiempo de transmisión. Determine si la hora de sincronización es aceptable con la configuración predeterminada o si es necesario el procesamiento de subprocesos múltiples.
 
-- **Importaciones regulares**-Anticipar importaciones regulares, como actualizaciones de precios o cambios de estado de las acciones. Evalúe si estas actualizaciones se pueden aplicar en un lapso de tiempo aceptable o si se necesita un procesamiento más rápido.
+- **Importaciones regulares**: prevea importaciones regulares, como actualizaciones de precios o cambios de estado de las existencias. Evalúe si estas actualizaciones se pueden aplicar en un lapso de tiempo aceptable o si se necesita un procesamiento más rápido.
 
-- **Peso del producto**-Considera si tus productos son ligeros o pesados. Ajuste el tamaño del lote en consecuencia si las descripciones o atributos del producto inflan el tamaño del producto.
+- **Peso del producto**: considere si sus productos son ligeros o pesados. Ajuste el tamaño del lote en consecuencia si las descripciones o atributos del producto inflan el tamaño del producto.
 
 Recuerde que una planificación cuidadosa, que incluya la estimación del volumen de datos y el tiempo de sincronización, a menudo puede eliminar la necesidad de personalización. Programe operaciones de ingesta de fuentes en función de estas estimaciones para lograr resultados óptimos.
 
@@ -39,7 +40,7 @@ Recuerde que una planificación cuidadosa, que incluya la estimación del volume
 
 ## Configurar subprocesamiento múltiple
 
-El modo multiproceso es compatible con todos los [métodos de sincronización](data-synchronization.md#synchronization-process): sincronización completa, sincronización parcial y sincronización de elementos con errores. Para configurar subprocesos múltiples, especifique el número de subprocesos y el tamaño del lote que se utilizarán durante la sincronización.
+Se admite el modo multiproceso para todos los [métodos de sincronización](data-synchronization.md#synchronization-process): sincronización completa, sincronización parcial y sincronización de elementos con errores. Para configurar subprocesos múltiples, especifique el número de subprocesos y el tamaño del lote que se utilizarán durante la sincronización.
 
 - `threadCount` es el número de subprocesos activados para procesar entidades. El valor predeterminado `threadCount` es `1`.
 - `batchSize` es el número de entidades procesadas en una iteración. El valor predeterminado `batchSize` es `100` registros para todas las fuentes, excepto la fuente de precios. Para la fuente de precios, el valor predeterminado es `500` registros.
@@ -52,21 +53,21 @@ Puede configurar el subprocesamiento múltiple como una opción temporal al ejec
 
 ### Configurar subprocesamiento múltiple durante la ejecución
 
-Cuando ejecute un comando de sincronización completa desde la línea de comandos, especifique el procesamiento de subprocesos múltiples agregando `threadCount` y `batchSize` opciones al comando CLI.
+Cuando ejecute un comando de sincronización completa desde la línea de comandos, especifique el procesamiento de subprocesos múltiples agregando las opciones `threadCount` y `batchSize` al comando CLI.
 
 ```
 bin/magento saas:resync --feed=products --threadCount=2 --batchSize=200
 ```
 
-Las opciones especificadas en la línea de comandos anulan la configuración de exportación de datos especificada en la aplicación de Adobe Commerce `config.php` archivo.
+Las opciones especificadas en la línea de comandos anulan la configuración de exportación de datos especificada en el archivo de la aplicación Adobe Commerce `config.php`.
 
 ### Agregar subprocesos múltiples a la configuración de Commerce
 
 Para procesar todas las operaciones de exportación de datos mediante subprocesamiento múltiple, los integradores de sistemas o los desarrolladores pueden modificar el número de subprocesos y el tamaño del lote para cada fuente en la configuración de la aplicación de Commerce.
 
-Estos cambios se pueden aplicar añadiendo valores personalizados al [sección del sistema](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/files/config-reference-configphp#system) del archivo de configuración, `app/etc/config.php`.
+Estos cambios se pueden aplicar agregando valores personalizados a la [sección del sistema](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/files/config-reference-configphp#system) del archivo de configuración, `app/etc/config.php`.
 
-**Ejemplo: Configuración del subprocesamiento múltiple para productos y precios**
+**Ejemplo: Configurar subprocesamiento múltiple para productos y precios**
 
 ```php
 <?php

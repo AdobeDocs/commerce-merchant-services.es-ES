@@ -20,15 +20,15 @@ Algunos datos de pedidos y pagos están disponibles para que pueda coordinar la 
 
 Puede reconciliar los informes financieros de Adobe Commerce con su sistema de planificación de recursos empresariales (ERP) que no sea de Adobe mediante el ID de incremento asociado a un pedido específico.
 
-Cuando Servicios de pago envía el pedido de Commerce a PayPal, el ID de incremento se incluye como `custom_id` _y_ en el `invoice_id` (que también contiene una cadena aleatoria después de `increment_id`).
+Cuando Payment Services envía el pedido de Commerce a PayPal, el identificador de incremento se incluye como `custom_id` _y_ en `invoice_id` (que también contiene una cadena aleatoria después de `increment_id`).
 
 Los ID son fácilmente accesibles tanto en el detalle de la actividad comercial para un pago como en el webhook de PayPal.
 
-El `invoice_id` y `custom_id` se muestran cerca de la parte inferior de los detalles de la actividad del comerciante para un pago:
+`invoice_id` y `custom_id` se muestran cerca de la parte inferior del detalle de actividad de comerciante para un pago:
 
 ![`custom_id` en detalle de actividad de comerciante](assets/merchant-activity-ids.png){width="600" zoomable="yes"}
 
-`custom_id` y `invoice_id` en los detalles en el webhook de PayPal:
+`custom_id` y `invoice_id` en los detalles del webhook de PayPal:
 
 ```json
    ...
@@ -79,5 +79,5 @@ El `invoice_id` y `custom_id` se muestran cerca de la parte inferior de los deta
 
 Consulte la documentación de las API de REST de PayPal para obtener más información:
 
-* [`purchase_unit`, en el que `custom_id` y `invoice_id` residir](https://developer.paypal.com/docs/api/orders/v2/#definition-purchase_unit)
+* [`purchase_unit`, en el cual residen `custom_id` y `invoice_id`](https://developer.paypal.com/docs/api/orders/v2/#definition-purchase_unit)
 * [Mostrar detalles del pedido](https://developer.paypal.com/docs/api/orders/v2/#orders_get)

@@ -1,6 +1,6 @@
 ---
-title: Introducción a [!DNL Product Recommendations]
-description: '''[!DNL Product Recommendations] son una potente herramienta de marketing que puede utilizar para aumentar las conversiones, aumentar los ingresos y estimular la participación del comprador".'
+title: Introducción a  [!DNL Product Recommendations]
+description: '''[!DNL Product Recommendations]'' es una potente herramienta de marketing que puede utilizar para aumentar las conversiones, aumentar los ingresos y estimular la participación del comprador.'''
 exl-id: 818ac876-58c9-4c68-975e-53da59ed6b52
 recommendations: noCatalog
 source-git-commit: 289ac6ac464955f18f3a2448099ad459e6264941
@@ -12,11 +12,11 @@ ht-degree: 0%
 
 # Introducción a [!DNL Product Recommendations]
 
-Las recomendaciones de productos son una potente herramienta de marketing que puede utilizar para aumentar las conversiones, aumentar los ingresos y estimular la participación del comprador. Las recomendaciones de productos de Adobe Commerce utilizan [Adobe Sensei](https://www.adobe.com/sensei.html), que utiliza inteligencia artificial y algoritmos de aprendizaje automático para realizar un análisis profundo de los datos acumulados del visitante. Estos datos, cuando se combinan con su catálogo de Adobe Commerce, resultan en una experiencia muy atractiva, relevante y personalizada.
+Las recomendaciones de productos son una potente herramienta de marketing que puede utilizar para aumentar las conversiones, aumentar los ingresos y estimular la participación del comprador. Las recomendaciones de productos de Adobe Commerce están impulsadas por [Adobe Sensei](https://www.adobe.com/sensei.html), que usa inteligencia artificial y algoritmos de aprendizaje automático para realizar un análisis profundo de los datos agregados de visitantes. Estos datos, cuando se combinan con su catálogo de Adobe Commerce, resultan en una experiencia muy atractiva, relevante y personalizada.
 
 Las recomendaciones de productos aparecen en la tienda como unidades con etiquetas como, por ejemplo, &quot;Los clientes que vieron este producto también vieron&quot;. Puede crear, administrar e implementar recomendaciones en las vistas de su tienda directamente desde el administrador de Adobe Commerce.
 
-Si la tienda está implementada con PWA Studio, consulte la [Documentación del PWA](https://developer.adobe.com/commerce/pwa-studio/integrations/product-recommendations/). Si utiliza una tecnología de front-end personalizada como React o Vue JS, aprenda a [integrar](headless.md) [!DNL Product Recommendations] en tu tienda sin encabezado.
+Si su tienda está implementada usando PWA Studio, consulte la [documentación del PWA](https://developer.adobe.com/commerce/pwa-studio/integrations/product-recommendations/). Si usas una tecnología de front-end personalizada como React o Vue JS, aprende a [integrar](headless.md) [!DNL Product Recommendations] en tu tienda sin encabezado.
 
 >[!NOTE]
 >
@@ -24,13 +24,13 @@ Si la tienda está implementada con PWA Studio, consulte la [Documentación del 
 
 ## Privacidad
 
-Recopilación de datos a los efectos de [!DNL Product Recommendations] no incluye información de identificación personal (PII). Además, todos los identificadores de usuario, como los ID de cookie y las direcciones IP, se anonimizan estrictamente. Para obtener más información, consulte la [Política de privacidad de Adobe](https://www.adobe.com/privacy/policy.html).
+La recopilación de datos a los efectos de [!DNL Product Recommendations] no incluye información de identificación personal (PII). Además, todos los identificadores de usuario, como los ID de cookie y las direcciones IP, se anonimizan estrictamente. Para obtener más información, consulte la [Directiva de privacidad de Adobe](https://www.adobe.com/privacy/policy.html).
 
-[!DNL Product Recommendations] Los usuarios de pueden consultar la [Tablero de administración de datos](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-dashboard.html) para obtener más datos sobre la sincronización de datos.
+[!DNL Product Recommendations] usuarios pueden consultar [Panel de administración de datos](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-dashboard.html) para obtener más datos sobre la sincronización de datos.
 
 ## Recomendaciones de productos frente a relaciones de productos
 
-Dadas las complejidades cambiantes de las compras en línea, lo que mejor funciona para su tienda a menudo es una combinación de múltiples tecnologías clave. Uso de ambos [!DNL Product Recommendations] y [Relaciones de producto](https://experienceleague.adobe.com/docs/commerce-admin/marketing/promotions/product-relationships/product-relationships.html) le ofrece más flexibilidad a la hora de promocionar productos. Puede aprovechar [!DNL Product Recommendations] equipado con Adobe Sensei para automatizar de forma inteligente sus recomendaciones a escala. Entonces, puede aprovechar [Reglas de producto relacionadas](https://experienceleague.adobe.com/docs/commerce-admin/marketing/promotions/product-relationships/product-related-rules.html) cuando debe intervenir manualmente y asegurarse de que se está realizando una recomendación específica a un segmento de comprador objetivo o cuando se deben cumplir ciertos objetivos comerciales.
+Dadas las complejidades cambiantes de las compras en línea, lo que mejor funciona para su tienda a menudo es una combinación de múltiples tecnologías clave. El uso de [!DNL Product Recommendations] y [relaciones de producto](https://experienceleague.adobe.com/docs/commerce-admin/marketing/promotions/product-relationships/product-relationships.html) le proporciona más flexibilidad al promocionar productos. Puede aprovechar [!DNL Product Recommendations] con tecnología de Adobe Sensei para automatizar de manera inteligente sus recomendaciones a escala. Entonces, puede aprovechar [reglas de productos relacionadas](https://experienceleague.adobe.com/docs/commerce-admin/marketing/promotions/product-relationships/product-related-rules.html) cuando tenga que intervenir manualmente y asegurarse de que se hace una recomendación específica a un segmento de destinatario o cuando se deban cumplir ciertos objetivos comerciales.
 
 Las recomendaciones de productos le permiten:
 
@@ -38,8 +38,8 @@ Las recomendaciones de productos le permiten:
 - Utilice datos de comportamiento para personalizar las recomendaciones en el recorrido de la tienda del comprador
 - Mida las métricas clave relevantes para cada recomendación para ayudarle a comprender el impacto de sus recomendaciones
 
-## [!DNL Product Recommendations] demostración
+## Demostración de [!DNL Product Recommendations]
 
-Vea este vídeo para obtener más información [!DNL Product Recommendations]:
+Vea este vídeo para obtener más información sobre [!DNL Product Recommendations]:
 
 >[!VIDEO](https://video.tv.adobe.com/v/343991?quality=12)

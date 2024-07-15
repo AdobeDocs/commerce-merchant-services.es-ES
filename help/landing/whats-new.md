@@ -18,6 +18,6 @@ Los siguientes elementos son cambios importantes recientes en la documentación 
 
 | Servicio | Cambiar | Tipo |
 | -- | -- | -- |
-| [**Servicio de catálogo**](../live-search/overview.md) | Se ha añadido la [Mostrar impuestos con servicio de catálogo y malla de API](https://experienceleague.adobe.com/docs/commerce-merchant-services/catalog-service/taxes.html) tema. | Nuevo tema |
+| [**Servicio de catálogo**](../live-search/overview.md) | Se agregó el tema [Mostrar impuestos con el servicio de catálogo y la malla de API](https://experienceleague.adobe.com/docs/commerce-merchant-services/catalog-service/taxes.html). | Nuevo tema |
 
 Esta tabla se actualiza el primer lunes de cada mes.

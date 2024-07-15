@@ -1,13 +1,13 @@
 ---
 title: Requisitos de cumplimiento de tienda
-description: Requisitos para el aprovisionamiento e incorporación de [!DNL Store Fulfillment solution].
+description: Requisitos para el aprovisionamiento e incorporación de  [!DNL Store Fulfillment solution].
 role: Leader, Admin, Developer
 level: Intermediate
 feature: Shipping/Delivery, Install
 exl-id: f9e05049-5904-4f6c-b45d-9f81fbc76b69
 source-git-commit: 78b09113e72382053b01d6016276bae3aa545fa3
 workflow-type: tm+mt
-source-wordcount: '315'
+source-wordcount: '306'
 ht-degree: 0%
 
 ---
@@ -18,7 +18,7 @@ En las siguientes secciones se detallan los requisitos técnicos y empresariales
 
 ## Requisitos de plataforma y versión de software
 
-El [!DNL Store Fulfillment] está disponible para los clientes de Adobe Commerce en las plataformas siguientes.
+La solución [!DNL Store Fulfillment] está disponible para los clientes de Adobe Commerce en las plataformas siguientes.
 
 - Adobe Commerce en infraestructura en la nube (ECE)
 - Adobe Commerce local (EE)
@@ -27,9 +27,9 @@ Antes de instalar o actualizar, revise las notas de la versión y los requisitos
 
 - [Notas de la versión de Store Fulfillment](release-notes.md)
 
-- [Notas de la versión de Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-operations/release/versions.html) en el *Información de versión de Adobe Commerce*.
+- [Notas de la versión de Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-operations/release/versions.html) en la *Información de la versión de Adobe Commerce*.
 
-- [Requisitos del sistema de Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html) en el *Guía de instalación de Adobe Commerce*.
+- [Requisitos del sistema de Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html) en la *Guía de instalación de Adobe Commerce*.
 
 
 ## Requisitos de la aplicación Store Assist
@@ -38,7 +38,7 @@ El proceso de extremo a extremo para administrar los pedidos de recogida de la t
 
 **Requisitos mínimos del sistema operativo**
 
-- Android 6
+- ANDROID 6
 - iOS 12
 
 **Requisitos mínimos de hardware**

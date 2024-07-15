@@ -1,6 +1,6 @@
 ---
 title: "Buscar comercialización"
-description: '"[!DNL Live Search] las reglas de comercialización combinan la lógica con las acciones para dar forma a la experiencia de compra".'
+description: "[!DNL Live Search] reglas de comercialización combinan lógica con acciones para dar forma a la experiencia de compra."
 exl-id: d06a3040-6987-4813-90ae-2f7b3ad0b232
 source-git-commit: 2b0ca3f5a68e75ef4b4e71ac7705b17534e16845
 workflow-type: tm+mt
@@ -36,14 +36,14 @@ El texto de la consulta puede contener:
 
 ## Operadores lógicos
 
-Los operadores lógicos `AND` y `OR` una dos condiciones y devuelva resultados diferentes. Todos los operadores lógicos utilizados en una regla con varias condiciones son los mismos. No es posible utilizar ambos `AND` y `OR` en la misma regla.
+Los operadores lógicos `AND` y `OR` unen dos condiciones y devuelven resultados diferentes. Todos los operadores lógicos utilizados en una regla con varias condiciones son los mismos. No es posible usar `AND` y `OR` a la vez en la misma regla.
 
 ### Operadores de coincidencia
 
-Los operadores de coincidencia `All` y `Any` determine el operador lógico que se utiliza para unir varias condiciones en la regla y se puede utilizar para cambiar el operador existente.
+Los operadores de coincidencia `All` y `Any` determinan el operador lógico que se usa para unir varias condiciones en la regla y se puede usar para cambiar el operador existente.
 
-* `All` - Utiliza el `AND` operador lógico para unir varias condiciones. Una regla que utiliza el `All` El operador de coincidencia solo puede tener uno `Search query is` condición.
-* `Any` - Utiliza el `OR` operador lógico para unir varias condiciones.
+* `All`: utiliza el operador lógico `AND` para unir varias condiciones. Una regla que usa el operador de coincidencia `All` solo puede tener una condición `Search query is`.
+* `Any`: utiliza el operador lógico `OR` para unir varias condiciones.
 
 Al componer una regla compleja, puede resultar útil escribirla con sangría para describir las condiciones, los eventos asociados y los nombres de producto o SKU necesarios para devolver los resultados que desea lograr. A continuación, genere la regla y pruebe el resultado.
 
@@ -54,25 +54,25 @@ Puede establecer una regla predeterminada que se aplique cuando no se proporcion
 ## Orden de prioridad con varias reglas
 
 Solo se aplica una regla de búsqueda a un término de búsqueda al mismo tiempo.
-Si se encuentran varias reglas aplicables a una frase de búsqueda, se aplican todas estas reglas. Si hay una colisión entre dos reglas—`rule 1` que aumenta sku1 pero `rule 2` oculta el mismo SKU y, a continuación, la regla aplicada más recientemente (`rule 2`) tiene prioridad.
+Si se encuentran varias reglas aplicables a una frase de búsqueda, se aplican todas estas reglas. Si hay un conflicto entre dos reglas (`rule 1` que aumenta sku1 pero `rule 2` oculta el mismo SKU), entonces la regla aplicada más recientemente (`rule 2`) tiene prioridad.
 
 * Las reglas se ordenan por la marca de tiempo &quot;Última modificación&quot;. La regla modificada más recientemente se aplica primero, y las reglas más antiguas después, en orden de marca de tiempo.
-* El `query is` la condición tiene prioridad sobre otras condiciones. Si una regla más reciente contiene un `query contains` condición, pero una regla más antigua tiene un `query is` condición, la `query is` se aplica la regla.
+* La condición `query is` tiene prioridad sobre otras condiciones. Si una regla más reciente contiene una condición `query contains`, pero una regla más antigua tiene una condición `query is`, se aplica la regla `query is`.
 
 ### Solicitudes de tienda
 
-Si una regla activa contiene un `query is` La condición coincide con la frase de búsqueda y se aplica. Si hay varias reglas coincidentes con un `query is` condición, se aplica la regla activa actualizada más recientemente.
+Si una regla activa que contiene una condición `query is` coincide con la frase de búsqueda, se aplica. Si hay varias reglas coincidentes con una condición `query is`, se aplica la regla activa actualizada más recientemente.
 De lo contrario, se aplica la regla activa actualizada más recientemente.
 
 ### Previsualizar solicitudes
 
 Las solicitudes realizadas en el Administrador funcionan de forma ligeramente diferente. Al obtener una vista previa en Admin, se aplican todas las reglas, incluidas las caducadas y programadas.
 
-* Si la regla que se previsualiza tiene un `query is` condición, se aplica.
-* Si la regla que se previsualiza no tiene un `query is` y una regla de coincidencia activa posterior con un `query is` se encuentra la condición, el `query is` se aplica la regla.
-* Si la regla que se previsualiza no tiene un `query is` y ninguna otra regla con una condición `query is` Si se encuentra la condición, se aplica la regla que se está previsualizando.
+* Si la regla que se está previsualizando tiene una condición `query is`, se aplica.
+* Si la regla que se está previsualizando no tiene una condición `query is` y se encuentra una regla coincidente activa posterior con una condición `query is`, se aplica la regla `query is`.
+* Si la regla que se está previsualizando no tiene una condición `query is` y no se encuentra ninguna otra regla con una condición `query is`, se aplica la regla que se está previsualizando.
 
 ## Asignaciones de productos de comercialización y categorías
 
-[!DNL Live Search] permite filtrar por categorías. Consulte [Comercialización por categorías](category-merch.md) para obtener más información.
-Sin embargo, en Adobe Commerce puede crear una categoría virtual con [Asignaciones de productos de categoría](https://experienceleague.adobe.com/docs/commerce-admin/catalog/categories/products-in-category/categories-product-assignments.html). Este tipo de categoría se crea durante la ejecución y no existe en la base de datos de categorías. Por lo tanto, [!DNL Live Search] no se puede leer ni utilizar este tipo de categoría.
+[!DNL Live Search] le permite filtrar por categorías. Consulte [Comercialización por categorías](category-merch.md) para obtener más información.
+Sin embargo, en Adobe Commerce puede crear una categoría virtual con [asignaciones de productos de categoría](https://experienceleague.adobe.com/docs/commerce-admin/catalog/categories/products-in-category/categories-product-assignments.html). Este tipo de categoría se crea durante la ejecución y no existe en la base de datos de categorías. Por lo tanto, [!DNL Live Search] no puede leer ni utilizar este tipo de categoría.

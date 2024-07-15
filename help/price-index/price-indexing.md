@@ -15,19 +15,19 @@ ht-degree: 0%
 
 La indexación de precios SaaS mejora el rendimiento del sitio al mover procesos de computación pesados como la indexación y el cálculo de precios de la aplicación Commerce a la infraestructura en la nube de Adobe. Este enfoque permite a los comerciantes ampliar sus recursos rápidamente para aumentar los tiempos de indexación de precios y reflejar los cambios de precios más rápido al enviar datos a la tienda y a los servicios conectados de Commerce.
 
-El diagrama siguiente muestra el flujo de datos de indexación a los servicios SaaS cuando Commerce utiliza el [indexación de precios](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/manage-indexers) proceso incluido en la aplicación de Commerce:
+El diagrama siguiente muestra el flujo de datos de indexación a los servicios SaaS cuando Commerce utiliza el proceso [indexación de precios](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/manage-indexers) incluido en la aplicación Commerce:
 
 ![Flujo de datos predeterminado](assets/old_way.png)
 
-Con la indexación de precios SaaS habilitada, el flujo de datos cambia. La indexación de precios se realiza utilizando [Exportación de datos de SaaS de Commerce](../data-export/data-synchronization.md).
+Con la indexación de precios SaaS habilitada, el flujo de datos cambia. La indexación de precios se realiza mediante [exportación de datos SaaS de Commerce](../data-export/data-synchronization.md).
 
 ![Flujo de datos de indexación de precios SaaS](assets/new_way.png)
 
 Todos los comerciantes pueden beneficiarse del uso de la indexación de precios SaaS, pero los comerciantes que tienen proyectos con las siguientes características pueden obtener las mayores ganancias:
 
-* **Cambios constantes en los precios**-Comerciantes que requieren cambios repetidos en sus precios para cumplir con objetivos estratégicos como promociones frecuentes, descuentos estacionales o reducciones de existencias.
-* **Varios sitios web o grupos de clientes**-Comerciantes con catálogos de productos compartidos en varios sitios web (dominios/marcas) o grupos de clientes.
-* **Muchos precios únicos en sitios web o grupos de clientes**-Comerciantes con extensos catálogos de productos compartidos que contienen precios únicos en sitios web o grupos de clientes. Algunos ejemplos son los comerciantes B2B que han negociado previamente precios o marcas con diferentes estrategias de precios.
+* **Cambios constantes en los precios**: los comerciantes que necesitan cambios repetidos en sus precios para cumplir objetivos estratégicos como promociones frecuentes, descuentos estacionales o reducciones de existencias.
+* **Varios sitios web o grupos de clientes**: comerciantes con catálogos de productos compartidos en varios sitios web (dominios/marcas) o grupos de clientes.
+* **Muchos precios únicos en sitios web o grupos de clientes**-Comerciantes con catálogos de productos compartidos que contienen precios únicos en sitios web o grupos de clientes. Algunos ejemplos son los comerciantes B2B que han negociado previamente precios o marcas con diferentes estrategias de precios.
 
 ## Usar indexación de precios SaaS
 
@@ -48,7 +48,7 @@ La indexación de precios SaaS se activa automáticamente al instalar Adobe Comm
 
 >[!NOTE]
 >
->Si es necesario, el indexador de precios predeterminado en la aplicación de Commerce se puede desactivar utilizando [Adaptador de catálogo](catalog-adapter.md).
+>Si es necesario, el indizador de precios predeterminado en la aplicación Commerce se puede deshabilitar usando el [Adaptador de catálogo](catalog-adapter.md).
 
 ## Sincronizar precios con la indexación de precios SaaS
 
@@ -66,7 +66,7 @@ Los cálculos de precios se admiten para tipos de productos personalizados, como
 
 Si tiene un tipo de producto personalizado que utiliza una fórmula específica para calcular el precio final, puede ampliar el comportamiento de la fuente de precios del producto.
 
-1. Cree un complemento en la `Magento\ProductPriceDataExporter\Model\Provider\ProductPrice` clase.
+1. Cree un complemento en la clase `Magento\ProductPriceDataExporter\Model\Provider\ProductPrice`.
 
    ```xml
    <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"

@@ -1,6 +1,6 @@
 ---
-title: "[!DNL Payment Services] Información general de la guía"
-description: Información completa sobre [!DNL Payment Services] para [!DNL Adobe Commerce] y [!DNL Magento Open Source] administradores, incluida la instalación e incorporación
+title: "[!DNL Payment Services] Descripción general de la guía"
+description: Información completa sobre los administradores de  [!DNL Payment Services] for [!DNL Adobe Commerce] and [!DNL Magento Open Source] y, incluida la instalación e incorporación
 seo-title: Adobe Commerce Payments Services Guide
 seo-description: Describes how to use [!DNL Payment Services] with Adobe Commerce or [!DNL Magento Open Source].
 exl-id: 30b23f26-9aac-4a24-a607-2431455fc935
@@ -8,37 +8,37 @@ feature: Payments, Checkout
 recommendations: noCatalog
 source-git-commit: 6ba5a283d9138b4c1be11b80486826304c63247f
 workflow-type: tm+mt
-source-wordcount: '214'
+source-wordcount: '196'
 ht-degree: 0%
 
 ---
 
-# [!DNL Payment Services] Información general de guía
+# Información general de la guía [!DNL Payment Services]
 
-Esta guía está destinada a administradores de [!DNL Adobe Commerce] y [!DNL Magento Open Source]. Incluye información detallada acerca de la instalación e incorporación de [!DNL Payment Services], así como la configuración y gestión de los servicios. Supone una comprensión básica de la configuración y funcionalidad principales de Commerce.
+Esta guía está dirigida a los administradores de [!DNL Adobe Commerce] y [!DNL Magento Open Source]. Incluye información detallada acerca de la instalación e incorporación de [!DNL Payment Services], así como la configuración y administración de los servicios. Supone una comprensión básica de la configuración y la funcionalidad principales de Commerce.
 
 >[!TIP]
 >
->Para obtener ayuda con los servicios de pago, consulte [Asistencia](#support).
+>Para obtener ayuda con Servicios de pago, consulta [Soporte técnico](#support).
 
-[!DNL Payment Services] tiene dos áreas para los administradores:
+[!DNL Payment Services] tiene dos áreas para administradores:
 
 * Administración: utilice esta área para acceder a la interfaz de usuario de configuración y a los informes.
 * Interfaz de línea de comandos (o CLI): Utilice esta herramienta para ejecutar tareas de instalación y configuración back-end.
 
 Esta guía describe:
 
-* Todo [!DNL Payment Services]Tareas específicas de que se realizan en el administrador.
-* Todo [!DNL Payment Services]Tareas específicas de que se realizan mediante la línea de comandos de Commerce
+* Todas las tareas específicas de [!DNL Payment Services] que se realizan en el administrador.
+* Todas las tareas específicas de [!DNL Payment Services] que se realizan mediante la línea de comandos de Commerce
 
-Esta guía no cubre las funcionalidades básicas de [!DNL Adobe Commerce] y [!DNL Magento Open Source].
+Esta guía no cubre las capacidades principales de [!DNL Adobe Commerce] y [!DNL Magento Open Source].
 
 ## Documentación adicional
 
-| Guía de  | Descripción |
+| Guía | Descripción |
 |------ | ----------- |
-| [[!DNL Adobe Commerce] Guía del usuario de 2.4](https://experienceleague.adobe.com/docs/commerce-admin/user-guides/home.html) | Documentación centrada en el comerciante para ambos [!DNL Adobe Commerce] y [!DNL Magento Open Source] |
-| [[!DNL Adobe Commerce] 2.4 Guía para desarrolladores](https://developer.adobe.com/commerce/docs) | Documentación centrada en el desarrollador que se utiliza para crear y personalizar [!DNL Adobe Commerce] o [!DNL Magento Open Source] |
+| [[!DNL Adobe Commerce] Guía del usuario de 2.4](https://experienceleague.adobe.com/docs/commerce-admin/user-guides/home.html) | Documentación centrada en el comerciante para [!DNL Adobe Commerce] y [!DNL Magento Open Source] |
+| [[!DNL Adobe Commerce] Guía para desarrolladores de 2.4](https://developer.adobe.com/commerce/docs) | Documentación centrada en el desarrollador utilizada para generar y personalizar [!DNL Adobe Commerce] o [!DNL Magento Open Source] |
 
 ## Asistencia
 
@@ -46,5 +46,5 @@ Si necesita información o tiene preguntas que no están cubiertas en esta guía
 
 ![Recursos de ayuda](assets/help-resources.png){width="600" zoomable="yes"}
 
-* [Centro de ayuda](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/overview.html)—Buscar [!DNL Payment Services]Artículos de solución de problemas relacionados con en la base de conocimientos.
-* [Tickets de asistencia](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket)—Envíe un ticket para recibir ayuda adicional.
+* [Centro de ayuda](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/overview.html)—Busque [!DNL Payment Services] artículos de solución de problemas relacionados en la base de conocimiento.
+* [Entradas de soporte técnico](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket): envía un ticket para recibir ayuda adicional.

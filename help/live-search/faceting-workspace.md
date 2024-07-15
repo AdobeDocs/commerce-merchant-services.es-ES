@@ -1,6 +1,6 @@
 ---
 title: "Faceting Workspace"
-description: '"Aprenda a rodear el [!DNL Live Search] faceting workspace".'
+description: '"Aprenda a utilizar el espacio de trabajo de  [!DNL Live Search] faceting".'
 exl-id: b47b5c19-59bb-41e4-9599-3b90cbc44b70
 source-git-commit: 4978bdb5549f5df911863a23fdfbfc9ab9ad05df
 workflow-type: tm+mt
@@ -11,17 +11,17 @@ ht-degree: 0%
 
 # Faceting Workspace
 
-El *Faceteado* workspace enumera todas las facetas que están disponibles actualmente y proporciona acceso a las herramientas que necesita para configurar y administrar las facetas. Las facetas ancladas aparecen primero en la lista de facetas existentes, seguidas de las facetas dinámicas. La lista se puede filtrar para mostrar todas las facetas o solo aquellas que estén ancladas o sean dinámicas.
+El área de trabajo *Faceting* enumera todas las facetas que están disponibles actualmente y proporciona acceso a las herramientas que necesita para configurar y administrar facetas. Las facetas ancladas aparecen primero en la lista de facetas existentes, seguidas de las facetas dinámicas. La lista se puede filtrar para mostrar todas las facetas o solo aquellas que estén ancladas o sean dinámicas.
 
-![Faceting workspace](assets/faceting-workspace.png)
+![Espacio de trabajo de facetas](assets/faceting-workspace.png)
 
 ## Establecer el ámbito
 
-Si la instalación de Adobe Commerce incluye varias vistas de tienda, establezca **Ámbito** a la [vista de tienda](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings) donde se aplique la configuración de faceta.
+Si la instalación de Adobe Commerce incluye varias vistas de tienda, establece **Scope** en la [vista de tienda](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings) donde se aplique la configuración de faceta.
 
 ## Filtrado de la lista
 
-1. Haga clic en **Filtrar por** control.
+1. Haga clic en el control **Filtrar por**.
 1. Elija una de las siguientes opciones:
 
    * Todos los filtros
@@ -30,15 +30,15 @@ Si la instalación de Adobe Commerce incluye varias vistas de tienda, establezca
 
 ## Añadir una faceta
 
-1. Clic **Añadir facetas**.
+1. Haga clic en **Agregar facetas**.
 1. Consulte [Agregar facetas](facets-add.md) para obtener instrucciones detalladas.
 
 ## Descripciones de columna
 
 | Columna | Descripción |
 |--- |--- |
-| (primera columna) | Enumera las facetas ancladas y dinámicas mediante [etiqueta](facets-type.md) que es visible para el comprador. |
-| Tipo de orden | El [orden](facets-type.md) de valores de faceta. Las facetas se ordenan alfabéticamente para todos [!DNL Commerce] escaparates. Para [acéfalo] En las implementaciones de, las facetas se pueden ordenar alfabéticamente o por recuento. Opciones: Alfabético, Recuento (solo sin encabezado) |
+| (primera columna) | Enumera facetas fijas y dinámicas mediante la [etiqueta](facets-type.md) que es visible para el comprador. |
+| Tipo de orden | El [orden](facets-type.md) de valores de faceta. Las facetas se ordenan alfabéticamente en todas las [!DNL Commerce] tiendas. Para implementaciones de [headless], las facetas se pueden ordenar alfabéticamente o por recuento. Opciones: Alfabético, Recuento (solo sin encabezado) |
 | Valor máximo | El número de valores de faceta disponibles en la tienda como filtros, con un máximo de 10. |
 
 ## Controles

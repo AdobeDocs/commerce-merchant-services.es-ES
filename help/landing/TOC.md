@@ -30,8 +30,8 @@ ht-degree: 43%
    - [[!DNL Data Connection]](https://experienceleague.adobe.com/docs/commerce-merchant-services/data-connection/overview.html)
    - [Conector de servicios](/help/landing/saas.md)
 - Herramientas de datos {#data-services}
-   - [Exportación de datos SaaS](https://experienceleague.adobe.com/docs/commerce-merchant-services/saas-data-export/overview.html)
-   - [Indexación de precios de SaaS](https://experienceleague.adobe.com/docs/commerce-merchant-services/price-indexer/price-indexing.html)
+   - [Exportación De Datos SaaS](https://experienceleague.adobe.com/docs/commerce-merchant-services/saas-data-export/overview.html)
+   - [Indexación De Precios De SaaS](https://experienceleague.adobe.com/docs/commerce-merchant-services/price-indexer/price-indexing.html)
    - [Sincronización de catálogo](/help/landing/catalog-sync.md)
 
 

@@ -1,6 +1,6 @@
 ---
-title: '[!DNL Page Builder] Integración'
-description: Aprenda a utilizar [!DNL Product Recommendations] en Page Builder.
+title: '[!DNL Page Builder] integración'
+description: Aprenda a utilizar [!DNL Product Recommendations] unidades en Page Builder.
 exl-id: dd972642-1fb4-426a-ac68-f56bb5fa2ecf
 feature: Services, Recommendations, Page Builder
 source-git-commit: 6bd1010066919d8339ddfb70cd7443d701a4ac78
@@ -10,7 +10,7 @@ ht-degree: 0%
 
 ---
 
-# [!DNL Page Builder] Integración
+# Integración de [!DNL Page Builder]
 
 Product Recommendations se puede integrar en cualquier contenido de Page Builder que implemente en su sitio.
 
@@ -24,14 +24,14 @@ Product Recommendations se puede integrar en cualquier contenido de Page Builder
 
    >[!NOTE]
    >
-   >Las métricas de las unidades de recomendación de Page Builder solo aparecen en la vista de tienda predeterminada [!DNL Product Recommendations] workspace. Aunque coloque una unidad de recomendación de Page Builder en una vista de tienda que no sea la vista de tienda predeterminada, las métricas relacionadas con esas unidades de recomendación de Page Builder no se mostrarán en la vista de tienda no predeterminada [!DNL Product Recommendations] workspace. Para ver las métricas de Page Builder en una vista de tienda no predeterminada [!DNL Product Recommendations] workspace, abrir y [editar](edit.md) Seleccione la unidad de recomendación de Page Builder en la vista de tienda no predeterminada y, a continuación, haga clic en [!UICONTROL **Guardar**]. Las métricas de Page Builder ahora aparecen en la [!DNL Product Recommendations] espacio de trabajo en la vista de tienda no predeterminada.
+   >Las métricas de las unidades de recomendación de Page Builder solo aparecen en la vista de tienda predeterminada [!DNL Product Recommendations] del espacio de trabajo. Aunque coloque una unidad de recomendación de Page Builder en una vista de tienda que no sea la vista de tienda predeterminada, las métricas relacionadas con esas unidades de recomendación de Page Builder no se mostrarán en el espacio de trabajo de la vista de tienda no predeterminada [!DNL Product Recommendations]. Para ver las métricas de Page Builder en un área de trabajo [!DNL Product Recommendations] de vista de tienda no predeterminada, abra y [edite](edit.md) la unidad de recomendación de Page Builder en la vista de tienda no predeterminada y, a continuación, haga clic en [!UICONTROL **Guardar**]. Las métricas de Page Builder ahora aparecen en el área de trabajo [!DNL Product Recommendations] en la vista de tienda no predeterminada.
 
 1. En Page Builder, seleccione el widget de contenido de Product Recommendations y colóquelo en el sitio.
 
 ![Insertar unidad de recomendación](assets/pb-insert.png)
 
-1. Clic **Editar recomendación de producto**
-1. Clic **Seleccionar**
+1. Haga clic en **Editar recomendación de producto**
+1. Haga clic en **Seleccionar**
 1. Seleccione la unidad de Recommendations creada anteriormente y haga clic en **Agregar selección**
 
 ![Insertar unidad de recomendación](assets/pb-select.png)

@@ -20,13 +20,13 @@ El modelo de usuario de aplicación Store Fulfillment está separado de otros mo
 
 >[!TIP]
 >
->Para obtener los mejores resultados, [configuración de la conexión](connect-set-up-service.md) antes de agregar usuarios y permisos a Store Associates que usan la aplicación Store Assist.
+>Para obtener los mejores resultados, [configura tu conexión](connect-set-up-service.md) antes de agregar usuarios y permisos para los asociados de la tienda que usan la aplicación Store Assist.
 
 ## Aplicación de asistencia de tienda: funciones de usuario
 
 Durante la configuración inicial del usuario para la aplicación Store Assist, cree funciones de usuario para personalizar los permisos de usuario para la aplicación Store Assist. Por ejemplo, puede crear diferentes funciones para administradores de tiendas y asociados de tiendas, y asignar diferentes recursos de funciones para administrar permisos para cada tipo de usuario.
 
-Configurar funciones de usuario desde **[!UICONTROL System > Store Fulfillment App Permissions > All Store Fulfillment App Users]**.
+Configurar roles de usuario de **[!UICONTROL System > Store Fulfillment App Permissions > All Store Fulfillment App Users]**.
 
 ### Información de rol
 
@@ -42,7 +42,7 @@ Configurar funciones de usuario desde **[!UICONTROL System > Store Fulfillment A
 
 ## Asistencia de tienda: información del usuario
 
-Administre los perfiles de usuario de la aplicación Store Assist desde la configuración del sistema de administración:  **[!UICONTROL System > Store Fulfillment App Permissions > All Store Fulfillment App Users]**.
+Administrar perfiles de usuario de aplicaciones de asistencia de tienda desde la configuración del sistema de administración: **[!UICONTROL System > Store Fulfillment App Permissions > All Store Fulfillment App Users]**.
 
 | **Campo** | **Descripción** | **Ámbito** | **Requerido** |
 |------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------|--------------|
@@ -52,6 +52,6 @@ Administre los perfiles de usuario de la aplicación Store Assist desde la confi
 | **[!UICONTROL Last Name]** | Apellidos asociados con el usuario | Global | No |
 | **[!UICONTROL Role]** | Función asociada al usuario | Global | No |
 | **[!UICONTROL Access to all locations]** | Asigne a los usuarios acceso a todas las tiendas o seleccione las tiendas individualmente. | Global | No |
-| **Configuración regional de interfaz** | Si la tienda tiene varios idiomas, establezca la Configuración regional de la interfaz en el idioma que se utilizará en la interfaz de administración. | Global | No |
-| **Activo desde** | Para definir una fecha de inicio, seleccione el icono de calendario. | Global | No |
-| **Activo a** | Establezca la Fecha de caducidad seleccionando el icono del calendario. La configuración de una fecha de caducidad es útil para configurar asignaciones temporales de usuarios o roles. Después de la fecha de caducidad, el estado de la cuenta de usuario cambia a `Inactive`, pero la cuenta se puede actualizar si es necesario. | Global | No |
+| **Configuración regional de la interfaz** | Si la tienda tiene varios idiomas, establezca la Configuración regional de la interfaz en el idioma que se utilizará en la interfaz de administración. | Global | No |
+| **Activo Desde** | Para definir una fecha de inicio, seleccione el icono de calendario. | Global | No |
+| **Activo Para** | Establezca la Fecha de caducidad seleccionando el icono del calendario. La configuración de una fecha de caducidad es útil para configurar asignaciones temporales de usuarios o roles. Después de la fecha de caducidad, el estado de la cuenta de usuario cambia a `Inactive`, pero la cuenta se puede actualizar si es necesario. | Global | No |

@@ -11,17 +11,17 @@ ht-degree: 0%
 
 ---
 
-# [!DNL Data Connection] Eventos de Back Office
+# [!DNL Data Connection] eventos de Back Office
 
-A continuación, se enumeran los eventos de back office de Commerce disponibles al instalar el [!DNL Data Connection] extensión. Los datos que estos eventos recopilan se envían a Adobe Experience Platform. También puede crear lo siguiente [eventos personalizados](custom-events.md) para recopilar datos adicionales que no se proporcionen de forma predeterminada.
+A continuación se enumeran los eventos de back office de Commerce disponibles al instalar la extensión [!DNL Data Connection]. Los datos que estos eventos recopilan se envían a Adobe Experience Platform. También puede crear [eventos personalizados](custom-events.md) para recopilar datos adicionales que no se proporcionen de forma predeterminada.
 
-Además de los datos que recopilan los siguientes eventos, también obtiene lo siguiente [otros datos](https://experienceleague.adobe.com/docs/experience-platform/edge/data-collection/automatic-information.html) proporcionadas por el SDK web de Adobe Experience Platform.
+Además de los datos que recopilan los eventos siguientes, también recibirá [otros datos](https://experienceleague.adobe.com/docs/experience-platform/edge/data-collection/automatic-information.html) proporcionados por el SDK web de Adobe Experience Platform.
 
-Los eventos del back office contienen datos del lado del servidor. Estos datos incluyen [estado del pedido](#order-status) información como si un pedido se ha realizado, cancelado, reembolsado, enviado o completado. Los datos del lado del servidor también incluyen [eventos de perfil del cliente](#customer-profile-events) información, como si se creó, actualizó o eliminó una cuenta.
+Los eventos del back office contienen datos del lado del servidor. Estos datos incluyen [información sobre el estado del pedido](#order-status), por ejemplo, si se hizo, canceló, reembolsó, envió o completó un pedido. Los datos del lado del servidor también incluyen información sobre [eventos de perfil del cliente](#customer-profile-events), como si se creó, actualizó o eliminó una cuenta.
 
 >[!NOTE]
 >
->Todos los eventos de back office incluyen [`identityMap`](https://experienceleague.adobe.com/docs/experience-platform/xdm/field-groups/profile/identitymap.html) , que incluye la dirección de correo electrónico del comprador, cuando está disponible, y ECID.
+>Todos los eventos de back office incluyen el campo [`identityMap`](https://experienceleague.adobe.com/docs/experience-platform/xdm/field-groups/profile/identitymap.html), que incluye la dirección de correo electrónico del comprador, cuando está disponible, y el ECID.
 
 ## Estado del pedido
 
@@ -45,7 +45,7 @@ En la tabla siguiente se describen los datos recopilados para este evento.
 | `commerce.order.payments.paymentTransactionID` | Identificador único de esta transacción de pago. |
 | `commerce.order.payments.paymentAmount` | El valor del pago. |
 | `commerce.order.payments.paymentType` | El método de pago de este pedido. Se han contabilizado los valores personalizados permitidos. |
-| `commerce.order.payments.currencyCode` | El [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) código de divisa utilizado, como `USD` o `EUR`. |
+| `commerce.order.payments.currencyCode` | El código de divisa [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) usado, como `USD` o `EUR`. |
 | `commerce.order.taxAmount` | El importe del impuesto pagado por el comprador como parte del pago final. |
 | `commerce.order.discountAmount` | Indica el importe de descuento aplicado a todo el pedido. |
 | `commerce.order.createdDate` | Fecha y hora en la que se crea un nuevo pedido en el sistema de comercio. Por ejemplo, `2022-10-15T20:20:39+00:00`. |
@@ -65,9 +65,9 @@ En la tabla siguiente se describen los datos recopilados para este evento.
 | `commerce.billing.address.city` | El nombre de la ciudad. |
 | `commerce.billing.address.state` | El nombre del estado. Este es un campo de forma libre. |
 | `commerce.billing.address.postalCode` | El código postal de la ubicación. Los códigos postales no están disponibles en todos los países. En algunos países, solo contiene parte del código postal. |
-| `commerce.billing.address.country` | El nombre del territorio administrado por el gobierno. Distinto a `xdm:countryCode`Sin embargo, este es un campo de forma libre que puede tener el nombre del país en cualquier idioma. |
+| `commerce.billing.address.country` | El nombre del territorio administrado por el gobierno. Aparte de `xdm:countryCode`, este es un campo de forma libre que puede tener el nombre del país en cualquier idioma. |
 | `personalEmail` | Una dirección de correo electrónico personal. |
-| `personalEmail.address` | La dirección técnica, por ejemplo, `name@domain.com` como se define comúnmente en RFC2822 y estándares subsiguientes. |
+| `personalEmail.address` | La dirección técnica, por ejemplo, `name@domain.com`, tal como se define comúnmente en RFC2822 y estándares subsiguientes. |
 | `productListItems` | Una matriz de productos en el pedido. |
 | `productListItems.id` | El elemento de línea de esta entrada de producto. |
 | `productListItems.SKU` | Unidad de stock. El identificador único del producto. |
@@ -75,7 +75,7 @@ En la tabla siguiente se describen los datos recopilados para este evento.
 | `productListItems.priceTotal` | El precio total de la línea de producto. |
 | `productListItems.quantity` | Número de unidades de producto en el carro de compras. |
 | `productListItems.discountAmount` | Indica el importe de descuento aplicado. |
-| `productListItems.currencyCode` | El [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) código de divisa utilizado, como `USD` o `EUR`. |
+| `productListItems.currencyCode` | El código de divisa [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) usado, como `USD` o `EUR`. |
 | `productListItems.selectedOptions` | Campo utilizado para un producto configurable. |
 | `productListItems.selectedOptions.attribute` | Identifica un atributo del producto configurable, como `size` o `color`. |
 | `productListItems.selectedOptions.value` | Identifica el valor del atributo como `small` o `black`. |
@@ -103,7 +103,7 @@ En la tabla siguiente se describen los datos recopilados para este evento.
 | `commerce.order.currencyCode` | El código de divisa en formato ISO 4217 usado para el total del pedido. |
 | `commerce.order.purchaseOrderNumber` | Identificador único asignado por el comprador a esta compra o contrato. |
 | `commerce.order.payments` | La lista de pagos de este pedido. |
-| `commerce.order.payments.currencyCode` | El [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) código de divisa utilizado, como `USD` o `EUR`. |
+| `commerce.order.payments.currencyCode` | El código de divisa [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) usado, como `USD` o `EUR`. |
 | `commerce.order.payments.paymentType` | El método de pago de este pedido. Se han contabilizado los valores personalizados permitidos. |
 | `commerce.order.payments.paymentAmount` | El valor del pago. |
 | `commerce.shipping` | Detalles de envío de uno o más productos. |
@@ -115,7 +115,7 @@ En la tabla siguiente se describen los datos recopilados para este evento.
 | `commerce.commerceScope.storeViewCode` | El código de vista de tienda único. Puede tener muchas vistas de la tienda por tienda. |
 | `commerce.commerceScope.websiteCode` | El código único del sitio web. Puede tener muchos sitios web en un entorno. |
 | `personalEmail` | Una dirección de correo electrónico personal. |
-| `personalEmail.address` | La dirección técnica, por ejemplo, `name@domain.com` como se define comúnmente en RFC2822 y estándares subsiguientes. |
+| `personalEmail.address` | La dirección técnica, por ejemplo, `name@domain.com`, tal como se define comúnmente en RFC2822 y estándares subsiguientes. |
 | `productListItems` | Una matriz de productos en el pedido. |
 | `productListItems.id` | El elemento de línea de esta entrada de producto. |
 | `productListItems.SKU` | Unidad de stock. El identificador único del producto. |
@@ -146,10 +146,10 @@ En la tabla siguiente se describen los datos recopilados para este evento.
 | `commerce.order.payments.paymentTransactionID` | Identificador único de esta transacción de pago. |
 | `commerce.order.payments.paymentAmount` | El valor del pago. |
 | `commerce.order.payments.paymentType` | El método de pago de este pedido. Se han contabilizado los valores personalizados permitidos. |
-| `commerce.order.payments.currencyCode` | El [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) código de divisa utilizado, como `USD` o `EUR`. |
+| `commerce.order.payments.currencyCode` | El código de divisa [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) usado, como `USD` o `EUR`. |
 | `commerce.order.priceTotal` | El precio total de este pedido después de aplicar todos los descuentos e impuestos. |
 | `commerce.order.purchaseOrderNumber` | Identificador único asignado por el comprador a esta compra o contrato. |
-| `commerce.order.currencyCode` | El [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) código de divisa utilizado, como `USD` o `EUR`. |
+| `commerce.order.currencyCode` | El código de divisa [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) usado, como `USD` o `EUR`. |
 | `commerce.order.lastUpdatedDate` | Hora a la que se actualiza por última vez un registro de pedido determinado en el sistema de comercio. |
 | `commerce.shipping` | Detalles de envío de uno o más productos. |
 | `commerce.shipping.shippingMethod` | El método de envío elegido por el cliente, como envío estándar, envío rápido, recogida en tienda, etc. |
@@ -160,8 +160,8 @@ En la tabla siguiente se describen los datos recopilados para este evento.
 | `commerce.shipping.address.city` | El nombre de la ciudad. |
 | `commerce.shipping.address.state` | El nombre del estado. Este es un campo de forma libre. |
 | `commerce.shipping.address.postalCode` | El código postal de la ubicación. Los códigos postales no están disponibles en todos los países. En algunos países, solo contiene parte del código postal. |
-| `commerce.shipping.address.country` | El nombre del territorio administrado por el gobierno. Distinto a `xdm:countryCode`Sin embargo, este es un campo de forma libre que puede tener el nombre del país en cualquier idioma. |
-| `commerce.shipping.currencyCode` | El [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) código de divisa utilizado, como `USD` o `EUR`. |
+| `commerce.shipping.address.country` | El nombre del territorio administrado por el gobierno. Aparte de `xdm:countryCode`, este es un campo de forma libre que puede tener el nombre del país en cualquier idioma. |
+| `commerce.shipping.currencyCode` | El código de divisa [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) usado, como `USD` o `EUR`. |
 | `commerce.shipping.trackingNumber` | Número de seguimiento proporcionado por el transportista para un envío de artículo de pedido. |
 | `commerce.shipping.trackingURL` | Dirección URL para realizar un seguimiento del estado de envío de un artículo de pedido. |
 | `commerce.shipping.shipDate` | La fecha en la que se envían uno o más artículos de un pedido. |
@@ -176,16 +176,16 @@ En la tabla siguiente se describen los datos recopilados para este evento.
 | `commerce.billing.address.city` | El nombre de la ciudad. |
 | `commerce.billing.address.state` | El nombre del estado. Este es un campo de forma libre. |
 | `commerce.billing.address.postalCode` | El código postal de la ubicación. Los códigos postales no están disponibles en todos los países. En algunos países, solo contiene parte del código postal. |
-| `commerce.billing.address.country` | El nombre del territorio administrado por el gobierno. Distinto a `xdm:countryCode`Sin embargo, este es un campo de forma libre que puede tener el nombre del país en cualquier idioma. |
+| `commerce.billing.address.country` | El nombre del territorio administrado por el gobierno. Aparte de `xdm:countryCode`, este es un campo de forma libre que puede tener el nombre del país en cualquier idioma. |
 | `personalEmail` | Una dirección de correo electrónico personal. |
-| `personalEmail.address` | La dirección técnica, por ejemplo, `name@domain.com` como se define comúnmente en RFC2822 y estándares subsiguientes. |
+| `personalEmail.address` | La dirección técnica, por ejemplo, `name@domain.com`, tal como se define comúnmente en RFC2822 y estándares subsiguientes. |
 | `productListItems` | Una matriz de productos en el pedido. |
 | `productListItems.SKU` | Unidad de stock. El identificador único del producto. |
 | `productListItems.name` | El nombre para mostrar o el nombre legible en lenguaje natural del producto. |
 | `productListItems.priceTotal` | El precio total de la línea de producto. |
 | `productListItems.quantity` | Número de unidades de producto en el carro de compras. |
 | `productListItems.discountAmount` | Indica el importe de descuento aplicado. |
-| `productListItems.currencyCode` | El [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) código de divisa utilizado, como `USD` o `EUR`. |
+| `productListItems.currencyCode` | El código de divisa [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) usado, como `USD` o `EUR`. |
 | `productListItems.selectedOptions` | Campo utilizado para un producto configurable. |
 | `productListItems.selectedOptions.attribute` | Identifica un atributo del producto configurable, como `size` o `color`. |
 | `productListItems.selectedOptions.value` | Identifica el valor del atributo como `small` o `black`. |
@@ -217,7 +217,7 @@ En la tabla siguiente se describen los datos recopilados para este evento.
 | `commerce.commerceScope.storeViewCode` | El código de vista de tienda único. Puede tener muchas vistas de la tienda por tienda. |
 | `commerce.commerceScope.websiteCode` | El código único del sitio web. Puede tener muchos sitios web en un entorno. |
 | `personalEmail` | Una dirección de correo electrónico personal. |
-| `personalEmail.address` | La dirección técnica, por ejemplo, `name@domain.com` como se define comúnmente en RFC2822 y estándares subsiguientes. |
+| `personalEmail.address` | La dirección técnica, por ejemplo, `name@domain.com`, tal como se define comúnmente en RFC2822 y estándares subsiguientes. |
 
 ### orderLineItemRefund
 
@@ -239,16 +239,16 @@ En la tabla siguiente se describen los datos recopilados para este evento.
 | `commerce.refunds.transactionID` | Identificador único de este reembolso. |
 | `commerce.refunds.refundAmount` | El valor del reembolso. |
 | `commerce.refunds.refundPaymentType` | El método de pago de este pedido. Se han contabilizado los valores personalizados permitidos. |
-| `commerce.refunds.currencyCode` | El [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) código de divisa utilizado, como `USD` o `EUR`. |
+| `commerce.refunds.currencyCode` | El código de divisa [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) usado, como `USD` o `EUR`. |
 | `personalEmail` | Una dirección de correo electrónico personal. |
-| `personalEmail.address` | La dirección técnica, por ejemplo, `name@domain.com` como se define comúnmente en RFC2822 y estándares subsiguientes. |
+| `personalEmail.address` | La dirección técnica, por ejemplo, `name@domain.com`, tal como se define comúnmente en RFC2822 y estándares subsiguientes. |
 | `productListItems` | Una matriz de productos en el pedido. |
 | `productListItems.SKU` | Unidad de stock. El identificador único del producto. |
 | `productListItems.name` | El nombre para mostrar o el nombre legible en lenguaje natural del producto. |
 | `productListItems.priceTotal` | El precio total de la línea de producto. |
 | `productListItems.quantity` | Número de unidades de producto en el carro de compras. |
 | `productListItems.discountAmount` | Indica el importe de descuento aplicado. |
-| `productListItems.currencyCode` | El [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) código de divisa utilizado, como `USD` o `EUR`. |
+| `productListItems.currencyCode` | El código de divisa [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) usado, como `USD` o `EUR`. |
 | `productListItems.selectedOptions` | Campo utilizado para un producto configurable. |
 | `productListItems.selectedOptions.attribute` | Identifica un atributo del producto configurable, como `size` o `color`. |
 | `productListItems.selectedOptions.value` | Identifica el valor del atributo como `small` o `black`. |
@@ -280,7 +280,7 @@ En la tabla siguiente se describen los datos recopilados para este evento.
 | `commerce.commerceScope.storeViewCode` | El código de vista de tienda único. Puede tener muchas vistas de la tienda por tienda. |
 | `commerce.commerceScope.websiteCode` | El código único del sitio web. Puede tener muchos sitios web en un entorno. |
 | `personalEmail` | Una dirección de correo electrónico personal. |
-| `personalEmail.address` | La dirección técnica, por ejemplo, `name@domain.com` como se define comúnmente en RFC2822 y estándares subsiguientes. |
+| `personalEmail.address` | La dirección técnica, por ejemplo, `name@domain.com`, tal como se define comúnmente en RFC2822 y estándares subsiguientes. |
 | `productListItems` | Una matriz de productos en el pedido. |
 | `productListItems.SKU` | Unidad de stock. El identificador único del producto. |
 | `productListItems.name` | El nombre para mostrar o el nombre legible en lenguaje natural del producto. |
@@ -325,7 +325,7 @@ En la tabla siguiente se describen los datos recopilados para este evento.
 | `commerce.commerceScope.storeViewCode` | El código de vista de tienda único. Puede tener muchas vistas de la tienda por tienda. |
 | `commerce.commerceScope.websiteCode` | El código único del sitio web. Puede tener muchos sitios web en un entorno. |
 | `personalEmail` | Una dirección de correo electrónico personal. |
-| `personalEmail.address` | La dirección técnica, por ejemplo, `name@domain.com` como se define comúnmente en RFC2822 y estándares subsiguientes. |
+| `personalEmail.address` | La dirección técnica, por ejemplo, `name@domain.com`, tal como se define comúnmente en RFC2822 y estándares subsiguientes. |
 | `productListItems` | Una matriz de productos en el pedido. |
 | `productListItems.SKU` | Unidad de stock. El identificador único del producto. |
 | `productListItems.name` | El nombre para mostrar o el nombre legible en lenguaje natural del producto. |
@@ -364,7 +364,7 @@ En la tabla siguiente se describen los datos recopilados para este evento.
 | `commerce.order.payments.paymentTransactionID` | Identificador único de esta transacción de pago. |
 | `commerce.order.payments.paymentAmount` | El valor del pago. |
 | `commerce.order.payments.paymentType` | El método de pago de este pedido. Se han contabilizado los valores personalizados permitidos. |
-| `commerce.order.payments.currencyCode` | El [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) código de divisa utilizado, como `USD` o `EUR`. |
+| `commerce.order.payments.currencyCode` | El código de divisa [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) usado, como `USD` o `EUR`. |
 | `commerce.order.taxAmount` | El importe del impuesto pagado por el comprador como parte del pago final. |
 | `commerce.order.createdDate` | Fecha y hora en la que se crea un nuevo pedido en el sistema de comercio. Por ejemplo, `2022-10-15T20:20:39+00:00`. |
 | `commerce.shipping` | Detalles de envío de uno o más productos. |
@@ -377,23 +377,23 @@ En la tabla siguiente se describen los datos recopilados para este evento.
 | `commerce.shipping.address.city` | El nombre de la ciudad. |
 | `commerce.shipping.address.state` | El nombre del estado. Este es un campo de forma libre. |
 | `commerce.shipping.address.postalCode` | El código postal de la ubicación. Los códigos postales no están disponibles en todos los países. En algunos países, solo contiene parte del código postal. |
-| `commerce.shipping.address.country` | El nombre del territorio administrado por el gobierno. Distinto a `xdm:countryCode`Sin embargo, este es un campo de forma libre que puede tener el nombre del país en cualquier idioma. |
+| `commerce.shipping.address.country` | El nombre del territorio administrado por el gobierno. Aparte de `xdm:countryCode`, este es un campo de forma libre que puede tener el nombre del país en cualquier idioma. |
 | `commerce.billing.address` | Dirección postal de facturación. |
 | `commerce.billing.address.street1` | Información principal de la dirección postal, número de piso, número de calle y nombre de la calle |
 | `commerce.billing.address.street2` | Campo adicional para información de nivel de calle. |
 | `commerce.billing.address.city` | El nombre de la ciudad. |
 | `commerce.billing.address.state` | El nombre del estado. Este es un campo de forma libre. |
 | `commerce.billing.address.postalCode` | El código postal de la ubicación. Los códigos postales no están disponibles en todos los países. En algunos países, solo contiene parte del código postal. |
-| `commerce.billing.address.country` | El nombre del territorio administrado por el gobierno. Distinto a `xdm:countryCode`Sin embargo, este es un campo de forma libre que puede tener el nombre del país en cualquier idioma. |
+| `commerce.billing.address.country` | El nombre del territorio administrado por el gobierno. Aparte de `xdm:countryCode`, este es un campo de forma libre que puede tener el nombre del país en cualquier idioma. |
 | `personalEmail` | Una dirección de correo electrónico personal. |
-| `personalEmail.address` | La dirección técnica, por ejemplo, `name@domain.com` como se define comúnmente en RFC2822 y estándares subsiguientes. |
+| `personalEmail.address` | La dirección técnica, por ejemplo, `name@domain.com`, tal como se define comúnmente en RFC2822 y estándares subsiguientes. |
 | `productListItems` | Una matriz de productos en el pedido. |
 | `productListItems.SKU` | Unidad de stock. El identificador único del producto. |
 | `productListItems.name` | El nombre para mostrar o el nombre legible en lenguaje natural del producto. |
 | `productListItems.priceTotal` | El precio total de la línea de producto. |
 | `productListItems.quantity` | Número de unidades de producto en el carro de compras. |
 | `productListItems.discountAmount` | Indica el importe de descuento aplicado. |
-| `productListItems.currencyCode` | El [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) código de divisa utilizado, como `USD` o `EUR`. |
+| `productListItems.currencyCode` | El código de divisa [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) usado, como `USD` o `EUR`. |
 | `productListItems.selectedOptions` | Campo utilizado para un producto configurable. |
 | `productListItems.selectedOptions.attribute` | Identifica un atributo del producto configurable, como `size` o `color`. |
 | `productListItems.selectedOptions.value` | Identifica el valor del atributo como `small` o `black`. |
@@ -408,11 +408,11 @@ En la tabla siguiente se describen los datos recopilados para este evento.
 >
 >Esta función está en versión beta.
 
-Los eventos de perfil capturados del lado del servidor incluyen información de la cuenta, como `accountCreated`, `accountUpdated`, y `accountDeleted`. Estos datos se utilizan para rellenar los detalles clave del cliente que se necesitan para definir mejor los segmentos o ejecutar campañas de marketing, como enviar ofertas de descuento de suscripción, confirmaciones de cambio de cuenta, etc. Hay eventos de perfil similares capturados del [escaparate](events.md#customer-profile-events).
+Los eventos de perfil capturados del lado del servidor incluyen información de la cuenta, como `accountCreated`, `accountUpdated` y `accountDeleted`. Estos datos se utilizan para rellenar los detalles clave del cliente que se necesitan para definir mejor los segmentos o ejecutar campañas de marketing, como enviar ofertas de descuento de suscripción, confirmaciones de cambio de cuenta, etc. Hay eventos de perfil similares capturados de la [tienda](events.md#customer-profile-events).
 
 >[!NOTE]
 >
->Cada evento de perfil del cliente también incluye el [`identityMap`](https://experienceleague.adobe.com/docs/experience-platform/xdm/field-groups/profile/identitymap.html) , que incluye el ID de cliente de Commerce generado por el sistema como identificador principal del perfil y un ID de correo electrónico que se utiliza como identificador secundario.
+>Cada evento de perfil de cliente también incluye el campo [`identityMap`](https://experienceleague.adobe.com/docs/experience-platform/xdm/field-groups/profile/identitymap.html), que incluye el ID de cliente de Commerce generado por el sistema como identificador principal del perfil y un ID de correo electrónico que se utiliza como identificador secundario.
 
 ### accountCreated
 
@@ -431,7 +431,7 @@ En la tabla siguiente se describen los datos recopilados para este evento.
 | `person.name.firstName` | Contiene el nombre del cliente. |
 | `person.name.lastName` | Contiene los apellidos del cliente. |
 | `personalEmail` | Una dirección de correo electrónico personal. |
-| `personalEmail.address` | La dirección técnica, por ejemplo, `name@domain.com` como se define comúnmente en RFC2822 y estándares subsiguientes. |
+| `personalEmail.address` | La dirección técnica, por ejemplo, `name@domain.com`, tal como se define comúnmente en RFC2822 y estándares subsiguientes. |
 | `commerce.commerceScope` | Indica dónde se produjo un evento (vista de tienda, tienda, sitio web, etc.). |
 | `commerce.commerceScope.environmentID` | El ID del entorno. ID alfanumérico de 32 dígitos separado por guiones. |
 | `commerce.commerceScope.storeCode` | El código de almacén único. Puede tener muchas tiendas por sitio web. |
@@ -455,7 +455,7 @@ En la tabla siguiente se describen los datos recopilados para este evento.
 | `person.name.firstName` | Contiene el nombre del cliente. |
 | `person.name.lastName` | Contiene los apellidos del cliente. |
 | `personalEmail` | Una dirección de correo electrónico personal. |
-| `personalEmail.address` | La dirección técnica, por ejemplo, `name@domain.com` como se define comúnmente en RFC2822 y estándares subsiguientes. |
+| `personalEmail.address` | La dirección técnica, por ejemplo, `name@domain.com`, tal como se define comúnmente en RFC2822 y estándares subsiguientes. |
 | `commerce.commerceScope` | Indica dónde se produjo un evento (vista de tienda, tienda, sitio web, etc.). |
 | `commerce.commerceScope.environmentID` | El ID del entorno. ID alfanumérico de 32 dígitos separado por guiones. |
 | `commerce.commerceScope.storeCode` | El código de almacén único. Puede tener muchas tiendas por sitio web. |
@@ -479,7 +479,7 @@ En la tabla siguiente se describen los datos recopilados para este evento.
 | `person.name.firstName` | Contiene el nombre del cliente. |
 | `person.name.lastName` | Contiene los apellidos del cliente. |
 | `personalEmail` | Una dirección de correo electrónico personal. |
-| `personalEmail.address` | La dirección técnica, por ejemplo, `name@domain.com` como se define comúnmente en RFC2822 y estándares subsiguientes. |
+| `personalEmail.address` | La dirección técnica, por ejemplo, `name@domain.com`, tal como se define comúnmente en RFC2822 y estándares subsiguientes. |
 | `commerce.commerceScope` | Indica dónde se produjo un evento (vista de tienda, tienda, sitio web, etc.). |
 | `commerce.commerceScope.environmentID` | El ID del entorno. ID alfanumérico de 32 dígitos separado por guiones. |
 | `commerce.commerceScope.storeCode` | El código de almacén único. Puede tener muchas tiendas por sitio web. |

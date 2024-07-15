@@ -1,6 +1,6 @@
 ---
 title: Widget de página de lista de productos
-description: Activación y estilo de [!DNL Live Search Product Listing Page Widget]
+description: Activación y estilo de  [!DNL Live Search Product Listing Page Widget]
 exl-id: f7346a06-a8c7-4a33-8437-ea4f61d9281f
 source-git-commit: faf217486d57588d8535c1d605e963c91ec3ee68
 workflow-type: tm+mt
@@ -11,17 +11,17 @@ ht-degree: 0%
 
 # Widget de página de lista de productos
 
-El [!DNL Live Search Product Listing Page Widget] (PLP) utiliza la plataforma de Commerce Services para proporcionar una página de lista de productos con rendimiento, en la que se pueden realizar búsquedas y facetas. En este tema se describe cómo habilitar y aplicar estilo al widget PLP.
+[!DNL Live Search Product Listing Page Widget] (PLP) utiliza la plataforma de servicios de Commerce para proporcionar una página de lista de productos con rendimiento, en la que se pueden realizar búsquedas y facetas. En este tema se describe cómo habilitar y aplicar estilo al widget PLP.
 
 ## Activación del widget PLP
 
-Si la variable [!DNL Live Search] Cuando el servicio de está instalado, la funcionalidad de búsqueda predeterminada se convierte en [!DNL Live Search] automáticamente.
+Cuando se instala el servicio [!DNL Live Search], la funcionalidad de búsqueda predeterminada se convierte automáticamente en [!DNL Live Search].
 
-El [!DNL Live Search] El widget PLP está habilitado de forma predeterminada para las nuevas instalaciones. Si va a realizar la actualización [!DNL Live Search] y el widget PLP ya se ha desactivado, seguirá siéndolo.
+El widget PLP [!DNL Live Search] está habilitado de manera predeterminada para las nuevas instalaciones. Si está actualizando [!DNL Live Search] y el widget PLP ya se ha desactivado, seguirá siéndolo.
 
 >[!IMPORTANT]
 >
->Si la variable [!DNL Live Search Product Listing Page Widget] está activada, no se puede cambiar la dirección del criterio de ordenación en una página de la lista de productos.
+>Cuando [!DNL Live Search Product Listing Page Widget] está habilitado, no se puede cambiar la dirección del criterio de ordenación en una página de lista de productos.
 
 ## Funciones de widget
 
@@ -39,7 +39,7 @@ Además de las funciones integradas del widget PLP, puede personalizarlo aún m�
 - Compatibilidad con varios idiomas
 - Reguladores de precios
 
-Para obtener información sobre cómo personalizar el widget PLP para gestionar las funciones anteriores, consulte la `storefront-product-listing-page` léame en lo siguiente [repo](https://github.com/adobe/storefront-product-listing-page/).
+Para obtener información sobre cómo personalizar el widget PLP para que administre las funciones anteriores, consulte el archivo léame `storefront-product-listing-page` en el siguiente [repositorio](https://github.com/adobe/storefront-product-listing-page/).
 
 >[!WARNING]
 >
@@ -102,7 +102,7 @@ Personalice el nombre del producto añadiendo una regla para que esté en mayús
 
 - `.ds-sdk-sort-dropdown`
 
-![Lista desplegable Ordenar](assets/plp-css-dropdown.png)
+![Lista desplegable de orden](assets/plp-css-dropdown.png)
 
 - `.ds-sdk-sort-dropdown__button`
 
@@ -131,12 +131,12 @@ Personalice el nombre del producto añadiendo una regla para que esté en mayús
 - `.ds-plp-facets__header_title`
 - `.ds-plp-facets__header__clear-all`
 
-![Título del encabezado Facetas](assets/plp-css-facets-title-clear.png){width="350"}
+![Título del encabezado de facetas](assets/plp-css-facets-title-clear.png){width="350"}
 
 - `.ds-plp-facets__pills`
 - `.ds-sdk-pill`
 
-![Píldoras Facet](assets/plp-css-facets-pill.png){width="350"}
+![Pastillas Facet](assets/plp-css-facets-pill.png){width="350"}
 
 - `.ds-sdk-pill__label`
 - `.ds-sdk-pill__cta`
@@ -176,7 +176,7 @@ Personalice el nombre del producto añadiendo una regla para que esté en mayús
    - `.ds-sdk-product-price--bundle`
    - `.ds-sdk-product-price--discount`
 
-![Product](assets/plp-css-product.png)
+![Producto](assets/plp-css-product.png)
 
 ### Cargando
 
@@ -184,11 +184,11 @@ Personalice el nombre del producto añadiendo una regla para que esté en mayús
 - `.ds-sdk-loading__spinner`
 - `.ds-sdk-loading__spinner-label`
 
-![Cargando indicador](assets/plp-css-loading.png)
+![Indicador de carga](assets/plp-css-loading.png)
 
 ## Desactivación del widget PLP
 
 Para desactivar el widget PLP:
 
-1. Ir a **Tiendas** > Configuración > **Configuración** > **[!DNL Live Search]** > **Características de tienda** y establecer **Activar widgets de lista de productos** a &quot;No&quot;.
-1. Seleccionar **Guardar configuración** para guardar la configuración.
+1. Vaya a **Tiendas** > Configuración > **Configuración** > **[!DNL Live Search]** > **Características de la tienda** y establezca **Habilitar widgets de lista de productos** en &quot;No&quot;.
+1. Seleccione **Guardar configuración** para guardar la configuración.

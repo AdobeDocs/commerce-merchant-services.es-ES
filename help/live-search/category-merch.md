@@ -1,6 +1,6 @@
 ---
 title: Comercialización por categorías
-description: Uso [!DNL Live Search] Comercialización por categorías para disfrutar de una experiencia de compra más rápida.
+description: Utiliza la comercialización de  [!DNL Live Search] categorías para disfrutar de una experiencia de compra más rápida.
 gourl: ls_catalog_merchandising
 exl-id: 24f159c1-b175-47c1-aca1-8bada118b4b4
 source-git-commit: 4978bdb5549f5df911863a23fdfbfc9ab9ad05df
@@ -12,19 +12,19 @@ ht-degree: 0%
 
 # Comercialización por categorías
 
-La comercialización de categorías permite a los propietarios de tiendas aplicar [!DNL Live Search] Clasificación inteligente [reglas](rules.md) a categorías y subcategorías de productos.
+La comercialización de categorías permite a los propietarios de tiendas aplicar [!DNL Live Search] reglas de clasificación inteligente [a las categorías y subcategorías de productos](rules.md).
 
 Este vídeo es una introducción a la comercialización de categorías.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3424617)
 
-Se accede a la funcionalidad en el Administrador en **Marketing** > SEO y búsqueda > **[!DNL Live Search]** > **Comercialización por categorías**.
+Se accede a la funcionalidad en Administración en **Marketing** > SEO y búsqueda > **[!DNL Live Search]** > **Comercialización de categoría**.
 
 >[!NOTE]
 >
->La comercialización de categorías está disponible con [!DNL Live Search] [3.0.0 o superior](release-notes.md). Si ve el área de trabajo de comercialización de categorías pero no está rellenada con datos, actualice la [!DNL Live Search] módulo.
+>La comercialización por categorías está disponible con [!DNL Live Search] [3.0.0 o superior](release-notes.md). Si ve el área de trabajo de comercialización de categorías pero no está rellenada con datos, actualice el módulo [!DNL Live Search].
 
-![Comercialización por categorías](assets/category_workspace.png)
+![Comercialización de categorías](assets/category_workspace.png)
 
 La vista Comercialización de categorías muestra las reglas de categoría definidas, con columnas para:
 
@@ -38,10 +38,10 @@ Puede buscar una categoría o subcategoría en el campo &quot;Buscar por categor
 
 ## Estrategias de clasificación
 
-La comercialización de categorías utiliza los mismos tipos de clasificación que con [productos individuales](rules-workspace.md).
+La comercialización de categorías usa los mismos tipos de clasificación que con [productos individuales](rules-workspace.md).
 Existen dos tipos de clasificación: Inteligente y Manual.
 
-**Clasificación inteligente** aprovecha el análisis de datos de comportamiento de la tienda para [Adobe Sensei](https://www.adobe.com/sensei.html) para ordenar todos los productos dentro de las categorías seleccionadas por un algoritmo determinado. Una vez elegida una clasificación inteligente, se espera que el orden específico de los productos cambie con el tiempo, ya que Adobe Sensei reanaliza los datos subyacentes de forma continua. Por ejemplo, los productos de tendencias principales cambiarán automáticamente con el tiempo a medida que cambien las preferencias del comprador.
+**La clasificación inteligente** aprovecha el análisis de datos de comportamiento de la tienda de [Adobe Sensei](https://www.adobe.com/sensei.html) para ordenar todos los productos dentro de las categorías elegidas según un algoritmo determinado. Una vez elegida una clasificación inteligente, se espera que el orden específico de los productos cambie con el tiempo, ya que Adobe Sensei reanaliza los datos subyacentes de forma continua. Por ejemplo, los productos de tendencias principales cambiarán automáticamente con el tiempo a medida que cambien las preferencias del comprador.
 Los métodos de clasificación inteligentes son:
 
 * Más comprados: clasifica los productos según la frecuencia con la que fueron comprados por los compradores en los siete días anteriores.
@@ -51,23 +51,23 @@ Los métodos de clasificación inteligentes son:
 * Tendencia: clasifica los productos según los recientes aumentos de popularidad basados en las vistas.
 * Ninguno: clasifica los productos por su orden predeterminado.
 
-**Clasificación manual** permite a los usuarios anular el orden automático de clasificación de productos mediante la definición de reglas manuales de anclaje, ampliación, ocultación y ocultación.
+**La clasificación manual** permite a los usuarios anular el orden automático de clasificación de productos al definir las reglas de anclaje, ampliación, eliminación y ocultación manuales.
 
 ## Clasificación heredada
 
 Como comerciante, es posible que desee poder seleccionar todas las categorías de ropa de mujer para ordenarlas por &quot;tendencias&quot;. Esto incluye las subcategorías &quot;Pantalones de mujer&quot;, &quot;Camisas de mujer&quot; y &quot;Accesorios de mujer&quot;. Las categorías masculinas no deben verse afectadas. Puede utilizar clasificaciones heredadas para conseguirlo.
 
-Al seleccionar un método de clasificación inteligente para una categoría o subcategoría que tiene subcategorías, puede activar la opción **Aplicar clasificaciones inteligentes a subcategorías** opción. Esto aplica el método de clasificación a todas las subcategorías.
+Al seleccionar un método de clasificación inteligente para una categoría o subcategoría que tiene subcategorías, puede activar la opción **Aplicar clasificaciones inteligentes a subcategorías**. Esto aplica el método de clasificación a todas las subcategorías.
 
-Estas subcategorías ahora heredan esa regla de la categoría principal (&quot;Sí&quot; en la columna Clasificación heredada). En la columna Action, las únicas opciones disponibles son **Editar regla**, y **Ver detalles**. El **Eliminar** La opción está desactivada para reglas heredadas en subcategorías. Para eliminar la herencia de subcategorías es necesario deshacer la herencia de la categoría principal.
+Estas subcategorías ahora heredan esa regla de la categoría principal (&quot;Sí&quot; en la columna Clasificación heredada). En la columna Acción, las únicas opciones disponibles son **Editar regla** y **Ver detalles**. La opción **Delete** está deshabilitada para las reglas heredadas en subcategorías. Para eliminar la herencia de subcategorías es necesario deshacer la herencia de la categoría principal.
 
 Cualquier categoría o subcategoría solo puede tener una clasificación inteligente aplicada a la vez. Es posible que también se hayan aplicado clasificaciones manuales adicionales.
 
-Si aplica una clasificación inteligente a una categoría y activa la opción **Aplicar clasificación inteligente a subcategorías** , se sobrescribirán todas las clasificaciones inteligentes ya aplicadas a las subcategorías.
+Si aplica una clasificación inteligente a una categoría y activa la opción **Aplicar clasificación inteligente a las subcategorías**, se sobrescribirá cualquier clasificación inteligente que ya se haya aplicado a las subcategorías.
 
 ![Lista de subcategorías sobrescrita](assets/category_overwite_subs.png){width="700"}
 
-Si hace clic **Ver todo**, se abre un diálogo con detalles de los cambios propuestos.
+Si hace clic en **Ver todo**, se abrirá un cuadro de diálogo con detalles de los cambios propuestos.
 
 ![Detalles de cambios de clasificación](assets/category_overwrite.png)
 
@@ -80,42 +80,42 @@ Si elimina una clasificación inteligente de una categoría y se selecciona la h
 
 Aparecerá un cuadro de diálogo que explica qué subcategorías heredadas se ven afectadas por los cambios realizados en una categoría de nivel superior.
 
-![Cuadro de diálogo modal de cambios de clasificación](assets/category_overwrite_modal.png){width="1200"}
+![El rango cambia el cuadro de diálogo modal](assets/category_overwrite_modal.png){width="1200"}
 
 ## Crear una regla de categoría
 
 Para crear una regla de categoría:
 
-1. Haga clic en **Agregar regla** botón.
-1. En el _Seleccionar categoría_ , haga clic en las categorías y subcategorías.
+1. Haga clic en el botón **Agregar regla**.
+1. En la vista _Seleccionar categoría_, haga clic en las categorías y subcategorías.
 1. Seleccione la casilla de verificación para seleccionar la categoría que desea clasificar.
-1. Clic **Aplicar**.
+1. Haga clic en **Aplicar**.
 
-   ![Seleccione una categoría](assets/category_select.png)
+   ![Seleccionar una categoría](assets/category_select.png)
 
-1. En el _Agregar regla de categoría_ , seleccione el método de clasificación inteligente que desee aplicar a la categoría.
+1. En la vista _Agregar regla de categoría_, seleccione el método de clasificación inteligente que desee aplicar a la categoría.
 La página de vista previa de categorías muestra los resultados reales de la clasificación seleccionada con los datos de Live Search.
-1. Clic **Guardar y publicar** para guardar la regla.
+1. Haga clic en **Guardar y Publish** para guardar la regla.
 
-![Seleccione el método de clasificación Intelligent](assets/category_ranking.png)
+![Seleccione el método de clasificación inteligente](assets/category_ranking.png)
 
-El [!DNL Live Search] El servicio procesa la regla y la activa en el almacén cuando finaliza.
+El servicio [!DNL Live Search] procesa la regla y la activa en el almacén cuando finaliza.
 
 ## Modificación de una regla de categoría
 
 Para modificar una regla existente:
 
 1. Haga clic en **...** en la columna Acción y elija **Editar**.
-1. En la vista de regla Editar categoría, realice los cambios necesarios y haga clic en **Guardar y publicar**.
+1. En la vista de regla Editar categoría, realice los cambios necesarios y haga clic en **Guardar y Publish**.
 
-Los cambios se reflejan en la tienda cuando [!DNL Live Search] ha procesado el cambio.
+Los cambios se reflejarán en el almacén cuando [!DNL Live Search] haya procesado el cambio.
 
 ## Eliminar una regla de categoría
 
 Para eliminar una regla de categoría:
 
 1. Haga clic en **...** en la columna Acción y elija **Eliminar**.
-1. En el _Eliminar regla_ modal, seleccione **Eliminar** para eliminar la regla o **Cancelar** para cancelar la acción.
+1. En el modal _Eliminar regla_, seleccione **Eliminar** para eliminar la regla o **Cancelar** para cancelar la acción.
 
 ## Clasificación manual
 
@@ -138,6 +138,6 @@ También puede hacer clic en el icono de anclaje para anclar un producto a su ub
 
 Para añadir manualmente un evento:
 
-1. En Clasificación manual, haga clic en **Seleccione un evento** y elija un evento que tendrá lugar cuando se cumplan las condiciones asociadas.
+1. En Clasificación manual, haga clic en el menú **Seleccionar un evento** y elija un evento que tendrá lugar cuando se cumplan las condiciones asociadas.
 1. Introduzca el nombre del producto al que desea aplicar el cambio. Los productos se sugieren a medida que escribe.
 1. Para varios eventos, elija cualquier otro evento que desee almacenar en déclencheur cuando se cumplan las condiciones.

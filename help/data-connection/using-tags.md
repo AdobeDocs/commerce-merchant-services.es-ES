@@ -6,35 +6,35 @@ role: Admin, Developer
 feature: Personalization, Integration
 source-git-commit: 71e73b900db024eee6e7e11cbddbabf332acf70a
 workflow-type: tm+mt
-source-wordcount: '2635'
+source-wordcount: '2563'
 ht-degree: 0%
 
 ---
 
 # Recopilación de datos de Commerce mediante etiquetas de Adobe Experience Platform
 
-Mientras que puede utilizar el [!DNL Data Connection] extensión para publicar y suscribirse a eventos de tienda, es posible que algunos comerciantes ya estén utilizando una solución de recopilación de datos, como la [Etiquetas Adobe Experience Platform](https://experienceleague.adobe.com/docs/platform-learn/data-collection/tags/create-a-property.html). Para esos comerciantes, Adobe Commerce proporciona una opción de solo publicación en la [!DNL Data Connection] que utiliza el Adobe Commerce Event SDK.
+Aunque puede usar la extensión [!DNL Data Connection] para publicar y suscribirse a eventos de tienda, es posible que algunos comerciantes ya estén usando una solución de recopilación de datos, como las [etiquetas Adobe Experience Platform](https://experienceleague.adobe.com/docs/platform-learn/data-collection/tags/create-a-property.html). Para esos comerciantes, Adobe Commerce proporciona una opción de solo publicación en la extensión [!DNL Data Connection] que utiliza el SDK de eventos de Adobe Commerce.
 
 ![[!DNL Data Connection] Flujo de datos de extensión](assets/tags-data-flow.png)
 _[!DNL Data Connection]Flujo de datos de extensión con etiquetas_
 
-En este tema, aprenderá a asignar los valores de evento de tienda proporcionados por el [!DNL Data Connection] extensión a la solución de etiquetas de Adobe Experience Platform que ya está utilizando.
+En este tema, aprenderá a asignar los valores de evento de tienda proporcionados por la extensión [!DNL Data Connection] a la solución de etiquetas de Adobe Experience Platform que ya está utilizando.
 
 ## Recopilación de datos de evento de Adobe Commerce
 
 Para recopilar datos de evento de Commerce:
 
-- Instale el [Adobe Commerce Events SDK](https://github.com/adobe/commerce-events/tree/main/packages/storefront-events-sdk). Para las tiendas PHP, consulte la [instalar](install.md) tema. Para ver las tiendas de PWA Studio, consulte la [guía del PWA Studio](https://developer.adobe.com/commerce/pwa-studio/integrations/adobe-commerce/aep/).
+- Instale [Adobe Commerce Events SDK](https://github.com/adobe/commerce-events/tree/main/packages/storefront-events-sdk). Para las tiendas PHP, consulte el tema [instalar](install.md). Para ver las tiendas de PWA Studio, consulta la [guía para PWA Studio](https://developer.adobe.com/commerce/pwa-studio/integrations/adobe-commerce/aep/).
 
   >[!NOTE]
   >
-  > Hacer **no** [configurar](connect-data.md) el ID de organización y el ID de flujo de datos.
+  > **no** [configura](connect-data.md) el ID de organización y el ID de flujo de datos.
 
 ## Asignar datos de tienda de Commerce a Adobe Experience Platform
 
 Para asignar datos de tienda de Commerce a Adobe Experience Platform, configure e instale lo siguiente desde etiquetas de Adobe Experience Platform:
 
-1. [Configurar una propiedad de etiqueta](https://experienceleague.adobe.com/docs/platform-learn/implement-in-websites/configure-tags/create-a-property.html) en Recopilación de datos de Adobe Experience Platform.
+1. [Configurar una propiedad de etiquetas](https://experienceleague.adobe.com/docs/platform-learn/implement-in-websites/configure-tags/create-a-property.html) en la recopilación de datos de Adobe Experience Platform.
 
 1. En **Creación**, seleccione **Extensiones** e instale y configure las siguientes extensiones:
 
@@ -42,9 +42,9 @@ Para asignar datos de tienda de Commerce a Adobe Experience Platform, configure 
 
    - [SDK web de Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/installing-the-sdk.html)
 
-1. [Publicar etiqueta](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/overview.html) a su entorno de desarrollo.
+1. [Etiqueta de Publish](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/overview.html) a su entorno de desarrollo.
 
-1. Siga las **Asignación de eventos** siga estos pasos para configurar elementos de datos y reglas para eventos específicos.
+1. Siga los pasos de **Asignación de eventos** a continuación para configurar los elementos de datos y las reglas para eventos específicos.
 
 ### Asignación de eventos
 
@@ -58,58 +58,58 @@ Dado que la recopilación de datos mediante etiquetas es diferente al uso del SD
 
 Al actualizar los elementos de datos y las reglas en las etiquetas de Adobe Experience Platform con datos de evento específicos de Adobe Commerce, hay algunos pasos comunes que debe seguir.
 
-Por ejemplo, vamos a añadir la Adobe Commerce `signOut` a las etiquetas de Adobe Experience Platform. Los pasos descritos a continuación, excepto para los valores específicos que configure, describen cómo agregar [elementos de datos](https://experienceleague.adobe.com/docs/experience-platform/collection/e2e.html#data-element) y [reglas](https://experienceleague.adobe.com/docs/experience-platform/collection/e2e.html#create-a-rule), que se aplican a todos los eventos de Adobe Commerce que añade a las etiquetas.
+Por ejemplo, vamos a agregar el evento de Adobe Commerce `signOut` a las etiquetas de Adobe Experience Platform. Los pasos descritos a continuación, excepto para los valores específicos que ha establecido, describen cómo agregar [elementos de datos](https://experienceleague.adobe.com/docs/experience-platform/collection/e2e.html#data-element) y [reglas](https://experienceleague.adobe.com/docs/experience-platform/collection/e2e.html#create-a-rule), que se aplican a todos los eventos de Adobe Commerce que está agregando a las etiquetas.
 
 1. Crear un elemento de datos:
 
    ![Crear nuevo elemento de datos](assets/create-new-data-elements.png)
    _Crear nuevo elemento de datos_
 
-1. Establecer **Nombre** hasta `sign out`.
+1. Establezca **Name** en `sign out`.
 
-1. Establecer **Extensión** hasta `Adobe Experience Platform Web SDK`.
+1. Establezca **Extension** en `Adobe Experience Platform Web SDK`.
 
-1. Establecer **Tipo de elemento de datos** hasta `XDM object`.
+1. Establezca **Tipo de elemento de datos** en `XDM object`.
 
-1. Seleccione el **Sandbox** y **Esquema** que desee actualizar.
+1. Seleccione la **zona protegida** y el **esquema** que desee actualizar.
 
-1. En **userAccount** > **cierre de sesión**, configure el **valor** in **Cierre de sesión de visitante** hasta `1`.
+1. En **userAccount** > **logout**, establezca **value** en **Logout de visitantes** en `1`.
 
    ![Actualizar valor de cierre de sesión](assets/signout-value.png)
    _Actualizar valor de cierre de sesión_
 
-1. Seleccionar **Guardar**.
+1. Seleccione **Guardar**.
 
 1. Crear una regla:
 
    ![Crear nueva regla](assets/create-new-rule.png)
    _Crear nueva regla_
 
-1. Seleccionar **Añadir** bajo **EVENTOS**.
+1. Seleccione **Agregar** en **EVENTOS**.
 
-1. Establecer **Extensión** hasta `Adobe Client Data Layer`.
+1. Establezca **Extension** en `Adobe Client Data Layer`.
 
-1. Establecer **Tipo de evento** hasta `Data Pushed`.
+1. Definir **Tipo de evento** en `Data Pushed`.
 
-1. Seleccionar **Evento específico** y configure el **Evento/clave para el que registrarse** hasta `sign-out`.
+1. Seleccione **Evento específico** y establezca el **Evento/Clave para registrarse para** en `sign-out`.
 
-1. Seleccionar **Conservar cambios** para guardar la nueva regla.
+1. Seleccione **Conservar cambios** para guardar la nueva regla.
 
 1. Añada una acción.
 
-1. Establecer **Extensión** hasta `Adobe Experience Platform Web SDK`.
+1. Establezca **Extension** en `Adobe Experience Platform Web SDK`.
 
-1. Establecer **Tipo de acción** hasta `Send Event`.
+1. Establezca **Tipo de acción** en `Send Event`.
 
-1. Establecer **Instancia** hasta `Alloy`.
+1. Establezca **Instancia** en `Alloy`.
 
-1. Establecer **Tipo** hasta `userAccount.logout`.
+1. Establecer **Type** en `userAccount.logout`.
 
-1. Establecer **Datos XDM** hasta `%sign out%`.
+1. Definir **datos XDM** en `%sign out%`.
 
-1. Clic **Guardar**.
+1. Haga clic en **Guardar**.
 
-   Ha creado un elemento de datos en el esquema para `signOut` evento de Adobe Commerce. Además, ha creado una regla con una acción específica que debe producirse cuando ese evento se activa desde la tienda de Adobe Commerce.
+   Ha creado un elemento de datos en su esquema para el evento `signOut` desde Adobe Commerce. Además, ha creado una regla con una acción específica que debe producirse cuando ese evento se activa desde la tienda de Adobe Commerce.
 
 Repita los pasos anteriores en las etiquetas para cada uno de los eventos de Adobe Commerce que se describen a continuación.
 
@@ -146,7 +146,7 @@ Cree el siguiente elemento de datos:
    - **Extensión**: `Adobe Experience Platform Web SDK`
    - **Tipo de elemento de datos**: `XDM object`
    - **Grupo de campos**: `userAccount` > `logout`
-   - **Cierre de sesión de visitante**: **Valor** = `1`
+   - **Cierre de sesión de visitantes**: **Valor** = `1`
 
 #### Reglas 
 
@@ -175,21 +175,21 @@ Cree los siguientes elementos de datos:
    - **Nombre**: `account email`
    - **Extensión**: `Adobe Client Data Layer`
    - **Tipo de elemento de datos**: `Data Layer Computed State`
-   - **[Opcional] ruta**: `accountContext.emailAddress`
+   - **[Ruta de acceso ] opcional**: `accountContext.emailAddress`
 
 1. Tipo de cuenta:
 
    - **Nombre**: `account type`
    - **Extensión**: `Adobe Client Data Layer`
    - **Tipo de elemento de datos**: `Data Layer Computed State`
-   - **[Opcional] ruta**: `accountContext.accountType`
+   - **[Ruta de acceso ] opcional**: `accountContext.accountType`
 
 1. ID de cuenta:
 
    - **Nombre**: `account id`
    - **Extensión**: `Adobe Client Data Layer`
    - **Tipo de elemento de datos**: `Data Layer Computed State`
-   - **[Opcional] ruta***: `accountContext.accountId`
+   - **[Ruta de acceso ] opcional***: `accountContext.accountId`
 
 1. Iniciar sesión:
 
@@ -197,11 +197,11 @@ Cree los siguientes elementos de datos:
    - **Extensión**: `Adobe Experience Platform Web SDK`
    - **Tipo de elemento de datos**: `XDM object`
    - **Grupo de campos**: `person` > `accountID`
-   - **ID de cuenta**: **Valor** = `%account id%`
+   - **Id. de cuenta**: **Valor** = `%account id%`
    - **Grupo de campos**: `person` > `accountType`
    - **Tipo de cuenta**: **Valor** = `%account type%`
    - **Grupo de campos**: `person` > `personalEmailID`
-   - **Correo electrónico personal**: **Valor** = `%account email%`
+   - **Dirección de correo electrónico personal**: **Valor** = `%account email%`
    - **Grupo de campos**: `personalEmail` > `address`
    - **Dirección**: **Valor** = `%account email%`
    - **Grupo de campos**: `userAccount` > `login`
@@ -234,21 +234,21 @@ Cree los siguientes elementos de datos:
    - **Nombre**: `account email`
    - **Extensión**: `Adobe Client Data Layer`
    - **Tipo de elemento de datos**: `Data Layer Computed State`
-   - **[Opcional] ruta**: `accountContext.emailAddress`
+   - **[Ruta de acceso ] opcional**: `accountContext.emailAddress`
 
 1. Tipo de cuenta:
 
    - **Nombre**: `account type`
    - **Extensión**: `Adobe Client Data Layer`
    - **Tipo de elemento de datos**: `Data Layer Computed State`
-   - **[Opcional] ruta**: `accountContext.accountType`
+   - **[Ruta de acceso ] opcional**: `accountContext.accountType`
 
 1. ID de cuenta:
 
    - **Nombre**: `account id`
    - **Extensión**: `Adobe Client Data Layer`
    - **Tipo de elemento de datos**: `Data Layer Computed State`
-   - **[Opcional] ruta**: `accountContext.accountId`
+   - **[Ruta de acceso ] opcional**: `accountContext.accountId`
 
 1. Crear cuenta:
 
@@ -256,15 +256,15 @@ Cree los siguientes elementos de datos:
    - **Extensión**: `Adobe Experience Platform Web SDK`
    - **Tipo de elemento de datos**: `XDM object`
    - **Grupo de campos**: `person` > `accountID`
-   - **ID de cuenta**: **Valor** = `%account id%`
+   - **Id. de cuenta**: **Valor** = `%account id%`
    - **Grupo de campos**: `person` > `accountType`
    - **Tipo de cuenta**: **Valor** = `%account type%`
    - **Grupo de campos**: `person` > `personalEmailID`
-   - **Correo electrónico personal**: **Valor** = `%account email%`
+   - **Dirección de correo electrónico personal**: **Valor** = `%account email%`
    - **Grupo de campos**: `personalEmail` > `address`
    - **Dirección**: **Valor** = `%account email%`
    - **Grupo de campos**: `userAccount` > `createProfile`
-   - **Crear perfil de cuenta**: **Valor** = `1`
+   - **Creación de perfil de cuenta**: **Valor** = `1`
 
 #### Reglas 
 
@@ -293,21 +293,21 @@ Cree los siguientes elementos de datos:
    - **Nombre**: `account email`
    - **Extensión**: `Adobe Client Data Layer`
    - **Tipo de elemento de datos**: `Data Layer Computed State`
-   - **[Opcional] ruta**: `accountContext.emailAddress`
+   - **[Ruta de acceso ] opcional**: `accountContext.emailAddress`
 
 1. Tipo de cuenta:
 
    - **Nombre**: `account type`
    - **Extensión**: `Adobe Client Data Layer`
    - **Tipo de elemento de datos**: `Data Layer Computed State`
-   - **[Opcional] ruta**: `accountContext.accountType`
+   - **[Ruta de acceso ] opcional**: `accountContext.accountType`
 
 1. ID de cuenta:
 
    - **Nombre**: `account id`
    - **Extensión**: `Adobe Client Data Layer`
    - **Tipo de elemento de datos**: `Data Layer Computed State`
-   - **[Opcional] ruta**: `accountContext.accountId`
+   - **[Ruta de acceso ] opcional**: `accountContext.accountId`
 
 1. Editar cuenta:
 
@@ -315,15 +315,15 @@ Cree los siguientes elementos de datos:
    - **Extensión**: `Adobe Experience Platform Web SDK`
    - **Tipo de elemento de datos**: `XDM object`
    - **Grupo de campos**: `person` > `accountID`
-   - **ID de cuenta**: **Valor** = `%account id%`
+   - **Id. de cuenta**: **Valor** = `%account id%`
    - **Grupo de campos**: `person` > `accountType`
    - **Tipo de cuenta**: **Valor** = `%account type%`
    - **Grupo de campos**: `person` > `personalEmailID`
-   - **Correo electrónico personal**: **Valor** = `%account email%`
+   - **Dirección de correo electrónico personal**: **Valor** = `%account email%`
    - **Grupo de campos**: `personalEmail` > `address`
    - **Dirección**: **Valor** = `%account email%`
    - **Grupo de campos**: `userAccount` > `updateProfile`
-   - **Crear perfil de cuenta**: **Valor** = `1`
+   - **Creación de perfil de cuenta**: **Valor** = `1`
 
 #### Reglas
 
@@ -352,7 +352,7 @@ Cree los siguientes elementos de datos:
    - **Nombre**: `page name`
    - **Extensión**: `Adobe Client Data Layer`
    - **Tipo de elemento de datos**: `Data Layer Computed State`
-   - **[Opcional] ruta**: `pageContext.pageName`
+   - **[Ruta de acceso ] opcional**: `pageContext.pageName`
 
 #### Reglas 
 
@@ -381,28 +381,28 @@ Cree los siguientes elementos de datos:
    - **Nombre**: `product name`
    - **Extensión**: `Adobe Client Data Layer`
    - **Tipo de elemento de datos**: `Data Layer Computed State`
-   - **[Opcional] ruta**: `productContext.name`
+   - **[Ruta de acceso ] opcional**: `productContext.name`
 
 1. SKU del producto:
 
    - **Nombre**: `product sku`
    - **Extensión**: `Adobe Client Data Layer`
    - **Tipo de elemento de datos**: `Data Layer Computed State`
-   - **[Opcional] ruta**: `productContext.sku`
+   - **[Ruta de acceso ] opcional**: `productContext.sku`
 
 1. URL de imagen del producto:
 
    - **Nombre**: `product image`
    - **Extensión**: `Adobe Client Data Layer`
    - **Tipo de elemento de datos**: `Data Layer Computed State`
-   - **[Opcional] ruta**: `productContext.mainImageUrl`
+   - **[Ruta de acceso ] opcional**: `productContext.mainImageUrl`
 
 1. Divisa del producto:
 
    - **Nombre**: `product currency`
    - **Extensión**: `Adobe Client Data Layer`
    - **Tipo de elemento de datos**: `Data Layer Computed State`
-   - **[Opcional] ruta**: `productContext.pricing.currencyCode`
+   - **[Ruta de acceso ] opcional**: `productContext.pricing.currencyCode`
 
 1. Código de divisa:
 
@@ -420,14 +420,14 @@ Cree los siguientes elementos de datos:
    - **Nombre**: `special price`
    - **Extensión**: `Adobe Client Data Layer`
    - **Tipo de elemento de datos**: `Data Layer Computed State`
-   - **[Opcional] ruta**: `productContext.pricing.specialPrice`
+   - **[Ruta de acceso ] opcional**: `productContext.pricing.specialPrice`
 
 1. Precio normal:
 
    - **Nombre**: `regular price`
    - **Extensión**: `Adobe Client Data Layer`
    - **Tipo de elemento de datos**: `Data Layer Computed State`
-   - **[Opcional] ruta**: `productContext.pricing.regularPrice`
+   - **[Ruta de acceso ] opcional**: `productContext.pricing.regularPrice`
 
 1. Precio del producto:
 
@@ -445,7 +445,7 @@ Cree los siguientes elementos de datos:
    - **Nombre**: `product view`
    - **Extensión**: `Adobe Experience Platform Web SDK`
    - **Tipo de elemento de datos**: `XDM object`
-   - **Grupo de campos**: `productListItems`. Seleccionar **Proporcionar elementos individuales** y haga clic en **Añadir elemento** botón. Como esta vista es para una PDP, puede rellenar con un solo elemento.
+   - **Grupo de campos**: `productListItems`. Seleccione **Proporcionar elementos individuales** y haga clic en el botón **Agregar elemento**. Como esta vista es para una PDP, puede rellenar con un solo elemento.
    - **Grupo de campos**: `productListItems` > `name`
    - **Nombre**: **Valor** = `%product name%`
    - **Grupo de campos**: `productListItems` > `SKU`
@@ -453,7 +453,7 @@ Cree los siguientes elementos de datos:
    - **Grupo de campos**: `productListItems` > `priceTotal`
    - **Precio total**: **Valor** = `%product price%`
    - **Grupo de campos**: `productListItems` > `currencyCode`
-   - **Código de divisa**: **Valor** = `%currency code%`
+   - **Código de moneda**: **Valor** = `%currency code%`
    - **Grupo de campos**: `productListItems` > `ProductImageUrl`
    - **ProductImageUrl**: **Valor** = `%product image%`
    - **Grupo de campos**: `commerce` > `productViews` > `value`
@@ -486,7 +486,7 @@ Cree los siguientes elementos de datos:
    - **Nombre**: `search input`
    - **Extensión**: `Adobe Client Data Layer`
    - **Tipo de elemento de datos**: `Data Layer Computed State`
-   - **[Opcional] ruta**: `searchInputContext.units[0]`
+   - **[Ruta de acceso ] opcional**: `searchInputContext.units[0]`
 
 1. Buscar frase de entrada
 
@@ -558,11 +558,11 @@ Cree los siguientes elementos de datos:
    - **Extensión**: `Adobe Experience Platform Web SDK`
    - **Tipo de elemento de datos**: `XDM object`
    - **Grupo de campos**: `siteSearch` > `phrase`
-   - **valor**: aún no disponible
-   - **Grupo de campos**: `siteSearch` > `sort`. Seleccionar **Proporcionar todo el objeto**.
-   - **Grupo de campos**: `siteSearch` > `filter`. Seleccionar **Proporcionar todo el objeto**.
+   - **value**: aún no está disponible
+   - **Grupo de campos**: `siteSearch` > `sort`. Seleccione **Proporcionar todo el objeto**.
+   - **Grupo de campos**: `siteSearch` > `filter`. Seleccione **Proporcionar todo el objeto**.
    - **Grupo de campos**: `searchRequest` > `id`
-   - **Identificador único**: **Valor** = `%search request ID%`
+   - **Identificador Único**: **Valor** = `%search request ID%`
    - **Grupo de campos**: `searchRequest` > `value`
    - **valor**: **Valor** = `1`
 
@@ -593,7 +593,7 @@ Cree los siguientes elementos de datos:
    - **Nombre**: `search results`
    - **Extensión**: `Adobe Client Data Layer`
    - **Tipo de elemento de datos**: `Data Layer Computed State`
-   - **[Opcional] ruta**: `searchResultsContext.units[0]`
+   - **[Ruta de acceso ] opcional**: `searchResultsContext.units[0]`
 
 1. Número de resultados de búsqueda de productos:
 
@@ -643,23 +643,23 @@ Cree los siguientes elementos de datos:
    - **Nombre**: `product image`
    - **Extensión**: `Adobe Client Data Layer`
    - **Tipo de elemento de datos**: `Data Layer Computed State`
-   - **[Opcional] ruta**: `productContext.mainImageUrl`
+   - **[Ruta de acceso ] opcional**: `productContext.mainImageUrl`
 
 1. Respuesta de búsqueda:
 
    - **Nombre**: `search response`
    - **Extensión**: `Adobe Experience Platform Web SDK`
    - **Tipo de elemento de datos**: `XDM object`
-   - **Grupo de campos**: `siteSearch` > `suggestions`. Seleccionar **Proporcionar todo el objeto**.
+   - **Grupo de campos**: `siteSearch` > `suggestions`. Seleccione **Proporcionar todo el objeto**.
    - **Elemento de datos**: `%search result suggestions%`
    - **Grupo de campos**: `siteSearch` > `numberOfResults`
    - **valor**: `%search result number of products%`
-   - **Grupo de campos**: `productListItems`. Seleccionar **Proporcionar todo el objeto**.
+   - **Grupo de campos**: `productListItems`. Seleccione **Proporcionar todo el objeto**.
    - **Grupo de campos**: `productListItems` > `ProductImageUrl`
    - **ProductImageUrl**: **Valor** = `%product image%`
    - **Elemento de datos**: `%search result products%`
    - **Grupo de campos**: `searchResponse` > `id`
-   - **Identificador único**: **Valor** = `%search response ID%`
+   - **Identificador Único**: **Valor** = `%search response ID%`
    - **Grupo de campos**: `searchResponse` > `value`
    - **valor**: **Valor** = `1`
 
@@ -690,44 +690,44 @@ Cree los siguientes elementos de datos:
    - **Nombre**: `product name`
    - **Extensión**: `Adobe Client Data Layer`
    - **Tipo de elemento de datos**: `Data Layer Computed State`
-   - **[Opcional] ruta**: `productContext.name`
+   - **[Ruta de acceso ] opcional**: `productContext.name`
 
 1. SKU del producto:
 
    - **Nombre**: `product sku`
    - **Extensión**: `Adobe Client Data Layer`
    - **Tipo de elemento de datos**: `Data Layer Computed State`
-   - **[Opcional] ruta**: `productContext.sku`
+   - **[Ruta de acceso ] opcional**: `productContext.sku`
 
 1. Código de divisa:
 
    - **Nombre**: `currency code`
    - **Extensión**: `Adobe Client Data Layer`
    - **Tipo de elemento de datos**: `Data Layer Computed State`
-   - **[Opcional] ruta**: `productContext.pricing.currencyCode`
+   - **[Ruta de acceso ] opcional**: `productContext.pricing.currencyCode`
 
 1. Precio especial del producto:
 
    - **Nombre**: `product special price`
    - **Extensión**: `Adobe Client Data Layer`
    - **Tipo de elemento de datos**: `Data Layer Computed State`
-   - **[Opcional] ruta**: `productContext.pricing.specialPrice`
+   - **[Ruta de acceso ] opcional**: `productContext.pricing.specialPrice`
 
 1. URL de imagen del producto:
 
    - **Nombre**: `product image`
    - **Extensión**: `Adobe Client Data Layer`
    - **Tipo de elemento de datos**: `Data Layer Computed State`
-   - **[Opcional] ruta**: `productContext.mainImageUrl`
+   - **[Ruta de acceso ] opcional**: `productContext.mainImageUrl`
 
 1. Precio regular del producto:
 
    - **Nombre**: `product regular price`
    - **Extensión**: `Adobe Client Data Layer`
    - **Tipo de elemento de datos**: `Data Layer Computed State`
-   - **[Opcional] ruta**: `productContext.pricing.regularPrice`
+   - **[Ruta de acceso ] opcional**: `productContext.pricing.regularPrice`
 
-1. Precio del producto:
+1. Product  precio:
 
    - **Nombre**: `product price`
    - **Extensión**: `Core`
@@ -743,7 +743,7 @@ Cree los siguientes elementos de datos:
    - **Nombre**: `cart`
    - **Extensión**: `Adobe Client Data Layer`
    - **Tipo de elemento de datos**: `Data Layer Computed State`
-   - **[Opcional] ruta**: `shoppingCartContext`
+   - **[Ruta de acceso ] opcional**: `shoppingCartContext`
 
 1. ID de carrito:
 
@@ -761,7 +761,7 @@ Cree los siguientes elementos de datos:
    - **Nombre**: `add to cart`
    - **Extensión**: `Adobe Experience Platform Web SDK`
    - **Tipo de elemento de datos**: `XDM object`
-   - **Grupo de campos**: `productListItems`. Seleccionar **Proporcionar elementos individuales** y haga clic en **Añadir elemento** botón. Como esta vista es para una PDP, puede rellenar con un solo elemento.
+   - **Grupo de campos**: `productListItems`. Seleccione **Proporcionar elementos individuales** y haga clic en el botón **Agregar elemento**. Como esta vista es para una PDP, puede rellenar con un solo elemento.
    - **Grupo de campos**: `productListItems` > `name`
    - **Nombre**: **Valor** = `%product name%`
    - **Grupo de campos**: `productListItems` > `SKU`
@@ -771,9 +771,9 @@ Cree los siguientes elementos de datos:
    - **Grupo de campos**: `productListItems` > `currencyCode`
    - **Grupo de campos**: `productListItems` > `ProductImageUrl`
    - **ProductImageUrl**: **Valor** = `%product image%`
-   - **Código de divisa**: **Valor** = `%currency code%`
+   - **Código de moneda**: **Valor** = `%currency code%`
    - **Grupo de campos**: `commerce` > `cart` > `cartID`
-   - **ID de carrito**: **Valor** = `%cart id%`
+   - **Id. del carro de compras**: **Valor** = `%cart id%`
    - **Grupo de campos**: `commerce` > `productListAdds` > `value`
    - **valor**: **Valor** = `1`
 
@@ -807,8 +807,8 @@ Cree el siguiente elemento de datos:
    - **Grupo de campos**: `commerce` > `productListOpens` > `value`
    - **valor**: **Valor** = `1`
    - **Grupo de campos**: `commerce` > `cart` > `cartID`
-   - **ID de carrito**: **Valor** = `%cart id%`
-   - **Grupo de campos**: `productListItems`. Para `productListItems`Sin embargo, se pueden precalcular varios elementos. Seleccionar **productListItems** > **Proporcionar toda la matriz**.
+   - **Id. del carro de compras**: **Valor** = `%cart id%`
+   - **Grupo de campos**: `productListItems`. Para `productListItems`, se pueden precalcular varios elementos. Seleccione **productListItems** > **Proporcione toda la matriz**.
 
 #### Reglas 
 
@@ -837,21 +837,21 @@ Cree los siguientes elementos de datos:
    - **Nombre**: `storefront`
    - **Extensión**: `Adobe Client Data Layer`
    - **Tipo de elemento de datos**: `Data Layer Computed State`
-   - **[Opcional] ruta**: `storefrontInstanceContext`
+   - **[Ruta de acceso ] opcional**: `storefrontInstanceContext`
 
 1. URL de imagen del producto:
 
    - **Nombre**: `product image`
    - **Extensión**: `Adobe Client Data Layer`
    - **Tipo de elemento de datos**: `Data Layer Computed State`
-   - **[Opcional] ruta**: `productContext.mainImageUrl`
+   - **[Ruta de acceso ] opcional**: `productContext.mainImageUrl`
 
    1. Carrito:
 
    - **Nombre**: `cart`
    - **Extensión**: `Adobe Client Data Layer`
    - **Tipo de elemento de datos**: `Data Layer Computed State`
-   - **[Opcional] ruta**: `shoppingCartContext`
+   - **[Ruta de acceso ] opcional**: `shoppingCartContext`
 
 1. ID de carrito:
 
@@ -904,12 +904,12 @@ Cree los siguientes elementos de datos:
    - **Nombre**: `view cart`
    - **Extensión**: `Adobe Experience Platform Web SDK`
    - **Tipo de elemento de datos**: `XDM object`
-   - **Grupo de campos**: `productListItems`. Para `productListItems`Sin embargo, puede haber varios elementos precalculados. Seleccionar **productListItems** > **Rellenar toda la matriz**.
+   - **Grupo de campos**: `productListItems`. Para `productListItems`, puede haber varios elementos precalculados. Seleccione **productListItems** > **Rellenar toda la matriz**.
    - **Elemento de datos**: `%product list items%`
    - **Grupo de campos**: `productListItems` > `ProductImageUrl`
    - **ProductImageUrl**: **Valor** = `%product image%`
    - **Grupo de campos**: `commerce` > `cart` > `cartID`
-   - **ID de carrito**: **Valor** = `%cart id%`
+   - **Id. del carro de compras**: **Valor** = `%cart id%`
    - **Grupo de campos**: `commerce` > `productListViews` > `value`
    - **valor**: **Valor** = `1`
 
@@ -940,37 +940,37 @@ Cree los siguientes elementos de datos:
    - **Nombre**: `product name`
    - **Extensión**: `Adobe Client Data Layer`
    - **Tipo de elemento de datos**: `Data Layer Computed State`
-   - **[Opcional] ruta**: `productContext.name`
+   - **[Ruta de acceso ] opcional**: `productContext.name`
 
 1. SKU del producto:
 
    - **Nombre**: `product sku`
    - **Extensión**: `Adobe Client Data Layer`
    - **Tipo de elemento de datos**: `Data Layer Computed State`
-   - **[Opcional] ruta**: `productContext.sku`
+   - **[Ruta de acceso ] opcional**: `productContext.sku`
 
 1. Código de divisa:
 
    - **Nombre**: `currency code`
    - **Extensión**: `Adobe Client Data Layer`
    - **Tipo de elemento de datos**: `Data Layer Computed State`
-   - **[Opcional] ruta**: `productContext.pricing.currencyCode`
+   - **[Ruta de acceso ] opcional**: `productContext.pricing.currencyCode`
 
 1. Precio especial del producto:
 
    - **Nombre**: `product special price`
    - **Extensión**: `Adobe Client Data Layer`
    - **Tipo de elemento de datos**: `Data Layer Computed State`
-   - **[Opcional] ruta**: `productContext.pricing.specialPrice`
+   - **[Ruta de acceso ] opcional**: `productContext.pricing.specialPrice`
 
 1. Precio regular del producto:
 
    - **Nombre**: `product regular price`
    - **Extensión**: `Adobe Client Data Layer`
    - **Tipo de elemento de datos**: `Data Layer Computed State`
-   - **[Opcional] ruta**: `productContext.pricing.regularPrice`
+   - **[Ruta de acceso ] opcional**: `productContext.pricing.regularPrice`
 
-1. Precio del producto:
+1. Product  precio:
 
    - **Nombre**: `product price`
    - **Extensión**: `Core`
@@ -986,7 +986,7 @@ Cree los siguientes elementos de datos:
    - **Nombre**: `cart`
    - **Extensión**: `Adobe Client Data Layer`
    - **Tipo de elemento de datos**: `Data Layer Computed State`
-   - **[Opcional] ruta**: `shoppingCartContext`
+   - **[Ruta de acceso ] opcional**: `shoppingCartContext`
 
 1. ID de carrito:
 
@@ -1004,7 +1004,7 @@ Cree los siguientes elementos de datos:
    - **Nombre**: `remove from cart`
    - **Extensión**: `Adobe Experience Platform Web SDK`
    - **Tipo de elemento de datos**: `XDM object`
-   - **Grupo de campos**: `productListItems`. Seleccionar **Proporcionar elementos individuales** y haga clic en **Añadir elemento** botón. Como esta vista es para una PDP, puede rellenar con un solo elemento.
+   - **Grupo de campos**: `productListItems`. Seleccione **Proporcionar elementos individuales** y haga clic en el botón **Agregar elemento**. Como esta vista es para una PDP, puede rellenar con un solo elemento.
    - **Grupo de campos**: `productListItems` > `name`
    - **Nombre**: **Valor** = `%product name%`
    - **Grupo de campos**: `productListItems` > `SKU`
@@ -1012,9 +1012,9 @@ Cree los siguientes elementos de datos:
    - **Grupo de campos**: `productListItems` > `priceTotal`
    - **Precio total**: **Valor** = `%product price%`
    - **Grupo de campos**: `productListItems` > `currencyCode`
-   - **Código de divisa**: **Valor** = `%currency code%`
+   - **Código de moneda**: **Valor** = `%currency code%`
    - **Grupo de campos**: `commerce` > `cart` > `cartID`
-   - **ID de carrito**: **Valor** = `%cart id%`
+   - **Id. del carro de compras**: **Valor** = `%cart id%`
    - **Grupo de campos**: `commerce` > `productListRemovals` > `value`
    - **valor**: **Valor** = `1`
 
@@ -1045,21 +1045,21 @@ Cree los siguientes elementos de datos:
    - **Nombre**: `storefront`
    - **Extensión**: `Adobe Client Data Layer`
    - **Tipo de elemento de datos**: `Data Layer Computed State`
-   - **[Opcional] ruta**: `storefrontInstanceContext`
+   - **[Ruta de acceso ] opcional**: `storefrontInstanceContext`
 
 1. URL de imagen del producto:
 
    - **Nombre**: `product image`
    - **Extensión**: `Adobe Client Data Layer`
    - **Tipo de elemento de datos**: `Data Layer Computed State`
-   - **[Opcional] ruta**: `productContext.mainImageUrl`
+   - **[Ruta de acceso ] opcional**: `productContext.mainImageUrl`
 
 1. Carrito:
 
    - **Nombre**: `cart`
    - **Extensión**: `Adobe Client Data Layer`
    - **Tipo de elemento de datos**: `Data Layer Computed State`
-   - **[Opcional] ruta**: `shoppingCartContext`
+   - **[Ruta de acceso ] opcional**: `shoppingCartContext`
 
 1. ID de carrito:
 
@@ -1112,12 +1112,12 @@ Cree los siguientes elementos de datos:
    - **Nombre**: `initiate checkout`
    - **Extensión**: `Adobe Experience Platform Web SDK`
    - **Tipo de elemento de datos**: `XDM object`
-   - **Grupo de campos**: `productListItems`. Para `productListItems`Sin embargo, puede haber varios elementos precalculados. Seleccionar **productListItems** > **Rellenar toda la matriz**.
+   - **Grupo de campos**: `productListItems`. Para `productListItems`, puede haber varios elementos precalculados. Seleccione **productListItems** > **Rellenar toda la matriz**.
    - **Elemento de datos**: `%product list items%`
    - **Grupo de campos**: `productListItems` > `ProductImageUrl`
    - **ProductImageUrl**: **Valor** = `%product image%`
    - **Grupo de campos**: `commerce` > `cart` > `cartID`
-   - **ID de carrito**: **Valor** = `%cart id%`
+   - **Id. del carro de compras**: **Valor** = `%cart id%`
    - **Grupo de campos**: `commerce` > `checkouts` > `value`
    - **valor**: **Valor** = `1`
 
@@ -1148,28 +1148,28 @@ Cree los siguientes elementos de datos:
    - **Nombre**: `account email`
    - **Extensión**: `Adobe Client Data Layer`
    - **Tipo de elemento de datos**: `Data Layer Computed State`
-   - **[Opcional] ruta**: `accountContext.emailAddress`
+   - **[Ruta de acceso ] opcional**: `accountContext.emailAddress`
 
 1. Tienda:
 
    - **Nombre**: `storefront`
    - **Extensión**: `Adobe Client Data Layer`
    - **Tipo de elemento de datos**: `Data Layer Computed State`
-   - **[Opcional] ruta**: `storefrontInstanceContext`
+   - **[Ruta de acceso ] opcional**: `storefrontInstanceContext`
 
 1. URL de imagen del producto:
 
    - **Nombre**: `product image`
    - **Extensión**: `Adobe Client Data Layer`
    - **Tipo de elemento de datos**: `Data Layer Computed State`
-   - **[Opcional] ruta**: `productContext.mainImageUrl`
+   - **[Ruta de acceso ] opcional**: `productContext.mainImageUrl`
 
 1. Carrito:
 
    - **Nombre**: `cart`
    - **Extensión**: `Adobe Client Data Layer`
    - **Tipo de elemento de datos**: `Data Layer Computed State`
-   - **[Opcional] ruta**: `shoppingCartContext`
+   - **[Ruta de acceso ] opcional**: `shoppingCartContext`
 
 1. ID de carrito:
 
@@ -1187,9 +1187,9 @@ Cree los siguientes elementos de datos:
    - **Nombre**: `order`
    - **Extensión**: `Adobe Client Data Layer`
    - **Tipo de elemento de datos**: `Data Layer Computed State`
-   - **[Opcional] ruta**: `orderContext`
+   - **[Ruta de acceso ] opcional**: `orderContext`
 
-1. Pedido comercial:
+1. Pedido de Commerce:
 
    - **Nombre**: `commerce order`
    - **Extensión**: `Core`
@@ -1291,19 +1291,19 @@ Cree los siguientes elementos de datos:
    - **Nombre**: `place order`
    - **Extensión**: `Adobe Experience Platform Web SDK`
    - **Tipo de elemento de datos**: `XDM object`
-   - **Grupo de campos**: `productListItems`. Para `productListItems`Sin embargo, puede haber varios elementos precalculados. Seleccionar **productListItems** > **Rellenar toda la matriz**.
+   - **Grupo de campos**: `productListItems`. Para `productListItems`, puede haber varios elementos precalculados. Seleccione **productListItems** > **Rellenar toda la matriz**.
    - **Elemento de datos**: `%product list items%`
    - **Grupo de campos**: `productListItems` > `ProductImageUrl`
    - **ProductImageUrl**: **Valor** = `%product image%`
    - **Grupo de campos**: `commerce` > `order`
-   - **Identificador único**: **Valor** = `%commerce order%`
+   - **Identificador Único**: **Valor** = `%commerce order%`
    - **Grupo de campos**: `commerce` > `shipping`
-   - **Identificador único**: **Valor** = `%order shipping%`
+   - **Identificador Único**: **Valor** = `%order shipping%`
    - **Grupo de campos**: `commerce` > `promotionID`
-   - **ID de promoción**: **Valor** = `%promotion id%`
+   - **Id. de promoción**: **Valor** = `%promotion id%`
    - **Grupo de campos**: `commerce` > `purchases` > `value`
    - **valor**: **Valor** = `1`
-   - **Correo electrónico personal**: **Valor** = `%account email%`
+   - **Dirección de correo electrónico personal**: **Valor** = `%account email%`
    - **Grupo de campos**: `personalEmail` > `address`
    - **Dirección**: **Valor** = `%account email%`
 
@@ -1323,25 +1323,25 @@ Cree los siguientes elementos de datos:
 
 ## Definir identidad en eventos de tienda
 
-Los eventos de tienda contienen información de perfil basada en la variable `personalEmail` (para eventos de cuenta) y `identityMap` (para todos los demás eventos de tienda) campos. El [!DNL Data Connection] la extensión une y genera perfiles basados en estos dos campos. Sin embargo, cada campo tiene que seguir diferentes pasos para crear perfiles:
+Los eventos de tienda contienen información de perfil basada en los campos `personalEmail` (para eventos de cuenta) y `identityMap` (para todos los demás eventos de tienda). La extensión [!DNL Data Connection] se une y genera perfiles basados en estos dos campos. Sin embargo, cada campo tiene que seguir diferentes pasos para crear perfiles:
 
 >[!NOTE]
 >
 >Si tiene una configuración anterior que se basa en diferentes campos, puede seguir utilizándolos.
 
-- `personalEmail` : solo se aplica a los eventos de cuenta. Siga los pasos, las reglas y las acciones descritas [superior](#createaccount)
-- `identityMap` : se aplica a todos los demás eventos de tienda. Consulte el siguiente ejemplo.
+- `personalEmail`: solo se aplica a los eventos de cuenta. Siga los pasos, reglas y acciones descritos [arriba](#createaccount)
+- `identityMap`: se aplica a todos los demás eventos de tienda. Consulte el siguiente ejemplo.
 
 ### Ejemplo
 
-Los siguientes pasos muestran cómo configurar una `pageView` evento con `identityMap` in [!DNL Data Connection] extensión:
+Los siguientes pasos muestran cómo configurar un evento `pageView` con `identityMap` en la extensión [!DNL Data Connection]:
 
 1. Configure el elemento de datos con el código personalizado para ECID:
 
-   ![Configuración del elemento de datos con código personalizado](assets/set-custom-code-ecid.png)
-   _Configuración del elemento de datos con código personalizado_
+   ![Configurar elemento de datos con código personalizado](assets/set-custom-code-ecid.png)
+   _Configurar elemento de datos con código personalizado_
 
-1. Seleccionar [!UICONTROL Open Editor] y agregue el siguiente código personalizado:
+1. Seleccione [!UICONTROL Open Editor] y agregue el siguiente código personalizado:
 
    ```javascript
    return alloy("getIdentity").then((result) => {
@@ -1363,7 +1363,7 @@ Los siguientes pasos muestran cómo configurar una `pageView` evento con `identi
    });
    ```
 
-1. Actualización del esquema XDM con `identityMap` establezca como ECID:
+1. Actualizar esquema XDM con `identityMap` establecido como ECID:
 
    ![Establecer identityMap como ECID](assets/identity-map-data-element.png)
    _Establecer identityMap como ECID_
@@ -1379,10 +1379,10 @@ A diferencia de los eventos de tienda que utilizan ECID para identificar y vincu
 
 1. Crear un elemento de mapa de identidad.
 
-   ![Mapa de identidad del back office](assets/custom-code-backoffice.png)
-   _Crear mapa de identidad del back office_
+   ![Mapa de identidad de la oficina ](assets/custom-code-backoffice.png)
+   _Crear mapa de identidad de back office_
 
-1. Seleccionar [!UICONTROL Open Editor] y agregue el siguiente código personalizado:
+1. Seleccione [!UICONTROL Open Editor] y agregue el siguiente código personalizado:
 
 ```javascript
 const IdentityMap = {
@@ -1405,32 +1405,32 @@ if (_satellite.getVar('account email')) {
 return IdentityMap;
 ```
 
-1. Agregar este nuevo elemento a cada `identityMap` field.
+1. Agregue este nuevo elemento a cada campo `identityMap`.
 
    ![Actualizar cada identityMap](assets/add-element-back-office.png)
    _Actualizar cada identityMap_
 
 ## Configuración del consentimiento
 
-Al instalar el [!DNL Data Connection] extensión en Adobe Commerce, el consentimiento de recopilación de datos está habilitado de forma predeterminada. La exclusión se administra mediante el [`mg_dnt` cookie](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-cookie-law.html). Puede seguir los pasos descritos aquí si decide utilizar `mg_dnt` para administrar el consentimiento. El [Documentación del SDK web de Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/edge/consent/supporting-consent.html) tiene varias opciones adicionales para administrar el consentimiento.
+Al instalar la extensión [!DNL Data Connection] en Adobe Commerce, el consentimiento de recopilación de datos está habilitado de manera predeterminada. La exclusión se administra mediante la cookie [`mg_dnt` ](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-cookie-law.html). Puede seguir los pasos descritos aquí si elige usar `mg_dnt` para administrar el consentimiento. La [documentación del SDK web de Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/edge/consent/supporting-consent.html) tiene varias opciones adicionales para administrar el consentimiento.
 
-1. Crear un **Código personalizado principal** elemento de datos (`%do not track cookie%`) para el `mg_dnt` cookie:
+1. Crear un elemento de datos de **Código personalizado principal** (`%do not track cookie%`) para la cookie `mg_dnt`:
 
-   ![Crear un elemento de datos de no seguimiento](assets/element-dnt-cookie.png)
-   _Crear un elemento de datos de no seguimiento_
+   ![Crear no rastrear elemento de datos](assets/element-dnt-cookie.png)
+   _Crear no rastrear elemento de datos_
 
-1. Crear un **Código personalizado principal** elemento de datos (`%consent%`) que devuelve `out` si la cookie está establecida y `in` de lo contrario:
+1. Crear un elemento de datos de **Código personalizado principal** (`%consent%`) que devuelva `out` si la cookie está establecida y `in` en caso contrario:
 
    ![Crear elemento de datos de consentimiento](assets/element-consent-dnt-cookie.png)
    _Crear elemento de datos de consentimiento_
 
-1. Configuración de la extensión SDK para web de Adobe Experience Platform con `%consent%` elemento de datos:
+1. Configurar la extensión del SDK web de Adobe Experience Platform con el elemento de datos `%consent%`:
 
-   ![Actualización del SDK con consentimiento](assets/config-sdk-consent.png)
-   _Actualización del SDK con consentimiento_
+   ![Actualizar SDK con consentimiento](assets/config-sdk-consent.png)
+   _Actualizar SDK con consentimiento_
 
 ## Advertencias
 
 - Si no se siguen los pasos para desactivar la colección de Experience Platform, los eventos se cuentan dos veces
 - No configurar asignaciones/eventos como se describe en este tema puede afectar a los tableros de Adobe Analytics
-- No puede configurar Target mediante la variable [!DNL Data Connection] extensión si la recopilación de datos está desactivada
+- No puede configurar Target con la extensión [!DNL Data Connection] si la recopilación de datos está deshabilitada

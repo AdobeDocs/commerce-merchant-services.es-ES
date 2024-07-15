@@ -1,6 +1,6 @@
 ---
 title: Informes financieros
-description: '"[!DNL Payment Services] ofrece informes completos para que pueda obtener una visión clara de los pedidos y pagos de su tienda".'
+description: "[!DNL Payment Services] ofrece informes completos para que pueda obtener una visión clara de los pedidos y pagos de su tienda."
 role: User
 feature: Payments, Checkout
 level: Intermediate
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Informes financieros
 
-[!DNL Payment Services] para [!DNL Adobe Commerce] y [!DNL Magento Open Source] le ofrece informes completos para que pueda obtener una visión clara de los pedidos y pagos de su tienda.
+[!DNL Payment Services] para [!DNL Adobe Commerce] y [!DNL Magento Open Source] le ofrece un informe completo para que pueda obtener una visión clara de los pedidos y pagos de su tienda.
 
 ![Vista de informes financieros](assets/reports-view.png){width="600" zoomable="yes"}
 

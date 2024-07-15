@@ -1,6 +1,6 @@
 ---
-title: '[!DNL Catalog Service] Notas de la versión'
-description: La información de la versión más reciente de [!DNL Catalog Service] para Adobe Commerce.
+title: '[!DNL Catalog Service] notas de la versión'
+description: La información de la versión más reciente de  [!DNL Catalog Service]  para Adobe Commerce.
 exl-id: 9bf8e3f7-5b74-4755-867e-ac1c5000ff33
 feature: Services, Catalog Service, Release Notes
 source-git-commit: 6ca91feefbfc2fbc4d5851040b9f1ca3de6a6560
@@ -10,14 +10,14 @@ ht-degree: 0%
 
 ---
 
-# [!DNL Catalog Service] Notas de versión
+# Notas de la versión [!DNL Catalog Service]
 
 Estas notas de la versión describen las versiones más recientes de [!DNL Catalog Service].
 Se proporciona soporte para la versión publicada principal actual. Las notas de la versión de las versiones anteriores se proporcionan como referencia.
 Las actualizaciones incluyen:
 
-![Nuevo](../assets/new.svg) Nuevas funciones
-![Fix](../assets/fix.svg) Correcciones y mejoras
+![Nuevas](../assets/new.svg) nuevas características
+![Corrección](../assets/fix.svg) Correcciones y mejoras
 ![Error](../assets/bug.svg) Problemas conocidos
 
 ## Versión principal actual
@@ -26,9 +26,9 @@ Las actualizaciones incluyen:
 
 _23 de mayo de 2024_
 
-![Fix](../assets/fix.svg) <!--DATA-5033-->El `InStock` El indicador para valores de opción ahora tiene en cuenta el ámbito `enabled` estado de la variante del producto.
+![Corrección](../assets/fix.svg) <!--DATA-5033-->El indicador `InStock` para los valores de opción ahora tiene en cuenta el estado `enabled` de ámbito de la variante del producto.
 
-![Fix](../assets/fix.svg) <!--DATA-5888-->Añada soporte para los precios de productos que requieren números grandes (hasta 16 dígitos) y una mayor precisión decimal (hasta 4 lugares decimales). Para aplicar las actualizaciones de configuración de precios al catálogo existente, vuelva a sincronizar los datos de catálogo desde el [Panel de administración de datos](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-dashboard), o mediante el uso de [Interfaz de línea de comandos de Adobe Commerce](../landing/catalog-sync.md#command-line-interface).
+![Corrección](../assets/fix.svg) <!--DATA-5888-->Agregue soporte para precios de productos que requieran números grandes (hasta 16 dígitos) y mayor precisión decimal (hasta 4 decimales). Para aplicar las actualizaciones de la configuración de precios al catálogo existente, vuelva a sincronizar los datos del catálogo desde el [panel de administración de datos](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-dashboard) o mediante la [interfaz de línea de comandos de Adobe Commerce](../landing/catalog-sync.md#command-line-interface).
 
 #### Limitaciones conocidas
 
@@ -44,7 +44,7 @@ Resuelva las siguientes limitaciones utilizando API Mesh y la API principal de G
 * Precios de nivel
 * Paquete de productos con precios fijos
 
-Para ver detalles y ejemplos, consulte [Servicio de catálogo y malla de API](mesh.md)
+Para obtener detalles y ejemplos, consulte [Servicio de catálogo y malla de API](mesh.md)
 
 ## Versiones anteriores
 
@@ -54,28 +54,28 @@ Para ver detalles y ejemplos, consulte [Servicio de catálogo y malla de API](me
 
 _11 de abril de 2024_
 
-[!BADGE Admitido]{type=Informative tooltip="Admitido"}
+[!BADGE Compatible]{type=Informative tooltip="Admitido"}
 
-![Nuevo](../assets/new.svg) Se ha agregado compatibilidad con PHP 8.3.
+![Nuevo](../assets/new.svg) agregó compatibilidad con PHP 8.3.
 
-![Nuevo](../assets/new.svg) El [`products`](https://developer.adobe.com/commerce/services/graphql/catalog-service/products/) y [`refineProduct`](https://developer.adobe.com/commerce/services/graphql/catalog-service/refine-product/) las consultas ahora devuelven datos de opciones personalizables para productos simples y complejos.<!--DATA-5538-->
+![Nuevas](../assets/new.svg) Las consultas [`products`](https://developer.adobe.com/commerce/services/graphql/catalog-service/products/) y [`refineProduct`](https://developer.adobe.com/commerce/services/graphql/catalog-service/refine-product/) ahora devuelven datos de opciones personalizables para productos simples y complejos.<!--DATA-5538-->
 
 ### Versión V1.17
 
 _22 de febrero de 2024_
 
-[!BADGE Admitido]{type=Informative tooltip="Admitido"}
+[!BADGE Compatible]{type=Informative tooltip="Admitido"}
 
-![Nuevo](../assets/new.svg) El [[!DNL Data Management Dashboard]](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-dashboard.html) ya está disponible. Este tablero reformado proporciona perspectivas sobre los flujos de datos para [!DNL Product Recommendations], [!DNL Live Search], y [!DNL Catalog Service]. La compatibilidad con esta función se introdujo en la versión 3.1.0 de la `catalog-service` metapaquete.
+![Nuevo](../assets/new.svg) El [[!DNL Data Management Dashboard]](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-dashboard.html) ya está disponible. Este panel modificado proporciona información sobre las secuencias de datos de [!DNL Product Recommendations], [!DNL Live Search] y [!DNL Catalog Service]. La compatibilidad con esta característica se introdujo en la versión 3.1.0 del metapaquete `catalog-service`.
 
 ### Versión V1.16
 
 _13 de febrero de 2024_
 
-[!BADGE Admitido]{type=Informative tooltip="Admitido"}
+[!BADGE Compatible]{type=Informative tooltip="Admitido"}
 
-![Nuevo](../assets/new.svg) La API del servicio de catálogo ahora admite vídeos de productos.
-![Fix](../assets/fix.svg) Las opciones sin existencias ahora se muestran en el widget PDP.
+La API del servicio de catálogo admite ahora ![nuevos](../assets/new.svg) vídeos de producto.
+![Corregir](../assets/fix.svg) Las opciones sin existencias ahora se muestran en el widget PDP.
 
 #### Limitaciones conocidas
 
@@ -94,121 +94,121 @@ Las siguientes limitaciones se pueden resolver mediante API Mesh y la API princi
 
 _12 de octubre de 2023_
 
-[!BADGE Admitido]{type=Informative tooltip="Admitido"}
+[!BADGE Compatible]{type=Informative tooltip="Admitido"}
 
-![Nuevo](../assets/new.svg) El servicio de catálogo admite `inStock` indicador para variantes de producto.
-![Nuevo](../assets/new.svg) El `urlKey` y `externalId` Se han añadido campos de al esquema de GraphQL.
-![Nuevo](../assets/new.svg) Ahora se admiten productos descargables y tarjetas regalo.
+El servicio de catálogo ![New](../assets/new.svg) admite el indicador `inStock` para las variantes de producto.
+![Nuevo](../assets/new.svg) Los campos `urlKey` y `externalId` se han agregado al esquema de GraphQL.
+Ahora se admiten ![nuevos](../assets/new.svg) productos descargables y tarjetas regalo.
 
 ### Versión V1.12
 
 _19 de septiembre de 2023_
 
-[!BADGE Admitido]{type=Informative tooltip="Admitido"}
+[!BADGE Compatible]{type=Informative tooltip="Admitido"}
 
-![Nuevo](../assets/new.svg) El servicio de catálogo ahora utiliza [Indexación de precios de SaaS](../price-index/price-indexing.md).
-![Fix](../assets/fix.svg) Esta versión incluye correcciones de errores y mejoras en el lado del servicio.
+El servicio de catálogo ![New](../assets/new.svg) ahora usa [indización de precios SaaS](../price-index/price-indexing.md).
+![Corrección](../assets/fix.svg) Esta versión contiene correcciones de errores y mejoras en el servicio.
 
 ### Versión V1.11
 
 _18 de julio de 2023_
 
-[!BADGE Admitido]{type=Informative tooltip="Admitido"}
+[!BADGE Compatible]{type=Informative tooltip="Admitido"}
 
-![Nuevo](../assets/new.svg) El servicio de catálogo ahora admite [`recommendations`](https://developer.adobe.com/commerce/services/graphql/recommendations/recommendations/) GraphQL consulta el Recommendations del producto.
+El servicio de catálogo ![New](../assets/new.svg) admite ahora la consulta de GraphQL [`recommendations`](https://developer.adobe.com/commerce/services/graphql/recommendations/recommendations/) para Product Recommendations.
 
 ### Versión V1.10
 
 _27 de junio de 2023_
 
-[!BADGE Admitido]{type=Informative tooltip="Admitido"}
+[!BADGE Compatible]{type=Informative tooltip="Admitido"}
 
-![Nuevo](../assets/new.svg) La API del servicio de catálogo ahora admite `related products`.
+![Nuevo](../assets/new.svg): la API del servicio de catálogo ahora admite `related products`.
 
 ### Versión V1.7
 
 _12 de abril de 2023_
 
-[!BADGE Admitido]{type=Informative tooltip="Admitido"}
+[!BADGE Compatible]{type=Informative tooltip="Admitido"}
 
-![Nuevo](../assets/new.svg) El servicio de catálogo ahora limpia las variantes de producto eliminadas.
-![Fix](../assets/fix.svg) Mejoras de rendimiento y escalabilidad de la infraestructura.
+El servicio de catálogo ![New](../assets/new.svg) ahora limpia las variantes de producto eliminadas.
+![Corregir](../assets/fix.svg) mejoras de rendimiento y escalabilidad de la infraestructura.
 
 ### Versión V1.6
 
 _28 de marzo de 2023_
 
-[!BADGE Admitido]{type=Informative tooltip="Admitido"}
+[!BADGE Compatible]{type=Informative tooltip="Admitido"}
 
-![Nuevo](../assets/new.svg) Se han añadido muestras a [`products`](https://developer.adobe.com/commerce/services/graphql/catalog-service/products/) consulta.
-![Nuevo](../assets/new.svg) Se ha añadido la capacidad de `entityId` usando [API Mesh](mesh.md).
+![Nuevo](../assets/new.svg) agregó muestras a la consulta [`products`](https://developer.adobe.com/commerce/services/graphql/catalog-service/products/).
+![Nuevo](../assets/new.svg) agregó la capacidad para obtener `entityId` mediante [API Mesh](mesh.md).
 
 ### Versión V1.5
 
 _6 de marzo de 2023_
 
-[!BADGE Admitido]{type=Informative tooltip="Admitido"}
+[!BADGE Compatible]{type=Informative tooltip="Admitido"}
 
-![Nuevo](../assets/new.svg) Añadido [`categories`](https://developer.adobe.com/commerce/services/graphql/catalog-service/categories/) Funcionalidad de GraphQL.
-![Fix](../assets/fix.svg) Rendimiento y escalabilidad de API mejorados.
+![Nuevo](../assets/new.svg) agregó la funcionalidad de GraphQL [`categories`](https://developer.adobe.com/commerce/services/graphql/catalog-service/categories/).
+![Corrección](../assets/fix.svg): rendimiento y escalabilidad de API mejorados.
 
 ### Versión V1.4
 
 _7 de febrero de 2023_
 
-[!BADGE Admitido]{type=Informative tooltip="Admitido"}
+[!BADGE Compatible]{type=Informative tooltip="Admitido"}
 
-![Nuevo](../assets/new.svg) Se ha publicado un metapaquete de servicio de catálogo para simplificar los pasos de instalación.
-![Fix](../assets/fix.svg) Mejoras de rendimiento y escalabilidad de API.
+![Nuevo](../assets/new.svg) paquete de servicio de catálogo publicado para simplificar los pasos de instalación.
+![Corrección](../assets/fix.svg) de escalabilidad y mejoras de rendimiento de API.
 
 ### Versión V1.3
 
 _17 de enero de 2023_
 
-[!BADGE Admitido]{type=Informative tooltip="Admitido"}
+[!BADGE Compatible]{type=Informative tooltip="Admitido"}
 
-![Nuevo](../assets/new.svg) Simplificación y mejora de la experiencia de incorporación.
-![Nuevo](../assets/new.svg) Hay nuevos extremos de zona protegida del cliente disponibles para pruebas previas a la producción.
-![Nuevo](../assets/new.svg) Se agregó compatibilidad con productos virtuales.
-![Fix](../assets/fix.svg) Mejoras de rendimiento y escalabilidad de API.
+![Nuevo](../assets/new.svg) ha simplificado y mejorado la experiencia de incorporación.
+![Nuevos](../assets/new.svg) nuevos extremos de zona protegida del cliente disponibles para pruebas previas a la producción.
+![Se ha agregado compatibilidad con New](../assets/new.svg) para productos virtuales.
+![Corrección](../assets/fix.svg) de escalabilidad y mejoras de rendimiento de API.
 
 ### Versión V1.1
 
 _18 de noviembre de 2022_
 
-[!BADGE Admitido]{type=Informative tooltip="Admitido"}
+[!BADGE Compatible]{type=Informative tooltip="Admitido"}
 
-![Nuevo](../assets/new.svg) El servicio de catálogo ahora admite Adobes [API Mesh](https://developer.adobe.com/graphql-mesh-gateway/).
-![Fix](../assets/fix.svg) Se ha mejorado la escalabilidad de la API y el rendimiento general.
+El servicio de catálogo ![New](../assets/new.svg) ahora es compatible con la [malla de API](https://developer.adobe.com/graphql-mesh-gateway/) del Adobe.
+![Corrección](../assets/fix.svg): se mejoró la escalabilidad de la API y el rendimiento general.
 
 ### Versión 1.0
 
 _4 de octubre de 2022_
 
-[!BADGE Admitido]{type=Informative tooltip="Admitido"}
+[!BADGE Compatible]{type=Informative tooltip="Admitido"}
 
-![Nuevo](../assets/new.svg) Ahora admite productos agrupados y agrupados.
-![Nuevo](../assets/new.svg) Se han añadido anulaciones de visibilidad B2B. Ahora se pueden buscar productos y se pueden agregar al carro de compras para grupos de clientes específicos.
-![Fix](../assets/fix.svg) El servicio es ahora más estable y ha mejorado el rendimiento.
+![Nuevo](../assets/new.svg) ahora admite productos agrupados y agrupados.
+![Nuevo](../assets/new.svg) agregó invalidaciones de visibilidad B2B. Ahora se pueden buscar productos y se pueden agregar al carro de compras para grupos de clientes específicos.
+El servicio ![Fix](../assets/fix.svg) es ahora más estable y ha mejorado el rendimiento.
 
 ### Versión 0.3: Beta+
 
 _12 de septiembre de 2022_
 
-[!BADGE Admitido]{type=Informative tooltip="Admitido"}
+[!BADGE Compatible]{type=Informative tooltip="Admitido"}
 
-![Nuevo](../assets/new.svg) Compatibilidad con imágenes para variantes: las imágenes de producto se devuelven en función de las opciones seleccionadas
-![Nuevo](../assets/new.svg) Funciones para el soporte de precios: permitir que solo los miembros de grupos de clientes específicos vean el precio de los productos
-![Fix](../assets/fix.svg) Estabilidad y rendimiento mejorados del servicio
-![Nuevo](../assets/new.svg) Las actualizaciones se reciben cuando los productos se eliminan del catálogo
+![Nuevas](../assets/new.svg) imágenes para compatibilidad con variantes: las imágenes de producto se devuelven según las opciones seleccionadas
+![Nuevos](../assets/new.svg) roles para soporte de precios: permitir que solo los miembros de grupos de clientes específicos vean el precio de los productos
+![Corrección](../assets/fix.svg): se ha mejorado la estabilidad y el rendimiento del servicio
+![Se reciben nuevas](../assets/new.svg) actualizaciones cuando los productos se eliminan del catálogo
 
 ### Versión de Beta
 
 _9 de agosto de 2022_
 
-[!BADGE Admitido]{type=Informative tooltip="Admitido"}
+[!BADGE Compatible]{type=Informative tooltip="Admitido"}
 
-![Nuevo](../assets/new.svg) El `products` y `refineProduct` Las consultas de devuelven los siguientes datos:
+![Nuevo](../assets/new.svg) Las consultas `products` y `refineProduct` devuelven los siguientes datos:
 
 * Atributos de producto predefinidos (del sistema).
 * Atributos de producto dinámicos y filtrarlos por función (página de visualización de producto/página de lista de productos).

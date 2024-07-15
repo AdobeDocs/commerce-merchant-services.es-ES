@@ -1,11 +1,11 @@
 ---
 title: Probar en el entorno de ensayo
-description: Aprenda a utilizar [!DNL Product Recommendations] desde el entorno de producción en el entorno de ensayo con fines de prueba.
+description: Aprenda a usar  [!DNL Product Recommendations] de su entorno de producción en su entorno de ensayo con fines de prueba.
 exl-id: 178ff2aa-7821-45f7-85f1-d490d8182817
 feature: Services, Recommendations, Staging
 source-git-commit: 9ae4aff1851e9ce9920c4fbf11d2616d6f0f6307
 workflow-type: tm+mt
-source-wordcount: '429'
+source-wordcount: '423'
 ht-degree: 0%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 Antes de implementar las recomendaciones en el entorno de producción, debe probarlas en un entorno que no sea de producción para asegurarse de que todo funciona según lo esperado.
 
-[!DNL Product Recommendations] productos de devolución basados en [datos de comportamiento del comprador](behavioral-data.md) recopilado de tu tienda. Sin embargo, en un entorno que no es de producción, es probable que no tenga datos de comportamiento de los compradores. El único tipo de recomendación que puede probar sin datos de comportamiento es `More like this`. Este tipo de recomendación no requiere datos de entrada, ya que utiliza una coincidencia de similitud de contenido directo.
+[!DNL Product Recommendations] devuelven productos basados en [datos de comportamiento del comprador](behavioral-data.md) recopilados de su tienda. Sin embargo, en un entorno que no es de producción, es probable que no tenga datos de comportamiento de los compradores. El único tipo de recomendación que puede probar sin datos de comportamiento es `More like this`. Este tipo de recomendación no requiere datos de entrada, ya que utiliza una coincidencia de similitud de contenido directo.
 
 Los siguientes tipos de recomendación requieren datos de comportamiento:
 
@@ -26,20 +26,20 @@ Los siguientes tipos de recomendación requieren datos de comportamiento:
 
 ## Obtener recomendaciones del entorno de producción (recomendado)
 
-Adobe Commerce le permite recuperar recomendaciones del entorno de producción y previsualizarlas en el entorno que no sea de producción mediante [cambio](settings.md) el espacio de datos SaaS.
+Adobe Commerce le permite recuperar recomendaciones de su entorno de producción y previsualizarlas en el entorno que no sea de producción [cambiando](settings.md) el espacio de datos SaaS.
 
 Para recuperar recomendaciones del entorno de producción, debe asegurarse de que:
 
-- La recopilación de datos de la tienda es [configurado y habilitado](install-configure.md) sobre la producción.
+- La recopilación de datos de la tienda está [configurada y habilitada](install-configure.md) en producción.
 - El catálogo de entornos de no producción es en gran medida el mismo que el que tiene en producción. El uso de catálogos similares garantiza que los productos devueltos en las unidades de recomendación imiten estrechamente los de la producción.
 
 ## Generar datos de comportamiento en un entorno que no sea de producción
 
-1. Implementar el `magento/product-recommendations` a un entorno que no sea de producción en el que los datos del catálogo sean similares a los del catálogo de producción.
+1. Implemente el módulo `magento/product-recommendations` en un entorno que no sea de producción en el que los datos del catálogo sean similares a los del catálogo de producción.
 
-1. Utilice uno de los ID de espacio de datos de no producción para [configuración](https://experienceleague.adobe.com/docs/commerce-admin/config/services/saas.html) en el Administrador.
+1. Use uno de los ID de espacio de datos que no sean de producción para [configuration](https://experienceleague.adobe.com/docs/commerce-admin/config/services/saas.html) en el administrador.
 
-1. Genere los datos usted mismo haciendo clic en su tienda para imitar el comportamiento de los compradores reales (o cree un script de automatización). Con las pruebas, se generan eventos de comportamiento en el entorno que no es de producción. Estos eventos se utilizan para producir las afinidades de productos que alimentan las recomendaciones. Para pruebas, [!DNL Commerce] sugiere que interactúe con los siguientes tipos de recomendaciones:
+1. Genere los datos usted mismo haciendo clic en su tienda para imitar el comportamiento de los compradores reales (o cree un script de automatización). Con las pruebas, se generan eventos de comportamiento en el entorno que no es de producción. Estos eventos se utilizan para producir las afinidades de productos que alimentan las recomendaciones. Para las pruebas, [!DNL Commerce] sugiere que interactúe con los siguientes tipos de recomendaciones:
 
    - Más visitados: requiere datos de entrada mínimos. Los usuarios deben ver los productos.
    - Visto esto, visto aquello: requiere que varios usuarios vean varios productos.

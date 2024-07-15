@@ -1,6 +1,6 @@
 ---
-title: Qué es [!DNL Live Search]?
-description: '"[!DNL Live Search] de Adobe Commerce ofrece una experiencia de búsqueda rápida, relevante e intuitiva".'
+title: ¿Qué es  [!DNL Live Search]?
+description: "[!DNL Live Search] de Adobe Commerce ofrece una experiencia de búsqueda rápida, relevante e intuitiva."
 exl-id: aca0ef19-ead1-4c79-90c3-db5ec48cb3c1
 recommendations: noCatalog
 source-git-commit: 362592eae354b43a3bf98e2839ffe90c21fd3593
@@ -10,9 +10,9 @@ ht-degree: 0%
 
 ---
 
-# Qué es [!DNL Live Search]?
+# ¿Qué es [!DNL Live Search]?
 
-[!DNL Live Search] es una función que reemplaza las funciones de búsqueda estándar de Adobe Commerce. El [!DNL Live Search] se instala con Composer y conecta la [!DNL Commerce] almacenar en el [Conector de Commerce Services](../landing/saas.md). Cuando está configurado, el campo de texto de búsqueda predeterminado se sustituye por el [!DNL Live Search] campo de texto. [!DNL Live Search] también instala el widget Página de lista de productos (PLP), que proporciona capacidades de filtrado sólidas al examinar los resultados de búsqueda.
+[!DNL Live Search] es una característica que reemplaza las funciones de búsqueda estándar de Adobe Commerce. La característica [!DNL Live Search] se ha instalado con Composer y conecta su tienda [!DNL Commerce] al [Conector de servicios de Commerce](../landing/saas.md). Cuando está configurado, el campo de texto de búsqueda predeterminado se reemplaza con el campo de texto [!DNL Live Search]. [!DNL Live Search] también instala el widget de página de lista de productos (PLP), que proporciona capacidades de filtrado sólidas al examinar los resultados de búsqueda.
 
 Con [!DNL Live Search], puede:
 
@@ -23,64 +23,64 @@ Con [!DNL Live Search], puede:
 
 >[!IMPORTANT]
 >
->Cuando se trata de buscar sitios, Adobe Commerce le da opciones. Antes de la implementación, revise las [Límites y límites](boundaries-limits.md) información para garantizar que [!DNL Live Search] es una solución adecuada para sus necesidades empresariales.
+>Cuando se trata de buscar sitios, Adobe Commerce le da opciones. Antes de la implementación, revisa la información de [Límites y límites](boundaries-limits.md) para asegurarte de que [!DNL Live Search] se adapte a tus necesidades comerciales.
 
 ## Arquitectura
 
-La parte de Adobe Commerce de la arquitectura de incluye el alojamiento de la búsqueda *Administrador*, sincronizando los datos del catálogo y ejecutando el servicio de consulta. Después [!DNL Live Search] está instalado y configurado, Adobe Commerce comienza a compartir datos de búsqueda y catálogo con los servicios SaaS. En este punto, los usuarios administradores pueden configurar, personalizar y administrar la búsqueda [facetas](facets.md), [sinónimos](synonyms.md), y [reglas de comercialización](category-merch.md).
+La parte de Adobe Commerce de la arquitectura incluye alojar la búsqueda *Admin*, sincronizar los datos del catálogo y ejecutar el servicio de consultas. Una vez que [!DNL Live Search] se ha instalado y configurado, Adobe Commerce comienza a compartir datos de búsqueda y catálogo con los servicios SaaS. En este momento, los usuarios administradores pueden configurar, personalizar y administrar las [facetas](facets.md), los [sinónimos](synonyms.md) y las [reglas de comercialización](category-merch.md) de búsqueda.
 
 ![Flujo de datos de Live Search](assets/ls-cs-data-flow.png)
 
 ## Explicación rápida
 
-Centrándose en la velocidad, la relevancia y la facilidad de uso, [!DNL Live Search] es un punto de inflexión tanto para compradores como para comerciantes. Vea el siguiente vídeo y, a continuación, haga un recorrido rápido por [!DNL Live Search] de la tienda.
+Con un enfoque en la velocidad, relevancia y facilidad de uso, [!DNL Live Search] cambia las reglas del juego tanto para los compradores como para los comerciantes. Vea el siguiente vídeo y haga un recorrido rápido por [!DNL Live Search] desde la tienda.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3418679?quality=12&learn=on)
 
-Para ver un vídeo más detallado sobre el uso y la configuración de Live Search, consulte la [Demostración completa el [!DNL Live Search]](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/getting-started/capabilities/live-search-full-demonstration) tema.
+Para ver un vídeo más detallado sobre cómo usar y configurar Live Search, consulte el tema [Demostración completa sobre [!DNL Live Search]](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/getting-started/capabilities/live-search-full-demonstration).
 
 ### Buscar mientras escribe
 
-[!DNL Live Search] responde con productos sugeridos y una imagen en miniatura de los principales resultados de búsqueda en una [popover](storefront-popover.md) a medida que los compradores escriben consultas en [Buscar](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/search/search) cuadro. El [información del producto](https://experienceleague.adobe.com/en/docs/commerce-admin/start/storefront/storefront) La página se muestra cuando los compradores hacen clic en un producto sugerido o destacado. A _Ver todo_ El vínculo situado en el pie de página de la ventana emergente muestra la página de resultados de la búsqueda.
+[!DNL Live Search] responde con productos sugeridos y una imagen en miniatura de los principales resultados de búsqueda en una [ventana emergente](storefront-popover.md) mientras los compradores escriben consultas en el cuadro [Buscar](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/search/search). La página [detalles del producto](https://experienceleague.adobe.com/en/docs/commerce-admin/start/storefront/storefront) se muestra cuando los compradores hacen clic en un producto sugerido o destacado. Un vínculo _Ver todo_ al pie de página de la ventana emergente muestra la página de resultados de la búsqueda.
 
-[!DNL Live Search] devuelve los resultados de &quot;buscar mientras escribe&quot; para una consulta de dos o más caracteres. Para una coincidencia parcial, el número máximo de caracteres por palabra es 20. El número de caracteres de la consulta no se puede configurar. La ventana emergente incluye el`name`, `sku`, y `category_ids` campos.
+[!DNL Live Search] devuelve los resultados de &quot;buscar mientras escribe&quot; para una consulta de dos o más caracteres. Para una coincidencia parcial, el número máximo de caracteres por palabra es 20. El número de caracteres de la consulta no se puede configurar. La ventana emergente incluye los campos `name`, `sku` y `category_ids`.
 
-![Ejemplo de tienda - buscar mientras escribes](assets/storefront-search-as-you-type.png)
+![Tienda de ejemplo: busca mientras escribes](assets/storefront-search-as-you-type.png)
 
 ### Ver todos los resultados de búsqueda
 
-Para enumerar todos los productos devueltos por la consulta &quot;buscar mientras escribe&quot;, haga clic en _Ver todo_ al pie de la ventana emergente.
+Para enumerar todos los productos devueltos por la consulta &quot;buscar mientras escribe&quot;, haga clic en _Ver todo_ en el pie de página de la ventana emergente.
 
-![Ejemplo de tienda: facetas de precio](assets/storefront-view-all-search-results.png)
+![Ejemplo de tienda - facetas de precio](assets/storefront-view-all-search-results.png)
 
 ### Búsqueda filtrada con facetas
 
-La búsqueda filtrada utiliza varias dimensiones de valores de atributo o [facetas](facets.md), como criterios de búsqueda. La selección de filtros la define el comerciante y cambia según los productos devueltos, con las facetas más utilizadas ancladas en la parte superior de la lista.
+La búsqueda filtrada usa varias dimensiones de valores de atributo o [facetas](facets.md) como criterios de búsqueda. La selección de filtros la define el comerciante y cambia según los productos devueltos, con las facetas más utilizadas ancladas en la parte superior de la lista.
 
-Utilice facetas como parámetros de URL:`http://yourwebsite.com?color=red`y Live Search filtran los resultados en función de estos valores de atributo.
+Use facetas como parámetros de URL:`http://yourwebsite.com?color=red` y Live Search filtra los resultados en función de estos valores de atributo.
 
 ### Sinónimos
 
-[Sinónimos](synonyms.md) amplíe el alcance y enfoque las consultas incluyendo palabras que los compradores pueden utilizar y que difieren de las del catálogo. Puede ajustar el diccionario de sinónimos para mantener a los compradores comprometidos y en el camino de compra.
+[Sinónimos](synonyms.md) amplían el alcance y acentúan el enfoque de las consultas al incluir palabras que los compradores podrían usar y que difieren de las del catálogo. Puede ajustar el diccionario de sinónimos para mantener a los compradores comprometidos y en el camino de compra.
 
 ### Reglas de comercialización
 
-Comercialización [reglas](rules.md) dé forma a la experiencia de compra con instrucciones if-then que agregan lógica y eventos a la búsqueda. Puede impulsar o enterrar fácilmente productos para una promoción, una temporada u otro período de tiempo.
+Las [reglas](rules.md) de comercialización dan forma a la experiencia de compra con instrucciones if-then que agregan lógica y eventos para la búsqueda. Puede impulsar o enterrar fácilmente productos para una promoción, una temporada u otro período de tiempo.
 
 ### Compatibilidad con términos de búsqueda
 
-[!DNL Live Search] admite Commerce [buscar redirecciones de términos](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/search/search-terms). Por ejemplo, los usuarios pueden buscar un término como &quot;Tarifas de envío&quot; y ser llevados directamente a la página de tarifas de envío.
+[!DNL Live Search] admite [redirecciones de términos de búsqueda](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/search/search-terms) de Commerce. Por ejemplo, los usuarios pueden buscar un término como &quot;Tarifas de envío&quot; y ser llevados directamente a la página de tarifas de envío.
 
 ## Componentes de Live Search
 
-- [!DNL Live Search] [widget emergente](storefront-popover.md) es el cuadro que se abre debajo del campo de búsqueda que contiene los resultados de la búsqueda.
-- [Widget de página de lista de productos](plp-styling.md) (PLP) proporciona una página de lista de productos en la que se pueden buscar con soporte de facetas y sinónimos. El widget está instalado y habilitado en Live Search 4.0.0+.
-- (**Obsoleto**) El adaptador de búsqueda fue el precursor del widget PLP y se instaló con Live Search &lt; 4.0.0. Si utiliza una versión de Live Search anterior a la 4.0.0, Commerce recomienda actualizar para recibir las ventajas de las funciones del widget PLP y las mejoras futuras.
+- [!DNL Live Search] [widget de ventana emergente](storefront-popover.md) es el cuadro que se abre debajo del campo de búsqueda que contiene los resultados de la búsqueda.
+- [El widget de página de lista de productos](plp-styling.md) (PLP) proporciona una página de lista de productos en la que se pueden buscar con soporte para facetas y sinónimos. El widget está instalado y habilitado en Live Search 4.0.0+.
+- (**Obsoleto**) El adaptador de búsqueda era el precursor del widget PLP y se instaló con Live Search &lt; 4.0.0. Si utiliza una versión de Live Search anterior a la 4.0.0, Commerce recomienda actualizar para recibir las ventajas de las funciones del widget PLP y las mejoras futuras.
 
-## [!DNL Live Search] workspace
+## [!DNL Live Search] espacio de trabajo
 
-El [!DNL Live Search] [workspace](workspace.md) es el área del Administrador donde se configura [!DNL Live Search] funciones como sinónimos, facetas y comercialización de categorías.
+El [!DNL Live Search] [espacio de trabajo](workspace.md) es el área del administrador donde se configuran las características de [!DNL Live Search], como sinónimos, facetas y comercialización de categorías.
 
 ## Eventos
 
-[!DNL Live Search] utiliza [eventos](events.md) para calcular [Comercialización inteligente](category-merch.md) y [rendimiento](performance.md) paneles. Los eventos se proporcionan con implementaciones predeterminadas. Los eventos para tiendas sin encabezado deben habilitarse manualmente.
+[!DNL Live Search] usa [events](events.md) para calcular los paneles de [comercialización inteligente](category-merch.md) y [rendimiento](performance.md). Los eventos se proporcionan con implementaciones predeterminadas. Los eventos para tiendas sin encabezado deben habilitarse manualmente.

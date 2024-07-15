@@ -6,24 +6,24 @@ role: Admin, Developer
 feature: Personalization, Integration, Eventing
 source-git-commit: 4a5877d6e1a5c7d840e36f4913306b0c440bbac5
 workflow-type: tm+mt
-source-wordcount: '267'
+source-wordcount: '260'
 ht-degree: 0%
 
 ---
 
 # Creación de eventos personalizados
 
-Puede ampliar el [plataforma de eventos](events.md) creando sus propios eventos de tienda para recopilar datos exclusivos de su sector. Al crear y configurar un evento personalizado, se envía a la variable [Recopilador de eventos de Adobe Commerce](https://github.com/adobe/commerce-events/tree/main/packages/storefront-events-collector).
+Puede ampliar la [plataforma de eventos](events.md) creando sus propios eventos de tienda para recopilar datos exclusivos de su sector. Cuando crea y configura un evento personalizado, se envía a [Recopilador de eventos de Adobe Commerce](https://github.com/adobe/commerce-events/tree/main/packages/storefront-events-collector).
 
 ## Gestión de eventos personalizados
 
 Los eventos personalizados solo son compatibles con Adobe Experience Platform. Los datos personalizados no se reenvían a los paneles de Adobe Commerce ni a los rastreadores de métricas.
 
-Para cualquier `custom` evento, el recolector:
+Para cualquier evento `custom`, el recolector:
 
 - Agrega `identityMap` con `ECID` como identidad principal
-- Incluye `email` in `identityMap` como identidad secundaria _if_ `personalEmail.address` se establece en el evento
-- Envuelve el evento completo dentro de un `xdm` antes de reenviar a Edge
+- Incluye `email` en `identityMap` como identidad secundaria _si_ `personalEmail.address` se establece en el evento
+- Envuelve el evento completo dentro de un objeto `xdm` antes de reenviarlo a Edge
 
 Ejemplo:
 
@@ -73,9 +73,9 @@ En Experience Platform Edge:
 
 ## Controlar anulaciones de eventos (atributos personalizados)
 
-Las anulaciones de atributos para eventos estándar solo se admiten para el Experience Platform. Los datos personalizados no se reenvían a los paneles y rastreadores de métricas de Commerce.
+Las anulaciones de atributos para eventos estándar solo se admiten para el Experience Platform. Los datos personalizados no se reenvían a los paneles de Commerce ni a los rastreadores de métricas.
 
-Para cualquier evento con `customContext`, el selector anula los campos de unión establecidos en los contextos relevantes con campos en `customContext`. El caso de uso de las invalidaciones es cuando un desarrollador desea reutilizar y ampliar contextos establecidos por otras partes de la página en eventos ya admitidos.
+Para cualquier evento con `customContext`, el recolector anula los campos combinados establecidos en los contextos relevantes con campos en `customContext`. El caso de uso de las invalidaciones es cuando un desarrollador desea reutilizar y ampliar contextos establecidos por otras partes de la página en eventos ya admitidos.
 
 >[!NOTE]
 >

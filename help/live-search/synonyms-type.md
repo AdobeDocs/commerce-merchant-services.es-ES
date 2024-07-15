@@ -1,6 +1,6 @@
 ---
 title: "Tipos de sinónimos"
-description: '"Uno y dos vías [!DNL Live Search] los sinónimos amplían la definición de palabras clave".'
+description: '"Los sinónimos unidireccionales  [!DNL Live Search] y bidireccionales amplían la definición de palabras clave".'
 exl-id: 708d7b0d-7361-44f4-ae9e-b92f574ac975
 source-git-commit: cb5db979828eb0b678d19c926de2823829717c02
 workflow-type: tm+mt
@@ -17,19 +17,19 @@ Los sinónimos unidireccionales y bidireccionales amplían la definición de pal
 
 Los sinónimos bidireccionales tienen el mismo significado y devuelven los mismos resultados de búsqueda. En el ejemplo siguiente, la primera palabra que aparece en negrita es la palabra clave que se utiliza en el catálogo, seguida de palabras que tienen el mismo significado que la palabra clave original. Puede crear un par simple de sinónimos bidireccionales o una cadena de varios sinónimos bidireccionales para la misma palabra clave.
 
-**chaqueta** ![Selector bidireccional](assets/btn-two-way.png) abrigo
-**pantalones** ![Selector bidireccional](assets/btn-two-way.png) pantalones ![Selector bidireccional](assets/btn-two-way.png) pantalones
+**chaqueta** ![chaqueta de dos vías](assets/btn-two-way.png)
+**pantalones** ![Selector bidireccional](assets/btn-two-way.png) pantalones ![Selector bidireccional](assets/btn-two-way.png)
 
 ## Unidireccional
 
 Un sinónimo unidireccional es un subconjunto de una palabra clave, pero con un significado más específico. Por ejemplo, los capris y los shorts son pantalones, pero no todos son capris o shorts. Una búsqueda de pantalones incluye capris y pantalones cortos. Sin embargo, la búsqueda de pantalones cortos no devuelve capris.
 
-**sudadera** ![Selector unidireccional](assets/btn-one-way.png) sudadera con capucha
-**pantalones** ![Selector unidireccional](assets/btn-one-way.png) capris ![Selector múltiple unidireccional](assets/btn-multiple-one-way.png) pantalones largos de pantorrilla ![Selector múltiple unidireccional](assets/btn-multiple-one-way.png) traficantes
+**sudadera** ![selector unidireccional](assets/btn-one-way.png) con capucha
+**pantalones** ![Selector unidireccional](assets/btn-one-way.png) capris ![Selector unidireccional múltiple](assets/btn-multiple-one-way.png) pantalones de pantorrilla ![Selector unidireccional múltiple](assets/btn-multiple-one-way.png) empujadores de pedales
 
 ## Prácticas recomendadas
 
-Tenga en cuenta las siguientes prácticas recomendadas para sacar el máximo partido a [!DNL Live Search] sinónimos.
+Tenga en cuenta las siguientes prácticas recomendadas para aprovechar al máximo los sinónimos de [!DNL Live Search].
 
 ### Evite las palabras &quot;stop&quot;
 

@@ -1,5 +1,5 @@
 ---
-title: "Buscar espacio de trabajo de comercialización"
+title: "Buscar en Workspace de comercialización"
 description: '"Aprenda a utilizar el espacio de trabajo de comercialización de búsqueda".'
 exl-id: a52839fb-2264-4443-83c3-9eaa2ccb6996
 source-git-commit: 52be82fa080474d6df81fd16d1655a421771e5e2
@@ -9,9 +9,9 @@ ht-degree: 1%
 
 ---
 
-# Buscar espacio de trabajo de comercialización
+# Buscar en Workspace de comercialización
 
-El *Buscar comercialización* workspace muestra la selección actual de reglas y su estado, y proporciona acceso a las herramientas necesarias para crear y administrar reglas. Desde el espacio de trabajo puede:
+El área de trabajo *Buscar comercialización* enumera la selección actual de reglas y su estado, y proporciona acceso a las herramientas que necesita para crear y administrar reglas. Desde el espacio de trabajo puede:
 
 * Buscar reglas
 * Ver detalles de la regla
@@ -19,11 +19,11 @@ El *Buscar comercialización* workspace muestra la selección actual de reglas y
 * Eliminar reglas
 * Acceso al editor de reglas
 
-![Buscar espacio de trabajo de comercialización](assets/rules-workspace.png)
+![Buscar en Workspace de comercialización](assets/rules-workspace.png)
 
 ## Establecer el ámbito
 
-Si la instalación de Adobe Commerce incluye varias vistas de tienda, establezca **Ámbito** a la [vista de tienda](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings) donde se aplican las reglas.
+Si la instalación de Adobe Commerce incluye varias vistas de tienda, establece **Scope** en la [vista de tienda](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings) donde se aplican las reglas.
 
 ## Mostrar u ocultar columnas
 
@@ -39,7 +39,7 @@ Las columnas visibles tienen una marca de verificación azul en el menú de opci
 
 1. Si la tienda tiene muchas reglas, puede filtrarlas por estado para acortar la lista. De forma predeterminada, la lista Reglas muestra todas las reglas.
 
-1. Para enumerar solo las reglas con una configuración de estado específica, establezca **Estado** a uno de los siguientes:
+1. Para enumerar sólo las reglas con una configuración de estado específica, establezca **Estado** en uno de los siguientes:
 
    * Todo
    * Activo
@@ -57,17 +57,17 @@ La búsqueda encuentra las reglas coincidentes a medida que escribe. La cadena d
 
 El panel de detalles muestra el nombre de la regla, el estado, las condiciones y los eventos, la fecha de inicio y finalización, la descripción y la fecha de la última edición. Las reglas se pueden habilitar, editar y eliminar desde el panel de detalles.
 
-1. En el *Buscar comercialización* En Workspace, busque la regla en la cuadrícula que desee ver y haga clic en **Más** (...).
-1. Clic **Ver detalles**.
+1. En el área de trabajo *Buscar comercialización*, busque la regla en la cuadrícula que desee ver y haga clic en **Más** (...).
+1. Haga clic en **Ver detalles**.
 Puede realizar cualquiera de las siguientes acciones desde el panel Ver detalles:
 
    * Editar regla
    * Eliminar regla
    * Activar/Desactivar regla
 
-1. Para cerrar el *Ver detalles* , haga clic en **Cerrar** (X) en la esquina superior derecha.
+1. Para cerrar el panel *Ver detalles*, haga clic en **Cerrar** (X) en la esquina superior derecha.
 
-   ![Regla: detalles](assets/rules-workspace-details.png)
+   ![Regla - detalles](assets/rules-workspace-details.png)
 
 ## Descripciones de columna
 
@@ -77,7 +77,7 @@ Puede realizar cualquiera de las siguientes acciones desde el panel Ver detalles
 | Última actualización | La fecha en la que se actualizó la regla por última vez. |
 | Fecha de inicio | La fecha de inicio de una regla programada. |
 | Fecha de finalización | La fecha de finalización de una regla programada. |
-| Estado | El estado codificado por colores indica el estado actual de la regla. Utilice el control Estado situado encima de la cuadrícula para filtrar las reglas por estado. Valores:<br />Todos los estados: muestra todas las reglas independientemente de su estado.<br />Activo (azul): muestra solo las reglas activas.<br />Programado (naranja): solo muestra las reglas programadas.<br />Inactivo (gris): muestra solo las reglas inactivas. |
+| Estado | El estado codificado por colores indica el estado actual de la regla. Utilice el control Estado situado encima de la cuadrícula para filtrar las reglas por estado. Valores:<br />Todos los estados: muestra todas las reglas independientemente del estado.<br />Activo (azul): solo muestra las reglas activas.<br />Programado (naranja): solo muestra las reglas programadas.<br />Inactivo (gris): solo muestra las reglas inactivas. |
 
 ## Controles
 

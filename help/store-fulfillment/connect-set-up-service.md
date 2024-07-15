@@ -16,9 +16,9 @@ ht-degree: 0%
 
 Conecte los servicios de cumplimiento de almacenamiento con Adobe Commerce agregando las credenciales de autenticación y los datos de conexión necesarios al administrador de Adobe Commerce.
 
-- **[Configurar [!DNL Commerce integration settings]](#create-an-adobe-commerce-integration)**: cree una integración de Adobe Commerce para los servicios de Store Fulfillment y genere los tokens de acceso para autenticar las solicitudes entrantes de los servidores de Store Fulfillment.
+- **[Configurar [!DNL Commerce integration settings]](#create-an-adobe-commerce-integration)**: crea una integración de Adobe Commerce para los servicios Store Fulfillment y genera los tokens de acceso para autenticar las solicitudes entrantes de los servidores Store Fulfillment.
 
-- **[Configurar las credenciales de la cuenta para los servicios de Store Fulfillment](#configure-store-fulfillment-account-credentials)**-Añada sus credenciales para conectar Adobe Commerce a su cuenta de Store Fulfillment.
+- **[Configurar las credenciales de la cuenta para los servicios de cumplimiento de almacenamiento](#configure-store-fulfillment-account-credentials)**-Agregue sus credenciales para conectar Adobe Commerce a su cuenta de cumplimiento de almacenamiento.
 
 >[!NOTE]
 >
@@ -26,7 +26,7 @@ Conecte los servicios de cumplimiento de almacenamiento con Adobe Commerce agreg
 
 ## Creación de una integración de Adobe Commerce
 
-Para integrar Adobe Commerce con los servicios de Store Fulfillment, crea una integración comercial y genera tokens de acceso que se pueden utilizar para autenticar solicitudes de los servidores de Store Fulfillment. También debe actualizar Adobe Commerce [!UICONTROL Consumer Settings] opciones para evitar `The consumer isn't authorized to access %resources.` errores de respuesta en solicitudes de Adobe Commerce a [!DNL Store Fulfillment] servicios.
+Para integrar Adobe Commerce con los servicios Store Fulfillment, crea una integración de Commerce y genera tokens de acceso que se pueden utilizar para autenticar solicitudes de los servidores Store Fulfillment. También debe actualizar las opciones de Adobe Commerce [!UICONTROL Consumer Settings] para evitar `The consumer isn't authorized to access %resources.` errores de respuesta en las solicitudes de Adobe Commerce a [!DNL Store Fulfillment] servicios.
 
 1. Desde Admin, cree la integración para la adquisición de tiendas.
 
@@ -45,15 +45,15 @@ Para integrar Adobe Commerce con los servicios de Store Fulfillment, crea una in
 
 1. Póngase en contacto con el administrador de cuentas para completar la configuración en el lado de Store Fulfillment y autorizar la integración.
 
-1. Habilitar Adobe Commerce [!UICONTROL Consumer Settings] opción para [!UICONTROL Allow OAuth Access Tokens to be used as standalone Bearer tokens].
+1. Habilite la opción de Adobe Commerce [!UICONTROL Consumer Settings] para [!UICONTROL Allow OAuth Access Tokens to be used as standalone Bearer tokens].
 
-   - Desde Admin, vaya a **[!UICONTROL Stores]** >  [!UICONTROL Configuration] > **[!UICONTROL Services]** >  **[!UICONTROL OAuth]** > **[!UICONTROL Consumer Settings]**
+   - Desde el administrador, vaya a **[!UICONTROL Stores]** > [!UICONTROL Configuration] > **[!UICONTROL Services]** > **[!UICONTROL OAuth]** > **[!UICONTROL Consumer Settings]**
 
-   - Configure las variables [!UICONTROL Allow OAuth Access Tokens to be used as standalone Bearer tokens] opción para **[!UICONTROL Yes]**.
+   - Establezca la opción [!UICONTROL Allow OAuth Access Tokens to be used as standalone Bearer tokens] en **[!UICONTROL Yes]**.
 
 >[!IMPORTANT]
 >
-> El token de integración es específico del entorno. Si restaura la base de datos de un entorno con los datos de origen de un entorno diferente (por ejemplo, restaurando los datos de producción de un entorno de ensayo), excluya la variable `oauth_token` de la exportación de la base de datos para que los detalles del token de integración no se sobrescriban durante la operación de restauración.
+> El token de integración es específico del entorno. Si restaura la base de datos para un entorno con los datos de origen de un entorno diferente (por ejemplo, restaurando los datos de producción desde un entorno de ensayo), excluya la tabla `oauth_token` de la exportación de la base de datos para que los detalles del token de integración no se sobrescriban durante la operación de restauración.
 
 
 ## Configurar credenciales de cuenta de Store Fulfillment
@@ -70,17 +70,17 @@ Estas credenciales son necesarias para configurar y utilizar Satisfacción de pe
 
 >[!NOTE]
 >
->El proceso de creación de la cuenta puede tardar un poco en completarse. Mientras espera las credenciales, [revise y configure otras opciones de la solución Store Fulfillment](service-config-settings-overview.md).
+>El proceso de creación de la cuenta puede tardar un poco en completarse. Mientras espera las credenciales, [revise y configure otras opciones para la solución Store Fulfillment](service-config-settings-overview.md).
 
 ### Añadir credenciales para conectarse a Store Fulfillment
 
-1. Configurar [credenciales de cuenta](enable-general.md) para los entornos Producción y Zona protegida.
+1. Configure [credenciales de cuenta](enable-general.md) para los entornos Producción y Zona protegida.
 
-1. Desde Admin, vaya a **[!UICONTROL Stores > Configuration > Services > Store Fulfillment by Walmart Commerce Technologies]**
+1. Desde el administrador, vaya a **[!UICONTROL Stores > Configuration > Services > Store Fulfillment by Walmart Commerce Technologies]**
 
-1. Introduzca las credenciales de la cuenta proporcionadas para **[!UICONTROL Production environment]**. Todos los campos son obligatorios.
+1. Escriba las credenciales de cuenta proporcionadas para **[!UICONTROL Production environment]**. Todos los campos son obligatorios.
 
-1. Seleccionar **[!UICONTROL Save Config]**.
+1. Seleccione **[!UICONTROL Save Config]**.
 
 1. Pruebe la conexión seleccionando **[!UICONTROL Validate Credentials]**.
 

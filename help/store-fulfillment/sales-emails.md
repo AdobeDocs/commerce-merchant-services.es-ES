@@ -34,7 +34,7 @@ Configure las plantillas de correo electrónico de ventas desde el administrador
 </thead>
 <tbody><tr>
 <td><strong>Envío asincrónico</strong></td>
-<td>Determina si los correos electrónicos de ventas se envían de forma asíncrona. Opciones: <br/>**`Deshabilitar`** - (Predeterminado) Los correos electrónicos de ventas se envían cuando se activa un evento. Utilice la configuración predeterminada para agilizar la comunicación y el tiempo de respuesta de la recogida en tienda. <br/>**`Habilitar`**: al habilitar esta opción, se mueven los procesos que administran las notificaciones por correo electrónico de cierre de compra y procesamiento de pedidos al segundo plano para que se envíen a intervalos predeterminados y regulares.</td>
+<td>Determina si los correos electrónicos de ventas se envían de forma asíncrona. Opciones: <br/>**`Deshabilitar`** - (Predeterminado) Los mensajes de correo electrónico de ventas se envían cuando se activan mediante un evento. Utilice la configuración predeterminada para agilizar la comunicación y el tiempo de respuesta de la recogida en tienda. <br/>**`Enable`**: al habilitar esta opción, se mueven al segundo plano los procesos que administran las notificaciones por correo electrónico de cierre de compra y procesamiento de pedidos para que se envíen a intervalos regulares predeterminados.</td>
 <td>Vista de tienda</td>
 <td>No</td>
 </tr>
@@ -207,7 +207,7 @@ Configure las plantillas de correo electrónico de ventas desde el administrador
 </thead>
 <tbody><tr>
 <td><strong>Habilitado</strong></td>
-<td>Este correo electrónico se envía al cliente para notificarle que su pedido se ha cancelado en la tienda del comerciante. Configure como. <code>No</code> para desactivar la notificación por correo electrónico. Si la plantilla de correo electrónico está desactivada, esta función no impide que se cancele un pedido.</td>
+<td>Este correo electrónico se envía al cliente para notificarle que su pedido se ha cancelado en la tienda del comerciante. Se estableció en <code>No</code> para deshabilitar la notificación por correo electrónico. Si la plantilla de correo electrónico está desactivada, esta función no impide que se cancele un pedido.</td>
 <td>Vista de tienda</td>
 <td>No</td>
 </tr>
@@ -257,7 +257,7 @@ Configure las plantillas de correo electrónico de ventas desde el administrador
 </thead>
 <tbody><tr>
 <td><strong>Habilitado</strong></td>
-<td>Este correo electrónico se envía al cliente para notificarle que parte de su pedido se ha cancelado en la tienda del comerciante. Configure como. <code>No</code> para desactivar la notificación por correo electrónico. Si la plantilla de correo electrónico está desactivada, no impide que se cancele parcialmente una solicitud.</td>
+<td>Este correo electrónico se envía al cliente para notificarle que parte de su pedido se ha cancelado en la tienda del comerciante. Se estableció en <code>No</code> para deshabilitar la notificación por correo electrónico. Si la plantilla de correo electrónico está desactivada, no impide que se cancele parcialmente una solicitud.</td>
 <td>Vista de tienda</td>
 <td>No</td>
 </tr>
@@ -312,8 +312,8 @@ Configure las plantillas de correo electrónico de ventas desde el administrador
 </thead>
 <tbody><tr>
 <td><strong>El pedido tiene un remitente de correo electrónico de productos de envío a tienda</strong></td>
-<td>Correo electrónico enviado al personal del comerciante especificado como un informe agregado de todos los pedidos abiertos que no se pueden seleccionar en una tienda de comerciantes hasta que su inventario esté disponible. </br></br> Los comerciantes pueden utilizar este informe para iniciar y administrar las transferencias de inventario de tienda a tienda o el reaprovisionamiento. </br></br>Esta notificación solo se aplica cuando la variable [!DNL Ship-to-Store] Las funciones de están habilitadas.
-</br></br>Esta etiqueta no afecta al transportista seleccionado ni a sus etiquetas de método de envío disponibles.</td>
+<td>Correo electrónico enviado al personal del comerciante especificado como un informe agregado de todos los pedidos abiertos que no se pueden seleccionar en una tienda de comerciantes hasta que su inventario esté disponible. </br></br> Los comerciantes pueden usar este informe para iniciar y administrar transferencias de inventario de tienda a tienda o reaprovisionamiento. </br></br>Esta notificación solo se aplica cuando las características de [!DNL Ship-to-Store] están habilitadas.
+</br></br>Esta etiqueta no afecta al transportista seleccionado ni a las etiquetas de método de envío disponibles.</td>
 <td>Vista de tienda</td>
 <td>No</td>
 </tr>
@@ -333,7 +333,7 @@ Configure las plantillas de correo electrónico de ventas desde el administrador
 
 >[!NOTE]
 >
->Si permite pedidos no satisfechos, debe proporcionar una dirección de correo electrónico de administrador para recibir notificaciones sobre estos pedidos. Añada la dirección a las siguientes opciones de configuración: **[!UICONTROL Send Order Delayed Email Copy To]** en el [Demora de pedido](#order-delayed) plantilla, y [!UICONTROL Ship To Store Email Recipients] en el [Enviar a tienda](#ship-to-store) plantilla.
+>Si permite pedidos no satisfechos, debe proporcionar una dirección de correo electrónico de administrador para recibir notificaciones sobre estos pedidos. Agregue la dirección a las siguientes opciones de configuración: **[!UICONTROL Send Order Delayed Email Copy To]** en la plantilla [Demora del pedido](#order-delayed) y [!UICONTROL Ship To Store Email Recipients] en la plantilla [Enviar a tienda](#ship-to-store).
 
 
 

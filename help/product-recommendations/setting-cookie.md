@@ -4,7 +4,7 @@ description: Descubra cómo las recomendaciones de productos administran las res
 exl-id: 2f48c47c-569b-455c-a589-8f99b7b74064
 source-git-commit: 78f226465b9d84707612596a5aa4622aa7869ee1
 workflow-type: tm+mt
-source-wordcount: '170'
+source-wordcount: '163'
 ht-degree: 0%
 
 ---
@@ -13,9 +13,9 @@ ht-degree: 0%
 
 Tanto Adobe Commerce como Magento Open Source solicitan su consentimiento antes de almacenar los datos en las cookies del explorador. Para obtener más información, consulte [Modo de restricción de cookies](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-cookie-law.html).
 
-Al implementar el `magento/product-recommendations` del módulo a producción, comienza a recopilar eventos de interacción de compradores en su tienda. Dado que los datos de estos eventos se pueden almacenar en cookies del explorador o en el almacenamiento local, la función admite el modo de restricción de cookies al no recopilar eventos hasta que el comprador haya dado su consentimiento para la cookie.
+Cuando implementa el módulo `magento/product-recommendations` en producción, comienza a recopilar eventos de interacción de compradores en la tienda. Dado que los datos de estos eventos se pueden almacenar en cookies del explorador o en el almacenamiento local, la función admite el modo de restricción de cookies al no recopilar eventos hasta que el comprador haya dado su consentimiento para la cookie.
 
-Esto puede no funcionar con soluciones de consentimiento de cookies de terceros. Es responsabilidad de cada comerciante asegurarse de que la recopilación de datos no se produzca antes de que se haya dado el consentimiento de las cookies, como suele requerir la ley. Si administra el consentimiento de cookies con un código personalizado, puede utilizar una cookie de no seguimiento llamada `mg_dnt` para restringir la recopilación de datos.
+Esto puede no funcionar con soluciones de consentimiento de cookies de terceros. Es responsabilidad de cada comerciante asegurarse de que la recopilación de datos no se produzca antes de que se haya dado el consentimiento de las cookies, como suele requerir la ley. Si administra el consentimiento de cookies con código personalizado, puede utilizar una cookie de no seguimiento denominada `mg_dnt` para restringir la recopilación de datos.
 
 - Nombre de la cookie:
 

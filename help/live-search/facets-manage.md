@@ -1,10 +1,10 @@
 ---
 title: "Administrar facetas"
-description: '"Aprenda a administrar los recursos existentes [!DNL Live Search] facetas".'
+description: "Aprenda a administrar las  [!DNL Live Search] facetas existentes."
 exl-id: 1d51a36a-20d6-46b6-b379-11e46c8824a0
 source-git-commit: bce69f952e70e2e8dcb892357dea41e18f61e5f6
 workflow-type: tm+mt
-source-wordcount: '476'
+source-wordcount: '473'
 ht-degree: 0%
 
 ---
@@ -15,51 +15,51 @@ Siga estas instrucciones para actualizar las propiedades de las facetas existent
 
 ## Configurar agrupaciones de facetas de precios
 
-Consulte [Configuración](settings.md) para configurar intervalos y agrupaciones de facetado de precios.
+Consulta [Configuración](settings.md) para configurar los intervalos y agrupaciones de facetas de precios.
 
 ## Editar faceta
 
 1. Busque la faceta que desee editar.
-1. Si hay muchas facetas en la lista, establezca *Filtrar por* a uno de los siguientes:
+1. Si hay muchas facetas en la lista, establezca *Filtrar por* en una de las siguientes:
 
    * Anclado
    * Dinámico
 
-   Para obtener más información, vaya a [Tipos de faceta](facets-type.md).
+   Para obtener más información, ve a [Tipos de facetas](facets-type.md).
 
    ![Facetas de filtro](assets/facets-filter-by-cropped.png)
 
-1. Para editar las propiedades de faceta, haga clic en **Más** (...) opciones.
-1. Clic **Editar**
+1. Para editar las propiedades de la faceta, haga clic en las opciones **Más** (...).
+1. Haga clic en **Editar**
 
    ![Editar opciones](assets/facet-edit-menu.png)
 
 1. Para editar la etiqueta de faceta, realice una de las siguientes acciones:
 
-   * Para un [!DNL Commerce] tienda, edite el [etiqueta de atributo](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/product-attributes.html).
+   * Para una tienda [!DNL Commerce], edite la [etiqueta de atributo](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/product-attributes.html).
    * Para una implementación sin encabezado, haga clic en el valor de la primera columna y edite el texto según sea necesario.
 
    ![Editar etiqueta](assets/facet-edit-label.png)
 
-1. (Solo Headless) Para cambiar el método que se utiliza para ordenar los valores de faceta, haga clic en el valor en la variable *Tipo de orden* y elija una de las siguientes opciones:
+1. (Solo sin encabezado) Para cambiar el método que se usa para ordenar los valores de faceta, haga clic en el valor de la columna *Tipo de orden* y elija una de las siguientes opciones:
 
    * Alfabético
    * Recuento
 
    ![Editar recuento](assets/facets-edit-count.png)
 
-1. En el **Valor máximo** establezca el número máximo (de 0 a 10) de valores de filtro de faceta que se mostrarán en la tienda.
-1. Cuando termine, haga clic en **Guardar**.
+1. En la columna **Valor máximo**, establezca el número máximo (de 0 a 10) de valores de filtro de faceta que se mostrarán en la tienda.
+1. Una vez finalizado, haga clic en **Guardar**.
 Los cambios no aparecerán en la tienda hasta que se publiquen.
 
 ## Fijar/desanclar faceta
 
-El pin cambia de color cuando se pulsa y se utiliza para mover la faceta a *Facetas ancladas* o el *Facetas dinámicas* sección.
+El fijador cambia de color cuando se hace clic y se usa para mover la faceta a la sección *Facetas fijadas* o *Facetas dinámicas*.
 
-1. Para anclar una faceta a la parte superior del *Filtros* , busque la faceta en la lista *Facetas dinámicas* y haga clic en el pin gris (![Anclar selector](assets/btn-pin-gray.png)).
-El pin se vuelve azul y la faceta se mueve a la *Facetas ancladas* sección.
-1. Para desanclar una faceta, busque la faceta en el *Facetas ancladas* y haga clic en el pin azul (![Anclar selector](assets/btn-pin-blue.png)).
-El pasador se vuelve gris y la faceta se mueve a la *Facetas dinámicas* sección.
+1. Para anclar una faceta a la parte superior de la lista *Filtros*, busque la faceta en la lista *Facetas dinámicas* y haga clic en la chincheta gris (![Selector de chincheta](assets/btn-pin-gray.png)).
+El pin se volverá azul y la faceta se moverá a la sección *Facetas ancladas*.
+1. Para desanclar una faceta, búsquela en la lista *Facetas ancladas* y haga clic en el pin azul (![Selector de anclaje](assets/btn-pin-blue.png)).
+La chincheta se volverá gris y la faceta pasará a la sección *Facetas dinámicas*.
 
    ![Facetas ancladas y dinámicas](assets/facets-pinned-unpinned.png)
 
@@ -71,22 +71,22 @@ El pasador se vuelve gris y la faceta se mueve a la *Facetas dinámicas* secció
 
 >[!NOTE]
 >
->El orden de las facetas ancladas solo se admite en implementaciones sin encabezado. Si son necesarias facetas ordenadas, utilice el [!DNL Live Search] Widget PLP.
+>El orden de las facetas ancladas solo se admite en implementaciones sin encabezado. Si se necesitan facetas ordenadas, utilice el widget PLP [!DNL Live Search].
 
-El orden de las facetas ancladas se puede cambiar moviendo la fila a una posición diferente. Las facetas ancladas tienen un *Mover* icono (![Selector de movimiento](assets/btn-move.png)) al principio de la fila. A diferencia de las facetas ancladas, las facetas dinámicas no se pueden mover.
+El orden de las facetas ancladas se puede cambiar moviendo la fila a una posición diferente. Las facetas ancladas tienen un icono *Mover* (![Selector de movimiento](assets/btn-move.png)) al principio de la fila. A diferencia de las facetas ancladas, las facetas dinámicas no se pueden mover.
 
-1. Busque la faceta en la *Facetas ancladas* de la lista.
-1. Utilice el **Mover** (![Selector de movimiento](assets/btn-move.png)) para arrastrar la fila a una nueva posición en el *Facetas ancladas* sección.
-Una vez publicados los cambios, las facetas reordenadas aparecen en la tienda *Filtros* lista.
+1. Busque la faceta en la sección *Facetas ancladas* de la lista.
+1. Utilice el icono **Mover** (![Selector de movimiento](assets/btn-move.png)) para arrastrar la fila a una nueva posición en la sección *Facetas ancladas*.
+Una vez publicados los cambios, las facetas reordenadas aparecerán en la lista de la tienda *Filtros*.
 
 ## Eliminar faceta
 
-1. Busque la faceta en la lista y haga clic en **Más** (...) opciones.
-1. Clic **Eliminar**.
+1. Busque la faceta en la lista y haga clic en las opciones **Más** (...).
+1. Haga clic en **Eliminar**.
 1. Cuando se le pida que confirme, haga clic en **Eliminar faceta**.
 La faceta se eliminará de la tienda una vez publicados los cambios.
 
-## Publicar cambios
+## Cambios de Publish
 
-1. Para actualizar la tienda con los cambios, haga clic en **Publicar cambios**.
+1. Para actualizar la tienda con los cambios, haz clic en **cambios de Publish**.
 1. Espera unos 15 minutos para que las actualizaciones aparezcan en tu tienda.

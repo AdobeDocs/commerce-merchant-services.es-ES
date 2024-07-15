@@ -16,17 +16,17 @@ ht-degree: 0%
 
 La aplicación Store Assist proporciona a Store Associates cuatro módulos para administrar el proceso de cumplimiento en la tienda para comprar en línea y recoger pedidos en la tienda:
 
-- **[Seleccionar](#pick-module)**: permite obtener una visibilidad completa de todos los artículos pedidos y de las herramientas para garantizar que se seleccionan los artículos y las cantidades correctas. Los asociados de la tienda pueden elegir uno o varios pedidos simultáneamente para lograr una mayor eficiencia.
+- **[Seleccionar](#pick-module)**: Obtenga visibilidad completa de todos los artículos pedidos y las herramientas para asegurarse de que se seleccionan los artículos y las cantidades adecuados. Los asociados de la tienda pueden elegir uno o varios pedidos simultáneamente para lograr una mayor eficiencia.
 
-- **[Fase](#stage-module)**: introduzca la ubicación en la que se realizan los pedidos mientras los clientes viajan a la tienda, de modo que los Asociados de tienda puedan encontrar y entregar los pedidos con mayor rapidez.
+- **[Fase](#stage-module)**: especifica la ubicación en la que se realizan los pedidos mientras los clientes están de viaje en la tienda para que los Asociados de tienda puedan encontrar y entregar los pedidos más rápidamente.
 
-- **[Entrega](#hand-off-module)**: obtenga notificaciones en tiempo real después de que los clientes lleguen a la tienda para minimizar el tiempo de espera y entregar los pedidos sin problemas.
+- **[Entrega](#hand-off-module)**: recibe notificaciones en tiempo real después de que los clientes lleguen a la tienda para minimizar el tiempo de espera y entregar los pedidos sin problemas.
 
-- **[Pedidos](#orders-module)**: permite ver una lista de todos los pedidos realizados para una tienda, de modo que todos sepan la cantidad de pedidos y el estado de cada uno.
+- **[Pedidos](#orders-module)**: vea una lista de todos los pedidos realizados en una tienda para que todos sepan la cantidad de pedidos y el estado de cada uno.
 
 >[!NOTE]
 >
->Antes de que Store Associates pueda usar la aplicación Store Assist, un administrador debe completar la [proceso de configuración de aplicación](app-setup.md).
+>Antes de que los asociados de tienda puedan usar la aplicación Store Assist, un administrador debe completar el [proceso de configuración de la aplicación](app-setup.md).
 
 ## Elegir módulo
 
@@ -53,7 +53,7 @@ También puede actualizar fácilmente la ubicación de ensayo en la aplicación,
 
 ## Módulo de mano libre
 
-El [!UICONTROL Hand Off] Este módulo muestra qué clientes se han registrado para recoger sus pedidos y dónde se almacenan en zona intermedia sus pedidos y esperar por ellos. Los clientes pueden recoger los pedidos en la tienda o en el aparcamiento exterior / acera. La información sobre su ubicación exacta se presenta en este módulo una vez que se han registrado.
+El módulo [!UICONTROL Hand Off] muestra qué clientes se han registrado para recoger sus pedidos y dónde se almacenan en zona intermedia sus pedidos y los esperan. Los clientes pueden recoger los pedidos en la tienda o en el aparcamiento exterior / acera. La información sobre su ubicación exacta se presenta en este módulo una vez que se han registrado.
 
 Una vez que seleccione un pedido que esté listo para el traspaso de clientes. Todos pueden ver la información del pedido, incluidos los artículos que no se encontraron, la ubicación de espera del cliente, el tiempo de espera, el lugar en el que se realiza el pedido y el número de teléfono del cliente si está disponible.
 

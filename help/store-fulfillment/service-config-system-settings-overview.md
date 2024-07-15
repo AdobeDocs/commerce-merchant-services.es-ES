@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Información general de configuración del sistema
 
-En el Administrador de Adobe Commerce, los ajustes de configuración de Servicios de adquisición de tiendas de Walmart Commerce Technologies se clasifican por tipo.
+En el Administrador de Adobe Commerce, los ajustes de configuración de los servicios de adquisición de tiendas de Walmart Commerce Technologies se clasifican por tipo.
 
 **Almacenar valores de configuración de cumplimiento por tipo**
 
@@ -26,17 +26,17 @@ En el Administrador de Adobe Commerce, los ajustes de configuración de Servicio
 
 ## Usar la referencia de configuración
 
-Vea la referencia de configuración para cada tipo de configuración seleccionando el nombre del tipo en la _Almacenar valores de configuración de cumplimiento por tipo_ tabla.
+Vea la referencia de configuración para cada tipo de configuración seleccionando el nombre de tipo en la tabla _Almacenar opciones de configuración de cumplimiento por tipo_.
 
 En la referencia de configuración de cada tipo, los detalles de configuración se muestran en una tabla con los siguientes encabezados de columna:
 
-- **Campo** hace referencia al nombre del campo que desea configurar
+- **Campo** hace referencia al nombre del campo que se va a configurar
 
 - **Descripción** proporciona detalles importantes sobre el propósito y el comportamiento del campo
 
 - **Ámbito** indica el ámbito de configuración de Adobe Commerce para la configuración (global, sitio web, tienda)
 
-- **Requerido** value indica si se debe establecer un valor en el campo
+- **Requerido** valor indica si se debe establecer un valor en el campo
 
 Para obtener una referencia técnica, también puede encontrar la ruta de configuración interna para cada campo.
 

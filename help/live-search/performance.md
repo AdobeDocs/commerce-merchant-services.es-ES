@@ -1,6 +1,6 @@
 ---
 title: "Rendimiento"
-description: '"La [!DNL Live Search] El espacio de trabajo de rendimiento proporciona una perspectiva de los términos de búsqueda que utilizan los compradores".'
+description: "El área de trabajo  [!DNL Live Search] Rendimiento proporciona una perspectiva de los términos de búsqueda que utilizan los compradores."
 exl-id: ee2053fc-98c5-4d2c-9345-4d1f9a3180fb
 source-git-commit: 4978bdb5549f5df911863a23fdfbfc9ab9ad05df
 workflow-type: tm+mt
@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # Rendimiento
 
-El *Rendimiento* workspace proporciona una perspectiva de los términos de búsqueda que utilizan los compradores. La información se puede utilizar para identificar tendencias, aumentar los clics y mejorar la tasa de conversión. El espacio de trabajo Rendimiento proporciona una instantánea de las métricas de búsqueda para un intervalo de fechas específico e incluye los siguientes informes:
+El área de trabajo *Rendimiento* proporciona información sobre los términos de búsqueda que usan los compradores. La información se puede utilizar para identificar tendencias, aumentar los clics y mejorar la tasa de conversión. El espacio de trabajo Rendimiento proporciona una instantánea de las métricas de búsqueda para un intervalo de fechas específico e incluye los siguientes informes:
 
 * Búsquedas únicas
 * Cero resultados
@@ -19,11 +19,11 @@ El *Rendimiento* workspace proporciona una perspectiva de los términos de búsq
 
 ![Rendimiento](assets/performance-unique-searches.png)
 
-También puede consultar la [Tablero de administración de datos](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-dashboard.html) para obtener más datos sobre la sincronización de datos.
+También puede consultar el [Tablero de administración de datos](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-dashboard.html) para obtener más datos sobre la sincronización de datos.
 
 ## Ver un informe
 
-1. Para introducir la variable **Intervalo de fechas**, haga clic en el calendario (![Calendario](assets/btn-calendar.png)) y realice una de las siguientes acciones:
+1. Para escribir **Intervalo de fechas**, haga clic en el calendario (![Calendario](assets/btn-calendar.png)) y realice una de las siguientes acciones:
 
    * Para especificar una sola fecha, haga doble clic en la fecha del calendario.
    * Para especificar un intervalo de fechas, haga clic en la primera y en la última fecha del calendario.

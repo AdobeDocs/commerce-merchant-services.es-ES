@@ -1,23 +1,24 @@
 ---
-title: "[!DNL SaaS Data Export Extension] Notas de la versión"
-description: La información de la versión más reciente de [!DNL Data Export Extension] para Adobe Commerce.
+title: '[!DNL SaaS Data Export Extension] notas de la versión'
+description: La información de la versión más reciente de  [!DNL Data Export Extension]  para Adobe Commerce.
 feature: Services, Release Notes
 recommendations: noCatalog
-source-git-commit: 8230756c203cb2b4bdb4949f116c398fcaab84ff
+exl-id: 0c7aeeda-e8a6-4740-b466-0661a6d2df07
+source-git-commit: 42a9ea0f62f35db451cd3e780adf530d0699a638
 workflow-type: tm+mt
 source-wordcount: '423'
 ht-degree: 0%
 
 ---
 
-# [!DNL SaaS Data Export] Notas de la versión de extensión
+# Notas de la versión de la extensión [!DNL SaaS Data Export]
 
-Estas notas de la versión describen las versiones más recientes de [!DNL SaaS data export] extensión. Se proporciona soporte para la versión publicada principal actual. Las notas de la versión de las versiones anteriores se proporcionan como referencia.
+Estas notas de la versión describen las versiones más recientes de la extensión [!DNL SaaS data export]. Se proporciona soporte para la versión publicada principal actual. Las notas de la versión de las versiones anteriores se proporcionan como referencia.
 
 Las actualizaciones incluyen:
 
-![Nuevo](../assets/new.svg) Nuevas funciones
-![Fix](../assets/fix.svg) Correcciones y mejoras
+![Nuevas](../assets/new.svg) nuevas características
+![Corrección](../assets/fix.svg) Correcciones y mejoras
 ![Error](../assets/bug.svg) Problemas conocidos
 
 
@@ -29,68 +30,68 @@ Las actualizaciones incluyen:
 
 ## Versión 103.3.5
 
-![Fix](../assets/fix.svg) Establezca la dependencia para la última versión de exportación de datos compatible para el módulo común SaaS.
+![Corregir](../assets/fix.svg) Establecer dependencia para la última versión de exportación de datos compatible para el módulo común SaaS.
 
-![Fix](../assets/fix.svg) Reemplazado `ScopeConfig` instancia con `ServiceConfigInterface` para admitir distintas configuraciones de servicio.
+![Corrección](../assets/fix.svg) reemplazó la instancia `ScopeConfig` con `ServiceConfigInterface` para admitir configuraciones de servicio diferentes.
 
 ## Versión 103.3.4
 
-![Fix](../assets/fix.svg) Mejore el registro de exportación de datos SaaS de Commerce añadiendo más detalles sobre el proceso de reindexación.
+![Corrección](../assets/fix.svg) Mejore el registro de exportación de datos SaaS de Commerce agregando más detalles sobre el proceso de reindexación.
 
 ## Versión 103.3.3
 
-![Nuevo](../assets/new.svg) La exportación de datos de SaaS ahora almacena en caché los atributos Entity-Attribute-Value (EAV) para la consulta de metadatos de atributos.
+La exportación de datos de ![New](../assets/new.svg) SaaS ahora almacena en caché los atributos Entity-Attribute-Value (EAV) para la consulta de metadatos de atributos.
 
-![Fix](../assets/fix.svg) Se ha corregido un problema por el que `InventoryStockStatus` la fuente no se guardó durante el reintento si se eliminaba el producto.
+![Corrección](../assets/fix.svg) Se ha corregido un problema por el que la fuente `InventoryStockStatus` no se guardaba durante el reintento si se eliminaba el producto.
 
 ## Versión 103.3.2
 
-![Fix](../assets/fix.svg) Se ha corregido un problema por el que `modifiedAt` faltaba el campo en las fuentes de entidades eliminadas.
+![Corrección](../assets/fix.svg) Se ha corregido un problema por el que faltaba el campo `modifiedAt` en las fuentes de entidades eliminadas.
 
 ## Versión 103.3.1
 
-![Fix](../assets/fix.svg) Se ha corregido un problema que provocaba un error `Invalid Template File` mensaje que aparece durante la reindexación de fuentes de productos cuando se instala Page Builder.
+![Corrección](../assets/fix.svg) Se ha corregido un problema que hacía que apareciera un mensaje de `Invalid Template File` durante la reindexación de fuentes de productos cuando se instalaba Page Builder.
 
 ## Versión 103.3.0
 
-![Nuevo](../assets/new.svg) Se han migrado tablas de fuentes de exportación inmediatas a la estructura unificada:
+![Nuevo](../assets/new.svg) migró tablas de fuentes de exportación inmediatas a la estructura unificada:
 `id`, `source_entity_id`, `feed_id`, `modified_at`, `is_deleted`, `status`, `feed_data`, `feed_hash`, `errors`
 
-![Nuevo](../assets/new.svg) Fuentes de catálogo e inventario migradas a la solución de exportación inmediata.
+![Nuevo](../assets/new.svg) ha migrado fuentes de inventario y catálogo a la solución de exportación inmediata.
 
-![Nuevo](../assets/new.svg) Se ha cambiado el nombre de los trabajos cron de fuente de exportación inmediata a `*_feed_resend_failed_items`.
+![Nuevo](../assets/new.svg) Se cambió el nombre de los trabajos cron de la fuente de exportación inmediata a `*_feed_resend_failed_items`.
 
-![Nuevo](../assets/new.svg) Se ha cambiado el nombre de las tablas de registro de cambios y fuentes de exportación inmediatas.
+![Nuevo](../assets/new.svg) Se cambió el nombre de las tablas de registro de cambios y de fuentes de exportación inmediatas.
 
-![Fix](../assets/fix.svg) Establecer `modified_at` campo en los datos de fuente solo para las fuentes que lo requieren.
+![Corrección](../assets/fix.svg) Establezca el campo `modified_at` en los datos de fuente solo para las fuentes que lo requieran.
 
-![Fix](../assets/fix.svg) Modifique la `productAttributes` consulta para recuperar únicamente atributos de producto.
+![Corrección](../assets/fix.svg) Modifique la consulta `productAttributes` para recuperar únicamente atributos de producto.
 
 ## Versión 103.2.6
 
-![Fix](../assets/fix.svg) Se ha corregido un problema que impedía que las fuentes se reindexaran cuando las tablas tenían un prefijo.
+![Corrección](../assets/fix.svg) Se ha corregido un problema que impedía que las fuentes se reindexaran cuando las tablas tienen un prefijo.
 
 ## Versión 103.2.5
 
-![Fix](../assets/fix.svg) Se ha optimizado la consulta Precio.
+![Corrección](../assets/fix.svg) optimizó la consulta Precio.
 
 ## Versión 103.2.4
 
-![Fix](../assets/fix.svg) Se ha corregido un estado de Stock incorrecto que se mostraba para un producto cuando Commerce Inventory management estaba habilitado.
+![Corrección](../assets/fix.svg) Se ha corregido un estado de Stock incorrecto que se mostraba para un producto cuando Commerce Inventory management está habilitado.
 
 ## Versión 103.2.3
 
-![Fix](../assets/fix.svg) Precios especiales fijos a nivel de sitio web.
-![Fix](../assets/fix.svg) Se ha añadido la exclusión mutua para todas las fuentes que se procesan.
+![Corregir](../assets/fix.svg) precio especial fijo a nivel de sitio web.
+![Corregir](../assets/fix.svg) exclusión mutua agregada para todas las fuentes que se procesan.
 
 
 ## Versión 103.2.2
 
-![Fix](../assets/fix.svg) Se ha mejorado la estrategia de agrupamiento de fuentes para catálogos grandes. La tabla de lotes ahora se rellena con un número limitado de ID para reducir el uso de memoria.
+![Corrección](../assets/fix.svg): se ha mejorado la estrategia de agrupamiento de fuentes para catálogos grandes. La tabla de lotes ahora se rellena con un número limitado de ID para reducir el uso de memoria.
 
-![Fix](../assets/fix.svg) Se ha eliminado la dependencia de CommerceInventoryDataExporter a los módulos MSI.
+![Corrección](../assets/fix.svg): se ha eliminado la dependencia de hardware de CommerceInventoryDataExporter a los módulos MSI.
 
-![Fix](../assets/fix.svg) Mejorado `commerce-data-exporter` Registros para recopilar más información y organizar por diferentes etapas de exportación.
+![Corrección](../assets/fix.svg) mejoró `commerce-data-exporter` registros para recopilar más información y organizar por diferentes fases de exportación.
 
 ## Versión 103.2.1
 
@@ -99,4 +100,3 @@ Las actualizaciones incluyen:
 ## Versión 103.2.0
 
 - Se ha agregado la sincronización de datos multiproceso para productos y precios.
-

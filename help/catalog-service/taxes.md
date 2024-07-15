@@ -1,16 +1,17 @@
 ---
-title: 'Mostrar precios gravados con la malla API'
-description: '''Usar [!DNL API Mesh] para que Adobe Commerce y el servicio de catálogo muestren los precios, impuestos incluidos."'
+title: Mostrar precios gravados con la API Mesh
+description: Use [!DNL API Mesh] para Adobe Commerce y el servicio de catálogo para mostrar los precios, incluidos los impuestos.
 role: Admin, Developer
 feature: Services, API Mesh, Catalog Service
-source-git-commit: d235f28c7f438fe89eb20ea7ef8bda7ae39733c0
+exl-id: 0d3da296-4409-4653-b397-99eae35e4cb7
+source-git-commit: 33573d3fb75e7a822b3d6ad8a9e45d2ebee4a3c3
 workflow-type: tm+mt
 source-wordcount: '238'
 ht-degree: 0%
 
 ---
 
-# Mostrar precios con IVA con API Mesh para Adobe Developer App Builder
+# Mostrar precios gravados con API Mesh para Adobe Developer App Builder
 
 [API Mesh](https://developer.adobe.com/graphql-mesh-gateway/gateway/overview/) permite a los desarrolladores integrar API privadas o de terceros y otras interfaces con productos de Adobe mediante Adobe I/O Runtime.
 
@@ -20,8 +21,8 @@ En este tema, API Mesh se utiliza para mostrar los precios de los productos en u
 
 Debe tener los impuestos configurados para que se muestren en la página Detalles del producto.
 
-1. [Configurar tipos impositivos](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/site-store/taxes/tax-rules.html).
-1. Permitir que los impuestos sean [mostrado en el catálogo](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/site-store/taxes/display-settings.html#step-1%3A-configure-catalog-prices-display-settings), y configúrelo en `Including and Excluding Tax` o `Including Tax`.
+1. [Configurar tasas de impuestos](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/site-store/taxes/tax-rules.html).
+1. Habilite que los impuestos se [muestren en el catálogo](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/site-store/taxes/display-settings.html#step-1%3A-configure-catalog-prices-display-settings) y configúrelo en `Including and Excluding Tax` o `Including Tax`.
 
 Compruebe que el servicio de catálogo funciona en la página de detalles del producto.
 
@@ -29,9 +30,9 @@ Compruebe que el servicio de catálogo funciona en la página de detalles del pr
 
 ## Configuración de API Mesh
 
-Si aún no lo ha hecho, conecte la API Mesh con el servicio de catálogo a su instancia. Consulte las instrucciones detalladas en la [Primeros pasos](https://developer.adobe.com/graphql-mesh-gateway/gateway/getting-started/) en la Guía para desarrolladores de API Mesh.
+Si aún no lo ha hecho, conecte la API Mesh con el servicio de catálogo a su instancia. Consulte las instrucciones detalladas en el tema [Introducción](https://developer.adobe.com/graphql-mesh-gateway/gateway/getting-started/) de la guía para desarrolladores de API Mesh.
 
-En el `mesh.json` , reemplace el `name `, `endpoint`, y `x-api-key` valores.
+En el archivo `mesh.json`, reemplace los valores `name `, `endpoint` y `x-api-key`.
 
 ```json
 {
@@ -104,17 +105,17 @@ En el `mesh.json` , reemplace el `name `, `endpoint`, y `x-api-key` valores.
   }
 ```
 
-Esta `mesh.json` archivo de configuración:
+Este archivo de configuración de `mesh.json`:
 
-* Transforma la aplicación principal de Commerce para requerir &quot;Core_&quot; delante de cualquiera de sus consultas o tipos. Esto evita posibles conflictos de nomenclatura con el servicio de catálogo.
-* Amplía el `ComplexProductView` y `SimpleProductView` tipos con un nuevo campo llamado `priceWithTaxes`.
+* Transforma la aplicación principal de Commerce para que requiera &quot;Core_&quot; delante de cualquiera de sus consultas o tipos. Esto evita posibles conflictos de nomenclatura con el servicio de catálogo.
+* Amplía los tipos `ComplexProductView` y `SimpleProductView` con un nuevo campo denominado `priceWithTaxes`.
 * Agrega una resolución personalizada para el nuevo campo.
 
-Cree la malla con el [create, comando](https://developer.adobe.com/graphql-mesh-gateway/gateway/create-mesh/#create-a-mesh-1) con el `mesh.json` archivo.
+Cree la malla con el [comando create](https://developer.adobe.com/graphql-mesh-gateway/gateway/create-mesh/#create-a-mesh-1) con el archivo `mesh.json`.
 
 ### GraphQL query
 
-Puede recuperar el nuevo `priceWithTaxes` datos con GraphQL.
+Puede recuperar los nuevos datos de `priceWithTaxes` mediante GraphQL.
 
 Ejemplo de consulta:
 

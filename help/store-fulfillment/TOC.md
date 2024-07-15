@@ -9,19 +9,19 @@ recommendations: noDisplay
 source-git-commit: 36b57648e156ead801764f3ee4e5e6a0f3245fe6
 workflow-type: tm+mt
 source-wordcount: '84'
-ht-degree: 10%
+ht-degree: 8%
 
 ---
 
 
-# Gestión de tienda para Commerce {#store-fulfillment}
+# Satisfacción de pedidos de tienda para Commerce {#store-fulfillment}
 
 - [Información general de guía](guide-overview.md)
-- [Introducción a [!DNL Store Fulfillment]](introduction.md)
+- [Introducción a  [!DNL Store Fulfillment]](introduction.md)
 - [Flujos de trabajo de asistencia de tienda](store-assist-modules.md)
 - [Requisitos](solution-requirements.md)
-- [Notas de versión](release-notes.md)
-- Cumplimiento de la tienda integrada {#onboarding}
+- [Notas de la versión](release-notes.md)
+- Cumplimiento de tienda integrada {#onboarding}
    - [Resumen de incorporación](onboard.md)
    - [Instalación de la extensión](install.md)
    - [Connect Store Fulfillment](connect-set-up-service.md)

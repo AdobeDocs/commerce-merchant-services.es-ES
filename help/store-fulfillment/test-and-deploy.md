@@ -7,7 +7,7 @@ feature: Shipping/Delivery, User Account, Roles/Permissions
 exl-id: 77285a66-5161-407b-94cd-b3f412d7949d
 source-git-commit: 36b57648e156ead801764f3ee4e5e6a0f3245fe6
 workflow-type: tm+mt
-source-wordcount: '2660'
+source-wordcount: '2661'
 ht-degree: 0%
 
 ---
@@ -20,11 +20,11 @@ Una vez completado el proceso de incorporación en el entorno de desarrollo, pue
 
 Antes de probar o sincronizar cualquier información, almacén o pedido, compruebe que ha completado las siguientes tareas:
 
-- Completado el [Configuración general](enable-general.md) para los servicios Store Fulfillment.
+- Se completó la [configuración general](enable-general.md) para los servicios de cumplimiento de tiendas.
 
 - [Añada y valide las credenciales de la cuenta y los detalles de conexión para su zona protegida y sus entornos de producción](connect-set-up-service.md#configure-store-fulfillment-account-credentials)
 
-- Confirme que la variable [Integración de Adobe Commerce](connect-set-up-service.md#configure-store-fulfillment-account-credentials) La solución Store Fulfillment está disponible y autorizada.
+- Confirme que la [integración de Adobe Commerce](connect-set-up-service.md#configure-store-fulfillment-account-credentials) para la solución Store Fulfillment está disponible y autorizada.
 
 ## Preparar para pruebas
 
@@ -34,7 +34,7 @@ La configuración de la conexión debe completarse antes de poder crear cualquie
 
    - Ir a **[!UICONTROL Stores > Sources]**.
 
-   - Seleccionar **[!UICONTROL Synchronize Store Fulfillment Sources]**.
+   - Seleccione **[!UICONTROL Synchronize Store Fulfillment Sources]**.
 
 1. En la cuadrícula del almacén, compruebe que los almacenes se han marcado como `Synced` antes de crear pedidos de prueba.
 
@@ -54,16 +54,16 @@ Este plan de pruebas de muestra abarca las siguientes áreas funcionales:
 | De extremo a extremo | Flujos de trabajo de cancelación de pedidos | Cliente, administrador y asociado de tienda |
 | Administrador | Permisos de aplicación de Store Fulfillment | Administrador |
 | Adobe Commerce Frontend | Tipos de productos | Cliente, administrador |
-| Cierre de Frontend</br>Formulario de registro de entrada | Experiencia de llegada | Cliente, administrador |
-| Aplicación de asistencia de tienda | Pedido</br>Seleccionar</br>Fase</br>y transferencia | Asociado de tienda |
+| Cierre de compra de Frontend</br>Formulario de registro | Experiencia de llegada | Cliente, administrador |
+| Aplicación de asistencia de tienda | Pedido</br>Seleccionar</br>Fase</br>y entrega | Asociado de tienda |
 
 ### Sincronización de API de inventario
 
 Esta sección del plan de prueba cubre la sincronización de inventario y pedido para verificar que las actualizaciones de los orígenes de recogida y stock estén sincronizadas correctamente entre Adobe Commerce y la solución Store Fulfillment.
 
-**Área funcional**: sincronización de inventario y pedido</br>
+**Área funcional**: Sincronización de inventario y pedidos</br>
 **Rol:** Administrador</br>
-**Tipo de prueba:** Todos los positivos
+**Tipo de prueba:** Todos positivos
 
 <table>
 <thead>
@@ -85,9 +85,9 @@ Esta sección del plan de prueba cubre la sincronización de inventario y pedido
 <td>La operación de sincronización en tiempo real envía los detalles al GIF de Walmart en 5 minutos</td>
 </tr>
 <tr>
-<td><strong>Origen de stock de recogida</br><code>Is Synced</code> status</strong></td>
+<td><strong>Estado de origen de existencias de recogida </br><code>Is Synced</code></strong></td>
 <td>Guardar actualizaciones en un origen de stock de recogida existente.</td>
-<td>Después de una operación correcta, el <code>Is Synced</code> de la página Administrar actualizaciones de origen de <code>No</code> hasta <code>Yes</code>.</td>
+<td>Después de una operación correcta, la columna <code>Is Synced</code> de la página Administrar Source se actualiza de <code>No</code> a <code>Yes</code>.</td>
 </tr>
 <tr>
 <td><strong>Proceso de reserva de stock modificado</strong></td>
@@ -97,11 +97,11 @@ Esta sección del plan de prueba cubre la sincronización de inventario y pedido
 <tr>
 <td><strong>Inserción de nuevo pedido, sincronización de API: pedido del cliente</strong></td>
 <td>El cliente envía una orden de recogida de la tienda.</td>
-<td><ul><li>En la vista Orden de administración, una <strong>Usuario administrador de Adobe Commerce</strong> ve que el estado de sincronización de pedidos se ha actualizado a <code>Sent</code></li><li>El registro de detalles del pedido incluye el mensaje <code>Order was sent to BOPIS solution for sync, it's not yet acknowledged yet.</code></li></ul></td>
+<td><ul><li>En la vista Orden de administración, un <strong>usuario administrador de Adobe Commerce</strong> ve que el estado de sincronización de pedidos se ha actualizado a <code>Sent</code></li><li>El registro de detalles del pedido incluye el mensaje <code>Order was sent to BOPIS solution for sync, it's not yet acknowledged yet.</code></li></ul></td>
 </tr>
 <tr>
 <td><strong>Inserción de nuevo pedido, sincronización de API: el administrador envía el pedido</strong></td>
-<td>Un Adobe Commerce <strong>Administrador</strong> envía una orden de recogida.</td>
+<td>Un Adobe Commerce <strong>Admin</strong> envía una orden de recogida.</td>
 <td><ul><li>En la vista Orden de administración, el estado de Sincronización de pedidos se actualiza a <code>Sent</code>.</li><li>El registro de detalles del pedido incluye el mensaje <code>Order was sent to BOPIS solution for sync, it's not yet acknowledged yet.</code></li></ul></td>
 </tr>
 <tr>
@@ -117,7 +117,7 @@ Esta sección del plan de prueba cubre la sincronización de inventario y pedido
 Esta sección del plan de prueba incluye escenarios para probar el flujo de trabajo de extremo a extremo para pedidos cancelados a través de Adobe Commerce.
 
 **Área funcional:** Administrador de Adobe Commerce</br>
-**Rol:** De extremo a extremo (administrador, asociado de tienda, cliente)</br>
+**Rol:** de extremo a extremo (administrador, asociado de tienda, cliente)</br>
 **Tipo de resultado de prueba:** Positivo para todos los escenarios
 
 <table style="table-layout:fixed">
@@ -140,9 +140,9 @@ Esta sección del plan de prueba incluye escenarios para probar el flujo de trab
 <li>Historial de pedidos actualizado con <code>We refunded $X online. Transaction ID: transactionID</code> y <code>Received Cancel acknowledgment from the BOPIS solution.</code></li>
 <li>El estado del pedido es <code>Closed</code>. (Hemos establecido REVISIÓN DE PAGO ahora.)</li>
 <li>Nota de crédito creada en Adobe Commerce. (Espere hasta que el cron funcione).</li>
-<li>Si todos los artículos se seleccionan, entonces listo para el correo electrónico de recogida <code>DISPLAY COMMENT HISTORY</code> muestra <code>Order is ready for pickup</code> (<code>CUSTOMER NOTIFIED</code> el indicador es <code>true</code>.)</li>
+<li>Si se seleccionan todos los elementos, listo para recibir el correo electrónico <code>DISPLAY COMMENT HISTORY</code> muestra <code>Order is ready for pickup</code> (<code>CUSTOMER NOTIFIED</code> marca es <code>true</code>).</li>
 <li>Si no se seleccionan todos los artículos, se muestran el correo electrónico de cancelación y el HISTORIAL DE COMENTARIOS DE VISUALIZACIÓN <code>Order has been canceled - all items were not available</code></li>
-<li><code>CUSTOMER NOTIFIED</code> el indicador es <code>true</code>.)</li>
+<li><code>CUSTOMER NOTIFIED</code> el marcador es <code>true</code>.)</li>
 </ul>
 </td>
 </tr>
@@ -162,18 +162,18 @@ Esta sección del plan de prueba incluye escenarios para probar el flujo de trab
 <li>Correo electrónico de recepción de reembolso del pedido: <code>$x amount was refunded</code></li>
 <li>El estado del pedido es <code>Processing</code>.</li>
 <li>Nota de crédito creada en Adobe Commerce (espere hasta que cron funcione).</li>
-<li>Si algunos artículos no se seleccionaron, confirme que la variable [!UICONTROL Ready for Pickup] se muestra el correo electrónico con la sección de selección o reembolso nulo. <code>DISPLAY COMMENT HISTORY</code> muestra <code>Order is ready for pickup, but some items not available.</code>.</li>
-<li><code>CUSTOMER NOTIFIED</code> el indicador es <code>true</code>.</li>
+<li>Si algunos artículos no se seleccionaron, confirme que se muestra el correo electrónico [!UICONTROL Ready for Pickup] con la sección de selección o reembolso nulo. <code>DISPLAY COMMENT HISTORY</code> muestra <code>Order is ready for pickup, but some items not available.</code>.</li>
+<li><code>CUSTOMER NOTIFIED</code> el marcador es <code>true</code>.</li>
 </ul>
 </td>
 </tr>
-<td><strong>Listo para recoger</br></br>Cancelación completa</br>(todos los productos se establecen como seleccionados con 0 qty)</strong></td>
+<td><strong>Listo para la recogida</br></br>Cancelación completa</br>(todos los productos se establecen como recogidos con 0 cant.)</strong></td>
 <td>
 <ol>
 <li>Realice el pedido.</li>
 <li>Espere hasta que se sincronice el pedido.</li>
 <li>Compruebe que la factura se haya creado (si es autorizada y capturada) y que el correo electrónico de la factura se haya recibido.</li>
-<li>Vaya a Postman y ejecute la solicitud Listo para la recogida con todos los productos configurados como <code>picked</code> con <code>0 qty</code>.</li>
+<li>Vaya a Postman y ejecute la solicitud Listo para la recogida con todos los productos establecidos como <code>picked</code> con <code>0 qty</code>.</li>
 </ol>
 </td>
 <td>
@@ -187,7 +187,7 @@ Esta sección del plan de prueba incluye escenarios para probar el flujo de trab
 </td>
 </tr>
 <tr>
-<td><strong>Listo para la recogida - Cancelación parcial</strong></br></br><strong>(Algunos productos se recogen, y otros se recogen con <code>0 qty</code>)</strong>
+<td><strong>Listo para la recogida - Cancelación parcial</strong></br></br><strong>(Algunos productos se recogen y otros se recogen con <code>0 qty</code>)</strong>
 </td>
 <td>
 <ol>
@@ -209,7 +209,7 @@ Esta sección del plan de prueba incluye escenarios para probar el flujo de trab
 </td>
 </tr>
 <tr>
-<td><strong>Listo para la recogida - Cancelación parcial</br></br>Algunos productos se recogen, y algunos se recogen con <code>0 qty</code>)</strong>
+<td><strong>Listo para la recogida - Cancelación parcial</br></br>Algunos productos se recogen y otros se recogen con <code>0 qty</code>)</strong>
 </td>
 <td><ol>
 <li>Realice el pedido.</li>
@@ -229,7 +229,7 @@ Esta sección del plan de prueba incluye escenarios para probar el flujo de trab
 </td>
 </tr>
 <tr>
-<td><strong>Dispensados (durante la dispensación) </br></br>Cancelación completa (todos los productos se establecen como rechazados)</strong>
+<td><strong>Dispensados (durante la dispensa) </br></br>Cancelación completa (todos los productos se establecen como rechazados)</strong>
 </td>
 <td>
 <ol>
@@ -244,13 +244,13 @@ Esta sección del plan de prueba incluye escenarios para probar el flujo de trab
 <td><ul>
 <li>Historial de pedidos actualizado: <code>We refunded $X offline.</code></li>
 <li>Correo electrónico de reembolso recibido: <code>$x amount was refunded</code></li>
-<li>El estado se ha establecido en <code>CLOSED</code>.</li>
+<li>Estado establecido en <code>CLOSED</code>.</li>
 <li>Abono creado. (Espere hasta que el cron funcione).</li>
 </ul>
 </td>
 </tr>
 <tr>
-<td><strong>Dispensados (durante la dispensación)</br></br>Cancelación parcial</br>(Algunos productos se dispensan; otros se rechazan).</strong>
+<td><strong>Dispensados (durante la dispensación)</br></br>Cancelación parcial</br>(Algunos productos se dispensan; algunos se rechazan.)</strong>
 </td>
 <td>
 <ol>
@@ -267,12 +267,12 @@ Esta sección del plan de prueba incluye escenarios para probar el flujo de trab
 <li>Historial de pedidos actualizado: <code>We refunded $X offline</code></li>
 <li><code>Order notified as partly canceled at: Date and Hour</code>
 <li>Correo electrónico de reembolso recibido: <code>$x amount was refunded</code>
-<li>El estado del pedido se ha establecido en <code>Ready for pickup Dispensed</code>
+<li>Estado de pedido establecido en <code>Ready for pickup Dispensed</code>
 <li>Abono creado. (Espere hasta que el cron funcione).</li>
 </td>
 </tr>
 <tr>
-<td> <strong>Nuevo RMA tras la devolución (completo)</strong>
+<td> <strong>Nuevo RMA después del retorno (completo)</strong>
 </td>
 <td>
 <ol>
@@ -288,13 +288,13 @@ Esta sección del plan de prueba incluye escenarios para probar el flujo de trab
 </td>
 <td>
 <ul>
-<li>La RMA se ha creado y se muestra debajo de <strong>[!UICONTROL Returns]</b> en la vista de pedidos.</li>
+<li>La autorización de devolución de material se creó y se muestra debajo de la ficha <strong>[!UICONTROL Returns]</b> en la vista Pedido.</li>
 <li>El cliente recibió el correo electrónico de confirmación de RMA.</li>
 </ul>
 </td>
 </tr>
 <tr>
-<td><strong>Nueva RMA tras devolución: parcial</strong>
+<td><strong>Nuevo RMA después del retorno — Parcial</strong>
 </td>
 <td>
 <ol>
@@ -309,9 +309,9 @@ Esta sección del plan de prueba incluye escenarios para probar el flujo de trab
 </ol>
 <td>
 <ul>
-<li>RMA creada y mostrada debajo de <strong>[!UICONTROL Returns]</strong> en la vista de pedidos.</li>
+<li>RMA creada y mostrada debajo de la ficha <strong>[!UICONTROL Returns]</strong> en la vista de pedidos.</li>
 <li>El cliente recibió el correo electrónico de confirmación de RMA.</li>
-<li>Después de crear la RMA, obtenga la autorización de la RMA: Desde Admin, vaya a <strong>[!UICONTROL Sales > Returns]</strong>. Seleccione la RMA que ha creado y autorícela.</li>
+<li>Después de crear la RMA, obtenga la autorización de la RMA: Desde el administrador, vaya a <strong>[!UICONTROL Sales > Returns]</strong>. Seleccione la RMA que ha creado y autorícela.</li>
 <li>Compruebe que el cliente ha recibido el correo electrónico de confirmación de autorización de RMA.</li>
 <li>Compruebe que el reembolso se haya añadido al historial de transacciones y pedidos.</li>
 </ul>
@@ -328,8 +328,8 @@ Esta sección del plan de prueba cubre la administración de cuentas para los us
 - Confirme que las actualizaciones de las cuentas existentes se aplican correctamente.
 
 **Área funcional:** Administrador de Adobe Commerce</br>
-**Rol:** Administrador, asociado de tienda</br>
-**Tipo de prueba:** Todos los positivos
+**Rol:** administrador, asociado de tienda</br>
+**Tipo de prueba:** Todas positivas
 
 <table style="table-layout:auto">
 <tr>
@@ -343,31 +343,31 @@ Esta sección del plan de prueba cubre la administración de cuentas para los us
 <td>
 <ol>
 <li><strong>Administrador</strong> — Inicie sesión en el administrador de Adobe Commerce</li>
-<li>Ir a <strong>[!UICONTROL System] &gt; Permisos de aplicaciones de Store Fulfillment &gt; Todos los usuarios de aplicaciones de Store Fulfillment</strong></li>
+<li>Vaya a <strong>[!UICONTROL System] &gt; Permisos de aplicación de Store Fulfillment &gt; Todos los usuarios de aplicación Store Fulfillment</strong></li>
 <li><strong>Agregar nuevo usuario.</strong></li>
 </ol>
 <td>
 <ul>
 <li>Cuenta creada correctamente.</li>
-<li>La nueva cuenta de usuario se muestra en la [!UICONTROL Store Fulfillment Users] panel.</li>
-<li><strong>Asociado de tienda</strong> inicia sesión en la aplicación Store Assist con una nueva cuenta de usuario.</li>
+<li>La nueva cuenta de usuario se muestra en el panel [!UICONTROL Store Fulfillment Users].</li>
+<li><strong>Asociado de tienda</strong> inicia sesión en la aplicación de asistencia de tienda con la nueva cuenta de usuario.</li>
 </ul>
 </td>
 </tr>
 <tr>
-<td><strong>Administración de cuentas de usuario: actualizar cuenta de usuario existente</strong>
+<td><strong>Administración de cuentas de usuario - Actualizar cuenta de usuario existente</strong>
 </td>
 <td>
 <ol>
 <li>Inicie sesión en Adobe Commerce Admin con una cuenta de usuario de administrador.</li>
-<li>Ir a <strong>[!UICONTROL System] &gt; Permisos de aplicaciones de Store Fulfillment &gt; Todos los usuarios de aplicaciones de Store Fulfillment</strong>.</li>
+<li>Vaya a <strong>[!UICONTROL System] &gt; Permisos de aplicación de Store Fulfillment &gt; Todos los usuarios de aplicación Store Fulfillment</strong>.</li>
 <li>En la lista Cuenta de usuario, abra una cuenta de usuario activa existente seleccionando <strong>[!UICONTROL Edit]</strong>.
-<li>Deshabilite la cuenta cambiando <strong>[!UICONTROL Is Active]</strong> hasta <strong>No</strong>.</li>
+<li>Deshabilite la cuenta cambiando <strong>[!UICONTROL Is Active]</strong> a <strong>No</strong>.</li>
 </ol>
 </td>
 <td>
 <ul>
-<li>En el <strong>[!UICONTROL Store Fulfillment App Users]</strong> panel, el estado de la cuenta actualizada cambió a <strong>[!UICONTROL Inactive]</strong>.</li>
+<li>En el panel <strong>[!UICONTROL Store Fulfillment App Users]</strong>, el estado de la cuenta actualizada cambió a <strong>[!UICONTROL Inactive]</strong>.</li>
 <li>El asociado de tienda no puede iniciar sesión en la aplicación de asistencia de tienda con las credenciales de cuenta inactivas.</li>
 </ul>
 </td>
@@ -384,8 +384,8 @@ Los escenarios de prueba para tipos de producto de Adobe Commerce verifican que 
 - [!UICONTROL Bundle products] en la tienda de Adobe Commerce.
 
 **Área funcional:** Adobe Commerce Frontend</br>
-**Rol:** Usuario de aplicación de asistencia de tienda (asociado de tienda)</br>
-**Tipo de prueba:** Todos los positivos
+**Rol:** Usuario De Aplicación De Asistencia De Tienda (Asociado De Tienda)</br>
+**Tipo de prueba:** Todas positivas
 
 <table style="table-layout:auto">
 <tr>
@@ -412,10 +412,10 @@ Los escenarios de prueba para tipos de producto de Adobe Commerce verifican que 
 </td>
 <td>
 <ul>
-<li>Compruebe que los métodos de envío y [!UICONTROL Add to cart] están desactivados para el cliente cuando todos los productos secundarios tienen
-<code>qty</code> establezca en <code>0</code>.</li>
-<li>Compruebe que los métodos de envío estén habilitados para el cliente cuando al menos uno de los productos secundarios tenga <code>qty</code> establezca en <code>0.</code></li>
-<li>Compruebe que [!UICONTROL Store Pickup Delivery] El método solo es visible y está activo para los productos que tienen [!UICONTROL Available for Store Pickup] activado. (Compruebe el producto secundario).</li>
+<li>Compruebe que los métodos de envío y el botón [!UICONTROL Add to cart] estén deshabilitados para el cliente cuando todos los productos secundarios tengan
+<code>qty</code> se estableció en <code>0</code>.</li>
+<li>Compruebe que los métodos de envío estén habilitados para el cliente cuando al menos uno de los productos secundarios tenga <code>qty</code> establecido en <code>0.</code></li>
+<li>Compruebe que el método [!UICONTROL Store Pickup Delivery] solo esté visible y activo para los productos que tienen [!UICONTROL Available for Store Pickup] habilitado. (Compruebe el producto secundario).</li>
 </ul>
 </td>
 <td></td>
@@ -424,18 +424,19 @@ Los escenarios de prueba para tipos de producto de Adobe Commerce verifican que 
 <td><strong>Productos virtuales</strong>
 </td>
 <td>
-Compruebe que los productos virtuales no ofrecen el  [!UICONTROL In-store Pickup] método de envío.
+Compruebe que los productos virtuales no ofrecen el método de entrega [!UICONTROL In-store Pickup].
 <td></td>
 </td>
 </tr>
 <tr>
-<td><strong>Paquete de productos</strong>
+<td><strong>Productos en paquete</strong>
 </td>
 <td>
 <ul>
-<li>Compruebe que si al menos un producto secundario tiene [!UICONTROL Available for Store Pickup] Desactivada, la opción de envío Recogida en tienda no está disponible para el cliente.</li>
-<li>Compruebe que si al menos un producto secundario tiene [!UICONTROL Available for Home Delivery] Desactivada, la opción Entrega en casa no está disponible para el cliente.</li>
-<li>Compruebe si al menos uno de los productos secundarios de un paquete está agotado, el paquete (producto principal) también se muestra como [!UICONTROL Out of stock].</li>
+<li>Compruebe que si al menos un producto secundario tiene [!UICONTROL Available for Store Pickup] deshabilitado, la opción de entrega Recogida en tienda no esté disponible para el cliente.</li>
+<li>Compruebe que si al menos un producto secundario tiene [!UICONTROL Available for Home Delivery] deshabilitado, la opción Entrega a domicilio no esté disponible para el cliente.</li>
+<li>Compruebe si al menos uno de los productos secundarios de un paquete está agotado, también se muestra el paquete (producto principal)
+como [!UICONTROL Out of stock].</li>
 </ul>
 </td>
 <td></td>
@@ -447,20 +448,20 @@ Compruebe que los productos virtuales no ofrecen el  [!UICONTROL In-store Pickup
 
 Esta sección del plan de prueba cubre la experiencia de registro para pedidos de recogida en tienda para las siguientes funciones:
 
-- Contacto de recogida alternativo: compruebe el flujo de trabajo para añadir un [!UICONTROL Alternate Pickup Contact] y seleccionar una [!UICONTROL Preferred Contact] en pedidos de recogida en tienda.
+- Contacto de recogida alternativo: compruebe el flujo de trabajo para agregar un(a) [!UICONTROL Alternate Pickup Contact] y seleccionar un(a) [!UICONTROL Preferred Contact] en los pedidos de recogida en tienda.
 
 - Formulario de registro: compruebe el flujo de trabajo para enviar una solicitud de registro para los pedidos de recogida de la tienda.
 
-**Áreas funcionales:** Carro de compras, formulario de registro para pedidos de recogida en tienda</br>
-**Rol:** Administrador, Cliente, Asociado de tienda</br>
-**Tipo de prueba:** Todos los positivos
+**Áreas funcionales:** Cierre de carro de compras, Formulario de registro para pedidos de recogida en tienda</br>
+**Rol:** Administrador, Cliente, Asociado De Tienda</br>
+**Tipo de prueba:** Todas positivas
 
 ### Contacto alternativo de recogida
 
 
 **Área funcional:** Cierre de carro</br>
 **Rol:** Cliente</br>
-**Tipo de prueba:** Todos los positivos
+**Tipo de prueba:** Todas positivas
 
 <table style="table-layout:auto">
 <tr>
@@ -469,43 +470,43 @@ Esta sección del plan de prueba cubre la experiencia de registro para pedidos d
 <th>Resultados esperados</th>
 </tr>
 <tr>
-<td><strong>Contacto alternativo de recogida</br>
+<td><strong>Contacto de recogida alternativo </br>
 Check-In<strong>
 </td>
 <td>
 Un cliente envía un pedido con la opción de recogida en tienda.</td>
-<td>Durante el proceso de cierre de compra, el cliente ve el [!UICONTROL Alternate Pickup Contact] Seleccione la opción en el paso Envío.
+<td>Durante el proceso de cierre de compra, el cliente ve la opción [!UICONTROL Alternate Pickup Contact] en el paso Envío.
 </td>
 </tr>
 <tr>
-<td><strong>Contacto preferido para recogida alternativa, registrar</strong>
+<td><strong>Contacto preferido de recogida alternativo, registrar</strong>
 <td>
-Un cliente envía un pedido con la opción de recogida en tienda. Durante el cierre de compra, el cliente añade una [!UICONTROL Alternate Pickup Contact].</td>
-<td>Durante el proceso de cierre de compra, el cliente ve el [!UICONTROL Preferred Contact] opción en el paso de envío.</td>
+Un cliente envía un pedido con la opción de recogida en tienda. Durante el cierre de compra, el cliente agrega un [!UICONTROL Alternate Pickup Contact].</td>
+<td>Durante el proceso de cierre de compra, el cliente ve la opción [!UICONTROL Preferred Contact] en el paso de envío.</td>
 </td>
 </tr>
 <tr>
-<td><strong>Detalles de contacto de recogida alternativa, registro</strong>
+<td><strong>Detalles de contacto de recogida alternativa, proteger</strong>
 </td>
 <td>
-Un cliente envía un pedido con la opción de recogida en tienda. Durante el cierre de compra, el cliente selecciona [!UICONTROL Alternate Pickup Contact] en la etapa de envío.
+Un cliente envía un pedido con la opción de recogida en tienda. Durante el cierre de compra, el cliente selecciona [!UICONTROL Alternate Pickup Contact] en el paso de envío.
 </td>
-<td>El cliente ve las opciones de entrada para introducir los detalles de contacto: [!UICONTROL First name], [!UICONTROL Last name], [!UICONTROL Phone], y [!UICONTROL Email].</td>
+<td>El cliente ve opciones de entrada para escribir los detalles de contacto: [!UICONTROL First name], [!UICONTROL Last name], [!UICONTROL Phone] y [!UICONTROL Email].</td>
 </tr>
 <tr>
-<td><strong>Recogida alternativa, Registrar correo electrónico</strong>
+<td><strong>Recogida alternativa, registrar correo electrónico</strong>
 </td>
-<td>Un cliente envía un pedido con la opción de recogida en tienda. Durante el cierre de compra, el cliente selecciona [!UICONTROL Alternate Pickup Contact] en el paso de envío, añade los detalles de contacto y envía el pedido.</td>
+<td>Un cliente envía un pedido con la opción de recogida en tienda. Durante el cierre de compra, el cliente selecciona [!UICONTROL Alternate Pickup Contact] en el paso de envío, agrega los detalles de contacto y envía el pedido.</td>
 <td>Tanto el cliente como el contacto alternativo reciben un mensaje de correo electrónico de registro para el pedido.</td>
 </tr>
 <td><strong>Recogida alternativa, detalles del pedido</strong></td>
-<td>Un cliente envía un pedido con la opción de recogida en tienda. Durante el cierre de compra, el cliente selecciona [!UICONTROL Alternate Pickup Contact] en el paso de envío, añade los detalles de contacto y envía el pedido.</td>
+<td>Un cliente envía un pedido con la opción de recogida en tienda. Durante el cierre de compra, el cliente selecciona [!UICONTROL Alternate Pickup Contact] en el paso de envío, agrega los detalles de contacto y envía el pedido.</td>
 <td>El administrador ve la información de contacto adicional del pedido guardado.</td>
 </tr>
 <tr>
-<td><strong>Contacto de recogida alternativo, vista de pedido de asociado de tienda</strong>
+<td><strong>Contacto de recogida alternativo, vista de pedido asociado de tienda</strong>
 </td>
-<td>Un cliente envía un pedido con la opción de recogida en tienda. Durante el cierre de compra, el cliente selecciona [!UICONTROL Alternate Pickup Contact] en el paso de envío, añade los detalles de contacto y envía el pedido.</td>
+<td>Un cliente envía un pedido con la opción de recogida en tienda. Durante el cierre de compra, el cliente selecciona [!UICONTROL Alternate Pickup Contact] en el paso de envío, agrega los detalles de contacto y envía el pedido.</td>
 <td>El asociado de tienda puede ver la información de contacto adicional en el pedido en FaaS/ChaaS.</td>
 </td>
 </tr>
@@ -515,9 +516,9 @@ Un cliente envía un pedido con la opción de recogida en tienda. Durante el cie
 ### Formulario de registro de entrada
 
 
-**Área funcional:** Formulario de registro de entrada</br>
+**Área funcional:** Formulario de registro</br>
 **Rol:** Cliente</br>
-**Tipo de prueba:** Todos los positivos
+**Tipo de prueba:** Todas positivas
 
 <table style="table-layout:auto">
 <tr>
@@ -526,7 +527,7 @@ Un cliente envía un pedido con la opción de recogida en tienda. Durante el cie
 <th>Resultados esperados</th>
 </tr>
 <tr>
-<td><strong>Acción de registro: enviar solicitud</strong>
+<td><strong>Acción de registro—Enviar solicitud</strong>
 </td>
 <td>En el formulario de registro, un cliente rellena todos los campos obligatorios y envía la solicitud.</td>
 <td>El cliente recibe una respuesta de éxito.</td>
@@ -555,8 +556,8 @@ Un cliente envía un pedido con la opción de recogida en tienda. Durante el cie
 Esta sección del plan de prueba cubre los escenarios para probar los flujos de trabajo de pedido, picking y entrega en la aplicación Store Assist.
 
 **Área funcional:** Aplicación de asistencia de tienda</br>
-**Rol:** Asociado de tienda</br>
-**Tipo de prueba:** Todos los positivos
+**Rol:** asociado de tienda</br>
+**Tipo de prueba:** Todas positivas
 
 <table style="table-layout:auto">
 <tr>
@@ -644,4 +645,4 @@ La implementación y las pruebas varían en función de la infraestructura y las
 
 >[!TIP]
 >
->Para ver las directrices de implementación, listas de comprobación y prácticas recomendadas de Adobe Commerce en proyectos de infraestructura en la nube, consulte [Implementar la tienda](https://devdocs.magento.com/cloud/live/stage-prod-live.html) en la documentación para desarrolladores de Adobe Commerce.
+>Para obtener instrucciones de implementación, listas de comprobación y prácticas recomendadas para Adobe Commerce en proyectos de infraestructura en la nube, consulte [Implementar su tienda](https://devdocs.magento.com/cloud/live/stage-prod-live.html) en la documentación para desarrolladores de Adobe Commerce.

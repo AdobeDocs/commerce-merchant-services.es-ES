@@ -5,7 +5,7 @@ exl-id: 029a7038-2812-46ce-b188-929a7a758d89
 feature: Payments, Checkout
 source-git-commit: 90bfa7099924feb308397960cff76bdf177bbe49
 workflow-type: tm+mt
-source-wordcount: '218'
+source-wordcount: '199'
 ht-degree: 0%
 
 ---
@@ -18,14 +18,14 @@ Con [!DNL Payment Services], puede utilizar la funcionalidad existente de Commer
 >
 >Solo puede anular una transacción si el pago aún no se ha registrado.
 
-Si su tienda es [configurado](https://docs.magento.com/user-guide/configuration/sales/payment-methods.html#payment-actions){target="_blank"} para autorizar solo (no capturar) los fondos en el punto de venta, una compra en su tienda resulta en un pedido con una `Processing` en el Administrador de comercio.
+Si tu tienda está [configurada](https://docs.magento.com/user-guide/configuration/sales/payment-methods.html#payment-actions){target="_blank"} para autorizar solo (no capturar) fondos en el punto de venta, una compra en tu tienda resultará en un pedido con un estado `Processing` en el administrador de Commerce.
 
-También puede [cancelar una solicitud](https://docs.magento.com/user-guide/sales/order-update.html#cancel-a-pending-order){target="_blank"} que no se factura. Las autorizaciones no capturadas también se anulan como parte de ese proceso de cancelación.
+También puede [cancelar un pedido](https://docs.magento.com/user-guide/sales/order-update.html#cancel-a-pending-order){target="_blank"} que no esté facturado. Las autorizaciones no capturadas también se anulan como parte de ese proceso de cancelación.
 
 >[!NOTE]
 >
 >La cancelación de un pedido también produce un vacío, pero la anulación de un pedido no déclencheur una cancelación.
 
-Para obtener más información sobre los pasos básicos por los que pasa un pedido, consulte la [Flujo de trabajo de pedidos](https://docs.magento.com/user-guide/sales/order-workflow.html){target="_blank"} tema en la guía del usuario principal.
+Para obtener más información sobre los pasos básicos por los que pasa un pedido, consulte el tema [Flujo de trabajo de pedidos](https://docs.magento.com/user-guide/sales/order-workflow.html){target="_blank"} en la guía del usuario principal.
 
-Para obtener más información sobre la funcionalidad void y cómo anular una transacción de pedido, consulte [Procesamiento de un pedido](https://docs.magento.com/user-guide/sales/order-processing.html){target="_blank"} en la guía del usuario principal.
+Para obtener más información sobre la funcionalidad void y cómo anular una transacción de pedido, consulte [Procesar un pedido](https://docs.magento.com/user-guide/sales/order-processing.html){target="_blank"} en la guía del usuario principal.

@@ -4,7 +4,7 @@ description: Obtenga información sobre los datos de comportamiento y cuándo pu
 exl-id: d68a97b9-1497-4603-a72c-4aaaf6e048cb
 source-git-commit: 840b091638aedd3f6ac097a010d035eff997ffe2
 workflow-type: tm+mt
-source-wordcount: '643'
+source-wordcount: '647'
 ht-degree: 0%
 
 ---
@@ -16,9 +16,9 @@ Algunos tipos de recomendación utilizan datos de comportamiento de los comprado
 - `More like this`
 - `Visual similarity`
 
-Por lo tanto, ¿cuándo puede empezar a utilizar tipos de recomendación que utilicen datos de comportamiento? Depende de ti. Esto se conoce como _Inicio en frío_ problema.
+Por lo tanto, ¿cuándo puede empezar a utilizar tipos de recomendación que utilicen datos de comportamiento? Depende de ti. Este problema se conoce como _Inicio en frío_.
 
-El _Inicio en frío_ El problema es una medida de cuánto tiempo necesita un modelo para entrenarse antes de que pueda considerarse de alta calidad. En las recomendaciones de productos, se traduce en esperar a que Adobe Sensei entrene sus modelos de aprendizaje automático antes de implementar unidades de recomendaciones en el sitio. Cuantos más datos tengan estos modelos, más precisas y útiles serán las recomendaciones. La recopilación de estos datos lleva tiempo y varía en función del volumen de tráfico. Como estos datos solo se pueden recopilar en un sitio de producción, lo mejor es implementar la recopilación de datos allí lo antes posible. Puede hacer esto por [instalación y configuración](install-configure.md) el `magento/production-recommendations` módulo.
+El problema de _inicio en frío_ es una medida de cuánto tiempo necesita un modelo para entrenarse antes de que pueda considerarse de alta calidad. En las recomendaciones de productos, se traduce en esperar a que Adobe Sensei entrene sus modelos de aprendizaje automático antes de implementar unidades de recomendaciones en el sitio. Cuantos más datos tengan estos modelos, más precisas y útiles serán las recomendaciones. La recopilación de estos datos lleva tiempo y varía en función del volumen de tráfico. Como estos datos solo se pueden recopilar en un sitio de producción, lo mejor es implementar la recopilación de datos allí lo antes posible. Puede hacerlo [instalando y configurando](install-configure.md) el módulo `magento/production-recommendations`.
 
 La siguiente tabla proporciona algunas directrices generales sobre la cantidad de tiempo que se tarda en recopilar suficientes datos para cada tipo de recomendación:
 
@@ -35,16 +35,16 @@ Otras variables que pueden afectar al tiempo necesario para entrenar:
 - Algunos tipos de recomendación se entrenan más rápido que otros
 - Adobe Commerce vuelve a calcular los datos de comportamiento cada cuatro horas. Recommendations será más preciso cuanto más tiempo se utilice en el sitio.
 
-Para ayudarle a visualizar el progreso de formación de cada tipo de recomendación, la variable [crear recomendación](create.md) La página muestra indicadores de preparación.
+Para ayudarle a visualizar el progreso de formación de cada tipo de recomendación, la página [crear recomendación](create.md) muestra indicadores de preparación.
 
-Aunque los datos se recopilan en producción y los modelos de aprendizaje automático están formados, puede implementar el [tareas restantes](implementation-workflow.md) necesarias para implementar recomendaciones en tu tienda. En el momento en que haya terminado de probar y configurar las recomendaciones, los modelos de aprendizaje automático han recopilado y calculado suficientes datos para crear recomendaciones relevantes, lo que le permite implementar las recomendaciones en su tienda.
+Mientras se recopilan los datos en producción y se entrenan los modelos de aprendizaje automático, puede implementar las [tareas restantes](implementation-workflow.md) necesarias para implementar recomendaciones en su tienda. En el momento en que haya terminado de probar y configurar las recomendaciones, los modelos de aprendizaje automático han recopilado y calculado suficientes datos para crear recomendaciones relevantes, lo que le permite implementar las recomendaciones en su tienda.
 
 Si no hay tráfico suficiente (vistas, productos comprados, tendencias) para la mayoría de las SKU, es posible que no haya suficientes datos para completar el proceso de aprendizaje. Esto puede hacer que el indicador de disponibilidad del administrador parezca atascado.
 Los indicadores de preparación están pensados para proporcionar a los comerciantes otro punto de datos a la hora de elegir qué tipo de recomendaciones es mejor para su tienda. Los números son una guía y es posible que nunca alcancen el 100%.
 
 ## Recomendaciones de copia de seguridad {#backuprecs}
 
-Si no hay datos de entrada suficientes para proporcionar todos los elementos de recomendación solicitados en una unidad, Adobe Commerce proporciona recomendaciones de copia de seguridad para rellenar las unidades de recomendación. Por ejemplo, si implementa la variable `Recommended for you` tipo de recomendación para su página de inicio, un comprador que llega por primera vez al sitio no ha generado suficientes datos de comportamiento para recomendar con precisión productos personalizados. En este caso, Adobe Commerce muestra los elementos en función de la variable `Most viewed` tipo de recomendación para este comprador.
+Si no hay datos de entrada suficientes para proporcionar todos los elementos de recomendación solicitados en una unidad, Adobe Commerce proporciona recomendaciones de copia de seguridad para rellenar las unidades de recomendación. Por ejemplo, si implementa el tipo de recomendación `Recommended for you` en su página de inicio, un comprador que visita por primera vez su sitio no ha generado suficientes datos de comportamiento para recomendar con precisión productos personalizados. En este caso, Adobe Commerce muestra artículos basados en el tipo de recomendación `Most viewed` a este comprador.
 
 Los siguientes tipos de recomendación vuelven a `Most viewed` tipo de recomendación si no se recopilan suficientes datos de entrada:
 

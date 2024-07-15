@@ -4,7 +4,7 @@ description: Obtenga información sobre cómo editar una recomendación de produ
 exl-id: 36fd6d3a-74f8-4510-a187-a2a91742cd1a
 source-git-commit: e7c3d1ab49ee9469e3312321f6d96446840d0778
 workflow-type: tm+mt
-source-wordcount: '427'
+source-wordcount: '428'
 ht-degree: 0%
 
 ---
@@ -19,19 +19,19 @@ La página Editar recomendación permite ajustar la configuración individual qu
 - [Ubicación y posición](#placement)
 - [Filtrar productos](#filters)
 
-La vista previa en la parte derecha de la página muestra cómo puede aparecer la recomendación con la configuración actual en la tienda. El _Previsualización de productos recomendados_ permanece visible como referencia a medida que se desplaza hacia abajo por la página. La vista previa muestra una imagen en miniatura del producto, el nombre del producto, el SKU, el precio y el tipo de resultado de cada producto devuelto. El tipo de resultado indica si hay suficientes datos de comportamiento primarios para generar la recomendación o si está utilizando datos de comportamiento de copia de seguridad.
+La vista previa en la parte derecha de la página muestra cómo puede aparecer la recomendación con la configuración actual en la tienda. La _vista previa de productos recomendados_ permanece visible como referencia al desplazarse hacia abajo en la página. La vista previa muestra una imagen en miniatura del producto, el nombre del producto, el SKU, el precio y el tipo de resultado de cada producto devuelto. El tipo de resultado indica si hay suficientes datos de comportamiento primarios para generar la recomendación o si está utilizando datos de comportamiento de copia de seguridad.
 
 ![Editar Recommendations](assets/edit-recommendation.png)
 
 ## Editar una recomendación
 
-1. En el _Administrador_ barra lateral, vaya a **Marketing** > _Promociones_ > **Product Recommendations**.
+1. En la barra lateral de _Admin_, ve a **Marketing** > _Promociones_ > **Product Recommendations**.
 
 1. Seleccione la recomendación que desee editar.
 
-1. Clic **Editar**. A continuación, siga las instrucciones que se indican a continuación para realizar los cambios que necesite.
+1. Haga clic en **Editar**. A continuación, siga las instrucciones que se indican a continuación para realizar los cambios que necesite.
 
-1. Cuando termine, haga clic en **Guardar cambios**.
+1. Una vez finalizado, haga clic en **Guardar cambios**.
 
 ### Nombre de recomendación {#name}
 
@@ -60,21 +60,21 @@ Ajuste el control deslizante para mostrar hasta 20 productos en la unidad de rec
 
    ![Editar ubicación](assets/edit-placement.png)
 
-1. Para cambiar el orden de las recomendaciones incluidas en la unidad, utilice el **Mover** ![Selector de movimiento](assets/icon-move.png) para arrastrar las recomendaciones a su posición.
+1. Para cambiar el orden de las recomendaciones que se incluyen en la unidad, use el control **Mover** ![Selector de movimiento](assets/icon-move.png) para arrastrar las recomendaciones a su posición.
 
    ![Editar posición](assets/edit-position.png)
 
 ### Filtrar productos {#filters}
 
-Cualquier cambio realizado en el producto [filtros](filters.md) se reflejan en la _Previsualización de productos recomendados_. Solo se permite recomendar productos que coincidan con los filtros de inclusión. No se recomiendan los productos que coinciden con cualquier filtro de exclusión.
+Cualquier cambio realizado en los [filtros](filters.md) del producto se reflejará en la _vista previa de los productos recomendados_. Solo se permite recomendar productos que coincidan con los filtros de inclusión. No se recomiendan los productos que coinciden con cualquier filtro de exclusión.
 
-El _Inclusiones_ y _Exclusiones_ las pestañas enumeran los filtros disponibles de cada tipo. En la lista, cada filtro activo se marca con un punto azul.
+Las fichas _Inclusiones_ y _Exclusiones_ enumeran los filtros disponibles de cada tipo. En la lista, cada filtro activo se marca con un punto azul.
 
 - Para mostrar los detalles de cada filtro, haga clic en su nombre.
-- Para cambiar el estado del filtro, establezca el **Activar filtro** alternar a `on` o `off` posición.
+- Para cambiar el estado del filtro, establezca la opción **Habilitar filtro** en la posición `on` o `off`.
 
 ![Editar filtros](assets/edit-filters.png)
 
-La configuración del filtro describe los productos que se van a incluir o excluir en la unidad de recomendación. Por ejemplo, la variable _Categoría_ la configuración de inclusión de filtros indica al sistema que incluya solo los productos de las categorías seleccionadas.
+La configuración del filtro describe los productos que se van a incluir o excluir en la unidad de recomendación. Por ejemplo, la configuración de inclusión de filtros de _Categoría_ indica al sistema que incluya solo los productos de las categorías seleccionadas.
 
 ![Editar filtro de categoría](assets/edit-filter-category.png)

@@ -1,6 +1,6 @@
 ---
 title: Revisar registros y solucionar problemas
-description: Obtenga información sobre cómo solucionar problemas [!DNL data export] errores al utilizar los registros data-export y saas-export.
+description: Obtenga información sobre cómo solucionar  [!DNL data export] errores mediante los registros de exportación de datos y exportación de saas.
 feature: Services
 recommendations: noCatalog
 exl-id: 55903c19-af3a-4115-a7be-9d1efaed8140
@@ -13,11 +13,11 @@ ht-degree: 0%
 
 # Revisar registros y solucionar problemas
 
-El [!DNL data export] La extensión de proporciona registros para rastrear la recopilación de datos y los procesos de sincronización.
+La extensión [!DNL data export] proporciona registros para realizar un seguimiento de los procesos de sincronización y recopilación de datos.
 
 ## Registros
 
-Los registros están disponibles en `var/log` en el servidor de aplicaciones de Commerce.
+Los registros están disponibles en el directorio `var/log` del servidor de aplicaciones de Commerce.
 
 | nombre del registro | filename | description |
 |-----------------| ----------| -------------|
@@ -54,7 +54,7 @@ En la tabla siguiente se describen los tipos de operación que se pueden registr
 |----------------------------|---------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------|
 | sincronización completa | La sincronización completa recopila y envía todos los datos al SaaS de una fuente determinada. | `bin/magento saas:resync --feed=products` |
 | reindexación parcial | La sincronización parcial recopila y envía datos a SaaS solo para las entidades actualizadas de una fuente determinada. Este registro solo está presente si existen entidades actualizadas. | `bin/magento cron:run --group=index` |
-| reintentar elementos con errores | Reenvía elementos de una fuente determinada a SaaS si la operación de sincronización anterior ha fallado debido a un error de la aplicación o del servidor de Commerce. Este registro solo está presente si existen elementos con error. | `bin/magento cron:run --group=saas_data_exporter`  (cualquier grupo cron &quot;*_data_exporter&quot;) |
+| reintentar elementos con errores | Reenvía elementos de una fuente determinada a SaaS si la operación de sincronización anterior ha fallado debido a un error de la aplicación o del servidor de Commerce. Este registro solo está presente si existen elementos con error. | `bin/magento cron:run --group=saas_data_exporter` (cualquier grupo cron &quot;*_data_exporter&quot;) |
 | sincronización completa (heredada) | Sincronización completa para una fuente determinada en el modo de exportación heredado. | `bin/magento saas:resync --feed=categories` |
 | reindexación parcial (heredada) | Envía entidades actualizadas a SaaS para una fuente determinada en el modo de exportación heredado. Este registro solo está presente si existen entidades actualizadas. | `bin/magento cron:run --group=index` |
 | sincronización parcial (heredada) | Envía entidades actualizadas a SaaS para una fuente determinada en el modo de exportación heredado. Este registro solo está presente si existen entidades actualizadas. | `bin/magento cron:run --group=saas_data_exporter` (cualquier grupo cron &quot;*_data_exporter&quot;) |
@@ -75,15 +75,15 @@ De forma predeterminada, durante una resincronización completa, el progreso se 
 }
 ```
 
-En este ejemplo, la variable `status` Los valores de proporcionan información sobre la operación de sincronización:
+En este ejemplo, los valores `status` proporcionan información sobre la operación de sincronización:
 
 - **`"Progress 2/5"`** indica que se han completado 2 de 5 iteraciones. El número de iteraciones depende del número de entidades exportadas.
 - **`"processed: 200"`** indica que se han procesado 200 elementos.
-- **`"synced: 100"`** indica que se enviaron 100 artículos a SaaS. Se espera que `"synced"` is not equal to `"processed"`. A continuación se muestra un ejemplo:
+- **`"synced: 100"`** indica que se enviaron 100 elementos a SaaS. Se espera que `"synced"` no sea igual a `"processed"`. A continuación se muestra un ejemplo:
    - **`"synced" < "processed"`** significa que la tabla de fuentes no detectó ningún cambio en el elemento, en comparación con la versión sincronizada anteriormente. Estos elementos se omiten durante la operación de sincronización.
-   - **`"synced" > "processed"`** el mismo id de entidad (por ejemplo, `Product ID`) puede tener varios valores en diferentes ámbitos. Por ejemplo, se puede asignar un producto a cinco sitios web. En este caso, es posible que tenga &quot;1 elemento procesado&quot; y &quot;5 sincronizados&quot; elementos.
+   - **`"synced" > "processed"`** el mismo id. de entidad (por ejemplo, `Product ID`) puede tener varios valores en distintos ámbitos. Por ejemplo, se puede asignar un producto a cinco sitios web. En este caso, es posible que tenga &quot;1 elemento procesado&quot; y &quot;5 sincronizados&quot; elementos.
 
-+++ **Ejemplo: Registro de resincronización completo para la fuente de precios**
++++ **Ejemplo: registro de resincronización completo para la fuente de precios**
 
 ```
 Price feed full resync:
@@ -107,7 +107,7 @@ Si almacena los registros de Adobe Commerce en New Relic, puede agregar reglas d
 
 1. Ir a `Logs => Parsing`.
 
-1. Clic `Create parsing rule`.
+1. Haga clic en `Create parsing rule`.
 
 1. Configure la regla de análisis añadiendo los siguientes valores.
 
@@ -130,7 +130,7 @@ Si faltan datos o estos son incorrectos en Commerce Services, compruebe los regi
 - commerce-data-export-errors.log: si se produjo un error durante la fase de recopilación
 - saas-export-errors.log: si se produjo un error durante la fase de transmisión
 
-Si ve errores no relacionados con la configuración o con extensiones de terceros, envíe un [ticket de asistencia](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=en#submit-ticket) con la mayor cantidad de información posible.
+Si observa errores no relacionados con la configuración o con extensiones de terceros, envíe un [ticket de asistencia](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=en#submit-ticket) con la mayor información posible.
 
 ### Resolver problemas de sincronización del catálogo {#resolvesync}
 
@@ -139,23 +139,23 @@ Cuando se sincroniza en déclencheur una sincronización de datos, los datos pue
 #### Discrepancia de datos
 
 1. Mostrar la vista detallada del producto en cuestión en los resultados de búsqueda.
-1. Copie la salida JSON y verifique que el contenido coincida con lo que tiene en la [!DNL Commerce] catálogo.
+1. Copie la salida JSON y verifique que el contenido coincida con lo que tiene en el catálogo [!DNL Commerce].
 1. Si el contenido no coincide, realice un cambio menor en el producto del catálogo, como añadir un espacio o un punto.
-1. Espere a que se vuelva a sincronizar o [déclencheur de una resincronización manual](#resync).
+1. Espere a que se realice una resincronización o [déclencheur una resincronización manual](#resync).
 
 #### La sincronización no se está ejecutando
 
-Si la sincronización no se está ejecutando según una programación o no hay nada sincronizado, consulte esto [KnowledgeBase](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshoot-product-recommendations-module-in-magento-commerce.html) artículo.
+Si la sincronización no se está ejecutando según una programación o no hay nada sincronizado, consulte este artículo de [KnowledgeBase](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshoot-product-recommendations-module-in-magento-commerce.html).
 
 #### Error de sincronización
 
-Si la sincronización del catálogo tiene un estado de **Error**, envíe un [ticket de asistencia](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket).
+Si la sincronización del catálogo tiene el estado **Error**, envíe un [ticket de asistencia](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket).
 
 ## Registro extendido
 
 Para obtener información de registro adicional, puede utilizar variables de entorno para ampliar registros con datos adicionales para el seguimiento y la resolución de problemas.
 
-Hay dos archivos de registro en el `var/log/` directorio:
+Hay dos archivos de registro en el directorio `var/log/`:
 
 - commerce-data-export-errors.log: si se produjo un error durante la fase de recopilación
 - saas-export-errors.log: si se produjo un error durante la fase de transmisión
@@ -164,7 +164,7 @@ Puede utilizar variables de entorno para ampliar los registros con datos adicion
 
 ### Comprobación de la carga útil de fuente
 
-Incluya la carga útil de fuente en el registro de exportación de SaaS agregando el `EXPORTER_EXTENDED_LOG=1` variable de entorno al volver a sincronizar la fuente.
+Incluya la carga útil de la fuente en el registro de exportación de SaaS agregando la variable de entorno `EXPORTER_EXTENDED_LOG=1` al volver a sincronizar la fuente.
 
 ```shell script
 EXPORTER_EXTENDED_LOG=1 bin/magento saas:resync --feed=products
@@ -174,9 +174,9 @@ Una vez finalizada la operación, la carga útil de fuente está disponible para
 
 ### Conservar carga útil en tabla de índice de fuentes
 
-Para la extensión de exportación de datos SaaS de Commerce (`magento/module-data-exporter`) 103.3.0 y versiones posteriores, las fuentes de exportación inmediatas mantienen solo los datos mínimos requeridos en la tabla de índices. Las fuentes incluyen todas las fuentes de estado de stock de catálogo e inventario.
+Para la extensión de exportación de datos SaaS de Commerce (`magento/module-data-exporter`) 103.3.0 y posterior, las fuentes de exportación inmediatas mantienen solamente los datos mínimos requeridos en la tabla de índice. Las fuentes incluyen todas las fuentes de estado de stock de catálogo e inventario.
 
-No se recomienda conservar los datos de carga útil en la tabla de índices en los entornos de producción, pero puede resultar útil en un entorno de desarrollo. Incluya la carga útil de fuente en el índice agregando el `PERSIST_EXPORTED_FEED=1` variable de entorno al volver a sincronizar la fuente.
+No se recomienda conservar los datos de carga útil en la tabla de índices en los entornos de producción, pero puede resultar útil en un entorno de desarrollo. Incluya la carga útil de la fuente en el índice agregando la variable de entorno `PERSIST_EXPORTED_FEED=1` al resincronizar la fuente.
 
 ```shell script
 PERSIST_EXPORTED_FEED=1 bin/magento saas:resync --feed=products
@@ -186,7 +186,7 @@ PERSIST_EXPORTED_FEED=1 bin/magento saas:resync --feed=products
 
 Si el proceso de reindexación de una fuente específica lleva una cantidad de tiempo no razonable, ejecute el generador de perfiles para recopilar datos adicionales que puedan ser útiles para el equipo de asistencia.
 
-Ejecute el generador de perfiles agregando `EXPORTER_PROFILER=1` variable de entorno al ejecutar el comando reindex.
+Ejecute el generador de perfiles agregando la variable de entorno `EXPORTER_PROFILER=1` al ejecutar el comando reindex.
 
 ```
 EXPORTER_PROFILER=1 bin/magento indexer:reindex catalog_data_exporter_products
