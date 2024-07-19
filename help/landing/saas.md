@@ -4,16 +4,16 @@ description: Obtenga información sobre cómo integrar la instancia de Adobe Com
 exl-id: 28027a83-449b-4b96-b926-a7bfbfd883d8
 feature: Services, Saas
 role: Admin, User
-source-git-commit: 3eb873c84edb56d2fc399c72296f2b545a78064e
+source-git-commit: 391208f63c092f1eebb7330e2445079e09594890
 workflow-type: tm+mt
-source-wordcount: '1051'
+source-wordcount: '1048'
 ht-degree: 0%
 
 ---
 
 # [!DNL Commerce Services Connector]
 
-Algunas características de Adobe Commerce y Magento Open Source utilizan [!DNL Commerce Services] y se implementan como SaaS (software como servicio). Para utilizar estos servicios, debe conectar su instancia de [!DNL Commerce] mediante las claves de API de producción y de zona protegida, y especificar el espacio de datos en la [configuración](https://experienceleague.adobe.com/docs/commerce-admin/config/services/saas.html). Solo debe configurar esto una vez.
+Algunas características de Adobe Commerce y Magento Open Source utilizan [!DNL Commerce Services] y se implementan como SaaS (software como servicio). Para utilizar estos servicios, debe conectar su instancia de [!DNL Commerce] mediante las claves de API de producción y de zona protegida, y especificar el espacio de datos en la [configuración](https://experienceleague.adobe.com/docs/commerce-admin/config/services/saas.html). Solo es necesario configurar la conexión una vez para cada instancia de Commerce.
 
 ## Servicios disponibles {#availableservices}
 
@@ -24,7 +24,6 @@ A continuación se enumeran las características de [!DNL Commerce] a las que pu
 | [[!DNL Product Recommendations]](/help/product-recommendations/overview.md) con tecnología de Adobe Sensei | Adobe Commerce |
 | [[!DNL Live Search]](/help/live-search/overview.md) con tecnología de Adobe Sensei | Adobe Commerce |
 | [[!DNL Payment Services]](/help/payment-services/overview.md) | ADOBE COMMERCE y MAGENTO OPEN SOURCE |
-| [[!DNL Channel Manager]](https://experienceleague.adobe.com/docs/commerce-channels/channel-manager/intro-to-channel-manager/overview.html) | ADOBE COMMERCE y MAGENTO OPEN SOURCE |
 | [[!DNL Site-Wide Analysis Tool]](https://experienceleague.adobe.com/docs/commerce-operations/tools/site-wide-analysis-tool/intro.html) | Adobe Commerce |
 | [[!DNL Catalog Service]](/help/catalog-service/overview.md) | Adobe Commerce |
 | [[!DNL Data Connection]](/help/data-connection/overview.md) | Adobe Commerce |
@@ -39,7 +38,7 @@ En las secciones siguientes se analiza cada uno de estos elementos con más deta
 
 ## Credenciales {#apikey}
 
-Las claves API de producción y de zona protegida se generan a partir de la cuenta [!DNL Commerce] del [propietario de la licencia](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/start/onboarding), que se identifica con un ID de [!DNL Commerce] único (MageID). Para aprobar la validación de derechos para servicios como [!DNL Product Recommendations] o [!DNL Live Search], el propietario de la licencia de la organización del comerciante puede generar el conjunto de claves API, siempre y cuando la cuenta esté en buen estado.
+Las claves API de producción y de zona protegida se generan a partir de la cuenta [!DNL Commerce] del [propietario de la licencia](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/start/onboarding). La cuenta de Commerce está identificada por un ID único de [!DNL Commerce] (MageID). El propietario de la licencia de la organización del comerciante puede generar claves de API para servicios como Product Recommendations o Live Search, siempre y cuando la cuenta esté al día.
 
 Las claves se pueden compartir según sea necesario con el integrador de sistemas o el equipo de desarrollo que gestiona los proyectos y entornos en nombre del titular de la licencia. Los desarrolladores a los que el propietario de la licencia ha concedido [!DNL Shared Access] no pueden generar las claves en su nombre aunque la organización del comerciante esté presente en el menú desplegable [!DNL Switch Accounts] de su cuenta.
 
@@ -57,15 +56,13 @@ Además, los integradores de soluciones también tienen derecho a utilizar [!DNL
 
 1. En el menú _Entorno_, seleccione **Producción** o **Espacio aislado**.
 
-1. Escriba un nombre en la sección _Claves de API_ y haga clic en **Agregar nuevo**.
-
-   Esto abre un cuadro de diálogo para descargar la nueva clave.
+1. Escriba un nombre en la sección _Claves de API_ y haga clic en **Agregar nueva** para abrir el cuadro de diálogo y descargar la clave nueva.
 
    ![Descargar clave privada](assets/download-api-private-key.png)
 
    >[!WARNING]
    >
-   > Esta es la única oportunidad que tiene para copiar o descargar sus claves.
+   > Este cuadro de diálogo proporciona la única oportunidad que tiene para copiar o descargar las claves.
 
 1. Haz clic en **Descargar** y luego en **Cancelar**.
 
