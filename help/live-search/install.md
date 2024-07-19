@@ -3,9 +3,9 @@ title: "Introducción a  [!DNL Live Search]"
 description: '"Conoce los requisitos del sistema y los pasos de instalación de  [!DNL Live Search] de Adobe Commerce".'
 exl-id: aa251bb0-d52c-4cff-bccb-76a08ae2a3b2
 role: Admin, Developer
-source-git-commit: aba1f41965e6c430f569adcf9d940cf399b50b73
+source-git-commit: 0b0bc88c13d8c90a6209d9156f6fd6a7ce040f72
 workflow-type: tm+mt
-source-wordcount: '2266'
+source-wordcount: '2357'
 ht-degree: 0%
 
 ---
@@ -146,6 +146,8 @@ Al ejecutar estos comandos, comienza la sincronización inicial de los datos del
 Puede ver los datos que se sincronizan y comparten mediante [Panel de administración de datos](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-dashboard). Este tablero proporciona información valiosa sobre la disponibilidad de los datos de productos para su tienda, lo que garantiza que se puedan mostrar rápidamente a sus compradores.
 
 ![Panel de administración de datos](assets/data-management-dashboard.png)
+
+También puede ejecutar comandos de sincronización y solucionar problemas del proceso de sincronización mediante la [CLI de Commerce](../data-export/data-export-cli-commands.md#troubleshooting) y los registros de extensión de exportación de datos.
 
 #### Futuras actualizaciones de productos
 
@@ -386,6 +388,10 @@ Esto permite a los desarrolladores personalizar completamente la funcionalidad y
 - [widget PLP](https://github.com/adobe/storefront-product-listing-page)
 - [Barra de búsqueda](https://github.com/adobe/storefront-search-as-you-type)
 
+### Extensión de Data Export
+
+Una vez habilitada la Live Search, la extensión de exportación de datos sincroniza los datos de Commerce entre la aplicación de Commerce y Live Search. Este proceso garantiza que los datos de Commerce más actuales estén disponibles en la tienda. En Admin, puede comprobar el estado de la sincronización mediante el panel de control de Data Management. Puede administrar y solucionar problemas del proceso de exportación de datos mediante la CLI de Commerce y los registros. Para obtener más información, consulte la [Guía de exportación de datos](../data-export/overview.md).
+
 ### Inventory management
 
 [!DNL Live Search] admite las funciones de [Inventory management](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/introduction) en Commerce (anteriormente conocido como Multi-Source Inventory o MSI). Para habilitar la compatibilidad total, debe [actualizar](install.md#update) el módulo de dependencia `commerce-data-export` a la versión 102.2.0+.
@@ -394,7 +400,7 @@ Esto permite a los desarrolladores personalizar completamente la funcionalidad y
 
 ### Indexador de precios
 
-Los clientes de Live Search pueden usar el nuevo [indexador de precios SaaS](../price-index/price-indexing.md), que ofrece actualizaciones de cambio de precios y tiempo de sincronización más rápidos.
+Los clientes de Live Search pueden usar el [indexador de precios SaaS](../price-index/price-indexing.md), que ofrece actualizaciones de precios más rápidas y tiempo de sincronización.
 
 ### Tarifa soportada
 

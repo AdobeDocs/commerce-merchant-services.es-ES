@@ -4,7 +4,7 @@ description: Obtenga información acerca del uso de la extensión  [!DNL data ex
 role: Admin, Developer
 recommendations: noCatalog
 exl-id: c5711fa6-09e2-42b0-a7af-4d7b866c871d
-source-git-commit: 42a9ea0f62f35db451cd3e780adf530d0699a638
+source-git-commit: 0b0bc88c13d8c90a6209d9156f6fd6a7ce040f72
 workflow-type: tm+mt
 source-wordcount: '433'
 ht-degree: 0%
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Guía de [!DNL SaaS Data Export]
 
-[!DNL SaaS data export] mejora el rendimiento del front-end al optimizar la sincronización de datos entre una instancia de Adobe Commerce y los servicios de Commerce conectados. Al agregar Live Search, Product Recommendations o el servicio de catálogo a una instalación de Adobe Commerce, la extensión [!DNL Data export] se instala automáticamente.
+[!DNL SaaS data export] sincroniza datos entre una instancia de Adobe Commerce y los servicios de Commerce conectados. Al agregar Live Search, Product Recommendations o el servicio de catálogo a una instalación de Adobe Commerce, la extensión [!DNL Data export] se instala automáticamente.
 
 La exportación de datos SaaS recopila y exporta varios tipos de datos, denominados _fuentes_, que agregan tipos de información específicos. Según los servicios de Commerce que estén instalados, las fuentes de exportación de datos SaaS incluyen:
 
@@ -22,7 +22,7 @@ La exportación de datos SaaS recopila y exporta varios tipos de datos, denomina
 - **Fuente de pedidos de ventas** agrega datos de pedidos, incluidas las entidades relacionadas como facturas, envíos, notas de abono, etc.
 - **Fuente de inventario de varios Source** agrega datos sobre los elementos de estado de inventario de stock.
 
-La extensión de exportación de datos admite varios métodos para iniciar y administrar el proceso de sincronización de datos.
+La exportación de datos SaaS se entrega como una extensión PHP. Admite varios métodos para iniciar y administrar el proceso de sincronización de datos.
 
 - **Sincronización manual desde el administrador o desde la línea de comandos**
 
