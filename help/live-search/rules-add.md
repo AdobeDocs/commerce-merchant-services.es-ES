@@ -2,9 +2,9 @@
 title: "Agregar reglas"
 description: '"Aprenda a crear reglas de comercialización de búsqueda".'
 exl-id: c6b92ef5-3b08-47f9-8412-955a9c95a9ee
-source-git-commit: 52be82fa080474d6df81fd16d1655a421771e5e2
+source-git-commit: 0b099bf6a306806b5aa24261e6c125d43d528207
 workflow-type: tm+mt
-source-wordcount: '1536'
+source-wordcount: '1604'
 ht-degree: 0%
 
 ---
@@ -84,16 +84,23 @@ Los propietarios de tiendas pueden configurar los siguientes tipos de estrategia
 
 * Más comprados: esto clasifica los productos según el total de compras por SKU en los 7 días anteriores.
 * Más añadidos al carro de compras: clasifica en orden del total de actividades &quot;Agregar al carro de compras&quot; en los 7 días anteriores.
-* Más visitados: Clasifica mis vistas totales por SKU en los 7 días anteriores.
-* Recomendado para usted: utiliza el punto de datos `viewed-viewed` . Los compradores que vieron este SKU también vieron estos otros SKU
-* Tendencia: revisa los eventos de vista de página de las últimas 72 horas para los eventos en segundo plano y 24 horas para los eventos en primer plano
-* Ninguno: los productos se ordenan por relevancia
+* Más visitados: Clasifica el total de vistas por SKU en los 7 días anteriores.
+* Recomendado para usted: utiliza el punto de datos `viewed-viewed` . Los compradores que vieron este SKU también vieron estos otros SKU.
+* Tendencia: revisa los eventos de vista de página de las últimas 72 horas para los eventos en segundo plano y 24 horas para los eventos en primer plano.
+* Ninguno: los productos se ordenan por relevancia.
 
-1. Seleccione el tipo de estrategia para la regla. La ventana Prueba de la regla muestra los resultados esperados.
+Seleccione el tipo de estrategia para la regla. La ventana **Probar la regla** muestra los resultados esperados.
 
->[!NOTE]
->
->Los apóstrofos y las citas en las consultas pueden llevar a algunos problemas menores con clasificación y relevancia en algunos idiomas.
+### Advertencias
+
+* Los apóstrofos y las citas en las consultas pueden llevar a algunos problemas menores con clasificación y relevancia en algunos idiomas.
+* Para asegurarse de que la clasificación inteligente funciona correctamente, asegúrese de que **Peso de búsqueda** para cualquier atributo de producto que se utilice para la búsqueda o el filtrado (facetas) sea `5` o menos. Para encontrar esta configuración en el administrador de [!DNL Commerce]:
+
+   1. Seleccione **Tiendas** > _Atributos_ > **Producto**.
+   1. Busque el atributo como, por ejemplo, &quot;nombre&quot;.
+   1. En la página **Información de atributo** > **Propiedades de tienda**, establezca el valor de la búsqueda en `5` o menos.
+
+      ![Producto - Peso de búsqueda](assets/set-search-weight.png)
 
 ## Clasificación manual
 

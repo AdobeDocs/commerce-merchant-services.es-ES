@@ -3,9 +3,9 @@ title: Notas de la versión
 description: La información de la versión más reciente para la extensión  [!DNL Data Connection] de Adobe Commerce.
 exl-id: 7636664b-488a-46f7-8d19-a9faac126aec
 feature: Personalization, Integration, Release Notes
-source-git-commit: a2d5e695b3f6491d051da77bfc0fb596f5411c92
+source-git-commit: c736647fc148a02803bc458b16ff1f3419dc1fe1
 workflow-type: tm+mt
-source-wordcount: '877'
+source-wordcount: '896'
 ht-degree: 0%
 
 ---
@@ -72,20 +72,28 @@ AEM ![Nuevo](../assets/new.svg) - Se agregó compatibilidad con un [frente de ti
 
 +++
 
-## 3.1.2
+## 3.1.3.
+
+_22 de julio de 2024_
 
 [!BADGE Compatibilidad]{type=Informative tooltip="Compatibilidad"}
 
+![Corrección](../assets/new.svg): se ha actualizado el metapaquete del conector de Experience Platform para quitar los exportadores e indexadores de datos no utilizados.
+
+## 3.1.2
+
 _5 de junio de 2024_
+
+[!BADGE Compatibilidad]{type=Informative tooltip="Compatibilidad"}
 
 ![Corrección](../assets/new.svg) - Se corrigió un problema en el cual se estaba usando un formato de fecha incorrecto al iniciar una [sincronización histórica](connect-data.md#specify-order-history-date-range).
 ![Corrección](../assets/new.svg): se ha corregido un problema por el que el evento [startCheckout](events.md#startcheckout) no se enviaba en Adobe Commerce 2.4.7.
 
 ## 3.1.1.
 
-[!BADGE Compatibilidad]{type=Informative tooltip="Compatibilidad"}
-
 _4 de abril de 2024_
+
+[!BADGE Compatibilidad]{type=Informative tooltip="Compatibilidad"}
 
 ![Nuevo](../assets/new.svg) - Se agregó compatibilidad con PHP 8.3 para todas las extensiones de [!DNL Data Connection].
 ![Nuevo](../assets/new.svg) - Se ha agregado un artículo sobre cómo [integrar](mobile-sdk-epc.md) el SDK de Adobe Experience Platform Mobile con Commerce.
@@ -132,7 +140,6 @@ _27 de junio de 2023_
 ![Corrección](../assets/fix.svg) - Configuraciones actualizadas de la directiva de seguridad de contenido.
 ![Corrección](../assets/fix.svg): Se ha corregido la compatibilidad con eventos de back office en la versión 2.4.7 de Commerce.
 ![Nuevo](../assets/new.svg) - Se agregó un mensaje de notificación sobre la invalidación de la caché al guardar los cambios en el formulario de extensión [!DNL Data Connection].
-
 
 ## 3.0.0-beta1 (solo interno)
 
