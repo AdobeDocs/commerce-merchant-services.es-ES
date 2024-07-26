@@ -3,9 +3,9 @@ title: 'Límites y límites'
 description: Conozca los límites y limitaciones de [!DNL Live Search] para asegurarse de que cumple con las necesidades de su empresa.
 role: Admin, Developer
 exl-id: ad6737f9-6ecd-4d82-89e7-d95425e4ba53
-source-git-commit: 2d383d6b0d9e7b915fac32f90b25f1640dcab6cf
+source-git-commit: 61ebda0015c6d5a7c0bb08f7aae9a4593bca84a4
 workflow-type: tm+mt
-source-wordcount: '724'
+source-wordcount: '748'
 ht-degree: 0%
 
 ---
@@ -58,7 +58,7 @@ Cuando se trata de buscar sitios, Adobe Commerce le da opciones. Revise los lím
 ## Sinónimos
 
 - [!DNL Live Search] puede administrar hasta 200 [sinónimos](synonyms.md) por vista de tienda.
-- Los sinónimos de varias palabras están limitados a 20 por vista de tienda.
+- Es posible que los sinónimos de varias palabras no siempre funcionen según lo esperado. Asegúrese de probar estos sinónimos en el entorno de ensayo antes de utilizarlos en la producción, ya que pueden tener un efecto adverso en la relevancia.
 
 ## Comercialización por categorías
 
