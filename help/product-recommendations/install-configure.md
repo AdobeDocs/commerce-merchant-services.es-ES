@@ -3,9 +3,9 @@ title: Instalar y configurar
 description: Obtenga información sobre cómo instalar, actualizar y desinstalar  [!DNL Product Recommendations].
 exl-id: fa599f72-1064-41da-ac54-2b3a3c16a1fe
 role: Admin, Developer
-source-git-commit: 0b0bc88c13d8c90a6209d9156f6fd6a7ce040f72
+source-git-commit: 3a5dec9422aa34eeb204b9fe6f089551e4038f1c
 workflow-type: tm+mt
-source-wordcount: '560'
+source-wordcount: '554'
 ht-degree: 0%
 
 ---
@@ -37,7 +37,7 @@ composer require magento/product-recommendations
 composer require magento/module-page-builder-product-recommendations
 ```
 
-Al habilitar [!DNL Product Recommendations] en Page Builder, puede agregar una [unidad de recomendación](https://experienceleague.adobe.com/docs/commerce-admin/page-builder/add-content/recommendations.html) activa y existente a cualquier contenido creado en Page Builder, como páginas, bloques y bloques dinámicos.
+Al habilitar [!DNL Product Recommendations] en Page Builder, puede agregar una [unidad de recomendación](https://experienceleague.adobe.com/en/docs/commerce-admin/page-builder/add-content/recommendations) activa y existente a cualquier contenido creado en Page Builder, como páginas, bloques y bloques dinámicos.
 
 Consulte [Uso de [!DNL Product Recommendations] con contenido de Page Builder](page-builder.md) para obtener más instrucciones.
 
@@ -51,13 +51,13 @@ composer require magento/module-visual-product-recommendations
 
 ## Configurar [!DNL Product Recommendations] {#configure}
 
-1. Después de instalar el módulo `magento/product-recommendations`, configure [Commerce Services Connector](https://experienceleague.adobe.com/docs/commerce-admin/config/services/saas.html) especificando las claves de API y seleccionando un espacio de datos SaaS.
+1. Después de instalar el módulo `magento/product-recommendations`, configure [Commerce Services Connector](../landing/saas.md) especificando las claves de API y seleccionando un espacio de datos SaaS.
 
    La configuración de esta conexión permite la sincronización de datos y la comunicación entre la instancia de Commerce, el servicio de catálogo y otros servicios de soporte. La sincronización de datos está controlada por la [extensión de exportación de datos SaaS](../data-export/overview.md).
 
-1. Para garantizar que la exportación del catálogo se pueda ejecutar correctamente, confirme que los trabajos [cron](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs.html) y los [indexadores](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/manage-indexers.html) se están ejecutando y que el indexador `Product Feed` está establecido en `Update by Schedule`.
+1. Para garantizar que la exportación del catálogo se pueda ejecutar correctamente, confirme que los trabajos [cron](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs) y los [indexadores](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/manage-indexers) se están ejecutando y que el indexador `Product Feed` está establecido en `Update by Schedule`.
 
-Después de vincular correctamente la aplicación de Commerce a los servicios de Commerce y especificar el espacio de datos SaaS, se inicia la sincronización del catálogo. Entonces puedes [verificar](verify.md) que los datos de comportamiento se están enviando a tu tienda.
+Después de vincular correctamente la aplicación de Commerce a los servicios de Commerce y especificar el [espacio de datos SaaS](../landing/saas.md#saas-configuration), se inicia la sincronización del catálogo. Entonces puedes [verificar](verify.md) que los datos de comportamiento se están enviando a tu tienda.
 
 ## Monitorización y solución de problemas de sincronización de datos
 
@@ -107,7 +107,7 @@ composer update --with-dependencies magento/product-recommendations magento/modu
 
 >[!NOTE]
 >
-> En las versiones 3.x.x de Product Recommendations, solo se necesitaba una sola clave de API. En las versiones 4.x.x y posteriores, debe proporcionar claves de API públicas y privadas de producción, así como claves de API públicas y privadas de zona protegida. Si no proporciona ambos pares de claves API, no podrá acceder a la función de Product Recommendations en el Administrador. La recopilación de datos, sin embargo, continuará en su tienda y las recomendaciones existentes se seguirán mostrando a sus compradores.
+> En las versiones 3.x.x de Product Recommendations, solo se necesitaba una sola clave de API. En las versiones 4.x.x y superiores, debe proporcionar claves de API públicas y privadas para los entornos de zona protegida y producción. Si no proporciona ambos pares de claves API, no podrá acceder a la función de Product Recommendations en el Administrador. Sin embargo, la recopilación de datos continúa en su tienda y las recomendaciones existentes se siguen mostrando a los compradores.
 
 ## Cortafuegos
 
@@ -115,4 +115,4 @@ Para permitir que Product Recommendations pase a través de un firewall, agregue
 
 ## Desinstalar [!DNL Product Recommendations] {#uninstall}
 
-Si es necesario, puede [desinstalar](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/tutorials/uninstall-modules.html) el módulo de recomendaciones de productos.
+Si es necesario, puede [desinstalar](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/uninstall-modules) el módulo de recomendaciones de productos.

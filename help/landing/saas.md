@@ -4,16 +4,16 @@ description: Obtenga información sobre cómo integrar la instancia de Adobe Com
 exl-id: 28027a83-449b-4b96-b926-a7bfbfd883d8
 feature: Services, Saas
 role: Admin, User
-source-git-commit: 1089ba268866ef3097a909440a06587dc1987fc5
+source-git-commit: 3a5dec9422aa34eeb204b9fe6f089551e4038f1c
 workflow-type: tm+mt
-source-wordcount: '1026'
+source-wordcount: '1023'
 ht-degree: 0%
 
 ---
 
 # [!DNL Commerce Services Connector]
 
-Algunas características de Adobe Commerce y Magento Open Source utilizan [!DNL Commerce Services] y se implementan como SaaS (software como servicio). Para utilizar estos servicios, debe conectar su instancia de [!DNL Commerce] mediante las claves de API de producción y de zona protegida, y especificar el espacio de datos en la [configuración](https://experienceleague.adobe.com/docs/commerce-admin/config/services/saas.html). Solo es necesario configurar la conexión una vez para cada instancia de Commerce.
+Algunas características de Adobe Commerce y Magento Open Source utilizan [!DNL Commerce Services] y se implementan como SaaS (software como servicio). Para utilizar estos servicios, debe conectar su instancia de [!DNL Commerce] mediante las claves de API de producción y de zona protegida, y especificar el espacio de datos en la [configuración](#saas-configuration). Solo es necesario configurar la conexión una vez para cada instancia de Commerce.
 
 ## Servicios disponibles {#availableservices}
 
@@ -24,7 +24,7 @@ A continuación se enumeran las características de [!DNL Commerce] a las que pu
 | [[!DNL Product Recommendations]](/help/product-recommendations/overview.md) con tecnología de Adobe Sensei | Adobe Commerce |
 | [[!DNL Live Search]](/help/live-search/overview.md) con tecnología de Adobe Sensei | Adobe Commerce |
 | [[!DNL Payment Services]](/help/payment-services/overview.md) | ADOBE COMMERCE y MAGENTO OPEN SOURCE |
-| [[!DNL Site-Wide Analysis Tool]](https://experienceleague.adobe.com/docs/commerce-operations/tools/site-wide-analysis-tool/intro.html) | Adobe Commerce |
+| [[!DNL Site-Wide Analysis Tool]](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/site-wide-analysis-tool/intro) | Adobe Commerce |
 | [[!DNL Catalog Service]](/help/catalog-service/overview.md) | Adobe Commerce |
 | [[!DNL Data Connection]](/help/data-connection/overview.md) | Adobe Commerce |
 
@@ -50,7 +50,7 @@ Además, los integradores de soluciones también tienen derecho a utilizar [!DNL
 
 ### Generar las claves API de producción y de zona protegida {#genapikey}
 
-1. Inicie sesión en su cuenta de [!DNL Commerce] en [https://account.magento.com](https://account.magento.com/){:target=&quot;_blank&quot;}.
+1. Inicie sesión en su cuenta de [!DNL Commerce] en [https://account.magento.com](https://account.magento.com/customer/account/login){:target=&quot;_blank&quot;}.
 
 1. En la ficha **Magento**, seleccione **Portal de API** en la barra lateral.
 
@@ -72,13 +72,17 @@ Además, los integradores de soluciones también tienen derecho a utilizar [!DNL
 
 ## Configuración de SaaS {#saasenv}
 
-Las instancias de [!DNL Commerce] deben configurarse con un proyecto SaaS y un espacio de datos SaaS para que [!DNL Commerce Services] pueda enviar datos a la ubicación correcta. Un proyecto SaaS agrupa todos los espacios de datos SaaS. Los espacios de datos SaaS se usan para recopilar y almacenar datos que permiten que [!DNL Commerce Services] funcione. Algunos de estos datos pueden exportarse desde la instancia [!DNL Commerce] y otros pueden recopilarse a partir del comportamiento del comprador en la tienda. Estos datos se conservan para proteger el almacenamiento en la nube.
+Las instancias de [!DNL Commerce] deben configurarse con un proyecto SaaS y un espacio de datos SaaS para que [!DNL Commerce Services] pueda enviar datos a la ubicación correcta. Un proyecto SaaS agrupa todos los espacios de datos SaaS. Los espacios de datos SaaS se utilizan para recopilar y almacenar datos que permiten que [!DNL Commerce Services] funcione. Algunos de estos datos pueden exportarse desde la instancia [!DNL Commerce] y otros pueden recopilarse a partir del comportamiento del comprador en la tienda. Estos datos se conservan para proteger el almacenamiento en la nube.
 
 Para [!DNL Product Recommendations], el espacio de datos de SaaS contiene datos de catálogo y de comportamiento. Puede apuntar una instancia de [!DNL Commerce] a un espacio de datos SaaS [seleccionándola](https://docs.magento.com/user-guide/configuration/services/saas.html) en la configuración de [!DNL Commerce].
 
 >[!WARNING]
 >
 > Utilice su espacio de datos SaaS de producción solamente en la instalación de producción [!DNL Commerce] para evitar conflictos de datos. De lo contrario, se corre el riesgo de contaminar los datos del sitio de producción con datos de prueba, lo que provoca retrasos en la implementación. Por ejemplo, los datos del producto de producción se podrían sobrescribir por error a partir de los datos de ensayo, como las direcciones URL de ensayo.
+
+### Aprovisionamiento de espacio de datos SaaS
+
+Todos los comerciantes pueden acceder a un espacio de datos de producción y a dos espacios de datos de prueba por proyecto SaaS. Para los proyectos de Adobe Commerce Cloud Pro con varios entornos de ensayo, puede solicitar espacios de datos de prueba adicionales para cada entorno de ensayo [enviando una solicitud de soporte técnico](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/overview).
 
 ### Seleccionar o crear un proyecto SaaS {#createsaasenv}
 
@@ -92,17 +96,15 @@ Para seleccionar o crear un proyecto SaaS, solicite la clave de API [!DNL Commer
 
    Si no ve la sección **[!UICONTROL Commerce Services Connector]** en la configuración de [!DNL Commerce], instale los módulos de [!DNL Commerce] para el [[!DNL Commerce] servicio](#availableservices) que desee. Además, asegúrese de que el paquete `magento/module-services-id` está instalado.
 
-1. Pegue los valores de clave en las secciones _Claves de API para espacio aislado_ y _Claves de API de producción_.
+1. En las secciones _[!UICONTROL Sandbox API Keys]_y_[!UICONTROL Production API Keys]_, pegue los valores de clave.
 
-   Las claves privadas deben incluir `----BEGIN PRIVATE KEY---` al principio de la clave y `----END PRIVATE KEY----` al final de la clave privada.
+   Las claves privadas deben incluir `----BEGIN PRIVATE KEY---` al principio de la clave y `----END PRIVATE KEY----` al final de la clave.
 
 1. Haga clic en **Guardar**.
 
 Cualquier proyecto SaaS asociado con sus claves aparecerá en el campo **Proyecto** de la sección **Identificador SaaS**.
 
 1. Si no existen proyectos SaaS, haga clic en **Crear proyecto**. A continuación, en el campo **Proyecto**, escriba un nombre para su proyecto SaaS.
-
-   Todos los comerciantes pueden acceder a un espacio de datos de producción y a dos espacios de datos de prueba por proyecto SaaS. En los proyectos de On Cloud Pro con varios entornos de ensayo, puede solicitar espacios de datos de prueba adicionales para cada entorno de ensayo [enviando una solicitud de asistencia](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/).
 
 1. Seleccione el **espacio de datos** que se usará para la configuración actual de su almacén de [!DNL Commerce].
 
