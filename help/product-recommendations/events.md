@@ -3,9 +3,9 @@ title: Recopilar datos
 description: Descubra cómo los eventos recopilan datos para las recomendaciones de productos.
 exl-id: b827d88c-327f-4986-8239-8f1921d8383c
 feature: Services, Recommendations, Eventing
-source-git-commit: 7ed9321a2f4e58a7476aa91e74611fe896e1a7b1
+source-git-commit: 67296ea42bfddb10b0c86cb1ca47324f5fec7825
 workflow-type: tm+mt
-source-wordcount: '417'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -34,15 +34,16 @@ El [Recopilador de eventos de Adobe Commerce Storefront](https://developer.adobe
 | `view` | La unidad de recomendación se vuelve visible en la página, por ejemplo, desplazándose hasta la vista. | Sí |
 
 Se requieren los siguientes eventos para rellenar correctamente el panel.
-| Columna del panel | Eventos    | Campo de combinación  |
+
+| Columna del panel | Eventos | Campo de combinación |
 | ---------------- | --------- | ----------- |
-| Impresiones      |`page-view`, `recs-request-sent`, `recs-response-received`, `recs-unit-render` | unitId  |
-| Vistas            |`page-view`, `recs-request-sent`, `recs-response-received`, `recs-unit-render`, `recs-unit-view` | unitId  |
-| Clics           |`page-view`, `recs-request-sent`, `recs-response-received`, `recs-item-click`, `recs-add-to-cart-click`    | unitId  |
-| Ingresos          |`page-view`, `recs-request-sent`, `recs-response-received`, `recs-item-click`, `recs-add-to-cart-click`, `place-order` | unitId, sku |
-| Ingresos LT       |`page-view`, `recs-request-sent`, `recs-response-received`, `recs-item-click`, `recs-add-to-cart-click`, `place-order` | unitId, sku |
-| CTR              |`page-view`, `recs-request-sent`, `recs-response-received`, `recs-unit-render`, `recs-item-click`, `recs-add-to-cart-click`  | unitId, sku |
-| vCTR             |`page-view`, `recs-request-sent`, `recs-response-received`, `recs-unit-render`, `recs-unit-view`, `recs-item-click`, `recs-add-to-cart-click` | unitId, sku |
+| Impresiones | `page-view`, `recs-request-sent`, `recs-response-received`, `recs-unit-render` | unitId |
+| Vistas | `page-view`, `recs-request-sent`, `recs-response-received`, `recs-unit-render`, `recs-unit-view` | unitId |
+| Clics | `page-view`, `recs-request-sent`, `recs-response-received`, `recs-item-click`, `recs-add-to-cart-click` | unitId |
+| Ingresos | `page-view`, `recs-request-sent`, `recs-response-received`, `recs-item-click`, `recs-add-to-cart-click`, `place-order` | unitId, sku |
+| Ingresos LT | `page-view`, `recs-request-sent`, `recs-response-received`, `recs-item-click`, `recs-add-to-cart-click`, `place-order` | unitId, sku |
+| CTR | `page-view`, `recs-request-sent`, `recs-response-received`, `recs-unit-render`, `recs-item-click`, `recs-add-to-cart-click` | unitId, sku |
+| vCTR | `page-view`, `recs-request-sent`, `recs-response-received`, `recs-unit-render`, `recs-unit-view`, `recs-item-click`, `recs-add-to-cart-click` | unitId, sku |
 
 Si su tienda está implementada con PWA Studio, consulte la [documentación del PWA](https://developer.adobe.com/commerce/pwa-studio/integrations/product-recommendations/). Si usa tecnología de front-end personalizada como React o Vue JS, consulte la guía del usuario para aprender a integrar [Product Recommendations en un entorno sin encabezado](headless.md).
 
