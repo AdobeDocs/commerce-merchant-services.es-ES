@@ -4,9 +4,9 @@ description: Obtenga información sobre cómo crear un esquema, un conjunto de d
 exl-id: 4401bbe7-1ccc-4349-a998-9e9ee9db590f
 role: Admin, Developer
 feature: Personalization, Integration
-source-git-commit: 99d1097b98ea18c8a317613b2366a97db131432f
+source-git-commit: 90ddfdd41958b254fc0c2f3e0891385193f1bb9c
 workflow-type: tm+mt
-source-wordcount: '978'
+source-wordcount: '1073'
 ht-degree: 0%
 
 ---
@@ -63,17 +63,36 @@ En esta sección, aprenderá a actualizar el esquema existente o a crear un esqu
 
    El conjunto de datos reenvía los datos recopilados al conjunto de datos. Los datos se representan en el conjunto de datos en función del esquema seleccionado.
 
-1. **Beta** (opcional): puede utilizar atributos personalizados si desea pasar datos de evento de back office personalizados de su instancia de Commerce al Experience Platform. Esta función está en versión beta. Si desea unirse al programa beta, envíe una solicitud a [dataconnection@adobe.com](mailto:dataconnection@adobe.com). En su solicitud, incluya lo siguiente:
-
-   - Su [ID de organización de Adobe](https://experienceleague.adobe.com/docs/core-services/interface/administration/organizations.html#concept_EA8AEE5B02CF46ACBDAD6A8508646255). Por ejemplo `organization_id@AdobeOrg`.
-   - Lista de atributos personalizados de nivel de pedido.
-   - Lista de atributos de nivel de artículo de pedido.
-
-   El equipo de Adobe Commerce se pondrá en contacto con usted para proporcionarle más información y los pasos siguientes.
-
 Con los esquemas, conjuntos de datos y flujos de datos configurados para los datos de comportamiento y de back office, puede [configurar](connect-data.md#data-collection) su instancia de Commerce para recopilar y enviar esos datos al Experience Platform.
 
-Para incluir la información de perfil del comprador, consulte la siguiente sección.
+Para incluir la información de perfil del comprador, consulte [datos de evento de perfil de serie temporal](#time-series-profile-event-data).
+
+### Añadir atributos personalizados
+
+Puede utilizar atributos personalizados si desea pasar datos de evento de back office personalizados de la instancia de Commerce al Experience Platform.
+
+Los atributos personalizados se admiten en dos niveles:
+
+- Nivel de pedido
+- Nivel de artículo de pedido
+
+>[!NOTE]
+>
+>Adobe Commerce admite atributos personalizados que tienen un tipo de datos de cadena o matriz de cadenas.
+
+1. Agregue y habilite un módulo adicional en la aplicación [!DNL Commerce]. Ver el siguiente [ejemplo](https://github.com/shiftedreality/beacon-backoffice-custom-events/blob/main/BeaconDemo/Plugin/ModifyOrder.php).
+
+   Debe modificar el código de ejemplo para exponer atributos personalizados adicionales. La implementación varía en función de dónde se almacenan estos atributos y la lógica necesaria para extraerlos.
+
+1. Amplíe el esquema XDM existente. Consulte la siguiente [guía](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/ui/resources/schemas#custom-fields-for-standard-groups) para crear atributos personalizados para los niveles de artículo Pedido y Pedido. El campo ID de inquilino se genera dinámicamente, pero la estructura del campo debe ser similar al ejemplo proporcionado.
+
+   >[!IMPORTANT]
+   >
+   >Los atributos personalizados de XDM deben coincidir con los atributos enviados desde [!DNL Commerce].
+
+1. Asegúrese de que la secuencia de datos asociada con el esquema XDM sea la misma especificada en la pestaña [Recopilación de datos](connect-data.md#data-collection).
+
+1. Haga clic en **[!UICONTROL Save]** en la ficha **Recopilación de datos** para recuperar los atributos personalizados que haya especificado.
 
 ## Datos de evento de perfil de series temporales
 
