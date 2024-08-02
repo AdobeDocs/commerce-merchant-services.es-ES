@@ -3,9 +3,9 @@ title: "[!DNL Payment Services] notas de la versión"
 description: Revise las notas de la versión para obtener información acerca de todas las  [!DNL Payment Services] versiones.
 exl-id: 104aa2c7-7735-4ac2-8ed1-a03cd9911273
 feature: Payments, Release Notes
-source-git-commit: 5481b19f95908b441e12c4700c51649921dabb08
+source-git-commit: c02c7c8700c9aa2157b296b8995c05805e371941
 workflow-type: tm+mt
-source-wordcount: '2576'
+source-wordcount: '2787'
 ht-degree: 0%
 
 ---
@@ -87,6 +87,26 @@ _28 de junio de 2021_
 
 +++
 
+## Versión 2.7.0
+
+_2 de agosto de 2024_
+
+[!BADGE Compatible]{type=Informative tooltip="Admitido"}
+
+![Nuevo](../assets/new.svg)<!-- PAY-4844 --> [!DNL Payment Services] ahora admite [datos de elemento de línea en el nivel de pedido](line-items.md). Esta función permite a los comerciantes ver información detallada sobre los artículos de un pedido, como detalles del producto, cantidad y precio (incluidos impuestos, descuentos y otra información relevante).
+
+![Nuevo](../assets/new.svg)<!-- PAY-5380 --> [!DNL Payment Services] mejora la configuración de [en la experiencia del administrador](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/payment-services/configure/configure-admin#general-configuration) para los comerciantes con el fin de lograr un proceso de incorporación más fácil e intuitivo. Esta característica permite a los comerciantes restablecer sus [!DNL Payment Services] ID.
+
+![Nuevo](../assets/new.svg)<!-- PAY-5255 --> [!DNL Payment Services] incluye una [notificación de error en el pago](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/point-of-purchase/checkout/checkout-payment-failed-emails). Esta función proporciona notificaciones casi en tiempo real de errores de pago a los comerciantes, de modo que los pedidos se pueden guardar poniéndose en contacto con el comprador y mejorando potencialmente la resolución del problema.
+
+![Corrección](../assets/fix.svg)<!-- PAY-5469 --> Se ha corregido un problema por el que Safari bloqueaba la ventana emergente de **Google Pay**. Los compradores ahora pueden completar sus transacciones de pago de Google Pay en Safari.
+
+![Corregir](../assets/fix.svg)<!-- PAY-5492 --> Se corrigió un problema que se producía cuando un comerciante agrega términos y condiciones personalizados a la página de cierre de compra. Durante un [pago y envío exprés](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/payment-services/payments-checkout/payments-options#standard-vs-advanced-payments-experience), un comprador ahora puede aceptar estos términos y condiciones para completar el pago y envío sin problemas.
+
+![Corrección](../assets/fix.svg)<!-- PAY-5532 --> mejoró las funciones de recogida en tienda (ISPU) con **InstantPurchase**. Los **métodos de entrega ISPU** ya no se muestran cuando un comprador realiza un pedido con **InstantPurchase**.
+
+![Corrección](../assets/fix.svg)<!-- PAY-5606 --> Se ha corregido un problema en el selector de país de **Página de configuración** que se producía cuando el país del comerciante está establecido en **Alemania**.
+
 ## Versión 2.6.0
 
 _4 de junio de 2024_
@@ -137,7 +157,7 @@ _20 de marzo de 2024_
 
 [!BADGE Compatible]{type=Informative tooltip="Admitido"}
 
-![Los nuevos comerciantes](../assets/new.svg)<!-- PAY-4868 --> pueden [configurar Google Pay correctamente durante toda la experiencia de compra](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/payments-checkout/payments-options.html), de forma similar a otros botones de pago en[!DNL Payment Services] mediante el administrador.
+![Los nuevos comerciantes](../assets/new.svg)<!-- PAY-4868 --> pueden [configurar Google Pay correctamente durante toda la experiencia de compra](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/payments-checkout/payments-options.html), de forma similar a otros botones de pago en [!DNL Payment Services] a través del administrador.
 
 ![Nuevo](../assets/new.svg)<!-- PAY-4381 --> [Payment Services admite Google Pay a través de GraphQL](https://developer.adobe.com/commerce/webapi/graphql/payment-services/), lo que permite a los comerciantes tener una experiencia Commerce sin encabezado con el método de pago Google Pay.
 
