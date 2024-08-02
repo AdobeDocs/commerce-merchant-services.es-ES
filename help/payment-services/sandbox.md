@@ -3,9 +3,9 @@ title: Configuración de la zona protegida de pruebas
 description: Usa una cuenta de zona protegida de PayPal para usar  [!DNL Payment Services] en modo de prueba.
 exl-id: 99c14b4e-e6cf-48f9-9546-5c0d5c71464d
 feature: Payments, Checkout, Configuration, Install
-source-git-commit: bfb49e3602cc80f97817a8fd8d7c4684a3a3bcd2
+source-git-commit: 5481b19f95908b441e12c4700c51649921dabb08
 workflow-type: tm+mt
-source-wordcount: '582'
+source-wordcount: '614'
 ht-degree: 0%
 
 ---
@@ -81,5 +81,7 @@ Esta característica es `off` de manera predeterminada. Cuando lo habilita, los 
 >Esta configuración no se aplica a otros flujos de cierre de compra.
 
 ## Realizar pruebas en un entorno limitado
+
+Se recomienda encarecidamente que utilice espacios de datos de prueba para entornos de integración y ensayo, y que pruebe Pagos en producción, con tarjetas de crédito y bancos reales, antes de exponer esta funcionalidad a los compradores.
 
 Consulte [Probar y validar](test-validate.md) para obtener más información.
