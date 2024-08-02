@@ -5,9 +5,9 @@ role: Admin, User
 level: Intermediate
 exl-id: e1a3269d-bdf9-4b0f-972f-e8a0ef469503
 feature: Payments, Checkout, Configuration
-source-git-commit: 0dc370409ace6ac6b0a56511cd0071cf525620f1
+source-git-commit: 7a886679ad00f9b29e6ffd7d8bc8e2f6fc0082d4
 workflow-type: tm+mt
-source-wordcount: '1652'
+source-wordcount: '1702'
 ht-degree: 0%
 
 ---
@@ -24,20 +24,18 @@ Puede habilitar [!DNL Payment Services] para su tienda y su _[!UICONTROL Merchan
 
 1. En la barra lateral _Admin_, vaya a **[!UICONTROL Stores]** > _[!UICONTROL Settings]_>**[!UICONTROL Configuration]**.
 1. En el panel izquierdo, expanda **[!UICONTROL Sales]** y elija **[!UICONTROL Payment Methods]**.
-
-   ![Vista de métodos](assets/methods-view.png){width="400" zoomable="yes"}
-
-1. Establezca el campo _[!UICONTROL Merchant Country]_en_[!UICONTROL Merchant Location]_.
+1. Establezca el campo _[!UICONTROL Merchant Country]_en_[!UICONTROL Merchant Location]_. Si no se especifica un(a) _[!UICONTROL Merchant Country]_, se utiliza el(la)_[!UICONTROL Default Country]_ de la configuración general.
 1. Expanda la sección _[!UICONTROL FEATURED ADOBE PAYMENT SOLUTION]_para tener acceso a la sección_[!UICONTROL [!DNL Payment Services]]_.
 1. En la sección _[!UICONTROL [!DNL Payment Services]]_, expanda la sección_[!UICONTROL General Configuration]_.
 1. Para **Habilitar**, establézcalo en `Yes` para habilitar [!DNL Payment Services] en tu tienda.
 1. Para **Método**, establézcalo en `Sandbox` si todavía estás probando [!DNL Payment Services] para tu tienda o `Production` si estás listo para habilitar los pagos activos.
+1. Los valores de **[!UICONTROL Payment Services Sandbox ID]** y **[!UICONTROL Payment Services Production ID]** se rellenarán automáticamente una vez que configure [Commerce Services Connector](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/user-guides/integration-services/saas){target=_blank} y visite el panel [!DNL Payment Services] por primera vez. Haga esto para finalizar la incorporación para su zona protegida o entornos de producción. Estos valores asocian su ID de SaaS a [!DNL Payment Services].
 
    >[!WARNING]
    >
-   >Sus _[!UICONTROL Sandbox Merchant ID]_y_[!UICONTROL Production Merchant ID]_ se generan automáticamente y están presentes en sus respectivos campos cuando haya terminado la incorporación para la zona protegida o la producción. No elimine ni cambie estos ID.
+   > Si necesita cambiar el ID del espacio de datos en Commerce Services Connector, debe restablecer su ID de [!DNL Payment Services]. Haga clic en **Restablecer ID de servicios de pago** para restablecer sus ID de zona protegida o de producción. Si restablece sus [!DNL Payment Services] ID, debe incorporarse de nuevo.
 
-1. Para **Descriptor suave** (valores personalizados que se muestran en los extractos bancarios de las transacciones de los clientes para delimitar entre tiendas/marcas/catálogos), agregue el texto personalizado (hasta 22 caracteres) en el campo de texto, reemplazando `Custom descriptor` o el valor existente.
+1. Para **Descriptor suave** (valores personalizados que se muestran en los extractos bancarios de las transacciones de los clientes para delimitar entre tiendas/marcas/catálogos), agregue el texto personalizado (hasta 22 caracteres) en el campo de texto, reemplazando `Soft descriptor` o el valor existente.
 1. Haga clic en **[!UICONTROL Save Config]** para guardar los cambios.
 1. Vaya a **[!UICONTROL System]** > **[!UICONTROL Cache Management]** y, a continuación, haga clic en **[!UICONTROL Flush Cache]** para actualizar todas las cachés no válidas.
 
@@ -49,8 +47,8 @@ Puede habilitar [!DNL Payment Services] para su tienda y su _[!UICONTROL Merchan
 |---|---|---|
 | [!UICONTROL Enable] | sitio web | Habilite o deshabilite [!DNL Payment Services] para su sitio web. Opciones: `[!UICONTROL Yes]` / `[!UICONTROL No]` |
 | [!UICONTROL Method] | vista de tienda | Defina el método o el entorno para su tienda. Opciones: [!UICONTROL Sandbox] / [!UICONTROL Production] |
-| [!UICONTROL Sandbox Merchant ID] | vista de tienda | El ID de comerciante de la zona protegida, que se genera automáticamente durante la incorporación a la zona protegida. No cambie ni modifique este ID. |
-| [!UICONTROL Production Merchant ID] | vista de tienda | Su ID de comerciante de producción, que se genera automáticamente durante la incorporación a la zona protegida. No cambie ni modifique este ID. |
+| [!UICONTROL Payment Services Sandbox ID] | vista de tienda | El ID de comerciante de la zona protegida, que se genera automáticamente durante la incorporación a la zona protegida. |
+| [!UICONTROL Payment Services Production ID] | vista de tienda | Su ID de comerciante de producción, que se genera automáticamente durante la incorporación a la zona protegida. |
 | [!UICONTROL Soft Descriptor] | sitio web o vista de tienda | Añada un descriptor temporal a sus sitios web y vistas de tiendas para añadir información a las transacciones de clientes que delimitan marcas, tiendas o líneas de productos. |
 
 ## [!UICONTROL Credit Card Fields]
