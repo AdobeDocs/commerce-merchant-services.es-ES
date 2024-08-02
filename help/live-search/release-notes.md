@@ -3,9 +3,9 @@ title: "[!DNL Live Search] notas de la versión"
 description: "La información de la versión más reciente de  [!DNL Live Search]  de Adobe Commerce."
 exl-id: 2a581e43-35f5-48ce-9752-844430ccdebf
 feature: Services, Search, Release Notes
-source-git-commit: fe261bfaf5a64c9501bc5523d29f9b6a9fc1a6a2
+source-git-commit: 33ac4c2018e14c4379cab1438d6a5f11978796b6
 workflow-type: tm+mt
-source-wordcount: '1966'
+source-wordcount: '1993'
 ht-degree: 0%
 
 ---
@@ -54,6 +54,14 @@ _27 de octubre de 2023_
 
 ![Nuevo](../assets/new.svg) El widget PLP [!DNL Live Search] ahora admite muestras de color.
 
+## [!DNL Live Search] 4.2.1 {#421}
+
+_31 de julio de 2024_
+
+[!BADGE Compatible]{type=Informative tooltip="Admitido"}
+
+![Corregir](../assets/fix.svg) Se corrigió un problema en el cual algunos scripts no se cargaban en la página de cierre de compra.
+![Corrección](../assets/fix.svg) Se ha corregido una versión de dependencia en el archivo `composer.json`.
 
 ## [!DNL Live Search] 4.2.0 {#420}
 
