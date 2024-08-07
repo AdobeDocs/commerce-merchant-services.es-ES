@@ -4,10 +4,10 @@ user-guide-description: "Esta guía proporciona instrucciones detalladas para us
 breadcrumb-title: “Guía de [!DNL Live Search]”
 role: Admin
 feature: Services, Search
-source-git-commit: 0b0bc88c13d8c90a6209d9156f6fd6a7ce040f72
+source-git-commit: 2e13908ff96259bb707b6d0f897206bcd2059386
 workflow-type: tm+mt
-source-wordcount: '80'
-ht-degree: 10%
+source-wordcount: '82'
+ht-degree: 9%
 
 ---
 
@@ -17,6 +17,7 @@ ht-degree: 10%
 - [Instalar](install.md)
 - [Configuración de Live Search](workspace.md)
 - [Límites y límites](boundaries-limits.md)
+- [Prácticas recomendadas](best-practice.md)
 - [Notas de la versión](release-notes.md)
 - Tienda {#live-search-storefront}
    - [Widgets de tienda](storefront-widgets.md)

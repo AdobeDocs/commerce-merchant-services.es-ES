@@ -2,9 +2,9 @@
 title: "Indexando"
 description: '"Descubra cómo  [!DNL Live Search] indexa las propiedades de atributos de productos".'
 exl-id: 04441e58-ffac-4335-aa26-893988a89720
-source-git-commit: 4978bdb5549f5df911863a23fdfbfc9ab9ad05df
+source-git-commit: 920324dbad62adaee5c7db688e59398557e03663
 workflow-type: tm+mt
-source-wordcount: '587'
+source-wordcount: '586'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ Las propiedades de atributos del producto (metadatos) determinan:
 
 El ámbito de los metadatos de atributo es `website/store/store view`.
 
-La API [!DNL Live Search] permite que un cliente ordene por cualquier atributo de producto que tenga la propiedad [storefront](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/product-attributes.html) `Use in Search` establecida en `Yes` en el administrador de Adobe Commerce. Cuando está habilitada, `Search Weight` y `Visible in Advanced Search` se pueden establecer para el atributo.
+La API [!DNL Live Search] permite que un cliente ordene por cualquier atributo de producto que tenga la propiedad [storefront](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/product-attributes.html) `Use in Search` establecida en `Yes` en el administrador de Adobe Commerce. Cuando está habilitado, se puede establecer `Search Weight` para el atributo.
 
 [!DNL Live Search] no indiza los productos eliminados o los establecidos en `Not Visible Individually`.
 

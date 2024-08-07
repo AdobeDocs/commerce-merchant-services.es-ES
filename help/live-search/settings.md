@@ -2,7 +2,7 @@
 title: "Configuración"
 description: "Configure las opciones del servicio  [!DNL Live Search] service."
 exl-id: a0b63116-4b8f-490c-a54e-e21f1b02b634
-source-git-commit: ba7e92d5b3aaabe6a8c71f86b0e4eab38aec9adf
+source-git-commit: 55b90f0025f69137d50fa1cacd80a2b655eb39dc
 workflow-type: tm+mt
 source-wordcount: '454'
 ht-degree: 0%
@@ -26,7 +26,7 @@ Puede especificar el número de grupos de intervalos de precios y cómo se distr
 1. En el Administrador, vaya a **Marketing** > *SEO y búsqueda* > **[!DNL Live Search]**.
 1. En el área de trabajo **Configuración** en *Faceteo de precios*, haga lo siguiente:
    * Escriba el **número de selecciones** o las agrupaciones de precios que estarán disponibles. Se pueden definir hasta 50 agrupaciones de precios.
-   * Escriba el **valor de intervalo** o el rango de precios de cada grupo. El valor máximo es 10 000.
+   * Escriba el **valor de intervalo** o el rango de precios de cada grupo. El valor máximo es 40 000 000.
 1. Haga clic en **Guardar**.
 
    La configuración actualizada tarda unos 15 minutos en estar disponible en la tienda.
