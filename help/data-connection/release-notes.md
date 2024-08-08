@@ -3,9 +3,9 @@ title: Notas de la versión
 description: La información de la versión más reciente para la extensión  [!DNL Data Connection] de Adobe Commerce.
 exl-id: 7636664b-488a-46f7-8d19-a9faac126aec
 feature: Personalization, Integration, Release Notes
-source-git-commit: 8dc6aa5ab2472d1282fbf65605fd511250816af7
+source-git-commit: f894a1a192f648df01e1f869bec9c8a4c66803e1
 workflow-type: tm+mt
-source-wordcount: '937'
+source-wordcount: '951'
 ht-degree: 0%
 
 ---
@@ -78,13 +78,21 @@ AEM ![Nuevo](../assets/new.svg) - Se agregó compatibilidad con un [frente de ti
 
 +++
 
+## 3.1.4.
+
+_9 de agosto de 2024_
+
+[!BADGE Compatibilidad]{type=Informative tooltip="Compatibilidad"}
+
+![Corrección](../assets/fix.svg): se ha actualizado el metapackage `experience-platform-connector` para quitar los exportadores e indexadores de datos adicionales que no se usan.
+
 ## 3.1.3.
 
 _22 de julio de 2024_
 
 [!BADGE Compatibilidad]{type=Informative tooltip="Compatibilidad"}
 
-![Corrección](../assets/fix.svg): se ha actualizado el metapaquete del conector de Experience Platform para quitar los exportadores e indexadores de datos no utilizados.
+![Corrección](../assets/fix.svg): se ha actualizado el metapackage `experience-platform-connector` para quitar los exportadores e indexadores de datos que no se usan.
 
 ## 3.1.2
 
