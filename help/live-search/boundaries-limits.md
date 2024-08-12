@@ -3,9 +3,9 @@ title: 'Límites y límites'
 description: Conozca los límites y limitaciones de [!DNL Live Search] para asegurarse de que cumple con las necesidades de su empresa.
 role: Admin, Developer
 exl-id: ad6737f9-6ecd-4d82-89e7-d95425e4ba53
-source-git-commit: 61ebda0015c6d5a7c0bb08f7aae9a4593bca84a4
+source-git-commit: b24b2f79c56d43a20f4e5a3367ac07d00e3aed55
 workflow-type: tm+mt
-source-wordcount: '748'
+source-wordcount: '767'
 ht-degree: 0%
 
 ---
@@ -54,6 +54,7 @@ Cuando se trata de buscar sitios, Adobe Commerce le da opciones. Revise los lím
 - La comercialización de categorías puede tener una regla por categoría.
 - El número máximo de condiciones por regla es 10.
 - El número máximo de eventos por regla es 25.
+- Para evitar resultados impredecibles en respuestas paginadas, el número de productos anclados no debe superar el tamaño de página solicitado.
 
 ## Sinónimos
 
