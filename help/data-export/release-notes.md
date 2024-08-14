@@ -4,9 +4,9 @@ description: La información de la versión más reciente de  [!DNL Data Export 
 feature: Services, Release Notes
 recommendations: noCatalog
 exl-id: 0c7aeeda-e8a6-4740-b466-0661a6d2df07
-source-git-commit: 11ea98069dcc6d06e9ab90add8239fef2c8edc7d
+source-git-commit: 38a4e795200e368e91cd3075c611656e852b73f1
 workflow-type: tm+mt
-source-wordcount: '570'
+source-wordcount: '629'
 ht-degree: 0%
 
 ---
@@ -82,7 +82,16 @@ La exportación de datos de ![New](../assets/new.svg) SaaS ahora almacena en cac
 
 ![Nuevo](../assets/new.svg) Se cambió el nombre de los trabajos cron de la fuente de exportación inmediata a `*_feed_resend_failed_items`.
 
-![Nuevo](../assets/new.svg) Se cambió el nombre de las tablas de registro de cambios y de fuentes de exportación inmediatas.
+![Nuevo](../assets/new.svg): se ha cambiado el nombre de las fuentes de exportación inmediatas, los identificadores de vista de indizador y las tablas de registro de cambios.
+- tablas de fuentes (e ID de vistas de indizador):
+   - `catalog_data_exporter_products` -> `cde_products_feed`
+   - `catalog_data_exporter_product_attributes` -> `cde_product_attributes_feed`
+   - `catalog_data_exporter_categories` -> `cde_categories_feed`
+   - `catalog_data_exporter_product_prices` -> `cde_product_prices_feed`
+   - `catalog_data_exporter_product_variants` -> `cde_product_variants_feed`
+   - `inventory_data_exporter_stock_status` -> `inventory_data_exporter_stock_status_feed`
+- nombres de tabla de registro de cambios: sigue el mismo patrón de nomenclatura que las tablas de fuentes, pero los nombres de tabla de registro de cambios agregan un sufijo `_cl`.  Por ejemplo `catalog_data_exporter_products_cl`-> `cde-products_feed_cl`
+Si tiene código personalizado que hace referencia a cualquiera de estas entidades, actualice las referencias con los nuevos nombres para asegurarse de que el código sigue funcionando correctamente.
 
 ![Corrección](../assets/fix.svg) Establezca el campo `modified_at` en los datos de fuente solo para las fuentes que lo requieran.
 
