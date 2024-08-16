@@ -5,9 +5,9 @@ role: Admin, User
 level: Intermediate
 exl-id: 108f2b24-39c1-4c87-8deb-d82ee1c24d55
 feature: Payments, Checkout, Configuration
-source-git-commit: 7a886679ad00f9b29e6ffd7d8bc8e2f6fc0082d4
+source-git-commit: 09944ccad182e7f83c722ca6619a414416015ab4
 workflow-type: tm+mt
-source-wordcount: '2404'
+source-wordcount: '2405'
 ht-degree: 0%
 
 ---
@@ -82,7 +82,7 @@ Puede agregar un(a) [!UICONTROL Soft Descriptor] a sus sitios web o a la configu
 | [!UICONTROL Enable] | sitio web | Habilite o deshabilite [!DNL Payment Services] para su sitio web. Opciones: [!UICONTROL Off] / [!UICONTROL On] |
 | [!UICONTROL Payment mode] | vista de tienda | Defina el método o el entorno para su tienda. Opciones: [!UICONTROL Sandbox] / [!UICONTROL Production] |
 | [!UICONTROL Payment Services Sandbox ID] | vista de tienda | El ID de comerciante de la zona protegida, que se genera automáticamente durante la incorporación a la zona protegida. |
-| [!UICONTROL Payment Services Production ID] | vista de tienda | Su ID de comerciante de producción, que se genera automáticamente durante la incorporación a la zona protegida. |
+| [!UICONTROL Payment Services Production ID] | vista de tienda | Su ID de comerciante de producción, que se genera automáticamente durante la incorporación de la producción (en directo). |
 | [!UICONTROL Soft Descriptor] | sitio web o vista de tienda | Añada un descriptor temporal a sus sitios web y vistas de tiendas para añadir información a las transacciones de clientes que delimitan marcas, tiendas o líneas de productos. La opción [!UICONTROL Use website] aplica cualquier descriptor flexible agregado en el nivel de sitio web. La opción [!UICONTROL Use default] aplica cualquier descriptor flexible agregado como predeterminado. |
 
 ## Configurar opciones de pago
