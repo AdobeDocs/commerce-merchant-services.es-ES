@@ -2,9 +2,9 @@
 title: Prácticas recomendadas '[!DNL Live Search]'
 description: Conozca las prácticas recomendadas para implementar  [!DNL Live Search] en su tienda.
 role: Admin, Developer
-source-git-commit: 88be2212f3a992e7a2d18bf1d5c2e8d5d2b64b80
+source-git-commit: 77d12a1294c87089ce806615f92bf89396bfc43b
 workflow-type: tm+mt
-source-wordcount: '2355'
+source-wordcount: '2349'
 ht-degree: 0%
 
 ---
@@ -38,9 +38,9 @@ El widget [!DNL Live Search] [[!DNL popover]](storefront-popover.md) habilita la
 
 Más información sobre el widget [ventana emergente](storefront-popover.md).
 
-### Sinónimos y ortografía
+### Sinónimos y errores ortográficos
 
-Incorpore sinónimos y errores ortográficos comunes para garantizar resultados de búsqueda completos. Además, puede ampliar la consulta de búsqueda para incluir palabras que los compradores podrían utilizar y que difieren de las palabras especificadas en el catálogo. Usted no quiere perder una venta porque alguien está buscando un &quot;sofá&quot;, mientras que su producto aparece como un &quot;sofá&quot;. Puede capturar una amplia gama de términos de búsqueda introduciendo todas las palabras posibles que los clientes podrían utilizar para encontrar sus productos. Puede [establecer sinónimos de una o dos maneras](synonyms-add.md#step-2-define-the-synonym-by-type) para mejorar los resultados.
+Live Search administra los errores ortográficos de forma predeterminada. Puede configurar sinónimos para incluir palabras que los compradores pueden utilizar y que difieren de las palabras especificadas en el catálogo. Usted no quiere perder una venta porque alguien está buscando un &quot;sofá&quot;, mientras que su producto aparece como un &quot;sofá&quot;. Puede capturar una amplia gama de términos de búsqueda introduciendo todas las palabras posibles que los clientes podrían utilizar para encontrar sus productos. Puede [establecer sinónimos de una o dos maneras](synonyms-add.md#step-2-define-the-synonym-by-type) para mejorar los resultados.
 
 #### Sugerencias para optimizar los sinónimos
 

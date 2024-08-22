@@ -3,9 +3,9 @@ title: 'Límites y límites'
 description: Conozca los límites y limitaciones de [!DNL Live Search] para asegurarse de que cumple con las necesidades de su empresa.
 role: Admin, Developer
 exl-id: ad6737f9-6ecd-4d82-89e7-d95425e4ba53
-source-git-commit: b24b2f79c56d43a20f4e5a3367ac07d00e3aed55
+source-git-commit: ffbb41ef2bc940982b4acb33623ef689542617c1
 workflow-type: tm+mt
-source-wordcount: '767'
+source-wordcount: '777'
 ht-degree: 0%
 
 ---
@@ -70,12 +70,13 @@ Cuando se trata de buscar sitios, Adobe Commerce le da opciones. Revise los lím
 ## Permisos B2B y de categoría
 
 - Los productos no se muestran si no se añaden a un catálogo compartido predeterminado.
-- Para restringir los grupos de clientes que utilizan permisos de catálogo:
-   - Los productos deben asignarse a la categoría Raíz.
+- Para restringir grupos de clientes que usen [permisos de categoría](https://experienceleague.adobe.com/docs/commerce-admin/catalog/categories/category-permissions):
+   - Los productos deben asignarse a la categoría raíz.
    - El grupo de clientes &quot;Sin sesión iniciada&quot; debe tener permisos de navegación &quot;Permitir&quot;.
-   - Para restringir productos al grupo de clientes &quot;Sin sesión iniciada&quot;, vaya a cada categoría y defina los permisos para cada grupo de clientes.
+   - Para restringir productos al grupo de clientes &quot;No se inició sesión&quot;, vaya a cada categoría y establezca permisos para cada [grupo de clientes](https://experienceleague.adobe.com/docs/commerce-admin/b2b/shared-catalogs/catalog-shared-manage).
 - En este momento no se admite la compatibilidad predeterminada con B2B con el widget PLP en el PWA Studio. Sin embargo, puede [usar la API](install.md#pwa-support) para implementar esta funcionalidad.
-- Las facetas de categoría de [!DNL Live Search] pueden mostrar categorías que no se pueden mostrar a un grupo de clientes específico.
+- Las facetas de categoría de [!DNL Live Search] pueden mostrar categorías que no se pueden mostrar a un [grupo de clientes](https://experienceleague.adobe.com/docs/commerce-admin/b2b/shared-catalogs/catalog-shared-manage) específico.
+- [!DNL Live Search] admite hasta 1000 grupos de clientes.
 
 ## [!DNL Storefront popover]
 
