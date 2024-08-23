@@ -4,9 +4,9 @@ description: Descubra cómo  [!DNL SaaS Data Export] recopila y sincroniza datos
 role: Admin, Developer
 recommendations: noCatalog
 exl-id: 530a6ed7-46ec-45fc-94e9-c850168e8aed
-source-git-commit: af9de40a717d2cb55a5f42483bd0e4cbcd913f64
+source-git-commit: 4b579b7ec7698f32b5f2254f20514cedbbb50cdd
 workflow-type: tm+mt
-source-wordcount: '770'
+source-wordcount: '822'
 ht-degree: 0%
 
 ---
@@ -92,3 +92,22 @@ La sincronización parcial y la sincronización de elementos con error de reinte
 - Compruebe que los indexadores se estén ejecutando desde [Admin](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/index-management) o mediante el comando `bin/magento indexer:info` de la CLI de Commerce.
 
 - Compruebe que los indizadores de las siguientes fuentes estén establecidos en `Update by Schedule`: Atributos de catálogo, Producto, Anulaciones de producto y Variante de producto. Puede comprobar los indizadores desde [Administración de índices](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/index-management) en el administrador o usando la CLI (`bin/magento indexer:show-mode | grep -i feed`).
+
+### Notificaciones del administrador de eventos para el registro de transferencia de datos
+
+En la versión 103.3.4 y posterior de, la exportación de datos de SaaS distribuye el evento `data_sent_outside` cuando se envían datos desde la instancia de Commerce a los servicios de Adobe Commerce.
+
+```php
+$this->eventManager->dispatch(
+   "data_sent_outside",
+   [
+       "timestamp" => time(),
+       "type" => $metadata->getFeedName(),
+       "data" => $data
+   ]
+);
+```
+
+>[!NOTE]
+>
+>Para obtener información sobre los eventos y cómo suscribirse a ellos, consulte [Eventos y observadores](https://developer.adobe.com/commerce/php/development/components/events-and-observers) en la documentación para desarrolladores de Adobe Commerce.
