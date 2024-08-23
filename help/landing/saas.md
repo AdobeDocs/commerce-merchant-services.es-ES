@@ -4,9 +4,9 @@ description: Obtenga información sobre cómo integrar la instancia de Adobe Com
 exl-id: 28027a83-449b-4b96-b926-a7bfbfd883d8
 feature: Services, Saas
 role: Admin, User
-source-git-commit: 3a5dec9422aa34eeb204b9fe6f089551e4038f1c
+source-git-commit: 34d4fdffbfaf85e28df4500298411258b2dab2c2
 workflow-type: tm+mt
-source-wordcount: '1023'
+source-wordcount: '1157'
 ht-degree: 0%
 
 ---
@@ -50,7 +50,7 @@ Además, los integradores de soluciones también tienen derecho a utilizar [!DNL
 
 ### Generar las claves API de producción y de zona protegida {#genapikey}
 
-1. Inicie sesión en su cuenta de [!DNL Commerce] en [https://account.magento.com](https://account.magento.com/customer/account/login){:target=&quot;_blank&quot;}.
+1. Inicie sesión en su cuenta de [!DNL Commerce] en [https://account.magento.com](https://account.magento.com/customer/account/login){:target="_blank"}.
 
 1. En la ficha **Magento**, seleccione **Portal de API** en la barra lateral.
 
@@ -79,10 +79,17 @@ Para [!DNL Product Recommendations], el espacio de datos de SaaS contiene datos 
 >[!WARNING]
 >
 > Utilice su espacio de datos SaaS de producción solamente en la instalación de producción [!DNL Commerce] para evitar conflictos de datos. De lo contrario, se corre el riesgo de contaminar los datos del sitio de producción con datos de prueba, lo que provoca retrasos en la implementación. Por ejemplo, los datos del producto de producción se podrían sobrescribir por error a partir de los datos de ensayo, como las direcciones URL de ensayo.
+> Si esto sucede, [envíe una solicitud de soporte técnico](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/overview) para solicitar la limpieza de datos.
 
 ### Aprovisionamiento de espacio de datos SaaS
 
-Todos los comerciantes pueden acceder a un espacio de datos de producción y a dos espacios de datos de prueba por proyecto SaaS. Para los proyectos de Adobe Commerce Cloud Pro con varios entornos de ensayo, puede solicitar espacios de datos de prueba adicionales para cada entorno de ensayo [enviando una solicitud de soporte técnico](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/overview).
+Todos los comerciantes de Adobe Commerce pueden acceder a un espacio de datos de producción y a dos espacios de datos de prueba por proyecto de SaaS.
+
+Puede utilizar los espacios de datos de prueba en cualquier entorno que no sea de producción, siempre que no utilice el mismo espacio de datos en varios entornos al mismo tiempo. Para utilizar el espacio de datos de prueba en un entorno diferente, realice una limpieza de datos antes de seleccionar y configurar el espacio de datos en ese entorno.
+
+Para los proyectos de Adobe Commerce Cloud Pro con varios entornos de ensayo, puede solicitar espacios de datos de prueba adicionales para cada entorno de ensayo [enviando una solicitud de soporte técnico](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/overview). Sin embargo, si solo tiene un entorno de ensayo y necesita espacios de datos de prueba adicionales, tiene las siguientes opciones:
+- Póngase en contacto con el equipo de éxito del cliente o con el administrador de éxito del cliente designado para solicitar un entorno de ensayo adicional. Hay un costo adicional involucrado.
+- [Envíe una solicitud de soporte técnico](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/overview) para obtener un espacio de datos de prueba adicional e indique la justificación comercial para el espacio de datos adicional. Esta solicitud está sujeta a aprobación.
 
 ### Seleccionar o crear un proyecto SaaS {#createsaasenv}
 
