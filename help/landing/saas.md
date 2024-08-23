@@ -4,9 +4,9 @@ description: Obtenga información sobre cómo integrar la instancia de Adobe Com
 exl-id: 28027a83-449b-4b96-b926-a7bfbfd883d8
 feature: Services, Saas
 role: Admin, User
-source-git-commit: 34d4fdffbfaf85e28df4500298411258b2dab2c2
+source-git-commit: bfb839c25a378eedd3a20fd01f12f7398c6568b9
 workflow-type: tm+mt
-source-wordcount: '1157'
+source-wordcount: '1213'
 ht-degree: 0%
 
 ---
@@ -105,7 +105,12 @@ Para seleccionar o crear un proyecto SaaS, solicite la clave de API [!DNL Commer
 
 1. En las secciones _[!UICONTROL Sandbox API Keys]_y_[!UICONTROL Production API Keys]_, pegue los valores de clave.
 
-   Las claves privadas deben incluir `----BEGIN PRIVATE KEY---` al principio de la clave y `----END PRIVATE KEY----` al final de la clave.
+   - Las claves privadas deben incluir `----BEGIN PRIVATE KEY---` al principio de la clave y `----END PRIVATE KEY----` al final de la clave.
+   - Si no dispone de una copia de las claves reales, solicítelas al propietario de la cuenta y, a continuación, introduzca los valores en la configuración.
+
+   >[!WARNING]
+   >
+   > Si agrega valores de clave consultando una copia de seguridad o instantánea de base de datos y pegando los valores en la configuración, se aplica una capa adicional de cifrado y las claves no funcionan.
 
 1. Haga clic en **Guardar**.
 
