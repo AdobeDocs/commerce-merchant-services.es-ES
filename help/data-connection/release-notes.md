@@ -3,9 +3,9 @@ title: Notas de la versión
 description: La información de la versión más reciente para la extensión  [!DNL Data Connection] de Adobe Commerce.
 exl-id: 7636664b-488a-46f7-8d19-a9faac126aec
 feature: Personalization, Integration, Release Notes
-source-git-commit: f894a1a192f648df01e1f869bec9c8a4c66803e1
+source-git-commit: 92140fccc8099979d604c7cb86ed5bd7086be29b
 workflow-type: tm+mt
-source-wordcount: '951'
+source-wordcount: '1003'
 ht-degree: 0%
 
 ---
@@ -77,6 +77,15 @@ _12 de octubre de 2022_
 AEM ![Nuevo](../assets/new.svg) - Se agregó compatibilidad con un [frente de tienda](overview.md#aem-support) de la línea de tienda de la línea de compra de la tienda.
 
 +++
+
+## 3.2.0-beta3
+
+_27 de agosto de 2024_
+
+[!BADGE Compatibilidad]{type=Informative tooltip="Compatibilidad"}
+
+![Nuevo](../assets/new.svg) - Si participa en la versión beta, asegúrese de que el archivo `composer.json` tenga lo siguiente en el nivel raíz: ` "minimum-stability": "beta"`. Además, agregue `composer require "magento/customers-connector: ^1.2.0"` para enviar perfiles de clientes desde su instancia de Commerce a SaaS.
+![Nuevo](../assets/new.svg): Esta versión contiene las revisiones publicadas en 3.1.1, 3.1.2, 3.1.3 y 3.1.4.
 
 ## 3.1.4.
 
