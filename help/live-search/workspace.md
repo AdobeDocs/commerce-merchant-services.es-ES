@@ -2,9 +2,9 @@
 title: "Configuración de Live Search"
 description: El área de trabajo  [!DNL Live Search] se usa para configurar, administrar y supervisar el rendimiento de la búsqueda.
 exl-id: fb85974a-a5f9-4e6c-bd03-451e6457f2d2
-source-git-commit: 5e79bb43449b95b4c6aa0e234a0dbc999c312e59
+source-git-commit: cacef0f205729fa4e05ec3c468594e1eaaf8c560
 workflow-type: tm+mt
-source-wordcount: '921'
+source-wordcount: '949'
 ht-degree: 0%
 
 ---
@@ -74,14 +74,18 @@ En la siguiente sección se describen las opciones de configuración de Commerce
 
 ### Valores de configuración admitidos
 
+>[!IMPORTANT]
+>
+>Se recomienda encarecidamente utilizar las utilidades de lista de productos, habilitadas de forma predeterminada en Live Search 4.0.0. Los widgets están destinados a reemplazar por completo la implementación del adaptador en futuras versiones. Consulte [habilitar widgets de lista de productos](install.md#enable-product-listing-widgets) para obtener más información.
+
 | Ajuste de configuración de Commerce | Descripción | Compatible con Popover | Admitido por el adaptador |
 |---|---|---|---|
 | Tiendas > Configuración > Catálogo > Buscar en el catálogo > Permitir todos los productos por página | Si se establece en `Yes`, incluye la opción `ALL` en el control &quot;Mostrar por página&quot;. | Sí. Máx. 500 productos | Sí. Máx. 500 productos |
 | Tiendas > Configuración > Catálogo > Buscar en el catálogo > Longitud mínima de la consulta | Número mínimo de caracteres permitidos en una búsqueda en el catálogo. | Sí | Sí |
 | Tiendas > Configuración > Catálogo > Buscar en el catálogo > Productos por página en la cuadrícula Valores permitidos | Determina el número de productos mostrados en la vista de cuadrícula. | Sí | Sí |
 | Tiendas > Configuración > Catálogo > Buscar en el catálogo > Productos por página en el valor predeterminado de la cuadrícula | Determina el número de productos mostrados por página de forma predeterminada en la vista de cuadrícula. | Sí. Máx. 500 productos | Sí. Máx. 500 productos |
-| Tiendas > Configuración > Catálogo > Inventario > Mostrar productos sin existencias | Muestra los productos sin existencias. | Sí con versión 2.0.4 o posterior | Sí con versión 2.0.4 o posterior |
-| Tiendas > Configuración > Moneda > Moneda de visualización predeterminada | La divisa principal utilizada para mostrar los precios. | Sí con 3.1.0+ | Sí con 3.1.0+ |
+| Tiendas > Configuración > Catálogo > Inventario > Mostrar productos sin existencias | Muestra los productos sin existencias. | Sí | Sí |
+| Tiendas > Configuración > Moneda > Moneda de visualización predeterminada | La divisa principal utilizada para mostrar los precios. | Sí | Sí |
 | Tiendas > Configuración > General > Configuración de Divisa > Opciones de Divisa > Divisa Base | La divisa principal utilizada para todas las transacciones de pago en línea. | Sí | Sí |
 
 Los precios de la página Widget de Lista de Productos y de la ventana emergente se convierten a la moneda para mostrar predeterminada mediante las tasas de cambio configuradas.

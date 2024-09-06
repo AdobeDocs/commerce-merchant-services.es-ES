@@ -3,9 +3,9 @@ title: "Introducción a  [!DNL Live Search]"
 description: '"Conoce los requisitos del sistema y los pasos de instalación de  [!DNL Live Search] de Adobe Commerce".'
 exl-id: aa251bb0-d52c-4cff-bccb-76a08ae2a3b2
 role: Admin, Developer
-source-git-commit: 43e821de9e147508397d45ccd24b5417478b520a
+source-git-commit: cacef0f205729fa4e05ec3c468594e1eaaf8c560
 workflow-type: tm+mt
-source-wordcount: '2419'
+source-wordcount: '2417'
 ht-degree: 0%
 
 ---
@@ -177,7 +177,7 @@ Para obtener ayuda adicional, consulte [[!DNL Live Search] catálogo no sincroni
 
 Configurar correctamente los datos del producto garantiza buenos resultados de búsqueda para los clientes. En esta sección, se habilitan los widgets de la lista de productos y se asignan categorías.
 
-### Activar widgets de lista de productos
+### Habilitar widgets de lista de productos
 
 Al instalar [!DNL Live Search] 4.0.0+, los widgets de listas de productos se habilitan de forma predeterminada. Cuando los widgets están habilitados, se utiliza un componente de interfaz de usuario diferente para la página de resultados de búsqueda y la página de lista de productos de exploración de categorías. Este componente de interfaz de usuario realiza llamadas directas a la [API del servicio de catálogo](https://developer.adobe.com/commerce/services/graphql/live-search/product-search/), lo que resulta en tiempos de respuesta más rápidos.
 
@@ -333,7 +333,7 @@ Si tiene una implementación personalizada sin encabezado, consulte las implemen
 - [widget PLP](https://github.com/adobe/storefront-product-listing-page)
 - [Campo de Live Search](https://github.com/adobe/storefront-search-as-you-type)
 
-AEM CIF Si no utiliza los componentes estándar como el adaptador de búsqueda, los widgets de Luma o los widgets de la, la recopilación automática de datos de interacción del usuario no funciona de forma predeterminada. Adobe Sensei utiliza estos datos recopilados para la comercialización inteligente y el seguimiento del rendimiento. Para resolver este problema, debe desarrollar una solución personalizada para implementar esta recopilación de datos de forma directa.
+AEM CIF La recopilación automática de datos de interacción del usuario no funciona de forma predeterminada cuando no se utilizan los componentes estándar como el adaptador de búsqueda, los widgets de Luma o los widgets de la. Adobe Sensei utiliza estos datos recopilados para la comercialización inteligente y el seguimiento del rendimiento. Para resolver este problema, debe desarrollar una solución personalizada para implementar esta recopilación de datos de forma directa.
 
 La última versión de [!DNL Live Search] ya usa [!DNL Catalog Service].
 

@@ -2,9 +2,9 @@
 title: Crear nueva recomendación
 description: Obtenga información sobre cómo crear una unidad de recomendación de productos.
 exl-id: d393ab78-0523-463f-9b03-ad3f523dce0f
-source-git-commit: 51ff52eba117fe438d592ca886dbca25304a0d15
+source-git-commit: 5266ca2766697fc0fd8baf236a5ae83a26528977
 workflow-type: tm+mt
-source-wordcount: '1022'
+source-wordcount: '1438'
 ht-degree: 0%
 
 ---
@@ -20,11 +20,11 @@ Cuando activa la unidad de recomendación, Adobe Commerce empieza a [recopilar d
 
 1. En la barra lateral de _Admin_, ve a **Marketing** > _Promociones_ > **Product Recommendations** para mostrar el espacio de trabajo de _Product Recommendations_.
 
-1. Especifique la [Vista de tienda](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings) donde desea que se muestren las recomendaciones.
+1. Especifique la [Vista de tienda](https://experienceleague.adobe.com/en/docs/commerce-admin/start/setup/websites-stores-views) donde desea que se muestren las recomendaciones.
 
    >[!NOTE]
    >
-   > Las unidades de recomendación de Page Builder deben crearse en la vista de tienda predeterminada, pero luego pueden utilizarse en cualquier lugar. Para obtener más información sobre cómo crear recomendaciones de productos con Page Builder, consulte [Agregar contenido: Recommendations de producto](https://experienceleague.adobe.com/docs/commerce-admin/page-builder/add-content/recommendations.html).
+   > Las unidades de recomendación de Page Builder deben crearse en la vista de tienda predeterminada, pero luego pueden utilizarse en cualquier lugar. Para obtener más información sobre cómo crear recomendaciones de productos con Page Builder, consulte [Agregar contenido: Recommendations de producto](https://experienceleague.adobe.com/en/docs/commerce-admin/page-builder/add-content/recommendations).
 
 1. Haga clic en **Crear recomendación**.
 
@@ -34,14 +34,14 @@ Cuando activa la unidad de recomendación, Adobe Commerce empieza a [recopilar d
 
    >[!NOTE]
    >
-   > Product Recommendations no se admite en la página Carro de compras cuando la tienda está configurada para [mostrar la página del carro de compras inmediatamente después de agregar un producto al carro de compras](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/point-of-purchase/cart/cart-configuration.html#redirect-to-cart).
+   > Product Recommendations no se admite en la página Carro de compras cuando la tienda está configurada para [mostrar la página del carro de compras inmediatamente después de agregar un producto al carro de compras](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/point-of-purchase/cart/cart-configuration).
 
    * Página principal
    * Categoría
    * Detalles del producto
    * Carrito
    * Confirmación
-   * [Generador de páginas](https://experienceleague.adobe.com/docs/commerce-admin/page-builder/add-content/recommendations.html)
+   * [Generador de páginas](https://experienceleague.adobe.com/en/docs/commerce-admin/page-builder/add-content/recommendations)
 
    Puede crear hasta cinco unidades de recomendación activas para cada tipo de página y hasta 25 para Page Builder. El tipo de página aparece atenuado cuando se alcanza el límite.
 
@@ -81,37 +81,56 @@ Cuando activa la unidad de recomendación, Adobe Commerce empieza a [recopilar d
 
 ## Indicadores de preparación
 
-Algunos tipos de recomendaciones utilizan datos de comportamiento de sus compradores para [entrenar modelos de aprendizaje automático](behavioral-data.md) a fin de generar recomendaciones personalizadas.
+Los indicadores de preparación muestran qué tipos de recomendación funcionan mejor según los datos de catálogo y de comportamiento disponibles. También puede utilizar indicadores de preparación para determinar si tiene problemas con los eventos o si no tiene tráfico suficiente para rellenar el tipo de recomendación.
 
-Solo requiere datos de catálogo. No se necesitan datos de comportamiento para estos:
+Los indicadores de preparación se clasifican en [estáticos](#static-based) o [dinámicos](#dynamic-based). Solo se utilizan datos de catálogo de uso basados en estáticos, mientras que los basados en dinámicos utilizan datos de comportamiento de sus compradores. Esos datos de comportamiento se usan para [entrenar modelos de aprendizaje automático](behavioral-data.md) para generar recomendaciones personalizadas y calcular su puntuación de preparación.
+
+Los indicadores de preparación se calculan en función de un par de factores:
+
+* Tamaño suficiente del conjunto de resultados: ¿Se devuelven suficientes resultados en la mayoría de los casos para evitar el uso de [recomendaciones de copia de seguridad](behavioral-data.md#backuprecs)?
+
+* Variedad del conjunto de resultados suficiente: ¿los productos que se devuelven representan una variedad de productos del catálogo? El objetivo con este factor es evitar tener una minoría de productos siendo los únicos recomendados en todo el sitio.
+
+En función de los factores anteriores, se calcula un valor de disponibilidad y se muestra de la siguiente manera:
+
+* 75 % o más significa que las recomendaciones sugeridas para ese tipo de recomendación serán muy relevantes.
+* Al menos el 50 % significa que las recomendaciones sugeridas para ese tipo de recomendación serán menos relevantes.
+* Menos del 50 % significa que las recomendaciones sugeridas para ese tipo de recomendación no serán relevantes.
+
+Estas son directrices generales, pero cada caso individual puede variar en función de la naturaleza de los datos recopilados, como se ha descrito anteriormente. Obtenga más información sobre [cómo se calculan los indicadores de preparación](#understand-how-readiness-indicators-are-calculated) y [por qué los indicadores de preparación pueden ser bajos](#what-to-do-if-the-readiness-indicator-percent-is-low).
+
+### Basado en estáticas
+
+Los siguientes tipos de recomendación son de base estática porque solo requieren datos de catálogo. No se utilizan datos de comportamiento.
 
 * _Más parecido a esto_
-* _Vistos recientemente_
 * _Similitud visual_
 
-Basado en los últimos seis meses de datos de comportamiento de la tienda:
+### Basado en dinámico
+
+Los siguientes tipos de recomendación son dinámicos, ya que utilizan datos de comportamiento de tienda.
+
+Últimos seis meses de datos de comportamiento de la tienda:
 
 * _Vio esto, vio aquello_
 * _Vio esto, compró aquello_
 * _Compró esto, compró aquello_
 * _Recomendado para usted_
 
-Los tipos de recomendación basados en popularidad utilizan los últimos siete días de datos de comportamiento de tienda:
+Últimos siete días de datos de comportamiento de la tienda:
 
 * Más visitados
 * Más comprados
 * Añadido al carro
 * Tendencia
 
-Se espera que los valores del indicador de preparación fluctúen debido a factores como el tamaño general del catálogo, el volumen de eventos de interacción de productos (vistas, adiciones al carro de compras, compras) y el porcentaje de SKU que registran esos eventos en un intervalo de tiempo determinado, como se ha indicado anteriormente. Por ejemplo, durante el tráfico máximo de la temporada de vacaciones, los indicadores de disponibilidad pueden mostrar valores más altos que en tiempos de volumen normal.
+Datos más recientes del comportamiento del comprador (solo vistas):
 
-Para ayudarle a visualizar el progreso de formación de cada tipo de recomendación, la sección _Seleccionar tipo de recomendación_ muestra una medida de preparación para cada tipo. Estos indicadores de preparación se calculan en función de un par de factores:
+* _Vistos recientemente_
 
-* Tamaño suficiente del conjunto de resultados: ¿Se devuelven suficientes resultados en la mayoría de los casos para evitar el uso de [recomendaciones de copia de seguridad](behavioral-data.md#backuprecs)?
+### Visualización del progreso
 
-* Variedad del conjunto de resultados suficiente: ¿los productos que se devuelven representan una variedad de productos del catálogo? El objetivo con este factor es evitar tener una minoría de productos siendo los únicos recomendados en todo el sitio.
-
-En función de los factores anteriores, se calcula y se muestra un valor de disponibilidad. Un tipo de recomendación se considera listo para implementar cuando su valor de preparación es del 75 % o superior. Un tipo de recomendación se considera parcialmente listo cuando su preparación es de al menos el 50 %. Un tipo de recomendación se considera no listo para implementarse cuando su valor de preparación es inferior al 50 %. Estas son directrices generales, pero cada caso individual puede variar en función de la naturaleza de los datos recopilados, tal como se ha descrito anteriormente.
+Para ayudarle a visualizar el progreso de formación de cada tipo de recomendación, la sección _Seleccionar tipo de recomendación_ muestra una medida de preparación para cada tipo.
 
 ![Tipo de recomendación](assets/create-recommendation-select-type.png)
 _Tipo de recomendación_
@@ -119,6 +138,29 @@ _Tipo de recomendación_
 >[!NOTE]
 >
 >Los indicadores nunca pueden alcanzar el 100%.
+
+El porcentaje del indicador de preparación para los tipos de recomendación que dependen de los datos del catálogo no cambia mucho, ya que el catálogo del comerciante no cambia con frecuencia. Sin embargo, el porcentaje del indicador de preparación para los tipos de recomendación basados en los datos de comportamiento del comprador puede cambiar a menudo según la actividad diaria del comprador.
+
+#### Qué hacer si el porcentaje del indicador de disponibilidad es bajo
+
+Un porcentaje de preparación bajo indica que no hay muchos productos del catálogo que puedan incluirse en las recomendaciones de este tipo de recomendación. Esto significa que existe una alta probabilidad de que se devuelvan [recomendaciones de copia de seguridad](behavioral-data.md#backuprecs) si implementa este tipo de recomendación de todos modos.
+
+A continuación se enumeran los posibles motivos y soluciones para puntuaciones de preparación bajas comunes:
+
+* **Basado en estática**: los porcentajes bajos de estos indicadores pueden deberse a la falta de datos de catálogo para los productos que se pueden mostrar. Si son inferiores a lo esperado, una sincronización completa puede solucionar este problema.
+* **Basado en dinámico**: los porcentajes bajos de los indicadores basados en dinámico pueden deberse a:
+
+   * Faltan campos en los eventos de tienda requeridos para los tipos de recomendación respectivos (requestId, contexto de producto, etc.).
+   * Poco tráfico en la tienda, por lo que el volumen de eventos de comportamiento que recibimos es bajo.
+   * La variedad de eventos de comportamiento de la tienda en diferentes productos es baja. Por ejemplo, si solo el diez por ciento de sus productos se ven o se compran la mayor parte del tiempo, los indicadores de preparación respectivos serán bajos.
+
+#### Cálculo de los indicadores de disponibilidad
+
+Los indicadores de disponibilidad indican cuánto se ha entrenado el modelo. Los indicadores son independientes de los tipos de eventos recopilados, la amplitud de los productos con los que interactuó y el tamaño del catálogo.
+
+El porcentaje del indicador de preparación se deriva de un cálculo que indica cuántos productos se pueden recomendar según el tipo de recomendación. Las estadísticas se aplican a los productos en función del tamaño general del catálogo, el volumen de interacciones (como vistas, clics, complementos a los carros de compras) y el porcentaje de SKU que registran esos eventos en un intervalo de tiempo determinado. Por ejemplo, durante el tráfico máximo de la temporada de vacaciones, los indicadores de disponibilidad pueden mostrar valores más altos que en tiempos de volumen normal.
+
+Como resultado de estas variables, el porcentaje del indicador de disponibilidad puede fluctuar. Esto explica por qué podría ver que los tipos de recomendación entran y salen de &quot;Listo para implementar&quot;.
 
 ## Previsualizar Recommendations {#preview}
 

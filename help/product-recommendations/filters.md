@@ -2,9 +2,9 @@
 title: Filtrar productos
 description: Defina condiciones que incluyan o excluyan productos de para que se utilicen como recomendaciones.
 exl-id: baab28ff-b529-4cbc-adb7-4fa225e87d4a
-source-git-commit: aa036228bb4040de5a8d4d159727fa0c4c6d99e1
+source-git-commit: b602385b956b6af131b008428d1182a586303bc7
 workflow-type: tm+mt
-source-wordcount: '704'
+source-wordcount: '734'
 ht-degree: 0%
 
 ---
@@ -42,7 +42,11 @@ Los operadores lógicos `AND` y `OR` se utilizan para unir varias condiciones. S
 
 ### Categoría
 
-Los filtros basados en la categoría de un producto utilizan asignaciones de categoría directas y sus subcategorías. Por ejemplo, al habilitar una condición de exclusión para la categoría `Gear` se excluyen los productos asignados a `Gear` y todas sus subcategorías, como `Gear/Bags` o `Gear/Fitness Equipment`. Para los comerciantes B2B, el filtro Categoría se adhiere a cualquier [categoría de producto específica del cliente](https://experienceleague.adobe.com/docs/commerce-admin/catalog/categories/category-permissions.html) que haya configurado.
+Los filtros basados en la categoría de un producto utilizan asignaciones de categoría directas y sus subcategorías. Por ejemplo, al habilitar una condición de exclusión para la categoría `Gear` se excluyen los productos asignados a `Gear` y todas sus subcategorías, como `Gear/Bags` o `Gear/Fitness Equipment`. Lo mismo se aplica a un filtro de inclusión en una categoría. Por ejemplo, al habilitar una condición de inclusión para la categoría `Gear` se incluyen los productos asignados a `Gear` y todas sus subcategorías, como `Gear/Bags` o `Gear/Fitness Equipment`.
+
+>[!NOTE]
+>
+>Para los comerciantes B2B, el filtro Categoría se adhiere a cualquier [categoría de producto específica del cliente](https://experienceleague.adobe.com/docs/commerce-admin/catalog/categories/category-permissions.html) que haya configurado.
 
 Adobe Commerce recomienda utilizar la siguiente configuración de filtro de categoría al implementar recomendaciones en los tipos de página:
 
