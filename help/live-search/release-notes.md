@@ -3,9 +3,9 @@ title: "[!DNL Live Search] notas de la versión"
 description: "La información de la versión más reciente de  [!DNL Live Search]  de Adobe Commerce."
 exl-id: 2a581e43-35f5-48ce-9752-844430ccdebf
 feature: Services, Search, Release Notes
-source-git-commit: 55b90f0025f69137d50fa1cacd80a2b655eb39dc
+source-git-commit: 5e0ab74e73f187213e83ce290abf2bb08571b9d1
 workflow-type: tm+mt
-source-wordcount: '2010'
+source-wordcount: '2027'
 ht-degree: 0%
 
 ---
@@ -23,6 +23,10 @@ Las actualizaciones incluyen:
 ## Actualizaciones de servicios alojados
 
 Estas notas describen las actualizaciones que se publicaron fuera de una versión con versiones o las mejoras realizadas en el servicio alojado.
+
+_4 de septiembre de 2024_
+
+![Corrección](../assets/fix.svg) ha aumentado el número máximo de contenedores que se pueden devolver [dentro de una faceta](boundaries-limits.md#facets) a 100.
 
 _7 de agosto de 2024_
 
