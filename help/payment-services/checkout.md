@@ -1,16 +1,17 @@
 ---
-title: Finalizar compra
-description: Personalice el cierre de compra para adaptarlo a las necesidades de sus clientes.
+title: Cierre de compra en  [!DNL Payment Services]
+description: Personaliza  [!DNL Payment Services] el pago y envío para adaptarlo a las necesidades de tus clientes.
 feature: Payments, Checkout
 exl-id: 47df165f-2145-4e0e-b272-54b8e768cf19
-source-git-commit: 4a534f2f9844173b4ec878976595159c2c47c561
+source-git-commit: 153e6a82134a34737529f4e1a135eb7803b20e05
 workflow-type: tm+mt
-source-wordcount: '322'
+source-wordcount: '324'
 ht-degree: 0%
 
 ---
 
-# Finalizar compra
+
+# Cierre de compra en [!DNL Payment Services]
 
 Puede configurar el cierre de compra de Adobe Commerce [!DNL Payment Services] para que se adapte mejor a sus compradores. Las funciones tales como [anulación automática de pedidos](#order-auto-voided-if-error) y [depósito de tarjetas de crédito](#credit-card-vaulting) garantizan que tus compradores tengan una experiencia de usuario sin problemas.
 
