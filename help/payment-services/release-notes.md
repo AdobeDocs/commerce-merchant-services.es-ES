@@ -3,9 +3,9 @@ title: "[!DNL Payment Services] notas de la versión"
 description: Revise las notas de la versión para obtener información acerca de todas las  [!DNL Payment Services] versiones.
 exl-id: 104aa2c7-7735-4ac2-8ed1-a03cd9911273
 feature: Payments, Release Notes
-source-git-commit: 153e6a82134a34737529f4e1a135eb7803b20e05
+source-git-commit: a5963055a17b5af0c30f3d5f6236d1524e028b22
 workflow-type: tm+mt
-source-wordcount: '2968'
+source-wordcount: '3017'
 ht-degree: 0%
 
 ---
@@ -90,6 +90,14 @@ _28 de junio de 2021_
 ![Nuevo](../assets/new.svg)<!-- Issue PAY-2761 --> Ahora puede personalizar los datos que se muestran en el [informe de estado de pago del pedido](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/order-payment-status.html#show-and-hide-columns) y en el [informe Pagos](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/payouts.html#show-and-hide-columns) mostrando u ocultando columnas mediante el control Configuración de columna.
 
 +++
+
+## Versión 2.8.1
+
+_13 de septiembre de 2024_
+
+[!BADGE Compatible]{type=Informative tooltip="Admitido"}
+
+![Se ha corregido](../assets/fix.svg)<!-- PAY-5644 --> un problema con la caché de los parámetros del SDK al usar varios ámbitos en [!DNL Payment Services]. La configuración del SDK ahora se almacena en caché por separado para cada ámbito en lugar de en una sola clave. Esto garantiza que la caché de cada ámbito se invalide de forma independiente, lo que mejora la fiabilidad al administrar varios ámbitos.
 
 ## Versión 2.8.0
 
