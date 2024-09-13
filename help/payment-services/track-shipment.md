@@ -2,7 +2,7 @@
 title: Rastreando sus envíos en  [!DNL Payment Services]
 description: Personaliza  [!DNL Payment Services] la información de envíos y seguimiento mostrada en el panel de control del comerciante de PayPal.
 feature: Payments
-source-git-commit: 153e6a82134a34737529f4e1a135eb7803b20e05
+source-git-commit: 2169907d7200a0937ce5a3ddf9634423cc8c2f5f
 workflow-type: tm+mt
 source-wordcount: '211'
 ht-degree: 0%
@@ -48,4 +48,4 @@ Las siguientes instrucciones lo guiarán a través del proceso para crear un env
 
 ### Compatibilidad con terceros
 
-Cualquier extensión de terceros es compatible con la funcionalidad cuando se crea una entidad de envío mediante [Commerce API](https://developer.adobe.com/commerce/webapi/rest/attributes/#magentosalesapishipmentrepositoryinterface-shipmentrepositoryinterface){target=_blank}.
+Cualquier extensión de terceros es compatible con la funcionalidad cuando se crea una entidad de envío mediante [Commerce API](https://developer.adobe.com/commerce/webapi/rest/attributes/#ShipmentRepositoryInterface){target=_blank}.
