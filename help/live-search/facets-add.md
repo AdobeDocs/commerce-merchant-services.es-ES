@@ -2,7 +2,7 @@
 title: "Agregar facetas"
 description: '"Aprenda a agregar atributos de producto filtrables como  [!DNL Live Search] facetas".'
 exl-id: 0df6c21b-55b3-41ce-94f4-f70b70ffb84e
-source-git-commit: 4978bdb5549f5df911863a23fdfbfc9ab9ad05df
+source-git-commit: 2439e9c2b38269e1cf9761d2b662abce76b8304e
 workflow-type: tm+mt
 source-wordcount: '597'
 ht-degree: 0%
@@ -44,7 +44,7 @@ La faceta se agrega al final de la lista *Facetas dinámicas* y el botón *Publi
 
    * Etiqueta: ([Sin encabezado](facets-type.md) solamente) Escriba la etiqueta de faceta que desee usar.
    * Tipo de orden: las facetas se ordenan alfabéticamente en todas las tiendas de [!DNL Commerce]. En el caso de implementaciones sin encabezado, las facetas se pueden ordenar alfabéticamente o por recuento. Opciones: Alfabético, Recuento (solo sin encabezado)
-   * Valor máximo: introduzca el número máximo de valores de faceta mostrados en la tienda. Entradas válidas: 0 - 30; Predeterminado: 8
+   * Valor máximo: introduzca el número máximo de valores de faceta mostrados en la tienda. Entradas válidas: 0 - 100; Predeterminado: 8
 
 1. Una vez finalizado, haga clic en **Guardar**.
 
@@ -65,7 +65,7 @@ Si la faceta no está disponible después de dos horas, consulte [Verificar expo
 |--- |--- |
 | Etiqueta | ([Sin encabezado](facets-type.md) solamente) La [etiqueta de faceta](facets-type.md) que está visible en la tienda se puede editar para mantener la coherencia con tu marca. |
 | Tipo de orden | El método usado para [ordenar](facets-type.md) facetas. Todas las [!DNL Commerce] tiendas ordenan facetas solo alfabéticamente. Las implementaciones sin encabezado también se pueden ordenar por `Count`. Opciones:<br />Alfabético: ordena las facetas alfabéticamente.<br />Recuento: (solo sin encabezado) ordena las facetas según el número de coincidencias encontradas. |
-| Valor máximo | Número máximo de valores que se pueden mostrar en la tienda para cada faceta. Las facetas que representan un rango de valores se distribuyen de forma uniforme. Entradas válidas: 0 - 30; Predeterminado: 8 |
+| Valor máximo | Número máximo de valores que se pueden mostrar en la tienda para cada faceta. Las facetas que representan un rango de valores se distribuyen de forma uniforme. Entradas válidas: 0 - 100; Predeterminado: 8 |
 
 ### Controles
 

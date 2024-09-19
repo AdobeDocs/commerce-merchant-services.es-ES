@@ -3,9 +3,9 @@ title: 'Límites y límites'
 description: Conozca los límites y limitaciones de [!DNL Live Search] para asegurarse de que cumple con las necesidades de su empresa.
 role: Admin, Developer
 exl-id: ad6737f9-6ecd-4d82-89e7-d95425e4ba53
-source-git-commit: 562af9995b49f4c0fddc76c2ae1c53dd928b1daa
+source-git-commit: 2feb97bf6aa41e5b99d3dcbc51ef3c1cdc05d8da
 workflow-type: tm+mt
-source-wordcount: '887'
+source-wordcount: '905'
 ht-degree: 0%
 
 ---
@@ -17,13 +17,14 @@ Cuando se trata de buscar sitios, Adobe Commerce le da opciones. Revise los lím
 ## General
 
 - El módulo [Búsqueda avanzada](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/search/search) se deshabilita al instalar [!DNL Live Search] y se quita el vínculo Búsqueda avanzada del pie de página de la tienda.
-- [Precios de nivel](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/products/pricing/product-price-tier) y [Precios especiales](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/products/pricing/product-price-special) no son compatibles con el campo [!DNL Live Search] y el widget de página de lista de productos.
+- El campo [!DNL Live Search] y el widget de página de lista de productos no admiten [precios de nivel](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/products/pricing/product-price-tier).
 - Los precios de los productos no incluyen el impuesto sobre el valor añadido (IVA).
-- No se admite la búsqueda de contenido.
+- No se admite la búsqueda de contenido (páginas y bloques de CMS).
 - Hay un límite de 10 000 productos que se pueden paginar. Aunque este límite se puede aumentar, puede afectar al rendimiento. Asegúrese de proporcionar formas significativas de filtrar los productos en caso de que una categoría o resultado de búsqueda tenga un gran número de productos, de modo que los compradores no tengan que utilizar la paginación profunda.
 - Hay un límite estricto de 1 MB por atributo, incluida la descripción y los atributos personalizados.
 - El adaptador de búsqueda no admite atributos de producto creados con un modelo de origen personalizado y utilizados como facetas. Para admitir esta funcionalidad, debe usar el [Widget de la página de lista de productos](plp-styling.md).
 - No se admiten los tipos de producto personalizados.
+- Puede filtrar los resultados usando las condiciones &quot;comienza con&quot; o &quot;contiene&quot; con algunas limitaciones como se describe [aquí](https://developer.adobe.com/commerce/services/graphql/live-search/product-search/#limitations).
 
 ## Indexación
 
