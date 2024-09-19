@@ -3,7 +3,7 @@ title: "Introducción a  [!DNL Live Search]"
 description: '"Conoce los requisitos del sistema y los pasos de instalación de  [!DNL Live Search] de Adobe Commerce".'
 exl-id: aa251bb0-d52c-4cff-bccb-76a08ae2a3b2
 role: Admin, Developer
-source-git-commit: 8981dda82dbdf45d1df0257beb8603b22e98aa4b
+source-git-commit: b17cdc61ddbf7e3d1e5782eb079a628a240ea8c0
 workflow-type: tm+mt
 source-wordcount: '2977'
 ht-degree: 0%
@@ -144,7 +144,7 @@ Puede implementar estas nuevas condiciones en la página de resultados de búsqu
 1. Para instalar la versión beta, ejecute lo siguiente desde la línea de comandos:
 
    ```bash
-   composer require magento/module-live-search-search-types:"^1.0-beta"
+   composer require magento/module-live-search-search-types:"^1.0.0-beta1"
    ```
 
    Esta versión beta agrega **[!UICONTROL Search types]** casillas de verificación para **[!UICONTROL Autocomplete]**, **[!UICONTROL Contains]** y **[!UICONTROL Starts with]** en el Administrador. También se actualiza la API de GraphQL `productSearch` para incluir estas nuevas funciones de búsqueda.
