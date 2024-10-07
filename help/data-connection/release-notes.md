@@ -3,9 +3,9 @@ title: Notas de la versión
 description: La información de la versión más reciente para la extensión  [!DNL Data Connection] de Adobe Commerce.
 exl-id: 7636664b-488a-46f7-8d19-a9faac126aec
 feature: Personalization, Integration, Release Notes
-source-git-commit: 92140fccc8099979d604c7cb86ed5bd7086be29b
+source-git-commit: 15b1c90cb60094d7f4a4da6435c5262f75cf0081
 workflow-type: tm+mt
-source-wordcount: '1003'
+source-wordcount: '1055'
 ht-degree: 0%
 
 ---
@@ -78,6 +78,16 @@ AEM ![Nuevo](../assets/new.svg) - Se agregó compatibilidad con un [frente de ti
 
 +++
 
+## 3.2.0
+
+_7 de octubre de 2024_
+
+[!BADGE Compatibilidad]{type=Informative tooltip="Compatibilidad"}
+
+![Nuevo](../assets/new.svg) - Se ha agregado la capacidad de crear [atributos de pedidos personalizados](custom-attributes.md) para los datos de la oficina trasera.
+![Nuevo](../assets/new.svg) - Se ha agregado la nueva tabla [Atributos de pedidos personalizados](connect-data.md#data-customization) para ayudarle a ver los atributos personalizados configurados en [!DNL Commerce] y enviados al Experience Platform.
+![Nuevo](../assets/new.svg) - Se ha agregado la capacidad para [recopilar y enviar registros de perfil](connect-data.md#send-customer-profile-data) y datos al Experience Platform.
+
 ## 3.2.0-beta3
 
 _27 de agosto de 2024_
@@ -128,7 +138,7 @@ _4 de marzo de 2024_
 [!BADGE Compatibilidad]{type=Informative tooltip="Compatibilidad"}
 
 ![Nuevo](../assets/new.svg) - Si participa en la versión beta, asegúrese de que el archivo `composer.json` tenga lo siguiente en el nivel raíz: ` "minimum-stability": "beta"`. Además, agregue `composer require "magento/customers-connector: ^1.2.0"` para enviar perfiles de clientes desde su instancia de Commerce a SaaS.
-![Nuevo](../assets/new.svg) - Se agregó la capacidad para [agregar atributos personalizados](update-xdm.md#update-schema-with-time-series-behavioral-and-back-office-event-data).
+![Nuevo](../assets/new.svg) - Se agregó la capacidad para [agregar atributos personalizados](custom-attributes.md).
 ![Nuevo](../assets/new.svg) - Se ha agregado la capacidad para [recopilar y enviar registros de perfil](connect-data.md#send-customer-profile-data) y datos al Experience Platform.
 
 ## 3.1.0

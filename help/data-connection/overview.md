@@ -3,7 +3,7 @@ title: Información general de la guía
 description: Obtenga información sobre cómo integrar datos de Adobe Commerce con Adobe Experience Platform mediante la extensión  [!DNL Data Connection] .
 exl-id: a8362e71-e21c-4b1d-8e3f-336e748e1018
 recommendations: noCatalog
-source-git-commit: 7b9867179a871e4949ea74f9214e9e52ea26bb71
+source-git-commit: b5727c90737ecfd237dd143801152f25600c3f97
 workflow-type: tm+mt
 source-wordcount: '1752'
 ht-degree: 0%
@@ -67,6 +67,8 @@ La extensión [!DNL Data Connection] está disponible en las siguientes arquitec
 * [PWA Studio](https://developer.adobe.com/commerce/pwa-studio/integrations/adobe-commerce/aep/)
 * AEM [](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/content-and-commerce/integrations/aep.html)
 
+>[!BEGINSHADEBOX]
+
 ## Requisitos previos
 
 Para usar la extensión [!DNL Data Connection], debe tener lo siguiente:
@@ -75,6 +77,8 @@ Para usar la extensión [!DNL Data Connection], debe tener lo siguiente:
 * Adobe ID e ID de organización
 * [Capa de datos del cliente de Adobe (ACDL)](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/client-data-layer/overview.html), que es necesaria para recopilar datos de evento de tienda
 * Derechos a otros productos DX de Adobe.
+
+>[!ENDSHADEBOX]
 
 ## Pasos de incorporación
 

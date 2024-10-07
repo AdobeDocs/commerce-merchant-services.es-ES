@@ -3,9 +3,9 @@ title: Conexión de datos de Commerce a Adobe Experience Platform
 description: Obtenga información sobre cómo conectar los datos de Commerce a Adobe Experience Platform.
 exl-id: 87898283-545c-4324-b1ab-eec5e26a303a
 feature: Personalization, Integration, Configuration
-source-git-commit: c252c2fb614ec74f1bdd11cc482066a7133dd523
+source-git-commit: 15b1c90cb60094d7f4a4da6435c5262f75cf0081
 workflow-type: tm+mt
-source-wordcount: '2532'
+source-wordcount: '2910'
 ht-degree: 0%
 
 ---
@@ -75,9 +75,13 @@ Descargar el [archivo de configuración del área de trabajo](https://developer.
 
 1. Haga clic en **Guardar configuración**.
 
+1. Haga clic en el botón **[!UICONTROL Test connection]** para asegurarse de que la información de cuenta de servicio y credenciales que ha introducido es correcta.
+
 ### General
 
 1. En el Administrador, vaya a **Sistema** > Servicios > **[!DNL Data Connection]**.
+
+   Configuración de ![[!DNL Data Connection]](./assets/epc-settings.png){width="700" zoomable="yes"}
 
 1. En la ficha **Configuración** en **General**, compruebe el identificador asociado a su cuenta de Adobe Experience Platform, según la configuración de [Commerce Services Connector](../landing/saas.md#organizationid). El ID de organización es global. Solo se puede asociar un ID de organización por cada instancia de Adobe Commerce.
 
@@ -97,7 +101,7 @@ En esta sección, especifique el tipo de datos que desea recopilar y enviar al p
 
 - **Back office** (datos del lado del servidor) son datos capturados en los servidores de Commerce. Esto incluye información sobre el estado de un pedido, como si se ha realizado, cancelado, reembolsado, enviado o completado. También incluye [datos históricos de pedidos](#send-historical-order-data).
 
-- **Perfil (Beta)** son datos relacionados con la información de perfil del comprador. Más información [más](#send-customer-profile-data).
+- El **perfil** son datos relacionados con la información de perfil del comprador. Más información [más](#send-customer-profile-data).
 
 Para asegurarse de que la instancia de Adobe Commerce pueda iniciar la recopilación de datos, revise los [requisitos previos](overview.md#prerequisites).
 
@@ -157,10 +161,6 @@ Consulte el tema de eventos para obtener más información sobre los eventos de 
 Después de la incorporación, los datos de la tienda comienzan a fluir al perímetro del Experience Platform. Los datos del back office tardan unos cinco minutos en aparecer en el perímetro. Las actualizaciones posteriores son visibles en el perímetro en función de la programación de cron.
 
 ### Envío de datos de perfil de cliente
-
->[!IMPORTANT]
->
->Esta función está en versión beta.
 
 Existen dos tipos de datos de perfil que puede enviar al Experience Platform: registros de perfil y eventos de perfil de series temporales.
 
@@ -240,6 +240,8 @@ Especifique el intervalo de fechas para los pedidos históricos que desea enviar
 
 1. Seleccione la ficha **Historial de pedidos**.
 
+   ![[!DNL Data Connection] historial de pedidos](./assets/epc-order-history.png){width="700" zoomable="yes"}
+
 1. En **Sincronización del historial de pedidos**, la casilla de verificación **Copiar ID del conjunto de datos de la configuración** ya está habilitada. Esto garantiza que esté usando el mismo conjunto de datos especificado en la ficha **Configuración**.
 
 1. En los campos **Desde** y **Hasta**, especifique el intervalo de fechas para los datos de pedidos históricos que desea enviar. No puede seleccionar un intervalo de fecha que exceda de cinco años.
@@ -255,6 +257,36 @@ Especifique el intervalo de fechas para los pedidos históricos que desea enviar
 | Desde | Fecha a partir de la cual desea empezar a recopilar datos del historial de pedidos. |
 | Hasta | Fecha a partir de la cual desea finalizar la recopilación de datos del historial de pedidos. |
 | Iniciar sincronización | Inicia el proceso de sincronización de los datos del historial de pedidos con el perímetro del Experience Platform. Este botón está deshabilitado si el campo **[!UICONTROL Dataset ID]** está en blanco o si el ID del conjunto de datos no es válido. |
+
+### Personalización de datos
+
+En la ficha **Personalización de datos**, puede ver cualquier atributo personalizado configurado en [!DNL Commerce] y enviado al Experience Platform.
+
+![[!DNL Data Connection] personalización de datos](./assets/epc-data-customization.png){width="700" zoomable="yes"}
+
+>[!IMPORTANT]
+>
+>Asegúrese de que el ID de secuencia de datos que [especificó](#data-collection) en la ficha **Recopilación de datos** coincida con el ID vinculado al esquema para la ingesta de atributos personalizados.
+
+Al crear atributos personalizados para pedidos y enviarlos al Experience Platform, los nombres de atributo en Commerce deben coincidir con los del esquema [!DNL Commerce] en el Experience Platform. Si no coinciden, puede resultar difícil identificar las diferencias. Si tiene nombres que no coinciden, la tabla **Atributos de pedido personalizados** puede ayudarle a resolver el problema.
+
+La tabla **Atributos de pedido personalizados** proporciona visibilidad sobre la configuración y asignación de atributos de pedido personalizados entre el back office [!DNL Commerce] y el esquema [!DNL Commerce] en Experience Platform. Esta tabla le permite ver los atributos personalizados de nivel de pedido y nivel de elemento de pedido en diferentes fuentes, lo que facilita la identificación de atributos que faltan o no se han alineado correctamente. También muestra los ID de conjuntos de datos para ayudar a diferenciar entre conjuntos de datos activos e históricos, ya que cada uno puede tener sus propios atributos personalizados.
+
+Si no ve una marca de verificación verde junto a un nombre de atributo personalizado en la tabla, indica una discrepancia entre los nombres de atributo en los orígenes. Corrija el nombre del atributo en un origen y aparecerá una marca de verificación verde, que indica que los nombres ahora coinciden.
+
+- Si el nombre del atributo se actualiza en el esquema de Experience Platform, debe guardar la configuración en la ficha **Personalización de datos** para almacenar en déclencheur el cambio de esquema del Experience Platform. Este cambio se reflejará en la tabla **Atributos de pedido personalizados** al hacer clic en el botón **[!UICONTROL Refresh]**.
+- Si el nombre del atributo se actualiza en [!DNL Commerce], se debe generar un evento de pedido para actualizar el nombre en la tabla **Atributos de pedido personalizados**. El cambio se reflejará en unos 60 minutos.
+
+Más información sobre cómo [configurar atributos personalizados](custom-attributes.md).
+
+#### Descripciones de campos
+
+| Campo | Descripción |
+|--- |--- |
+| Conjunto de datos | Muestra los conjuntos de datos que contienen los atributos personalizados. Los conjuntos de datos activos e históricos pueden tener sus propios atributos personalizados. |
+| Adobe Commerce | Muestra cualquier atributo personalizado creado en el back office [!DNL Commerce]. |
+| Experience Platform | Muestra cualquier atributo personalizado especificado en su esquema [!DNL Commerce] en el Experience Platform. |
+| Actualizar | Recupera cualquier nombre de atributo personalizado del esquema [!DNL Commerce] en el Experience Platform. |
 
 ## Confirmar que se recopilan los datos del evento
 
