@@ -2,9 +2,8 @@
 title: '[!DNL Manage the Data Export extension]'
 description: Obtenga información sobre cómo actualizar la extensión  [!DNL Data Export] y quitar o deshabilitar los servicios de exportación de datos que no son necesarios.
 role: Admin, Developer
-recommendations: noCatalog
 exl-id: d2326673-0f82-4266-bf56-74d55e32fcab
-source-git-commit: 42a9ea0f62f35db451cd3e780adf530d0699a638
+source-git-commit: b80bc2867f44e6123adb104eb148ac5e8f80b63d
 workflow-type: tm+mt
 source-wordcount: '228'
 ht-degree: 0%

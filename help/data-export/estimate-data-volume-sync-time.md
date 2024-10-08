@@ -2,9 +2,8 @@
 title: Estimar el volumen de datos y el tiempo de transmisión
 description: Aprenda a calcular el volumen de datos y el tiempo de transmisión necesarios para que la herramienta  [!DNL data export]  sincronice los datos de fuente entre Adobe Commerce y los servicios conectados.
 role: Admin, Developer
-recommendations: noCatalog
 exl-id: 51ea98fd-cf90-44bd-a639-992bfc7f3eca
-source-git-commit: 42a9ea0f62f35db451cd3e780adf530d0699a638
+source-git-commit: b80bc2867f44e6123adb104eb148ac5e8f80b63d
 workflow-type: tm+mt
 source-wordcount: '599'
 ht-degree: 0%

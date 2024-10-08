@@ -2,9 +2,8 @@
 title: Sincronización de datos con exportación de datos SaaS
 description: Descubra cómo  [!DNL SaaS Data Export] recopila y sincroniza datos entre instancias de Adobe Commerce y servicios SaaS conectados.
 role: Admin, Developer
-recommendations: noCatalog
 exl-id: 530a6ed7-46ec-45fc-94e9-c850168e8aed
-source-git-commit: 4b579b7ec7698f32b5f2254f20514cedbbb50cdd
+source-git-commit: b80bc2867f44e6123adb104eb148ac5e8f80b63d
 workflow-type: tm+mt
 source-wordcount: '822'
 ht-degree: 0%
