@@ -2,9 +2,9 @@
 title: Desarrollo del administrador de Recommendations del producto
 description: Descripción general de la arquitectura y las funciones de desarrollo de Product Recommendations.
 exl-id: caef5e0c-dd69-4846-8f85-b1c5e1c6a28f
-source-git-commit: a433d970e83792a9f53b2a09afd84c335d980024
+source-git-commit: 4a5c3550b03651279c24de6b6361ffa6dc28776e
 workflow-type: tm+mt
-source-wordcount: '426'
+source-wordcount: '309'
 ht-degree: 0%
 
 ---
@@ -24,20 +24,6 @@ En un nivel superior, Commerce Product Recommendations se implementa como SaaS. 
 ![Diagrama de arquitectura de recomendaciones de productos](assets/arch-diag-sensei.svg)
 
 Una vez instalados y configurados los módulos de recomendación, la tienda empezará a recopilar datos de comportamiento. Adobe Sensei procesa estos datos de comportamiento junto con los datos del catálogo y calcula las asociaciones de productos que aprovecha el servicio de Recommendations. En este punto, el comerciante puede crear, administrar e implementar unidades de recomendación de productos en su tienda directamente desde la IU de administración.
-
-## Tipos de datos
-
-Product Recommendations requiere los siguientes datos:
-
-- **Comportamiento**: datos de la participación de un comprador en el sitio, como vistas de productos, elementos agregados al carro de compras y compras. Commerce y Adobe Sensei no recopilan información de identificación personal.
-
-- **Catálogo**: metadatos de producto, como nombre, precio, disponibilidad, etc.
-
-Al instalar el módulo `magento/product-recommendations`, Adobe Sensei agrega los datos de comportamiento y catálogo, creando Product Recommendations para cada tipo de recomendación. A continuación, el servicio Product Recommendations implementa esas recomendaciones en la tienda.
-
->[!NOTE]
->
->Para los productos configurables, Product Recommendations utiliza la imagen del producto principal en la unidad recomendada. Si el producto configurable no tiene una imagen especificada, la unidad de recomendación estará vacía para ese producto específico.
 
 ## Pasos siguientes
 

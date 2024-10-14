@@ -2,9 +2,9 @@
 title: '[!DNL Product Recommendations] Workspace'
 description: Obtenga información sobre cómo configurar, administrar y supervisar el rendimiento de recomendaciones de productos.
 exl-id: 85a06cc3-91b9-484a-96a9-fc85718e6d70
-source-git-commit: 25d5321b6f29bab5d8cf329170f3644f35100438
+source-git-commit: 91e19e30d55259d3287404895d1d893c480743b6
 workflow-type: tm+mt
-source-wordcount: '633'
+source-wordcount: '781'
 ht-degree: 0%
 
 ---
@@ -12,6 +12,10 @@ ht-degree: 0%
 # [!DNL Product Recommendations] Workspace
 
 El espacio de trabajo [!DNL Product Recommendations] muestra una lista de recomendaciones configuradas anteriormente con métricas que le ayudan a realizar un seguimiento del éxito de cada recomendación. La lista se puede configurar para calcular las métricas del último día, semana o mes. Puede utilizar las métricas para crear perspectivas procesables en función de la frecuencia con la que se ve o se hace clic en una unidad de recomendación, o para analizar el rendimiento de sus recomendaciones.
+
+>[!INFO]
+>
+>Una unidad de recomendación es un widget que contiene el producto recomendado _items_.
 
 ![espacio de trabajo de Recommendations](assets/workspace.png)
 _Recommendations Workspace_
@@ -31,6 +35,10 @@ Inicialmente, el [ámbito](https://experienceleague.adobe.com/docs/commerce-admi
    - Últimos 30 días
 
    Los valores calculados en las columnas de métricas cambian para reflejar el intervalo de fechas actual.
+
+   >[!NOTE]
+   >
+   >Las métricas de Recomendación de producto están optimizadas para las tiendas de Luma. Si la tienda no está basada en Luma, el modo en que las métricas rastrean los datos depende de cómo [implemente la colección de eventos](events.md).
 
 ## Mostrar u ocultar columnas
 
@@ -95,12 +103,12 @@ En la página de detalles de la recomendación, haga clic en **Crear**. Para obt
 | Estado | El estado de la recomendación. Opciones: Inactivo/Activo/Borrador |
 | Creado | La fecha en la que se creó la recomendación. |
 | Última edición | Fecha en la que se editó la recomendación por última vez. |
-| Impresiones | El número de veces que se carga y procesa una unidad de recomendación en una página. En la página se representa una unidad de recomendación que está por debajo del pliegue de la ventanilla del explorador, pero el comprador no la ve. En este caso, la unidad procesada se cuenta como una impresión, pero una vista solo se cuenta si el usuario desplaza la unidad a la vista. |
-| vImpresiones | (Impresiones visibles) El número de unidades de recomendación que registran al menos una vista. |
-| Vistas | El número de unidades de recomendación que aparecen en la ventanilla móvil del explorador del comprador. Este evento se puede activar varias veces en una página. |
+| Impresiones | El número de veces que se carga y procesa una unidad de recomendación en una página. En la página se representa una unidad de recomendación que está por debajo del pliegue de la ventanilla del explorador, aunque el comprador no la vea. En este caso, la unidad procesada se cuenta como una impresión, pero una vista solo se cuenta si el comprador desplaza la unidad a la vista. |
+| vImpresiones | (Impresiones visibles) El número de unidades de recomendación que registran al menos una vista. Por ejemplo, si la unidad de recomendación tiene dos líneas, cada una con dos productos, y el comprador no ve los dos últimos productos, pero los dos primeros sí, la actividad seguirá contando como una impresión. |
+| Vistas | El número de unidades de recomendación que aparecen en la ventanilla móvil del explorador del comprador. Si el comprador desplaza la página hacia arriba o hacia abajo varias veces, el evento se activa varias veces, cada vez que se puede ver la unidad. |
 | Clics | La suma del número de veces que un comprador hace clic en un artículo de la unidad de recomendación y el número de veces que el comprador hace clic en el botón **Agregar al carro** de la unidad de recomendación |
 | Ingresos | Ingresos impulsados por la recomendación para el intervalo de tiempo actual. |
 | Ingresos Lt | (Ingresos de por vida) Ingresos de por vida impulsados por una recomendación. |
 | Visibilidad | Porcentaje de unidades de recomendación que se registran para la vista. |
-| Ctr | (Tasa de pulsaciones) El porcentaje de impresiones unitarias de la recomendación que registra un clic. |
-| vCtr | (Tasa de clics visibles) El porcentaje de impresiones visibles para la unidad de recomendación que registra un clic. |
+| CTR | (Tasa de pulsaciones) El porcentaje de impresiones unitarias de la recomendación que registra un clic. CTR cuenta todas las impresiones, incluso si la unidad no entra en la vista del comprador. Si no se ve la unidad de recomendación, es poco probable que se haga clic en ella. Sin embargo, las impresiones invisibles se contabilizan en la puntuación de CTR y reducen el porcentaje de CTR general. |
+| vCTR | (Tasa de clics visibles) mide los clics basados únicamente en impresiones visibles (recomendaciones que aparecieron en la parte visible de la pantalla del comprador), lo que proporciona una medición más precisa de la participación del comprador. |

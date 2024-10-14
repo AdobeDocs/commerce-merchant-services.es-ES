@@ -3,7 +3,7 @@ title: Probar en el entorno de ensayo
 description: Aprenda a usar  [!DNL Product Recommendations] de su entorno de producción en su entorno de ensayo con fines de prueba.
 exl-id: 178ff2aa-7821-45f7-85f1-d490d8182817
 feature: Services, Recommendations, Staging
-source-git-commit: 3a5dec9422aa34eeb204b9fe6f089551e4038f1c
+source-git-commit: 4a5c3550b03651279c24de6b6361ffa6dc28776e
 workflow-type: tm+mt
 source-wordcount: '426'
 ht-degree: 0%
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 Antes de implementar recomendaciones en el entorno de producción, pruebe el servicio en un entorno que no sea de producción para asegurarse de que todo funciona según lo esperado.
 
-[!DNL Product Recommendations] devuelven productos basados en [datos de comportamiento del comprador](behavioral-data.md) recopilados de su tienda. Sin embargo, en un entorno que no es de producción, es probable que no tenga datos de comportamiento de los compradores. El único tipo de recomendación que puede probar sin datos de comportamiento es `More like this`. Este tipo de recomendación no requiere datos de entrada, ya que utiliza una coincidencia de similitud de contenido directo.
+[!DNL Product Recommendations] devuelven productos basados en [datos de comportamiento del comprador](events.md) recopilados de su tienda. Sin embargo, en un entorno que no es de producción, es probable que no tenga datos de comportamiento de los compradores. El único tipo de recomendación que puede probar sin datos de comportamiento es `More like this`. Este tipo de recomendación no requiere datos de entrada, ya que utiliza una coincidencia de similitud de contenido directo.
 
 Los siguientes tipos de recomendación requieren datos de comportamiento:
 

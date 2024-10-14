@@ -2,21 +2,25 @@
 title: Crear nueva recomendación
 description: Obtenga información sobre cómo crear una unidad de recomendación de productos.
 exl-id: d393ab78-0523-463f-9b03-ad3f523dce0f
-source-git-commit: 0940e0049d8fb388b40b828250b7955eabfd583f
+source-git-commit: 0b651189184a107dec8452d5b0d588f52d689605
 workflow-type: tm+mt
-source-wordcount: '1428'
+source-wordcount: '1457'
 ht-degree: 0%
 
 ---
 
 # Crear nueva recomendación
 
-Cuando crea una recomendación, crea una _unidad de recomendación_ que contiene el producto recomendado _elementos_.
+Cuando crea una recomendación, crea una _unidad de recomendación_ o widget que contiene _elementos_ del producto recomendado.
 
 ![Unidad de recomendación](assets/unit.png)
 _Unidad de recomendación_
 
 Cuando activa la unidad de recomendación, Adobe Commerce empieza a [recopilar datos](workspace.md) para medir impresiones, vistas, clics, etc. La tabla [!DNL Product Recommendations] muestra las métricas de cada unidad de recomendación para ayudarle a tomar decisiones comerciales fundamentadas.
+
+>[!NOTE]
+>
+>Las métricas de Recomendación de producto están optimizadas para las tiendas de Luma. Si la tienda no está basada en Luma, el modo en que las métricas rastrean los datos depende de cómo [implemente la colección de eventos](events.md).
 
 1. En la barra lateral de _Admin_, ve a **Marketing** > _Promociones_ > **Product Recommendations** para mostrar el espacio de trabajo de _Product Recommendations_.
 
@@ -83,7 +87,7 @@ Cuando activa la unidad de recomendación, Adobe Commerce empieza a [recopilar d
 
 Los indicadores de preparación muestran qué tipos de recomendación funcionan mejor según los datos de catálogo y de comportamiento disponibles. También puede usar indicadores de preparación para determinar si tiene problemas con su [evento](events.md) o si no tiene tráfico suficiente para rellenar el tipo de recomendación.
 
-Los indicadores de preparación se clasifican en [estáticos](#static-based) o [dinámicos](#dynamic-based). Solo se utilizan datos de catálogo de uso basados en estáticos, mientras que los basados en dinámicos utilizan datos de comportamiento de sus compradores. Esos datos de comportamiento se usan para [entrenar modelos de aprendizaje automático](behavioral-data.md) para generar recomendaciones personalizadas y calcular su puntuación de preparación.
+Los indicadores de preparación se clasifican en [estáticos](#static-based) o [dinámicos](#dynamic-based). Solo se utilizan datos de catálogo de uso basados en estáticos, mientras que los basados en dinámicos utilizan datos de comportamiento de sus compradores. Esos datos de comportamiento se usan para [entrenar modelos de aprendizaje automático](events.md) para generar recomendaciones personalizadas y calcular su puntuación de preparación.
 
 ### Cálculo de los indicadores de disponibilidad
 
@@ -95,7 +99,7 @@ Como resultado de estas variables, el porcentaje del indicador de disponibilidad
 
 Los indicadores de preparación se calculan en función de un par de factores:
 
-* Tamaño suficiente del conjunto de resultados: ¿Se devuelven suficientes resultados en la mayoría de los casos para evitar el uso de [recomendaciones de copia de seguridad](behavioral-data.md#backuprecs)?
+* Tamaño suficiente del conjunto de resultados: ¿Se devuelven suficientes resultados en la mayoría de los casos para evitar el uso de [recomendaciones de copia de seguridad](events.md#backuprecs)?
 
 * Variedad del conjunto de resultados suficiente: ¿los productos que se devuelven representan una variedad de productos del catálogo? El objetivo con este factor es evitar tener una minoría de productos siendo los únicos recomendados en todo el sitio.
 
@@ -103,7 +107,7 @@ En función de los factores anteriores, se calcula un valor de disponibilidad y 
 
 * 75 % o más significa que las recomendaciones sugeridas para ese tipo de recomendación serán muy relevantes.
 * Al menos el 50 % significa que las recomendaciones sugeridas para ese tipo de recomendación serán menos relevantes.
-* Menos del 50 % significa que las recomendaciones sugeridas para ese tipo de recomendación pueden no ser relevantes. En este caso, se utilizan [recomendaciones de copia de seguridad](behavioral-data.md#backuprecs).
+* Menos del 50 % significa que las recomendaciones sugeridas para ese tipo de recomendación pueden no ser relevantes. En este caso, se utilizan [recomendaciones de copia de seguridad](events.md#backuprecs).
 
 Obtenga más información acerca de [por qué los indicadores de preparación podrían ser bajos](#what-to-do-if-the-readiness-indicator-percent-is-low).
 
@@ -153,7 +157,7 @@ El porcentaje del indicador de preparación para los tipos de recomendación que
 
 #### Qué hacer si el porcentaje del indicador de disponibilidad es bajo
 
-Un porcentaje de preparación bajo indica que no hay muchos productos del catálogo que puedan incluirse en las recomendaciones de este tipo de recomendación. Esto significa que existe una alta probabilidad de que se devuelvan [recomendaciones de copia de seguridad](behavioral-data.md#backuprecs) si implementa este tipo de recomendación de todos modos.
+Un porcentaje de preparación bajo indica que no hay muchos productos del catálogo que puedan incluirse en las recomendaciones de este tipo de recomendación. Esto significa que existe una alta probabilidad de que se devuelvan [recomendaciones de copia de seguridad](events.md#backuprecs) si implementa este tipo de recomendación de todos modos.
 
 A continuación se enumeran los posibles motivos y soluciones para puntuaciones de preparación bajas comunes:
 
@@ -175,7 +179,7 @@ Para probar una recomendación cuando trabaje en un entorno que no sea de produc
 | Nombre | El nombre del producto. |
 | SKU | La unidad de stock asignada al producto |
 | Precio | El precio del producto. |
-| Tipo de resultado | Principal: indica que hay suficientes datos de formación recopilados para mostrar una recomendación.<br />Copia de seguridad: indica que no se recopilaron suficientes datos de formación, por lo que se utiliza una recomendación de copia de seguridad para rellenar el espacio. Vaya a [Datos de comportamiento](behavioral-data.md) para obtener más información acerca de los modelos de aprendizaje automático y las recomendaciones de copia de seguridad. |
+| Tipo de resultado | Principal: indica que hay suficientes datos de formación recopilados para mostrar una recomendación.<br />Copia de seguridad: indica que no se recopilaron suficientes datos de formación, por lo que se utiliza una recomendación de copia de seguridad para rellenar el espacio. Vaya a [Datos de comportamiento](events.md) para obtener más información acerca de los modelos de aprendizaje automático y las recomendaciones de copia de seguridad. |
 
 A medida que cree su unidad de recomendación, experimente con el tipo de página, el tipo de recomendación y los filtros para obtener comentarios inmediatos en tiempo real sobre los productos que se incluirán. A medida que empiece a comprender qué productos aparecen, puede configurar la unidad de recomendación para satisfacer sus necesidades comerciales.
 
