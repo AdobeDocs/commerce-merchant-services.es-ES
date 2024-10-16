@@ -2,9 +2,9 @@
 title: Tipos de recomendación
 description: Obtenga información acerca de las recomendaciones que puede implementar en varias páginas del sitio.
 exl-id: c3b16307-479b-4736-968b-b6ab38233a48
-source-git-commit: 42cb709f4699fcdd56df7ca02466ab416f01cab2
+source-git-commit: 3d931a0fd40ef488bcdf7d94e71bdabe8a998ed0
 workflow-type: tm+mt
-source-wordcount: '1575'
+source-wordcount: '1596'
 ht-degree: 0%
 
 ---
@@ -41,11 +41,15 @@ Estos tipos de recomendación recomiendan productos basados en el historial de c
 
 Estos tipos de recomendación están orientados a la prueba social para ayudar a los compradores a encontrar lo que les gustó a otros o están impulsados por productos para ayudarles a encontrar otros productos similares
 
+>[!NOTE]
+>
+>Los tipos de recomendación &quot;visto esto, visto aquello&quot;, &quot;visto esto, comprado aquello&quot; y &quot;comprado esto, comprado aquello&quot; no se basan en una métrica de ocurrencia simple, sino en un algoritmo de aprendizaje automático de filtrado colaborativo más sofisticado que busca *similitudes interesantes* que no se inclinan hacia productos populares.
+
 | Tipo | Descripción |
 |---|---|
 | Vio esto, vio aquello. | Recomienda productos que los compradores ven con mayor frecuencia y de forma desproporcionada con el producto visualizado actualmente.<br/><br/>**Dónde se usó:**<br/>- Detalles del producto<br/>- Carro<br/>- Confirmación <br/><br/>**Etiquetas sugeridas:**<br/>- Los clientes que vieron este producto también vieron (PDP) |
 | Vio esto, compró aquello. | Recomienda productos que los compradores tienden a comprar con desproporción con mayor frecuencia después de ver el producto actual. Ayuda a guiar a los compradores para descubrir productos que de otra manera no habrían notado.<br/><br/>**Dónde se usó:**<br/>- Detalles del producto<br/>- Carro<br/>- Confirmación <br/><br/>**Etiquetas sugeridas:**<br/>- Clientes que vieron este producto final comprado<br/>- Clientes que finalmente compraron<br/>- ¿Qué compran otros después de ver este producto? |
-| Compré esto, compré aquello. | Recomienda productos que los compradores compran con una frecuencia desproporcionada mayor con el producto visualizado actualmente. Se suele utilizar en el carro de compras o en la página de detalles del producto para aumentar la exposición del producto de venta cruzada relacionado y aumentar el valor promedio de pedido. Muestra productos de gran relevancia que los compradores pueden añadir al carro de compras sumando lo que otros compradores han comprado con el producto actual.<br/><br/>**Dónde se usó:**<br/>- Detalles del producto<br/>- Carro<br/>- Confirmación <br/><br/>**Etiquetas sugeridas:**<br/>- Obtenga todo lo que necesita<br/>- No olvide estas<br/>- Compradas frecuentemente juntas |
+| Compré esto, compré aquello. | Recomienda productos que los compradores compran con una frecuencia desproporcionada mayor con el producto visualizado actualmente. Muestra productos de gran relevancia que los compradores pueden añadir al carro de compras sumando lo que otros compradores han comprado con el producto actual.<br/><br/>**Dónde se usó:**<br/>- Detalles del producto<br/>- Carro<br/>- Confirmación <br/><br/>**Etiquetas sugeridas:**<br/>- Obtenga todo lo que necesita<br/>- No olvide estas<br/>- Compradas frecuentemente juntas |
 | Más parecido a esto | Recomienda productos basados en metadatos similares como nombre, descripción, asignación de categorías y atributos. Al evaluar los atributos de los productos que se están viendo, recomienda productos similares en la misma categoría. Por ejemplo, si un comprador está explorando alfombras de yoga, se recomiendan otros productos en la categoría de equipamiento. Dado que este tipo de recomendación no distingue entre géneros, no se recomienda para prendas de vestir, moda u otros verticales específicos de género.<br/><br/>**Dónde se usó:**<br/>- Detalles del producto<br/>- Carro<br/>- Confirmación <br/><br/>**Etiquetas sugeridas:**<br/>- Más productos como este<br/>- Similar a este |
 | [Similitud visual](#visualsim) | Recomienda productos de aspecto similar al producto que se está viendo. Este tipo de recomendación es más útil si las imágenes y los aspectos visuales de los productos son importantes para la experiencia de compra. |
 
