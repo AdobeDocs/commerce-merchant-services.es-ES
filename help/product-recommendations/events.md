@@ -3,7 +3,7 @@ title: Recopilar datos
 description: Descubra cómo los eventos recopilan datos para las recomendaciones de productos.
 exl-id: b827d88c-327f-4986-8239-8f1921d8383c
 feature: Services, Recommendations, Eventing
-source-git-commit: 87db52e0c851b56c9a8ceba1bf25c222c6d63cda
+source-git-commit: cd1ce643d7c1ffeec8e9853cfc6ffc5519ce8f7a
 workflow-type: tm+mt
 source-wordcount: '1316'
 ht-degree: 0%
@@ -78,7 +78,7 @@ En caso de que la recopilación de datos de entrada sea insuficiente, los siguie
 El [Recopilador de eventos de Adobe Commerce Storefront](https://developer.adobe.com/commerce/services/shared-services/storefront-events/collector/#quick-start) enumera todos los eventos implementados en tu tienda. Sin embargo, en esa lista hay un subconjunto de eventos específicos de Product Recommendations. Estos eventos recopilan datos cuando los compradores interactúan con las unidades de recomendación en la tienda y alimentan las métricas utilizadas para ayudarle a analizar el rendimiento de sus recomendaciones.
 
 | Evento | Descripción |
-| --- | --- | --- |
+| --- | --- |
 | `impression-render` | Se envía cuando se representa la unidad de recomendación en la página. Si una página tiene dos unidades de recomendación (comprado-comprado, ver-ver), se envían dos eventos `impression-render`. Este evento se utiliza para rastrear la métrica en busca de impresiones. |
 | `rec-add-to-cart-click` | El comprador hace clic en el botón **Agregar al carro** de un artículo de la unidad de recomendación. |
 | `rec-click` | El comprador hace clic en un producto de la unidad de recomendación. |
@@ -113,7 +113,7 @@ Los siguientes eventos no son específicos de Product Recommendations, pero son 
 En esta tabla se describen los eventos utilizados por cada tipo de recomendación.
 
 | Tipo de recomendación | Eventos | Página |
-| --- | --- | --- | ---|
+| --- | --- | --- |
 | Más visitados | `page-view`<br>`product-view` | Página de detalles del producto |
 | Más comprados | `page-view`<br>`complete-checkout` | Carro/cierre de compra |
 | Más añadidos al carro | `page-view`<br>`add-to-cart` | Página de detalles del producto<br>Página de lista de productos<br>Carro<br>Lista de deseos |
