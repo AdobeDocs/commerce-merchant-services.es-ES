@@ -4,16 +4,16 @@ description: Obtenga información sobre cómo integrar la instancia de Adobe Com
 exl-id: 28027a83-449b-4b96-b926-a7bfbfd883d8
 feature: Services, Saas
 role: Admin, User
-source-git-commit: bfb839c25a378eedd3a20fd01f12f7398c6568b9
+source-git-commit: adf5691a1bdfd35ffa7612d732cc149fd7594e9f
 workflow-type: tm+mt
-source-wordcount: '1213'
+source-wordcount: '1259'
 ht-degree: 0%
 
 ---
 
 # [!DNL Commerce Services Connector]
 
-Algunas características de Adobe Commerce y Magento Open Source utilizan [!DNL Commerce Services] y se implementan como SaaS (software como servicio). Para utilizar estos servicios, debe conectar su instancia de [!DNL Commerce] mediante las claves de API de producción y de zona protegida, y especificar el espacio de datos en la [configuración](#saas-configuration). Solo es necesario configurar la conexión una vez para cada instancia de Commerce.
+Algunas características de Adobe Commerce y Magento Open Source utilizan [!DNL Commerce Services] y se implementan como SaaS (software como servicio). Para utilizar estos servicios, debe conectar su instancia de [!DNL Commerce] mediante las claves de API de producción y de zona protegida, y especificar el espacio de datos en la [configuración](#saas-configuration). Solo es necesario configurar la conexión una vez para cada instancia.
 
 ## Servicios disponibles {#availableservices}
 
@@ -45,6 +45,7 @@ Las claves se pueden compartir según sea necesario con el integrador de sistema
 Además, los integradores de soluciones también tienen derecho a utilizar [!DNL Commerce Services]. Si usted es un integrador de soluciones, el firmante del contrato del socio [!DNL Commerce] debe generar las claves de API.
 
 >[!NOTE]
+>Los identificadores de clave *Production* y *Sandbox* no hacen referencia a su entorno. Utilice el mismo conjunto de claves API para para cada uno de los entornos, por ejemplo, los entornos local, de desarrollo, de ensayo o de producción.
 >
 >El propietario de la licencia suele ser el contacto principal de la cuenta de Adobe Commerce y no siempre es el mismo que el propietario del proyecto de Adobe Commerce en el proyecto de infraestructura en la nube.
 
@@ -68,7 +69,7 @@ Además, los integradores de soluciones también tienen derecho a utilizar [!DNL
 
 1. Repita los pasos anteriores para cada entorno (producción y zona protegida).
 
-   La sección **Claves de API** ahora muestra sus claves de API (públicas). Necesita las claves de producción y de zona protegida (Pública+Privada) al [seleccionar o crear un proyecto SaaS](#createsaasenv).
+   La sección **Claves de API** ahora muestra sus claves de API (públicas). Necesita las cuatro claves (tanto la de producción como la de zona protegida, Pública+Privada) al [seleccionar o crear un proyecto SaaS](#createsaasenv) en cualquiera de los entornos/instalaciones asociados con la licencia.
 
 ## Configuración de SaaS {#saasenv}
 
@@ -78,7 +79,7 @@ Para [!DNL Product Recommendations], el espacio de datos de SaaS contiene datos 
 
 >[!WARNING]
 >
-> Utilice su espacio de datos SaaS de producción solamente en la instalación de producción [!DNL Commerce] para evitar conflictos de datos. De lo contrario, se corre el riesgo de contaminar los datos del sitio de producción con datos de prueba, lo que provoca retrasos en la implementación. Por ejemplo, los datos del producto de producción se podrían sobrescribir por error a partir de los datos de ensayo, como las direcciones URL de ensayo.
+> Use su **espacio de datos SaaS de producción** solo en su instalación de producción [!DNL Commerce] para evitar conflictos de datos. De lo contrario, se corre el riesgo de contaminar los datos del sitio de producción con datos de prueba, lo que provoca retrasos en la implementación. Por ejemplo, los datos del producto de producción se podrían sobrescribir por error a partir de los datos de ensayo, como las direcciones URL de ensayo.
 > Si esto sucede, [envíe una solicitud de soporte técnico](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/overview) para solicitar la limpieza de datos.
 
 ### Aprovisionamiento de espacio de datos SaaS
