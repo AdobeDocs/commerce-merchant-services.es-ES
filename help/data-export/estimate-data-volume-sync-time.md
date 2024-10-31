@@ -3,9 +3,9 @@ title: Estimar el volumen de datos y el tiempo de transmisión
 description: Aprenda a calcular el volumen de datos y el tiempo de transmisión necesarios para que la herramienta  [!DNL data export]  sincronice los datos de fuente entre Adobe Commerce y los servicios conectados.
 role: Admin, Developer
 exl-id: 51ea98fd-cf90-44bd-a639-992bfc7f3eca
-source-git-commit: b80bc2867f44e6123adb104eb148ac5e8f80b63d
+source-git-commit: 7e33b1d5dfc825f8a4d252bcfcbd4f591e337aed
 workflow-type: tm+mt
-source-wordcount: '599'
+source-wordcount: '559'
 ht-degree: 0%
 
 ---
@@ -14,12 +14,12 @@ ht-degree: 0%
 
 El Adobe recomienda estimar el volumen de datos y el tiempo de sincronización antes de iniciar cualquier sincronización de fuente de datos para garantizar una programación sin problemas y evitar interrupciones en las operaciones del sitio. Esta estimación es importante a la hora de planificar sincronizaciones iniciales o actualizaciones de catálogos a gran escala, como cambios masivos de precios.
 
-De forma predeterminada, la herramienta de exportación de datos procesa los datos en modo de subproceso único con un tamaño de lote predeterminado. Con la configuración predeterminada, no hay paralelización del proceso de envío de fuentes. Además, la directiva de limitación predeterminada permite a Adobe Commerce aceptar dos solicitudes por segundo (RPS), lo que significa lo siguiente:
+De forma predeterminada, la herramienta de exportación de datos procesa los datos en modo de subproceso único con un tamaño de lote predeterminado. Con la configuración predeterminada, no hay paralelización del proceso de envío de fuentes. Además, este componente acepta solicitudes por segundo (RPS) que se traducen en lo siguiente:
 
 - Hasta 10 000 productos por minuto donde un producto es un SKU con atributos de una tienda específica
 - Hasta 50.000 precios por minuto
 
-En función de la configuración predeterminada, los siguientes factores afectan al tiempo de transmisión de datos durante la sincronización.
+Los siguientes factores afectan al tiempo de transmisión de datos durante la sincronización.
 
 - El recuento de subprocesos se establece en 1 (de forma predeterminada)
 - El tamaño del lote está establecido en _100_ para todas las fuentes, excepto para la fuente `prices`, donde está establecido en _500_.
@@ -27,9 +27,6 @@ En función de la configuración predeterminada, los siguientes factores afectan
 - Todos los productos se asignan a todos los sitios web existentes
 - Para los escenarios de cálculo de precios, todos los productos tienen precios especiales y agrupados asignados
 
->[!NOTE]
->
->Si es necesario, el límite de la política de restricción se puede aumentar en función de un análisis de impacto en el rendimiento. Para obtener ayuda, póngase en contacto con el administrador de cuentas técnico (TAM) o envíe un ticket de asistencia.
 
 ## Calcular transmisión de datos por fuente
 
