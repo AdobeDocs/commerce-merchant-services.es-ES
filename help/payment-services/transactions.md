@@ -4,7 +4,7 @@ description: Utilice el informe Transacciones para obtener visibilidad sobre las
 role: User
 level: Intermediate
 exl-id: dd1d80f9-5983-4181-91aa-971522eb56fa
-source-git-commit: 153e6a82134a34737529f4e1a135eb7803b20e05
+source-git-commit: 37380063242b6d904910be731b8e58471625e9cb
 workflow-type: tm+mt
 source-wordcount: '1272'
 ht-degree: 0%
@@ -132,7 +132,7 @@ Los informes de transacciones incluyen la siguiente información.
 
 | Columna | Descripción |
 | ------------ | -------------------- |
-| [!UICONTROL Order ID] | ID de pedido de Commerce (contiene solo valores para transacciones correctas y está vacío para transacciones rechazadas)<br> <br>Para ver [información de pedido](https://docs.magento.com/user-guide/sales/orders.html){target="_blank"} relacionada, haga clic en el identificador. |
+| [!UICONTROL Order ID] | ID de pedido de Commerce (contiene solo valores para transacciones correctas y está vacío para transacciones rechazadas)<br> <br>Para ver [información de pedido](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/order-management/orders/orders){target="_blank"} relacionada, haga clic en el identificador. |
 | [!UICONTROL PayPal Transaction ID] | ID de transacción proporcionado por el proveedor de pagos; contiene solo valores para las transacciones correctas y contiene un guión para las transacciones rechazadas. Puedes hacer clic en este identificador para acceder a la página de detalles de la transacción de PayPal. |
 | [!UICONTROL Customer ID] | ID de cliente de Commerce de un pedido <br> <br>Vea el tema [información del cliente](https://experienceleague.adobe.com/en/docs/commerce-admin/customers/customer-accounts/account-create){target="_blank"} para obtener más información. |
 | [!UICONTROL Transaction Date] | Marca de fecha y hora de transacción |

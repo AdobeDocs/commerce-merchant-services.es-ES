@@ -3,7 +3,7 @@ title: Habilitar [!DNL Payment Services] para producción
 description: Complete el proceso de incorporación habilitando  [!DNL Payment Services] for production.
 exl-id: 3b1269e8-127b-47f8-9738-9722a5737c63
 feature: Payments, Checkout, Configuration, Install
-source-git-commit: d1379bb108f2259051641a7bf77cd8b459fd9cbf
+source-git-commit: 37380063242b6d904910be731b8e58471625e9cb
 workflow-type: tm+mt
 source-wordcount: '1019'
 ht-degree: 0%
@@ -27,7 +27,7 @@ Después de [configurar los servicios de Commerce](connect.md#configure-commerce
 
    Esta opción está visible si aún no ha configurado [!DNL Payment Services] como método de pago para uno o más sitios web.
 
-   Se le dirigirá al área de configuración en la vista Inicio con las opciones relevantes expandidas (**[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > _[!UICONTROL Settings]_), donde puede habilitar las opciones de [!DNL Payment Services] como su [método de pago](https://docs.magento.com/user-guide/configuration/sales/payment-methods.html){target="_blank"}.
+   Se le dirigirá al área de configuración en la vista Inicio con las opciones relevantes expandidas (**[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > _[!UICONTROL Settings]_), donde puede habilitar las opciones de [!DNL Payment Services] como su [método de pago](https://experienceleague.adobe.com/en/docs/commerce-admin/config/sales/payment-methods/payment-methods){target="_blank"}.
 
 1. En _[!UICONTROL General Configuration]_, establezca **[!UICONTROL Enable]**en `Yes`.
 1. Establezca **[!UICONTROL Payment Action]**, tanto para _[!UICONTROL Credit Card Fields]_como para_[!UICONTROL PayPal payment buttons]_, en una de las siguientes opciones:
@@ -157,7 +157,7 @@ Activar pagos activos:
 1. En Inicio, haga clic en **[!UICONTROL Settings]** en la parte superior derecha de la página. Ver [Hogar](payments-home.md) para obtener más información.
 1. En la sección _[!UICONTROL General Configuration]_, establezca **[!UICONTROL Payment mode]**en `Production`.
 1. Haga clic en **[!UICONTROL Save]**.
-1. [Borra tu caché](https://docs.magento.com/user-guide/system/cache-management.html){target="_blank"}.
+1. [Borra tu caché](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/cache-management){target="_blank"}.
 
    >[!IMPORTANT]
    >

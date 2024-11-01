@@ -5,7 +5,7 @@ role: Admin
 level: Intermediate
 feature: Shipping/Delivery, Inventory, Configuration
 exl-id: 3ac217f7-e823-4578-8416-5ecceb76aa87
-source-git-commit: 36b57648e156ead801764f3ee4e5e6a0f3245fe6
+source-git-commit: 37380063242b6d904910be731b8e58471625e9cb
 workflow-type: tm+mt
 source-wordcount: '400'
 ht-degree: 0%
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 # Administración de stock de productos
 
-Como comerciante, puede usar las opciones de origen y existencias de Adobe Commerce [Inventory management](https://docs.magento.com/user-guide/catalog/inventory-management.html). Además, puede utilizar la solución Store Fulfillment para controlar otras opciones de disponibilidad de inventario relacionadas con las operaciones de su tienda comercial.
+Como comerciante, puede usar las opciones de origen y existencias de Adobe Commerce [Inventory management](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/introduction). Además, puede utilizar la solución Store Fulfillment para controlar otras opciones de disponibilidad de inventario relacionadas con las operaciones de su tienda comercial.
 
 - Opción de envío a domicilio desde tiendas Merchant
 

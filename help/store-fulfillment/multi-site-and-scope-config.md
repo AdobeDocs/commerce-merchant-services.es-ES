@@ -5,7 +5,7 @@ role: Admin
 level: Experienced
 feature: Shipping/Delivery, Inventory, Configuration
 exl-id: 8939046e-1c26-4380-83be-ff8e074e591d
-source-git-commit: 36b57648e156ead801764f3ee4e5e6a0f3245fe6
+source-git-commit: 37380063242b6d904910be731b8e58471625e9cb
 workflow-type: tm+mt
 source-wordcount: '181'
 ht-degree: 0%
@@ -14,9 +14,9 @@ ht-degree: 0%
 
 # Configuración de varios sitios web y ámbitos
 
-Puede establecer el [Ámbito](https://docs.magento.com/user-guide/configuration/scope.html) para algunos elementos con el fin de admitir varios sitios web, tiendas y vistas de tiendas:
+Puede establecer el [Ámbito](https://experienceleague.adobe.com/en/docs/commerce-admin/start/setup/websites-stores-views#scope-settings) para algunos elementos con el fin de admitir varios sitios web, tiendas y vistas de tiendas:
 
-- [Administrar existencias](https://docs.magento.com/user-guide/catalog/inventory-stock.html) por ámbito
+- [Administrar existencias](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/stocks/stocks-manage) por ámbito
 
 - Administrar [!DNL Delivery Methods] por ámbito
 

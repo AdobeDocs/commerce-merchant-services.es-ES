@@ -5,7 +5,7 @@ role: Admin, User
 level: Intermediate
 exl-id: 108f2b24-39c1-4c87-8deb-d82ee1c24d55
 feature: Payments, Checkout, Configuration
-source-git-commit: 09944ccad182e7f83c722ca6619a414416015ab4
+source-git-commit: 37380063242b6d904910be731b8e58471625e9cb
 workflow-type: tm+mt
 source-wordcount: '2405'
 ht-degree: 0%
@@ -120,7 +120,7 @@ Consulte [Opciones de pago](payments-options.md#credit-card-fields) para obtener
 | Campo | Ámbito | Descripción |
 |---|---|---|
 | [!UICONTROL Title] | vista de tienda | Añade el texto que se mostrará como el título de esta opción de pago en la vista Método de pago durante el cierre de compra. Opciones: [!UICONTROL text field] |
-| [!UICONTROL Payment Action] | sitio web | La [acción de pago](https://docs.magento.com/user-guide/configuration/sales/payment-methods.html#payment-actions){target="_blank"} para el método de pago especificado. Opciones: [!UICONTROL Authorize] / [!UICONTROL Authorize and Capture] |
+| [!UICONTROL Payment Action] | sitio web | La [acción de pago](https://experienceleague.adobe.com/en/docs/commerce-admin/config/sales/payment-methods/payment-methods#payment-actions){target="_blank"} para el método de pago especificado. Opciones: [!UICONTROL Authorize] / [!UICONTROL Authorize and Capture] |
 | [!UICONTROL Sort order] | vista de tienda | El orden de clasificación del método de pago especificado en la página de pago. Valor `Numeric Only` |
 | [!UICONTROL 3DS Secure authentication] | sitio web | Habilitar o deshabilitar la [autenticación segura de 3DS](security.md#3ds). Opciones: [!UICONTROL Always] / [!UICONTROL When Required] / [!UICONTROL Off] |
 | [!UICONTROL Show on checkout page] | sitio web | Habilitar o deshabilitar los campos de tarjeta de crédito para mostrar en la página de cierre de compra. Opciones: [!UICONTROL Off] / [!UICONTROL On] |
@@ -156,7 +156,7 @@ Puede activar y configurar la opción de pago mediante el botón [!UICONTROL App
 | Campo | Ámbito | Descripción |
 |---|---|---|
 | [!UICONTROL Checkout title] | vista de tienda | Añade el texto que se mostrará como el título de esta opción de pago en la vista Método de pago durante el cierre de compra. Opciones: [!UICONTROL text field] |
-| [!UICONTROL Payment Action] | sitio web | La [acción de pago](https://docs.magento.com/user-guide/configuration/sales/payment-methods.html#payment-actions) para el método de pago especificado. Opciones: [!UICONTROL Authorize] / [!UICONTROL Authorize and Capture] |
+| [!UICONTROL Payment Action] | sitio web | La [acción de pago](https://experienceleague.adobe.com/en/docs/commerce-admin/config/sales/payment-methods/payment-methods#payment-actions) para el método de pago especificado. Opciones: [!UICONTROL Authorize] / [!UICONTROL Authorize and Capture] |
 | [!UICONTROL Show on checkout page] | sitio web | Activa o desactiva el botón Apple Pay para mostrar en la página de pago y envío. Opciones: [!UICONTROL Off] / [!UICONTROL On] |
 | [!UICONTROL Show on checkout page] | sitio web | Activa o desactiva el botón Apple Pay para mostrar en la página de detalles del producto. Opciones: [!UICONTROL Off] / [!UICONTROL On] |
 | [!UICONTROL Show on mini cart preview] | sitio web | Activa o desactiva el botón Apple Pay para mostrar la vista previa del minicarrito. Opciones: [!UICONTROL Off] / [!UICONTROL On] |
@@ -203,7 +203,7 @@ Puedes activar y configurar las opciones de pago de los botones de pago de PayPa
 | Campo | Ámbito | Descripción |
 |---|---|---|
 | [!UICONTROL Title] | vista de tienda | Agrega el texto que se mostrará como título para esta opción de pago en la vista Método de pago durante el cierre de compra. Opciones: campo de texto |
-| [!UICONTROL Payment Action] | sitio web | La [acción de pago](https://docs.magento.com/user-guide/configuration/sales/payment-methods.html#payment-actions){target="_blank"} para el método de pago especificado. Opciones: [!UICONTROL Authorize] / [!UICONTROL Authorize and Capture] |
+| [!UICONTROL Payment Action] | sitio web | La [acción de pago](https://experienceleague.adobe.com/en/docs/commerce-admin/config/sales/payment-methods/payment-methods#payment-actions){target="_blank"} para el método de pago especificado. Opciones: [!UICONTROL Authorize] / [!UICONTROL Authorize and Capture] |
 | [!UICONTROL Sort order] | vista de tienda | El orden de clasificación del método de pago especificado en la página de pago. Valor `Numeric Only` |
 | [!UICONTROL Show PayPal buttons on checkout page] | vista de tienda | Habilitar o deshabilitar [!DNL PayPal payment buttons] en la página de cierre de compra. Opciones: [!UICONTROL  Yes] / [!UICONTROL No] |
 | [!UICONTROL Show PayPal buttons on product detail page] | vista de tienda | Habilite o deshabilite [!DNL PayPal payment buttons] en la página de detalles del producto. Opciones: [!UICONTROL  Yes] / [!UICONTROL No] |
@@ -278,7 +278,7 @@ Si cambias la configuración en _Configuración_, por ejemplo, cambiando los bot
 
 Si algún tipo de caché de la tabla Administración de caché tiene un estado `INVALIDATED`, es posible que el almacén no muestre la configuración más reciente para ese elemento. Vacíe la caché para actualizar el almacén y mostrar la configuración más reciente.
 
-Para asegurarse de que la tienda muestre la configuración correcta, [vacíe la caché](https://docs.magento.com/user-guide/system/cache-management.html) periódicamente.
+Para asegurarse de que la tienda muestre la configuración correcta, [vacíe la caché](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/cache-management) periódicamente.
 
 ## Bóveda de tarjetas
 
@@ -300,7 +300,7 @@ Consulte [3DS en Seguridad](security.md#3ds) para obtener más información.
 
 ## Usar varias cuentas de PayPal
 
-En [!UICONTROL Payment Services], puedes usar varias cuentas de PayPal dentro de **una** cuenta de comerciante en el nivel de sitio web. Por ejemplo, si tienes tiendas en varios países (que usan [divisas](https://docs.magento.com/user-guide/stores/currency.html) diferentes) o quieres usar Adobe Commerce para algunas partes de tu negocio, pero no para _todos_, puedes configurar tu cuenta de comerciante para que use varias cuentas de PayPal.
+En [!UICONTROL Payment Services], puedes usar varias cuentas de PayPal dentro de **una** cuenta de comerciante en el nivel de sitio web. Por ejemplo, si tienes tiendas en varios países (que usan [divisas](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/site-store/currency/currency) diferentes) o quieres usar Adobe Commerce para algunas partes de tu negocio, pero no para _todos_, puedes configurar tu cuenta de comerciante para que use varias cuentas de PayPal.
 
 Vea [Sitio, tienda y ámbito de vista](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html) para obtener más información sobre la jerarquía de sitios web, tiendas y vistas de tiendas.
 

@@ -5,7 +5,7 @@ role: Admin
 level: Intermediate
 feature: Shipping/Delivery, Integration, Tools and External Services, Configuration
 exl-id: d09c4652-e2eb-49dc-8c42-2aa9b6be5d6b
-source-git-commit: 36b57648e156ead801764f3ee4e5e6a0f3245fe6
+source-git-commit: 37380063242b6d904910be731b8e58471625e9cb
 workflow-type: tm+mt
 source-wordcount: '167'
 ht-degree: 0%
@@ -14,11 +14,11 @@ ht-degree: 0%
 
 # Configuración de asignación y ubicación de almacenamiento
 
-Habilite la ubicación de tiendas y las funcionalidades de asignación para la satisfacción de pedidos de tiendas configurando un [proveedor de distancia](https://docs.magento.com/user-guide/catalog/inventory-configure-distance-priority.html) para buscar ubicaciones de tiendas minoristas.
+Habilite la ubicación de tiendas y las funcionalidades de asignación para la satisfacción de pedidos de tiendas configurando un [proveedor de distancia](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/configuration/distance-priority-algorithm) para buscar ubicaciones de tiendas minoristas.
 
 **Requisitos**
 
-Durante el proceso de configuración, se proporciona una clave de API de Google para la plataforma Google Maps. Si no dispone de uno, [genere uno desde la plataforma Google Maps](https://docs.magento.com/user-guide/catalog/inventory-configure-distance-priority.html#configure-google-maps).
+Durante el proceso de configuración, se proporciona una clave de API de Google para la plataforma Google Maps. Si no dispone de uno, [genere uno desde la plataforma Google Maps](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/configuration/distance-priority-algorithm#configure-google-maps).
 
 Para configurar el proveedor de distancia:
 

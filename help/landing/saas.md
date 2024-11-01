@@ -4,7 +4,7 @@ description: Obtenga información sobre cómo integrar la instancia de Adobe Com
 exl-id: 28027a83-449b-4b96-b926-a7bfbfd883d8
 feature: Services, Saas
 role: Admin, User
-source-git-commit: adf5691a1bdfd35ffa7612d732cc149fd7594e9f
+source-git-commit: 37380063242b6d904910be731b8e58471625e9cb
 workflow-type: tm+mt
 source-wordcount: '1259'
 ht-degree: 0%
@@ -75,7 +75,7 @@ Además, los integradores de soluciones también tienen derecho a utilizar [!DNL
 
 Las instancias de [!DNL Commerce] deben configurarse con un proyecto SaaS y un espacio de datos SaaS para que [!DNL Commerce Services] pueda enviar datos a la ubicación correcta. Un proyecto SaaS agrupa todos los espacios de datos SaaS. Los espacios de datos SaaS se utilizan para recopilar y almacenar datos que permiten que [!DNL Commerce Services] funcione. Algunos de estos datos pueden exportarse desde la instancia [!DNL Commerce] y otros pueden recopilarse a partir del comportamiento del comprador en la tienda. Estos datos se conservan para proteger el almacenamiento en la nube.
 
-Para [!DNL Product Recommendations], el espacio de datos de SaaS contiene datos de catálogo y de comportamiento. Puede apuntar una instancia de [!DNL Commerce] a un espacio de datos SaaS [seleccionándola](https://docs.magento.com/user-guide/configuration/services/saas.html) en la configuración de [!DNL Commerce].
+Para [!DNL Product Recommendations], el espacio de datos de SaaS contiene datos de catálogo y de comportamiento. Puede apuntar una instancia de [!DNL Commerce] a un espacio de datos SaaS [seleccionándola](https://experienceleague.adobe.com/en/docs/commerce-admin/config/services/saas) en la configuración de [!DNL Commerce].
 
 >[!WARNING]
 >

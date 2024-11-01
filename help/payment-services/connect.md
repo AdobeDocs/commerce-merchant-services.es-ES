@@ -3,7 +3,7 @@ title: Conectar su instancia
 description: Conecte la instancia de Commerce con una clave de API y una clave privada, y especifique el espacio de datos en la configuración.
 exl-id: 5038fd31-bac5-419e-a172-66919a9b5272
 feature: Payments, Checkout, Configuration, Saas
-source-git-commit: 5d3a89b2ef06b2c67ec715ce4f31f22249b336e0
+source-git-commit: 37380063242b6d904910be731b8e58471625e9cb
 workflow-type: tm+mt
 source-wordcount: '636'
 ht-degree: 0%
@@ -28,11 +28,11 @@ ht-degree: 0%
 
 ## Obtener credenciales de API
 
-Para consumir un servicio SaaS de Commerce, debe usar las claves de API de su instancia (clave de API pública de Commerce y clave privada) tanto para la zona protegida como para la producción, que se crean y administran en su [Panel de Mi cuenta](https://account.magento.com/customer/account/login). [El par de claves](https://docs.magento.com/user-guide/configuration/services/saas.html) se puede crear para una cuenta de Commerce (una para zona protegida y otra para producción), aunque solo se puede usar activamente un par a la vez.
+Para consumir un servicio SaaS de Commerce, debe usar las claves de API de su instancia (clave de API pública de Commerce y clave privada) tanto para la zona protegida como para la producción, que se crean y administran en su [Panel de Mi cuenta](https://account.magento.com/customer/account/login). [El par de claves](https://experienceleague.adobe.com/en/docs/commerce-admin/config/services/saas) se puede crear para una cuenta de Commerce (una para zona protegida y otra para producción), aunque solo se puede usar activamente un par a la vez.
 
 >[!NOTE]
 >
->¿Necesita ayuda para acceder a su panel de [!UICONTROL My Account]? Consulte [Crear una cuenta de Commerce](https://docs.magento.com/user-guide/magento/magento-account-create.html).
+>¿Necesita ayuda para acceder a su panel de [!UICONTROL My Account]? Consulte [Crear una cuenta de Commerce](https://experienceleague.adobe.com/en/docs/commerce-admin/start/commerce-account/commerce-account-create).
 
 Una vez creada, siempre encontrará una clave de API pública en el panel de Mi cuenta. Se puede copiar o eliminar según sea necesario. La clave de API privada se vuelve visible al crear una clave de API pública para simulación de pruebas o producción; solo está disponible para copiarla o guardarla en el cuadro de diálogo siguiente y no se puede acceder a ella posteriormente.
 
@@ -40,7 +40,7 @@ Un par de claves API determinado es válido para todos los servicios de Commerce
 
 Si se pierde su clave de API, se debe [generar](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/get-started/connect.html#generate-an-api-key-and-private-key) un nuevo par de claves de API y [aplicar](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/get-started/connect.html#configure-saas-project) a la configuración del Conector de servicios de Commerce en el administrador. Si se configuran claves incorrectas o no existe ninguna en la configuración, aparecerá un cuadro de diálogo de error de verificación de cuenta en Payment Services que le notificará que la cuenta no se ha verificado.
 
-Ver una [lista de servicios de Commerce disponibles que usan la API](https://docs.magento.com/user-guide/system/saas.html#available-services).
+Ver una [lista de servicios de Commerce disponibles que usan la API](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/user-guides/integration-services/saas#availableservices).
 
 Para obtener información sobre cómo generar una clave de API para entornos de zona protegida o de producción, consulte [Credenciales](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/saas.html#apikey).
 

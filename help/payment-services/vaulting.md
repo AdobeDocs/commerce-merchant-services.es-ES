@@ -3,7 +3,7 @@ title: Bóveda de tarjeta de crédito
 description: Los compradores pueden guardar los datos de su tarjeta de crédito para futuras compras.
 exl-id: b4060307-ffcd-41cb-9b9d-a2fef02f23bd
 feature: Payments, Checkout
-source-git-commit: 6769e29a4ae07b8cf15aa2da3cac2fe8583497e0
+source-git-commit: 37380063242b6d904910be731b8e58471625e9cb
 workflow-type: tm+mt
 source-wordcount: '292'
 ht-degree: 0%
@@ -20,7 +20,7 @@ Los compradores utilizan el token almacenado para completar un pago futuro con l
 
 ![Usar credenciales almacenadas para una compra futura](assets/use-stored-card.png){width="400" zoomable="yes"}
 
-También pueden eliminar fácilmente sus tarjetas de crédito de [Métodos de pago almacenados](https://docs.magento.com/user-guide/customers/account-dashboard-stored-payment-methods.html) en Mi cuenta.
+También pueden eliminar fácilmente sus tarjetas de crédito de [Métodos de pago almacenados](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/payments/stored-payment-methods) en Mi cuenta.
 
 ![Métodos de pago almacenados en mi cuenta](assets/stored-payment-methods.png){width="400" zoomable="yes"}
 
