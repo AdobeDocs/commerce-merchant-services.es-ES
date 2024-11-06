@@ -3,9 +3,9 @@ title: "[!DNL Live Search] notas de la versión"
 description: "La información de la versión más reciente de  [!DNL Live Search]  de Adobe Commerce."
 exl-id: 2a581e43-35f5-48ce-9752-844430ccdebf
 feature: Services, Search, Release Notes
-source-git-commit: a68fe02be6e207b323d600910cba62992edd6725
+source-git-commit: 7f536c93ab1c87bf88bc892b2a485067fa8f8110
 workflow-type: tm+mt
-source-wordcount: '2046'
+source-wordcount: '2042'
 ht-degree: 0%
 
 ---
@@ -318,8 +318,8 @@ Las instalaciones existentes de [!DNL Live Search] deben actualizarse a [!DNL Li
 
 [!BADGE Compatible]{type="Informativo" tooltip="Admitido"}
 
-![Corregir](../assets/fix.svg) [Atributo de precio personalizado](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/product-attributes/attributes-input-types) ya no devuelve un error cuando se configura como [faceta]({% link live-search/facets-add.md %}).
-![Corregir](../assets/fix.svg) Se ha corregido un problema que provocaba que se produjera un error cuando no estaba disponible ningún [símbolo de moneda](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/site-store/currency/currency-configuration(optional)) (`data-currency-symbol`).
+![Corrección](../assets/fix.svg) [El atributo de precio personalizado](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/product-attributes/attributes-input-types) ya no devuelve un error cuando se configura como una [faceta](facets-add.md).
+![Corregir](../assets/fix.svg) Se ha corregido un problema que provocaba que se produjera un error cuando no estaba disponible ningún [símbolo de moneda](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/site-store/currency/currency-configuration#step-5-customize-currency-symbols-optional) (`data-currency-symbol`).
 ![Corrección](../assets/fix.svg) [[!DNL Storefront popover]](storefront-popover.md) ahora muestra el [Precio especial](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/products/pricing/product-price-special) (precio mínimo final) cuando está disponible.
 
 ### [!DNL Live Search] 1.3.0 {#130}

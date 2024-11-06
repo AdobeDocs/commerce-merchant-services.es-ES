@@ -3,9 +3,9 @@ title: 'Límites y límites'
 description: Conozca los límites y limitaciones de [!DNL Live Search] para asegurarse de que cumple con las necesidades de su empresa.
 role: Admin, Developer
 exl-id: ad6737f9-6ecd-4d82-89e7-d95425e4ba53
-source-git-commit: c01c0480d9452e52ebf7e31e6a5d81c26c0a8234
+source-git-commit: 438d6a04cb0044f9e06f8c8b53c8eec79d650170
 workflow-type: tm+mt
-source-wordcount: '914'
+source-wordcount: '935'
 ht-degree: 0%
 
 ---
@@ -43,6 +43,7 @@ Cuando se trata de buscar sitios, Adobe Commerce le da opciones. Revise los lím
 - Las facetas dinámicas pueden causar problemas de rendimiento en índices grandes e índices con una alta ordinalidad. Si ha creado facetas dinámicas y observa algún deterioro del rendimiento o si la página no se carga con errores de tiempo de espera, intente cambiar las facetas a ancladas para determinar si esto resuelve el problema de rendimiento.
 - El estado de las existencias (`quantity_and_stock_status`) no se admite como faceta. Puede usar `inStock: 'true'` para filtrar productos sin existencias. Esto se admite de forma predeterminada en el módulo `LiveSearchAdapter` cuando &quot;Mostrar productos sin existencias&quot; está establecido en &quot;Verdadero&quot; en el administrador [!DNL Commerce].
 - Los atributos de tipo de fecha no se admiten como faceta.
+- Los cambios realizados en los metadatos del atributo después de añadir dicho atributo como faceta no se reflejarán en la faceta.
 
 ## Consulta
 

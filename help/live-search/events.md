@@ -3,9 +3,9 @@ title: '[!DNL Live Search] eventos'
 description: Descubra cómo los eventos recopilan datos para  [!DNL Live Search].
 feature: Services, Eventing
 exl-id: b0c72212-9be0-432d-bb8d-e4c639225df3
-source-git-commit: f771e741d92bf94f46772934edf7a6bc39c75999
+source-git-commit: e1bf54b9fde42746a8c2f75253cbb3730821fb8c
 workflow-type: tm+mt
-source-wordcount: '288'
+source-wordcount: '287'
 ht-degree: 0%
 
 ---
@@ -37,7 +37,7 @@ Se requieren algunos eventos para rellenar el [tablero de Live Search](performan
 | Búsquedas sin resultados | `page-view`, `search-request-sent`, `search-response-received` | `searchRequestId` |
 | Tasa de resultados cero | `page-view`, `search-request-sent`, `search-response-received` | `searchRequestId` |
 | Búsquedas frecuentes | `page-view`, `search-request-sent`, `search-response-received` | `searchRequestId` |
-| El Promedio de posición del clic | `page-view`, `search-request-sent`, `search-response-received`, `search-results-view`, `search-product-click` | searchRequestId |
+| El Promedio de posición del clic | `page-view`, `search-request-sent`, `search-response-received`, `search-results-view`, `search-product-click` | `searchRequestId` |
 | Tasa de pulsaciones | `page-view`, `search-request-sent`, `search-response-received`, `search-results-view`, `search-product-click` | `searchRequestId`, `sku`, `parentSku` |
 | Tasa de conversión | `page-view`, `search-request-sent`, `search-response-received`, `search-results-view`, `search-product-click`, `product-view`, `add-to-cart`, `place-order` | `searchRequestId`, `sku`, `parentSku` |
 

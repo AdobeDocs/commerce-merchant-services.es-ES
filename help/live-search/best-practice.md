@@ -2,9 +2,10 @@
 title: Prácticas recomendadas '[!DNL Live Search]'
 description: Conozca las prácticas recomendadas para implementar  [!DNL Live Search] en su tienda.
 role: Admin, Developer
-source-git-commit: 77d12a1294c87089ce806615f92bf89396bfc43b
+exl-id: 69b2c2a6-c8a9-4640-8d2b-08fcd7a96034
+source-git-commit: 834935abc55e21863c83e82dae8ec79e70e67220
 workflow-type: tm+mt
-source-wordcount: '2349'
+source-wordcount: '2359'
 ht-degree: 0%
 
 ---
@@ -137,7 +138,7 @@ Más información sobre las reglas de búsqueda:
 
 ### Aprovechamiento de metadatos del producto
 
-Asegúrese de que los atributos de producto precisos y detallados estén [configurados para realizar búsquedas](workspace.md#set-attributes-as-searchable). Tenga en cuenta que los atributos SKU, nombre y categoría se pueden buscar de forma predeterminada y no se pueden excluir de la búsqueda. 
+Asegúrese de que los atributos de producto precisos y detallados estén [configurados para realizar búsquedas](workspace.md#set-attributes-as-searchable). Tenga en cuenta que los atributos SKU, nombre y categoría se pueden buscar de forma predeterminada y no se pueden excluir de la búsqueda. Para obtener los mejores resultados, no utilice espacios en los SKU.
 
 Para aumentar la relevancia de la búsqueda, asigne una ponderación a cada atributo en el que se pueda buscar. Los atributos con un peso mayor deben aparecer más arriba en los resultados de búsqueda. La ordenación por relevancia se ve afectada por varios criterios, como el peso de la búsqueda. Esto significa que, a veces, los atributos con una ponderación de búsqueda menor pueden seguir teniendo más relevancia que los atributos con una ponderación de búsqueda mayor. Otros criterios pueden incluir el número de coincidencias en cualquier atributo determinado, la posición del término de búsqueda encontrado y la estructura de texto general antes y después de un término de búsqueda.
 

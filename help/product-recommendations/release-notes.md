@@ -3,9 +3,9 @@ title: '[!DNL Product Recommendations] notas de la versión'
 description: La información de la versión más reciente de  [!DNL Product Recommendations]  de Adobe Commerce.
 exl-id: 1758e688-d26f-45e7-818c-d4726338a6c3
 feature: Services, Recommendations, Release Notes
-source-git-commit: 6f31361e95b17ee3fa19ff3c2f4a7e2d6d9bc091
+source-git-commit: 0e0f67c01c49c8d8c0ac4967eda0bde8685b2980
 workflow-type: tm+mt
-source-wordcount: '1376'
+source-wordcount: '1410'
 ht-degree: 0%
 
 ---
@@ -45,6 +45,15 @@ _25 de abril de 2023_
 ![Nuevos](../assets/new.svg) clientes de [!DNL Product Recommendations] ahora pueden aprovechar la [indexación de precios SaaS](../price-index/price-indexing.md).
 
 ## Versión principal actual
+
+### 6.0.3 de magento/product-recommendations
+
+_6 de noviembre de 2024_
+
+[!BADGE Compatible]{type=Informative tooltip="Admitido"}
+
+![Corregir](../assets/fix.svg) Se corrigió un problema en el cual el filtro de [categoría](filters.md#category) incluía categorías que no pertenecían a la vista de tienda actual.
+![Corregir](../assets/fix.svg) Se corrigió un problema de dependencia en el metapaquete `magento/product-recommendations`.
 
 ### 6.0.2 de magento/product-recommendations
 
@@ -142,7 +151,7 @@ _20 de marzo de 2023_
 [!BADGE Compatible]{type=Informative tooltip="Admitido"}
 
 ![Nuevo](../assets/new.svg) agregó [tipos de recomendación](type.md) nuevos: Conversión (ver al carro de compras), Conversión (ver para comprar) y Vistos recientemente. Estos nuevos tipos de recomendación están disponibles en el módulo 3.2.2 y versiones posteriores de `magento/product-recommendations`.
-![Corrección](../assets/fix.svg) Se ha corregido un problema por el que el firewall de aplicaciones web (WAF) de Fastly bloqueaba incorrectamente una cookie
+![Corregir](../assets/fix.svg) Se corrigió un problema en el cual Firewall de aplicaciones web de Fastly (WAF) bloqueaba incorrectamente una cookie
 ![Corrección](../assets/fix.svg) Se ha corregido un problema por el que los productos asignados a la vista de tienda no predeterminada no se mostraban en el panel _Vista previa de productos de Recommendations_ al crear una recomendación para esa vista de tienda específica
 ![Corregir](../assets/fix.svg) Se ha corregido un problema por el cual algunos nombres de unidades de recomendación en Page Builder impedían que se mostrara la unidad de recomendación en la tienda
 
@@ -169,7 +178,7 @@ _20 de marzo de 2023_
 [!BADGE Compatible]{type=Informative tooltip="Admitido"}
 
 ![Corregir](../assets/fix.svg) se corrigió un error modal de JavaScript
-![Corrección](../assets/fix.svg) Se ha corregido un problema por el que el firewall de aplicaciones web (WAF) de Fastly bloqueaba incorrectamente una cookie
+![Corregir](../assets/fix.svg) Se corrigió un problema en el cual Firewall de aplicaciones web de Fastly (WAF) bloqueaba incorrectamente una cookie
 
 ### 3.2.5 de magento/product-recommendations
 

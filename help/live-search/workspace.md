@@ -2,7 +2,7 @@
 title: "Configuración de Live Search"
 description: El área de trabajo  [!DNL Live Search] se usa para configurar, administrar y supervisar el rendimiento de la búsqueda.
 exl-id: fb85974a-a5f9-4e6c-bd03-451e6457f2d2
-source-git-commit: cacef0f205729fa4e05ec3c468594e1eaaf8c560
+source-git-commit: 7f536c93ab1c87bf88bc892b2a485067fa8f8110
 workflow-type: tm+mt
 source-wordcount: '949'
 ht-degree: 0%
@@ -41,7 +41,7 @@ Inicialmente, el [ámbito](https://experienceleague.adobe.com/docs/commerce-admi
 | [Sinónimos](synonyms.md) | Amplíe el alcance de la búsqueda para incluir las palabras que los compradores podrían utilizar para encontrar productos que difieran de los del catálogo. |
 | [Buscar comercialización](rules.md) | Dé forma a la experiencia de búsqueda con reglas lógicas que almacenan en déclencheur las acciones programadas. Impulse, entierre, fije u oculte productos para calibrar los resultados de búsqueda y lograr así sus objetivos empresariales. |
 | [Comercialización de categorías](category-merch.md) | Aplicar reglas y comercialización inteligente en el nivel de categoría. |
-| [GraphQL](graphql.md) | Los desarrolladores que han iniciado sesión en el administrador de su tienda pueden componer y probar consultas con datos de catálogo reales. Para obtener más información, ve a [Información general de GraphQL](https://developer.adobe.com/commerce/webapi/graphql/) en la documentación para desarrolladores de [!DNL Live Search]. |
+| [GraphQL](graphql.md) | Los desarrolladores que han iniciado sesión en el administrador de su tienda pueden componer y probar consultas con datos de catálogo reales. Para obtener más información, ve a [Información general de GraphQL](https://developer.adobe.com/commerce/services/graphql/live-search/) en la documentación para desarrolladores de [!DNL Live Search]. |
 | [Configuración](settings.md) | Determine cómo se agrupan los valores de faceta de precio por intervalo de precio en la tienda y establezca el idioma de indexación. |
 
 ## Definir atributos como en los que se puede buscar

@@ -2,9 +2,9 @@
 title: Crear nueva recomendación
 description: Obtenga información sobre cómo crear una unidad de recomendación de productos.
 exl-id: d393ab78-0523-463f-9b03-ad3f523dce0f
-source-git-commit: 0b651189184a107dec8452d5b0d588f52d689605
+source-git-commit: 0d6e935fc5812efd7d3359a4fa242f8d5d85043e
 workflow-type: tm+mt
-source-wordcount: '1457'
+source-wordcount: '1497'
 ht-degree: 0%
 
 ---
@@ -158,6 +158,10 @@ El porcentaje del indicador de preparación para los tipos de recomendación que
 #### Qué hacer si el porcentaje del indicador de disponibilidad es bajo
 
 Un porcentaje de preparación bajo indica que no hay muchos productos del catálogo que puedan incluirse en las recomendaciones de este tipo de recomendación. Esto significa que existe una alta probabilidad de que se devuelvan [recomendaciones de copia de seguridad](events.md#backuprecs) si implementa este tipo de recomendación de todos modos.
+
+>[!IMPORTANT]
+>
+>No se admiten los tipos de producto _Paquete_, _agrupado_ y personalizado. Si el catálogo contiene un gran número de estos tipos de productos, puede esperar una puntuación de preparación baja. Además, cualquier SKU con espacios puede reducir la relevancia de las recomendaciones y debe evitarse.
 
 A continuación se enumeran los posibles motivos y soluciones para puntuaciones de preparación bajas comunes:
 
