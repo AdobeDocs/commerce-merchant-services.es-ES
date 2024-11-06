@@ -3,9 +3,9 @@ title: "[!DNL Payment Services] notas de la versión"
 description: Revise las notas de la versión para obtener información acerca de todas las  [!DNL Payment Services] versiones.
 exl-id: 104aa2c7-7735-4ac2-8ed1-a03cd9911273
 feature: Payments, Release Notes
-source-git-commit: 37380063242b6d904910be731b8e58471625e9cb
+source-git-commit: f48a177f53c88d1794683d08976ca6c88031fb93
 workflow-type: tm+mt
-source-wordcount: '3017'
+source-wordcount: '3174'
 ht-degree: 0%
 
 ---
@@ -90,6 +90,24 @@ _28 de junio de 2021_
 ![Nuevo](../assets/new.svg)<!-- Issue PAY-2761 --> Ahora puede personalizar los datos que se muestran en el [informe de estado de pago del pedido](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/order-payment-status.html#show-and-hide-columns) y en el [informe Pagos](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/payouts.html#show-and-hide-columns) mostrando u ocultando columnas mediante el control Configuración de columna.
 
 +++
+
+## Versión 2.9.0
+
+_7 de noviembre de 2024_
+
+[!BADGE Compatible]{type=Informative tooltip="Admitido"}
+
+![Nuevo](../assets/new.svg)<!-- PAY-5629 --> [!DNL Payment Services] ahora admite una **URL actualizada del SDK para Apple Pay**, lo que mejora la integración para los comerciantes que utilizan Apple Pay. Esta función es compatible con macOS 14 y versiones posteriores, los dispositivos que ejecuten versiones anteriores de macOS no mostrarán esta funcionalidad.
+
+![Nuevo](../assets/new.svg)<!-- PAY-5630 --> actualizó las páginas de **Pago y envío**, **Producto**, **Carro** y **Minicarrito** para admitir la URL de SDK **actualizada para Apple Pay**, lo que mejora la experiencia del usuario para los comerciantes que ofrecen Apple Pay como opción de pago.
+
+![Nuevo](../assets/new.svg)<!-- PAY-5635 --> Se mejoraron las estimaciones de envío **según la dirección de Apple Pay**, lo que permite a los clientes ver los costos de envío precisos durante el cierre de compra.
+
+![Corregir](../assets/fix.svg)<!-- PAY-5661 --> Se corrigieron varios **[!DNL Payment Services]problemas en el cierre de compra**, lo que mejora la confiabilidad del proceso de pago para comerciantes y compradores.
+
+![Corregir](../assets/fix.svg)<!-- PAY-5692 --> Se ha corregido un problema por el que los nombres y apellidos del **cliente** no se agregaban al pedido al usar **botones inteligentes para la desprotección rápida**.
+
+![Corrección](../assets/fix.svg)<!-- PAY-5712 --> Resolvió un problema en el cual los comerciantes no podían completar el cierre de compra mediante la opción de pago Subtotal cero del cierre de compra **cuando la cantidad total era gratuita.**
 
 ## Versión 2.8.1
 
