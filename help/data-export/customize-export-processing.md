@@ -3,7 +3,7 @@ title: Mejora del rendimiento de exportación de datos SaaS
 description: Obtenga información sobre cómo mejorar el rendimiento de exportación de datos SaaS para Commerce Services mediante el modo de exportación de datos de varios subprocesos.
 role: Admin, Developer
 exl-id: 20c81ef4-5a97-45cd-9401-e82910a2ccc3
-source-git-commit: b80bc2867f44e6123adb104eb148ac5e8f80b63d
+source-git-commit: 6f67ea717595fe517d751ae14bf8123c7d05831b
 workflow-type: tm+mt
 source-wordcount: '652'
 ht-degree: 0%
@@ -41,8 +41,8 @@ Recuerde que una planificación cuidadosa, que incluya la estimación del volume
 
 Se admite el modo multiproceso para todos los [métodos de sincronización](data-synchronization.md#synchronization-process): sincronización completa, sincronización parcial y sincronización de elementos con errores. Para configurar subprocesos múltiples, especifique el número de subprocesos y el tamaño del lote que se utilizarán durante la sincronización.
 
-- `threadCount` es el número de subprocesos activados para procesar entidades. El valor predeterminado `threadCount` es `1`.
-- `batchSize` es el número de entidades procesadas en una iteración. El valor predeterminado `batchSize` es `100` registros para todas las fuentes, excepto la fuente de precios. Para la fuente de precios, el valor predeterminado es `500` registros.
+- `thread-count` es el número de subprocesos activados para procesar entidades. El valor predeterminado `thread-count` es `1`.
+- `batch-size` es el número de entidades procesadas en una iteración. El valor predeterminado `batch-size` es `100` registros para todas las fuentes, excepto la fuente de precios. Para la fuente de precios, el valor predeterminado es `500` registros.
 
 Puede configurar el subprocesamiento múltiple como una opción temporal al ejecutar un comando de resincronización o agregando la configuración de subprocesamiento múltiple a la configuración de la aplicación de Adobe Commerce.
 
@@ -52,10 +52,10 @@ Puede configurar el subprocesamiento múltiple como una opción temporal al ejec
 
 ### Configurar subprocesamiento múltiple durante la ejecución
 
-Cuando ejecute un comando de sincronización completa desde la línea de comandos, especifique el procesamiento de subprocesos múltiples agregando las opciones `threadCount` y `batchSize` al comando CLI.
+Cuando ejecute un comando de sincronización completa desde la línea de comandos, especifique el procesamiento de subprocesos múltiples agregando las opciones `thread-count` y `batch-size` al comando CLI.
 
 ```
-bin/magento saas:resync --feed=products --threadCount=2 --batchSize=200
+bin/magento saas:resync --feed=products --thread-count=2 --batch-size=200
 ```
 
 Las opciones especificadas en la línea de comandos anulan la configuración de exportación de datos especificada en el archivo de la aplicación Adobe Commerce `config.php`.
