@@ -2,9 +2,9 @@
 title: Widgets de tienda
 description: Obtenga información acerca de la ventana emergente de la tienda y los widgets de página de la lista de productos.
 exl-id: 689f0faa-8b0e-4945-9889-503e1eed5960
-source-git-commit: 9f5990309dc952b2e9d8545532487d990d40b0ad
+source-git-commit: 256a1891a4769dcb3f5fa3e78bf1300190363c10
 workflow-type: tm+mt
-source-wordcount: '195'
+source-wordcount: '194'
 ht-degree: 0%
 
 ---
@@ -22,7 +22,7 @@ Puede personalizar el aspecto de estos widgets para que se adapten mejor al esti
 
 Cuando empiece a escribir en el cuadro de búsqueda de la tienda Commerce, [!DNL Live Search] responde con productos sugeridos y una imagen en miniatura de los principales resultados de búsqueda en el [widget emergente](storefront-popover.md).
 
-![Widget de ventana emergente](assets/ls-search-popover.png)
+![[!DNL Live Search popover]](assets/storefront-search-as-you-type.png)
 
 Para obtener más información sobre el widget de la ventana emergente y cómo personalizarlo para tu tienda, consulta [[!DNL Storefront Popover]](storefront-popover.md).
 
@@ -30,6 +30,6 @@ Para obtener más información sobre el widget de la ventana emergente y cómo p
 
 Al hacer clic para ver todos los resultados de la ventana emergente de la tienda, el widget de página de lista de productos muestra las funciones que puede utilizar para restringir continuamente la búsqueda.
 
-![widget de página de lista de productos](assets/ls-plp.png)
+![Resultados del widget de página de lista de productos](assets/plp-css-widgets.png)
 
 Para obtener más información sobre el widget de página de lista de productos y cómo personalizarlo para tu tienda, consulta [widget de página de lista de productos](plp-styling.md).
