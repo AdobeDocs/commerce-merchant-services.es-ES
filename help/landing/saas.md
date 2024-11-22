@@ -4,9 +4,9 @@ description: Obtenga información sobre cómo integrar la instancia de Adobe Com
 exl-id: 28027a83-449b-4b96-b926-a7bfbfd883d8
 feature: Services, Saas
 role: Admin, User
-source-git-commit: 37380063242b6d904910be731b8e58471625e9cb
+source-git-commit: daad5bb1ce74126d727207812abebdcf0cbf72c0
 workflow-type: tm+mt
-source-wordcount: '1259'
+source-wordcount: '1304'
 ht-degree: 0%
 
 ---
@@ -118,6 +118,10 @@ Para seleccionar o crear un proyecto SaaS, solicite la clave de API [!DNL Commer
 Cualquier proyecto SaaS asociado con sus claves aparecerá en el campo **Proyecto** de la sección **Identificador SaaS**.
 
 1. Si no existen proyectos SaaS, haga clic en **Crear proyecto**. A continuación, en el campo **Proyecto**, escriba un nombre para su proyecto SaaS.
+
+>[!NOTE]
+>
+>Para evitar confusiones, no use un servicio Commerce específico como nombre para el proyecto, por ejemplo *Live Search*, *Product Recommendations* o *Conexión de datos*.  A menos que la licencia se haya aprovisionado para varios proyectos SaaS, puede utilizar el mismo proyecto SaaS para varios servicios.
 
 1. Seleccione el **espacio de datos** que se usará para la configuración actual de su almacén de [!DNL Commerce].
 
