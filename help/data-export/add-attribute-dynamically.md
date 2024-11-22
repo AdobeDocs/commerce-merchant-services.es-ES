@@ -1,15 +1,15 @@
 ---
-title: Agregar atributos de producto mediante programación a la fuente del exportador de datos
-description: Obtenga información sobre cómo agregar atributos de producto personalizados a los datos de la fuente  [!DNL SaaS Data Export] .
+title: Añadir atributos de producto de forma dinámica
+description: Obtenga información sobre cómo añadir atributos de producto personalizados a fuentes de exportación de datos de forma dinámica durante el proceso de sincronización de datos.
 role: Admin, Developer
-source-git-commit: 06ef294d2670e5d36bbb6cd18deafce2cc751772
+source-git-commit: e75092e918d06d4d1291784b0498d274ea8396e8
 workflow-type: tm+mt
-source-wordcount: '282'
+source-wordcount: '281'
 ht-degree: 0%
 
 ---
 
-# Agregar atributos de producto mediante programación a la fuente del exportador de datos
+# Añadir atributos de producto de forma dinámica durante la sincronización de datos
 
 Puede ampliar los atributos de producto sin registrarlos en Adobe Commerce creando un complemento para añadir los atributos durante el proceso de sincronización de datos.
 
