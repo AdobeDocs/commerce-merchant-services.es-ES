@@ -5,7 +5,7 @@ role: Admin, Developer
 level: Intermediate
 feature: Shipping/Delivery, Install
 exl-id: 6613268a-7d22-4c54-af89-834921b7f262
-source-git-commit: 37380063242b6d904910be731b8e58471625e9cb
+source-git-commit: b2425eb7204400899dfe6eaa9978e49c3ff00ec7
 workflow-type: tm+mt
 source-wordcount: '666'
 ht-degree: 0%
@@ -189,7 +189,7 @@ Desde el servidor de Adobe Commerce, compruebe que los módulos de la extensión
 
 ### Pasos adicionales
 
-Si es necesario, use el comando CLI [setup:static-content:deploy](https://experienceleague.adobe.com/docs/commerce-operations/reference/commerce-on-premises.html){target="_blank"} para implementar archivos de vista estática en el entorno de producción.
+Si es necesario, use el comando CLI [setup:static-content:deploy](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/cli-reference/commerce-on-premises){target="_blank"} para implementar archivos de vista estática en el entorno de producción.
 
 ```bash
 php bin/magento setup:static-content:deploy -f
