@@ -4,9 +4,9 @@ description: Revise los requisitos de seguridad y cumplimiento del sitio.
 exl-id: 083c5a12-1d78-48b5-b9e3-612b104ce7e0
 feature: Payments, Checkout, Compliance
 redirect_from: https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/security.html
-source-git-commit: 37380063242b6d904910be731b8e58471625e9cb
+source-git-commit: 17c8d16a2593f7bb6015f5b2968fc4c67be8ed5b
 workflow-type: tm+mt
-source-wordcount: '525'
+source-wordcount: '571'
 ht-degree: 0%
 
 ---
@@ -41,13 +41,16 @@ PCI 3-D Secure (3DS) permite la autenticación del comprador con el emisor de su
 
 Si es un comerciante de la UE o de Gran Bretaña donde se requiere el cumplimiento de 3DS, debe activar manualmente 3DS (es `Off` de forma predeterminada) en [Configuración](settings.md#credit-card-fields).
 
->[!NOTE]
+>[!IMPORTANT]
 >
 >El requisito de 3DS se aplica a las transacciones en las que el banco del titular de la tarjeta y la empresa se encuentran en el [Espacio Económico Europeo](https://www.efta.int/eea) (EEE) y Gran Bretaña. Los comerciantes estadounidenses no requieren 3DS, pero pueden habilitarlo para sus transacciones si así lo desean.
 
 Los pedidos realizados por el comerciante o el personal de la tienda para el comprador no están configurados con medidas de cumplimiento de 3DS.
 
-Consulte [3DS en Configuración](settings.md#3ds) para obtener más información.
+>[!MORELIKETHIS]
+>
+> * Consulte [3DS en la configuración](settings.md#3ds) para obtener más información.
+> * Consulte [tarjetas de prueba](https://developer.paypal.com/docs/checkout/advanced/customize/3d-secure/test/) en la documentación para desarrolladores de PayPal para obtener más información sobre tarjetas de crédito específicas para pruebas de 3DS.
 
 ### Bóveda de tarjetas
 
@@ -65,7 +68,9 @@ PayPal también cuenta con una protección contra el fraude integrada que utiliz
 
 ## Protección contra el fraude
 
-Puede habilitar la protección contra fraudes automatizada para Payment Services con la [extensión Signifyd](https://commercemarketplace.adobe.com/signifyd-module-connect.html).
+Puede habilitar la protección contra fraudes automatizada para Payment Services con la [extensión Signifyd](https://commercemarketplace.adobe.com/signifyd-module-connect.html). Consulte [Protección contra fraudes significativa](fraud-protection.md) para obtener más información.
 
-Consulte [Protección contra fraudes significativa](fraud-protection.md) para obtener más información.
+PayPal ofrece otras opciones para la [protección contra fraudes](https://www.paypal.com/us/cshelp/article/what-is-fraud-protection-help1014){target=_blank} en la documentación para desarrolladores:
 
+* Consulte [Protección contra fraudes avanzada](https://www.paypal.com/us/enterprise/fraud-protection-advanced#fraud-protection-advanced){target=_blank} para obtener más información.
+* Consulte [Protección contra reembolso](https://www.paypal.com/us/cshelp/article/what-is-chargeback-protection-help608){target=_blank} para obtener más información.
