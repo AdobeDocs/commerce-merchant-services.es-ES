@@ -1,11 +1,11 @@
 ---
-title: Prácticas recomendadas '[!DNL Live Search]'
+title: Prácticas recomendadas de [!DNL Live Search]
 description: Conozca las prácticas recomendadas para implementar  [!DNL Live Search] en su tienda.
 role: Admin, Developer
 exl-id: 69b2c2a6-c8a9-4640-8d2b-08fcd7a96034
-source-git-commit: 834935abc55e21863c83e82dae8ec79e70e67220
+source-git-commit: ba2b798f2e7d5716be0d1686359ac8382f6cf8e4
 workflow-type: tm+mt
-source-wordcount: '2359'
+source-wordcount: '2426'
 ht-degree: 0%
 
 ---
@@ -106,6 +106,14 @@ Aprenda a [administrar redirecciones de búsqueda](https://experienceleague.adob
 ## Mejorar la relevancia de los resultados de búsqueda
 
 En esta sección se explica cómo mejorar la relevancia de los resultados de búsqueda mediante la implementación de reglas de búsqueda eficaces y el uso de metadatos de productos para garantizar que se puedan buscar atributos precisos y detallados.
+
+### Imágenes
+
+Asegúrese de que los productos secundarios de los productos configurables tengan imágenes con las funciones correctas. Si tiene productos principales o secundarios, el resultado de la búsqueda podría no tener imágenes.
+
+>[!NOTE]
+>
+>Las imágenes de los resultados de búsqueda pueden variar según el término de búsqueda. Si el término de búsqueda determina que un producto secundario es más relevante, se utilizarán imágenes del producto secundario en lugar de imágenes del producto principal.
 
 ### Buscar reglas
 
