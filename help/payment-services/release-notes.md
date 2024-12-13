@@ -1,11 +1,11 @@
 ---
-title: "[!DNL Payment Services] notas de la versión"
+title: Notas de la versión [!DNL Payment Services]
 description: Revise las notas de la versión para obtener información acerca de todas las  [!DNL Payment Services] versiones.
 exl-id: 104aa2c7-7735-4ac2-8ed1-a03cd9911273
 feature: Payments, Release Notes
-source-git-commit: f48a177f53c88d1794683d08976ca6c88031fb93
+source-git-commit: feeaed7b7130b3581a1b1f7e3bdd161ce1e7d765
 workflow-type: tm+mt
-source-wordcount: '3174'
+source-wordcount: '3311'
 ht-degree: 0%
 
 ---
@@ -91,13 +91,31 @@ _28 de junio de 2021_
 
 +++
 
+## Versión 2.10.0
+
+_13 de diciembre de 2024_
+
+[!BADGE Compatible]{type=Informative tooltip="Admitido"}
+
+![Nuevo](../assets/new.svg)<!-- PAY-5702 --> [!DNL Payment Services] ahora admite puntos finales de GraphQL para el almacenamiento sin compra, lo que permite a los clientes guardar sus métodos de pago sin completar una transacción.
+
+![Nuevo](../assets/fix.svg)<!-- PAY-5789 --> [!DNL Payment Services] ahora admite la autenticación segura [3D con Google Pay](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/payment-services/security-compliance/security#3ds), lo que mejora la seguridad de los comerciantes y clientes durante las transacciones de pago.
+
+![Corrección](../assets/fix.svg)<!-- PAY-5703 --> [!DNL Payment Services] agrega la capacidad para que [los clientes guarden tarjetas directamente en su **Mi cuenta**](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/payment-services/payments-checkout/vaulting), lo que mejora la comodidad y simplifica los cierres de compra futuros. `Vault without purchase functionality might not be 100% compatible with Adobe Commerce 2.4.4 due to a known issue with` [`GraphQL authorization mechanisms`](https://developer.adobe.com/commerce/webapi/graphql/usage/authorization-tokens/).
+
+![Corregir](../assets/fix.svg)<!-- PAY-5762 --> Se corrigió un problema en el cual los códigos de cupones no se aplicaban en la página de revisión de pedidos cuando el pedido se iniciaba desde la página de detalles del producto (PDP).
+
+![Corrección](../assets/fix.svg)<!-- PAY-5792 --> [!DNL Payment Services] ahora muestra descripciones y direcciones de facturación para las tarjetas [abovedadas en la página de cierre de compra](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/payment-services/payments-checkout/vaulting), lo que da a los clientes más visibilidad sobre sus métodos de pago guardados.
+
+![Corrección](../assets/fix.svg)<!-- PAY-5793 --> [!DNL Payment Services] permite que los comerciantes almacenen la dirección de facturación de las tarjetas de débito directamente desde la página de pago, lo que garantiza información de pago precisa y completa.
+
 ## Versión 2.9.0
 
 _7 de noviembre de 2024_
 
 [!BADGE Compatible]{type=Informative tooltip="Admitido"}
 
-![Nuevo](../assets/new.svg)<!-- PAY-5629 --> [!DNL Payment Services] ahora admite una **URL actualizada del SDK para Apple Pay**, lo que mejora la integración para los comerciantes que utilizan Apple Pay. Esta función es compatible con macOS 14 y versiones posteriores, los dispositivos que ejecuten versiones anteriores de macOS no mostrarán esta funcionalidad.
+![Nuevo](../assets/new.svg)<!-- PAY-5629 --> [!DNL Payment Services] ahora admite una **URL de SDK actualizada para Apple Pay**, lo que mejora la integración para los comerciantes que usan Apple Pay. Esta función es compatible con macOS 14 y versiones posteriores, los dispositivos que ejecuten versiones anteriores de macOS no mostrarán esta funcionalidad.
 
 ![Nuevo](../assets/new.svg)<!-- PAY-5630 --> actualizó las páginas de **Pago y envío**, **Producto**, **Carro** y **Minicarrito** para admitir la URL de SDK **actualizada para Apple Pay**, lo que mejora la experiencia del usuario para los comerciantes que ofrecen Apple Pay como opción de pago.
 
@@ -115,7 +133,7 @@ _13 de septiembre de 2024_
 
 [!BADGE Compatible]{type=Informative tooltip="Admitido"}
 
-![Se ha corregido](../assets/fix.svg)<!-- PAY-5644 --> un problema con la caché de los parámetros del SDK al usar varios ámbitos en [!DNL Payment Services]. La configuración del SDK ahora se almacena en caché por separado para cada ámbito en lugar de en una sola clave. Esto garantiza que la caché de cada ámbito se invalide de forma independiente, lo que mejora la fiabilidad al administrar varios ámbitos.
+![Se ha corregido](../assets/fix.svg)<!-- PAY-5644 --> un problema con la memoria caché de los parámetros de SDK al usar varios ámbitos en [!DNL Payment Services]. La configuración de SDK ahora se almacena en caché por separado para cada ámbito en lugar de en una sola clave. Esto garantiza que la caché de cada ámbito se invalide de forma independiente, lo que mejora la fiabilidad al administrar varios ámbitos.
 
 ## Versión 2.8.0
 

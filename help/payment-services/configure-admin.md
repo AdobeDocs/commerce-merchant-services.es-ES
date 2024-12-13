@@ -5,9 +5,9 @@ role: Admin, User
 level: Intermediate
 exl-id: e1a3269d-bdf9-4b0f-972f-e8a0ef469503
 feature: Payments, Checkout, Configuration
-source-git-commit: 37380063242b6d904910be731b8e58471625e9cb
+source-git-commit: feeaed7b7130b3581a1b1f7e3bdd161ce1e7d765
 workflow-type: tm+mt
-source-wordcount: '1703'
+source-wordcount: '1718'
 ht-degree: 0%
 
 ---
@@ -67,7 +67,7 @@ Consulte [Opciones de pago](payments-options.md#paypal-smart-buttons) para obten
 1. Para **[!UICONTROL Show on checkout page]**, elija `Yes` para habilitar los campos de tarjeta de crédito en la página de pago y envío.
 1. Para **[!UICONTROL Vault Enabled]**, elija `Yes` para habilitar el depósito de tarjetas de crédito para el cierre de compra.
 1. Para **[!UICONTROL Vault Enabled in Admin]**, elija `Yes` para permitir que el comerciante cree pedidos para clientes que usen su tarjeta de crédito abovedada.
-1. Para habilitar **[!UICONTROL 3DS Secure authentication]** (`Off` de forma predeterminada), elija `Always` o `When required`.
+1. Para habilitar **[!UICONTROL 3D Secure authentication]** (`Off` de forma predeterminada), elija `Always` o `When required`.
 1. Para **[!UICONTROL Debug Mode]**, elija `Yes` para habilitar el modo de depuración o `No` para deshabilitarlo.
 1. Haga clic en **[!UICONTROL Save Config]** para guardar los cambios.
 1. Vaya a **[!UICONTROL System]** > **[!UICONTROL Cache Management]** y, a continuación, haga clic en **[!UICONTROL Flush Cache]** para actualizar todas las cachés no válidas.
@@ -82,7 +82,7 @@ Consulte [Opciones de pago](payments-options.md#paypal-smart-buttons) para obten
 | [!UICONTROL Show on checkout page] | sitio web | Habilite o deshabilite los campos de tarjeta de crédito en la página de cierre de compra. Opciones: [!UICONTROL Yes] / [!UICONTROL No] |
 | [!UICONTROL Vault enabled] | vista de tienda | Habilitar o deshabilitar el depósito de [tarjetas de crédito](vaulting.md). Opciones: [!UICONTROL Yes] / [!UICONTROL No] |
 | [!UICONTROL Vault enabled in Admin] | vista de tienda | Habilite o deshabilite la capacidad para que [el comerciante complete los pedidos de los clientes del administrador](vaulting.md) mediante un método de pago abovedado. Opciones: [!UICONTROL Yes] / [!UICONTROL No] |
-| [!UICONTROL 3DS Secure authentication] | sitio web | Habilitar o deshabilitar la [autenticación segura de 3DS](security.md#3ds). Opciones: [!UICONTROL Always] / [!UICONTROL When Required] / [!UICONTROL Off] |
+| [!UICONTROL 3D Secure authentication] | sitio web | Habilitar o deshabilitar la [autenticación segura de 3DS](security.md#3ds). Opciones: [!UICONTROL Always] / [!UICONTROL When Required] / [!UICONTROL Off] |
 | [!UICONTROL Debug Mode] | sitio web | Habilite o deshabilite el modo de depuración. Opciones: `[!UICONTROL Yes]` / `[!UICONTROL No]` |
 
 ## [!UICONTROL Apple Pay]
@@ -136,6 +136,7 @@ Consulte [Opciones de pago](payments-options.md#google-pay-button) para obtener 
    * **[!UICONTROL Show Google Pay on product detail page]**
    * **[!UICONTROL Show Google Pay in mini cart preview]**
    * **[!UICONTROL Show Google Pay on cart page]**
+1. Para habilitar **[!UICONTROL 3D Secure authentication]** (`Off` de forma predeterminada), elija `Always` o `When required`.
 1. Para habilitar el modo de depuración, seleccione `Yes` para **[!UICONTROL Debug Mode]** (`No` lo deshabilita).
 1. Configure el aspecto del botón _[!UICONTROL Google Pay]_seleccionando **[!UICONTROL Button Color]**,**[!UICONTROL Button Type]**y **[!UICONTROL Button Style]**según sea necesario.
 1. Para establecer la altura, utiliza el valor predeterminado para la altura definida en **[!UICONTROL Button Style]**.
@@ -153,6 +154,7 @@ Consulte [Opciones de pago](payments-options.md#google-pay-button) para obtener 
 | [!UICONTROL Show buttons on product detail page] | vista de tienda | Habilite o deshabilite [!DNL Google Pay] en la página de detalles del producto. Opciones: `[!UICONTROL Yes]` / `[!UICONTROL No]` |
 | [!UICONTROL Show buttons in mini-cart preview] | vista de tienda | Habilite o deshabilite [!DNL Google Pay] en la vista previa del minicarrito. Opciones: `[!UICONTROL Yes]` / `[!UICONTROL No]` |
 | [!UICONTROL Show buttons on cart page] | vista de tienda | Habilite o deshabilite [!DNL Google Pay] en la página del carro de compras. Opciones: `[!UICONTROL Yes]` / `[!UICONTROL No]` |
+| [!UICONTROL 3D Secure authentication] | vista de tienda | Habilitar o deshabilitar [autenticación 3D Secure](security.md#3ds). Opciones: [!UICONTROL Always] / [!UICONTROL When Required] / [!UICONTROL Off] |
 | [!UICONTROL Debug Mode] | sitio web | Habilite o deshabilite el modo de depuración. Opciones: `[!UICONTROL Yes]` / `[!UICONTROL No]` |
 | [!UICONTROL Button Color] | Vista de tienda | Definir color del botón [!DNL Google Pay]. Opciones: `[!UICONTROL Default]` / `[!UICONTROL Black]` / `[!UICONTROL White]` |
 | [!UICONTROL Button Type] | Vista de tienda | Definir tipo del botón [!DNL Google Pay]. Opciones: `[!UICONTROL buy]` / `[!UICONTROL checkout]` / `[!UICONTROL order]` / `[!UICONTROL pay]` / `[!UICONTROL plain]` |
