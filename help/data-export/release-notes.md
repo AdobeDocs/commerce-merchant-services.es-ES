@@ -1,12 +1,12 @@
 ---
-title: '[!DNL SaaS Data Export Extension] notas de la versión'
+title: Notas de la versión [!DNL SaaS Data Export Extension]
 description: La información de la versión más reciente de  [!DNL Data Export Extension]  para Adobe Commerce.
 feature: Services, Release Notes
 recommendations: noCatalog
 exl-id: 0c7aeeda-e8a6-4740-b466-0661a6d2df07
-source-git-commit: 15f5d4b5409c8879312af058099aaa4b9db2a610
+source-git-commit: 8c6957d4b77af7128d2c7bdb1356b2905c6e054b
 workflow-type: tm+mt
-source-wordcount: '784'
+source-wordcount: '838'
 ht-degree: 0%
 
 ---
@@ -27,6 +27,13 @@ Las actualizaciones incluyen:
 >La extensión de exportación de datos SaaS es una colección de módulos que se instalan automáticamente con Live Search, Product Recommendations y el servicio de catálogo. Puede comprobar la versión instalada en el sistema con Composer. En algunos casos, es posible que desee actualizar la extensión de exportación de datos en el sistema para recoger correcciones o nuevas funciones sin actualizar la versión del servicio de Commerce.
 
 ## Versión principal actual
+
+## Versión 103.3.15
+
+![Corregir](../assets/fix.svg) Se garantizó el funcionamiento estable de las pruebas de integración en configuraciones anteriores. &lt;!-MDEE-869—>
+![Corregir](../assets/fix.svg) Dejar de propagar opciones de atributos innecesarias. &lt;!-MDEE-882—>
+![Corrección](../assets/fix.svg) Se corrigió el mensaje de error enviado al registro de exportación de datos cuando falla la serialización de datos. &lt;!-MDEE-913—>
+![Corrección](../assets/fix.svg) mejoró la confiabilidad de las actualizaciones de productos simples con cobertura de prueba adicional. &lt;!-MDEE-886—>
 
 ## Versión 103.3.14
 
