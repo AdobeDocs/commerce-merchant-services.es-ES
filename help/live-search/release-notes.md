@@ -1,11 +1,11 @@
 ---
-title: "[!DNL Live Search] notas de la versión"
-description: "La información de la versión más reciente de  [!DNL Live Search]  de Adobe Commerce."
+title: Notas de la versión [!DNL Live Search]
+description: La información de la versión más reciente de  [!DNL Live Search]  de Adobe Commerce.
 exl-id: 2a581e43-35f5-48ce-9752-844430ccdebf
 feature: Services, Search, Release Notes
-source-git-commit: 7f536c93ab1c87bf88bc892b2a485067fa8f8110
+source-git-commit: 3cd773060e0546026cc4cb1979abaceadd3fcc2c
 workflow-type: tm+mt
-source-wordcount: '2042'
+source-wordcount: '2068'
 ht-degree: 0%
 
 ---
@@ -65,6 +65,14 @@ _31 de mayo de 2024_
 _27 de octubre de 2023_
 
 ![Nuevo](../assets/new.svg) El widget PLP [!DNL Live Search] ahora admite muestras de color.
+
+## [!DNL Live Search] 4.2.2 {#422}
+
+_6 de enero de 2025_
+
+[!BADGE Compatible]{type=Informative tooltip="Admitido"}
+
+![Corregir](../assets/fix.svg) Se ha corregido un problema que causaba un error con la consulta GraphqL `categoryList` en la versión 2.4.5 y anteriores de Adobe Commerce.
 
 ## [!DNL Live Search] 4.2.1 {#421}
 
@@ -269,7 +277,7 @@ Se recomienda actualizar y probar antes de pasar a producción. Considere la pos
 
 [!BADGE Compatible]{type="Informativo" tooltip="Admitido"}
 
-![Corrección](../assets/fix.svg): Live Search generaría un error cuando los recursos del SDK no estuvieran disponibles debido a problemas de red. Este error se ha corregido.
+![Corrección](../assets/fix.svg): Live Search generaría un error cuando los recursos de SDK no estuvieran disponibles debido a problemas de red. Este error se ha corregido.
 
 Los comerciantes deben actualizar la versión de la extensión de Live Search >= 2.0.5 para acceder a estas funciones.
 
@@ -327,7 +335,7 @@ Las instalaciones existentes de [!DNL Live Search] deben actualizarse a [!DNL Li
 [!BADGE Compatible]{type="Informativo" tooltip="Admitido"}
 
 El tablero de informes ![Nuevo](../assets/new.svg) [Rendimiento](performance.md) proporciona información sobre los términos de búsqueda que usan los compradores.
-![Nuevo](../assets/new.svg) [!DNL Live Search] [SDK de eventos de tienda](https://developer.adobe.com/commerce/services/shared-services/storefront-events/sdk/) proporciona acceso a una capa de datos común con servicios de publicación de eventos, suscripción y métricas.
+![Nuevo](../assets/new.svg) [!DNL Live Search] [Eventos de tienda SDK](https://developer.adobe.com/commerce/services/shared-services/storefront-events/sdk/) proporciona acceso a una capa de datos común con servicios de publicación de eventos y suscripción, y métricas.
 ![Corrección](../assets/fix.svg): [[!DNL Storefront popover]](storefront-popover.md) tiene una nueva clase `active` para el contenedor `.search-autocomplete` que controla la visibilidad.
 ![Corregir](../assets/fix.svg) En la tienda, se quita el vínculo de pie de página de [Términos de búsqueda](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/search/search-terms) y se deshabilita su caché para [!DNL Live Search] instalaciones.
 ![Error](../assets/bug.svg) del parche para el adaptador de búsqueda administra los productos duplicados.
