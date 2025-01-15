@@ -3,9 +3,9 @@ title: Instalar y configurar
 description: Obtenga información sobre cómo instalar, actualizar y desinstalar  [!DNL Product Recommendations].
 exl-id: fa599f72-1064-41da-ac54-2b3a3c16a1fe
 role: Admin, Developer
-source-git-commit: 3a5dec9422aa34eeb204b9fe6f089551e4038f1c
+source-git-commit: b31d2f566dfd5c765c3d12bd2659c89afe7f91e0
 workflow-type: tm+mt
-source-wordcount: '554'
+source-wordcount: '565'
 ht-degree: 0%
 
 ---
@@ -22,6 +22,10 @@ La implementación de [!DNL Product Recommendations] en tu tienda y administrado
 ## Instalar [!DNL Product Recommendations] {#install}
 
 Dado que el módulo [!DNL Product Recommendations] es un metapaquete independiente, las actualizaciones se publican con mayor frecuencia que Adobe Commerce. Para asegurarse de que está al día con las últimas correcciones de errores y características, consulte las [notas de la versión](release-notes.md).
+
+>[!IMPORTANT]
+>
+>Asegúrese de que cuenta con los [derechos](../landing/saas.md#credentials) correctos para usar Product Recommendations.
 
 Instale el módulo `magento/product-recommendations` con Composer:
 

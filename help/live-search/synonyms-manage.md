@@ -1,10 +1,10 @@
 ---
-title: "Administrar sinónimos"
-description: '"Aprenda a administrar los  [!DNL Live Search] sinónimos existentes".'
+title: Administrar sinónimos
+description: Aprenda a administrar los  [!DNL Live Search] sinónimos existentes.
 exl-id: 9f910b3c-ea28-4a50-9d3f-24b4812c0e75
-source-git-commit: bffbede99865e9085f60392e474065a454446370
+source-git-commit: b31d2f566dfd5c765c3d12bd2659c89afe7f91e0
 workflow-type: tm+mt
-source-wordcount: '224'
+source-wordcount: '221'
 ht-degree: 0%
 
 ---
@@ -32,8 +32,6 @@ Para facilitar la búsqueda de un sinónimo, puede filtrar la lista por tipo y b
 1. Haga clic en **Editar**.
 La palabra clave es el primer término de la lista y cada término está separado por una coma. La palabra clave y los términos de expansión se pueden actualizar, pero no se puede cambiar el tipo de sinónimo.
 1. Haga clic en el elemento que desee editar. A continuación, actualice el texto según sea necesario.
-
-   ![editar sinónimo bidireccional](assets/synonym-two-way-edit.png)
 
 1. Una vez finalizado, haga clic en **Guardar**.
 
