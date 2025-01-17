@@ -1,11 +1,11 @@
 ---
-title: 'Límites y límites'
+title: Límites y límites
 description: Conozca los límites y limitaciones de [!DNL Live Search] para asegurarse de que cumple con las necesidades de su empresa.
 role: Admin, Developer
 exl-id: ad6737f9-6ecd-4d82-89e7-d95425e4ba53
-source-git-commit: 438d6a04cb0044f9e06f8c8b53c8eec79d650170
+source-git-commit: 867d65d0ffd212061524605fd725df1eb75be9eb
 workflow-type: tm+mt
-source-wordcount: '935'
+source-wordcount: '943'
 ht-degree: 0%
 
 ---
@@ -24,6 +24,7 @@ Cuando se trata de buscar sitios, Adobe Commerce le da opciones. Revise los lím
 - Hay un límite estricto de 1 MB por atributo, incluida la descripción y los atributos personalizados.
 - El adaptador de búsqueda no admite atributos de producto creados con un modelo de origen personalizado y utilizados como facetas. Para admitir esta funcionalidad, debe usar el [Widget de la página de lista de productos](plp-styling.md).
 - No se admiten los tipos de producto personalizados.
+- No se admiten los atributos personalizados creados mediante programación con `"is_user_defined": false`.
 - Puede filtrar los resultados usando las condiciones &quot;comienza con&quot; o &quot;contiene&quot; con algunas limitaciones como se describe [aquí](https://developer.adobe.com/commerce/services/graphql/live-search/product-search/#limitations).
 
 ## Indexación
