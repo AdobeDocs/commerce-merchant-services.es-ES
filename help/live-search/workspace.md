@@ -1,10 +1,10 @@
 ---
-title: "Configuración de Live Search"
+title: Configuración de Live Search
 description: El área de trabajo  [!DNL Live Search] se usa para configurar, administrar y supervisar el rendimiento de la búsqueda.
 exl-id: fb85974a-a5f9-4e6c-bd03-451e6457f2d2
-source-git-commit: 7f536c93ab1c87bf88bc892b2a485067fa8f8110
+source-git-commit: eb98389cfdd7a0492a4437e9de9412f2d2e5401c
 workflow-type: tm+mt
-source-wordcount: '949'
+source-wordcount: '1012'
 ht-degree: 0%
 
 ---
@@ -27,6 +27,10 @@ Si utiliza una tienda sin encabezado, consulte la siguiente documentación para 
 - [Eventos requeridos](events.md) para el panel de Live Search.
 - [Recopilador de eventos de tienda](https://developer.adobe.com/commerce/services/shared-services/storefront-events/collector/) que debe agregarse como requisito previo.
 - [Ejemplos](https://github.com/adobe/commerce-events/tree/main/examples) de la estructura de eventos.
+
+### Clientes sanitarios
+
+Si es cliente de atención médica e instaló la extensión HIPAA de [Data Services](../data-connection/hipaa-readiness.md#installation), que forma parte de la extensión [Data Connection](../data-connection/overview.md), ya no se capturarán los datos de evento de tienda que usa [!DNL Live Search]. Esto se debe a que los datos de evento de tienda se generan en el lado del cliente. Para seguir capturando y enviando datos de evento de tienda, vuelva a habilitar la recopilación de eventos para [!DNL Live Search]. Consulte [configuración general](https://experienceleague.adobe.com/en/docs/commerce-admin/config/general/general.html#data-services) para obtener más información.
 
 ## Establecer el ámbito
 

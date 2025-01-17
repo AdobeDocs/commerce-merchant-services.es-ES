@@ -3,7 +3,7 @@ title: Notas de la versión
 description: La información de la versión más reciente para la extensión  [!DNL Data Connection] de Adobe Commerce.
 exl-id: 7636664b-488a-46f7-8d19-a9faac126aec
 feature: Personalization, Integration, Release Notes
-source-git-commit: 4662c9467f750d9a255034feb69f51492c98a0d9
+source-git-commit: 83d801fea806df51b440c11b87cd0de45793a322
 workflow-type: tm+mt
 source-wordcount: '1108'
 ht-degree: 1%
@@ -73,18 +73,18 @@ _30 de marzo de 2023_
 
 _12 de octubre de 2022_
 
-![Nuevo](../assets/new.svg) - Se agregaron dos [eventos de tienda](events.md), `openCart` y `removeFromCart` al SDK y recopilador de eventos de tienda de Adobe Commerce.
+![Nuevo](../assets/new.svg) - Se agregaron dos [eventos de tienda](events.md), `openCart` y `removeFromCart`, al SDK y al Recopilador de eventos de tienda de Adobe Commerce.
 AEM ![Nuevo](../assets/new.svg) - Se agregó compatibilidad con un [frente de tienda](overview.md#aem-support) de la línea de tienda de la línea de compra de la tienda.
 
 +++
 
 ## 3.2.1.
 
-_2 de diciembre de 2024_
+_17 de enero de 2025_
 
 [!BADGE Compatibilidad]{type=Informative tooltip="Compatibilidad"}
 
-![Nuevo](../assets/new.svg) - Se agregó la extensión compatible con HIPAA a [!DNL Data Connection] para que los comerciantes puedan compartir [!DNL Commerce] datos de evento de back office con el Experience Platform y mantener el cumplimiento con HIPAA.
+![Nuevo](../assets/new.svg) - Se agregó la [extensión compatible con HIPAA](hipaa-readiness.md) a [!DNL Data Connection] para que los comerciantes puedan compartir [!DNL Commerce] datos de evento de back office con el Experience Platform y mantener el cumplimiento con HIPAA.
 ![Corrección](../assets/fix.svg) - Se corrigió un problema en el cual la extensión [!DNL Data Connection] sobrescribía datos de `eventForwarding` y establecía la marca `HIPAA` para todos los clientes. Ahora, la extensión solo establece el indicador para los clientes de HIPAA.
 
 ## 3.2.0
@@ -138,7 +138,7 @@ _4 de abril de 2024_
 [!BADGE Compatibilidad]{type=Informative tooltip="Compatibilidad"}
 
 ![Nuevo](../assets/new.svg) - Se agregó compatibilidad con PHP 8.3 para todas las extensiones de [!DNL Data Connection].
-![Nuevo](../assets/new.svg) - Se ha agregado un artículo sobre cómo [integrar](mobile-sdk-epc.md) el SDK de Adobe Experience Platform Mobile con Commerce.
+![Nuevo](../assets/new.svg) - Se agregó un artículo sobre cómo [integrar](mobile-sdk-epc.md) Adobe Experience Platform Mobile SDK con Commerce.
 
 ## 3.2.0-beta2
 
@@ -214,7 +214,7 @@ _17 de enero de 2023_
 
 [!BADGE Compatible]{type=Informative tooltip="Admitido"}
 
-![Nuevo](../assets/new.svg): se ha actualizado [[!DNL Data Connection] el administrador de la extensión](connect-data.md) para que pueda especificar su propio SDK web de AEP (alloy).
+![Nuevo](../assets/new.svg) - Se ha actualizado [[!DNL Data Connection] el administrador de la extensión](connect-data.md) para que pueda especificar su propio AEP Web SDK (alloy).
 ![Corrección](../assets/fix.svg) se cambió al uso de `identityMap` en lugar de `personID` al establecer la identidad principal para cualquier dato insertado en el perímetro de.
 
 ## 2.0.1
@@ -223,7 +223,7 @@ _10 de noviembre de 2022_
 
 [!BADGE Compatible]{type=Informative tooltip="Admitido"}
 
-![Corrección](../assets/fix.svg): Ahora el contexto de Adobe Experience Platform solo se establece después de que el Recopilador de eventos de tienda y el SDK de eventos de tienda se hayan cargado correctamente.
+![Corrección](../assets/fix.svg): Ahora el contexto de Adobe Experience Platform solo se establece después de que el Recopilador de eventos de tienda y el SDK de eventos de tienda se carguen correctamente.
 
 ## 2.0.0
 
@@ -231,7 +231,7 @@ _12 de octubre de 2022_
 
 [!BADGE Compatible]{type=Informative tooltip="Admitido"}
 
-![Nuevo](../assets/new.svg): Se ha agregado la capacidad para especificar su propio SDK web de AEP al [conectar](connect-data.md) su instancia de Adobe Commerce al Experience Platform.
+![Nuevo](../assets/new.svg): Se ha agregado la capacidad para especificar su propio AEP Web SDK al [conectar](connect-data.md) su instancia de Adobe Commerce al Experience Platform.
 ![Corrección](../assets/fix.svg): Se ha actualizado el requisito de ámbito de secuencia de datos para que los identificadores de secuencia de datos deban crearse en el sitio web en lugar de en la vista de tienda.
 
 ## 1.0.0
