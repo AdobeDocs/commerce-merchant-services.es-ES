@@ -1,8 +1,8 @@
 ---
-title: "Administrar facetas"
-description: "Aprenda a administrar las  [!DNL Live Search] facetas existentes."
+title: Administrar facetas
+description: Obtenga información sobre cómo administrar las  [!DNL Live Search] facetas existentes.
 exl-id: 1d51a36a-20d6-46b6-b379-11e46c8824a0
-source-git-commit: bce69f952e70e2e8dcb892357dea41e18f61e5f6
+source-git-commit: e7befb65ef465e98ff35db3046a438835cfd157f
 workflow-type: tm+mt
 source-wordcount: '473'
 ht-degree: 0%
@@ -50,16 +50,20 @@ Consulta [Configuración](settings.md) para configurar los intervalos y agrupaci
 
 1. En la columna **Valor máximo**, establezca el número máximo (de 0 a 10) de valores de filtro de faceta que se mostrarán en la tienda.
 1. Una vez finalizado, haga clic en **Guardar**.
-Los cambios no aparecerán en la tienda hasta que se publiquen.
+
+   Los cambios no aparecerán en la tienda hasta que se publiquen.
 
 ## Fijar/desanclar faceta
 
 El fijador cambia de color cuando se hace clic y se usa para mover la faceta a la sección *Facetas fijadas* o *Facetas dinámicas*.
 
 1. Para anclar una faceta a la parte superior de la lista *Filtros*, busque la faceta en la lista *Facetas dinámicas* y haga clic en la chincheta gris (![Selector de chincheta](assets/btn-pin-gray.png)).
-El pin se volverá azul y la faceta se moverá a la sección *Facetas ancladas*.
+
+   El pin se volverá azul y la faceta se moverá a la sección *Facetas ancladas*.
+
 1. Para desanclar una faceta, búsquela en la lista *Facetas ancladas* y haga clic en el pin azul (![Selector de anclaje](assets/btn-pin-blue.png)).
-La chincheta se volverá gris y la faceta pasará a la sección *Facetas dinámicas*.
+
+   La chincheta se volverá gris y la faceta pasará a la sección *Facetas dinámicas*.
 
    ![Facetas ancladas y dinámicas](assets/facets-pinned-unpinned.png)
 
@@ -77,7 +81,8 @@ El orden de las facetas ancladas se puede cambiar moviendo la fila a una posici�
 
 1. Busque la faceta en la sección *Facetas ancladas* de la lista.
 1. Utilice el icono **Mover** (![Selector de movimiento](assets/btn-move.png)) para arrastrar la fila a una nueva posición en la sección *Facetas ancladas*.
-Una vez publicados los cambios, las facetas reordenadas aparecerán en la lista de la tienda *Filtros*.
+
+   Una vez publicados los cambios, las facetas reordenadas aparecerán en la lista de la tienda *Filtros*.
 
 ## Eliminar faceta
 
