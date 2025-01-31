@@ -4,9 +4,9 @@ description: La información de la versión más reciente de  [!DNL Data Export 
 feature: Services, Release Notes
 recommendations: noCatalog
 exl-id: 0c7aeeda-e8a6-4740-b466-0661a6d2df07
-source-git-commit: 5379299cdd10f3a9aab41da56ed0a7b41282b085
+source-git-commit: f222d66ff3fc99c1fb234e1988a760482aadf2ca
 workflow-type: tm+mt
-source-wordcount: '871'
+source-wordcount: '869'
 ht-degree: 0%
 
 ---
@@ -30,7 +30,7 @@ Las actualizaciones incluyen:
 
 ## Versión 103.3.18
 
-![Corregir](../assets/fix.svg) Las actualizaciones de ensayo para entidades de productos y categorías ahora se activan correctamente en las actualizaciones de datos de exportación de datos.&lt;!-MDEE-963—>
+![Corrección](../assets/fix.svg) Las actualizaciones de ensayo para entidades de producto y categoría ahora se activan correctamente en las actualizaciones de datos de exportación de datos.<!--MDEE-963-->
 
 ## Versión 103.3.17
 
