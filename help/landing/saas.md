@@ -4,9 +4,9 @@ description: Obtenga información sobre cómo integrar la instancia de Adobe Com
 exl-id: 28027a83-449b-4b96-b926-a7bfbfd883d8
 feature: Services, Saas
 role: Admin, User
-source-git-commit: daad5bb1ce74126d727207812abebdcf0cbf72c0
+source-git-commit: 867ce9c218632714d463af5c366dccd792d892ad
 workflow-type: tm+mt
-source-wordcount: '1304'
+source-wordcount: '1338'
 ht-degree: 0%
 
 ---
@@ -88,9 +88,11 @@ Todos los comerciantes de Adobe Commerce pueden acceder a un espacio de datos de
 
 Puede utilizar los espacios de datos de prueba en cualquier entorno que no sea de producción, siempre que no utilice el mismo espacio de datos en varios entornos al mismo tiempo. Para utilizar el espacio de datos de prueba en un entorno diferente, realice una limpieza de datos antes de seleccionar y configurar el espacio de datos en ese entorno.
 
-Para los proyectos de Adobe Commerce Cloud Pro con varios entornos de ensayo, puede solicitar espacios de datos de prueba adicionales para cada entorno de ensayo [enviando una solicitud de soporte técnico](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/overview). Sin embargo, si solo tiene un entorno de ensayo y necesita espacios de datos de prueba adicionales, tiene las siguientes opciones:
-- Póngase en contacto con el equipo de éxito del cliente o con el administrador de éxito del cliente designado para solicitar un entorno de ensayo adicional. Hay un costo adicional involucrado.
-- [Envíe una solicitud de soporte técnico](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/overview) para obtener un espacio de datos de prueba adicional e indique la justificación comercial para el espacio de datos adicional. Esta solicitud está sujeta a aprobación.
+Para los proyectos de Adobe Commerce Cloud Pro con varios entornos de ensayo, puede solicitar espacios de datos de prueba adicionales para cada entorno de ensayo [enviando una solicitud de soporte técnico](https://experienceleague.adobe.com/home?support-tab=home#support). Sin embargo, si solo tiene un entorno de ensayo y necesita espacios de datos de prueba adicionales, tiene las siguientes opciones:
+- Póngase en contacto con el equipo de éxito del cliente o con el administrador de éxito del cliente designado para solicitar un entorno de ensayo adicional.
+- [Envíe una solicitud de soporte técnico](https://experienceleague.adobe.com/home?support-tab=home#support) para solicitar el espacio de datos de prueba adicional e indicar la justificación comercial del espacio de datos adicional. Esta solicitud está sujeta a aprobación.
+
+Los clientes Magento Open Source que utilicen Servicios de pago de Adobe también pueden solicitar un espacio de datos adicional. Póngase en contacto con el equipo de pagos para obtener la aprobación previa de los espacios de datos adicionales antes de enviar una [solicitud de soporte](https://experienceleague.adobe.com/home?support-tab=home#support) para solicitar el espacio de datos de prueba.
 
 ### Seleccionar o crear un proyecto SaaS {#createsaasenv}
 
