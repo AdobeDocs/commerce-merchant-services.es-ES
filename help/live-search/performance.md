@@ -1,10 +1,10 @@
 ---
-title: "Rendimiento"
-description: "El área de trabajo  [!DNL Live Search] Rendimiento proporciona una perspectiva de los términos de búsqueda que utilizan los compradores."
+title: Rendimiento
+description: El área de trabajo  [!DNL Live Search] Rendimiento proporciona una perspectiva de los términos de búsqueda que utilizan los compradores.
 exl-id: ee2053fc-98c5-4d2c-9345-4d1f9a3180fb
-source-git-commit: 4978bdb5549f5df911863a23fdfbfc9ab9ad05df
+source-git-commit: 7539c0fe9ebe4b82f42f3a7ff30b03c951980eed
 workflow-type: tm+mt
-source-wordcount: '479'
+source-wordcount: '487'
 ht-degree: 0%
 
 ---
@@ -21,6 +21,10 @@ El área de trabajo *Rendimiento* proporciona información sobre los términos d
 
 También puede consultar el [Tablero de administración de datos](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-dashboard.html) para obtener más datos sobre la sincronización de datos.
 
+>[!NOTE]
+>
+>El espacio de trabajo de rendimiento se actualiza cada 12 horas.
+
 ## Ver un informe
 
 1. Para escribir **Intervalo de fechas**, haga clic en el calendario (![Calendario](assets/btn-calendar.png)) y realice una de las siguientes acciones:
@@ -30,7 +34,7 @@ También puede consultar el [Tablero de administración de datos](https://experi
 
 >[!NOTE]
 >
->El espacio de trabajo de rendimiento se actualiza cada 12 horas.
+>El intervalo de fechas no puede superar un año.
 
 ## Descripciones de campos
 

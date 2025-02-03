@@ -1,11 +1,11 @@
 ---
 title: Introducción a  [!DNL Product Recommendations]
-description: '''[!DNL Product Recommendations]'' es una potente herramienta de marketing que puede utilizar para aumentar las conversiones, aumentar los ingresos y estimular la participación del comprador.'''
+description: '[!DNL Product Recommendations] es una potente herramienta de marketing que puede usar para aumentar las conversiones, aumentar los ingresos y estimular la participación del comprador.'
 exl-id: 818ac876-58c9-4c68-975e-53da59ed6b52
 recommendations: noCatalog
-source-git-commit: 289ac6ac464955f18f3a2448099ad459e6264941
+source-git-commit: e446eb06212609dc44d0bf64fe981c7d1489d33c
 workflow-type: tm+mt
-source-wordcount: '385'
+source-wordcount: '473'
 ht-degree: 0%
 
 ---
@@ -43,3 +43,9 @@ Las recomendaciones de productos le permiten:
 Vea este vídeo para obtener más información sobre [!DNL Product Recommendations]:
 
 >[!VIDEO](https://video.tv.adobe.com/v/343991?quality=12)
+
+## Política de retención de datos del catálogo
+
+Si no envía una consulta para los datos del catálogo en el entorno de prueba durante 90 días consecutivos, los datos del catálogo se establecen en modo de hibernación y no se devuelve ningún dato para ninguna consulta. Esta directiva no afecta a los datos de catálogo del entorno de producción.
+
+Para reactivar los datos del catálogo en su entorno de prueba, [envíe una solicitud de soporte técnico](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#experience-league-start-page) con el título: &quot;Reactivar [!DNL Product Recommendations]&quot; e incluya los identificadores de entorno. Los datos del catálogo en el entorno de prueba deben restaurarse en un par de horas.
