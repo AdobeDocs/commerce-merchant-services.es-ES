@@ -4,9 +4,9 @@ description: Obtenga información sobre cómo integrar la instancia de Adobe Com
 exl-id: 28027a83-449b-4b96-b926-a7bfbfd883d8
 feature: Services, Saas
 role: Admin, User
-source-git-commit: 867ce9c218632714d463af5c366dccd792d892ad
+source-git-commit: c7ba4401d94f14cc66ef7b404e5444e1f2cb1e23
 workflow-type: tm+mt
-source-wordcount: '1338'
+source-wordcount: '1372'
 ht-degree: 0%
 
 ---
@@ -57,6 +57,10 @@ Además, los integradores de soluciones también tienen derecho a utilizar [!DNL
 
 1. En el menú _Entorno_, seleccione **Producción** o **Espacio aislado**.
 
+   >[!NOTE]
+   >
+   >*Production* y *Sandbox* hacen referencia a los entornos de espacio de datos donde los datos se almacenan en sistemas back-end SaaS de Adobe. No se refiere a entornos comerciales en los que vaya a utilizar las claves.
+
 1. Escriba un nombre en la sección _Claves de API_ y haga clic en **Agregar nueva** para abrir el cuadro de diálogo y descargar la clave nueva.
 
    ![Descargar clave privada](assets/download-api-private-key.png)
@@ -69,7 +73,7 @@ Además, los integradores de soluciones también tienen derecho a utilizar [!DNL
 
 1. Repita los pasos anteriores para cada entorno (producción y zona protegida).
 
-   La sección **Claves de API** ahora muestra sus claves de API (públicas). Necesita las cuatro claves (tanto la de producción como la de zona protegida, Pública+Privada) al [seleccionar o crear un proyecto SaaS](#createsaasenv) en cualquiera de los entornos/instalaciones asociados con la licencia.
+   La sección **Claves de API** ahora muestra sus claves de API (públicas). Necesita las cuatro claves (tanto la de producción como la de zona protegida, Pública+Privada) al [seleccionar o crear un proyecto SaaS](#createsaasenv) en cualquiera de los entornos o instalaciones asociados con la licencia.
 
 ## Configuración de SaaS {#saasenv}
 
