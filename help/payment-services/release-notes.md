@@ -3,9 +3,9 @@ title: Notas de la versión [!DNL Payment Services]
 description: Revise las notas de la versión para obtener información acerca de todas las  [!DNL Payment Services] versiones.
 exl-id: 104aa2c7-7735-4ac2-8ed1-a03cd9911273
 feature: Payments, Release Notes
-source-git-commit: feeaed7b7130b3581a1b1f7e3bdd161ce1e7d765
+source-git-commit: 8cf48ade51157a8d2ce51333deb4d142e4a1a011
 workflow-type: tm+mt
-source-wordcount: '3311'
+source-wordcount: '3344'
 ht-degree: 0%
 
 ---
@@ -91,13 +91,23 @@ _28 de junio de 2021_
 
 +++
 
+## Versión 2.10.1
+
+_5 de febrero de 2025_
+
+[!BADGE Compatible]{type=Informative tooltip="Admitido"}
+
+![Nuevo](../assets/new.svg)<!-- PAY-5813 --> agregó compatibilidad con Adobe Commerce 2.4.8 y PHP 8.4.
+
 ## Versión 2.10.0
 
 _13 de diciembre de 2024_
 
 [!BADGE Compatible]{type=Informative tooltip="Admitido"}
 
-![Nuevo](../assets/new.svg)<!-- PAY-5702 --> [!DNL Payment Services] ahora admite puntos finales de GraphQL para el almacenamiento sin compra, lo que permite a los clientes guardar sus métodos de pago sin completar una transacción.
+![Nuevo](../assets/new.svg)<!-- PAY-5873 --> [!DNL Payment Services] ahora admite un [[!DNL Payment Services] componente desplegable](https://experienceleague.adobe.com/developer/commerce/storefront/dropins/payment-services/) en la tienda de [Edge Delivery Services para Adobe Commerce](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/).
+
+![Nuevo](../assets/new.svg)<!-- PAY-5702 --> [!DNL Payment Services] ahora admite [puntos finales de GraphQL para el almacenamiento sin compra](https://developer.adobe.com/commerce/webapi/graphql/payment-services-extension/queries/get-vault-config/), lo que permite a los clientes guardar sus métodos de pago sin completar una transacción.
 
 ![Nuevo](../assets/fix.svg)<!-- PAY-5789 --> [!DNL Payment Services] ahora admite la autenticación segura [3D con Google Pay](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/payment-services/security-compliance/security#3ds), lo que mejora la seguridad de los comerciantes y clientes durante las transacciones de pago.
 
