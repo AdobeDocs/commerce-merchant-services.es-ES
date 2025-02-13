@@ -3,9 +3,9 @@ title: Notas de la versión [!DNL Live Search]
 description: La información de la versión más reciente de  [!DNL Live Search]  de Adobe Commerce.
 exl-id: 2a581e43-35f5-48ce-9752-844430ccdebf
 feature: Services, Search, Release Notes
-source-git-commit: e446eb06212609dc44d0bf64fe981c7d1489d33c
+source-git-commit: f5bd9e76239dfa73babe4067efae20b4fbcd82c1
 workflow-type: tm+mt
-source-wordcount: '2106'
+source-wordcount: '2129'
 ht-degree: 0%
 
 ---
@@ -70,7 +70,15 @@ _27 de octubre de 2023_
 
 ![Nuevo](../assets/new.svg) El widget PLP [!DNL Live Search] ahora admite muestras de color.
 
-## [!DNL Live Search] 4.2.2 {#422}
+## [!DNL Live Search] 4.2.3
+
+_13 de febrero de 2025_
+
+[!BADGE Compatible]{type=Informative tooltip="Admitido"}
+
+![Corrección](../assets/fix.svg) Se ha corregido un problema por el que a la página de detalles de pedido le faltaban el número de pedido, la fecha y el botón **[!UICONTROL Reorder]**.
+
+## [!DNL Live Search] 4.2.2
 
 _6 de enero de 2025_
 
@@ -78,7 +86,7 @@ _6 de enero de 2025_
 
 ![Corregir](../assets/fix.svg) Se ha corregido un problema que causaba un error con la consulta GraphqL `categoryList` en la versión 2.4.5 y anteriores de Adobe Commerce.
 
-## [!DNL Live Search] 4.2.1 {#421}
+## [!DNL Live Search] 4.2.1
 
 _31 de julio de 2024_
 
@@ -87,7 +95,7 @@ _31 de julio de 2024_
 ![Corregir](../assets/fix.svg) Se corrigió un problema en el cual algunos scripts no se cargaban en la página de cierre de compra.
 ![Corrección](../assets/fix.svg) Se ha corregido una versión de dependencia en el archivo `composer.json`.
 
-## [!DNL Live Search] 4.2.0 {#420}
+## [!DNL Live Search] 4.2.0
 
 _31 de mayo de 2024_
 
@@ -95,7 +103,7 @@ _31 de mayo de 2024_
 
 ![Nueva](../assets/new.svg) extensión de Live Search actualizada para usar widgets PLP versión 2.0.0.
 
-## [!DNL Live Search] 4.1.2 {#412}
+## [!DNL Live Search] 4.1.2
 
 _16 de mayo de 2024_
 
@@ -105,7 +113,7 @@ _16 de mayo de 2024_
 
 ![Corrección](../assets/fix.svg) Se ha corregido la consulta de GraphQL [`productSearch`](https://developer.adobe.com/commerce/services/graphql/live-search/product-search/#filtering-by-categories) para que filtre correctamente en función de `categoryPath` y `categoryList` para las categorías.
 
-## [!DNL Live Search] 4.1.1 {#411}
+## [!DNL Live Search] 4.1.1
 
 _19 de marzo de 2024_
 
@@ -116,7 +124,7 @@ _19 de marzo de 2024_
 ![Nuevo](../assets/new.svg) agregó compatibilidad con el idioma polaco.
 ![Nuevo](../assets/new.svg) [!DNL Live Search] ahora es compatible con PHP 8.3 para instalaciones que ejecutan Adobe Commerce 2.4.4.
 
-## [!DNL Live Search] 4.1.0 {#410}
+## [!DNL Live Search] 4.1.0
 
 _22 de febrero de 2024_
 
@@ -132,7 +140,7 @@ _22 de febrero de 2024_
 ![Corrección](../assets/fix.svg) Se ha corregido un problema que hacía que la ventana emergente de búsqueda siempre mostrara el símbolo de moneda delante del valor de precio, independientemente de la configuración regional.
 ![Corrección](../assets/fix.svg) eliminó definiciones de tipo innecesarias para los complementos principales deshabilitados a fin de corregir los problemas de compatibilidad en la instalación.
 
-## [!DNL Live Search] 4.0.0 {#400}
+## [!DNL Live Search] 4.0.0
 
 _13 de noviembre de 2023_
 
@@ -165,7 +173,7 @@ Después de la actualización, pruebe la configuración actualizada en Control d
 
 +++3.1.1 y anteriores
 
-## [!DNL Live Search] 3.1.1 {#311}
+## [!DNL Live Search] 3.1.1
 
 _15 de septiembre de 2023_
 
@@ -180,7 +188,7 @@ _15 de septiembre de 2023_
 ![Nuevos](../assets/new.svg) usuarios ahora pueden buscar por nombre de categoría al agregar una regla
 ![Nuevo](../assets/new.svg): con la vista de árbol de categorías, los usuarios ahora pueden ver qué categoría tiene reglas aplicadas.
 ![Nueva](../assets/new.svg) vista previa de categoría solo muestra la categoría seleccionada.
-AEM CIF AEM Los componentes ![Nuevo](../assets/new.svg) [widget de ventana emergente](https://github.com/adobe/aem-cif-guides-venia/pull/319) y [widget PLP](https://github.com/adobe/aem-cif-guides-venia/pull/320) permiten que los sitios aprovechen las ventajas de [!DNL Live Search].
+Los componentes ![Nuevo](../assets/new.svg) AEM CIF [Widget emergente](https://github.com/adobe/aem-cif-guides-venia/pull/319) y [Widget PLP](https://github.com/adobe/aem-cif-guides-venia/pull/320) permiten que los sitios de AEM se beneficien de [!DNL Live Search].
 
 ### Actualizaciones
 
@@ -194,7 +202,7 @@ AEM CIF AEM Los componentes ![Nuevo](../assets/new.svg) [widget de ventana emerg
 ![Corrección](../assets/fix.svg) &#39;Tipo de clasificación&#39; ha pasado a llamarse &#39;Clasificación inteligente&#39;
 ![Corregir](../assets/fix.svg) correcciones de errores menores
 
-## [!DNL Live Search] 3.1.0 {#310}
+## [!DNL Live Search] 3.1.0
 
 _1 de septiembre de 2023_
 
@@ -204,7 +212,7 @@ _1 de septiembre de 2023_
 
 ![Corrección](../assets/fix.svg): El widget de lista de productos se ha actualizado para usar la [API de servicio de catálogo](https://developer.adobe.com/commerce/services/graphql/catalog-service/product-search/).
 
-## [!DNL Live Search] 3.0.2 {#302}
+## [!DNL Live Search] 3.0.2
 
 _7 de agosto de 2023_
 
@@ -233,7 +241,7 @@ Se recomienda actualizar y probar antes de pasar a producción. Considere la pos
 
 El uso del widget de página de lista de productos de Live Search provoca que Google Tag Manager falle. Utilice el adaptador de búsqueda predeterminado si se necesita el Administrador de etiquetas de Google.
 
-## [!DNL Live Search] 3.0.1 {#301}
+## [!DNL Live Search] 3.0.1
 
 _14 de marzo de 2023_
 
@@ -278,7 +286,7 @@ Los comerciantes deben actualizar la versión de la extensión [!DNL Live Search
 
 Se recomienda actualizar y probar antes de pasar a producción. Considere la posibilidad de actualizar el entorno de producción durante las horas de menor actividad después de verificar los resultados de su entorno de prueba.
 
-## [!DNL Live Search] 2.0.5 {#205}
+## [!DNL Live Search] 2.0.5
 
 [!BADGE Compatible]{type="Informativo" tooltip="Admitido"}
 
@@ -288,7 +296,7 @@ Los comerciantes deben actualizar la versión de la extensión de Live Search >=
 
 Se recomienda actualizar y probar antes de pasar a producción. Considere la posibilidad de actualizar el entorno de producción durante las horas de menor actividad después de verificar los resultados de su entorno de prueba.
 
-### [!DNL Live Search] 2.0.4 {#204}
+### [!DNL Live Search] 2.0.4
 
 [!BADGE Compatible]{type="Informativo" tooltip="Admitido"}
 
@@ -302,7 +310,7 @@ Los comerciantes deben actualizar la versión de la extensión [!DNL Live Search
 
 Se recomienda a los usuarios actualizar y probar antes de pasar a producción. Considere la posibilidad de actualizar el entorno de producción durante las horas de menor actividad después de verificar los resultados de su entorno de prueba.
 
-### [!DNL Live Search] 2.0.3 {#203}
+### [!DNL Live Search] 2.0.3
 
 [!BADGE Compatible]{type="Informativo" tooltip="Admitido"}
 
@@ -312,7 +320,7 @@ Los comerciantes deben actualizar la versión de la extensión [!DNL Live Search
 
 Se recomienda a los usuarios actualizar y probar antes de pasar a producción. Considere la posibilidad de actualizar el entorno de producción durante las horas de menor actividad después de verificar los resultados de su entorno de prueba.
 
-### [!DNL Live Search] 2.0 {#20}
+### [!DNL Live Search] 2.0
 
 [!BADGE Compatible]{type="Informativo" tooltip="Admitido"}
 
@@ -321,13 +329,13 @@ Las instalaciones existentes de [!DNL Live Search] deben actualizarse a [!DNL Li
 ![Nuevo](../assets/new.svg) [!DNL Live Search] ahora es compatible con PHP 8.1 para instalaciones que ejecutan Adobe Commerce 2.4.4.
 ![Nuevo](../assets/new.svg) El módulo `Magento_ElasticsearchCatalogPermissionsGraphQl` se agrega a la lista de módulos deshabilitados durante la instalación.
 ![Nuevo](../assets/new.svg) El número de líneas disponibles en [[!DNL storefront popover]](overview.md) se puede configurar desde *Admin*.
-![Nuevo](../assets/new.svg) [PWA](https://developer.adobe.com/commerce/pwa-studio/) de Beta compatible con [!DNL Live Search].
+![Nuevo](../assets/new.svg) Beta [PWA](https://developer.adobe.com/commerce/pwa-studio/) compatible con [!DNL Live Search].
 ![Nuevo](../assets/new.svg) El proceso de instalación de [!DNL Live Search] se ha actualizado con cambios avanzados en el proceso.
 ![Corrección](../assets/fix.svg) Se ha eliminado el vínculo [Búsqueda avanzada](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/search/search) del pie de página de la tienda.
-![Error](../assets/bug.svg): [Commerce GraphQL API](https://developer.adobe.com/commerce/services/graphql/live-search/) no admite los siguientes atributos de producto cuando se usan en relación con la versión beta del PWA: `description`, `name`, `short_description`
-![Error](../assets/bug.svg) La versión beta del PWA para [!DNL Live Search] no admite [la administración de eventos](https://developer.adobe.com/commerce/services/shared-services/storefront-events/sdk/).
+![Error](../assets/bug.svg): [Commerce GraphQL API](https://developer.adobe.com/commerce/services/graphql/live-search/) no admite los siguientes atributos de producto cuando se usan en relación con la versión beta de PWA: `description`, `name`, `short_description`
+![Error](../assets/bug.svg) La versión beta de PWA para [!DNL Live Search] no admite [la administración de eventos](https://developer.adobe.com/commerce/services/shared-services/storefront-events/sdk/).
 
-### [!DNL Live Search] 1.3.1 {#131}
+### [!DNL Live Search] 1.3.1
 
 [!BADGE Compatible]{type="Informativo" tooltip="Admitido"}
 
@@ -335,7 +343,7 @@ Las instalaciones existentes de [!DNL Live Search] deben actualizarse a [!DNL Li
 ![Corregir](../assets/fix.svg) Se ha corregido un problema que provocaba que se produjera un error cuando no estaba disponible ningún [símbolo de moneda](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/site-store/currency/currency-configuration#step-5-customize-currency-symbols-optional) (`data-currency-symbol`).
 ![Corrección](../assets/fix.svg) [[!DNL Storefront popover]](storefront-popover.md) ahora muestra el [Precio especial](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/products/pricing/product-price-special) (precio mínimo final) cuando está disponible.
 
-### [!DNL Live Search] 1.3.0 {#130}
+### [!DNL Live Search] 1.3.0
 
 [!BADGE Compatible]{type="Informativo" tooltip="Admitido"}
 
@@ -346,7 +354,7 @@ El tablero de informes ![Nuevo](../assets/new.svg) [Rendimiento](performance.md)
 ![Error](../assets/bug.svg) del parche para el adaptador de búsqueda administra los productos duplicados.
 ![Error](../assets/bug.svg) [!DNL Live Search] admite [ubicaciones de inventario de origen único](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/sources/sources-manage) (físico) con múltiples [existencias](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/stocks/stocks-manage) (virtuales). Ahora no se admiten varios orígenes de inventario.
 
-### [!DNL Live Search] 1.2.0 {#120}
+### [!DNL Live Search] 1.2.0
 
 [!BADGE Compatible]{type="Informativo" tooltip="Admitido"}
 
@@ -359,7 +367,7 @@ La sesión ![Nueva](../assets/new.svg) de *Administrador* de Commerce permanece 
 ![Corregir](../assets/fix.svg) [!DNL Live Search] ya no genera un error si los criterios de búsqueda contienen un valor de criterio de ordenación vacío
 ![Corrección](../assets/fix.svg) El filtrado de intervalos ya no se interrumpe si los códigos de atributo contienen cadenas &quot;to&quot; o &quot;from&quot;
 
-### [!DNL Live Search] 1.1.0 {#110}
+### [!DNL Live Search] 1.1.0
 
 [!BADGE Compatible]{type="Informativo" tooltip="Admitido"}
 
