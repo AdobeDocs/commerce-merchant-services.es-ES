@@ -3,9 +3,9 @@ title: Introducción a  [!DNL Live Search]
 description: Conozca los requisitos del sistema y los pasos de instalación para  [!DNL Live Search] desde Adobe Commerce.
 exl-id: aa251bb0-d52c-4cff-bccb-76a08ae2a3b2
 role: Admin, Developer
-source-git-commit: 42ad3e05789844a0bcc6cb114a0db067f3d497db
+source-git-commit: 079998ad1390849bc8078f958140e101b95460ca
 workflow-type: tm+mt
-source-wordcount: '3093'
+source-wordcount: '3100'
 ht-degree: 0%
 
 ---
@@ -50,7 +50,7 @@ En un nivel superior, la incorporación de [!DNL Live Search] requiere que:
 
 ## 1. Instale la extensión [!DNL Live Search]
 
-[!DNL Live Search] está instalado como una extensión desde [Adobe Marketplace](https://commercemarketplace.adobe.com/magento-live-search.html) hasta [Composer](https://getcomposer.org/). Después de instalar y configurar [!DNL Live Search], el Adobe [!DNL Commerce] comienza a compartir los datos de la búsqueda y del catálogo con los servicios SaaS. En este punto, los usuarios de *Admin* pueden configurar, personalizar y administrar las facetas de búsqueda, los sinónimos y las reglas de comercialización.
+[!DNL Live Search] está instalado como una extensión desde [Adobe Marketplace](https://commercemarketplace.adobe.com/magento-live-search.html) hasta [Composer](https://getcomposer.org/). Después de instalar y configurar [!DNL Live Search], Adobe [!DNL Commerce] comienza a compartir los datos de la búsqueda y del catálogo con los servicios SaaS. En este punto, los usuarios de *Admin* pueden configurar, personalizar y administrar las facetas de búsqueda, los sinónimos y las reglas de comercialización.
 
 >[!NOTE]
 >
@@ -168,7 +168,7 @@ Puede implementar estas nuevas condiciones en la página de resultados de búsqu
 
 | Campo | Descripción |
 |--- |--- |
-| `Autocomplete` | Habilitado de forma predeterminada y no se puede modificar. Con `Autocomplete` puede usar `contains` en el [filtro de búsqueda](https://developer.adobe.com/commerce/services/graphql/live-search/product-search/#filtering). En este caso, la consulta de búsqueda de `contains` devuelve una respuesta de búsqueda de tipo autocompletar. El Adobe recomienda utilizar este tipo de búsqueda para los campos de descripción, que generalmente tienen más de 50 caracteres. |
+| `Autocomplete` | Habilitado de forma predeterminada y no se puede modificar. Con `Autocomplete` puede usar `contains` en el [filtro de búsqueda](https://developer.adobe.com/commerce/services/graphql/live-search/product-search/#filtering). En este caso, la consulta de búsqueda de `contains` devuelve una respuesta de búsqueda de tipo autocompletar. Adobe recomienda utilizar este tipo de búsqueda para los campos de descripción, que generalmente tienen más de 50 caracteres. |
 | `Contains` | Habilita una búsqueda &quot;de texto contenido en una cadena&quot; verdadera en lugar de una búsqueda autocompletada. Use `contains` en el [filtro de búsqueda](https://developer.adobe.com/commerce/services/graphql/live-search/product-search/#filtering-using-search-capability). Consulte [Limitaciones](https://developer.adobe.com/commerce/services/graphql/live-search/product-search/#limitations) para obtener más información. |
 | `Starts with` | Permite consultar cadenas que comienzan con un valor determinado. Use `startsWith` en el [filtro de búsqueda](https://developer.adobe.com/commerce/services/graphql/live-search/product-search/#filtering-using-search-capability). |
 
@@ -227,7 +227,7 @@ Para comprobar si los datos del catálogo se han exportado desde Adobe Commerce 
   >
   >Si recibe un error de `table does not exist`, busque las entradas en las tablas `catalog_data_exporter_products` y `catalog_data_exporter_product_attributes`. Estos nombres de tabla se usan en [!DNL Live Search] versiones anteriores a la 4.2.1.
 
-- Use [GraphQL playground](https://developer.adobe.com/commerce/services/graphql/live-search/) con la consulta predeterminada para comprobar lo siguiente:
+- Use el [área de reproducción de GraphQL](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/live-search/live-search-admin/graphql) con la consulta predeterminada (consulte [referencia de GraphQL](https://developer.adobe.com/commerce/services/graphql/live-search/) para obtener más información) para comprobar lo siguiente:
 
    - El recuento de productos devuelto está cerca de lo que se espera en la vista de la tienda.
    - Se devuelven las facetas.
@@ -250,7 +250,7 @@ Si tiene una versión de [!DNL Live Search] anterior a la 4.0.0 o posterior, deb
 
    ![Habilitar widgets de lista de productos](assets/ls-admin-enable-widget.png)
 
-Al cambiar esta configuración, aparece el mensaje `Page cache is invalidated`. Debe vaciar la caché del Magento para guardar el cambio.
+Al cambiar esta configuración, aparece el mensaje `Page cache is invalidated`. Debe vaciar la caché de Magento para guardar el cambio.
 
 1. Para tener acceso a la página [Administración de caché](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/cache-management), siga uno de estos procedimientos:
 
@@ -402,7 +402,7 @@ Si tiene una implementación personalizada sin encabezado, consulte las implemen
 - [widget PLP](https://github.com/adobe/storefront-product-listing-page)
 - [Campo de Live Search](https://github.com/adobe/storefront-search-as-you-type)
 
-AEM CIF La recopilación automática de datos de interacción del usuario no funciona de forma predeterminada cuando no se utilizan los componentes estándar como el adaptador de búsqueda, los widgets de Luma o los widgets de la. Adobe Sensei utiliza estos datos recopilados para la comercialización inteligente y el seguimiento del rendimiento. Para resolver este problema, debe desarrollar una solución personalizada para implementar esta recopilación de datos de forma directa.
+La recopilación automática de datos de interacción del usuario no funciona de forma predeterminada cuando no se utilizan componentes estándar como el adaptador de búsqueda, los widgets de Luma o los widgets de CIF de AEM. Adobe Sensei utiliza estos datos recopilados para la comercialización inteligente y el seguimiento del rendimiento. Para resolver este problema, debe desarrollar una solución personalizada para implementar esta recopilación de datos de forma directa.
 
 La última versión de [!DNL Live Search] ya usa [!DNL Catalog Service].
 
@@ -412,7 +412,7 @@ La última versión de [!DNL Live Search] ya usa [!DNL Catalog Service].
 
 |  |  |  |  |
 |--- |--- |--- |--- |
-| Idioma | Región | Código de idioma | Configuración regional del Magento |
+| Idioma | Región | Código de idioma | Configuración regional de Magento |
 | Búlgaro | Bulgaria | bg_BG | bg_BG |
 | Catalán | España | ca_ES | ca_ES |
 | Checo | República Checa | cs_CZ | cs_CZ |
@@ -506,15 +506,15 @@ Este módulo agrega contextos adicionales a las consultas de GraphQL:
 
 [!DNL Live Search] admite [funcionalidad B2B](https://experienceleague.adobe.com/en/docs/commerce-admin/b2b/guide-overview) con [limitaciones](boundaries-limits.md#b2b-and-category-permissions) adicionales.
 
-### soporte de PWA
+### Compatibilidad con PWA
 
-[!DNL Live Search] funciona con el PWA Studio, pero los usuarios pueden ver pequeñas diferencias en comparación con otras implementaciones de Commerce. La funcionalidad básica, como la página de búsqueda y la lista de productos, funciona en Venia, pero es posible que algunas permutaciones de Graphql no funcionen correctamente. También puede haber diferencias de rendimiento.
+[!DNL Live Search] funciona con PWA Studio, pero los usuarios pueden ver pequeñas diferencias en comparación con otras implementaciones de Commerce. La funcionalidad básica, como la página de búsqueda y la lista de productos, funciona en Venia, pero es posible que algunas permutaciones de Graphql no funcionen correctamente. También puede haber diferencias de rendimiento.
 
-- La implementación actual del PWA [!DNL Live Search] requiere más tiempo de procesamiento para devolver resultados de búsqueda que [!DNL Live Search] con la tienda nativa de Commerce.
-- [!DNL Live Search] en el PWA no admite [control de eventos](https://developer.adobe.com/commerce/services/shared-services/storefront-events/sdk/). Como resultado, los informes de búsqueda y la comercialización inteligente no funcionan en las tiendas de PWA.
+- La implementación actual de PWA de [!DNL Live Search] requiere más tiempo de procesamiento para devolver resultados de búsqueda que [!DNL Live Search] con la tienda nativa de Commerce.
+- [!DNL Live Search] en PWA no admite [administración de eventos](https://developer.adobe.com/commerce/services/shared-services/storefront-events/sdk/). Como resultado, los informes de búsqueda y la comercialización inteligente no funcionan en las tiendas de PWA.
 - Al usar [PWA Studio](https://developer.adobe.com/commerce/pwa-studio/), GraphQL no admite el filtrado directamente en `description`, `name`, `short_description`, pero estos campos se pueden devolver con un filtro más general.
 
-Para usar [!DNL Live Search] con el PWA Studio, los integradores también deben:
+Para usar [!DNL Live Search] con PWA Studio, los integradores también deben:
 
 1. Instalar [livessearch-storefront-utils](https://www.npmjs.com/package/@magento/ds-livesearch-storefront-utils).
 1. Establezca `environmentId` en el objeto `storeDetails`.
