@@ -5,10 +5,10 @@ title: Servicios para Adobe Commerce
 role: Admin, Leader, User
 feature: Personalization, Integration
 recommendations: noDisplay
-source-git-commit: 851287f4351c3ee8ccd24de4051a831352f73e48
+source-git-commit: 28a0743231c64b10844007db1a86e3448bae46c2
 workflow-type: tm+mt
-source-wordcount: '69'
-ht-degree: 34%
+source-wordcount: '62'
+ht-degree: 38%
 
 ---
 
@@ -17,8 +17,6 @@ ht-degree: 34%
 - [Información general](home.md)
 - Información de versión {#release-information}
    - [Notas de la versión](/help/landing/release-notes-all.md)
-- Catálogo maquetable {#composable-catalog}
-   - [Modelo de datos de catálogo maquetable](https://experienceleague.adobe.com/docs/commerce-merchant-services/catalog-data-model/overview.html)
 - Servicios de Commerce {#commerce-services}
    - Servicios de Commerce {#commerce-services}
    - [[!DNL Live Search]](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/overview.html)
